@@ -32,7 +32,7 @@ cd docs
 ### 2. Customize
 
 To edit configuration values, customize the [_config.yml](https://github.com/vsoch/docsy-jekyll/blob/master/_config.yml).
-To add pages, write them into the [pages](https://github.com/vsoch/docsy-jekyll/blob/master/pages) folder. 
+To add pages, write them into the [pages](https://github.com/vsoch/docsy-jekyll/blob/master/pages) folder.
 You define urls based on the `permalink` attribute in your pages,
 and then add them to the navigation by adding to the content of [_data/toc.myl](https://github.com/vsoch/docsy-jekyll/blob/master/_data/toc.yml).
 The top navigation is controlled by [_data/navigation.yml](https://github.com/vsoch/docsy-jekyll/blob/master/_data/navigation.yml)
