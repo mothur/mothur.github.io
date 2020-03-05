@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Docsy Jekyll
+title: mothur wiki
 email: pschloss@umich.edu
 author: Dinosaur Avocado
 description: > # this means to ignore newlines until "baseurl:"
@@ -29,9 +29,9 @@ baseurl: "/wiki_new" # the subpath of your site, e.g. /blog
 url: "https://mothur.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/mothur/wiki"
-github_user: "mothur"
-github_repo: "wiki_new"
+repo: "https://github.com/mothur/mothur_wiki_docsy"
+github_user: "pschloss"
+github_repo: "mothur_wiki_docsy"
 
 # Optional
 twitter: patschloss
