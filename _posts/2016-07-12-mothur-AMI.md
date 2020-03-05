@@ -1,0 +1,18 @@
+---
+layout: post
+title: "The mothur AMI"
+author: "PD Schloss"
+date: "July 12, 2016"
+blurb: Do you find that your computer can no longer handle the massive datasets that you are running? Does your institution not have a computer cluster? Welcome to the wonderful world of the Amazon Web Server.
+comments: true
+---
+
+We get asked a lot of questions by mothur users. Perhaps the one I hate the most is, "What type of computer should I get?" I hate this question because I don't want to spend other people's money and because I honestly don't have the answer. I used to encourage people to get the biggest, baddest computer they could afford. I've followed this advice myself.
+
+Over the years, we have literally spent upwards of $50,000 on a high performance computer cluster with a ton of processors, RAM, and storage. Then the System Administrator told us that we were really only using 10% of the cluster's capacity. In other words, we were effectively spending $50,000 to get $5,000 worth of service. I've come to realize that you can do amazing and very affordable bioinformatics on a pretty crappy computer. Just to make the point clear, I've run `mothur` using my iPhone. The caveat, of course, is that you are able to log into a remote high performance computer cluster. Many institutions have high performance computing clusters (HPCCs) that they make very cheap for their constituents. Not everyone is so fortunate. For this latter group of researchers, there is the Amazon Web Server (AWS). Although this tends to be a bit more expensive than institutional HPCCs, it is a very powerful and well-supported option.
+
+Think of AWS as your computer, but it's off in the ether - the cloud. You can trick it out with all sorts of applications and settings. Think yours is pretty cool? Well, you can take a snapshot of that computer and then make it available for others to use. This is what is called an Amazon Machine Image (AMI). This has the potential to be a very powerful tool for reproducibility. Think of it - you use AWS to do your analysis. Once your analysis is done, you want to make those files and your code available to others. You can make an AMI of the final product and then share the name of the AMI in your manuscript. I could then take that AMI and add data or add an analysis to supplement yours. But we're getting ahead of ourselves. I've done step one - creating an AMI that is tricked out for mothur users that you can build upon for your own use. Head on over to the wiki to follow the [tutorial on how to setup and use our AMI](http://mothur.org/wiki/Mothur_AMI) that comes with mothur and RStudio installed.
+
+I'm curious what people think of this AMI. I hope to achieve a few goals with this. First, we want to provide an easier on-ramp for analyzing large datasets for people that don't have access to large amounts of computing power. Part of this involves putting `mothur` into the path, preloading the AMI with various references, and throwing in RStudio so people can work with their data where it lives in the cloud. Second, we want to be a bit opinionated on how people set up their data analyses by doing things like separating reference, raw, and processed data and keeping data separate from the code. These steps are considered to be pretty good data hygiene habits. Third, by creating an AMI that researchers can modify to do their own analyses, they can create a derivative AMI that could be made publicly accessible to other researchers. The result could be clearer documentation and more reproducible analyses.
+
+Let us know what you think! If there are other tools that you would like to see loaded with the AMI, let us know.
