@@ -23,14 +23,14 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
-baseurl: "/wiki_new" # the subpath of your site, e.g. /blog
+baseurl: "/mothur_wiki_docsy" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
 url: "https://mothur.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
 repo: "https://github.com/mothur/mothur_wiki_docsy"
-github_user: "pschloss"
+github_user: "mothur"
 github_repo: "mothur_wiki_docsy"
 
 # Optional
