@@ -11,25 +11,25 @@
           {% include sidebar.html %}
           </div>
           <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
-              <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-                  {% include editable.html %}
-              </div>
               <nav id="TableOfContents"><ul>
               <li><ul id="TOC">
                 <!-- Links will be appended here-->
               </ul></li>
               </ul></nav>
+              <div class="td-page-meta ml-2 pb-1 pt-5 mb-0">
+                  {% include editable.html %}
+              </div>
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+            <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	      <ol class="breadcrumb spb-1">
                 <li class="breadcrumb-item active" aria-current="page">
 	          <a href="{{ page.url }}">{{ page.title }}</a>
                 </li>
 	      </ol>
-           </nav>
+           </nav> -->
            <div class="td-content">
-	      {{ content }}	
+	      {{ content }}
               {% if section.links %}<div class="section-index">
                <hr class="panel-line">{% for child in section.links %}
                  <div class="entry">

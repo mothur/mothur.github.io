@@ -18213,15 +18213,15 @@ html body .md-typeset .headerlink {
 }
 
 .td-toc li li {
-    margin-left: .5rem
+    margin-left: .5rem;
 }
 
 .td-toc .td-page-meta a {
-    font-weight: 500
+    font-weight: 500;
 }
 
 .td-toc #TableOfContents a {
-    color: #888
+    color: #222
 }
 
 .td-toc #TableOfContents a:hover {

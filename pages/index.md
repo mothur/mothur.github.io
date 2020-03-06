@@ -8,7 +8,6 @@ permalink: /
 
 This is a starter template for a docsy jekyll theme.
 
-![assets/img/docsy-jekyll.png](assets/img/docsy-jekyll.png)
 
 ## Purpose
 
@@ -23,7 +22,7 @@ and includes all the features that I might want.
 
 ## Features
 
-What are these features? You should see the {% include doc.html name="Getting Started" path="getting-started" %}
+What are these features? You should see the {% include wiki.html name="Getting Started" path="getting-started" %}
 guide for a complete summary. Briefly:
 
  - *User interaction* including consistent permalinks, links to ask questions via GitHub issues, and edit the file on GitHub directly.
@@ -37,5 +36,5 @@ guide for a complete summary. Briefly:
  - *Continuous Integration* recipes to preview the site
 
 
-For features, getting started with development, see the {% include doc.html name="Getting Started" path="getting-started" %} page. Would you like to request a feature or contribute?
+For features, getting started with development, see the {% include wiki.html name="Getting Started" path="getting-started" %} page. Would you like to request a feature or contribute?
 [Open an issue]({{ site.repo }}/issues)

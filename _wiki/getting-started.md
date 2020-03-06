@@ -1,9 +1,9 @@
 ---
 title: Getting Started
-tags: 
+tags:
  - jekyll
  - github
-description: Getting started with Docsy Jekyll
+description: Getting started with wikiy Jekyll
 ---
 
 # Getting Started
@@ -14,7 +14,7 @@ description: Getting started with Docsy Jekyll
 
 
 On the right side of any page, you'll notice links to edit the page, or
-open an issue. This ensures that any time you have a question or want to 
+open an issue. This ensures that any time you have a question or want to
 suggest or request a change, you can do so immediately and link directly
 to the section of interest. The sections on the page also have permalinks so
 you can link directly to them.
@@ -40,15 +40,15 @@ but should not be included in search.
 
 If you have an external site with a search GET endpoint (meaning one that ends
 in `?q=<term>`, then you can automatically link page tags to search this endpoint.
-For example, on an HPC site I'd want a tag like "mpi" to do a search on 
+For example, on an HPC site I'd want a tag like "mpi" to do a search on
 [http://ask.cyberinfrastructure.org](http://ask.cyberinfrastructure.org) for mpi.
 See the [tags](#tags) section below for how to configure this.
 
 ### Documentation
 
-Documentation pages should be written in the `docs` folder of the repository,
-and you are allowed to use whatever level of nesting (subfolders) that 
-works for you! It's a Jekyll [collection](https://jekyllrb.com/docs/collections/), which means that you
+Documentation pages should be written in the `wiki` folder of the repository,
+and you are allowed to use whatever level of nesting (subfolders) that
+works for you! It's a Jekyll [collection](https://jekyllrb.com/wiki/collections/), which means that you
 can add other content (images, scripts) and it will be included for linking to.
 
 #### Organization
@@ -56,7 +56,7 @@ can add other content (images, scripts) and it will be included for linking to.
 The url that will render is based on the path. For example, if we had the following structure:
 
 ```
-docs/
+wiki/
   getting-started.md
   clusters/
      sherlock/
@@ -64,7 +64,7 @@ docs/
 ```
 
 The first page (akin to the one you are reading) would render at it's path,
-`/docs/getting-started/`.
+`/wiki/getting-started/`.
 
 
 #### Linking
@@ -82,7 +82,7 @@ in the same directory, and from that page you can test linking to a subfoldr.
 In the case of not having a subfolder, we could write the link out directly:
 
 ```
-{% raw %}[example]({{ site.baseurl }}/docs/clusters/sherlock/getting-started.md){% endraw %}
+{% raw %}[example]({{ site.baseurl }}/wiki/clusters/sherlock/getting-started.md){% endraw %}
 ```
 
 or just put the relative path:
@@ -91,46 +91,46 @@ or just put the relative path:
 {% raw %}[Here](example-page){% endraw %}
 ```
 
-or better, there is a shortand trick! We can use the provided "includes" 
+or better, there is a shortand trick! We can use the provided "includes"
 template to do the same based on the path to create a link:
 
 ```
-{% raw %}{% include doc.html name="Sherlock Cluster" path="clusters/sherlock/getting-started" %}{% endraw %}
+{% raw %}{% include wiki.html name="Sherlock Cluster" path="clusters/sherlock/getting-started" %}{% endraw %}
 ```
-The path should be relative to the docs folder.
+The path should be relative to the wiki folder.
 
 ### Pages
 
-The `pages` folder uses the same page layout, but is not part of the docs collection.
+The `pages` folder uses the same page layout, but is not part of the wiki collection.
 The two are provided to create a distinction between website pages (e.g., about,
 feed.xml) and documentation pages.  
 
 ### Navigation
 
-Whether you place your page under "pages" or "docs," for those pages that you want added to the navigation, 
+Whether you place your page under "pages" or "wiki," for those pages that you want added to the navigation,
 you should add them to `_data/toc.yml`. If you've defined a `permalink` in the
 front end matter, you can use that (e.g., "About" below). If you haven't and
-want to link to docs, the url is the path starting with the docs folder.
+want to link to wiki, the url is the path starting with the wiki folder.
 Here is an example (currently the active example):
 
 ```yaml
 - title: Documentation
-  url: docs
+  url: wiki
   links:
     - title: "Getting Started"
-      url: "docs/getting-started"
+      url: "wiki/getting-started"
       children:
         - title: Features
-          url: "docs/getting-started#getting-started"
+          url: "wiki/getting-started#getting-started"
         - title: Development
-          url: "docs/getting-started#development"
+          url: "wiki/getting-started#development"
         - title: Customization
-          url: "docs/getting-started#customization"
+          url: "wiki/getting-started#customization"
     - title: "Extras"
-      url: "docs/extras"
+      url: "wiki/extras"
       children:
         - title: Quizzes
-          url: "docs/extras/example-quiz"
+          url: "wiki/extras/example-quiz"
     - title: "About"
       url: "about"
     - title: "News"
@@ -141,14 +141,14 @@ If you want to add an external url for a parent or child, do this:
 
 ```yaml
   - title: GitHub Repository
-    external_url: https://www.github.com/vsoch/mkdocs-jekyll
+    external_url: https://www.github.com/vsoch/mkwiki-jekyll
 ```
 
 ### News Posts
 
 It might be the case that your site or group has news items that would
 warrent sharing with the community, and should be available as a feed.
-For this reason, you can write traditional [posts](https://jekyllrb.com/docs/posts/) in the `_posts`
+For this reason, you can write traditional [posts](https://jekyllrb.com/wiki/posts/) in the `_posts`
 folder that will parse into the site [feed]({{ site.baseurl }}/feed.xml)
 The bottom of the page links the user to a post archive, where posts are organized
 according to the year.
@@ -222,7 +222,7 @@ Just for fun, here are all the types:
 
 ### Quotes
 
-You can include block quotes to emphasize text. 
+You can include block quotes to emphasize text.
 
 > Here is an example. Isn't this much more prominent to the user?
 
@@ -284,15 +284,15 @@ You should first fork the repository to your GitHub organization or username,
 and then clone it.
 
 ```bash
-$ git clone https://github.com/<username</mkdocs-jekyll.git docs
-$ cd docs
+$ git clone https://github.com/<username</mkwiki-jekyll.git wiki
+$ cd wiki
 ```
 
-You can clone the repository right to where you want to host the docs:
+You can clone the repository right to where you want to host the wiki:
 
 ```bash
-$ git clone https://github.com/<username>/mkdocs-jekyll.git docs
-$ cd docs
+$ git clone https://github.com/<username>/mkwiki-jekyll.git wiki
+$ cd wiki
 ```
 
 
@@ -311,7 +311,7 @@ bundle exec jekyll serve
 
 We provide a [CircleCI](https://circleci.com/) configuration recipe that you
 can use to preview your site on CircleCI before merging into master. You
-should follow the instructions to [set up a project](https://circleci.com/docs/enterprise/quick-start/),
+should follow the instructions to [set up a project](https://circleci.com/wiki/enterprise/quick-start/),
 and then in the project settings be sure to enable building forked build requests,
 and to cancel redundant builds. The preview will be built on CircleCI, and saved
 to static files for you to browse. The only change you will need is to edit
@@ -321,7 +321,7 @@ bottom of the `.circleci/config.yml` file:
 ```yaml
       - store_artifacts:
           path: ~/repo/_site
-          destination: mkdocs-jekyll
+          destination: mkwiki-jekyll
 ```
 
 In the above, the destination should coincide with your repository name.
@@ -330,12 +330,12 @@ Remember that for most links, CircleCI won't honor an `index.html` file in a sub
 you might need to turn this:
 
 ```
-https://<circleci>/0/mkdocs-jekyll/docs/getting-started/
+https://<circleci>/0/mkwiki-jekyll/wiki/getting-started/
 ```
 into this:
 
 ```
-https://<circleci>/0/mkdocs-jekyll/docs/getting-started/index.html
+https://<circleci>/0/mkwiki-jekyll/wiki/getting-started/index.html
 ```
 
 ## Customization
@@ -347,7 +347,7 @@ Most are documented there, and please [open an issue](https://www.github.com/{{ 
 
 #### Adding pages
 
-To add pages, write them into the [pages](pages) folder. 
+To add pages, write them into the [pages](pages) folder.
 You define urls based on the `permalink` attribute in your pages,
 and then add them to the navigation by adding to the content of [_data/toc.yml](_data/toc.yml).
 
@@ -368,7 +368,7 @@ as they do on this page. The tags should be defined like this in the front end
 matter:
 
 ```yaml
-tags: 
+tags:
  - jekyll
  - github
 ```
@@ -381,4 +381,3 @@ spot on the tags page linked above.
 #tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
 tag_color: primary # danger, success, warning, primary, info, secondary
 ```
-

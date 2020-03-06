@@ -2,7 +2,12 @@
 layout: page
 ---
 
-<h1 style="margin-bottom:0px">{{ page.title }}</h1>
-{% if page.badges %}{% for badge in page.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
-<span class="post-date" style="font-style: italic;">{{ page.date | date: "%B %d, %Y" }}</span>
-{{ content }}
+<div class="post post-content">
+
+  <h1 id="{{page.title | slugify }}">{{ page.title }}</h1>
+
+  <p class="meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} • {% include reading_speed.html %} • {% include twitter_plug.html %}</p>
+
+  {{ content }}
+
+</div>

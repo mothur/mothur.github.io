@@ -15,7 +15,7 @@ excluded_in_search: true
 
 <script>
 	window.data = {
-		{% for post in site.docs %}
+		{% for post in site.wiki %}
 				{% unless post.excluded_in_search %}
 					{% if added %},{% endif %}
 					{% assign added = false %}

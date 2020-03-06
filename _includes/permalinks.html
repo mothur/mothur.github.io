@@ -6,7 +6,12 @@ $.each(headers, function(i, header){
     var color = colors[i];
     $(header).each(function () {
         var href=$(this).attr("id");
-        $(this).append('<a class="headerlink" style="color:' + color + '" href="#' + href + '" title="Permanent link">¶</a>')
+
+				if(header == "h1"){
+					var href=""
+				}
+
+        $(this).append('<a class="headerlink" style="color:' + color + '" href="#' + href + '" >🔗</a>')
     });
 })
 </script>
