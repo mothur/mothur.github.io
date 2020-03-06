@@ -1,0 +1,18 @@
+Mothur's file types and formats:
+
+* [[Fasta_file | Fasta File]] 
+* [[Name_file | Name File]]
+* [[Count_File | Count File]]
+* [[Group_file | Group File]]
+* [[Design_File | Design File]]
+* [[List_file | List File]]
+* [[Rabund_file | Rabund File]]
+* [[Sabund_file | Sabund File]]
+* [[Shared_file | Shared File]]
+* [[Relabund_file | Relative Abundance File]]
+* [[Taxonomy_File | Taxonomy File]]
+* [[Constaxonomy_file | Consensus Taxonomy File]]
+* [[Oligos_File | Oligos File]]
+* [[File_File | File file]]
+* [[Phylip-formatted_distance_matrix | Phylip formatted Distance Matrix]]
+* [[Column-formatted_distance_matrix | Column formatted Distance Matrix]]

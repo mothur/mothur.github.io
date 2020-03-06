@@ -1,0 +1,144 @@
+==Preliminaries==
+Before launching into the world of ARB there are several things to consider:
+* It is worth consulting the [http://www.arb-home.de/downloads.html ARB home website] to get an idea of the suggested configuration for what type of computer you should run ARB on.  Something to keep in mind is that as of February 1, 2009, ARB is unable to access more than 2 GB of RAM when running on the Mac OS X platform.
+* The ARB group also supplies some minimal [http://www.arb-home.de/documentation.html documentation] that is worth checking out.  If people want to build up a documentation resource off of this wiki, have at it.
+* Perhaps the best source of documentation is the [http://tech.groups.yahoo.com/group/arb_users/ Yahoo! arb_users group].  The traffic is pretty lite and the database of previously asked questions is very useful
+* There are several training opportunities if you want to get the low-down on how to use ARB best (or at least how it is commonly used).  [http://ribocon.com/services_training.htm Ribocon] offers training workshops and the mothur developers are available to teach [[workshops]] as well
+* There are multiple options for databases.  This is an important consideration before you get going and there really is no right or wrong answer - they all have their limitations.  Realize that our bias is not to doing high-powered phylogenetics, rather to do community analysis where we don't want to filter our sequence data and we generally have large data sets.
+** The [http://arb-silva.de silva] database is comprehensive, updated regularly, includes all three domains, is of high quality.  The drawback is that it is massive (>40,000 characters) making it difficult to manage.  Also, unless you use the Ribocon services, you are limited to aligning 300 of your sequences at a time.  It may or may not be appropriate for generating alignments of shorter pyrosequencing-based sequences?
+** The [http://greengenes.lbl.gov greengenes] database is not as comprehensive as the silva database, choosing to focus on sequences >1,200 bp long and does not include eukaryotic sequences.  The variable regions do not seem as well aligned as you might like, but if you apply a filter, it may not matter.  The advantages of greengenes include a open-ended server that can take any number of sequence and a shorter ~8,000 bp alignment
+** The [http://rdp.cme.msu.edu RDP] alignment is based on an Infernal alignment that accounts for secondary structure of known rRNA molecules.  Unfortunately, the alignment can change from release to release and may not be appropriate for long-term usage.  Also, Infernal will not do well in highly variable regions.  These are shown as lower-cased letters in the alignment and are typically left unaligned.
+
+
+==Installing and configuring ARB in Mac OS X==
+ARB is native to Linux and has been ported to Mac OS X by Mike Dyall-Smith and others via a program called fink.  The process of installing the software can be scary and frustrating, but these instructions should work.  I successfully installed it on a MacBook Pro running 10.5.  If people know of differences for different versions of the OS, please contribute.  If anyone has questions, please leave them in the Discussion tab for this page.
+
+
+===Installing ARB via fink===
+Mike Dyall-Smith has a helpful set of instructions for installing ARB using terminal commands under [http://greengenes.lbl.gov/mlds/ARB_Install4.pdf Mac OS X 10.3], [http://greengenes.lbl.gov/mlds/index_tiger.html Mac OS X 10.4] and [http://greengenes.lbl.gov/mlds/index.html Mac OS X 10.5].  If terminal commands scare you (and they shouldn't), these instructions use FinkCommander, which is a GUI meant to help install packages...
+# Make sure that you have Administrator privileges on your computer so that you can install software
+# Install the Xcode developer tools from your installation CD/DVD  
+# http://finkproject.org/ -> Download
+# Follow the instruction for using the FinkCommander application and installing from binaries.  You may need to do the Binary->Update command twice depending on what FinkCommander tells you.  After step 4 you will need to open the Fink-0.9.0-Intel-Installer folder and then the FinkCommander folder and drag FinkCommander.app into the Applications folder and click on it
+# At this point, fink is installed on your computer.  Now to get ARB.
+# Press Command-, (open apple-comma). This will open the Preferences window.
+# Select the Fink tab, check both of the "Use unstable..." boxes
+# Now press "Apply", which will open a window for you to enter your password.  After doing this press "OK"
+# Go Source->Scan Packages, then Source->Selfupdate-cvs.  This may take a little while.  Be sure to use all of the default options as they are suggested
+# Go Source->Update all.  You may get an error telling you to do another selfupdate.  Go Source->Selfupdate and then Source->Update all
+# Now you're finally ready to get arb.  In the upper right corner of the FinkCommander window is a search window.  In it type "arb" and press enter.  You'll get a list of package names and one of these will hopefully be arb.  Highlight that line and go Source->Install
+# Again allow for all the default values as it installs.  Sometimes installation will stop and the output will ask for input, but won't provide a way to give a value.  Go Tools->Interact with Fink...
+# Installing arb will take awhile, go check your facebook page and update your status as "Installing ARB..."  Write your "friends'" response in the discussion tab of this page.  Free versions of mothur will be awarded for funniest answer.  Find new friends if more than half know what you're talking about.
+# Periodically check on the installation, it may take about 35 minutes or so.  Once it's done you can quit Fink Commander.
+# From the apple menu, select System Preferences and click on the Sharing folder.  You should have a one word name for your computer, if not, name your box and remember the name.
+
+===Editing /etc/hosts/ file===
+Now open the Terminal.app (it's probably worth putting this on your dock) and type:
+
+ escriba:~ pschloss$ sudo pico -w /etc/hosts
+
+this should open an editor that hopefully looks something like:
+
+ # Host Database
+ #
+ # localhost is used to configure the loopback interface
+ # when the system is booting.  Do not change this entry.
+ ##
+ 127.0.0.1       localhost
+ 255.255.255.255 broadcasthost
+ ::1             localhost
+
+you should add a line with the name of your computer like:
+
+ # Host Database
+ #
+ # localhost is used to configure the loopback interface
+ # when the system is booting.  Do not change this entry.
+ ##
+ 127.0.0.1       localhost
+ 127.0.0.1       escriba.local.
+ 255.255.255.255 broadcasthost
+ ::1             localhost
+
+Only instead of "escriba.local." you replace escriba with the name of your computer.  Now press Ctrl-X and type Y and press enter to save this as /etc/hosts/
+
+===Editing .profile file===
+Next, you need to enter some information in either the .profile files in your home directory.  If you open your home folder in the Finder, you won't see any files that start with a '.'.  Again open the Terminal.app, which should have you in your home directory looking at a prompt like this:
+
+ escriba:~ pschloss$
+
+The '~' tells you that you are home.  At this prompt type:
+
+ escriba:~ pschloss$ pico -w .profile
+
+There may or may not be anything in this file, regardless, at a minimum you need the following information in it:
+
+ ARBHOME=/sw/share/arb; export ARBHOME
+ LD_LIBRARY_PATH=/sw/share/arb/lib; export LD_LIBRARY_PATH
+ PATH=/sw/bin:${PATH}; export PATH
+
+Again, type Ctrl-X, then press Y,  and hit enter.  Close all instances of Terminal.app by typing "exit" at the prompt.  Re-open Terminal.app and just for kicks, type "arb" at the command prompt.  If everything has gone right, you'll see the following message and the arb window will open up:
+
+ Using ARBHOME='/sw/share/arb'
+ Please wait while the program ARB is starting .....
+ escriba:~ pschloss$ ARB: Loading '.arb_prop/ntree.arb'
+ ARB: Loading '/sw/share/arb/lib/arb_default/ntree.arb' done
+
+We aren't ready to run arb yet, so go ahead and quit out of the program by pressing CANCEL.  If opening doesn't work, you might try typing "xterm" at the prompt, which will open X11 and its terminal program.  Then try typing "arb".
+
+===Setting the .Xmodmap options===
+Much of the following information comes from[http://greengenes.lbl.gov/mlds/index.html Mike Dyall-Smith's instructions].  Again in your home directory type:
+
+ escriba:~ pschloss$ pico -w .Xmodmap
+
+This will open the editor and you will need to fill it with the following information:
+
+ clear Mod1
+ clear Mod2
+ keycode 63 = Mode_switch
+ keycode 66 = Meta_L
+ add Mod1 = Meta_L
+ add Mod2 = Mode_switch
+
+Again, Ctrl-X, press Y and hit enter.  These edits will allow you to use option-arror functions within the arb alignment editor, which are very useful.
+
+
+==Installing ARB in Linux==
+ARB is native to a Linux environment.  Unfortunately, it is a pain to install de novo.  There are a number of dependencies and the installation can take awhile.  There are three options:
+# Do it yourself following the instructions from the [http://www.arb-home.de/downloads.html ARB developers]
+# Buy a live CD/installation CD of ARBuntu from [http://ribocon.com/products_arbuntu.htm Ribocon] for 78 euros
+# Download a copy of the [[METoolbox disk image]] of my linux laptop running Kubuntu for free, burn it to a DVD and either use it as a live DVD or to install
+# Type the following in the terminal:
+
+ > sudo apt-get install arb
+
+You should know that the ARBuntu CD is the product of a lot of work and is probably a bit more trustworthy than what I have posted.  Regardless, they both should be safe and the [[METoolbox disk image]] comes with some example databases and all of the software in the Schloss Lab arsenal.
+
+==Installing ARB in Windows==
+Good luck, you're on your own with this one.  It can be done, but you need a unix emulator.  If someone has instructions, we'd love to see them.
+
+
+==Databases==
+As we discussed above, there really is no right or wrong answer to which database to choose.  The key is to make a decision and stick to it.  Hopefully, there will be more flexibility in the future.  A good idea is to make a folder in your home folder where you store your arb databases, these will end in *.arb.
+
+===SILVA===
+silva provides [http://www.arb-silva.de/download/ four databases]:
+* SSURef - a reference database with long, high-quality sequences
+* SSUParc - the complete database with short and long, good and bad sequences.  This is so huge that you're best to use their search tools to find short sequences you want to help fill out a region in the SSURef database
+* LSURef - similar to SSURef, except that it focuses on the large ribosomal sub-unit
+* LSUParc - similar to SSUParc, except that it focuses on the large ribosomal sub-unit 
+
+===greengenes===
+greengenes provides an [http://greengenes.lbl.gov/Download/Sequence_Data/Arb_databases/ arb-formatted database], with regular updates.  This is actually the original alignmnent length and structure employed by the arb databases up until ~5 yrs ago.
+
+
+==Running ARB==
+Now the moment you have been waiting for...  With arb installed and a database or two in your home directory you are ready to get started.  Assuming that you named your database folder ARBdb and it is located in your home directory, open a terminal giving you the typical prompt.  To move into the database directory, type the following at the prompt:
+
+ escriba:~ pschloss$ cd ARBdb
+ escriba:~ pschloss$ arb *.arb
+
+Where the '*' is the name of the arb database.  This will open ARB and you are ready to go.
+
+==Caveats==
+These instructions are from someone that does not use ARB to do probe design or alignments with its PT-Server.  Probably half of the emails on the arb_users discussion page relate to the PT-Server.  At this point, I'm not sure that there is a reason to run the PT-Server because the databases have just gotten so huge that you'll need a ton of RAM to make it worthwhile.  Furthermore, the availability of other, better, alignment and probe design tools makes this mute.

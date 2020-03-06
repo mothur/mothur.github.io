@@ -1,0 +1,17 @@
+---
+
+
+title: 'Quit'
+---
+The [quit](quit) command takes no options and can be called
+with or without the parentheses. For example:
+
+    mothur > quit()
+
+and
+
+    mothur > quit
+
+will do the same thing.
+
+[Category:Commands](Category:Commands)

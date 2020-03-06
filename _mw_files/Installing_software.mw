@@ -1,0 +1,7 @@
+There are a number of programs that are needed for anyone that is serious about doing bioinformatics in the field of microbial ecology:
+
+* [[General_operations#Installing_mothur| Installing mothur]] and [http://schloss.micro.umass.edu/software/ dotur, sons, slibshuff, and treeclimber]
+* [[Installing ARB]]
+* [http://evolution.genetics.washington.edu/phylip.html PHYLIP]
+* [http://mrbayes.csit.fsu.edu/ MrBayes]
+* [http://paup.csit.fsu.edu/ PAUP*]

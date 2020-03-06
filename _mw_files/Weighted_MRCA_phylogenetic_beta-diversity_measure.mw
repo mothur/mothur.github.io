@@ -1,0 +1,24 @@
+The weighted most recent common ancestor (MRCA) measure calculates the dissimilarity between a pair of communities by considering the proportion of sequences descendant from each branch in the MRCA subtree (i.e., the smallest subtree spanning all sequences from the two communities). It is an weighted or quantitative measure as it explicitly considers the abundance of each sequence. This calculator can be used with the [[phylo.betadiversity]] command. The dissimilarity between communities ''i'' and ''j'' is given by:
+
+<math>D_{WMRCA} = \frac{2\sum_{n=0}^N |p_i^n - p_j^n|W_n}{\sum_{n=0}^N min(p_i^n + p_j^n, 2 - p_i^n - p_j^n)W_n + \sum_{n=0}^N |p_i^n - p_j^n|W_n}</math>
+
+where,
+
+<math>p_i^n</math> = proportion of sequences from community ''i'' descendant from branch ''n''.
+
+<math>p_j^n</math> = proportion of sequences from community ''j'' descendant from branch ''n''.
+
+<math>W_n</math> = weight or length of branch ''n''.
+
+<math>N</math> = number of branches in the tree spanned by 'all' communities.
+
+=== Mathematical properties ===
+
+* The numerator and denominator of <math>D_{WMRCA}</math> is zero for branches outside of the MRCA subtree.
+
+=== Points-of-interest ===
+
+
+=== Further information ===
+
+Parks, DH and Beiko, RG. (2011). '''Quantifying phylogenetic β-diversity over rooted and unrooted trees'''. (in preparation)

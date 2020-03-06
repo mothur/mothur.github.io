@@ -1,0 +1,5 @@
+<math>D_{Structeuclidean} = \sqrt{ \sum_{j=1}^{S_T}  \left ( S_{Aj} - S_{Bj} \right )^2 } </math>
+
+
+* where <math>S_{Aj}</math> is the abundance of sample A in the jth OTU.
+* where <math>S_{Bj}</math> is the abundance of sample B in the jth OTU.

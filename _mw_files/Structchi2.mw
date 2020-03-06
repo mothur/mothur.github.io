@@ -1,0 +1,9 @@
+<math>D_{Structchi2} = \sqrt{N_T \sum_{j=1}^{S_T} \left ( \frac {1}{S_{+j}} \left ( \frac{S_{Aj}}{S_{A+}} - \frac{S_{Bj}}{S_{B+}} \right )^2 \right ) } </math>
+
+
+* where <math>N_T</math> is the total number of sequences
+* where <math>S_{A+}</math> denotes the total abundance of sample A
+* where <math>S_{B+}</math> denotes the total abundance of sample B
+* where <math>S_{Aj}</math> is the abundance of sample A in the jth OTU.
+* where <math>S_{Bj}</math> is the abundance of sample B in the jth OTU.
+* where <math>S_{+j}</math> denotes the total abundance of OTU j.

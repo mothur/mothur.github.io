@@ -1,0 +1,90 @@
+==Adding commands==
+The commands are organized into categories to help you build pipelines for a specific task.  There is also a complete list of mothur's commands if you are looking for a command you know the name of. 
+
+===Command Categories===
+
+====Sequence Processing====
+Sequence Processing commmands include: [[align.check]], [[align.seqs]], [[bin.seqs]], [[chimera.bellerophon]], [[chimera.ccode]], [[chimera.check]], [[chimera.perseus]], [[chimera.pintail]], [[chimera.slayer]], [[chimera.uchime]], [[chop.seqs]], [[cluster.fragments]], [[consensus.seqs]], [[count.groups]], [[count.seqs]], [[degap.seqs]], [[deunique.seqs]], [[dist.seqs]], [[fastq.info]], [[filter.seqs]], [[get.seqs]], [[list.seqs]], [[make.contigs]], [[make.fastq]], [[count.seqs]], [[pairwise.seqs]], [[pcr.seqs]], [[pre.cluster]], [[remove.seqs]], [[reverse.seqs]], [[screen.seqs]], [[seq.error]], [[sff.multiple]], [[sffinfo]], [[shhh.flows]], [[shhh.seqs]], [[sort.seqs]], [[split.groups]], [[sub.sample]], [[summary.qual]], [[summary.seqs]], [[trim.flows]], [[trim.seqs]] and [[unique.seqs]]. 
+
+====Hypothesis Testing====
+Hypothesis Testing commmands include: [[amova]], [[anosim]], [[clearcut]], [[cooccurrence]], [[corr.axes]], [[deunique.tree]], [[homova]], [[indicator]], [[libshuff]], [[mantel]], [[nmds]], [[otu.association]], [[parsimony]], [[pca]], [[pcoa]], [[phylo.diversity]], [[unifrac.unweighted]] and [[unifrac.weighted]].
+
+====OTU-Based Approaches====
+OTU-Based Approaches commmands include: [[catchall]], [[classify.shared]], [[collect.shared]], [[collect.single]], [[create.database]], [[dist.shared]], [[filter.shared]], [[get.coremicrobiome]], [[get.group]], [[get.groups]], [[get.label]], [[get.otus]], [[get.otulist]], [[get.oturep]], [[get.otus]], [[get.rabund]], [[get.relabund]], [[get.sabund]], [[get.sharedseqs]], [[heatmap.bin]], [[heatmap.sim]], [[list.otulabels]], [[make.shared]], [[metastats]], [[normalize.shared]], [[otu.hierarchy]], [[parse.list]], [[rarefaction.shared]], [[rarefaction.single]], [[remove.groups]], [[remove.otulabels]], [[remove.otus]], [[remove.rare]], [[sens.spec]], [[split.abund]], [[summary.shared]], [[summary.single]], [[tree.shared]] and [[venn]].
+
+====Phylotype Analysis====
+Phylotype Analysis commmands include: [[classify.otu]], [[classify.seqs]], [[classify.tree]], [[get.lineage]], [[remove.lineage]] and [[summary.tax]].
+
+====General====
+General commmands include: [[get.current]], [[load.logfile]], [[make.biom]], [[make.group]], [[merge.files]], [[merge.groups]], [[set.current]], [[set.dir]], [[set.logfile]] and [[system]].
+
+====Clustering====
+Clustering commmands include: [[cluster]], [[cluster.classic]], [[cluster.split]], [[mgcluster]] and [[phylotype]].
+
+You can add a command buy clicking on it's name.  It will be added after the command that is highlighted in the pipeline window. For example if you have the following pipeline:
+
+[[File:addingCommandBefore.jpg | center]]
+
+and you want to add the summary.seqs command after the align.seqs command to check the alignment.  You want to click on the align.seqs command button in the pipeline window to select it, and then click on the summary.seqs to add it.
+
+[[File:addingCommandAfter.jpg | center]]
+
+==Removing commands==
+You can remove a command by right clicking on the command button and selecting the remove option.
+
+[[File:removingCommand.jpg |center]]
+
+==Setting optional parameters==
+===Files===
+You may use the browse button to select a file, type the name into the file box, select a file from the list mothur generates, or type "current" to indicate the current file of that type.  In an effort to make mothur "smarter", the GUI will add the names of the files created by previous commands in your pipeline of the given type.  For example given the pipeline:
+
+[[File:filespipelineExample.jpg | center]]
+
+
+the screen.seqs command fasta options would look like:
+
+
+[[File:autoFillNames.jpg | center]]
+
+
+Some of mothur's file names rely on information from within the file.  In that case mothur will add a partial file name to the list.  You can select it and complete the name. Or if you select it and do not complete the name mothur will choose the closest match to the file name pattern it can find.
+
+
+[[File:autoFillNamesPartial.jpg | center]]
+
+
+
+You can select amazon.filter.good.phylip.an.[jclass-thetayc].[tag].tre and edit it to indicate you want the jclass tree from distance 0.03, amazon.filter.good.phylip.an.jclass.0.03.tre.
+
+===Other Parameters===
+The other command parameters are set to mothur's defaults.
+
+===Resetting to Default Values===
+You can reset the parameters to their defaults by right clicking on the command button and selecting reset to default.
+
+[[File:resetToDefault.jpg | center]]
+
+==Tool Bar & Menu Options==
+[[File:menuOPtions.jpg | center]]
+
+[[File:toolbar.jpg | center]]
+
+===New===
+The New button will create a new pipeline for you to start adding commands to.  If you already have a pipeline open you will be prompted to save it.
+
+===Open===
+The Open button allows you to open an existing pipeline from a file.
+
+[[File:openPipeline.jpg | center]]
+
+===Close===
+The close button allows you to close a pipeline.
+
+===Save & Save As===
+You can save a pipeline using the save button.
+
+[[File:savePipeline.jpg | center]]
+
+The new pipeline will appear under the pipeline default SOP pipelines.
+
+[[File:testPipeline.jpg | center]]

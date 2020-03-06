@@ -1,0 +1,4 @@
+<math>D_{Structkulczynski} = 1 - \frac{1}{2} \left ( \frac{\sum_{j=1}^{m} \min (S_{Aj}, S_{Bj})}{\sum_{j=1}^{m} S_{Aj}} + \frac{\sum_{j=1}^{m} \min (S_{Aj}, S_{Bj})}{\sum_{j=1}^{m} S_{Bj}} \right )</math>
+
+* where <math>S_{Aj}</math> is the abundance of sample a in the jth OTU.
+* where <math>S_{Bj}</math> is the abundance of sample b in the jth OTU.

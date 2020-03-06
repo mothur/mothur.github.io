@@ -1,0 +1,5 @@
+<math>D_{Odum} = \frac {\sum_{j=1}^{S_T} |S_{Aj} - S_{Bj}| }{\sum_{j=1}^{S_T} (S_{Aj} + S_{Bj} )} </math>
+
+
+* <math>S_{Aj}</math> is the jth OTU in sample A
+* <math>S_{Bj}</math> is the jth OTU in sample B

@@ -1,0 +1,12 @@
+The goal of mothur is to have a single resource to analyze molecular data that is used by microbial ecologists.  Many of these tools are available elsewhere as individual programs and as scripts, which tend to be slow or as web utilities, which limit your ability to analyze your data. mothur offers the ability to go from raw sequences to the generation of visualization tools to describe &alpha; and &beta; diversity.  Examples of each command are provided within their specific pages, but several users have provided several [[analysis examples]], which use these commands.  An exhaustive list of the commands found in mothur is available within the [[Special:Categories | commands category index]].  If you have any questions, complaints, or praise, please do not hesitate to [[Special:EmailUser/Pschloss | email Pat]] or to use the various discussion tabs:
+
+* [[General operations]]
+* [[Sequence processing]]
+* [[Chimera Detection Commands]]
+* [[OTU-based approaches]]
+* [[Hypothesis testing approaches]]
+* [[Frequently asked questions]]
+* [[Phylotype analysis]]
+* [[File Types]]
+
+Remember to cite mothur: Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41

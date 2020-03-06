@@ -1,0 +1,203 @@
+---
+
+
+title: 'Phylo.diversity'
+---
+The phylo.diversity command requires an input tree file. Two files will
+be output: .phylo.diversity and (if you set rarefy=T) .rarefaction. To
+run this tutorial download [
+AbRecovery.zip](Media:AbRecovery.zip)
+
+
+{% include toc.html %}
+
+## Default settings
+
+For example:
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups)
+
+or with a [ count file](Count_File):
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, count=abrecovery.count_table)
+
+Execution of phylo.diversity() will generate the file
+abrecovery.paup.1.phylodiv.summary, which looks like:
+
+    Groups    numSampled    phyloDiversity
+    C    74    1.7782
+    A    84    2.0530
+    B    84    2.4740  
+
+## Options
+
+### name
+
+The name option allows you to enter a namefile with your treefile.
+
+     mothur > phylo.diversity(tree=abrecovery.phylip.nj, group=abrecovery.groups, name=abrecovery.names)
+
+### count
+
+The [ count](Count_File) file is similar to the name file in
+that it is used to represent the number of duplicate sequences for a
+given representative sequence. It can also contain group information.
+
+     mothur > make.table(group=abrecovery.groups, name=abrecovery.names)
+     mothur > phylo.diversity(tree=abrecovery.phylip.nj, count=abrecovery.count_table)
+
+### groups
+
+The groups parameter allows you to specify which of the groups in your
+groupfile you would like analyzed. The group names are separated by
+dashes. By default all groups are used.
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, groups=A-B)
+
+In the file abrecovery.paup.1.phylodiv.summary you would see something
+like:
+
+    Groups    numSampled    phyloDiversity
+    A    84    2.0530
+    B    84    2.4740          
+
+### rarefy
+
+The rarefy parameter allows you to calculate the rarefaction data. The
+default is false. If you set rarefy=T, 1000 randomizations will be
+performed by dafault.
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, rarefy=T)
+
+In the file abrecovery.paup.1.phylodiv.rarefaction you would see
+something like:
+
+    numSampled C   A   B   
+    1  0.3187  0.2612  0.2537  
+    74 1.7782  1.9327  2.3498  
+    84 NA  2.0530  2.4740      
+
+### collect
+
+The collect parameter allows you to create a collectors curve. The
+default is false.
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, collect=T)
+
+In the file abrecovery.paup.1.phylodiv.summary you would see something
+like:
+
+    numSampled C   A   B   
+    1  0.3665  0.4120  0.2117  
+    74 1.7782  1.9658  2.3353  
+    84 NA  2.0530  2.4740
+
+### summary
+
+The summary parameter allows you to create a .summary file. The default
+is true.
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, summary=T)
+
+In the file abrecovery.paup.1.phylodiv you would see something like:
+
+    Groups numSampled  phyloDiversity
+    C  74  1.7782
+    A  84  2.0530
+    B  84  2.4740
+
+### freq
+
+For larger datasets you might not be interested in obtaining all of the
+data for the number of sequences sampled. For instance, if you have
+100,000 sequences, you may only want to output the data every 100
+sequences. Alternatively, if you only have 100 sequences, you may only
+want to output all of the data. The default setting is to output data
+every 100 sequences. By altering the freq option you can set the
+frequency that the analysis is performed:
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, collect=T, freq=1)
+
+or
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, collect=T,freq=10)
+
+or you set set the frequency as a proportion of the total sequences. For
+example to output after 10%:
+
+     mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, collect=T, freq=0.10)
+
+The third command would generate data such as this:
+
+    numSampled    C    A    B    
+    1    0.3073    0.2236    0.1102    
+    8    1.0329    0.7658    0.8554    
+    16    1.1919    1.0696    1.3787    
+    24    1.2975    1.2211    1.4297    
+    32    1.3998    1.3733    1.6132    
+    40    1.5672    1.3934    1.7927    
+    48    1.6548    1.4878    1.8862    
+    56    1.6727    1.6068    1.9921    
+    64    1.7378    1.8582    2.1792    
+    72    1.7707    1.9093    2.3820    
+    74    1.7782    1.9499    2.4021    
+    80    NA    2.0316    2.4492    
+    84    NA    2.0530    2.4740       
+
+### iters
+
+To improve the accuracy of the calculations you can change the number of
+randomizations that are performed using the iters option; the default
+value is 1,000. Running 10,000 randomization should take 10-times as
+long as the default:
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, rarefy=T, iters=10000)
+
+### scale
+
+The scale parameter is used indicate that you want your output scaled to
+the number of sequences sampled, default = false.
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, collect=T, scale=t)
+
+In the file abrecovery.paup.1.phylodiv you would see something like:
+
+    numSampled C   A   B   
+    1  0.3053  0.4170  0.0921  
+    74 0.0240  0.0248  0.0325  
+    84 NA  0.0244  0.0295  
+
+### sampledepth
+
+The sampledepth parameter allows you to enter the number of sequences
+you want to sample.
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, sampledepth=50)
+
+    numSampled A   B   C
+    1  0.2298  0.1765  0.2469
+    50 1.6520  2.1287  1.5145
+
+### processors
+
+The processors parameter allows you to use multiple processors to reduce
+processing time. Default processors=Autodetect number of available
+processors and use all available. You can use 2 processors with the
+following option:
+
+    mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, processors=2)
+
+Running this command on my laptop doesn\'t exactly cut the time in half,
+but it\'s pretty close. There is no software limit on the number of
+processors that you can use.
+
+## Revisions
+
+-   1.28.0 Added count parameter
+-   1.31.0 Added multiple processors for Windows.
+-   1.36.0 Adds sampledepth parameter. -
+    <http://www.mothur.org/forum/viewtopic.php?f=3&t=3320>
+-   1.40.0 Rewrite of threaded code. Default processors=Autodetect
+    number of available processors and use all available.
+
+[Category:Commands](Category:Commands)

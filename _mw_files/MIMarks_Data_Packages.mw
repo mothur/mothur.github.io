@@ -1,0 +1,75 @@
+The MIMarks Packages - Here's a link to NCBI's definitions, [http://www.ncbi.nlm.nih.gov/biosample/docs/attributes/  Biosample attributes]
+
+==Package Options==
+
+Mothur allows for several survey related environmental package choices. They include: air, host_associated, human_associated, human_gut, human_oral, human_skin, human_vaginal, microbial, miscellaneous, plant_associated, sediment, soil, wastewater or water. Default=miscellaneous. Unknown or inapplicable fields can be filled in with 'missing'.
+
+===air===
+For more information about the air environment, [[Air_environment | click here]].
+
+The fields that are required for the air package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon	*altitude.
+
+===host_associated===
+For more information about the host-associated environment [[Host_Associated | click here]].
+
+The fields that are required for the host_associated package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon *host.
+
+===human_associated===
+For more information about the human-associated environment [[Human_Associated | click here]].
+
+The fields that are required for the human_associated package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon *host.
+
+===human_gut===
+For more information about the human_gut environment [[Human_gut | click here]].
+
+The fields that are required for the human_gut package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon	*host.
+
+===human_oral===
+For more information about the human_oral environment [[Human_oral | click here]].
+
+The fields that are required for the human_oral package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon	*host.
+
+===human_skin===
+For more information about the human_skin environment [[Human_skin | click here]].
+
+The fields that are required for the human_skin package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon	*host.
+
+===human_vaginal===
+For more information about human_vaginal environment [[Human_vaginal | click here]].
+
+The fields that are required for the human_vaginal package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon	*host.
+
+===microbial===
+For more information about the microbial environment [[Microbial | click here]].
+
+The fields that are required for the microbial package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lonepth *elev.
+
+===miscellaneous===
+For more information about the miscellaneous environment [[Miscellaneous | click here]].
+
+The fields that are required for the miscellaneous package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon
+
+===plant_associated===
+For more information about the plant-associated environment [[Plant_associated | click here]].
+
+The fields that are required for the plant_associated package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon *host.
+
+===sediment===
+For more information about the sediment environment [[Sediment | click here]].
+
+The fields that are required for the sediment package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon	*depth	*elev.
+
+===soil===
+For more information about the soil environment [[Soil | click here]].
+
+The fields that are required for the soil package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lonepth	*elev.
+
+===wastewater===
+For more information about the wastewater environment [[Wastewater | click here]].
+
+The fields that are required for the wastewater package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon
+
+===water===
+For more information about the water environment [[Water | click here]].
+
+The fields that are required for the water package are: *sample_name	*description	*sample_title	*seq_methods	*organism	*collection_date	*env_biome	*env_feature	*env_material	*geo_loc_name *lat_lon	*depth.

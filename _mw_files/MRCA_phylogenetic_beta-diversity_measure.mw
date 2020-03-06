@@ -1,0 +1,23 @@
+The unweighted most recent common ancestor (MRCA) measure calculates the dissimilarity between a pair of communities by considering the amount of shared and unique branch length within their MRCA subtree (i.e., the smallest subtree spanning all sequences from the two communities). It is an unweighted or qualitative measure as only the presence or absence of a sequence is considered. This calculator can be used with the [[phylo.betadiversity]] command. The dissimilarity between communities ''i'' and ''j'' is given by:
+
+<math>D_{MRCA} = \frac{b+c}{a+b+c}</math>
+
+where,
+
+<math>a</math> = the amount of branch length shared by the two communities within the MRCA subtree.
+
+<math>b</math> = the amount of branch length unique to community ''i''.
+
+<math>c</math> = the amount of branch length unique to community ''j''.
+
+=== Mathematical properties ===
+
+* <math>D_{MRCA}</math> is a metric.
+* <math>D_{MRCA} \ge D_{CL}</math>
+
+=== Points-of-interest ===
+
+
+=== Further information ===
+
+Parks, DH and Beiko, RG. (2011). '''Quantifying phylogenetic β-diversity over rooted and unrooted trees'''. (in preparation)

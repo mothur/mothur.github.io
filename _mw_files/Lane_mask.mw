@@ -1,0 +1,10 @@
+The [[lane mask]] is a hard [[filter.seqs | sequence filter]], which David Lane originally proposed in 1992.  We are providing Lane filters that are compatible with the greengenes (7,682 columns) and SILVA databases (50,000 characters).
+
+===greengenes-compatible mask===
+* [[Media:lane1241.gg.filter | lane1241.gg.filter]] - A Lane Masks that comes with the greengenes arb database
+* [[Media:lane1287.gg.filter | lane1287.gg.filter]] - A Lane Masks that comes with the greengenes arb database
+* [[Media:lane1349.gg.filter | lane1349.gg.filter]] - Pat Schloss's transcription of the mask from the Lane paper
+
+
+===SILVA-compatible mask===
+* [[Media:lane1349.silva.filter | lane1349.silva.filter]] - Pat Schloss's transcription of the mask from the Lane paper

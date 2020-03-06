@@ -1,0 +1,23 @@
+The unweighted complete tree (CT) measure calculates the dissimilarity between a pair of communities by considering the amount of shared, unique, and external branch length within a tree spanning ''all'' sequences from ''all'' communities. It is an unweighted or qualitative measure as only the presence or absence of a sequence is considered. This calculator can be used with the [[phylo.betadiversity]] command. The dissimilarity between communities ''i'' and ''j'' is given by:
+
+<math>D_{CT} = \frac{b+c}{a^*+b+c+d}</math>
+
+where,
+
+<math>a^*</math> = the amount of branch length shared by the two communities within the CL subtree.
+
+<math>b</math> = the amount of branch length unique to community ''i''.
+
+<math>c</math> = the amount of branch length unique to community ''j''.
+
+<math>d</math> = the amount of branch length external to communities ''i'' and ''j''.
+
+=== Mathematical properties ===
+
+
+=== Points-of-interest ===
+
+
+=== Further information ===
+
+Parks, DH and Beiko, RG. (2011). '''Quantifying phylogenetic β-diversity over rooted and unrooted trees'''. (in preparation)

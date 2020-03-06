@@ -1,0 +1,38 @@
+Please feel free to add your example data analysis using mothur to the wiki and add the link below.
+
+
+__TOC__
+
+==Pyrosequencing 16S rRNA sequence analysis==
+* Schloss's [[MiSeq SOP]] - Contributed by [[User:Pschloss | Pat Schloss]]
+* Schloss's [[454 SOP]] - Contributed by [[User:Pschloss | Pat Schloss]] - This is the method used in the [http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027310 Schloss et al. PLoS ONE paper].
+* [[Costello stool analysis]] - Contributed by [[User:Pschloss | Pat Schloss]] [Only for historical reference]
+* [[Sogin data analysis]] - Contributed by [[User:Pschloss | Pat Schloss]] [Only for historical reference]
+* [[Pyrosequences from deep anoxic cenotes]] - Contributed by [[User:Jsahl | Jason Sahl]] [Only for historical reference]
+* [[Characterizing community composition along a transect of hypersaline sediments ]] - Contributed by [[User:Ebhollister | Emily B. Hollister]][Only for historical reference]
+
+==Sanger 16S rRNA sequence analysis==
+* [[Esophageal community analysis]] - Contributed by [[User:Pschloss | Pat Schloss]][Only for historical reference]
+* [[Marine community analysis]] - Contributed by [[User:dparks | Donovan Parks]]
+* [[Agricultural soil community analysis]] - Contributed by [[User:Harti | Martin Hartmann]]
+* [[The effects of eutrophication on the structure of bacterial biofilms]] - Contributed by [[User: davidjvanhorn | David J Van Horn]]
+
+==Ion Torrent sequence analysis==
+* [[Ion Torrent sequence analysis using Mothur]] - Contributed by [[User:Suki | Sukithar Rajan]]
+
+==Sanger 16S-ITS rRNA sequence analysis==
+* [[Forest soil community analysis]] - Contributed by [[User:Harti | Martin Hartmann]]
+
+
+==Protein-coding gene analysis==
+* [[Analysis of the aclB gene in a hot spring: a non-16S rRNA gene example]] - Contributed by [[User:kestrel |  Justine Hall]]
+* [[Pyrosequencing of functional genes - basic data processing, comparing alignment strategies, and integrating mothur output with ARB]] - Contributed by [[User:Boakley |  Brian Oakley]]
+* [[Analysis of coxL richness in relation to total community richness across a succession gradient on Kilauea Volcano ]] - Contributed by [[User:cfweber|Carolyn F. Weber]]
+
+==Viral sequence analysis==
+
+* [[Analyzing H1N1 swine-origin Influenza A isolates]] - Contributed by [[User:dparks | Donovan Parks]]
+
+==Other==
+* [[Limits of T-RFLP fingerprinting of microbial communities ]] - Contributed by [[User:blaz | Blaz Stres ]] (under construction)
+* [[Finding/Extracting sequences and manipulating sequence names for analysis]] - Contributed by [[User:Rewski5216 | Ryan Lesniewski ]] (under construction)

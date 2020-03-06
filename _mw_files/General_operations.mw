@@ -1,0 +1,18 @@
+Once one has a general grasp of several important concepts, they should find mothur to be a very powerful and fast program for facilitating their research objectives.  Please keep in mind that mothur is not a polished commercial piece of software, just as your mothur may have one or two flaws, so does ours.  Unlike your mothur, we won't disown you if you bring them up.  Please let us know what could be done to improve the usability of the program and any bugs you encounter.
+
+==Operation==
+* [[Installation]] of mothur from source code
+* [[Execution]] of mothur
+* Available modes:
+**[[Interactive mode]]
+**[[Batch mode]]
+**[[Command line mode]]
+
+==Commands==
+* [[help]] - prints out the system-wide help information
+* [[quit]] - quits the program
+* [[merge.files]] - concatenates two or more files
+* [[system]] - calls a command in the shell
+
+
+Examples of each command are provided within their specific pages, but several users have provided several [[analysis examples]], which use these commands.  An exhaustive list of the commands found in mothur is available within the [[Special:Categories | commands category index]].

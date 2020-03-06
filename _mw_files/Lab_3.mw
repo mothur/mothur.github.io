@@ -1,0 +1,26 @@
+For this tutorial you will be analyzing several data sets using primarily mothur.  Realize that in the coming months all of these tools will be housed within our program mothur.  We are also starting fairly far along in the actual process that you would use in your research.  
+
+==mothur==
+Once you have [[Download mothur | downloaded and installed mothur]] follow the tutorials using the [[Esophageal_community_analysis | esophageal community data]] and [[Sogin data analysis | Sogin's 2006 GS20 pyrosequencing data]].
+
+
+
+==mercator==
+===Installing mercator===
+# Make a new folder called "mercator" by typing "mkdir ~/mercator" at the terminal prompt and then type "cd ~/mercator"
+# Go to:  http://schloss.micro.umass.edu/software/mercator.zip and download the compressed folder into ~/mercator
+# Now type "g++ mercator.C -o mercator" [ this compiles mercator ]
+# Now type "cd .." [ this moves you up one layer out of the mercator folder ]
+
+===Using mercator===
+An important thing to keep in mind for mercator is that the sequences need to be in order so that all sequences from the same treatment are clustered together in the matrix.  This has been done for you.  See Pat for more info on how to do this in arb.
+
+# Within terminal move into your arb_db folder
+# Type "~/mercator/mercator -m 2 -n 1000 esophagus.dist"
+# You want to pick option "1"
+# When it asks for the number of treatments, type "3"
+# When it asks you to enter size for treatment 1 type "203"
+# When it asks you to enter size for treatment 2 type "255"
+# When it asks you to enter size for treatment 1 type "219"
+#[To determine the size of your treatments, go into the file that contains your *.good.groups file and type grep -c "^9" esophagus.good.groups - where 9 is replaced by the starting letter or number in the group sequence and esophagus is replaced with your file name.]
+#The first p-value in the output is the result for HOMOVA, the second is the result for AMOVA.

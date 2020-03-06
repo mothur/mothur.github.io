@@ -1,0 +1,7 @@
+<math>D_{Hellinger} = \sqrt{ \sum_{j=1}^{S_T}  \left ( \sqrt{\frac{S_{Aj}}{S_{A+}}} - \sqrt{\frac{S_{Bj}}{S_{B+}}} \right )^2  } </math>
+
+
+* where <math>S_{Aj}</math> is the abundance of sample A in the jth OTU
+* where <math>S_{Bj}</math> is the abundance of sample B in the jth OTU
+* where <math>S_{A+}</math> denotes the total abundance of sample A
+* where <math>S_{B+}</math> denotes the total abundance of sample B

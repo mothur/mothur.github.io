@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<h1 id="{{page.title | slugify }}">{{ page.title }}</h1>
+
+{{ content }}
+{% include toc.html %}
+{% include permalinks.html %}
+{% include tags.html %}

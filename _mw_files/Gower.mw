@@ -1,0 +1,8 @@
+<math>D_{Gower} = \sum_{j=1}^{S_T} \frac {|S_{Aj} - S_{Bj} |} {(\max S_{ij} - \min S_{ij})} </math>
+
+
+
+* where <math>S_{Aj}</math> is the abundance of sample A in the jth OTU.
+* where <math>S_{Bj}</math> is the abundance of sample B in the jth OTU.
+* where <math>\max S_{ij} </math> is the maximum abundance in the jth OTU over all samples.
+* where <math>\min S_A{ij} </math> is the minimum abundance in the jth OTU over all samples.

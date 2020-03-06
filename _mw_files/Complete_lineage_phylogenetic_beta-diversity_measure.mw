@@ -1,0 +1,23 @@
+The unweighted complete lineage (CL) measure calculates the dissimilarity between a pair of communities by considering the amount of shared and unique branch length within lineages containing sequences from one of the communities and rooted at the MRCA of the sequences from ''all'' communities. It is an unweighted or qualitative measure as only the presence or absence of a sequence is considered. This calculator can be used with the [[phylo.betadiversity]] command. The dissimilarity between communities ''i'' and ''j'' is given by:
+
+<math>D_{CL} = \frac{b+c}{a^*+b+c}</math>
+
+where,
+
+<math>a^*</math> = the amount of branch length shared by the two communities with the CL subtree.
+
+<math>b</math> = the amount of branch length unique to community ''i''.
+
+<math>c</math> = the amount of branch length unique to community ''j''.
+
+=== Mathematical properties ===
+
+
+=== Points-of-interest ===
+
+* This measure is identical to [[unifrac.unweighted | unweighted UniFrac]].
+
+
+=== Further information ===
+
+Parks, DH and Beiko, RG. (2011). '''Quantifying phylogenetic β-diversity over rooted and unrooted trees'''. (in preparation)

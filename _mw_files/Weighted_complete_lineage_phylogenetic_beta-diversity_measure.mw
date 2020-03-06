@@ -1,0 +1,29 @@
+The weighted complete lineage (CL) measure calculates the dissimilarity between a pair of communities by considering the proportion of sequences descendant from branches within lineages containing sequences from one of the communities and rooted at the MRCA of the sequences from ''all'' communities. It is an weighted or quantitative measure as it explicitly considers the abundance of each sequence. This calculator can be used with the [[phylo.betadiversity]] command. The dissimilarity between communities ''i'' and ''j'' is given by:
+
+<math>D_{WCL} = \frac{2\sum_{n=0}^N |p_i^n - p_j^n|W_n}{\sum_{n=0}^N (p_i^n + p_j^n)W_n + \sum_{n=0}^N |p_i^n - p_j^n|W_n} = \frac{\sum_{n=0}^N |p_i^n - p_j^n|W_n}{\sum_{n=0}^N max(p_i^n, p_j^n)W_n}</math>
+
+where,
+
+<math>p_i^n</math> = proportion of sequences from community ''i'' descendant from branch ''n''.
+
+<math>p_j^n</math> = proportion of sequences from community ''j'' descendant from branch ''n''.
+
+<math>W_n</math> = weight or length of branch ''n''.
+
+<math>N</math> = number of branches in the tree spanned by 'all' communities.
+
+=== Mathematical properties ===
+
+* <math>D_{WCL}</math> is metric.
+* The maximum contribution on any branch to the numerator or denominator is its weight or length.
+
+=== Points-of-interest ===
+
+* <math>D_{WCL}</math> is the weighted analog of [[unifrac.unweighted | unweighted UniFrac]].
+* Normalized [[unifrac.weighted | weighted UniFrac]] is not a metric, allows a branch to contribute as much as twice its weight or length to the denominator, and is not the weighted analog of [[unifrac.unweighted | unweighted UniFrac]]. For these reasons we recommend using the weighted CL measure instead of weighted UniFrac.
+* For comparison, we note that [[unifrac.weighted | weighted UniFrac]] can be expressed as:
+<math>D_{WUniFrac} = \frac{\sum_{n=0}^N |p_i^n - p_j^n|W_n}{\sum_{n=0}^N (p_i^n + p_j^n)W_n}</math>
+
+=== Further information ===
+
+Parks, DH and Beiko, RG. (2011). '''Quantifying phylogenetic β-diversity over rooted and unrooted trees'''. (in preparation)

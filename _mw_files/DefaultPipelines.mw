@@ -1,0 +1,40 @@
+==Schloss_SOP==
+The GUI comes with the [[Schloss_SOP | Schloss SOP]] already set for you to use.  You can load a pipeline by clicking on the name. You can run the SOP with Pat's example files or go through the commands inserting your own files.
+
+[[File:DefaultPipelines.jpg | center]]
+
+
+==Reducing_Sequencing_Errors==
+The Reducing_Sequencing_Errors pipeline includes the [[trim.flows]], [[shhh.flows]], [[trim.seqs]] and [[summary.seqs]] commands.
+
+[[File:reducingSeqErrors.jpg | center]]
+
+==Processing_Improved_Sequences==
+The Processing_Improved_Sequences pipeline includes the [[unique.seqs]], [[summary.seqs]], [[align.seqs]], [[screen.seqs]], [[filter.seqs]] and [[pre.cluster]] commands.
+
+[[File:processingImprovedSeqs.jpg | center]]
+
+==Remmoving_Chimeras==
+The Remmoving_Chimeras pipeline includes the [[chimera.uchime]], [[remove.seqs]] and [[summary.seqs]] commands.
+
+[[File:removingChimeras.jpg | center]]
+
+==Removing_Contaminants==
+The Remmoving_Chimeras pipeline includes the [[classify.seqs]], [[remove.lineage]] and [[summary.seqs]] commands.
+
+[[File:removingContaminants.jpg | center]]
+
+==Preparing_Inputs_For_Analysis==
+The Preparing_Inputs_For_Analysis pipeline includes the [[dist.seqs]], [[cluster]], [[make.shared]], [[count.groups]], [[sub.sample]], [[classify.otu]], [[phylotype]], [[clearcut]] commands.
+
+[[File:preparingInputs.jpg | center]]
+
+==Error_Analysis==
+The Error_Analysis pipeline includes the [[filter.seqs]], [[get.groups]], [[seq.error]], [[get.seqs]], [[dist.seqs]], [[cluster]], [[summary.single]] commands.
+
+[[File:errorAnalysis.jpg | center]]
+
+==Analysis==
+The Analysis pipeline includes the [[collect.single]], [[rarefaction.single]], [[catchall]], [[summary.single]], [[heatmap.bin]], [[heatmap.sim]], [[venn]], [[summary.shared]], [[tree.shared]], [[parsimony]], [[unifrac.weighted]], [[unifrac.unweighted]], [[dist.shared]], [[pcoa]], [[nmds]], [[amova]], [[corr.axes]], [[metastats]] and [[phylo.diversity]].
+
+[[File:analysis.jpg | center]]

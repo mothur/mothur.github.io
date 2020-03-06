@@ -37,7 +37,7 @@ github_repo: "mothur.github.io"
 twitter: patschloss
 
 # Should there be feedback buttons at the bottom of pages?
-feedback: true
+feedback: false
 
 # Link to a privacy policy in footer, uncomment and define if wanted
 # privacy: https://domain.com/privacy
@@ -64,7 +64,7 @@ fixedNav: 'true' # true or false
 
 permalink: /blog/:year/:title/
 markdown: kramdown
-exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
+exclude: [_site, _mw_files, CHANGELOG.md, LICENSE, README.md, vendor]
 
 # Collections
 collections:
@@ -78,7 +78,7 @@ defaults:
       path: "_wiki"
       type: "wiki"
     values:
-      layout: page
+      layout: wiki
   -
     scope:
       path: ""

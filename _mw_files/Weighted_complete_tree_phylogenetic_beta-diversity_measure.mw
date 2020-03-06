@@ -1,0 +1,28 @@
+The weighted complete tree (CT) measure calculates the dissimilarity between a pair of communities by considering the proportion of sequences descendant from branches within a tree spanning ''all'' sequences from ''all'' communities. It is an weighted or quantitative measure as it explicitly considers the abundance of each sequence. This calculator can be used with the [[phylo.betadiversity]] command. The dissimilarity between communities ''i'' and ''j'' is given by:
+
+<math>D_{WCL} = \frac{\sum_{n=0}^N |p_i^n - p_j^n|W_n}{\sum_{n=0}^N (\underset{c}{max}(p_c^n) - \underset{c}{min}(p_c^n))W_n}</math>
+
+where,
+
+<math>p_i^n</math> = proportion of sequences from community ''i'' descendant from branch ''n''.
+
+<math>p_j^n</math> = proportion of sequences from community ''j'' descendant from branch ''n''.
+
+<math>\underset{c}{max}(p_c^n)</math> = maximum proportion of sequences from any community ''c'' descendant from branch ''n''.
+
+<math>\underset{c}{min}(p_c^n)</math> = minimum proportion of sequences from any community ''c'' descendant from branch ''n''.
+
+<math>W_n</math> = weight or length of branch ''n''.
+
+<math>N</math> = number of branches in the tree spanned by 'all' communities.
+
+=== Mathematical properties ===
+
+
+=== Points-of-interest ===
+
+* <math>D_{WCL}</math> is the phylogenetic extension of the [[Gower]] OTU-based similarity measure.
+
+=== Further information ===
+
+Parks, DH and Beiko, RG. (2011). '''Quantifying phylogenetic β-diversity over rooted and unrooted trees'''. (in preparation)

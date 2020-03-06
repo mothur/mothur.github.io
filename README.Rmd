@@ -1,0 +1,132 @@
+
+We need to get the mediawiki files from the wiki in mediawiki markup format
+
+```{R}
+library(tidyverse)
+library(xml2)
+library(rvest)
+
+## Read page 1 of Special:AllPages
+page1_url <- "https://mothur.org/wiki/Special:AllPages"
+page1 <- xml2::read_html(page1_url)
+page1_pages <- page1 %>% html_nodes("ul.mw-allpages-chunk") %>% html_nodes("li>:not(.mw-redirect)") %>% html_text()
+
+## Read page 2 of Special:AllPages
+page2_url <- page1 %>% html_nodes("a") %>% html_text() %>% str_subset(., "Next") %>% head(n=1) %>% str_replace(., "Next page \\((.*)\\)", "\\1") %>% paste0("https://mothur.org/w/index.php?title=Special:AllPages&from=", .)
+page2 <- read_html(page2_url)
+page2_pages <-  page2 %>% html_nodes("ul.mw-allpages-chunk") %>% html_nodes("li>:not(.mw-redirect)") %>% html_text()
+
+## Confirm that there's no page 3 of Special:AllPages
+page2 %>% html_nodes("a") %>% html_text() %>% str_detect(., "Next") %>% sum(.) == 0
+
+
+## Page names, inserting an underscore for all spaces
+pages <- c(page1_pages, page2_pages) %>% str_replace_all(., " ", "_") %>% str_replace_all(., "/", "%2F")
+
+
+## Function to download raw mediawiki markup version of each page
+download <- function(x){
+
+	source <- paste0('https://www.mothur.org/w/index.php?title=', x, '&action=raw')
+	destination <- paste0("_mw_files/", x, ".mw") %>%
+			str_replace(., ":.*", ".mw") #remove : and following from filenames
+	download.file(source, destination, quiet=TRUE)
+
+}
+
+dir.create("_mw_files", showWarnings=FALSE)
+pages %>% map(., download)
+```
+
+There are a fair number of spam pages about viagra, gold, dresses, etc. that we'd like to remove
+
+```{bash}
+mkdir -p _helper_files
+ls _mw_files/*mw > _helper_files/keep_files.txt
+
+# manually edit file to remove spam pages
+
+chmod -w _helper_files/keep_files.txt
+```
+
+Let's take those mw files that we downloaded, remove the spam, and convert them to markdown format.
+
+```{R}
+convert_mw_to_md <- function(mediawiki_file){
+
+	#use pandoc to convert mediawiki markup to markdown
+	markdown_file <- str_replace(mediawiki_file, "_mw_files/(.*).mw", "wiki/\\1.md")
+	system(paste0("pandoc -f mediawiki -t markdown ", mediawiki_file, " -o ", markdown_file))
+
+	md <- scan(markdown_file, what=character(), quiet=TRUE, sep="\n", blank.lines.skip=FALSE)
+
+	# convert second level headers denoted with underscores to pound symbols
+	hyphen_lines <- str_which(md, "^---")
+	if(length(hyphen_lines) > 0){
+		md[hyphen_lines-1] <- paste0("## ", md[hyphen_lines-1])
+		md <- md[-hyphen_lines]
+	}
+
+	# convert inline code into code blocks
+	md <- str_replace(md, "[\\\\]+$", "")
+	md <- str_replace(md, "`(.*)`$", "    \\1")
+
+	#formatting for math
+	md <- str_replace_all(md, "\\{\\{", "{\ {")
+	md <- str_replace_all(md, "\\$", "$$")
+
+	# add yaml material
+	title <- str_replace(markdown_file, "wiki/(.*).md", "\\1") %>% str_replace_all(., "_", " ") %>% str_replace_all(., ":.*", "")
+	md <- c(
+						"---",
+						paste0("title: '", title, "'"),
+						"---",
+						md
+					)
+
+	# remove the manually placed TOC
+	md <- md[!str_detect(md, "\\\\_\\\\_TOC\\\\_\\\\_")]
+
+	# remove tags for section headers from the mw files
+ 	md <- str_replace(md, " \\{\\#.*\\}", "")
+	write(md, file=markdown_file)
+
+	# get rid of weird wikilink tags
+ 	md <- str_replace(md, ' "wikilink"', '')
+
+
+
+
+	write(md, file=markdown_file)
+
+}
+
+dir.create("_wiki", showWarnings=FALSE)
+unlink("_wiki/*")
+
+read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
+	mutate(convert = map(file, convert_mw_to_md))
+
+file.rename("wiki/Main_Page.md", "pages/wiki.md")
+```
+
+## Manual fixing
+* Find and replace < and > characters in mathjax code with \gt and \lt
+* Change title of `wiki/index.md`
+
+
+
+## To do...
+* categories
+  - Possible to make tags and have a page for each tag?
+
+
+* Customize header nav bar
+
+* convert wikimedia hyper links
+  - get files that are linked in pages
+  - post files to new location
+  - create redirect pages from wiki path to new path
+  - https://superdevresources.com/redirects-jekyll-github-pages/
+
+* Look for "Special:" pages

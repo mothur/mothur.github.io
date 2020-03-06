@@ -1,0 +1,8 @@
+<math>D_{Memchord} = \sqrt{ \sum_{j=1}^{S_T}  \left ( \frac{S_{Aj}}{\sqrt{S_A}} - \frac{S_{Bj}}{\sqrt {S_B}} \right )^2  } </math>
+
+
+* where <math>S_{T}</math> is the total number of OTUs
+* where <math>S_{Aj}</math> is 1 if the abundance of the jth OTU in sample a is greater than zero, otherwise 0.
+* where <math>S_{Bj}</math> is 1 if the abundance of the jth OTU in sample b is greater than zero, otherwise 0.
+* where <math>S_{a}</math> is the number of nonzero OTUs in sample a.
+* where <math>S_{b}</math> is the number of nonzero OTUs in sample b.

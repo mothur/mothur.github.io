@@ -1,0 +1,56 @@
+'''Mothur's source and executables are now available on [https://github.com/mothur/mothur/releases/latest github].'''  
+
+Downloading an executable version of mothur is the easiest and fastest way to get started.  Please join the [https://groups.io/g/mothur/join mothur email list].  This is a newsletter format so you will only receive an email from us about once a month or so.  
+
+
+
+===Binaries=== 
+* Mac Version requires OSX 10.9 or higher
+
+==Helpful Download links==
+* [[Silva reference files]]
+* [[RDP reference files]]
+* [[Greengenes-formatted_databases | greengenes reference files]]
+* [[Lookup files]]
+
+==Pat's example analyses to get you started==
+* [[MiSeq_SOP]]
+* [[454_SOP]]
+
+==Source Code for previous versions==
+Versions before 1.35.0 only include the source and are provided below. Please note that the wiki documentation only reflects the options available in current version of mothur. You likely want the most recent version of mothur which is avaialble on [https://github.com/mothur/mothur/releases/latest github].
+
+* March 2015 release of mothur - [https://github.com/mothur/mothur/releases/tag/v1.35.1 Version 1.35.1]
+* December 2014 release of mothur - [http://mothur.org/w/images/e/ef/Mothur.1.34.3.zip Version 1.34.3]
+* November 2014 release of mothur - [http://mothur.org/w/images/7/77/Mothur.1.34.1.zip Version 1.34.1]
+* February 2014 release of mothur - [http://mothur.org/w/images/6/65/Mothur.1.33.3.zip Version 1.33.3]
+* October 2013 release of mothur - [http://mothur.org/w/images/9/99/Mothur.1.32.1.zip Version 1.32.1]
+* June 2013 release of mothur - [http://mothur.org/w/images/b/bc/Mothur.1.31.2.zip Version 1.31.2]
+* April 2013 release of mothur - [http://mothur.org/w/images/d/d3/Mothur.1.30.2.zip Version 1.30.2]
+* January 2013 release of mothur - [http://mothur.org/w/images/a/a5/Mothur.1.29.2.zip Version 1.29.2]
+* November 2012 release of mothur - [http://mothur.org/w/images/6/68/Mothur.1.28.0.zip Version 1.28.0]
+* August 2012 release of mothur - [http://mothur.org/w/images/c/cb/Mothur.1.27.0.zip Version 1.27.0]
+* July 2012 release of mothur - [http://mothur.org/w/images/2/20/Mothur.1.26.0.zip Version 1.26.0]
+* May 2012 release of mothur - [http://mothur.org/w/images/7/7b/Mothur.1.25.1.zip Version 1.25.1]
+* March 2012 release of mothur - [http://mothur.org/w/images/0/09/Mothur.1.24.1.zip Version 1.24.1]
+* January 2012 release of mothur - [http://mothur.org/w/images/3/33/Mothur.1.23.1.zip Version 1.23.1]
+* October 2011 release of mothur - [http://mothur.org/w/images/4/4b/Mothur.1.22.2.zip Version 1.22.2]
+* July 2011 release of mothur - [http://mothur.org/w/images/6/64/Mothur.1.21.1.zip Version 1.21.1]
+* June 2011 release of mothur - [http://mothur.org/w/images/4/42/Mothur.1.20.3.zip Version 1.20.3]
+* May 2011 release of mothur - [http://mothur.org/w/images/0/08/Mothur.1.19.4.zip Version 1.19.4]
+* April 2011 release of mothur - [http://mothur.org/w/images/9/96/Mothur.1.18.1.zip Version 1.18.1]
+* March 2011 release of mothur - [http://mothur.org/w/images/9/9b/Mothur.1.17.3.zip Version 1.17.3]
+* February 2011 release of mothur - [http://mothur.org/w/images/8/8c/Mothur.1.16.1.zip Version 1.16.1]
+* December 2010 release of mothur - [http://mothur.org/w/images/a/a5/Mothur.1.15.0.zip Version 1.15.0]
+* November 2010 release of mothur - [http://mothur.org/w/images/2/2d/Mothur.1.14.0.zip Version 1.14.0]
+* September 2010 release of mothur  - [http://mothur.org/w/images/0/05/Mothur.1.13.0.zip Version 1.13.0]
+* August 2010 release of mothur - [http://mothur.org/w/images/4/4d/Mothur.1.12.3.zip Version 1.12.3] 
+* June 2010 release of mothur - [http://mothur.org/w/images/b/b9/Mothur.1.11.0.zip Version 1.11.0] 
+* May 2010 release of mothur - [http://mothur.org/w/images/6/64/Mothur.1.10.0.zip Version 1.10.0] 
+* April 2010 release of mothur - [http://mothur.org/w/images/e/e5/Mothur.1.9.0.zip Version 1.9.0]
+* February 2010 release of mothur - [http://mothur.org/w/images/e/ea/Mothur.1.8.0.zip Version 1.8.0]
+* October 2009 release of mothur - [http://mothur.org/w/images/e/e8/Mothur.1.6.0.zip Version 1.6.0]
+* June 2009 release of mothur - [http://mothur.org/w/images/7/7a/Mothur.1.4.2.zip Version 1.4.2]
+* May 2009 release of mothur - [http://mothur.org/w/images/f/f3/Mothur.1.3.0.zip Version 1.3.0]
+* April 2009 release of mothur - [http://mothur.org/w/images/a/a9/Mothur.1.2.0.zip Version 1.2.0]
+* March 2009 release of mothur - [http://mothur.org/w/images/3/33/Mothur.1.1.0.zip Version 1.1.0]

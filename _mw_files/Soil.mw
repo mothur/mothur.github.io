@@ -1,0 +1,347 @@
+Here is a link to NCBI definition page for the [http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.soil.4.0/ soil] package.
+
+==Required==
+
+===sample_name===
+This is your group name. Mothur will fill this in for you, thanks mom!
+
+===description===
+Description of sample
+
+===sample_title===
+The title for your sample.
+
+ format: {text} 
+
+===seq_methods===
+The free form descriptions of methods used to create the sequencing library.
+
+ format: {text}
+
+===organism===
+You must choose this from the NCBI's list found here. This is controlled vocabulary. Your choices are: activated carbon metagenome, activated sludge metagenome, air metagenome, anaerobic digester metagenome, ant fungus garden metagenome, aquatic metagenome, activated carbon metagenome, activated sludge metagenome, beach sand metagenome, biofilm metagenome, biofilter metagenome, biogas fermenter metagenome, bioreactor metagenome, bioreactor sludge metagenome, clinical metagenome, coal metagenome, compost metagenome, dust metagenome, fermentation metagenome, food fermentation metagenome, food metagenome, freshwater metagenome, freshwater sediment metagenome, groundwater metagenome, halite metagenome, hot springs metagenome, hydrocarbon metagenome, hydrothermal vent metagenome, hypersaline lake metagenome, ice metagenome, indoor metagenome, industrial waste metagenome, mangrove metagenome, marine metagenome, marine sediment metagenome, microbial mat metagenome, mine drainage metagenome, mixed culture metagenome, oil production facility metagenome, paper pulp metagenome, permafrost metagenome, plastisphere metagenome, power plant metagenome, retting rhizosphere metagenome, rock metagenome, salt lake metagenome, saltern metagenome, sediment metagenome, snow metagenome, soil metagenome, stromatolite metagenome, terrestrial metagenome, tomb wall metagenome, wastewater metagenome, wetland metagenome, whale fall metagenome, algae metagenome, ant metagenome, bat metagenome, beetle metagenome, bovine gut metagenome, bovine metagenome, chicken gut metagenome, coral metagenome, echinoderm metagenome, endophyte metagenome, epibiont metagenome, fish metagenome, fossil metagenome, gill metagenome, gut metagenome, honeybee metagenome, human gut metagenome, human lung metagenome, human metagenome, human nasal/pharyngeal metagenome, human oral metagenome, human skin metagenome, insect gut metagenome, insect metagenome, mollusc metagenome, mosquito metagenome, mouse gut metagenome, mouse metagenome, mouse skin metagenome, nematode metagenome, oral metagenome, phyllosphere metagenome, pig metagenome, plant metagenome, primate metagenome, rat metagenome, root metagenome, sea squirt metagenome, seed metagenome, shoot metagenome, skin metagenome, snake metagenome, sponge metagenome, stomach metagenome, symbiont metagenome, termite gut metagenome, termite metagenome, upper respiratory tract metagenome, urine metagenome, viral metagenome, wallaby gut metagenome, wasp metagenome, synthetic metagenome, metagenome. You can modify your choice after submission.
+
+===collection_date===
+Date of sampling, in \"DD-Mmm-YYYY\", \"Mmm-YYYY\" or \"YYYY\" format (single instance, eg., 05-Oct-1990, Oct-1990 or 1990) or ISO 8601 standard \"YYYY-mm-dd\" or \"YYYY-mm-ddThh:mm:ss\" (eg. 1990-11-05 or 1990-11-05T14:41:36)
+
+ format: {timestamp}
+
+===env_biome===
+Major class of ecologically similar communities of plants, animals, and other organisms (eg., desert, coral reef).
+
+ format: {term}
+
+===env_feature===
+Geographical environmental feature (eg., harbor, lake).
+
+ format: {term}
+
+===geo_loc_name===
+Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg \"Canada: Vancouver\" or \"Germany: halfway down Zugspitze, Alps\".
+
+ format: {term}:{term}:{text}
+
+===lat_lon===
+The geographical coordinates of the location where the sample was collected. Specify as degrees latitude and longitude in format \"d[d.dddd] N|S d[dd.dddd] W|E\", eg, 38.98 N 77.11 W.
+
+ format: {float} {float}
+
+===env_material===
+The matter displaced by the sample (eg., air, soil, water).
+
+ format: {term}
+
+===depth===
+Depth is defined as the vertical distance below surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectivly. Depth can be reported as an interval for subsurface samples.
+
+ format: {float} m
+
+===elev===
+The elevation of the sampling site as measured by the vertical distance from mean sea level.
+
+ format: {float} {unit}
+
+==Optional==
+
+===agrochem_addition===
+The addition of fertilizers, pesticides, etc. - amount and time of applications.
+
+ format: {text};{float} {unit};{timestamp}
+
+===al_sat===
+The aluminum saturation (esp. for tropical soils).
+
+ format: {float} {unit}
+
+===al_sat_meth===
+The reference or method used in determining Al saturation.
+
+ format: {PMID|DOI|URL}
+
+===ammonium===
+The concentration of ammonium.
+
+ format: {float} {unit}
+
+===altitude===
+The altitude of the sample is the vertical distance between Earth's surface above Sea Level and the sampled position in the air.
+
+ format: {float} m
+
+===annual_season_precpt===
+The mean annual and seasonal precipitation (mm).
+
+ format: {float} {unit}
+
+===annual_season_temp===
+The mean annual and seasonal temperature (oC).
+
+ format: {float} {unit}
+
+===crop_rotation===
+Whether or not crop is rotated, and if yes, rotation schedule.
+
+ format: {boolean};Rn/{timestamp}/{period}
+
+===cur_land_use===
+The present state of sample sitel.
+
+ format: [, 'cities', 'farmstead', 'industrial areas', 'roads/railroads', 'rock', 'sand', 'gravel', 'mudflats', 'salt flats', 'badlands', 'permanent snow or ice', 'saline seeps', 'mines/quarries', 'oil waste areas', 'small grains', 'row crops', 'vegetable crops', 'horticultural plants (e.g. tulips)', 'marshlands (grass,sedges,rushes)', 'tundra (mosses,lichens)', 'rangeland', 'pastureland (grasslands used for livestock grazing)', 'hayland', 'meadows (grasses,alfalfa,fescue,bromegrass,timothy)', 'shrub land (e.g. mesquite,sage-brush,creosote bush,shrub oak,eucalyptus)', 'successional shrub land (tree saplings,hazels,sumacs,chokecherry,shrub dogwoods,blackberries)', 'shrub crops (blueberries,nursery ornamentals,filberts)', 'vine crops (grapes)', 'conifers (e.g. pine,spruce,fir,cypress)', 'hardwoods (e.g. oak,hickory,elm,aspen)', 'intermixed hardwood and conifers', 'tropical (e.g. mangrove,palms)', 'rainforest (evergreen forest receiving >406 cm annual rainfall)', 'swamp (permanent or semi-permanent water body dominated by woody plants)', 'crop trees (nuts,fruit,christmas trees,nursery trees)']
+
+===cur_vegetation===
+The vegetation classification from one or more standard classification systems, or agricultural crop.
+
+ format: {text}
+
+===cur_vegetation_meth===
+The reference or method used in vegetation classification.
+
+ format: {PMID|DOI|URL}
+
+===depth===
+Depth is defined as the vertical distance below surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectivly. Depth can be reported as an interval for subsurface samples..
+
+ format: {float} m
+
+===drainage_class===
+The drainage classification from a standard system such as the USDA system.
+
+ format: [, 'very poorly', 'poorly', 'somewhat poorly', 'moderately well', 'well', 'excessively drained']
+
+===extreme_event===
+The unusual physical events that may have affected microbial populations.
+
+ format: {timestamp}
+
+===extreme_salinity===
+The measured salinity.
+
+ format: {float} {unit}
+
+===fao_class===
+The soil classification from the FAO World Reference Database for Soil Resources.
+
+ format: {term}
+
+===fire===
+The historical and/or physical evidence of fire.
+
+ format: {timestamp}
+
+===flooding===
+The historical and/or physical evidence of flooding.
+
+ format:  {timestamp}
+
+===heavy_metals===
+The heavy metals present and concentrationsany drug used by subject and the frequency of usage; can include multiple heavy metals and concentrations.
+
+ format: {text};{float} {unit}
+
+===heavy_metals_meth===
+The reference or method used in determining heavy metals.
+
+ format: {PMID|DOI|URL}
+
+===horizon===
+The specific layer in the land area which measures parallel to the soil surface and possesses physical characteristics which differ from the layers above and beneath.
+
+ format: [, 'O horizon', 'A horizon', 'E horizon', 'B horizon', 'C horizon', 'R layer', 'Permafrost']
+
+===horizon_meth===
+The reference or method used in determining the horizon.
+
+ format: {PMID|DOI|URL}
+
+===link_addit_analys===
+Links to additional analysis.
+
+ format: {PMID|DOI|URL}
+
+===link_class_info===
+The link to digitized soil maps or other soil classification information.
+
+ format: {PMID|DOI|URL}
+
+===link_climate_info===
+The link to climate resource.
+
+ format: {PMID|DOI|URL}
+
+===local_class===
+The soil classification based on local soil classification system.
+
+ format: {text} 
+
+===local_class_meth===
+The reference or method used in determining the local soil classification
+
+ format: {PMID|DOI|URL}
+
+===microbial_biomass===
+The the part of the organic matter in the soil that constitutes living microorganisms smaller than 5-10 µm. IF you keep this, you would need to have correction factors used for conversion to the final units, which should be mg C (or N)/kg soil)..
+
+ format: {float} {unit}
+
+===microbial_biomass_meth===
+The reference or method used in determining microbial biomass.
+
+ format: {PMID|DOI|URL}
+
+===ph===
+The pH measurement.
+
+ format: {float} {unit}
+
+===ph_meth===
+The reference or method used in determining pH.
+
+ format: {PMID|DOI|URL}
+
+===pool_dna_extracts===
+Were multiple DNA extractions mixed? how many?.
+
+ format: {boolean};{float} {unit}
+
+===previous_land_use===
+The previous land use and dates.
+
+ format: {text};{timestamp}
+
+===previous_land_use_meth===
+The reference or method used in determining previous land use and dates.
+
+ format: {PMID|DOI|URL}
+
+===profile_position===
+The cross-sectional position in the hillslope where sample was collected.sample area position in relation to surrounding areas.
+
+ format: [, 'summit', 'shoulder', 'backslope', 'footslope', 'toeslope']
+
+===rel_to_oxygen===
+Aerobic or anaerobic
+
+ format: [, 'aerobe', 'anaerobe', 'facultative', 'microaerophilic', 'microanaerobe', 'obligate aerobe', 'obligate anaerobe']
+
+===salinity_meth===
+The reference or method used in determining salinity.
+
+ format: {PMID|DOI|URL}
+
+===samp_collect_device===
+Method or device employed for collecting sample
+
+ format: {text}
+
+===samp_mat_process===
+Processing applied to the sample during or after isolation.
+
+ format: {text|term}
+
+===samp_size===
+The sample size.
+
+ format: {float} {unit}
+
+===samp_weight_dna_ext===
+The weight (g) of soil processed.
+
+ format: {float} g
+
+===sieving===
+The collection design of pooled samples and/or sieve size and amount of sample sieved.
+
+ format: {{text}|{float} {unit}};{float} {unit}
+
+===slope_aspect===
+The the direction a slope faces. While looking down a slope use a compass to record the direction you are facing (direction or degrees); e.g., NW or 315°. This measure provides an indication of sun and wind exposure that will influence soil .
+
+ format: {float} {unit}
+
+===slope_gradient===
+The commonly called \\u201cslope.\\u201d The angle between ground surface and a horizontal line (in percent). This is the direction that overland water would flow. This measure is usually taken with a hand level meter or clinometer.
+
+ format: {float} {unit}
+
+===soil_type===
+The soil series name or other lower-level classification.
+
+ format: {text} 
+
+===soil_type_meth===
+The reference or method used in determining soil series name or other lower-level classification.
+
+ format: {PMID|DOI|URL}
+
+===store_cond===
+Explain how and for how long the soil sample was stored before DNA extraction..
+
+ format: {text};{period}
+
+===texture===
+The the relative proportion of different grain sizes of mineral particles in a soil, as described using a standard system; express as % sand (50 um to 2 mm), silt (2 um to 50 um), and clay (<2 um) with textural name (e.g., silty clay loam) optional.
+
+ format: {float} {unit}
+
+===texture_meth===
+The reference or method used in determining soil texture.
+
+ format: {PMID|DOI|URL}
+
+===tillage===
+The note method(s) used for tilling.
+
+ format: [, 'drill', 'cutting disc', 'ridge till', 'strip tillage', 'zonal tillage', 'chisel', 'tined', 'mouldboard', 'disc plough']
+
+===tot_n===
+The total nitrogen content of the soil Units of g N/kg soil.
+
+ format: {float} {unit}
+
+===tot_n_meth===
+The reference or method used in determining the total N.
+
+ format: {PMID|DOI|URL}
+
+===tot_org_c_meth===
+The reference or method used in determining total organic C.
+
+ format: {PMID|DOI|URL}
+
+===tot_org_carb===
+Definition for soil: total organic C content of the soil units of g C/kg soil. Definition otherwise: total organic carbon content.
+
+ format: {float} {unit}
+
+===water_content_soil===
+The water content (g/g or cm3/cm3).
+
+ format: {float} [g/g|cm3/cm3]
+
+===water_content_soil_meth===
+The reference or method used in determining the water content of soil.
+
+ format: {PMID|DOI|URL}
+
+===user_defined===
+You may create your own optional fields to describe your sample.
