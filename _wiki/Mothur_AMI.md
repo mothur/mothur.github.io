@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur AMI'
 ---
 We get asked a lot of questions by mothur users. Perhaps the one I hate
@@ -37,8 +35,6 @@ share the name of the AMI in your manuscript. I could then take that AMI
 and add data or add an analysis to supplement yours. But we\'re getting
 ahead of ourselves. I\'ve done step one - creating an AMI that is
 tricked out for mothur users that you can build upon for your own use.
-
-{% include toc.html %}
 
 ## Getting set up
 

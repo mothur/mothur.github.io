@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Esophageal community analysis'
 ---
 In this tutorial we will complete a fairly comprehensive [esophageal
@@ -11,8 +9,6 @@ Esophagus.zip](Media:Esophagus.zip) archive. These sequences
 were originally published by [Pei et al.
 (2004)](http://www.ncbi.nlm.nih.gov/pubmed/15016918?ordinalpos=6&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum).
 
-
-{% include toc.html %}
 
 ## Getting started
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.35.0'
 ---
 We have an exciting new release of mothur for you with the release of
@@ -51,8 +49,6 @@ output from mothur to generate publication quality figures and
 leveraging the powerful tools that R developers have created for doing
 statistical and ecological analyses.
 
-
-{% include toc.html %}
 
 ## New commands
 

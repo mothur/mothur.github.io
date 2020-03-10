@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Greengenes-formatted databases'
 ---
 The greengenes-based alignment is 7,682 columns wide. Because of the

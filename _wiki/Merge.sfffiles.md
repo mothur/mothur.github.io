@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Merge.sfffiles'
 ---
 Merge.sfffiles The merge.sfffiles command reads a sff file or a file
 containing a list of sff files and merges the individual files into a
 single sff file.
-
-{% include toc.html %}
 
 ## Default Settings
 

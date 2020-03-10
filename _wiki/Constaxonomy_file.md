@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Constaxonomy file'
 ---
 The constaxonomy file is created by

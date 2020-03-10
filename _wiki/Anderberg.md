@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Anderberg'
 ---
 The [anderberg](anderberg) calculator returns the Anderberg

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.otulist'
 ---
 The **get.otulist** command parses a list file and creates an .otu file
@@ -9,8 +7,6 @@ number the second column is a list of sequences in that OTU. For this
 tutorial you should download and decompress
 [AmazonData.zip](Media:AmazonData.zip).
 
-
-{% include toc.html %}
 
 ### Default settings
 

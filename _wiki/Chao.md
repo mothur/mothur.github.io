@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Chao'
 ---
 The [chao](chao) calculator returns the Chao1 richness

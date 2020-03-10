@@ -1,6 +1,4 @@
 ---
-
-
 title: 'File Types'
 ---
 Mothur\'s file types and formats:

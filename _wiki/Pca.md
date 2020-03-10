@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Pca'
 ---
 The [pca](pca) command requires a shared or relabund file.
 
-
-{% include toc.html %}
 
 ## Default settings
 

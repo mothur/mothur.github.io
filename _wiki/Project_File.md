@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Project File'
 ---
 The project file is used to provide the information about your project
 to mothur needed to build your submission data. Columns should be tab
 delimited. You can download this file [
 here](Media:Test.project.zip).
-
-{% include toc.html %}
 
 ## Submission Name
 

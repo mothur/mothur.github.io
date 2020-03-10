@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sobs'
 ---
 The [sobs](sobs) calculator returns the number of observed

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Ochiai'
 ---
 The [ochiai](ochiai) calculator returns the Ochiai index

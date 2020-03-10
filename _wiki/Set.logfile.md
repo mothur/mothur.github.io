@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Set.logfile'
 ---
 You may want to give your logfile a specific name or append a series of
 logfiles. The set.logfile command allows you to do this.
-
-{% include toc.html %}
 
 ## Default Options
 

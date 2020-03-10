@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Summary.seqs'
 ---
 The [summary.seqs](summary.seqs) command will summarize the
 quality of sequences in an unaligned or aligned fasta-formatted sequence
 file.
 
-
-{% include toc.html %}
 
 ## Default Setting
 

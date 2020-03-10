@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Contribute code'
 ---
 Thanks for wanting to be a part of the mothur project! \...

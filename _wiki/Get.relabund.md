@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Get.relabund'
 ---
 The get.relabund command calculates the relative abundance of each otu
 in a sample. It outputs a .relabund file.
-
-{% include toc.html %}
 
 ## Default Settings
 

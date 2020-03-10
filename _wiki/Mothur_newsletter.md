@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur newsletter'
 ---
 You can subscribe to the [mothur

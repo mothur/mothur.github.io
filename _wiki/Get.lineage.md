@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.lineage'
 ---
 The [get.lineage](get.lineage) command reads a taxonomy file
@@ -14,8 +12,6 @@ generate new files for each of those containing only the selected
 sequences. To complete this tutorial, you are encouraged to obtain the [
 AbRecovery](Media:AbRecovery.zip) dataset.
 
-
-{% include toc.html %}
 
 ## Default Settings
 

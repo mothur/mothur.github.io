@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Degap.seqs'
 ---
 The degap.seqs command reads a fasta file and outputs a .ng.fasta

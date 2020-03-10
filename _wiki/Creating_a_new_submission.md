@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Creating a new submission'
 ---
 You have finished your analysis and now you want to share your data.

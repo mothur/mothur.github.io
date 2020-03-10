@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Bin.seqs'
 ---
 [bin.seqs](bin.seqs) prints out a fasta-formatted file where
@@ -9,8 +7,6 @@ output may be helpful for generating primers specific to an OTU or for
 classification of sequences. For this tutorial, download and decompress
 [AmazonData.zip](Media:AmazonData.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Weighted UniFrac algorithm'
 ---
 The [weighted UniFrac algorithm](weighted_UniFrac_algorithm)

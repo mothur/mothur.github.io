@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Cluster'
 ---
 Once a distance matrix gets read into mothur, the
@@ -28,8 +26,6 @@ developers and we\'ll see what we can do. The opticlust algorithm is the
 default option. For this tutorial you should download the [
 Final.zip](Media:Final.zip) file and decompress it.
 
-
-{% include toc.html %}
 
 ## Default settings
 

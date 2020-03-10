@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Shhh.flows'
 ---
 The [shhh.flows](shhh.flows) command is Pat Schloss\'s
@@ -29,8 +27,6 @@ shhh.flows the probability of observing an intensity value for a given
 homopolymer length. You can get mothur-compatible files [
 here](lookup_files) and will need to put these files either
 with your data or the mothur executable.
-
-{% include toc.html %}
 
 ## Default settings
 

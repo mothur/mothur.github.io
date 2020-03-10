@@ -1,6 +1,4 @@
 ---
-
-
 title: 'OTU-based approaches'
 ---
 [OTU-based approaches](OTU-based_approaches) enable you to

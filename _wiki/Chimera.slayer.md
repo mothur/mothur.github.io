@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Chimera.slayer'
 ---
 The chimera.slayer command reads a fasta file and reference file and
@@ -14,8 +12,6 @@ version of megablast/formatdb that you need can be found in
 <ftp://ftp.ncbi.nlm.nih.gov/blast/executables/release/2.2.25/> or they
 are included with the executable versions of mothur.
 
-
-{% include toc.html %}
 
 ## Default Settings
 

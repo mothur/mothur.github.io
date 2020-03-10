@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Batch mode'
 ---
 In [batch mode](batch_mode) you can supply a file with a list

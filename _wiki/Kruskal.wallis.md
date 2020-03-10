@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Kruskal.wallis'
 ---
 The kruskal.wallis command will find the [Kruskal Wallis one way
@@ -8,8 +6,6 @@ analysis of
 variance](http://en.wikipedia.org/wiki/Kruskal–Wallis_one-way_analysis_of_variance)
 for each OTU. To follow along with this tutorial you can download the
 example files.
-
-{% include toc.html %}
 
 ## Default Setting
 

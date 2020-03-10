@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Make.fastq'
 ---
 The make.fastq command reads a fasta file and a quality file and creates
 a fastq file.
-
-{% include toc.html %}
 
 ## Default settings
 

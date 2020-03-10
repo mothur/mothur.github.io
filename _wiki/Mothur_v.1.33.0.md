@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.33.0'
 ---
 We are happy to be releasing [mothur
@@ -43,8 +41,6 @@ mothur!
 
 Pat PS. I\'m now on twitter (\@PatSchloss) and you can feel free to ask
 mothur-related questions there (in 140 characters or less!)
-
-{% include toc.html %}
 
 ## New commands
 

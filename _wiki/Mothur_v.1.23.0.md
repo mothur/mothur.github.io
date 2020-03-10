@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.23.0'
 ---
 We are happy to release our first offering of 2012 -
@@ -35,8 +33,6 @@ pdschloss\@gmail.com to reserve your seat.
 Keep the citations coming\...
 
 Pat Schloss
-
-{% include toc.html %}
 
 ## New commands
 

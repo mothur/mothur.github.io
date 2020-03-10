@@ -1,6 +1,4 @@
 ---
-
-
 title: 'File File'
 ---
 The File file is 2, 3 or 4 column file containing the fastq files. Tired

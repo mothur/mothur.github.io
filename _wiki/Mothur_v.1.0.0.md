@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.0.0'
 ---
 February 13, 2009

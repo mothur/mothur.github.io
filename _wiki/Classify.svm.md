@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Classify.svm'
 ---
 The [classify.svm](classify.svm) command generates a summary
@@ -20,8 +18,6 @@ the results although this adds time to the process. The user may be able
 to reduce the run time by examining the summary and selecting the
 best-performing parameters to be specified as part of the command.
 
-
-{% include toc.html %}
 
 ## Default settings
 

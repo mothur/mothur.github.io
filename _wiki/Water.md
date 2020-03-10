@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Water'
 ---
 Here is a link to NCBI definition page for the
 [water](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.water.4.0/)
 package.
-
-{% include toc.html %}
 
 ## Required
 

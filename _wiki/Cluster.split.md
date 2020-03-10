@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Cluster.split'
 ---
 The cluster.split command can be used to assign sequences to OTUs and
@@ -29,8 +27,6 @@ Final.zip](Media:Final.zip) file and decompress it.
 
 There are two part to the cluster.split command the splitting of your
 files into distinct groupings and the clustering of these groupings.
-
-{% include toc.html %}
 
 ## Splitting your files
 

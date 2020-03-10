@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Thetayc'
 ---
 The [thetayc](thetayc) calculator returns the Yue & Clayton

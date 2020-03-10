@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Shannon'
 ---
 The [shannon](shannon) calculator returns the Shannon

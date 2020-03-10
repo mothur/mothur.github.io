@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Unweighted UniFrac algorithm'
 ---
 The [unweighted UniFrac

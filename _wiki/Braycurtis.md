@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Braycurtis'
 ---
 The [braycurtis](braycurtis) calculator returns the

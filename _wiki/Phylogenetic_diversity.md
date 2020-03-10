@@ -1,10 +1,6 @@
 ---
-
-
 title: 'Phylogenetic diversity'
 ---
-{% include toc.html %}
-
 ## inputs
 
 ### required

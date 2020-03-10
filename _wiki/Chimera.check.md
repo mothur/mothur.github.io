@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Chimera.check'
 ---
 Use chimeraCheck approach \.... Note: following the RDP model this
 method does not determine whether or not a sequence is chimeric, but
 allows you to determine that based on the IS values produced.
 
-
-{% include toc.html %}
 
 ## Algorithm
 

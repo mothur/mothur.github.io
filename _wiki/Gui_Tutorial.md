@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Gui Tutorial'
 ---
 ## Getting Started

@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Silva reference files'
 ---
 If you use the SILVA reference files you should be aware of their
 [dual-use license](https://www.arb-silva.de/silva-license-information).
-
-{% include toc.html %}
 
 ## Release 132
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.31.0'
 ---
 We are very happy to announce the release of [mothur
@@ -42,8 +40,6 @@ sitting at 983 citations. Thank you, thank you, thank you! We\'ll be
 watching Web of Knowledge to see who gets us to 1000 and will be sending
 them a special gift in appreciation. We\'re honored that we\'ve been
 able to help so many people do great research!
-
-{% include toc.html %}
 
 ## New commands
 

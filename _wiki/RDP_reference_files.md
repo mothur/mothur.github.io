@@ -1,10 +1,6 @@
 ---
-
-
 title: 'RDP reference files'
 ---
-{% include toc.html %}
-
 ## Version 16
 
 The [publicly released version

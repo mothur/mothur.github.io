@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Libshuff'
 ---
 The [libshuff](libshuff) command implements the
@@ -15,8 +13,6 @@ correction for multiple comparisons (e.g. Bonferroni\'s correction) must
 be applied. The files that we discuss in this tutorial can be obtained
 by downloading the [ AmazonData.zip ](Media:_AmazonData.zip)
 file and decompressing it.
-
-{% include toc.html %}
 
 ## Default settings
 

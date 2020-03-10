@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur license'
 ---
 mothur source code is available under the [GNU General Public

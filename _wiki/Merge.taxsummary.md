@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Merge.taxsummary'
 ---
 The [merge.taxsummary](merge.taxsummary) command will merge

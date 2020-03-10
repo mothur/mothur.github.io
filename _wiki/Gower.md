@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Gower'
 ---
 $$D_{Gower} = \sum_{j=1}^{S_T} \frac {|S_{Aj} - S_{Bj} |} {(\max S_{ij} - \min S_{ij})}$$

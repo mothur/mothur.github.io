@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Align.check'
 ---
 The **align.check** command allows you to calculate the number of
@@ -10,8 +8,6 @@ counting the number of \~, \#, -, and = signs. To run through the
 command below use the greengenes [secondary structure
 map](secondary_structure_map) and the [ esophagus
 dataset](Media:Esophagus.zip).
-
-{% include toc.html %}
 
 ## Meaning of symbols
 

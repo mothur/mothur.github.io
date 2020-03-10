@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Unifrac.weighted'
 ---
 The [unifrac.weighted](unifrac.weighted) comand implements
@@ -17,8 +15,6 @@ obtained by downloading the [
 AbRecovery.zip](Media:AbRecovery.zip) file and decompressing
 it.
 
-
-{% include toc.html %}
 
 ## unifrac.weighted()
 

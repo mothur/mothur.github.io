@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sabund file'
 ---
 The data reported in an sabund file is appropriate for plotting in a

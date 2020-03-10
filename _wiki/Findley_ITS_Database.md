@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Findley ITS Database'
 ---
 The [Segre Lab](http://www.genome.gov/10000354) at NHGRI has provided

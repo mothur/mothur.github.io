@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Name file'
 ---
 The name file is used to show the relationship between a representative

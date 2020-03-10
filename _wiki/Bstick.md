@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Bstick'
 ---
 The [bstick](bstick) calculator returns the

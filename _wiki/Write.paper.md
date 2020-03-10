@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Write.paper'
 ---
 The [write.paper](write.paper) command will take in your
@@ -15,8 +13,6 @@ sequence curation, combine data from different variable regions and
 sequencing platforms, read your mind (or your PIs mind), run alpha,
 beta, and population-based analyses, and even write the manuscript for
 you.
-
-{% include toc.html %}
 
 ## Default settings
 

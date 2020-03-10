@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Chimera Detection Commands'
 ---
 ## Recommended Tools

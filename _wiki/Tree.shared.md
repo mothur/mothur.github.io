@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Tree.shared'
 ---
 The [tree.shared](tree.shared) command will generate a
@@ -15,8 +13,6 @@ Dissimilarity is calculated as one minus the similarity. This tutorial
 uses the data files in [
 AbRecovery.zip](Media:AbRecovery.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

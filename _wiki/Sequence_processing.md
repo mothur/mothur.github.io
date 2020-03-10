@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sequence processing'
 ---
 mothur provides a number of [sequence

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Make.biom'
 ---
 The [make.biom](make.biom) command is design to allow you to
@@ -8,8 +6,6 @@ convert your [shared file](shared_file) to a biom file.
 <http://biom-format.org/documentation/biom_format.html> (Note: mothur
 currently supports format version 1.0) To run this tutorial please
 download, [ Example Files](Media:Make_biom_files.zip)
-
-{% include toc.html %}
 
 ## Default Settings
 

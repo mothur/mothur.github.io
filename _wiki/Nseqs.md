@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Nseqs'
 ---
 The [nseqs](nseqs) calculator returns the number of sequences

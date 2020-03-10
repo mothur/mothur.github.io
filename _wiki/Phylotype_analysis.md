@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Phylotype analysis'
 ---
 ## General commands

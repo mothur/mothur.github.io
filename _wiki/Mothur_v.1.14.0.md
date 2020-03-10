@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.14.0'
 ---
 We are happy to announce the release of [ mothur
@@ -50,8 +48,6 @@ coming\...
 Pat Schloss
 
 \_\_NOTOC\_\_
-
-{% include toc.html %}
 
 ## New commands
 

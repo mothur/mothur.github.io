@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Ace'
 ---
 The [ace](ace) calculator returns the ACE richness estimate

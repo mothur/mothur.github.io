@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Design File'
 ---
 The design file is used to assign samples to a specific treatments, or

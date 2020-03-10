@@ -1,6 +1,4 @@
 ---
-
-
 title: 'How to Resolve Readline Issues'
 ---
 If you are building mothur from source and want to use the readline

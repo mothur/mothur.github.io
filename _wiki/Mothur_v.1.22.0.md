@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.22.0'
 ---
 After a three month layoff, we are happy to announce the release of
@@ -50,8 +48,6 @@ let us know.
 As always, keep the citations coming! :)
 
 Pat Schloss
-
-{% include toc.html %}
 
 ## New commands
 

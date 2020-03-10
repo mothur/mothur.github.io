@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Structpearson'
 ---
 $$D_{Structpearson} = 1 - \frac{\sum_{j=1}^{S_T} \left ( S_{Aj} - \left( \frac{S_{A+}}{S_T}\right) \right ) \left ( S_{Bj} - \left( \frac{S_{B+}}{S_T}\right) \right )}  {\sqrt{\sum_{j=1}^{S_T} \left ( S_{Aj} - \left( \frac{S_{A+}}{S_T}\right) \right )^2} \sqrt { \sum_{j=1}^{S_T} \left ( S_{Bj} - \left( \frac{S_{B+}}{S_T}\right) \right )^2}}$$

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Quit'
 ---
 The [quit](quit) command takes no options and can be called

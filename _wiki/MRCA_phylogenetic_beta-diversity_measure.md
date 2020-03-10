@@ -1,6 +1,4 @@
 ---
-
-
 title: 'MRCA phylogenetic beta-diversity measure'
 ---
 The unweighted most recent common ancestor (MRCA) measure calculates the

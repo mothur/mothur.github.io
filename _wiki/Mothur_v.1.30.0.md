@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.30.0'
 ---
 We are very happy to announce the release of [mothur
@@ -55,8 +53,6 @@ next workshops are April 15-17 and May 6-8. Email Pat for more
 information. Thanks as always for everyone\'s feedback and citations.
 mothur is far and away the most cited bioinformatics program used to
 analyze 16S rRNA gene sequences. Thank you!
-
-{% include toc.html %}
 
 ## New commands
 

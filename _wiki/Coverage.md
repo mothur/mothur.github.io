@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Coverage'
 ---
 The [coverage](coverage) calculator returns Good\'s coverage

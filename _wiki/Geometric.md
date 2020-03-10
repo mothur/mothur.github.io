@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Geometric'
 ---
 The [geometric](geometric) calculator returns the

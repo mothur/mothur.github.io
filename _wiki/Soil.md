@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Soil'
 ---
 Here is a link to NCBI definition page for the
 [soil](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.soil.4.0/)
 package.
-
-{% include toc.html %}
 
 ## Required
 

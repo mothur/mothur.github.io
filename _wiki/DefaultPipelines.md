@@ -1,10 +1,6 @@
 ---
-
-
 title: 'DefaultPipelines'
 ---
-{% include toc.html %}
-
 ## Schloss\_SOP
 
 The GUI comes with the [ Schloss SOP](Schloss_SOP) already

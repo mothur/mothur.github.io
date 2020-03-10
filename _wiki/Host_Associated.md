@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Host Associated'
 ---
 Here is a link to NCBI definition page for the [host\_associated
 package](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.host-associated.4.0/).
-
-{% include toc.html %}
 
 ## Required
 

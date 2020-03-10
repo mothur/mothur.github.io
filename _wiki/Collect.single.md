@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Collect.single'
 ---
 [collect.single](collect.single) generates collector\'s
@@ -13,8 +11,6 @@ job of sampling and can trust the last value in the curve. Otherwise,
 you need to keep sampling. For this tutorial you should download and
 decompress [AmazonData.zip](Media:AmazonData.zip)
 
-
-{% include toc.html %}
 
 ## Default settings
 

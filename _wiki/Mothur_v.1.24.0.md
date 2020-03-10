@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.24.0'
 ---
 We are happy to announce the release of [mothur
@@ -32,8 +30,6 @@ reference alignment.
 
 Keep the mothur citations coming and you know where to send the six
 packs!
-
-{% include toc.html %}
 
 ## New commands
 

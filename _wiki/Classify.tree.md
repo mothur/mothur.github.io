@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Classify.tree'
 ---
 The classify.tree command is used to get a consensus taxonomy for each
 node on a tree.
-
-{% include toc.html %}
 
 ## Default Setting
 

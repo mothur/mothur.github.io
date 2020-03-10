@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Taxonomy File'
 ---
 The taxonomy file is created by the

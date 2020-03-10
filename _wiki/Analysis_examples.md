@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Analysis examples'
 ---
 Please feel free to add your example data analysis using mothur to the
 wiki and add the link below.
 
-
-{% include toc.html %}
 
 ## Pyrosequencing 16S rRNA sequence analysis
 

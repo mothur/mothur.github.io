@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Analyzing H1N1 swine-origin Influenza A isolates'
 ---
 [link=<http://commons.wikimedia.org/wiki/File:H1N1_influenza_virus.jpg%7Cright%7Cthumb%7C200px%7CH1N1>
@@ -19,8 +17,6 @@ sufficient to capture the diversity of this protein. . This protein is
 of particular interest as it is responsible for binding to receptor
 sites on a target cell.
 
-
-{% include toc.html %}
 
 ## Data Preparation
 

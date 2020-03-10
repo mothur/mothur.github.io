@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Make.lookup'
 ---
 The make.lookup command allows you to create custom lookup files for the
 [shhh.flows](shhh.flows) command. To run this tutorial please
 download: [ MakeLookup.zip](Media:MakeLookup.zip).
-
-{% include toc.html %}
 
 ## Default Options
 

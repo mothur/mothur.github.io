@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Analysis of the aclB gene in a hot spring'
 ---
 Although the majority of community analyses are done with 16S rRNA gene
@@ -33,8 +31,6 @@ The sample names used in the paper and in this tutorial are different
 -   COF\_65.7 = 3Y35
 -   COF\_74.1 = 263CP
 
-
-{% include toc.html %}
 
 ## Getting Started
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.seqs'
 ---
 The [get.seqs](get.seqs) command takes a list of sequence
@@ -15,8 +13,6 @@ help screen a sequence collection. To complete this analysis, you need
 to download the folder compressed in the [
 Esophagus.zip](Media:Esophagus.zip) archive.
 
-
-{% include toc.html %}
 
 ## Options
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Cluster.fit'
 ---
 The [cluster.fit](cluster.fit) command can be used to assign
@@ -19,8 +17,6 @@ option. For this tutorial you should download the [
 OptiFitDataSets.zip](Media:OptiFitDataSets.zip) file and
 decompress it.
 
-
-{% include toc.html %}
 
 ## Default settings
 

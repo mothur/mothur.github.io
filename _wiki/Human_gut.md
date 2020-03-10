@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Human gut'
 ---
 Here is a link to NCBI definition page for the [human\_gut
 package](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.human-gut.4.0/).
-
-{% include toc.html %}
 
 ## Required
 

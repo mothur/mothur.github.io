@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mantel'
 ---
 The [mantel](mantel) command calculates the Mantel
@@ -8,8 +6,6 @@ correlation coefficient between two matrices. Sokal, R. R., & Rohlf, F.
 J. (1995). Biometry, 3rd edn. New York: Freeman. To run the tutorial
 below please download the [ files](Media:VegEnvData.zip) and
 follow along\...
-
-{% include toc.html %}
 
 ## Default Settings
 

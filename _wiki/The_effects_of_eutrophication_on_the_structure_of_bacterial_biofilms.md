@@ -1,10 +1,6 @@
 ---
-
-
 title: 'The effects of eutrophication on the structure of bacterial biofilms'
 ---
-{% include toc.html %}
-
 ## Introduction:
 
 Biofilms are the dominate form of microbial life in aquatic ecosystems

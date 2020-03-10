@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.communitytype'
 ---
 The get.communitytype command employs probabilistic modelling to cluster
@@ -29,8 +27,6 @@ partitions until a local minimum Laplace value is observed. As a result
 a number of output files will be generated and it is up to the user to
 select the correct [ relabund](Relabund_file) file to
 describe the metacommunities.
-
-{% include toc.html %}
 
 ## Defaults
 

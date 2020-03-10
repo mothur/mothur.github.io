@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Get.sabund'
 ---
 The [get.sabund](get.sabund) command will generate an [sabund
 file](sabund_file) based on the OTU data that you have read
 into mothur.
-
-{% include toc.html %}
 
 ## Default Options
 

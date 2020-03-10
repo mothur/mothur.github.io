@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Efron'
 ---
 The [efron](efron) calculator returns the Efron estimate of

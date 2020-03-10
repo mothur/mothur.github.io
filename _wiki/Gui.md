@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Gui'
 ---
 1.28.0 - Mac Version - 10.7

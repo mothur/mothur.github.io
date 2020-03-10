@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.4.0'
 ---
 We are happy to release [mothur v.1.4.0](mothur_v.1.4.0)
@@ -69,8 +67,6 @@ essentially parallelize the [cluster](cluster) command. If
 you have ideas, please don\'t hesitate to get in touch.
 
 Happy Fathur\'s Day!
-
-{% include toc.html %}
 
 ## Major updates
 

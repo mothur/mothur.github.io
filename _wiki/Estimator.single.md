@@ -9,8 +9,6 @@ files representing the data provided by the authors,
 [EstimatorSingleData.zip](Media:_EstimatorSingleData.zip)
 
 
-{% include toc.html %}
-
 ## Default settings
 
 By default, the estimator.single() command will run the metroig (ig):

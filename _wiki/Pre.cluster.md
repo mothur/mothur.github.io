@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Pre.cluster'
 ---
 The [pre.cluster](pre.cluster) command implements a
@@ -19,8 +17,6 @@ sequences. The advantage of our approach is that the algorithm works on
 aligned sequences instead of a distance matrix. This is advantageous
 because by pre-clustering you remove a large number of sequences making
 the distance calculation much faster.
-
-{% include toc.html %}
 
 ## Default settings
 

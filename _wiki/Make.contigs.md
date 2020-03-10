@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Make.contigs'
 ---
 The make.contigs command reads a forward fastq file and a reverse fastq
 file and outputs new fasta and report files.
-
-{% include toc.html %}
 
 ## Default Settings
 

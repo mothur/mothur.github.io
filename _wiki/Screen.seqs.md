@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Screen.seqs'
 ---
 The [screen.seqs](screen.seqs) command enables you to keep
@@ -9,8 +7,6 @@ enables you to cull those sequences not meeting the criteria from a
 names, group, contigsreport, alignreport and summary file. As an
 example, we will use the example from the [Sogin data
 analysis](Sogin_data_analysis) example.
-
-{% include toc.html %}
 
 ## Default settings
 

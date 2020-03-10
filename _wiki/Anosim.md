@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Anosim'
 ---
 Referenced: Clarke, K. R. (1993). Non-parametric multivariate analysis
@@ -9,8 +7,6 @@ of changes in community structure. \_Australian Journal of Ecology\_ 18,
 
 To run the tutorial below please download the [
 files](Media:DuneData.zip) and follow along\...
-
-{% include toc.html %}
 
 ## Default Settings
 

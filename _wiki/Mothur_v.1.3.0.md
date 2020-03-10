@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.3.0'
 ---
 We are happy to release [mothur v.1.3.0](mothur_v.1.3.0)
@@ -60,8 +58,6 @@ in May. It was a golden opportunity to further milk the name, but so it
 goes. But you can look forward to a Fathur\'s Day release.
 
 \_\_NOTOC\_\_
-
-{% include toc.html %}
 
 ## Minor updates
 

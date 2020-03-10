@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Split.groups'
 ---
 The [split.groups](split.groups) command reads a [
@@ -10,8 +8,6 @@ flow](flow_file) and [ group](group_file "wikilink") file or
 and generates a fasta, flow or fastq files for each group in the
 groupfile. To run this tutorial please download [ Esophagus
 dataset](Media:Esophagus.zip).
-
-{% include toc.html %}
 
 ## Default Settings
 

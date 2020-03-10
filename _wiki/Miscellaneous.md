@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Miscellaneous'
 ---
 Here is a link to NCBI definition page for the
 [miscellaneous](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.miscellaneous.4.0/)
 package.
-
-{% include toc.html %}
 
 ## Required
 

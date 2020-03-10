@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Qstat'
 ---
 The [qstat](qstat) calculator returns the Q statistic for an

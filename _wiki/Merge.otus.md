@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Merge.otus'
 ---
 The [merge.otus](merge.otus) command will combine OTUs based
 on taxonomic assignment.
-
-{% include toc.html %}
 
 ## Default Settings
 

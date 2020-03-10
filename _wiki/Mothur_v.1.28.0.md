@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.28.0'
 ---
 We are happy to release [mothur v.1.28.0](mothur_v.1.28.0) on
@@ -31,8 +29,6 @@ gifts and flowers you continue to send us. One of the students in the
 lab would like to see a little more love come our way and would like you
 all to know that if things don\'t improve, we will start posting
 advertisements in the mothur window..
-
-{% include toc.html %}
 
 ## New commands
 

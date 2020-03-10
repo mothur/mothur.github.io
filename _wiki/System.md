@@ -1,6 +1,4 @@
 ---
-
-
 title: 'System'
 ---
 The [system](system) command allows the user to run programs

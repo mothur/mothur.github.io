@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Pcr.seqs'
 ---
 The [pcr.seqs](pcr.seqs) will trim inputted sequences based
 on a variety of user-defined options.
-
-{% include toc.html %}
 
 ## Default Settings
 

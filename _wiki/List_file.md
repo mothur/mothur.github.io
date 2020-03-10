@@ -1,6 +1,4 @@
 ---
-
-
 title: 'List file'
 ---
 The file ending in \"list\" contains data indicating the sequences that

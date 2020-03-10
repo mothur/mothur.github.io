@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.11.0'
 ---
 In honor of the upcoming fathur\'s day weekend we are happy to release

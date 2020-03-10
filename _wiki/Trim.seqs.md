@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Trim.seqs'
 ---
 The [trim.seqs](trim.seqs) command provides the preprocessing
@@ -18,8 +16,6 @@ data](Media:SahlRawData.zip) used by Sahl in his [ example
 analysis of deep anoxic
 cenotes](Pyrosequences_from_deep_anoxic_cenotes).
 
-
-{% include toc.html %}
 
 ## Default settings
 

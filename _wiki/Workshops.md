@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Workshops'
 ---
 Throughout 2019, Pat will offer 6 workshops on mothur and programming in

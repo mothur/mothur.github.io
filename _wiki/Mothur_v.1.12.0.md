@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.12.0'
 ---
 We are happy to announce the release of
@@ -33,8 +31,6 @@ As always, you can feel free to shoot us emails at
 mothur.bugs\@gmail.com, post any problems or praise at the forum, and
 \"like\" us on facebook. We look forward to your continued support,
 suggestions, and questions.
-
-{% include toc.html %}
 
 ## New commands
 

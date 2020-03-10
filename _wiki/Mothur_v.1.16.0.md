@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.16.0'
 ---
 We are happy to announce the release of [mothur
@@ -43,8 +41,6 @@ Within one year of publishing mothur, it received over 60 citations -
 thank you! Feel free to keep the [six packs](http://leinie.com/red.html)
 and Russian vodka coming\...
 
-
-{% include toc.html %}
 
 ## New commands
 

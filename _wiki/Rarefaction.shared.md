@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Rarefaction.shared'
 ---
 The [rarefaction.shared](rarefaction.shared) command will
@@ -17,8 +15,6 @@ inter-sample rarefaction curves for the number of observed species. For
 this tutorial you should download and decompress [
 Patient70Data.zip](Media:Patient70Data.zip)
 
-
-{% include toc.html %}
 
 ## Default settings
 

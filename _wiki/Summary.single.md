@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Summary.single'
 ---
 The [summary.single](summary.single) command will produce a
@@ -15,8 +13,6 @@ sampling, then you can trust the values. Otherwise, you need to keep
 sampling. For this tutorial you should download and decompress
 [AmazonData.zip](Media:AmazonData.zip)
 
-
-{% include toc.html %}
 
 ### Default settings
 

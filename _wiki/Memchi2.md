@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Memchi2'
 ---
 The [memchi2](memchi2) calculator returns a membership-based

@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Plant associated'
 ---
 Here is a link to NCBI definition page for the [plant\_associated
 package](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.plant-associated.4.0/).
-
-{% include toc.html %}
 
 ## Required
 

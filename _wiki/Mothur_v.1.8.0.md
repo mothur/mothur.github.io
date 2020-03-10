@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.8.0'
 ---
 We are happy to release [mothur v.1.8.0](mothur_v.1.8.0) on

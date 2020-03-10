@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Lane mask'
 ---
 The [lane mask](lane_mask) is a hard [ sequence

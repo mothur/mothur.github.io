@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Jest'
 ---
 The [jest](jest) calculator returns an estimate of the

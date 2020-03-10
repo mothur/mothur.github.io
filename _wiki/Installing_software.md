@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Installing software'
 ---
 There are a number of programs that are needed for anyone that is

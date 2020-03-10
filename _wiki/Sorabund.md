@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sorabund'
 ---
 The [sorabund](sorabund) calculator returns the

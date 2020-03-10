@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Chimera.vsearch'
 ---
 The chimera.vsearch command reads a fasta file and reference file or a
@@ -8,8 +6,6 @@ fasta and name or count file and outputs potentially chimeric sequences.
 The vsearch program is donated to the public domain,
 <https://github.com/torognes/vsearch>.
 
-
-{% include toc.html %}
 
 ## Default Settings
 

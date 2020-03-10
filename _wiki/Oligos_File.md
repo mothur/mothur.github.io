@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Oligos File'
 ---
 The oligos file is used to provide barcodes and primers to mothur.
 Mothur removes items in the following order: linkers, barcodes, spacers
 then primers.
-
-{% include toc.html %}
 
 ## Forward Primers
 

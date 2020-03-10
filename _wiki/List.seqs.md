@@ -1,6 +1,4 @@
 ---
-
-
 title: 'List.seqs'
 ---
 The [list.seqs](list.seqs) command will write out the names
@@ -16,8 +14,6 @@ to download the folder compressed in the [
 Esophagus.zip](Media:Esophagus.zip) archive.
 
 \_\_NOTOC\_\_
-
-{% include toc.html %}
 
 ## Options
 

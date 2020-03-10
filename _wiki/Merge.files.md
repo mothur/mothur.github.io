@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Merge.files'
 ---
 The [merge.files](merge.files) command will concatenate

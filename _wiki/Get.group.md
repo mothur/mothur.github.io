@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.group'
 ---
 The [get.group](get.group) command allows you to get a

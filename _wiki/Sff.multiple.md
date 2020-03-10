@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Sff.multiple'
 ---
 The [sff.multiple](sff.multiple) command reads a file
 containing sff filenames and optional oligos filenames. It runs the
 files through sffinfo, trim.flows, shhh.flows and trim.seqs combining
 the results.
-
-{% include toc.html %}
 
 ## Default Options
 

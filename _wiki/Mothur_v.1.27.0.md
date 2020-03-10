@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.27.0'
 ---
 With a quick turn around, we are happy to announce the release of
@@ -12,8 +10,6 @@ and posted the mothur-compatible version of the latest RDP taxonomy
 files.
 
 Look for some more exciting features and commands in September!
-
-{% include toc.html %}
 
 ## Feature updates
 

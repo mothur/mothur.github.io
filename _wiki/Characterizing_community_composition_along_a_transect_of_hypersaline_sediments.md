@@ -1,10 +1,6 @@
 ---
-
-
 title: 'Characterizing community composition along a transect of hypersaline sediments'
 ---
-
-{% include toc.html %}
 
 ## Background
 

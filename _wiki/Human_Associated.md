@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Human Associated'
 ---
 Here is a link to NCBI definition page for the [human\_associated
 package](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.human-associated.4.0/).
-
-{% include toc.html %}
 
 ## Required
 

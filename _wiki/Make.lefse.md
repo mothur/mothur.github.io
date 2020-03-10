@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Make.lefse'
 ---
 The make.lefse command takes mothur\'s [ shared
@@ -9,8 +7,6 @@ and creates a lefse formatted file. The LEfSe formatted file is can be
 used as an input to the LEfSe program. Segata, N., J. Izard, L. Waldron,
 D. Gevers, L. Miropolsky, W. S. Garrett, and C. Huttenhower. 2011.
 Metagenomic biomarker discovery and explanation. Genome Biol 12:R60
-
-{% include toc.html %}
 
 ## Default Setting
 

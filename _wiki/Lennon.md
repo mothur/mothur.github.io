@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Lennon'
 ---
 The [lennon](lennon) calculator returns the Lennon index

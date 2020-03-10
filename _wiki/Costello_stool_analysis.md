@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Costello stool analysis'
 ---
 **NOTE**: This wiki page ceased to be updated after release 1.21 of
@@ -615,8 +613,6 @@ have been curating:
 -   OTU-based analsysis
 -   Phylotype-based analysis
 -   Phylogeny-based aanlysis
-
-{% include toc.html %}
 
 ## OTU-based analysis
 

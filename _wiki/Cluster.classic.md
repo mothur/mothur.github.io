@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Cluster.classic'
 ---
 The [cluster.classic](cluster.classic) command can be used to
@@ -24,8 +22,6 @@ algorithm is the default option. For this tutorial you should download
 the [AmazonData.zip](Media:AmazonData.zip) file and
 decompress it.
 
-
-{% include toc.html %}
 
 ## Default settings
 

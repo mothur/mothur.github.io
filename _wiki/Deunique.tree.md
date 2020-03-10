@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Deunique.tree'
 ---
 The [deunique.tree](deunique.tree) command reinserts the

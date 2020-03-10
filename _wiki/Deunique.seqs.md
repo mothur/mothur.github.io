@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Deunique.seqs'
 ---
 The [deunique.seqs](deunique.seqs) command is the reverse of

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Seq.error'
 ---
 The [seq.error](seq.error) command reads a fasta file and
@@ -9,8 +7,6 @@ command to assess error rate requires that your dataset includes one or
 more mock community samples of known composition. Error rate is defined
 as Sum of mismatches to reference / Sum of bases in query
 
-
-{% include toc.html %}
 
 ## Default settings
 

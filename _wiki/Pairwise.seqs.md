@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Pairwise.seqs'
 ---
 The [pairwise.seqs](pairwise.seqs) command will calculate
@@ -13,8 +11,6 @@ options for how to handle gap comparisons and terminal gaps. This
 tutorial uses the data files in [
 AmazonData.zip](Media:AmazonData.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

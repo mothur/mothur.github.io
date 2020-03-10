@@ -1,6 +1,4 @@
 ---
-
-
 title: 'MiSeq SOP'
 ---
 NOTE: Although this is an SOP, it is something of a work in progress and
@@ -34,8 +32,6 @@ tutorial:
 -   [Korean translation of
     MiSeq\_SOP](http://metagenomics.tistory.com/entry/Mothur-파이프라인-pipeline)
 
-
-{% include toc.html %}
 
 ## Logistics
 
@@ -215,7 +211,7 @@ road: stability.trim.contigs.fasta and stability.contigs.groups. These
 contain the sequence data and group identity for each sequence. The
 stability.contigs.report file will tell you something about the contig
 assembly for each read. Let\'s see what these sequences look like using
-the [summary.seqs](/summary.seqs) command:
+the [summary.seqs](summary.seqs) command:
 
     mothur > summary.seqs(fasta=stability.trim.contigs.fasta)
      

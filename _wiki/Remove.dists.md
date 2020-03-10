@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Remove.dists'
 ---
 The [remove.dists](remove.dists) command removes distances
 from a phylip or column file related to groups or sequences listed in an
 accnos file.
 
-
-{% include toc.html %}
 
 ## accnos
 

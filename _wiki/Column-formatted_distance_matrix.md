@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Column-formatted distance matrix'
 ---
 Most of the currently used software packages store all of the pairwise

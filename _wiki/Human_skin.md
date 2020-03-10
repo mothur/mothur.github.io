@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Human skin'
 ---
 Here is a link to NCBI definition page for the
 [human\_skin](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.human-skin.4.0/)
 package.
-
-{% include toc.html %}
 
 ## Required
 

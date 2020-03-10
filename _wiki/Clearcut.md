@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Clearcut'
 ---
 The clearcut command allows mothur users to run the clearcut program
@@ -11,8 +9,6 @@ Idaho. For more information about clearcut please refer to
 clearcut source was added to mothur, so you no longer need the clearcut
 executable. You can still download the clearcut executable if you would
 like, [Download Clearcut](Download_Clearcut).
-
-{% include toc.html %}
 
 ## Default settings
 

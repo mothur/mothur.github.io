@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Logseries'
 ---
 The [logseries](logseries) calculator returns the

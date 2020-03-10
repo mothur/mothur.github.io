@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.34.0'
 ---
 After a long delay, we are very happy to announce the release of
@@ -37,8 +35,6 @@ There\'s also a few other things going on that you should know about\...
 We\'re plugging away at continuing to make mothur a great program, as
 always, if you have questions, ideas, or code to contribute, please
 don\'t hesitate to shoot us a note!
-
-{% include toc.html %}
 
 ## New commands
 

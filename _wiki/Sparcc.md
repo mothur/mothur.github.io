@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Sparcc'
 ---
 The sparcc command allows you to \.... To run this tutorial please
 download: [
 fake\_data.1.subsample.shared.zip](Media:fake_data.1.subsample.shared.zip).
-
-{% include toc.html %}
 
 ## Default
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Parsimony'
 ---
 The [parsimony](parsimony) command implements the [parsimony
@@ -15,8 +13,6 @@ tutorial can be obtained by downloading the [
 AbRecovery.zip](Media:AbRecovery.zip) file and decompressing
 it.
 
-
-{% include toc.html %}
 
 ## Default settings
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Unifrac.unweighted'
 ---
 The [unifrac.unweighted](unifrac.unweighted) comand
@@ -17,8 +15,6 @@ similarity. The files that we discuss in this tutorial can be obtained
 by downloading the [ AbRecovery.zip](Media:AbRecovery.zip)
 file and decompressing it.
 
-
-{% include toc.html %}
 
 ## Default settings
 

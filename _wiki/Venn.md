@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Venn'
 ---
 The [venn](venn) command generates a Venn diagram from data
@@ -14,8 +12,6 @@ based on the observed richness or the estimated richness using the
 calculators. This tutorial uses the data files in [
 AbRecovery.zip](Media:AbRecovery.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Get.dists'
 ---
 The [get.dists](get.dists) command selects distances from a
 phylip or column file related to groups or sequences listed in an accnos
 file.
 
-
-{% include toc.html %}
 
 ## accnos
 

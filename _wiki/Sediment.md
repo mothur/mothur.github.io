@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Sediment'
 ---
 Here is a link to NCBI definition page for the
 [sediment](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.sediment.4.0/)
 package.
-
-{% include toc.html %}
 
 ## Required
 

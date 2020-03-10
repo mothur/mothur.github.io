@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Makefile options'
 ---
 If you are building mothur instead of downloading one of our

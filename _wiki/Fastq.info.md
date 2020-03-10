@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Fastq.info'
 ---
 The fastq.info command reads a fastq file and creates a fasta and
 quality file or can be used to parse fastq files by sample.
-
-{% include toc.html %}
 
 ## Default settings
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Remove.rare'
 ---
 The [remove.rare](remove.rare) command removes OTUs at a
@@ -9,8 +7,6 @@ new file. The files that we discuss in this tutorial can be obtained by
 downloading the [AmazonData.zip](Media:AmazonData.zip) file
 and decompressing it.
 
-
-{% include toc.html %}
 
 ## Default settings
 

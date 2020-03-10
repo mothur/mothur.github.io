@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Alignment database'
 ---
 To make use of the aligner in mothur, you need a reference database.

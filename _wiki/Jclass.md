@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Jclass'
 ---
 The [jclass](jclass) calculator returns the traditional

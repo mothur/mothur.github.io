@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Hamming'
 ---
 The [hamming](hamming) calculator returns the Hamming

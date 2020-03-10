@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Reverse.seqs'
 ---
 Provided with a fasta-formatted sequence file,

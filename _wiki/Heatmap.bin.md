@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Heatmap.bin'
 ---
 The [heatmap.bin](heatmap.bin) command generates a heat map
@@ -12,8 +10,6 @@ can be further modified in a program like Gimp or Adobe Illustrator.
 Options are available to scale the relative abundance for each OTU using
 different approaches. This tutorial uses the data files in [
 AbRecovery.zip](Media:AbRecovery.zip).
-
-{% include toc.html %}
 
 ## Default settings
 

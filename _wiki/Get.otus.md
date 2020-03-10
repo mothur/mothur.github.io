@@ -1,11 +1,7 @@
 ---
-
-
 title: 'Get.otus'
 ---
 The [get.otus](get.otus) command selects otus from a given
-
-{% include toc.html %}
 
 ## Default Settings
 

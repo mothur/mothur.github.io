@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Remove.otus'
 ---
 The remove.otus command removes otu labels from \*.cons.taxonomy,
 \*.corr.axes, \*.otu.corr, shared and list files. This can be useful
 especially with subsampled datasets or when groups have been selected.
 
-
-{% include toc.html %}
 
 ## Default Options
 

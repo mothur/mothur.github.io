@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Rarefaction.single'
 ---
 The [rarefaction.single](rarefaction.single) command will
@@ -19,8 +17,6 @@ Rarefaction is actually a better measure of diversity than it is of
 richness. For this tutorial you should download and decompress
 [AmazonData.zip](Media:AmazonData.zip)
 
-
-{% include toc.html %}
 
 ## Default settings
 

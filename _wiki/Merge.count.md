@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Merge.count'
 ---
 The [merge.count](merge.count) command will combine multiple

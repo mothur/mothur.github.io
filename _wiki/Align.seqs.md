@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Align.seqs'
 ---
 The [align.seqs](align.seqs) command aligns a user-supplied
@@ -29,8 +27,6 @@ least be implicitly based on the secondary structure. To demonstrate the
 various features of this command, we will use the [ AbRecovery
 dataset](Media:AbRecovery.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

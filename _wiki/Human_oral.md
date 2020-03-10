@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Human oral'
 ---
 Here is a link to NCBI definition page for the [human\_oral
 package](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.human-oral.4.0/).
-
-{% include toc.html %}
 
 ## Required
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.7.0'
 ---
 We hare happy to announce the release of [mothur

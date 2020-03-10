@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Forest soil community analysis'
 ---
 In this tutorial we will analyze bacterial and eukaryal forest soil
@@ -18,8 +16,6 @@ gained by the full-length SSU-RIS sequences to the information gained
 solely by SSU or RIS sequences respectively, and show how hypervariable
 regions affect our OTU-based analyses.
 
-
-{% include toc.html %}
 
 ## Getting started
 

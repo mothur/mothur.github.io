@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Consensus.seqs'
 ---
 The consensus.seqs command can be used in 2 ways: create a consensus
@@ -8,8 +6,6 @@ sequence from a fastafile, or with a listfile create a consensus
 sequence for each otu. Sequences must be aligned.
 
 The consensus.seqs command parameters are fasta, list, name and label.
-
-{% include toc.html %}
 
 ## Default Settings
 

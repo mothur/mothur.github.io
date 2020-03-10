@@ -1,6 +1,4 @@
 ---
-
-
 title: 'General operations'
 ---
 Once one has a general grasp of several important concepts, they should

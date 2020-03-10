@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Create.database'
 ---
 The [create.database](create.database) command reads a [list
@@ -9,8 +7,6 @@ file](list_file), \*.cons.taxonomy, \*.rep.fasta,
 file](group_file), and creates a database file. To run the
 following tutorial please download: [ Example
 Files](Media:_Create_Database_Files.zip)
-
-{% include toc.html %}
 
 ## Default Settings
 

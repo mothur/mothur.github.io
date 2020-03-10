@@ -1,10 +1,6 @@
 ---
-
-
 title: 'Running Your Pipeline'
 ---
-{% include toc.html %}
-
 ## Running Within the GUI
 
 ![ center](menuOPtions.jpg " center")

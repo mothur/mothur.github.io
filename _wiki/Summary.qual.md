@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Summary.qual'
 ---
 The [summary.qual](summary.qual) command reads a quality file
 and an optional name, and summarizes the quality information.
-
-{% include toc.html %}
 
 ## Default settings
 

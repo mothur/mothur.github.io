@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Unique.seqs'
 ---
 The [unique.seqs](unique.seqs) command returns only the
@@ -20,8 +18,6 @@ This will generate two files: amazon.names and amazon.unique.fasta. You
 can now align amazon.unique.fasta and generate a distance matrix. Then
 you can use that matrix with the newly generated amazon.names file with
 the [ names option](read.dist#name) for the cluster command.
-
-{% include toc.html %}
 
 ### name option
 

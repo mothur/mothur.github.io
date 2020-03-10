@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Software development team'
 ---
 Our **software development team** consists of\...

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Jensen-Shannon Divergence'
 ---
 Let x be the relative abundances of one sample and y be the relative

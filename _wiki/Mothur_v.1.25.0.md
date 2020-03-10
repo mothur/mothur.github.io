@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.25.0'
 ---
 We are happy to announce the release of [mothur
@@ -29,8 +27,6 @@ for your continued support and suggestions. As always keep the 6 packs
 coming\...
 
 Pat Schloss
-
-{% include toc.html %}
 
 ## New commands
 

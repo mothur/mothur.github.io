@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Phylotype'
 ---
 The phylotype command can be used to assign sequences to OTUs based on
@@ -8,8 +6,6 @@ their taxonomy and outputs a .list, .rabund and .sabund files. To run
 through the example below, download [Taxonomy
 Files](Media:TaxonomyFiles.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

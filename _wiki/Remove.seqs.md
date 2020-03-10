@@ -1,7 +1,6 @@
 ---
 title: 'Remove.seqs'
 ---
-
 The [remove.seqs](remove.seqs) command takes a list of
 sequence names and either a [ fastq](fastq_file), [
 fasta](fasta_file), [ name](name_file "wikilink"), [
@@ -14,8 +13,6 @@ to help screen a sequence collection. To complete this analysis, you
 need to download the folder compressed in the [
 Esophagus.zip](Media:Esophagus.zip) archive.
 
-
-{% include toc.html %}
 
 ## Options
 

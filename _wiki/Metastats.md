@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Metastats'
 ---
 The metastats command is based on the Metastats program, White, J.R.,
@@ -9,8 +7,6 @@ abundant features in clinical metagenomic samples. PLoS Comput Biol 5,
 e1000352 (2009). The metastats command outputs a .metastats file.
 
 See: <http://metastats.cbcb.umd.edu/> for more information on Metastats.
-
-{% include toc.html %}
 
 ## Default Settings
 

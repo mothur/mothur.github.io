@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Normalize.shared'
 ---
 The normalize.shared command creates a .norm.shared file.
 
-
-{% include toc.html %}
 
 ## Default Settings
 

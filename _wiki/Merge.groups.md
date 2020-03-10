@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Merge.groups'
 ---
 The [merge.groups](merge.groups) command reads a shared file
@@ -10,8 +8,6 @@ tutorial can be obtained by downloading the
 [AmazonData.zip](Media:AmazonData.zip) file and decompressing
 it, as well as [AmazonDesign.zip](Media:AmazonDesign.zip)
 
-
-{% include toc.html %}
 
 ## Default settings
 

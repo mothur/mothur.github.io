@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Human vaginal'
 ---
 Here is a link to NCBI definition page for the [human
 vaginal](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.human-vaginal.4.0/)
 package.
-
-{% include toc.html %}
 
 ## Required
 

@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Set.current'
 ---
 The set.current command allows you to set current files for mothur to
 use. You can also clear current files.
 
-
-{% include toc.html %}
 
 ## Default Options
 

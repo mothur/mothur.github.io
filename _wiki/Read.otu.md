@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Read.otu'
 ---
 NOTE: Starting with mothur version 1.18.0 the read.otu command no longer

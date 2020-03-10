@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Npshannon'
 ---
 The [npshannon](npshannon) calculator returns a

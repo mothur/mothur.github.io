@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Get.rabund'
 ---
 The [get.rabund](get.rabund) command will generate an [rabund
 file](rabund_file) based on the OTU data that you have read
 into mothur.
-
-{% include toc.html %}
 
 ## Default
 

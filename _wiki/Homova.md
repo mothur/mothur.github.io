@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Homova'
 ---
 Homogeneity of molecular variance (HOMOVA) is a nonparametric analog of
@@ -22,8 +20,6 @@ P-values less than 0.05 were considered significant.
 
 To run the tutorial below please download the [
 files](Media:AmazonAmovaData.zip) and follow along\...
-
-{% include toc.html %}
 
 ## Default Settings
 

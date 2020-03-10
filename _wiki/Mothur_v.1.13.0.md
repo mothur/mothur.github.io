@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.13.0'
 ---
 As everyone heads back to a new academic year, we are happy to announce

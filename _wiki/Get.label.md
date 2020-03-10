@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.label'
 ---
 The [get.label](get.label) command allows you to get a

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Phylip-formatted distance matrix'
 ---
 Phylip [1](http://evolution.genetics.washington.edu/phylip.html) is a

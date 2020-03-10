@@ -1,6 +1,4 @@
 ---
-
-
 title: 'UNITE ITS database'
 ---
 There are full \"UNITE+INSD\" datasets available in mothur format:

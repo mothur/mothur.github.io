@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Morisitahorn'
 ---
 The [morisitahorn](morisitahorn) calculator returns the

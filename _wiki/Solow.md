@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Solow'
 ---
 The [solow](solow) calculator returns the Solow estimate of

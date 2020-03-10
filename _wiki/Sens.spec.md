@@ -1,11 +1,7 @@
 ---
-
-
 title: 'Sens.spec'
 ---
 The sens.spec command\...
-
-{% include toc.html %}
 
 ## Default Parameters
 

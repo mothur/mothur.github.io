@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Whittaker'
 ---
 The [whittaker](whittaker) calculator returns the Whittaker

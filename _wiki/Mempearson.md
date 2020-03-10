@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mempearson'
 ---
 The [mempearson](mempearson) calculator returns a membership

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Trim.flows'
 ---
 The [trim.flows](trim.flows) command is analogous to the
@@ -14,8 +12,6 @@ command will allow you to partition your flowgram data by sample based
 on the barcode, trim the flows to a specified length range, and cull
 sequences that are too short or have too many mismatches to barcodes and
 primers. For this page we use a hypothetical sff file - GQY1XT001.sff.
-
-{% include toc.html %}
 
 ## Preliminaries and defaults
 

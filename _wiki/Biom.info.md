@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Biom.info'
 ---
 The biom.info command reads a biom file creates a
 [Shared\_file](Shared_file). If your biom file contains
 metadata mothur will also create taxonomy or constaxonomy along with
 tax.summary files.
-
-{% include toc.html %}
 
 ## Default Options
 

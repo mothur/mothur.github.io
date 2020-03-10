@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sharedchao'
 ---
 The [sharedchao](sharedchao) calculator returns the shared

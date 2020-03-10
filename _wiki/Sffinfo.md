@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Sffinfo'
 ---
 The sffinfo command extract sequences reads from a .sff file.
 
-
-{% include toc.html %}
 
 ## Default settings
 

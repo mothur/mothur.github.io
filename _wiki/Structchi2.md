@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Structchi2'
 ---
 $$D_{Structchi2} = \sqrt{N_T \sum_{j=1}^{S_T} \left ( \frac {1}{S_{+j}} \left ( \frac{S_{Aj}}{S_{A+}} - \frac{S_{Bj}}{S_{B+}} \right )^2 \right ) }$$

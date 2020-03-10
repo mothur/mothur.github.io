@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Otu.hierarchy'
 ---
 The [otu.hierarchy](otu.hierarchy) command relates OTUs at

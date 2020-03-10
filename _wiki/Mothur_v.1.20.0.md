@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.20.0'
 ---
 We are happy to announce the release of [mothur
@@ -43,8 +41,6 @@ pdschloss\@gmail.com and I can get you more information.
 Enjoy!
 
 Pat Schloss
-
-{% include toc.html %}
 
 ## New commands
 

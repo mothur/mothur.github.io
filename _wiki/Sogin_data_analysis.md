@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sogin data analysis'
 ---
 In 2006, Mitch Sogin and his colleagues at the Marine Biology Laboratory
@@ -21,8 +19,6 @@ one of the 2 GHz processors. Feel free to start from scratch as
 described below or to [ download](Media:SoginData.zip) all of
 the files that will be generated in this exercise.
 
-
-{% include toc.html %}
 
 ## Data availability
 

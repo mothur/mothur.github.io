@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Bootstrap'
 ---
 The [bootstrap](bootstrap) calculator returns the bootstrap

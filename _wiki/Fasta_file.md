@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Fasta file'
 ---
 The Fasta File:

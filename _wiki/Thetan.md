@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Thetan'
 ---
 The [thetan](thetan) calculator returns the community Jaccard

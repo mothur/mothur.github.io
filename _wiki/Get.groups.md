@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.groups'
 ---
 The [get.groups](get.groups) command selects sequences from a
@@ -10,8 +8,6 @@ download the folder compressed in the [
 Abrecovery.zip](Media:AbRecovery.zip) and [
 Abrecovery.accnosgroups.zip](Media:Abrecovery.accnosgroups.zip).
 
-
-{% include toc.html %}
 
 ## Default Settings
 

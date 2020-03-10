@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Chimera.pintail'
 ---
 Use Pintail approach \.... [ silva quantile
 file](Media:silva.bacteria.pintail.quan.zip), [ silva
 conservation file](Media:silva.bacteria.freq.zip)
 
-
-{% include toc.html %}
 
 ## Algorithm
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.21.0'
 ---
 We are happy to announce the release of [mothur
@@ -28,8 +26,6 @@ August will be a busy month as Pat will be participating in the STAMPS
 course at the Marine Biology Laboratory and will be hosting his own
 workshop in Detroit, MI. Spaces are still available for the Detroit
 workshop. Hopefully, he\'ll cross paths with some of you soon!
-
-{% include toc.html %}
 
 ## New commands
 

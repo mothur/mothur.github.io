@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Count.seqs'
 ---
 The [count.seqs](count.seqs) / make.table command counts the
 number of sequences represented by the representative sequence in a name
 file. If a group file is given, it will also provide the group count
 breakdown.
-
-{% include toc.html %}
 
 ## Default Settings
 

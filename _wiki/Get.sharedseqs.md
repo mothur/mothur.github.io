@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.sharedseqs'
 ---
 The **get.sharedseqs** command takes a list and group file or shared
@@ -10,8 +8,6 @@ that are either unique or shared by specific groups, which you could
 then classify. To run through the commands below use [ AbRecovery
 files](Media:AbRecovery.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Otu.association'
 ---
 The [otu.association](otu.association) command calculate the
 correlation coefficient for the otus in a shared/relabund file.
 
-
-{% include toc.html %}
 
 ## Default settings
 

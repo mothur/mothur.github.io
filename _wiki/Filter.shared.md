@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Filter.shared'
 ---
 The filter.shared command is used to remove OTUs based on various
 criteria. It creates a .filter.shared file.
 
-
-{% include toc.html %}
 
 ## Default settings
 

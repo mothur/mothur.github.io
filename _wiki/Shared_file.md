@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Shared file'
 ---
 A shared file is analogous to an [rabund file](rabund_file).

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Invsimpson'
 ---
 The [invsimpson](invsimpson) calculator is the inverse of the

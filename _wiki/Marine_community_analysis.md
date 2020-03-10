@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Marine community analysis'
 ---
 In this tutorial we will perform an analysis of marine microbial
@@ -12,8 +10,6 @@ coastal, fresh water, estuarine, hypersaline). All the data files you
 need to complete this tutorial are contained in the [
 GOS.zip](Media:GOS.zip) (\~8MB) archive.
 
-
-{% include toc.html %}
 
 ## Getting started
 

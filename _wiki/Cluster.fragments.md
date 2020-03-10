@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Cluster.fragments'
 ---
 The [cluster.fragments](cluster.fragments) command groups
 sequences that are part of a larger sequence. To run this tutorial
 please download [ esophagus.fasta
 file](Media:Esophagus.fasta.zip)
-
-{% include toc.html %}
 
 ## Default settings
 

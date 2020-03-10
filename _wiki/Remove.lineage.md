@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Remove.lineage'
 ---
 The [remove.lineage](remove.lineage) command reads a taxonomy
@@ -14,8 +12,6 @@ generate new files for each of those that contains only the sequences
 not containing that taxon. To complete this tutorial, you are encouraged
 to obtain the [ AbRecovery](Media:AbRecovery.zip) dataset.
 
-
-{% include toc.html %}
 
 ## Special note
 

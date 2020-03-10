@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.36.0'
 ---
 We\'re excited to announce the release of
@@ -30,8 +28,6 @@ hosting a mothur [workshop](workshop) in the Detroit area in
 early September, holler if you are interested or have questions.
 
 Pat
-
-{% include toc.html %}
 
 ## New commands
 

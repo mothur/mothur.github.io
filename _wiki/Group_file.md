@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Group file'
 ---
 The group file is used to assign sequences to a specific group. It

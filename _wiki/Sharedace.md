@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sharedace'
 ---
 The [sharedace](sharedace) calculator returns the shared ACE

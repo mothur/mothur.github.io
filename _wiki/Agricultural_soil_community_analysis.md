@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Agricultural soil community analysis'
 ---
 In this tutorial we will analyze bacterial 16S-based communities
@@ -8,8 +6,6 @@ originating from soil samples of three different farming systems. The
 sequences were originally published by [Hartmann and Widmer
 (2004)](http://www.ncbi.nlm.nih.gov/pubmed/17041161).
 
-
-{% include toc.html %}
 
 ## Getting started
 

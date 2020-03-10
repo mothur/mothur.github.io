@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Command line mode'
 ---
 In the [command line mode](command_line_mode) you can run

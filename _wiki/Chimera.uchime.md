@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Chimera.uchime'
 ---
 The chimera.uchime command reads a fasta file and reference file and
@@ -9,8 +7,6 @@ written by Robert C. Edgar and donated to the public domain,
 <http://drive5.com/uchime>. If you would like to follow along, please
 download [ UchimeExample.zip](Media:UchimeExample.zip).
 
-
-{% include toc.html %}
 
 ## Default Settings
 

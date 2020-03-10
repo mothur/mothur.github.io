@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Quality File'
 ---
 Example:

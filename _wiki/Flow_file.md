@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Flow file'
 ---
 Example:

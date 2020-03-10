@@ -1,10 +1,6 @@
 ---
-
-
 title: 'Cluster stats'
 ---
-{% include toc.html %}
-
 ## Used Version 1.27.0
 
 with [

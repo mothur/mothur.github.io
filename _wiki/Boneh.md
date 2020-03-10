@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Boneh'
 ---
 The [boneh](boneh) calculator returns the Boneh estimate of

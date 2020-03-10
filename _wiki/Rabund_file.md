@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Rabund file'
 ---
 The data reported in the rabund file is appropriate for plotting as a

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Analysis of coxL richness in relation to total community richness across a succession gradient on Kilauea Volcano'
 ---
 Introduction:
@@ -46,8 +44,6 @@ Data preparation for analyses in mothur consists of 4 primary steps:
     and allows you to generate OTU data for each group of sequences and
     perform hypothesis testing without needing to generate separate
     distance matrices for each desired comparison.
-
-{% include toc.html %}
 
 ## Preparing fasta files
 

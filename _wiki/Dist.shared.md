@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Dist.shared'
 ---
 The [dist.shared](dist.shared) command will generate a
@@ -13,8 +11,6 @@ structure](Calculators#Similarity_in_community_structure).
 This tutorial uses the data files in [
 AbRecovery.zip](Media:AbRecovery.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

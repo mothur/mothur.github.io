@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Air environment'
 ---
 Here is a link to NCBI definition page for the [air
 package](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.air.4.0/).
-
-{% include toc.html %}
 
 ## Required
 

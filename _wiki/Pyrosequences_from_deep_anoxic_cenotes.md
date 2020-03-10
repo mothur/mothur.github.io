@@ -1,10 +1,6 @@
 ---
-
-
 title: 'Pyrosequences from deep anoxic cenotes'
 ---
-{% include toc.html %}
-
 ## Study design
 
 This study describes the analysis of 16S rRNA amplicon barcoded

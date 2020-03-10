@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Taxonomy outline'
 ---
 A taxonomy database consists of unaligned sequences in fasta format and

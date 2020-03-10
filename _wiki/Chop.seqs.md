@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Chop.seqs'
 ---
 The chop.seqs command reads a fasta file and outputs a .chop.fasta
 containing the trimmed sequences. It works on both aligned and unaligned
 sequences.
 
-
-{% include toc.html %}
 
 ## Default settings
 

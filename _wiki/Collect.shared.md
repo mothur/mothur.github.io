@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Collect.shared'
 ---
 The [collect.shared](collect.shared) command generates
@@ -16,8 +14,6 @@ presented the data in the sons file, which was virtually impossible for
 novices to parse. mothur fixes many of these issues by generating
 separate files for each estimator. For this tutorial you should download
 and decompress [ Patient70Data.zip](Media:Patient70Data.zip)
-
-{% include toc.html %}
 
 ## Default settings
 

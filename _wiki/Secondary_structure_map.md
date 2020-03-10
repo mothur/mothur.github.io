@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Secondary structure map'
 ---
 We transcribed the secondary structure mapping using the arb-compatible

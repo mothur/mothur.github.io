@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sorest'
 ---
 The [sorest](sorest) calculator returns an estimate of the

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Jabund'
 ---
 The [jabund](jabund) calculator returns the abundance-based

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Structeuclidean'
 ---
 $$D_{Structeuclidean} = \sqrt{ \sum_{j=1}^{S_T}  \left ( S_{Aj} - S_{Bj} \right )^2 }$$

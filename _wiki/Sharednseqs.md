@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sharednseqs'
 ---
 The [sharednseqs](sharednseqs) calculator returns the number

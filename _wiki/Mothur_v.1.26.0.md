@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.26.0'
 ---
 We are happy to announce the release of [mothur
@@ -24,8 +22,6 @@ paper](http://www.ncbi.nlm.nih.gov/pubmed/22688727) may inspire you.
 It\'s hot this summer in Michigan with hardly any rain. All of this
 makes it hard to keep the ideas flowing. Be sure to keep your [hydrating
 substances flowing](https://leinie.com).
-
-{% include toc.html %}
 
 ## New commands
 

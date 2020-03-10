@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Calculators'
 ---
 The following are a list of [calculators](calculators)
@@ -10,8 +8,6 @@ contributing your code or asking us to add it to our list of features
 for future versions of mothur. Following the links will take you to
 pages describing the formulae and example calculations using the
 Amazonian dataset.
-
-{% include toc.html %}
 
 ## Community richness
 

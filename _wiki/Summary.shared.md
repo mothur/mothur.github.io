@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Summary.shared'
 ---
 The [summary.shared](summary.shared) command will produce a
@@ -15,8 +13,6 @@ sampling, then you can trust the values. Otherwise, you need to keep
 sampling. For this tutorial you should download and decompress [
 Patient70Data.zip](Media:Patient70Data.zip)
 
-
-{% include toc.html %}
 
 ## Default settings
 

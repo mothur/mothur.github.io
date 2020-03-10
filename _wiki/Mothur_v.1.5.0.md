@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.5.0'
 ---
 Today, August 10, we are happy to be releasing [mothur

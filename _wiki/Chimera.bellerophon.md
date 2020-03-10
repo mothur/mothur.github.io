@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Chimera.bellerophon'
 ---
 Use Bellerophon approach to create a sorted priority score list of
 potentially chimeric sequences.
 
-
-{% include toc.html %}
 
 ## Algorithm
 

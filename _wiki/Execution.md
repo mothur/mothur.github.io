@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Execution'
 ---
 [Execution](Execution) of mothur is done from a command line.
@@ -9,8 +7,6 @@ designed for microbial ecologists, by microbial ecologists, it is
 missing a few bells and whistles. Namely, the program is driven from the
 command line. This was a necessary design choice in order to serve
 researchers who like to use linux, mac, and windows operating systems.
-
-{% include toc.html %}
 
 ## Starting mothur
 

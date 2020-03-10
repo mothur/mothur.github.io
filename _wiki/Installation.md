@@ -1,10 +1,6 @@
 ---
-
-
 title: 'Installation'
 ---
-{% include toc.html %}
-
 ## Quick and Easy Install
 
 Most of our users choose to download the prebuilt executable. This

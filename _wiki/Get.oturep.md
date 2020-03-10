@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.oturep'
 ---
 While the [bin.seqs](bin.seqs) command reports the OTU number
@@ -11,8 +9,6 @@ or .rep.count\_table file is generated for each OTU definition. For this
 tutorial, download and decompress
 [AmazonData.zip](Media:AmazonData.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

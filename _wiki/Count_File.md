@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Count File'
 ---
 The count file is a condensed version of the name file. It can also

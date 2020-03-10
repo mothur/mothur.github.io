@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Heatmap.sim'
 ---
 The [heatmap.sim](heatmap.sim) command will generate a
@@ -9,8 +7,6 @@ using a variety of [calculators](calculators) comparing
 community membership and structure. As an example, we will use the
 example from the [Sogin data analysis](Sogin_data_analysis)
 example.
-
-{% include toc.html %}
 
 ## Default settings
 

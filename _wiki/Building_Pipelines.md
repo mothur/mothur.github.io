@@ -1,10 +1,6 @@
 ---
-
-
 title: 'Building Pipelines'
 ---
-{% include toc.html %}
-
 ## Adding commands
 
 The commands are organized into categories to help you build pipelines

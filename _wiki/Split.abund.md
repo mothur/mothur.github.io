@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Split.abund'
 ---
 The split.abund command reads a fasta file and a list or a names file
 splits the sequences into rare and abundant groups.
-
-{% include toc.html %}
 
 ## Default Settings
 

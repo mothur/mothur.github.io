@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Kulczynski'
 ---
 The [kulczynski](kulczynski) calculator returns the

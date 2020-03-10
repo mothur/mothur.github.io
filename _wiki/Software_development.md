@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Software development'
 ---
 Our goal is for mothur to be an open-source project where any one can

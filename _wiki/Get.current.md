@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Get.current'
 ---
 The get.current command allows you to find out which files mothur has

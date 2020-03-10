@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sharedsobs'
 ---
 The [sharedsobs](sharedsobs) calculator returns the number of

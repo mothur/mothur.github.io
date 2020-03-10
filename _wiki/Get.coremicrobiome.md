@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Get.coremicrobiome'
 ---
 The [get.coremicrobiome](get.coremicrobiome) command
 determines the fraction of OTUs that are found in varying numbers of
 samples for different minimum relative abundances. To run this tutorial
 download, [ Example Files ](Media:_temp.job2.shared.zip)
-
-{% include toc.html %}
 
 ## Default Settings
 

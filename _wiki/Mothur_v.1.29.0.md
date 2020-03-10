@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.29.0'
 ---
 This is an exciting day\... we are happy to announce the release of
@@ -37,8 +35,6 @@ all of this has taken us so long.
 We\'re excited for 2013 and the future of mothur. Please let us know if
 there\'s anything missing or if there\'s something you think others
 would benefit from having in mothur!
-
-{% include toc.html %}
 
 ## New commands
 

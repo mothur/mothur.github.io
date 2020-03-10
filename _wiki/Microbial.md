@@ -1,13 +1,9 @@
 ---
-
-
 title: 'Microbial'
 ---
 Here is a link to NCBI definition page for the
 [microbial](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.microbial.4.0/)
 package.
-
-{% include toc.html %}
 
 ## Required
 

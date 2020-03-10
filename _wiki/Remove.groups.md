@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Remove.groups'
 ---
 The [remove.groups](remove.groups) command removes sequences
@@ -10,8 +8,6 @@ analysis, you need to download the folder compressed in the [
 Abrecovery.zip](Media:AbRecovery.zip) and [
 Abrecovery.accnosgroups.zip](Media:Abrecovery.accnosgroups.zip).
 
-
-{% include toc.html %}
 
 ## Default Settings
 

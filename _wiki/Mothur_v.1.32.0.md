@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.32.0'
 ---
 We have released mothur v.1.32.0 and have a number of exciting new
@@ -29,8 +27,6 @@ suggestions for other commands or options, let us know!
 Finally, there are still seats available for the R workshop in November
 and the mothur workshop in December. Consider coming to one or both -
 Detroit is beautiful that time of year.
-
-{% include toc.html %}
 
 ## New commands
 

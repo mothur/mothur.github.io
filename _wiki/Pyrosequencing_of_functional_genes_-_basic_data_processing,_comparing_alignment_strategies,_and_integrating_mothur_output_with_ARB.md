@@ -1,10 +1,6 @@
 ---
-
-
 title: 'Pyrosequencing of functional genes - basic data processing, comparing alignment strategies, and integrating mothur output with ARB'
 ---
-
-{% include toc.html %}
 
 ## Introduction
 

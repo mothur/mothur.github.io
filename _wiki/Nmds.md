@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Nmds'
 ---
 The [nmds](nmds) command is modelled after the nmds code
@@ -8,8 +6,6 @@ written in R by Sarah Goslee, using Non-metric multidimensional scaling
 function using the majorization algorithm from Borg & Groenen 1997,
 Modern Multidimensional Scaling.
 
-
-{% include toc.html %}
 
 ## Default settings
 

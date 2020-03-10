@@ -1,6 +1,4 @@
 ---
-
-
 title: 'R tutorial'
 ---
 The following tutorial makes use of the files available in the [

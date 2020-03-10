@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Bergerparker'
 ---
 The [bergerparker](bergerparker) calculator returns the

@@ -1,10 +1,6 @@
 ---
-
-
 title: 'Preferences'
 ---
-
-{% include toc.html %}
 
 ## Preferences Under the File Menu
 

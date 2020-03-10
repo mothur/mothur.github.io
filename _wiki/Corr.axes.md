@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Corr.axes'
 ---
 The [corr.axes](corr.axes) command will calculate the
 correlation coefficient for each column in a shared/relabund file to the
 axes displayed in a pcoa file.
 
-
-{% include toc.html %}
 
 ## Default settings
 

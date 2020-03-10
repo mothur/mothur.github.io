@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Workshop'
 ---
 -   64\_bit executable: [ 64 bit mothur for

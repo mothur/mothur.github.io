@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Filter.seqs'
 ---
 [filter.seqs](filter.seqs) removes columns from alignments
@@ -16,8 +14,6 @@ encouraged for deep-level phylogenetic analysis, not fine level analysis
 such as that needed with calculating OTUs. This tutorial uses the data
 files in [ AmazonData.zip](Media:AmazonData.zip).
 
-
-{% include toc.html %}
 
 ## Default settings
 

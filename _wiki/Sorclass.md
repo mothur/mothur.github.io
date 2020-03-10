@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sorclass'
 ---
 The [sorclass](sorclass) calculator returns the traditional

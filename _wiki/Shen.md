@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Shen'
 ---
 The [shen](shen) calculator returns the Shen estimate of the

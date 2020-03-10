@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.17.0'
 ---
 February may be the shortest month of the year, but that doesn\'t keep
@@ -33,8 +31,6 @@ Thanks to all of you that have completed our survey. If you haven\'t
 [completed it
 yet](http://www.mothur.org/limesurvey/index.php?sid=13611&lang=en),
 there is still time\...
-
-{% include toc.html %}
 
 ## New commands
 

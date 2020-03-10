@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Make.sra'
 ---
 The make.sra command creates the necessary files for a NCBI submission.
@@ -8,8 +6,6 @@ The xml file and individual sff or fastq files parsed from the original
 sff or fastq file. See [Creating a new
 submission](Creating_a_new_submission) to see how to use
 make.sra in your workflow.
-
-{% include toc.html %}
 
 ## Default settings
 

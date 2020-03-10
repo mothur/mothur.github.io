@@ -1,14 +1,10 @@
 ---
-
-
 title: 'Make.file'
 ---
 Tired of creating the input files for make.contigs? Let mothur do that
 for you! The make.file command takes a input directory and creates a
 file containing the fastq or gz files in the directory.
 
-
-{% include toc.html %}
 
 ## Default Settings
 

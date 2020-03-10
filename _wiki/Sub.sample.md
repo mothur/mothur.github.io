@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Sub.sample'
 ---
 The [sub.sample](sub.sample) command can be used as a way to
@@ -9,8 +7,6 @@ takes as an input the following file types: fasta, name, group, list,
 taxonomy, count, shared, rabund and sabund to generate a new file that
 contains a sampling of your original file.
 
-
-{% include toc.html %}
 
 ## fasta option
 

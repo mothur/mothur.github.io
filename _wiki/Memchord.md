@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Memchord'
 ---
 $$D_{Memchord} = \sqrt{ \sum_{j=1}^{S_T}  \left ( \frac{S_{Aj}}{\sqrt{S_A}} - \frac{S_{Bj}}{\sqrt {S_B}} \right )^2  }$$

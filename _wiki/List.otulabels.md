@@ -1,6 +1,4 @@
 ---
-
-
 title: 'List.otulabels'
 ---
 The [list.otulabels](list.otulabels) command lists otu labels
@@ -9,8 +7,6 @@ with subsampled datasets when used with output from classify.otu,
 otu.association, or corr.axes to select specific otus using the
 [get.otus](get.otus) or
 [remove.otulabels](remove.otulabels) commands.
-
-{% include toc.html %}
 
 ## Default Settings
 

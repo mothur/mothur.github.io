@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Set.dir'
 ---
 [set.dir](set.dir) allows you to redirect the output files
@@ -9,8 +7,6 @@ files. You can also set a default location for mothur to look if it
 can\'t find your files in the input location. This allows you to keep
 your reference files in one location.
 
-
-{% include toc.html %}
 
 ## input
 

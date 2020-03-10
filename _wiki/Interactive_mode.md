@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Interactive mode'
 ---
 When you start mothur, you will see a screen that looks like this:

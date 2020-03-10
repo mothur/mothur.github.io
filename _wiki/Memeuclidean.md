@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Memeuclidean'
 ---
 The [memeuclidean](memeuclidean) calculator returns a

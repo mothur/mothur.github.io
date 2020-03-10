@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Simpson'
 ---
 The [simpson](simpson) calculator returns the Simpson

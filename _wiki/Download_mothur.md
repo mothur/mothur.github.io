@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Download mothur'
 ---
 **Mothur\'s source and executables are now available on
@@ -10,8 +8,6 @@ Downloading an executable version of mothur is the easiest and fastest
 way to get started. Please join the [mothur email
 list](https://groups.io/g/mothur/join). This is a newsletter format so
 you will only receive an email from us about once a month or so.
-
-{% include toc.html %}
 
 ### Binaries
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Amova'
 ---
 Analysis of molecular variance is a nonparametric analog of traditional
@@ -33,8 +31,6 @@ values.
 
 To run the tutorial below please download the [
 files](Media:AmazonAmovaData.zip) and follow along\...
-
-{% include toc.html %}
 
 ## Default Settings
 

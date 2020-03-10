@@ -1,6 +1,4 @@
 ---
-
-
 title: 'EDAMAME'
 ---
 The goal of this tutorial is to demonstrate the standard operating
@@ -41,8 +39,6 @@ and users are advised to consult these for more details and background
 data. The workflow is being divided into several parts shown here in the
 table of contents for the tutorial:
 
-
-{% include toc.html %}
 
 ## Logistics
 

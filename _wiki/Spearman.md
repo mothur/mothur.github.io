@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Spearman'
 ---
 $$D_{Spearman} = 1 - \frac{6 \sum_{j=1}^{S_T}  \left ( rank(S_{Aj}) - rank(S_{Bj}) \right )^2} {S_T (S^2_T-1)}$$

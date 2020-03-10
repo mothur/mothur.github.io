@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Hypothesis testing approaches'
 ---
 [Hypothesis testing

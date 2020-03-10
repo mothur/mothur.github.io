@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Indicator'
 ---
 The indicator command can be run in 3 ways: with a shared or relabund
@@ -22,8 +20,6 @@ McCune B, Grace JB, Urban DL (2002). Analysis of ecological communities.
 MjM Software Design: Gleneden Beach, OR.
 
 Legendre P, Legendre L (1998). Numerical Ecology. Elsevier: New York.
-
-{% include toc.html %}
 
 ## Default Settings
 

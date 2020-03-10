@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Rarefaction'
 ---
 mothur calculates [rarefaction](rarefaction) curve data using

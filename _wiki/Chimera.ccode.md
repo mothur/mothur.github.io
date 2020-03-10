@@ -1,12 +1,8 @@
 ---
-
-
 title: 'Chimera.ccode'
 ---
 Use Ccode approach \....
 
-
-{% include toc.html %}
 
 ## Algorithm
 

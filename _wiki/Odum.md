@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Odum'
 ---
 $$D_{Odum} = \frac {\sum_{j=1}^{S_T} |S_{Aj} - S_{Bj}| }{\sum_{j=1}^{S_T} (S_{Aj} + S_{Bj} )}$$

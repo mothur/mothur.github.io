@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Shhh.seqs'
 ---
 The [shhh.seqs](shhh.seqs) command is a mothur-based rewrite
@@ -9,8 +7,6 @@ of Chris Quince\'s sequence denoising algorithm, SeqNoise
 two algorithms in the AmpliconNoise pipeline. The other, PyroNoise, runs
 first and takes as input the raw flowgrams. A mothur implementation of
 PyroNoise is available as [shhh.flows](shhh.flows).)
-
-{% include toc.html %}
 
 ## Default settings
 

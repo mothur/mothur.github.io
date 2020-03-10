@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Classify.seqs'
 ---
 The [classify.seqs](classify.seqs) command allows the user to
@@ -13,8 +11,6 @@ you provide a fasta-formatted input and database sequence file and a
 taxonomy file for the reference sequences. To complete this tutorial,
 you are encouraged to obtain the [
 AbRecovery](Media:AbRecovery.zip) dataset.
-
-{% include toc.html %}
 
 ## Output
 

@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Pcoa'
 ---
 The [pcoa](pcoa) command \...

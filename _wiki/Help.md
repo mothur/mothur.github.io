@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Help'
 ---
 The [help](help) command will output a list of the valid

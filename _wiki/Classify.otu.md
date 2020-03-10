@@ -1,11 +1,7 @@
 ---
-
-
 title: 'Classify.otu'
 ---
 The classify.otu command is used to get a consensus taxonomy for an otu.
-
-{% include toc.html %}
 
 ## Default Setting
 

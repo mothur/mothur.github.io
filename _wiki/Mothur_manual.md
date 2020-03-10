@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur manual'
 ---
 The goal of mothur is to have a single resource to analyze molecular

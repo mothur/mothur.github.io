@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Manhattan'
 ---
 $$D_{Manhattan} = \sum_{j=1}^{S_T} |S_{Aj} - S_{Bj} |$$

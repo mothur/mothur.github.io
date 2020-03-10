@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Finding%2FExtracting sequences and manipulating sequence names for analysis'
 ---
 This tutorial is intended to save some headaches while preparing
@@ -15,8 +13,6 @@ interior](http://www.ncbi.nlm.nih.gov/pubmed/16439655) published in
 Science 2006. I will walk you through extracting the sequences from
 genbank, manipulating the sequence names for convenience, and generating
 a group file based on where in the water column the sequences came from.
-
-{% include toc.html %}
 
 ## Getting Started
 

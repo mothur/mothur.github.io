@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Mothur v.1.1.0'
 ---
 We are happy to release **mothur v.1.1.0** today, March 9, 2009. In the

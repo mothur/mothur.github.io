@@ -1,6 +1,4 @@
 ---
-
-
 title: 'Download Clearcut'
 ---
 ## Mac executable
