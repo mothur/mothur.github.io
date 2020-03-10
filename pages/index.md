@@ -1,40 +1,30 @@
 ---
 layout: page
-title: Docsy Jekyll Theme
+title: mothur website
 permalink: /
 ---
 
-# Welcome to Docsy Jekyll
-
-This is a starter template for a docsy jekyll theme.
-
-
-## Purpose
-
-GitHub pages uses Jekyll natively, so when I make documentation, I typically
-look for Jekyll templates. Why? Using Jekyll means that I can use markdown,
-and allow for users to easily contribute, and build automatically just by
-way of pushing to a master branch (or general GitHub pages).
-I found Docsy, a beautiful Hugo template, but it requires hugo with GoLang
-which doesn't render natively on GitHub pages. For this reason, I've spent
-some time creating a custom Jekyll template that is (almost) as beautiful,
-and includes all the features that I might want.
-
-## Features
-
-What are these features? You should see the {% include wiki.html name="Getting Started" path="getting-started" %}
-guide for a complete summary. Briefly:
-
- - *User interaction* including consistent permalinks, links to ask questions via GitHub issues, and edit the file on GitHub directly.
- - *Search* across posts, documentation, and other site pages, with an ability to exclude from search.
- - *External Search* meaning an ability to link any page tag to trigger an external search.
- - *Documentation* A documentation collection that was easy to organize on the filesystem, render with nested headings for the user, and refer to in markdown.
- - *Pages* A separate folder for more traditional pages (e.g, about).
- - *Navigation*: Control over the main navigation on the left of the page, and automatic generation of table of contents for each page on the right.
- - *News* A posts feed for news and updates, along with an archive (organized by year).
- - *Templates* or specifically, "includes" that make it easy to create an alert, documentation link, or other content.
- - *Continuous Integration* recipes to preview the site
+<div class="right_side">
+	<img src="/assets/img/mothur_RGB.png" alt="mothur logo by Linda Wampach" />
+</div>
 
 
-For features, getting started with development, see the {% include wiki.html name="Getting Started" path="getting-started" %} page. Would you like to request a feature or contribute?
-[Open an issue]({{ site.repo }}/issues)
+Welcome to the website for the mothur project, initiated by <a href="&#109;&#97;&#105;&#108;&#116;&#111;:&#x70;&#x73;&#x63;&#104;&#108;&#x6F;&#115;&#x73;&#x40;&#x75;&#109;&#105;&#x63;&#x68;&#46;&#x65;&#x64;&#117;">Dr. Patrick Schloss</a> and his [research group](https://www.schlosslab.org) in the [Department of Microbiology & Immunology](http://www.med.umich.edu/microbio) at [The University of Michigan](http://www.umich.edu). This project seeks to develop a single piece of open-source, expandable software to fill the bioinformatics needs of the microbial ecology community. In February 2009 we released the first version of mothur, which had accelerated versions of the popular DOTUR and SONS programs. The [paper announcing mothur's release](https://aem.asm.org/content/75/23/7537) has gone on to become one of the most cited bioinformatics tool for analyzing 16S rRNA gene sequences. Be sure to read the [2020 retrospective](https://aem.asm.org/content/86/2/e02343-19) on mothur's development over the previous 10 years and where it hopes to go in the future. Step inside the wiki and user forum to learn how you can use mothur to process your amplicon sequence data.
+
+If you would like to contribute documentation, feel free to use the links to the right of each page to improve the text or raise questions about things that are not clear. Have an idea for a new feature in mothur or for something that would improve an existing feature? Feel free to download the [source code](https://github.com/mothur/mothur), make your improvements, and ask us to fold those changes into the existing code. Alternatively, if you have an idea or a need, but lack the programming expertise, let us know through the forum and we'll add it to the queue of features we would like to add. Be sure to subscribe to the mothur mailing list so that you can be updated on any new releases and upcoming workshops!
+
+
+<div class="classictemplate template" style="display: block;">
+	<div id="groupsio_embed_signup">
+		<form action="https://groups.io/g/mothur/signup?u=4258850273160770991" method="post" id="groupsio-embedded-subscribe-form" name="groupsio-embedded-subscribe-form" target="_blank">
+		    <div id="groupsio_embed_signup_scroll"><label for="email" id="templateformtitle">Subscribe to the mothur mailing list</label>
+
+		      <input type="email" value="" name="email" class="email" id="email" placeholder="email address" required="">
+
+		    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4258850273160770991" tabindex="-1" value=""></div>
+		    <div id="templatearchives"><p></p></div>
+		    <input type="submit" value="Subscribe" name="subscribe" id="groupsio-embedded-subscribe" class="button">
+		  </div>
+		</form>
+	</div>
+</div>

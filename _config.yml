@@ -46,10 +46,11 @@ feedback: false
 # privacy: https://domain.com/privacy
 
 # google-analytics: UA-XXXXXXXXXX
+#                   UA-10741102-1
 # Image and (square) dimension for logo (don't start with /)
 # If commented, will use material hat theme
 logo: "assets/img/mothur_RGB.png"
-logo_pixels: 34
+logo_pixels: 40
 color: "#30638e"
 # color: "#8c1515" # primary color for header, buttons
 
