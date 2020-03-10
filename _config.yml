@@ -67,7 +67,6 @@ themeColor: red # purple, green, blue, orange, purple, grey
 fixedNav: 'true' # true or false
 
 permalink: /blog/:year/:title/
-markdown: kramdown
 exclude: [_site, _mw_files, CHANGELOG.md, LICENSE, README.md, vendor]
 
 # Collections
