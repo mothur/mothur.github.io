@@ -1,14 +1,14 @@
 ---
 title: 'Remove.otus'
 ---
-The remove.otus command removes otu labels from \*.cons.taxonomy,
+The **remove.otus** command removes otu labels from \*.cons.taxonomy,
 \*.corr.axes, \*.otu.corr, shared and list files. This can be useful
 especially with subsampled datasets or when groups have been selected.
 
 
 ## Default Options
 
-The remove.otus parameters are: constaxonomy, otucorr, corraxes, shared,
+The **remove.otus** parameters are: constaxonomy, otucorr, corraxes, shared,
 list and accnos. The accnos parameter is required as well as at least
 one of the other file types.
 

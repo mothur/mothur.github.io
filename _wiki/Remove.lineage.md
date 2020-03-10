@@ -1,7 +1,7 @@
 ---
 title: 'Remove.lineage'
 ---
-The [remove.lineage](remove.lineage) command reads a taxonomy
+The **remove.lineage** command reads a taxonomy
 file and a taxon and generates a new file that contains only the
 sequences not containing that taxon. You may also include either a [
 fasta](fasta_file), [ name](name_file "wikilink"), [
@@ -15,7 +15,7 @@ to obtain the [ AbRecovery](Media:AbRecovery.zip) dataset.
 
 ## Special note
 
-When running [remove.lineage](remove.lineage) in
+When running **remove.lineage** in
 [Command\_line\_mode](Command_line_mode), you must wrap your
 taxon in quotes so mothur knows to ignore the ; characters.
 
@@ -155,7 +155,7 @@ or
     [\#350](https://github.com/mothur/mothur/issues/350)
 -   1.40.0 - Bug Fix: Fixes partial match bug.
     [\#399](https://github.com/mothur/mothur/issues/399)
--   1.42.0 - Bug Fix: Fixes bug in remove.lineage with constaxonomy and
+-   1.42.0 - Bug Fix: Fixes bug in **remove.lineage** with constaxonomy and
     shared files. [\#580](https://github.com/mothur/mothur/issues/580)
 
 [Category:Commands](Category:Commands)

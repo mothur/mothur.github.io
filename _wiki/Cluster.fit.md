@@ -1,7 +1,7 @@
 ---
 title: 'Cluster.fit'
 ---
-The [cluster.fit](cluster.fit) command can be used to assign
+The **cluster.fit** command can be used to assign
 sequences to OTUs or fit sequences to existing OTUs. Currently, mothur
 has two options for doing this:
 

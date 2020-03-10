@@ -55,7 +55,7 @@ Let's take those mw files that we downloaded, remove the spam, and convert them 
 convert_mw_to_md <- function(mediawiki_file){
 
 	#use pandoc to convert mediawiki markup to markdown
-	markdown_file <- str_replace(mediawiki_file, "_mw_files/(.*).mw", "wiki/\\1.md")
+	markdown_file <- str_replace(mediawiki_file, "_mw_files/(.*).mw", "_wiki/\\1.md")
 	system(paste0("pandoc -f mediawiki -t markdown ", mediawiki_file, " -o ", markdown_file))
 
 	md <- scan(markdown_file, what=character(), quiet=TRUE, sep="\n", blank.lines.skip=FALSE)
@@ -76,7 +76,7 @@ convert_mw_to_md <- function(mediawiki_file){
 	md <- str_replace_all(md, "\\$", "$$")
 
 	# add yaml material
-	title <- str_replace(markdown_file, "wiki/(.*).md", "\\1") %>% str_replace_all(., "_", " ") %>% str_replace_all(., ":.*", "")
+	title <- str_replace(markdown_file, "_wiki/(.*).md", "\\1") %>% str_replace_all(., "_", " ") %>% str_replace_all(., ":.*", "")
 	md <- c(
 						"---",
 						paste0("title: '", title, "'"),
@@ -95,6 +95,12 @@ convert_mw_to_md <- function(mediawiki_file){
  	md <- str_replace(md, ' "wikilink"', '')
 
 
+	stub <- str_replace(markdown_file, "_wiki/(.*).md", "\\1") %>% tolower()
+	bold_stub <- paste0("**", stub, "**")
+	link_stub <- paste0("\\[", stub, "\\]\\(", stub, "\\)")
+	md <- str_replace(md, link_stub, bold_stub)
+
+	md <- str_replace(md, paste0(" ", stub, " "), paste0(" ", bold_stub, " "))
 
 
 	write(md, file=markdown_file)
@@ -107,19 +113,16 @@ unlink("_wiki/*")
 read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 	mutate(convert = map(file, convert_mw_to_md))
 
-file.rename("wiki/Main_Page.md", "pages/wiki.md")
+unlink("_wiki/Main_Page.md")
 ```
 
 ## Manual fixing
-* Find and replace < and > characters in mathjax code with \gt and \lt
-* Change title of `wiki/index.md`
-
+* Find and replace < and > characters with \gt and \lt in mathjax code
+* Find and replace % with \% in mathjax code
 
 
 ## To do...
-* categories
-  - Possible to make tags and have a page for each tag?
-
+* categories - Possible to make tags and have a page for each tag?
 
 * Customize header nav bar
 
@@ -130,3 +133,7 @@ file.rename("wiki/Main_Page.md", "pages/wiki.md")
   - https://superdevresources.com/redirects-jekyll-github-pages/
 
 * Look for "Special:" pages
+* Link to license on each page
+* Update About page
+* Google tracking code - see what I have in config.yml to see if it works
+* robots.txt page

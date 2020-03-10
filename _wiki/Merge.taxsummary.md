@@ -1,13 +1,13 @@
 ---
 title: 'Merge.taxsummary'
 ---
-The [merge.taxsummary](merge.taxsummary) command will merge
+The **merge.taxsummary** command will merge
 \*.tax.summary files.
 
 
 ## Default Settings
 
-The merge.taxsummary command has 2 parameters: input and output. The
+The **merge.taxsummary** command has 2 parameters: input and output. The
 input parameter is used to list the .tax.summary files you wish to merge
 separated by dashes. The output parameter is used to provide a name for
 the resulting merged file.

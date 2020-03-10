@@ -1,7 +1,7 @@
 ---
 title: 'Nseqs'
 ---
-The [nseqs](nseqs) calculator returns the number of sequences
+The **nseqs** calculator returns the number of sequences
 that were sampled for an OTU definition. This calculator can be used in
 the [summary.single](summary.single),
 [collect.single](collect.single), and

@@ -1,7 +1,7 @@
 ---
 title: 'Libshuff'
 ---
-The [libshuff](libshuff) command implements the
+The **libshuff** command implements the
 [libshuff](http://whitman.myweb.uga.edu/libshuff.html) method as
 previously implemented in the programs s-libshuff and libshuff. The
 libshuff method is a generic test that describes whether two or more
@@ -71,7 +71,7 @@ option as follows:
 
 ### form
 
-There are two forms of the libshuff method - the integral and discrete
+There are two forms of the **libshuff** method - the integral and discrete
 forms. The discrete form was originally proposed by Singleton et al.
 (2001; Applied and Environmental Microbiology) and the more precise
 integral form was proposed by Schloss et al. (2004; Applied and

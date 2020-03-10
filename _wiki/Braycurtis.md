@@ -1,7 +1,7 @@
 ---
 title: 'Braycurtis'
 ---
-The [braycurtis](braycurtis) calculator returns the
+The **braycurtis** calculator returns the
 Bray-Curtis index describing the dissimilarity between the structure of
 two communities. This calculator can be used in the
 [summary.shared](summary.shared) and

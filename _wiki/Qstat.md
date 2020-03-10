@@ -1,7 +1,7 @@
 ---
 title: 'Qstat'
 ---
-The [qstat](qstat) calculator returns the Q statistic for an
+The **qstat** calculator returns the Q statistic for an
 OTU definition. This calculator can be used in the
 [summary.single](summary.single),
 [collect.single](collect.single), and

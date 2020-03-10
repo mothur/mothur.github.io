@@ -2,7 +2,7 @@
 title: 'Reverse.seqs'
 ---
 Provided with a fasta-formatted sequence file,
-[reverse.seqs](reverse.seqs) will generate a file containing
+**reverse.seqs** will generate a file containing
 their reverse complement. For exampe:
 
     mothur > reverse.seqs(fasta=amazon.fasta)

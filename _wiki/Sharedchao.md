@@ -1,7 +1,7 @@
 ---
 title: 'Sharedchao'
 ---
-The [sharedchao](sharedchao) calculator returns the shared
+The **sharedchao** calculator returns the shared
 Chao1 richness estimate for an OTU definition. This calculator can be
 used in the [summary.shared](summary.shared) and
 [collect.shared](collect.shared) commands. The calculations

@@ -1,7 +1,7 @@
 ---
 title: 'Cluster.classic'
 ---
-The [cluster.classic](cluster.classic) command can be used to
+The **cluster.classic** command can be used to
 assign sequences to OTUs. It is the dotur implementation of cluster.
 Presently, mothur implements three clustering methods:
 
@@ -30,7 +30,7 @@ needs to be stored in memory.
 
     mothur > cluster.classic(phylip=98_sq_phylip_amazon.dist)
 
-By default cluster.classic executes the furthest neighbor clustering
+By default **cluster.classic** executes the furthest neighbor clustering
 algorithm. For a detailed description of this and the other algorithms
 check out the [example clustering
 calculations](example_clustering_calculations) page. Next
@@ -154,7 +154,7 @@ count file in downstream analysis with the list file.
 
 ### method
 
-By default cluster.classic uses the furthest neighbor algorithm; this
+By default **cluster.classic** uses the furthest neighbor algorithm; this
 can be changed with the method option. By running the following command
 you will get the same output as just running cluster():
 

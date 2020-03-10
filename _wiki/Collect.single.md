@@ -1,7 +1,7 @@
 ---
 title: 'Collect.single'
 ---
-[collect.single](collect.single) generates collector\'s
+**collect.single** generates collector\'s
 curves using [calculators](calculators), that describe the
 richness, diversity, and other features of individual samples.
 Collector\'s curves describe how richness or diversity change as you

@@ -1,7 +1,7 @@
 ---
 title: 'Sort.seqs'
 ---
-The [sort.seqs](sort.seqs) command puts sequences from a
+The **sort.seqs** command puts sequences from a
 fasta, name, [ count](Count_File), group, quality, flow or
 taxonomy file in the same order.
 

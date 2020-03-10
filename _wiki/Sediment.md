@@ -39,16 +39,16 @@ biofilm metagenome, biofilter metagenome, biogas fermenter metagenome,
 bioreactor metagenome, bioreactor sludge metagenome, clinical
 metagenome, coal metagenome, compost metagenome, dust metagenome,
 fermentation metagenome, food fermentation metagenome, food metagenome,
-freshwater metagenome, freshwater sediment metagenome, groundwater
+freshwater metagenome, freshwater **sediment** metagenome, groundwater
 metagenome, halite metagenome, hot springs metagenome, hydrocarbon
 metagenome, hydrothermal vent metagenome, hypersaline lake metagenome,
 ice metagenome, indoor metagenome, industrial waste metagenome, mangrove
-metagenome, marine metagenome, marine sediment metagenome, microbial mat
+metagenome, marine metagenome, marine **sediment** metagenome, microbial mat
 metagenome, mine drainage metagenome, mixed culture metagenome, oil
 production facility metagenome, paper pulp metagenome, permafrost
 metagenome, plastisphere metagenome, power plant metagenome, retting
 rhizosphere metagenome, rock metagenome, salt lake metagenome, saltern
-metagenome, sediment metagenome, snow metagenome, soil metagenome,
+metagenome, **sediment** metagenome, snow metagenome, soil metagenome,
 stromatolite metagenome, terrestrial metagenome, tomb wall metagenome,
 wastewater metagenome, wetland metagenome, whale fall metagenome, algae
 metagenome, ant metagenome, bat metagenome, beetle metagenome, bovine
@@ -118,7 +118,7 @@ The matter displaced by the sample (eg., air, soil, water).
 ### depth
 
 Depth is defined as the vertical distance below surface, e.g. for
-sediment or soil samples depth is measured from sediment or soil
+sediment or soil samples depth is measured from **sediment** or soil
 surface, respectivly. Depth can be reported as an interval for
 subsurface samples.
 
@@ -409,7 +409,7 @@ values.
 
 ### porosity
 
-The porosity of deposited sediment is volume of voids divided by the
+The porosity of deposited **sediment** is volume of voids divided by the
 total volume of sample.
 
     format: {float} {unit}
@@ -483,7 +483,7 @@ The sample storage temperature.
 
 ### sediment\_type
 
-The information about the sediment type based on major constituents.
+The information about the **sediment** type based on major constituents.
 
     format: [, 'biogenous', 'cosmogenous', 'hydrogenous', 'lithogenous']
 

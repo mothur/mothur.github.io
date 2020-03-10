@@ -1,14 +1,14 @@
 ---
 title: 'Corr.axes'
 ---
-The [corr.axes](corr.axes) command will calculate the
+The **corr.axes** command will calculate the
 correlation coefficient for each column in a shared/relabund file to the
 axes displayed in a pcoa file.
 
 
 ## Default settings
 
-The [corr.axes](corr.axes) command reads a shared, relabund
+The **corr.axes** command reads a shared, relabund
 or metadata file as well as an axes file. If a shared file is given, the
 relabund is calculated. A metadata file has the same number of rows as
 samples, but the column(s) are floats that describe the samples (e.g.

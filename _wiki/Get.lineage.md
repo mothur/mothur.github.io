@@ -1,7 +1,7 @@
 ---
 title: 'Get.lineage'
 ---
-The [get.lineage](get.lineage) command reads a taxonomy file
+The **get.lineage** command reads a taxonomy file
 and taxon then generates a new file containing only sequences from the
 specified taxon. You may also include either a [
 fasta](fasta_file), [ name](name_file "wikilink"), [

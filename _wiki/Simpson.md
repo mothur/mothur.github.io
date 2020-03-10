@@ -1,7 +1,7 @@
 ---
 title: 'Simpson'
 ---
-The [simpson](simpson) calculator returns the Simpson
+The **simpson** calculator returns the Simpson
 diversity index for an OTU definition. This calculator can be used in
 the [summary.single](summary.single),
 [collect.single](collect.single), and

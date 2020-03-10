@@ -1,7 +1,7 @@
 ---
 title: 'Help'
 ---
-The [help](help) command will output a list of the valid
+The **help** command will output a list of the valid
 commands that are found in mothur.
 
     mothur > help()
@@ -11,7 +11,7 @@ commands that are found in mothur.
 
     For further assistance please refer to the Mothur manual on our wiki at `[`http://www.mothur.org/wiki`](http://www.mothur.org/wiki)`, or contact Pat Schloss at mothur.bugs@gmail.com.
 
-Or you can access the help for a specific command with the following:
+Or you can access the **help** for a specific command with the following:
 
     mothur > help(cluster)
 
@@ -27,20 +27,20 @@ Or you can access the help for a specific command with the following:
 
     For further assistance please refer to the Mothur manual on our wiki at `[`http://www.mothur.org/wiki`](http://www.mothur.org/wiki)`, or contact Pat Schloss at mothur.bugs@gmail.com.
 
-Alternatively, if you want the help information specific to a particular
+Alternatively, if you want the **help** information specific to a particular
 command, use **help** as the option. For example,
 
     mothur > cluster(help)
 
 You should note that the documentation on this wiki is more complete and
-informative than that provided by the help command and options.
+informative than that provided by the **help** command and options.
 
 ## Revisions
 
--   1.38.1 - Improved help options
--   1.40.0 - Updates help and fixes redirect bug.
+-   1.38.1 - Improved **help** options
+-   1.40.0 - Updates **help** and fixes redirect bug.
     [\#387](https://github.com/mothur/mothur/issues/387)
--   1.42.0 - Improves help command.
+-   1.42.0 - Improves **help** command.
     [\#183](https://github.com/mothur/mothur/issues/183)
 
 [Category:Commands](Category:Commands)

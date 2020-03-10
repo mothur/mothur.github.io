@@ -1,7 +1,7 @@
 ---
 title: 'Mgcluster'
 ---
-The [mgcluster](mgcluster) command \....
+The **mgcluster** command \....
 
 For this tutorial you should download the [ Example
 Files](Media:_Bap_Files.zip) file and decompress it.

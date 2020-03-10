@@ -1,7 +1,7 @@
 ---
 title: 'Boneh'
 ---
-The [boneh](boneh) calculator returns the Boneh estimate of
+The **boneh** calculator returns the Boneh estimate of
 the number of additional OTUs that would be observed for an additional
 level of sampling. This calculator can be used in the
 [summary.single](summary.single),

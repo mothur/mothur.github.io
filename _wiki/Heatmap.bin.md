@@ -1,7 +1,7 @@
 ---
 title: 'Heatmap.bin'
 ---
-The [heatmap.bin](heatmap.bin) command generates a heat map
+The **heatmap.bin** command generates a heat map
 from data provided in either a \*.list or a \*.shared file. Each row in
 the heatmap represents a different OTU and the color of the OTU in each
 group scaled between black and red according to the relative abundance
@@ -13,8 +13,8 @@ AbRecovery.zip](Media:AbRecovery.zip).
 
 ## Default settings
 
-To execute the heatmap.bin command first generate the shared data and
-run the heatmap.bin command:
+To execute the **heatmap.bin** command first generate the shared data and
+run the **heatmap.bin** command:
 
     mothur > make.shared(list=abrecovery.fn.list, group=abrecovery.groups)
     mothur > heatmap.bin(shared=abrecovery.fn.shared)
@@ -102,7 +102,7 @@ is used.
 
 ### sorted
 
-By default the heatmap.bin command will sort the rows of the heatmap
+By default the **heatmap.bin** command will sort the rows of the heatmap
 first by those that are shared. The other sorting options are none,
 totalotu, totalgroup.
 

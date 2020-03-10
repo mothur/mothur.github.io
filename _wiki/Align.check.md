@@ -26,7 +26,7 @@ your alignment.
 
 ## Default settings
 
-To run align.check you need to provide your aligned sequences as a
+To run **align.check** you need to provide your aligned sequences as a
 FASTA-formatted file. You also need to provide the appropriate file
 containing the [secondary structure
 map](secondary_structure_map). These esophagus sequences were

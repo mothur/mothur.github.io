@@ -1,25 +1,25 @@
 ---
 title: 'Shhh.flows'
 ---
-The [shhh.flows](shhh.flows) command is Pat Schloss\'s
+The **shhh.flows** command is Pat Schloss\'s
 translation of Chris Quince\'s PyroNoise algorithm
 [1](http://people.civil.gla.ac.uk/~quince/Software/PyroNoise.html) from
 C to C++ with the incorporation of mothur\'s bells and whistles. Based
-on processing of test datasets provided by Quince, shhh.flows gives the
+on processing of test datasets provided by Quince, **shhh.flows** gives the
 same/similar output to AmpliconNoise. (Note: The AmpliconNoise pipeline
 includes a second algorithm, SeqNoise. SeqNoise does not operate on the
 underlying flowgrams. A mothur implementation of SeqNoise is available
-as [shhh.seqs](shhh.seqs).) shhh.flows uses a
+as [shhh.seqs](shhh.seqs).) **shhh.flows** uses a
 expectation-maximization algorithm to correct flowgrams to identify the
 idealized form of each flowgram and translate that flowgram to a DNA
 sequence. Our testing has shown that when Titanium data are trimmed to
-450 flows using [trim.flows](trim.flows), shhh.flows provides
+450 flows using [trim.flows](trim.flows), **shhh.flows** provides
 the highest quality data for any other method available. In contrast,
 when we use the min/max number of flows suggested by Quince of 360/720,
 the error rate is not that great. This much improved error rate does
 come at a computational cost. Whereas the features in
 [trim.seqs](trim.seqs) take on the order of minutes,
-shhh.flows can take on the order of hours. Running shhh.flows with large
+shhh.flows can take on the order of hours. Running **shhh.flows** with large
 datasets without multiple processors or MPI is not suggested. You can
 obtain the appropriate version of MPI for your operating system at
 <http://www.open-mpi.org/>. You will also need a lookup file that tells
@@ -53,7 +53,7 @@ This will generate several files including \...
 Alternatively, if you used multiple barcodes and or primers in
 [trim.flows](trim.flows), then the names of the resulting
 flow files will be stored in a file ending in \"flow.files\". Using the
-files option will tell the shhh.flows command to process each of those
+files option will tell the **shhh.flows** command to process each of those
 flow files:
 
     mothur > shhh.flows(files=GQY1XT001.flow.files)
@@ -69,7 +69,7 @@ GQY1XT001.shhh.names files that can be used as input to
 
 Although MPI is not required to run shhh.flows, to get all you can out
 of all of your processors, you really need to use MPI and the MPI
-version of mothur. To run shhh.flows without MPI, but still get a small
+version of mothur. To run **shhh.flows** without MPI, but still get a small
 boost in performance you can do the following:
 
     mothur > shhh.flows(files=GQY1XT001.flow.files, processors=8)
@@ -84,14 +84,14 @@ line:
 
 ### lookup
 
-A lookup file is required to run shhh.flows and it needs to be located
+A lookup file is required to run **shhh.flows** and it needs to be located
 either in the same folder as your data, next to your executable, or in
 the path you give this option. You can obtain the various [lookup
 files](lookup_files) that are compatible with mothur.
 
 ### maxiter
 
-The maxiter option tells shhh.flows the maximum iterations to run if the
+The maxiter option tells **shhh.flows** the maximum iterations to run if the
 delta value does not first drop below the mindelta value. The minimum
 number of iterations is 10. By default maxiter is set to 1000. If you
 set maxiter to 0, then the number of iterations do not matter and the

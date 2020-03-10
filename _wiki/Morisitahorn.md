@@ -1,7 +1,7 @@
 ---
 title: 'Morisitahorn'
 ---
-The [morisitahorn](morisitahorn) calculator returns the
+The **morisitahorn** calculator returns the
 Morisita-Horn index describing the dissimilarity between the structure
 of two communities. This calculator can be used in the
 [summary.shared](summary.shared) and

@@ -1,7 +1,7 @@
 ---
 title: 'Phylo.diversity'
 ---
-The phylo.diversity command requires an input tree file. Two files will
+The **phylo.diversity** command requires an input tree file. Two files will
 be output: .phylo.diversity and (if you set rarefy=T) .rarefaction. To
 run this tutorial download [
 AbRecovery.zip](Media:AbRecovery.zip)

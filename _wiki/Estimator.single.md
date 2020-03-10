@@ -1,7 +1,7 @@
 ---
 title: 'Estimator.single'
 ---
-[estimator.single](estimator.single) This command implements
+**estimator.single** This command implements
 the diversity estimators from
 <https://github.com/chrisquince/DiversityEstimates>.
 <https://www.ncbi.nlm.nih.gov/pubmed/18650928>. Here are the sabund
@@ -142,7 +142,7 @@ attempt to create it for you.
 ### calc
 
 The calc option allows you to indicate the calculator you want to use
-with the estimator.single command. Options include: default, erarefact,
+with the **estimator.single** command. Options include: default, erarefact,
 ig, igabund, igrarefact, ln, lnabund, lnrarefact, lnshift, ls, lsabund,
 lsrarefact, si, siabund, sirarefact, sishift. Be sure to use the correct
 sampling estimator with your calculator. IG is used for igabund and

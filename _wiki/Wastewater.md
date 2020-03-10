@@ -164,7 +164,7 @@ dioxide, methane, etc.; can include multiple substances
 
 ### indust\_eff\_percent
 
-Percentage of industrial effluents received by wastewater treatment
+Percentage of industrial effluents received by **wastewater** treatment
 plant
 
 ### inorg\_particles
@@ -289,7 +289,7 @@ sewage
 
 ### sewage\_type
 
-Type of wastewater treatment plant as municipial or industrial
+Type of **wastewater** treatment plant as municipial or industrial
 
 ### sludge\_retent\_time
 
@@ -342,7 +342,7 @@ Total amount or concentration of phosphate
 
 ### wastewater\_type
 
-The origin of wastewater such as human waste, rainfall, storm drains,
+The origin of **wastewater** such as human waste, rainfall, storm drains,
 etc.
 
 ### user\_defined

@@ -203,7 +203,7 @@ would each query sequence compared with. By default it is set to 20.
 
 ### processors
 
-To speed up your processing the chimera.ccode command can be run with
+To speed up your processing the **chimera.ccode** command can be run with
 multiple processors by using the processors parameter. By default the
 processors parameter is 1. If you are using the mpi-enabled version
 processors is set to the number of processes running.

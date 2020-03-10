@@ -1,7 +1,7 @@
 ---
 title: 'Remove.seqs'
 ---
-The [remove.seqs](remove.seqs) command takes a list of
+The **remove.seqs** command takes a list of
 sequence names and either a [ fastq](fastq_file), [
 fasta](fasta_file), [ name](name_file "wikilink"), [
 group](group_file), [ list](list_file "wikilink"), [
@@ -81,7 +81,7 @@ following lines:
     ...
 
 By default, the entire line from a name file if you remove any name from
-the line. default=false. If dups=true, then remove.seqs outputs a new
+the line. default=false. If dups=true, then **remove.seqs** outputs a new
 .accnos file containing all the sequences removed. To turn this setting
 off, see the [ dups](#dups) subsection, below.
 

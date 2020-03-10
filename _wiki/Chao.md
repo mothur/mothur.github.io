@@ -1,7 +1,7 @@
 ---
 title: 'Chao'
 ---
-The [chao](chao) calculator returns the Chao1 richness
+The **chao** calculator returns the Chao1 richness
 estimate for an OTU definition. This calculator can be used in the
 [summary.single](summary.single),
 [collect.single](collect.single), and
@@ -87,7 +87,7 @@ The first column is the label for the OTU definition and the second
 column is an integer indicating the number of sequences in the dominant
 OTU. The Chao1 estimator is then calculated using the values found in
 the third (the number of singletons)and fourth (the number of
-doubletons) columns. For example, chao for an OTU definition of 0.10
+doubletons) columns. For example, **chao** for an OTU definition of 0.10
 would be calculated as:
 
 $$S_{chao1} = 55 + \frac{34\left (33 \right )}{2\left (14 \right )} = 95.07$$

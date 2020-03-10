@@ -1,7 +1,7 @@
 ---
 title: 'Cooccurrence'
 ---
-The [cooccurrence](cooccurrence) command calculates four
+The **cooccurrence** command calculates four
 metrics and tests their significance to assess whether presence-absence
 patterns are different than what one would expect by chance.
 

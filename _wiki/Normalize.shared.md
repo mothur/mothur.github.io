@@ -1,7 +1,7 @@
 ---
 title: 'Normalize.shared'
 ---
-The normalize.shared command creates a .norm.shared file.
+The **normalize.shared** command creates a .norm.shared file.
 
 
 ## Default Settings

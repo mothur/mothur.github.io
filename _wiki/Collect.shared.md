@@ -1,7 +1,7 @@
 ---
 title: 'Collect.shared'
 ---
-The [collect.shared](collect.shared) command generates
+The **collect.shared** command generates
 collector\'s curves for [calculators](calculators), which
 describe the similarity between communities or their shared richness.
 Collector\'s curves describe how richness or diversity change as you
@@ -152,7 +152,7 @@ If you had started this tutorial with the following comamnds:
 You would have seen that there were 7 groups here: 70A-70F and 70S. The
 sequences from 70S were collected from Patient 70\'s stool sample those
 from samples 70A-70F were from their mucosa. These 7 groups would yield
-21 pairwise comparisons if you ran the collect.shared command; however,
+21 pairwise comparisons if you ran the **collect.shared** command; however,
 if you were only interested in the comparisons between each mucosa site
 and the stool sample you could use the group option:
 

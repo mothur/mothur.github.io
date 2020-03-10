@@ -1,7 +1,7 @@
 ---
 title: 'Solow'
 ---
-The [solow](solow) calculator returns the Solow estimate of
+The **solow** calculator returns the Solow estimate of
 the number of additional OTUs that would be observed for an additional
 level of sampling. This calculator can be used in the
 [summary.single](summary.single),

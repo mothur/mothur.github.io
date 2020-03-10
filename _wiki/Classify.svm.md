@@ -1,18 +1,18 @@
 ---
 title: 'Classify.svm'
 ---
-The [classify.svm](classify.svm) command generates a summary
+The **classify.svm** command generates a summary
 file of ranked OTUs. This ranking is determined by the method of
 *support vector machine recursive feature elimination* (SVM-RFE). The
 summary file format is similar to that produced by
 [classify.shared](classify.shared). The first column gives
 OTU label and the second column gives OTU rank. Unlike the ranks
 produced by [classify.shared](classify.shared),
-[classify.svm](classify.svm) only gives an ordering of OTUs.
+**classify.svm** only gives an ordering of OTUs.
 
 Support vector machine learning has been extensively studied and is
 widely used, but the first-time user is presented with many obstacles to
-achieving good performance. The [classify.svm](classify.svm)
+achieving good performance. The **classify.svm**
 command by default will apply several different parameters and report
 the results although this adds time to the process. The user may be able
 to reduce the run time by examining the summary and selecting the
@@ -122,9 +122,9 @@ and `Otu19061` to be the top three most important features.
 
 ### mode
 
-By default classify.svm will use recursive feature elimination to rank
+By default **classify.svm** will use recursive feature elimination to rank
 OTUs in order of relevance for discriminating among the design file
-groups. If \'mode=classify\' is specified classify.svm will train
+groups. If \'mode=classify\' is specified **classify.svm** will train
 support vector machines on the specified data and report the best
 classification performance.
 

@@ -1,12 +1,12 @@
 ---
 title: 'Fastq.info'
 ---
-The fastq.info command reads a fastq file and creates a fasta and
+The **fastq.info** command reads a fastq file and creates a fasta and
 quality file or can be used to parse fastq files by sample.
 
 ## Default settings
 
-The fastq.info command parameters are file, fastq, fasta, qfile, oligos,
+The **fastq.info** command parameters are file, fastq, fasta, qfile, oligos,
 group and format; file or fastq is required.
 
     mothur > fastq.info(fastq=M11Fcsw.fastq)
@@ -68,7 +68,7 @@ to pdiffs + bdiffs + ldiffs + sdiffs).
 
 ### checkorient
 
-If you are running the fastq.info command with paired barcodes or
+If you are running the **fastq.info** command with paired barcodes or
 primers, you can use the checkorient parameter. When checkorient=t and
 mothur can\'t find the barcodes and primers, it will search the reverse
 compliment.

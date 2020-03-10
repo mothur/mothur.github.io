@@ -1,7 +1,7 @@
 ---
 title: 'Create.database'
 ---
-The [create.database](create.database) command reads a [list
+The **create.database** command reads a [list
 file](list_file), \*.cons.taxonomy, \*.rep.fasta,
 \*.rep.names or \*.rep.count\_table and optional [group
 file](group_file), and creates a database file. To run the
@@ -10,7 +10,7 @@ Files](Media:_Create_Database_Files.zip)
 
 ## Default Settings
 
-The create.database command parameters are repfasta, list, shared,
+The **create.database** command parameters are repfasta, list, shared,
 relabund, repname, constaxonomy, group and label. List, relabund or
 shared, and count & constaxonomy are required. NOTE: Make SURE the
 repfasta, repnames or count and constaxonomy are for the same label as

@@ -1,7 +1,7 @@
 ---
 title: 'Invsimpson'
 ---
-The [invsimpson](invsimpson) calculator is the inverse of the
+The **invsimpson** calculator is the inverse of the
 classical [Simpson](Simpson) diversity estimator. This
 parameter is preferred to other measures of alpha-diversity because it
 is an indication of the richness in a community with uniform evenness

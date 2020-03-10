@@ -1,7 +1,7 @@
 ---
 title: 'Bergerparker'
 ---
-The [bergerparker](bergerparker) calculator returns the
+The **bergerparker** calculator returns the
 Berger-Parker dominance index for an OTU definition. This calculator can
 be used in the [summary.single](summary.single),
 [collect.single](collect.single), and

@@ -1,10 +1,10 @@
 ---
 title: 'Rarefaction'
 ---
-mothur calculates [rarefaction](rarefaction) curve data using
+mothur calculates **rarefaction** curve data using
 the [rarefaction.single](rarefaction.single) command for the
 number of observed OTUs as a function of distance between sequences and
-the number of sequences sampled. By theory, the rarefaction curve should
+the number of sequences sampled. By theory, the **rarefaction** curve should
 match the following expression:
 
 $$S_n = S_t - \left (\frac{\sum_{i=1}^{S_t}{N - N_i \choose n} }{ {N \choose n}}  \right )$$

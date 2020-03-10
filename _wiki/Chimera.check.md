@@ -78,7 +78,7 @@ For the chimeracheck algorithm the default is 10.
 ### processors
 
 To speed up your processing the
-[chimera.check](chimera.check) command can be run with
+**chimera.check** command can be run with
 multiple processors by using the processors parameter. By default the
 processors parameter is 1. If you are using the mpi-enabled version
 processors is set to the number of processes you have running.

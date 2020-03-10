@@ -1,7 +1,7 @@
 ---
 title: 'Anderberg'
 ---
-The [anderberg](anderberg) calculator returns the Anderberg
+The **anderberg** calculator returns the Anderberg
 index describing the dissimilarity between two communities. This
 calculator can be used in the
 [summary.shared](summary.shared) and

@@ -1,19 +1,19 @@
 ---
 title: 'Indicator'
 ---
-The indicator command can be run in 3 ways: with a shared or relabund
+The **indicator** command can be run in 3 ways: with a shared or relabund
 file and a design file, or with a shared or relabund file and a tree
 file, or with a shared or relabund file, tree file and design file. The
 indicator command outputs a .indicator.summary file and a .indicator.tre
 if a tree is given. The new tree contains labels at each internal node.
 The label is the node number so you can relate the tree to the summary
-file. The summary file lists the indicator value for each OTU for each
+file. The summary file lists the **indicator** value for each OTU for each
 node. To run this tutorial please download
 [JCZData.zip](Media:JCZData.zip).
 
-For background on the indicator metric, see:
+For background on the **indicator** metric, see:
 
-Dufrene M, Legendre P (1997). Species assemblages and indicator species:
+Dufrene M, Legendre P (1997). Species assemblages and **indicator** species:
 The need for a flexible asymmetrical approach. Ecol Monogr 67: 345-66.
 
 McCune B, Grace JB, Urban DL (2002). Analysis of ecological communities.
@@ -23,7 +23,7 @@ Legendre P, Legendre L (1998). Numerical Ecology. Elsevier: New York.
 
 ## Default Settings
 
-First let\'s run the indicator command with a tree and shared file:
+First let\'s run the **indicator** command with a tree and shared file:
 
     mothur > indicator(tree=jcz.tx.morisitahorn.1.tre, shared=jcz.tx.shared)
     You did not provide a label, I will use the first label in your inputfile.
@@ -71,7 +71,7 @@ each other.
     7  Otu028  M3S12-M3S2-M3S3-M3S4-M3S5-M3S6-M3S7-M3S8-M3S9-P1S1-P1S10-P1S11-P1S12-P1S13-P1S14-P1S15-P1S16-P1S17-P1S18-P1S19  46.837257   0.005000
     ...
 
-Lastly, you can run the indicator command with a shared and design file.
+Lastly, you can run the **indicator** command with a shared and design file.
 
     mothur > indicator(shared=stool.final.an.shared, design=stool.design)
     Species    Indicator_Groups    IndicatorValue  pValue
@@ -158,7 +158,7 @@ the groupings relate to each other.
 
 ## Revisions
 
--   1.29.0 Added group info to indicator results.
+-   1.29.0 Added group info to **indicator** results.
 -   1.31.0 Added multiple processors for Windows.
 -   1.31.0 Bug Fix: problem with pvalues when multiple processors were
     used.

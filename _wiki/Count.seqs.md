@@ -1,7 +1,7 @@
 ---
 title: 'Count.seqs'
 ---
-The [count.seqs](count.seqs) / make.table command counts the
+The **count.seqs** / make.table command counts the
 number of sequences represented by the representative sequence in a name
 file. If a group file is given, it will also provide the group count
 breakdown.
@@ -137,7 +137,7 @@ groups, not total from all groups.
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
--   1.42.0 - Adds count and compress parameters to count.seqs to inflate
+-   1.42.0 - Adds count and compress parameters to **count.seqs** to inflate
     or deflate count tables.
 
 [Category:Commands](Category:Commands)

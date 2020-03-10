@@ -1,7 +1,7 @@
 ---
 title: 'Get.group'
 ---
-The [get.group](get.group) command allows you to get a
+The **get.group** command allows you to get a
 listing of the different groups available for the multi-sample OTU data
 that are currently stored in memory. This feature should help in using
 the group option for other commands. For this tutorial you should

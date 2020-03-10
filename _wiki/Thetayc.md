@@ -1,7 +1,7 @@
 ---
 title: 'Thetayc'
 ---
-The [thetayc](thetayc) calculator returns the Yue & Clayton
+The **thetayc** calculator returns the Yue & Clayton
 measure of dissimilarity between the structures of two communities. This
 calculator can be used in the
 [summary.shared](summary.shared) and

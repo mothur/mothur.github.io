@@ -1,7 +1,7 @@
 ---
 title: 'Filter.seqs'
 ---
-[filter.seqs](filter.seqs) removes columns from alignments
+**filter.seqs** removes columns from alignments
 based on a criteria defined by the user. For example, alignments
 generated against reference alignments (e.g. from RDP, SILVA, or
 greengenes) often have columns where every character is either a \'.\'
@@ -17,7 +17,7 @@ files in [ AmazonData.zip](Media:AmazonData.zip).
 
 ## Default settings
 
-To run filter.seqs you need to provide your sequences to be filtered in
+To run **filter.seqs** you need to provide your sequences to be filtered in
 either fasta, nexus, clustal, or phylip format. The output will be in
 fasta format. By default, any column with a \'-\' in every sequence is
 removed from the alignment and put into a \*.filter.fasta file. For

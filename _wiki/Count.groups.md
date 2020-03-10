@@ -1,7 +1,7 @@
 ---
 title: 'Count.groups'
 ---
-The [count.groups](count.groups) command counts sequences
+The **count.groups** command counts sequences
 from a specific group or set of groups from the following file types:
 group, count or shared file. To run this tutorial please download, [
 Example Data ](Media:countGroupsDataset.zip)

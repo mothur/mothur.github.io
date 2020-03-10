@@ -1,7 +1,7 @@
 ---
 title: 'Get.otus'
 ---
-The [get.otus](get.otus) command selects otus from a given
+The **get.otus** command selects otus from a given
 
 ## Default Settings
 

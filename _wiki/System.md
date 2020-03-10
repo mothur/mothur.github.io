@@ -1,7 +1,7 @@
 ---
 title: 'System'
 ---
-The [system](system) command allows the user to run programs
+The **system** command allows the user to run programs
 outside of mothur without leaving the mothur environment. This command
 is useful for changing directories and renaming files. The syntax for
 this command is different from the other commands - the actual command

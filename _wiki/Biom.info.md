@@ -1,7 +1,7 @@
 ---
 title: 'Biom.info'
 ---
-The biom.info command reads a biom file creates a
+The **biom.info** command reads a biom file creates a
 [Shared\_file](Shared_file). If your biom file contains
 metadata mothur will also create taxonomy or constaxonomy along with
 tax.summary files.
@@ -153,7 +153,7 @@ our forum, <https://forum.mothur.org>.
 
 -   1.37.0 - First Introduced
     [\#82](https://github.com/mothur/mothur/issues/82)
--   1.41.0 - Add sample info to tax.summary in biom.info command.
+-   1.41.0 - Add sample info to tax.summary in **biom.info** command.
     [\#531](https://github.com/mothur/mothur/issues/531)
--   1.41.0 - Updates biom.info to read hdf5 biom files.
+-   1.41.0 - Updates **biom.info** to read hdf5 biom files.
     [\#178](https://github.com/mothur/mothur/issues/178)

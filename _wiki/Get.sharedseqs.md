@@ -11,7 +11,7 @@ files](Media:AbRecovery.zip).
 
 ## Default settings
 
-To execute the get.sharedseqs command you must provide a list and
+To execute the **get.sharedseqs** command you must provide a list and
 group/count file or shared file. By default this will output the
 sequences found in the OTUs shared by all the groups in your group/count
 file or shared file. For example:
@@ -178,7 +178,7 @@ Opening abrecovery.fn.0.04.shared.seqs you would see the output as:
     AY457855
     AY457804
 
-## Why do the venn diagram results vary from [get.sharedseqs](get.sharedseqs) results?
+## Why do the venn diagram results vary from **get.sharedseqs** results?
 
 Confusion can occur when you have a shared file with more groups than
 just the subset you are looking at in your venn diagram. For this
@@ -221,7 +221,7 @@ if none are provided the first 4 groups in the file. This is done
 because there are limits to the drawing of the venn diagram. With more
 than 4 groups the picture becomes too complicated to be of use. In this
 example group A is not included which changes the shared and unique
-composition.The get.sharedseqs command does not have the limitations of
+composition.The **get.sharedseqs** command does not have the limitations of
 the picture. You can set parameters with the sharedgroups and
 uniquegroups. The sharedgroups parameter means the OTUs MUST include the
 groups you listed, but MAY also include other groups. The uniquegroups

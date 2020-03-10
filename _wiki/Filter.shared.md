@@ -1,13 +1,13 @@
 ---
 title: 'Filter.shared'
 ---
-The filter.shared command is used to remove OTUs based on various
+The **filter.shared** command is used to remove OTUs based on various
 criteria. It creates a .filter.shared file.
 
 
 ## Default settings
 
-The filter.shared command requires a shared file.
+The **filter.shared** command requires a shared file.
 
     mothur > filter.shared(shared=final.an.shared)
 

@@ -1,7 +1,7 @@
 ---
 title: 'Unifrac.weighted'
 ---
-The [unifrac.weighted](unifrac.weighted) comand implements
+The **unifrac.weighted** comand implements
 the [weighted UniFrac algorithm](weighted_UniFrac_algorithm).
 The [unifrac.unweighted](unifrac.unweighted) command
 implements the unweighted version of the command. Both of these methods
@@ -171,7 +171,7 @@ The name parameter allows you to enter a namesfile with your tree.
 
 The [ count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
-given representative sequence. For the unifrac.weighted command it must
+given representative sequence. For the **unifrac.weighted** command it must
 also contain group information.
 
     mothur > make.table(group=abrecovery.groups, name=abrecovery.names)

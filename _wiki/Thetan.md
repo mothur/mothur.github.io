@@ -1,7 +1,7 @@
 ---
 title: 'Thetan'
 ---
-The [thetan](thetan) calculator returns the community Jaccard
+The **thetan** calculator returns the community Jaccard
 index of Smith (aka the Θn of Yue) describing the dissimilarity between
 the structure of two communities. This calculator can be used in the
 [summary.shared](summary.shared) and

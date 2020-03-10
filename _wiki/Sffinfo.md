@@ -1,12 +1,12 @@
 ---
 title: 'Sffinfo'
 ---
-The sffinfo command extract sequences reads from a .sff file.
+The **sffinfo** command extract sequences reads from a .sff file.
 
 
 ## Default settings
 
-The sffinfo command requires that the user provide a .sff or sff.txt
+The **sffinfo** command requires that the user provide a .sff or sff.txt
 file. You may enter multiple sff files by separating them by -\'s. For
 example: F5MMO9001.sff-GHL4YHV01.sff.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Get.mimarkspackage'
 ---
-The get.mimarkspackage command creates a MIMarks package template for
+The **get.mimarkspackage** command creates a MIMarks package template for
 your samples for the environment you select. See Creating a new
 submission to see how to use make.sra in your workflow.
 

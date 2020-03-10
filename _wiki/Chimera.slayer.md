@@ -1,7 +1,7 @@
 ---
 title: 'Chimera.slayer'
 ---
-The chimera.slayer command reads a fasta file and reference file and
+The **chimera.slayer** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The developers of the original
 algorithm suggest using a special template reference set (i.e. gold). We
 provide a silva-based alignment of this dataset with our [silva

@@ -1,7 +1,7 @@
 ---
 title: 'Degap.seqs'
 ---
-The degap.seqs command reads a fasta file and outputs a .ng.fasta
+The **degap.seqs** command reads a fasta file and outputs a .ng.fasta
 containing the sequences after all gap characters are removed.
 
 ## Default settings

@@ -1,7 +1,7 @@
 ---
 title: 'Memchi2'
 ---
-The [memchi2](memchi2) calculator returns a membership-based
+The **memchi2** calculator returns a membership-based
 distance based on the Chi-squared statistic. This calculator can be used
 in the [summary.shared](summary.shared),
 [collect.shared](collect.shared), and

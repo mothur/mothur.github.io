@@ -49,7 +49,7 @@ potentially chimeric sequences.
 
 The only required parameter is fasta. You may enter multiple fasta files
 by separating them by dashes. Example: fasta=ex.align-abrecovery.align.
-The default settings for chimera.bellerophon are filter=F, window=1/4
+The default settings for **chimera.bellerophon** are filter=F, window=1/4
 length of seq, increment=25, correction=T, processors=1.
 
     mothur > chimera.bellerophon(fasta=ex.align)

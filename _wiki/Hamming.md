@@ -1,7 +1,7 @@
 ---
 title: 'Hamming'
 ---
-The [hamming](hamming) calculator returns the Hamming
+The **hamming** calculator returns the Hamming
 distance between two communities. This calculator can be used in the
 [summary.shared](summary.shared),
 [collect.shared](collect.shared), and
@@ -101,6 +101,6 @@ Running\...
 
 \...and opening 98\_lt\_phylip\_amazon.fn.shared.summary gives:
 
-label comparison hamming 0.10 forest pasture 46.00000
+label comparison **hamming** 0.10 forest pasture 46.00000
 
 These are the same values that we found above for a cutoff of 0.10.

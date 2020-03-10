@@ -1,7 +1,7 @@
 ---
 title: 'Read.otu'
 ---
-NOTE: Starting with mothur version 1.18.0 the read.otu command no longer
+NOTE: Starting with mothur version 1.18.0 the **read.otu** command no longer
 exists. You can enter your file names directly into the commands that
 use them. For example:
 

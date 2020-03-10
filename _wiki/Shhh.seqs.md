@@ -1,7 +1,7 @@
 ---
 title: 'Shhh.seqs'
 ---
-The [shhh.seqs](shhh.seqs) command is a mothur-based rewrite
+The **shhh.seqs** command is a mothur-based rewrite
 of Chris Quince\'s sequence denoising algorithm, SeqNoise
 [1](http://code.google.com/p/ampliconnoise/). (Note: SeqNoise is one of
 two algorithms in the AmpliconNoise pipeline. The other, PyroNoise, runs

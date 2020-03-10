@@ -1,7 +1,7 @@
 ---
 title: 'Chimera.perseus'
 ---
-The chimera.perseus command reads a fasta and name file, and outputs
+The **chimera.perseus** command reads a fasta and name file, and outputs
 potentially chimeric sequences.
 
 

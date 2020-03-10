@@ -46,7 +46,7 @@ install the HDF5 library and set the HDF5 flags.
 
 In the Mac OSX and Linux-type environments, you need to have a C++
 compiler installed. These are typically installed with most linux-type
-operating systems and is on the Mac OSX installation CD/DVD. For Mac OSX
+operating systems and is on the Mac OSX **installation** CD/DVD. For Mac OSX
 users, you need to install the Xcode developer\'s tools. After [
 downloading mothur](Download_mothur), decompress it. If you
 want to house mothur off of your home folder (because don\'t we all want

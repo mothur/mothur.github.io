@@ -1,7 +1,7 @@
 ---
 title: 'Summary.single'
 ---
-The [summary.single](summary.single) command will produce a
+The **summary.single** command will produce a
 summary file that has the calculator value for each line in the OTU data
 and for all possible comparisons between the different groups in the
 group file. This can be useful if you aren\'t interested in generating
@@ -158,7 +158,7 @@ Opening 98\_lt\_phylip\_amazon.fn.summary you would see the output as:
 
 ### groupmode
 
-If you are running summary.single with a shared file and would like your
+If you are running **summary.single** with a shared file and would like your
 summary results collated in multiple files, set groupmode=f.
 (Default=True). If you run:
 
@@ -208,7 +208,7 @@ times. Default=f.
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
--   1.43.0 - Modifies output files from dist.shared, summary.single and
+-   1.43.0 - Modifies output files from dist.shared, **summary.single** and
     summary.shared. You may run with or without rarefaction, but not
     both. [\#607](https://github.com/mothur/mothur/issues/607)
 

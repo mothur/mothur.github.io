@@ -1,7 +1,7 @@
 ---
 title: 'Summary.shared'
 ---
-The [summary.shared](summary.shared) command will produce a
+The **summary.shared** command will produce a
 summary file that has the calculator value for each line in the OTU data
 and for all possible comparisons between the different groups in the
 group file. This can be useful if you aren\'t interested in generating
@@ -115,7 +115,7 @@ If you had started this tutorial with the following commands:
 You would have seen that there were 7 groups here: 70A-70F and 70S. The
 sequences from 70S were collected from Patient 70\'s stool sample those
 from samples 70A-70F were from their mucosa. These 7 groups would yield
-21 pairwise comparisons if you ran the summary.shared command; however,
+21 pairwise comparisons if you ran the **summary.shared** command; however,
 if you were only interested in the comparisons between each mucosa site
 and the stool sample you could use the group option:
 
@@ -163,7 +163,7 @@ like to run the subsample.
 ### output
 
 The output parameter allows you to indicate if you want the distance
-file created by summary.shared to be in lower triangle or square format.
+file created by **summary.shared** to be in lower triangle or square format.
 Options are lt or square, lt is the default.
 
     mothur > summary.shared(shared=patient70.fn.shared, distance=true, output=square)

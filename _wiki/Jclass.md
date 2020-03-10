@@ -1,7 +1,7 @@
 ---
 title: 'Jclass'
 ---
-The [jclass](jclass) calculator returns the traditional
+The **jclass** calculator returns the traditional
 Jaccard index describing the dissimilarity between two communities. This
 calculator can be used in the
 [summary.shared](summary.shared) and

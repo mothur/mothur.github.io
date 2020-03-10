@@ -1,7 +1,7 @@
 ---
 title: 'Set.seed'
 ---
-The set.seed command is used to seed random.
+The **set.seed** command is used to seed random.
 
 
 ### Default Options

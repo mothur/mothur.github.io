@@ -1,11 +1,11 @@
 ---
 title: 'Classify.otu'
 ---
-The classify.otu command is used to get a consensus taxonomy for an otu.
+The **classify.otu** command is used to get a consensus taxonomy for an otu.
 
 ## Default Setting
 
-The classify.otu command parameters are list, taxonomy, name, count,
+The **classify.otu** command parameters are list, taxonomy, name, count,
 cutoff, label and probs. The taxonomy and list parameters are required.
 
 First you must classify your sequences, you can do so by running the

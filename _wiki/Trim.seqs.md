@@ -1,7 +1,7 @@
 ---
 title: 'Trim.seqs'
 ---
-The [trim.seqs](trim.seqs) command provides the preprocessing
+The **trim.seqs** command provides the preprocessing
 features needed to screen and sort pyrosequences. Similar analyses are
 provided by the [RDP](http://rdp.cme.msu.edu); here we give you added
 flexibility and speed. The command will enable you to trim off primer
@@ -19,7 +19,7 @@ cenotes](Pyrosequences_from_deep_anoxic_cenotes).
 
 ## Default settings
 
-The trim.seqs command requires that the user provide a fasta formatted
+The **trim.seqs** command requires that the user provide a fasta formatted
 sequence file and at least one of the options listed below. For example:
 
     mothur > trim.seqs(fasta=sahl09.fna, oligos=sahl09.oligos)
@@ -104,12 +104,12 @@ in the PCR primer region of a sequence correlate highly with poor
 sequence quality. Therefore, it is suggested that an exact match to the
 primer or barcode sequences be required.
 
-**Note:** trim.seqs will not find the oligos anywhere in the sequences
+**Note:** **trim.seqs** will not find the oligos anywhere in the sequences
 to be processed; the forward primer sequence must come at the start of
 the read, and the reverse primer sequence (if used) must come at the
 very end of the read.
 
-Running trim.seqs with the sahl.oligos file and using
+Running **trim.seqs** with the sahl.oligos file and using
 [summary.seqs](summary.seqs) to analyze the output files
 generates the following:
 
@@ -162,8 +162,8 @@ name.
 
 The [ count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
-given representative sequence. If you run trim.seqs with an oligos file
-that contains group labels, trim.seqs will create a new
+given representative sequence. If you run **trim.seqs** with an oligos file
+that contains group labels, **trim.seqs** will create a new
 \*.trim.count\_table with the group information included.
 
 ### qfile
@@ -276,7 +276,7 @@ command, which does the same thing:
 
 ### checkorient
 
-If you are running the trim.seqs command with paired barcodes or
+If you are running the **trim.seqs** command with paired barcodes or
 primers, you can use the checkorient parameter. When checkorient=t and
 mothur can\'t find the barcodes and primers, it will search the reverse
 compliment.
@@ -285,7 +285,7 @@ compliment.
 
 Huse and colleagues found that the presence of any ambiguous base calls
 in GS20 pyrosequences was a harbinger for overall poor sequence quality.
-Within the [trim.seqs](trim.seqs) command you can cull those
+Within the **trim.seqs** command you can cull those
 sequences that have ambiguous bases:
 
     mothur > trim.seqs(fasta=sahl09.fna, maxambig=0)
@@ -486,7 +486,7 @@ This represents approximately 89% of the original sequences.
     was given, introduced in 1.24 when we added linkers and spacers.
 -   1.28.0 - added count parameter
 -   1.30.0 - added checkorient parameter.
--   1.30.0 - trim.seqs can now use paired barcodes and primers in the
+-   1.30.0 - **trim.seqs** can now use paired barcodes and primers in the
     oligos file.
 -   1.32.0 - Bug Fix: if primer length + barcode length + pdiffs +
     bdiffs \> sequence length, mothur crashed. Sequence should be

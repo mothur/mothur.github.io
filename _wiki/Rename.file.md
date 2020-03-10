@@ -1,13 +1,13 @@
 ---
 title: 'Rename.file'
 ---
-The rename.file command allows you to rename file from within mothur.
+The **rename.file** command allows you to rename file from within mothur.
 Mothur will update the current files saved by mothur as well.
 
 
 ## Default Settings
 
-The rename.file command parameters are: phylip, column, list, rabund,
+The **rename.file** command parameters are: phylip, column, list, rabund,
 sabund, name, group, design, tree, shared, relabund, fasta, qfile, sff,
 oligos, accnos, biom, count, summary, file, taxonomy, constaxonomy,
 input, output, prefix, deletedold and shorten.

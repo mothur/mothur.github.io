@@ -1,7 +1,7 @@
 ---
 title: 'Shen'
 ---
-The [shen](shen) calculator returns the Shen estimate of the
+The **shen** calculator returns the Shen estimate of the
 number of additional OTUs that would be observed for an additional level
 of sampling. This calculator can be used in the
 [summary.single](summary.single),

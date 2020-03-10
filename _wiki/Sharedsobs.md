@@ -1,7 +1,7 @@
 ---
 title: 'Sharedsobs'
 ---
-The [sharedsobs](sharedsobs) calculator returns the number of
+The **sharedsobs** calculator returns the number of
 OTUs shared between two communities. This calculator can be used in the
 [summary.shared](summary.shared),
 [collect.shared](collect.shared), and

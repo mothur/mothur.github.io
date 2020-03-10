@@ -1,7 +1,7 @@
 ---
 title: 'Chimera.uchime'
 ---
-The chimera.uchime command reads a fasta file and reference file and
+The **chimera.uchime** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The original uchime program was
 written by Robert C. Edgar and donated to the public domain,
 <http://drive5.com/uchime>. If you would like to follow along, please

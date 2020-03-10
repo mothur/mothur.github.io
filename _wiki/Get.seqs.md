@@ -1,7 +1,7 @@
 ---
 title: 'Get.seqs'
 ---
-The [get.seqs](get.seqs) command takes a list of sequence
+The **get.seqs** command takes a list of sequence
 names (.accnos file) and either a [ fastq](fastq_file), [
 fasta](fasta_file), [ name](name_file "wikilink"), [
 group](group_file), [ list](list_file "wikilink"), [

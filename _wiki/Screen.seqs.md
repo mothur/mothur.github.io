@@ -1,7 +1,7 @@
 ---
 title: 'Screen.seqs'
 ---
-The [screen.seqs](screen.seqs) command enables you to keep
+The **screen.seqs** command enables you to keep
 sequences that fulfill certain user defined criteria. Furthermore, it
 enables you to cull those sequences not meeting the criteria from a
 names, group, contigsreport, alignreport and summary file. As an
@@ -136,7 +136,7 @@ homopolymers, then you should use the maxhomop option:
 
 ### group, name, count, qfile, taxonomy
 
-If you apply screen.seqs as we have in the previous sections and then
+If you apply **screen.seqs** as we have in the previous sections and then
 attempt to run any downstream commands that need a name, group, qfile,
 count and taxnomy file, the files will be incompatible since those files
 will still contain information for sequences that you culled. To get
@@ -275,7 +275,7 @@ and use all available.
     [\#319](https://github.com/mothur/mothur/issues/319)
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
--   1.40.4 - Bug Fix: pcr.seqs and screen.seqs (with no bad reads
+-   1.40.4 - Bug Fix: pcr.seqs and **screen.seqs** (with no bad reads
     detected), causing accnos file issue.
 -   1.40.5 - Bug Fix: not making \*good.groups or \*good.count\_table
     files. [\#476](https://github.com/mothur/mothur/issues/476)

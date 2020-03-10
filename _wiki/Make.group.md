@@ -1,7 +1,7 @@
 ---
 title: 'Make.group'
 ---
-The make.group command reads a fasta file or series of fasta files and
+The **make.group** command reads a fasta file or series of fasta files and
 creates a [ group](group_file) file.
 
 ## Default Options

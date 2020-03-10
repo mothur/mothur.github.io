@@ -1,7 +1,7 @@
 ---
 title: 'Merge.groups'
 ---
-The [merge.groups](merge.groups) command reads a shared file
+The **merge.groups** command reads a shared file
 and a design file and merges the groups in the shared file that are in
 the same grouping in the design file. The files that we discuss in this
 tutorial can be obtained by downloading the
@@ -11,7 +11,7 @@ it, as well as [AmazonDesign.zip](Media:AmazonDesign.zip)
 
 ## Default settings
 
-To run the [merge.groups](merge.groups) command the
+To run the **merge.groups** command the
 [Design\_File](Design_File) is required.
 
     mothur > merge.groups(shared=98_lt_phylip_amazon.fn.shared, design=98_lt_phylip_amazon.design)
@@ -43,7 +43,7 @@ To run the [merge.groups](merge.groups) command the
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2 ...
     0.10   pasture 55  0   0   0   1   0   0   1   0   0   5 ...
 
-and after running [merge.groups](merge.groups),
+and after running **merge.groups**,
 98\_lt\_phylip\_amazon.fn.merge.shared looks like:
 
     unique a   96  1   1   1   1   1   1   1   1   1   1 ...

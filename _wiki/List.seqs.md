@@ -1,7 +1,7 @@
 ---
 title: 'List.seqs'
 ---
-The [list.seqs](list.seqs) command will write out the names
+The **list.seqs** command will write out the names
 of the sequences found within a [ fastq](fastq_file), [
 fasta](fasta_file), [ name](name_file "wikilink"), [
 group](group_file), [ count](Count_File "wikilink"), [

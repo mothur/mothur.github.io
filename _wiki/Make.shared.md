@@ -1,7 +1,7 @@
 ---
 title: 'Make.shared'
 ---
-The make.shared command reads a list and group file or biom file and
+The **make.shared** command reads a list and group file or biom file and
 creates a .shared file as well as a rabund file for each group.
 
 ## Inputting list data for multiple samples
@@ -68,11 +68,11 @@ included in your analysis:
     rabund file with the [get.rabund](get.rabund) command.
 -   1.39.0 Eliminates zero abundance OTUs created by some floating point
     biom files converted to shared files.
--   1.41.0 Adds count file to shared file option in make.shared command.
+-   1.41.0 Adds count file to shared file option in **make.shared** command.
     [\#519](https://github.com/mothur/mothur/issues/519)
--   1.42.0 Expands make.shared to allow for count files with no groups.
+-   1.42.0 Expands **make.shared** to allow for count files with no groups.
     [\#563](https://github.com/mothur/mothur/issues/563)
--   1.42.0 Adds map file to make.shared output from count file. This
+-   1.42.0 Adds map file to **make.shared** output from count file. This
     mapping file can then be used with the rename.seqs command to modify
     the associated files.
     [\#583](https://github.com/mothur/mothur/issues/583)

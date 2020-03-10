@@ -1,7 +1,7 @@
 ---
 title: 'Sorclass'
 ---
-The [sorclass](sorclass) calculator returns the traditional
+The **sorclass** calculator returns the traditional
 Sorenson index describing the dissimilarity between two communities.
 This is also known as the Dice coefficient. This calculator can be used
 in the [summary.shared](summary.shared) and

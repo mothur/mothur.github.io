@@ -1,7 +1,7 @@
 ---
 title: 'List.otulabels'
 ---
-The [list.otulabels](list.otulabels) command lists otu labels
+The **list.otulabels** command lists otu labels
 from shared, relabund or list file. This list can be used especially
 with subsampled datasets when used with output from classify.otu,
 otu.association, or corr.axes to select specific otus using the
@@ -10,7 +10,7 @@ otu.association, or corr.axes to select specific otus using the
 
 ## Default Settings
 
-The list.otulabels command reads a shared, relabund, list or
+The **list.otulabels** command reads a shared, relabund, list or
 constaxonomy file and creates a \*.otulabels file.
 
     mothur > list.otulabels(shared=final.an.0.03.subsample.0.03.pick.shared)

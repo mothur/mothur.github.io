@@ -1,7 +1,7 @@
 ---
 title: 'Tree.shared'
 ---
-The [tree.shared](tree.shared) command will generate a
+The **tree.shared** command will generate a
 newick-formatted tree file that describes the dissimilarity
 (1-similarity) among multiple groups. Groups are clustered using the
 UPGMA algorithm using the distance between communities as calculated

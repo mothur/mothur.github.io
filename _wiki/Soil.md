@@ -48,7 +48,7 @@ metagenome, mine drainage metagenome, mixed culture metagenome, oil
 production facility metagenome, paper pulp metagenome, permafrost
 metagenome, plastisphere metagenome, power plant metagenome, retting
 rhizosphere metagenome, rock metagenome, salt lake metagenome, saltern
-metagenome, sediment metagenome, snow metagenome, soil metagenome,
+metagenome, sediment metagenome, snow metagenome, **soil** metagenome,
 stromatolite metagenome, terrestrial metagenome, tomb wall metagenome,
 wastewater metagenome, wetland metagenome, whale fall metagenome, algae
 metagenome, ant metagenome, bat metagenome, beetle metagenome, bovine
@@ -118,7 +118,7 @@ The matter displaced by the sample (eg., air, soil, water).
 ### depth
 
 Depth is defined as the vertical distance below surface, e.g. for
-sediment or soil samples depth is measured from sediment or soil
+sediment or **soil** samples depth is measured from sediment or soil
 surface, respectivly. Depth can be reported as an interval for
 subsurface samples.
 
@@ -205,7 +205,7 @@ The reference or method used in vegetation classification.
 ### depth
 
 Depth is defined as the vertical distance below surface, e.g. for
-sediment or soil samples depth is measured from sediment or soil
+sediment or **soil** samples depth is measured from sediment or soil
 surface, respectivly. Depth can be reported as an interval for
 subsurface samples..
 
@@ -233,7 +233,7 @@ The measured salinity.
 
 ### fao\_class
 
-The soil classification from the FAO World Reference Database for Soil
+The **soil** classification from the FAO World Reference Database for Soil
 Resources.
 
     format: {term}
@@ -286,7 +286,7 @@ Links to additional analysis.
 
 ### link\_class\_info
 
-The link to digitized soil maps or other soil classification
+The link to digitized **soil** maps or other soil classification
 information.
 
     format: {PMID|DOI|URL}
@@ -299,7 +299,7 @@ The link to climate resource.
 
 ### local\_class
 
-The soil classification based on local soil classification system.
+The **soil** classification based on local soil classification system.
 
     format: {text} 
 
@@ -312,7 +312,7 @@ classification
 
 ### microbial\_biomass
 
-The the part of the organic matter in the soil that constitutes living
+The the part of the organic matter in the **soil** that constitutes living
 microorganisms smaller than 5-10 µm. IF you keep this, you would need to
 have correction factors used for conversion to the final units, which
 should be mg C (or N)/kg soil)..
@@ -394,7 +394,7 @@ The sample size.
 
 ### samp\_weight\_dna\_ext
 
-The weight (g) of soil processed.
+The weight (g) of **soil** processed.
 
     format: {float} g
 
@@ -410,7 +410,7 @@ sample sieved.
 The the direction a slope faces. While looking down a slope use a
 compass to record the direction you are facing (direction or degrees);
 e.g., NW or 315°. This measure provides an indication of sun and wind
-exposure that will influence soil .
+exposure that will influence **soil** .
 
     format: {float} {unit}
 
@@ -425,20 +425,20 @@ level meter or clinometer.
 
 ### soil\_type
 
-The soil series name or other lower-level classification.
+The **soil** series name or other lower-level classification.
 
     format: {text} 
 
 ### soil\_type\_meth
 
-The reference or method used in determining soil series name or other
+The reference or method used in determining **soil** series name or other
 lower-level classification.
 
     format: {PMID|DOI|URL}
 
 ### store\_cond
 
-Explain how and for how long the soil sample was stored before DNA
+Explain how and for how long the **soil** sample was stored before DNA
 extraction..
 
     format: {text};{period}
@@ -454,7 +454,7 @@ textural name (e.g., silty clay loam) optional.
 
 ### texture\_meth
 
-The reference or method used in determining soil texture.
+The reference or method used in determining **soil** texture.
 
     format: {PMID|DOI|URL}
 
@@ -466,7 +466,7 @@ The note method(s) used for tilling.
 
 ### tot\_n
 
-The total nitrogen content of the soil Units of g N/kg soil.
+The total nitrogen content of the **soil** Units of g N/kg soil.
 
     format: {float} {unit}
 
@@ -484,7 +484,7 @@ The reference or method used in determining total organic C.
 
 ### tot\_org\_carb
 
-Definition for soil: total organic C content of the soil units of g C/kg
+Definition for soil: total organic C content of the **soil** units of g C/kg
 soil. Definition otherwise: total organic carbon content.
 
     format: {float} {unit}

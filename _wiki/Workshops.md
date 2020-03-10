@@ -1,7 +1,7 @@
 ---
 title: 'Workshops'
 ---
-Throughout 2019, Pat will offer 6 workshops on mothur and programming in
+Throughout 2019, Pat will offer 6 **workshops** on mothur and programming in
 R for microbial ecologists. If you are interested in attending and would
 like to register or get more information about fees and specifics,
 please email him his gmail account (userid: pdschloss)

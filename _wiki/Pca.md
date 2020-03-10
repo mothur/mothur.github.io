@@ -1,12 +1,12 @@
 ---
 title: 'Pca'
 ---
-The [pca](pca) command requires a shared or relabund file.
+The **pca** command requires a shared or relabund file.
 
 
 ## Default settings
 
-A shared or relabund file must be inputted for pca to be successful.
+A shared or relabund file must be inputted for **pca** to be successful.
 
     mothur > pca(shared=genus.pool.shared)
 

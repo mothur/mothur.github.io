@@ -1,7 +1,7 @@
 ---
 title: 'Get.communitytype'
 ---
-The get.communitytype command employs probabilistic modelling to cluster
+The **get.communitytype** command employs probabilistic modelling to cluster
 microbial communities into metacommunities, or enterotypes. The approach
 attempts to model the data as an increasing number of enterotypes using
 several techniques to identify the best fit to the data. The default
@@ -16,7 +16,7 @@ information crition, Akaike information criterion and Laplace
 approximation. The Laplace approximation is recommended for selecting
 the best number of metacommunities.
 
-Output files on the get.communitytype command include a [
+Output files on the **get.communitytype** command include a [
 relabund](Relabund_file) file describing the OTU distribution
 for each number of metacommunities, and a posterior file that displays
 the membership of each sample group to the metacommunities described.
@@ -111,7 +111,7 @@ times. Default=f.
 -   1.40.0 - Fixes segfault error for commands that use subsampling.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
--   1.40.5 - Fixes crash get.communitytype crash.
+-   1.40.5 - Fixes crash **get.communitytype** crash.
     [\#472](https://github.com/mothur/mothur/issues/472)
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)

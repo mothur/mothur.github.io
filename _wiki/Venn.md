@@ -1,7 +1,7 @@
 ---
 title: 'Venn'
 ---
-The [venn](venn) command generates a Venn diagram from data
+The **venn** command generates a Venn diagram from data
 provided in a \*.shared file. The command can generate diagrams (as SVG
 files) to compare the richness shared among 2, 3, or 4 groups. The SVG
 file that can be further modified in a program like Gimp or Adobe
@@ -21,9 +21,9 @@ To execute venn(), shared data created:
     mothur > make.shared(list=abrecovery.fn.list, group=abrecovery.groups)
     mothur > venn(shared=abrecovery.fn.shared)
 
-This will generate 12 SVG files - a venn diagram for each OTU definition
+This will generate 12 SVG files - a **venn** diagram for each OTU definition
 between unique and 0.10 (because of the cutoff in the read.dist
-command). For example, the venn diagram that is generated for OTUs
+command). For example, the **venn** diagram that is generated for OTUs
 defined at the 0.10 level would be abrecovery.fn.0.10.venn.sobs.svg.
 
 ## Options
@@ -50,7 +50,7 @@ Both can be run simultaneously by the command:
 ### label
 
 There may only be a couple of lines in your OTU data that you are
-interested in generating a venn diagram for. There are two options. You
+interested in generating a **venn** diagram for. There are two options. You
 could: (i) manually delete the lines you aren\'t interested in from you
 list or shared file; (ii) or use the label option. If you only want to
 read in the data for the lines labeled unique, 0.03, 0.05 and 0.10 you
@@ -65,7 +65,7 @@ At this point, if you run the following command:
     mothur > get.group(shared=abrecovery.fn.shared)
 
 You would have seen that there were 3 groups here: A, B, and C. If you
-just want the venn diagrams between groups A and B, A and C, or B and C
+just want the **venn** diagrams between groups A and B, A and C, or B and C
 enter the following:
 
     mothur > venn(shared=abrecovery.fn.shared, groups=A-B)
@@ -99,7 +99,7 @@ mothur creates. The default is 24.
 ### sharedotus
 
 The sharedotus parameter can be used with the sharedsobs calculator to
-get the names of the OTUs in each section of the venn diagram.
+get the names of the OTUs in each section of the **venn** diagram.
 Default=t.
 
     mothur > venn(shared=abrecovery.fn.shared, label=0.03)
@@ -112,10 +112,10 @@ The abrecovery.fn.0.03.sharedsobs.sharedotus file contains:
     B-C    6   Otu014,Otu030,Otu032,Otu040,Otu044,Otu048
     A-B-C  4   Otu014,Otu030,Otu032,Otu040
 
-## Why do the venn diagram results vary from [get.sharedseqs](get.sharedseqs) results?
+## Why do the **venn** diagram results vary from [get.sharedseqs](get.sharedseqs) results?
 
 Confusion can occur when you have a shared file with more groups than
-just the subset you are looking at in your venn diagram. For this
+just the subset you are looking at in your **venn** diagram. For this
 example let\'s look at a simple shared file like:
 
 Full shared file:
@@ -152,7 +152,7 @@ The difference between the two commands is the groups mothur is
 considering when finding the unique and shared OTUs. With the venn
 command, mothur only uses the groups provided by the groups parameter or
 if none are provided the first 4 groups in the file. This is done
-because there are limits to the drawing of the venn diagram. With more
+because there are limits to the drawing of the **venn** diagram. With more
 than 4 groups the picture becomes too complicated to be of use. In this
 example group A is not included which changes the shared and unique
 composition.The get.sharedseqs command does not have the limitations of

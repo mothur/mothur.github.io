@@ -160,11 +160,11 @@ Measurement of atmospheric data; can include multiple data
 
 ### bac\_prod
 
-Bacterial production in the water column measured by isotope uptake
+Bacterial production in the **water** column measured by isotope uptake
 
 ### bac\_resp
 
-Measurement of bacterial respiration in the water column
+Measurement of bacterial respiration in the **water** column
 
 ### bacteria\_carb\_prod
 
@@ -550,7 +550,7 @@ Stage of tide
 
 ### tot\_depth\_water\_col
 
-Measurement of total depth of water column
+Measurement of total depth of **water** column
 
 ### tot\_diss\_nitro
 

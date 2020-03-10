@@ -1,7 +1,7 @@
 ---
 title: 'Rarefaction.shared'
 ---
-The [rarefaction.shared](rarefaction.shared) command will
+The **rarefaction.shared** command will
 generate inter-sample rarefaction curves using a re-sampling without
 replacement approach. The traditional way that ecologists use
 rarefaction is not to randomize the sampling order within a sample,
@@ -127,7 +127,7 @@ can use the jumble option:
 ### design
 
 The design parameter allows you to assign your groups to sets. If
-provided mothur will run rarefaction.shared on a per set basis.
+provided mothur will run **rarefaction.shared** on a per set basis.
 
     mothur > rarefaction.shared(shared=final.an.0.03.subsample.0.03.pick.shared, design=mouse.sex_time.design)
 
@@ -141,7 +141,7 @@ dashes. The default is all sets in the design file.
 
 ### groupmode
 
-If you are running rarefaction.shared with a design file and would like
+If you are running **rarefaction.shared** with a design file and would like
 your results collated in multiple files, set groupmode=f.
 (Default=True).
 

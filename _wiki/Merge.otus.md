@@ -1,12 +1,12 @@
 ---
 title: 'Merge.otus'
 ---
-The [merge.otus](merge.otus) command will combine OTUs based
+The **merge.otus** command will combine OTUs based
 on taxonomic assignment.
 
 ## Default Settings
 
-To run the merge.otus command you need to provide consensus taxonomy
+To run the **merge.otus** command you need to provide consensus taxonomy
 file, <https://mothur.org/wiki/Constaxonomy_file> and a list, shared or
 relabund file.
 

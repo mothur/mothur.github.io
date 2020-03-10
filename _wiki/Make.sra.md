@@ -1,7 +1,7 @@
 ---
 title: 'Make.sra'
 ---
-The make.sra command creates the necessary files for a NCBI submission.
+The **make.sra** command creates the necessary files for a NCBI submission.
 The xml file and individual sff or fastq files parsed from the original
 sff or fastq file. See [Creating a new
 submission](Creating_a_new_submission) to see how to use
@@ -201,7 +201,7 @@ when using sff files. Default=True.
 -   1.36.0 Allow for assigning multiple sets of files to the same group
     in 3 column format.
 -   1.37.0 Bug Fix: Fastq.info error about no inputs selected when
-    running make.sra with single fastq file and oligos file.
+    running **make.sra** with single fastq file and oligos file.
 -   1.37.0 Adds includescrap parameter
     <http://www.mothur.org/forum/viewtopic.php?f=3&t=3750&p=11122#p11122>
 -   1.39.0 Adds trim parameter for use with sff files

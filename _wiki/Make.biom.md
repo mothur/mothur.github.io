@@ -1,7 +1,7 @@
 ---
 title: 'Make.biom'
 ---
-The [make.biom](make.biom) command is design to allow you to
+The **make.biom** command is design to allow you to
 convert your [shared file](shared_file) to a biom file.
 <http://biom-format.org/documentation/biom_format.html> (Note: mothur
 currently supports format version 1.0) To run this tutorial please
@@ -9,7 +9,7 @@ download, [ Example Files](Media:Make_biom_files.zip)
 
 ## Default Settings
 
-The shared parameter is required to run the make.biom command.
+The shared parameter is required to run the **make.biom** command.
 
     mothur > make.biom(shared=final.tx.1.subsample.1.pick.shared)
 

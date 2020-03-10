@@ -1,7 +1,7 @@
 ---
 title: 'Align.seqs'
 ---
-The [align.seqs](align.seqs) command aligns a user-supplied
+The **align.seqs** command aligns a user-supplied
 fasta-formatted candidate sequence file to a user-supplied
 fasta-formatted template alignment. The general approach is to i) find
 the closest template for each candidate using kmer searching, blastn, or
@@ -30,7 +30,7 @@ dataset](Media:AbRecovery.zip).
 
 ## Default settings
 
-The align.seqs command requires the user to enter a candidate and
+The **align.seqs** command requires the user to enter a candidate and
 template file. First, obtain an [alignment
 database](alignment_database) and make sure that it is
 located in the same folder as your candidate file and where you are
@@ -72,7 +72,7 @@ into the template sequence - none of the template gaps needed to be
 corrected with the NAST algorithm. Finally, the aligned candidate
 sequence was 97.6% identical to the template sequence (including gaps).
 
-By default, align.seqs will use kmer searching with 8mers and will use
+By default, **align.seqs** will use kmer searching with 8mers and will use
 the Needleman-Wunsch pairwise alignment method with a reward of +1 for a
 match and penalties of -1 and -2 for a mismatch and gap, respectively.
 Also, only one processor will be used with the default settings.
@@ -121,7 +121,7 @@ see what works best. To change the kmer size:
 
 ### align
 
-The align.seqs command allows you to select between three alignment
+The **align.seqs** command allows you to select between three alignment
 methods - blastn, gotoh, and needleman - needleman is the default
 setting:
 
@@ -207,17 +207,17 @@ processors that you can use.
 
 ### Differences in implementation
 
-The most similar implementation of the align.seqs command is the online
+The most similar implementation of the **align.seqs** command is the online
 greengenes aligner. The NAST paper describes using 7mer searching and
 blast alignments, which could align 10 sequences per minute. In
-contrast, align.seqs can align about 18 16S rRNA gene sequences per
+contrast, **align.seqs** can align about 18 16S rRNA gene sequences per
 second to a 50,000 character alignment and 22 sequences per second to a
 8,000 character alignment. Since the publication of the NAST aligner,
 the strategy has changed to using blast to find a template and the
 alignment. To select the template, the greengenes aligner selects the
 longest among the top-ten most similar template sequences.
 
-Another important difference between align.seqs and the other aligners
+Another important difference between **align.seqs** and the other aligners
 that are available is that the aligner is not tied to any one alignment.
 You could use the greengenes, SILVA, or RDP alignments. You could even
 design a recA alignment and use that.
@@ -334,7 +334,7 @@ forum, <https://forum.mothur.org>.
 
 -   1.22.0 Added processors option for Windows users.
 -   1.28.0 Added check to make sure template is aligned.
--   1.33.2 Bug Fix: Windows align.seqs flip=t caused segfault.
+-   1.33.2 Bug Fix: Windows **align.seqs** flip=t caused segfault.
 -   1.38.0 Removes save option
 -   1.40.0 Changes flip parameter default to true.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect

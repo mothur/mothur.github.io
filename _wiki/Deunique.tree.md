@@ -1,7 +1,7 @@
 ---
 title: 'Deunique.tree'
 ---
-The [deunique.tree](deunique.tree) command reinserts the
+The **deunique.tree** command reinserts the
 redundant sequence identiers back into a unique tree. For this tutorial,
 you should use the files found in the [
 TreeTest.zip](Media:TreeTest.zip) archive.

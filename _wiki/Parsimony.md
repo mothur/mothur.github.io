@@ -1,10 +1,10 @@
 ---
 title: 'Parsimony'
 ---
-The [parsimony](parsimony) command implements the [parsimony
+The **parsimony** command implements the [parsimony
 method](parsimony_method) (aka P-test), which was previously
 implemented in TreeClimber and is also available in MacClade and on the
-UniFrac website. The parsimony method is a generic test that describes
+UniFrac website. The **parsimony** method is a generic test that describes
 whether two or more communities have the same structure. The
 significance of the test statistic can only indicate the probability
 that the communities have the same structure by chance. The value does
@@ -16,7 +16,7 @@ it.
 
 ## Default settings
 
-By default, the parsimony() command will carry out the parsimony test on
+By default, the parsimony() command will carry out the **parsimony** test on
 each tree in the tree file and will perform a global test. The global
 test determines whether any of the groups within the group file have a
 significantly different structure than the other groups. Execute the

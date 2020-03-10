@@ -1,7 +1,7 @@
 ---
 title: 'Jabund'
 ---
-The [jabund](jabund) calculator returns the abundance-based
+The **jabund** calculator returns the abundance-based
 Jaccard dissimilarity index describing the fraction of sequences that
 don\'t belong to shared OTUs. This calculator can be used in the
 [summary.shared](summary.shared) and

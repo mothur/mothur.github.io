@@ -1,7 +1,7 @@
 ---
 title: 'Split.groups'
 ---
-The [split.groups](split.groups) command reads a [
+The **split.groups** command reads a [
 list](list_file), [ fasta](fasta_file "wikilink") file or [
 flow](flow_file) and [ group](group_file "wikilink") file or
 [ count](Count_File) or [ fastq](Fastq_File "wikilink") file

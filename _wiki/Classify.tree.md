@@ -1,12 +1,12 @@
 ---
 title: 'Classify.tree'
 ---
-The classify.tree command is used to get a consensus taxonomy for each
+The **classify.tree** command is used to get a consensus taxonomy for each
 node on a tree.
 
 ## Default Setting
 
-The classify.tree command parameters are tree, taxonomy, name, group and
+The **classify.tree** command parameters are tree, taxonomy, name, group and
 cutoff. The taxonomy and tree parameters are required.
 
 First you must classify your sequences, you can do so by running the

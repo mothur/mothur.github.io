@@ -1,11 +1,11 @@
 ---
 title: 'Consensus.seqs'
 ---
-The consensus.seqs command can be used in 2 ways: create a consensus
+The **consensus.seqs** command can be used in 2 ways: create a consensus
 sequence from a fastafile, or with a listfile create a consensus
 sequence for each otu. Sequences must be aligned.
 
-The consensus.seqs command parameters are fasta, list, name and label.
+The **consensus.seqs** command parameters are fasta, list, name and label.
 
 ## Default Settings
 
@@ -76,7 +76,7 @@ abrecovery.0.01.cons.names (In version 1.20).
 There may only be a couple of lines in your OTU data that you are
 interested in. There are two options. You could: (i) manually delete the
 lines you aren\'t interested in from your list file; (ii) or use the
-label option. To use the label option with the consensus.seqs command
+label option. To use the label option with the **consensus.seqs** command
 you need to know the labels you are interested in. If you want the
 consensus data for the lines labeled unique, 0.03, 0.05 and 0.10 you
 would enter:

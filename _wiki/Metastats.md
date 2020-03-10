@@ -1,10 +1,10 @@
 ---
 title: 'Metastats'
 ---
-The metastats command is based on the Metastats program, White, J.R.,
+The **metastats** command is based on the Metastats program, White, J.R.,
 Nagarajan, N. & Pop, M. Statistical methods for detecting differentially
 abundant features in clinical metagenomic samples. PLoS Comput Biol 5,
-e1000352 (2009). The metastats command outputs a .metastats file.
+e1000352 (2009). The **metastats** command outputs a .metastats file.
 
 See: <http://metastats.cbcb.umd.edu/> for more information on Metastats.
 
@@ -59,7 +59,7 @@ processors and use all available.
 
 -   1.25.0 - modified to more closely follow results from metastats
     website.
--   1.25.0 - OTU numbers in metastats should correspond to the column
+-   1.25.0 - OTU numbers in **metastats** should correspond to the column
     names in the shared file.
 -   1.22.2 - fixed bug.
 -   1.23.0 - Added qvalues.

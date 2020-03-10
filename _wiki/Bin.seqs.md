@@ -1,7 +1,7 @@
 ---
 title: 'Bin.seqs'
 ---
-[bin.seqs](bin.seqs) prints out a fasta-formatted file where
+**bin.seqs** prints out a fasta-formatted file where
 sequences are ordered according to the OTU that they belong to. Such an
 output may be helpful for generating primers specific to an OTU or for
 classification of sequences. For this tutorial, download and decompress
@@ -57,7 +57,7 @@ group will also be provided.
 
 A [ names file](read.dist#The_name_option) indicating
 sequence names that are identical to a references sequence, may be
-inputted to bin.seqs so that the fasta and list files are complementary.
+inputted to **bin.seqs** so that the fasta and list files are complementary.
 The following commands illustrate this:
 
     mothur > bin.seqs(list=98_sq_phylip_amazon.an.list, fasta=amazon.unique.fasta, name=amazon.names)

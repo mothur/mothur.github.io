@@ -1,7 +1,7 @@
 ---
 title: 'Set.dir'
 ---
-[set.dir](set.dir) allows you to redirect the output files
+**set.dir** allows you to redirect the output files
 created by mothur, or set the directory where mothur will look for input
 files. You can also set a default location for mothur to look if it
 can\'t find your files in the input location. This allows you to keep

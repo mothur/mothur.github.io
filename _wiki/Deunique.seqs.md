@@ -1,7 +1,7 @@
 ---
 title: 'Deunique.seqs'
 ---
-The [deunique.seqs](deunique.seqs) command is the reverse of
+The **deunique.seqs** command is the reverse of
 the [unique.seqs](unique.seqs) command, and creates a fasta
 file from a fasta and name file. For this tutorial, you should use the
 files found in the [ AmazonData.zip](Media:AmazonData.zip)

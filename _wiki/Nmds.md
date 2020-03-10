@@ -1,7 +1,7 @@
 ---
 title: 'Nmds'
 ---
-The [nmds](nmds) command is modelled after the nmds code
+The **nmds** command is modelled after the **nmds** code
 written in R by Sarah Goslee, using Non-metric multidimensional scaling
 function using the majorization algorithm from Borg & Groenen 1997,
 Modern Multidimensional Scaling.
@@ -11,7 +11,7 @@ Modern Multidimensional Scaling.
 
 A [phylip-formatted distance
 matrix](phylip-formatted_distance_matrix) must be inputted
-for nmds to be successful.
+for **nmds** to be successful.
 
     mothur > nmds(phylip=98_sq_phylip_amazon.dist)
 

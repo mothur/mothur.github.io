@@ -1,7 +1,7 @@
 ---
 title: 'Get.rabund'
 ---
-The [get.rabund](get.rabund) command will generate an [rabund
+The **get.rabund** command will generate an [rabund
 file](rabund_file) based on the OTU data that you have read
 into mothur.
 
@@ -9,7 +9,7 @@ into mothur.
 
 If you read in a [list file](list_file),
 [shared\_file](shared_file) or
-[sabund\_file](sabund_file), get.rabund will generate the
+[sabund\_file](sabund_file), **get.rabund** will generate the
 corresponding rabund file:
 
     mothur > get.rabund(list=amazon.fn.list)
@@ -50,7 +50,7 @@ included in your analysis.
 
 If your list file contains only the unique sequence names because you
 ran cluster with a count file, be sure to include the count file with
-the get.rabund command.
+the **get.rabund** command.
 
     mothur > get.rabund(list=amazon.an.unique_list, count=amazon.count_table)
 

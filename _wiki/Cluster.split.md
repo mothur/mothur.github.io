@@ -1,7 +1,7 @@
 ---
 title: 'Cluster.split'
 ---
-The cluster.split command can be used to assign sequences to OTUs and
+The **cluster.split** command can be used to assign sequences to OTUs and
 outputs a .list file. It splits large distance matrices into smaller
 peices \...
 
@@ -25,12 +25,12 @@ default option. For this tutorial you should download the [
 Final.zip](Media:Final.zip) file and decompress it.
 
 
-There are two part to the cluster.split command the splitting of your
+There are two part to the **cluster.split** command the splitting of your
 files into distinct groupings and the clustering of these groupings.
 
 ## Splitting your files
 
-The cluster.split command can split your files in 3 ways. Splitting by
+The **cluster.split** command can split your files in 3 ways. Splitting by
 distance file, by classification, or by classification also using a
 fasta file. The splitmethod parameter allows you to specify how you want
 to split your files before you cluster, default=distance, options

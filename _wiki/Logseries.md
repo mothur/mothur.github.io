@@ -1,7 +1,7 @@
 ---
 title: 'Logseries'
 ---
-The [logseries](logseries) calculator returns the
+The **logseries** calculator returns the
 Kolmogorov-Smirnov test statistic for the comparison of observed
 rank-abundance data to a fitted log series distribution and the critical
 values for α equal to 0.01 or 0.05. This calculator can be used in the

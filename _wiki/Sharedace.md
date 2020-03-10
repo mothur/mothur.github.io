@@ -1,7 +1,7 @@
 ---
 title: 'Sharedace'
 ---
-The [sharedace](sharedace) calculator returns the shared ACE
+The **sharedace** calculator returns the shared ACE
 richness estimate for an OTU definition. This calculator can be used in
 the [summary.shared](summary.shared) and
 [collect.shared](collect.shared) commands. The calculations

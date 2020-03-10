@@ -1,7 +1,7 @@
 ---
 title: 'Parse.list'
 ---
-The [parse.list](parse.list) command reads a [
+The **parse.list** command reads a [
 list](list_file) file and [ group](group_file "wikilink") or
 [ count](Count_File) file and generates a list file for each
 group.

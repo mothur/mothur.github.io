@@ -1,12 +1,12 @@
 ---
 title: 'Split.abund'
 ---
-The split.abund command reads a fasta file and a list or a names file
+The **split.abund** command reads a fasta file and a list or a names file
 splits the sequences into rare and abundant groups.
 
 ## Default Settings
 
-The split.abund command parameters are fasta, list, name, count, cutoff,
+The **split.abund** command parameters are fasta, list, name, count, cutoff,
 group, label, groups and accnos. The fasta and a list or name parameter
 are required, and you must provide a cutoff value.
 

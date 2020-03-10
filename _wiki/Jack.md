@@ -1,7 +1,7 @@
 ---
 title: 'Jack'
 ---
-The [jack](jack) calculator returns the interpolated
+The **jack** calculator returns the interpolated
 Jackknife richness estimate for an OTU definition. This calculator can
 be used in the [summary.single](summary.single),
 [collect.single](collect.single), and

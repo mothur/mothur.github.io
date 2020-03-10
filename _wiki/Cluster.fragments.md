@@ -1,14 +1,14 @@
 ---
 title: 'Cluster.fragments'
 ---
-The [cluster.fragments](cluster.fragments) command groups
+The **cluster.fragments** command groups
 sequences that are part of a larger sequence. To run this tutorial
 please download [ esophagus.fasta
 file](Media:Esophagus.fasta.zip)
 
 ## Default settings
 
-The cluster.fragments command expects a fasta-formatted file. A names
+The **cluster.fragments** command expects a fasta-formatted file. A names
 file may also be provided and when a sequence is determined to be a
 fragment of a larger sequence, the list of names corresponding to the
 sequence names will be merged. Let\'s take a look at the esophagus.fasta
@@ -42,7 +42,7 @@ more than 2% of the fragment length, don\'t merge.
 
 ## Explaining the output
 
-Running the cluster.fragments command above will cause the following to
+Running the **cluster.fragments** command above will cause the following to
 be outputted to the screen:
 
     0  656 0
@@ -59,7 +59,7 @@ number of sequences that will be found in the final dataset, and the
 number of sequences that have been clustered away. This should
 accelerate as the function runs.
 
-## What\'s the difference between [cluster.fragments](cluster.fragments) and [pre.cluster](pre.cluster "wikilink")?
+## What\'s the difference between **cluster.fragments** and [pre.cluster](pre.cluster "wikilink")?
 
 -   Cluster.fragments: combine sequences that are pieces of a larger
     sequence
@@ -79,11 +79,11 @@ sequence. This process is all very much like pre.cluster.
 The differences:
 
 Pre.cluster sorts by abundance only to determine the order. Pre.cluster
-allows for clustering within samples, cluster.fragments does not.
+allows for clustering within samples, **cluster.fragments** does not.
 Pre.cluster is parallelized. Pre.cluster works with both aligned and
 unaligned sequences. Pre.cluster only uses diffs not percentages.
 Pre.cluster allows you to set alignment methods and parameters for
-unaligned sequences, cluster.fragments does not.
+unaligned sequences, **cluster.fragments** does not.
 
 We use pre.cluster in our lab. The distinguishing feature to
 cluster.fragments is the ability to sort unaligned sequences by length.

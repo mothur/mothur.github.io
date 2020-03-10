@@ -1,13 +1,13 @@
 ---
 title: 'Get.label'
 ---
-The [get.label](get.label) command allows you to get a
+The **get.label** command allows you to get a
 listing of the labels for each line of the OTU data that are currently
 stored in memory. This feature should help in using the label option for
 other commands. For this tutorial you should download and decompress
 [AmazonData.zip](Media:AmazonData.zip).
 
-The get.label command works with a list, rabund or sabund file.
+The **get.label** command works with a list, rabund or sabund file.
 
     mothur > get.label(list=98_lt_phylip_amazon.fn.list)
     unique

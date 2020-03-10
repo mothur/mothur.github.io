@@ -1,7 +1,7 @@
 ---
 title: 'Unifrac.unweighted'
 ---
-The [unifrac.unweighted](unifrac.unweighted) comand
+The **unifrac.unweighted** comand
 implements the [unweighted UniFrac
 algorithm](unweighted_UniFrac_algorithm). The
 [unifrac.weighted](unifrac.weighted) command implements the

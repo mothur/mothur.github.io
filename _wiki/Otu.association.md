@@ -1,13 +1,13 @@
 ---
 title: 'Otu.association'
 ---
-The [otu.association](otu.association) command calculate the
+The **otu.association** command calculate the
 correlation coefficient for the otus in a shared/relabund file.
 
 
 ## Default settings
 
-The [otu.association](otu.association) command reads a shared
+The **otu.association** command reads a shared
 or relabund file.
 
     mothur > otu.association(shared=final.an.0.03.subsample.0.03.pick.shared)
@@ -82,6 +82,6 @@ reported.
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
--   1.42.0 - Fixes bug with otu.association metadata file.
+-   1.42.0 - Fixes bug with **otu.association** metadata file.
 
 [Category:Commands](Category:Commands)

@@ -1,7 +1,7 @@
 ---
 title: 'Memeuclidean'
 ---
-The [memeuclidean](memeuclidean) calculator returns a
+The **memeuclidean** calculator returns a
 membership-baesd Euclidean distance measure between two communities.
 This calculator can be used in the
 [summary.shared](summary.shared),

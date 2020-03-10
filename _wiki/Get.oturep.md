@@ -2,7 +2,7 @@
 title: 'Get.oturep'
 ---
 While the [bin.seqs](bin.seqs) command reports the OTU number
-for all sequences, the [get.oturep](get.oturep) command
+for all sequences, the **get.oturep** command
 generates a fasta-formatted sequence file containing only a
 representative sequence for each OTU. A .rep.fasta and .rep.names file
 or .rep.count\_table file is generated for each OTU definition. For this
@@ -12,7 +12,7 @@ tutorial, download and decompress
 
 ## Default settings
 
-To run the get.oturep command you must provide either a
+To run the **get.oturep** command you must provide either a
 [phylip-formatted distance
 matrix](phylip-formatted_distance_matrix) or a
 [column-formatted distance
@@ -127,7 +127,7 @@ given representative sequence.
 
 ### sorted
 
-You may want to sort the output you get from the get.oturep command. The
+You may want to sort the output you get from the **get.oturep** command. The
 sorted option allows you to indicate how you want the output sorted. You
 can sort by sequence name, bin number, bin size or group. The default is
 no sorting, but your options are name, bin, size, or group.
@@ -186,12 +186,12 @@ label. Rename is set to false by default.
 -   1.31.0 - added method parameter.
     <http://www.mothur.org/forum/viewtopic.php?f=5&t=2131>
 -   1.33.0 - changed otu numbers to be labels
--   1.41.0 - Updates get.oturep command to use optiMatrix. Reduces time
+-   1.41.0 - Updates **get.oturep** command to use optiMatrix. Reduces time
     and memory needed. Removes large option.
     [\#465](https://github.com/mothur/mothur/issues/465)
 -   1.42.0 - Adds rename option.
     [\#555](https://github.com/mothur/mothur/issues/555)
--   1.43.0 - get.oturep command wasn\'t handling multiple labels.
+-   1.43.0 - **get.oturep** command wasn\'t handling multiple labels.
     Removed labels parameter and modifies cutoff to act like cluster
     commands. ie. cutoff=0.01-0.03. Also failing with abundance method
     using count file without group information

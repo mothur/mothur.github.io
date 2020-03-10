@@ -1,7 +1,7 @@
 ---
 title: 'Npshannon'
 ---
-The [npshannon](npshannon) calculator returns a
+The **npshannon** calculator returns a
 non-parametric estimate of the classical [Shannon](Shannon)
 diversity index for an OTU definition. This calculator can be used in
 the [summary.single](summary.single),

@@ -1,14 +1,14 @@
 ---
 title: 'Chop.seqs'
 ---
-The chop.seqs command reads a fasta file and outputs a .chop.fasta
+The **chop.seqs** command reads a fasta file and outputs a .chop.fasta
 containing the trimmed sequences. It works on both aligned and unaligned
 sequences.
 
 
 ## Default settings
 
-The chop.seqs command parameters are fasta, name, group, count,
+The **chop.seqs** command parameters are fasta, name, group, count,
 numbases, countgaps and keep. fasta is required unless you have a valid
 current fasta file. numbases is also required.
 
@@ -33,7 +33,7 @@ you want to keep.
 The keep parameter is set to front by default, meaning you want to keep
 the front of the sequence. You can also set keep to back.
 
-Here\'s what abrecovery.fasta looks like before the chop.seqs command:
+Here\'s what abrecovery.fasta looks like before the **chop.seqs** command:
 
     >AY457915
     CCCTTAGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGC

@@ -1,7 +1,7 @@
 ---
 title: 'Rarefaction.single'
 ---
-The [rarefaction.single](rarefaction.single) command will
+The **rarefaction.single** command will
 generate intra-sample rarefaction curves using a re-sampling without
 replacement approach. Rarefaction curves provide a way of comparing the
 richness observed in different samples. Roughly speaking you get the
@@ -194,7 +194,7 @@ processors that you can use.
 
 ### groupmode
 
-Default=T. If you run rarefaction.single with a shared file and
+Default=T. If you run **rarefaction.single** with a shared file and
 groupmode=F, you will get a separate output file for each sample.
 
 ### Visualization with R

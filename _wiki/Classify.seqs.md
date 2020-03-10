@@ -1,7 +1,7 @@
 ---
 title: 'Classify.seqs'
 ---
-The [classify.seqs](classify.seqs) command allows the user to
+The **classify.seqs** command allows the user to
 use several different methods to assign their sequences to the taxonomy
 outline of their choice. Current methods include using a k-nearest
 neighbor consensus and Wang approach. Taxonomy outlines and reference
@@ -14,7 +14,7 @@ AbRecovery](Media:AbRecovery.zip) dataset.
 
 ## Output
 
-mothur will output two files from the classify.seqs command: a
+mothur will output two files from the **classify.seqs** command: a
 \*.taxonomy file which contains a taxonomy string for each sequence and
 a \*.tax.summary file which contains a taxonomic outline indicating the
 number of sequences that were found for your collection at each level.

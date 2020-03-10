@@ -1,7 +1,7 @@
 ---
 title: 'Heatmap.sim'
 ---
-The [heatmap.sim](heatmap.sim) command will generate a
+The **heatmap.sim** command will generate a
 heatmap indicating the pairwise similarity between multiple samples
 using a variety of [calculators](calculators) comparing
 community membership and structure. As an example, we will use the
@@ -12,7 +12,7 @@ example.
 
 ### Sample Similarity
 
-Before running the heatmap.sim command shared OTU data must be created
+Before running the **heatmap.sim** command shared OTU data must be created
 by mothur:
 
     mothur > make.shared(list=sogin.unique.good.filter.fn.list, group=sogin.good.groups)

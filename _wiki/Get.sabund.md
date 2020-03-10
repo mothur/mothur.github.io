@@ -1,14 +1,14 @@
 ---
 title: 'Get.sabund'
 ---
-The [get.sabund](get.sabund) command will generate an [sabund
+The **get.sabund** command will generate an [sabund
 file](sabund_file) based on the OTU data that you have read
 into mothur.
 
 ## Default Options
 
 For example, if you read in a [list file](list_file),
-[get.sabund](get.sabund) will generate the corresponding
+**get.sabund** will generate the corresponding
 sabund file:
 
     mothur > get.sabund(list=amazon.fn.list)
@@ -31,7 +31,7 @@ line you can use the label option:
 
 If your list file contains only the unique sequence names because you
 ran cluster with a count file, be sure to include the count file with
-the get.sabund command.
+the **get.sabund** command.
 
     mothur > get.sabund(list=amazon.an.unique_list, count=amazon.count_table)
 

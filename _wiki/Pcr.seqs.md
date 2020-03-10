@@ -1,7 +1,7 @@
 ---
 title: 'Pcr.seqs'
 ---
-The [pcr.seqs](pcr.seqs) will trim inputted sequences based
+The **pcr.seqs** will trim inputted sequences based
 on a variety of user-defined options.
 
 ## Default Settings
@@ -32,7 +32,7 @@ sequence, default=0.
 
 ### name && group && count && taxonomy
 
-If you apply pcr.seqs as we have in the previous sections and then
+If you apply **pcr.seqs** as we have in the previous sections and then
 attempt to run any downstream commands that need a name, group and
 taxonomy file, the files will be incompatible since those files will
 still contain information for sequences that you culled. To get around
@@ -88,7 +88,7 @@ available.
     and keepdots=t. If the character before the first primer base was a
     base and not a gap the base was not trimmed.
     <http://www.mothur.org/forum/viewtopic.php?f=4&t=2209>
--   1.31.0 - Added primer to oligos types pcr.seqs can read.
+-   1.31.0 - Added primer to oligos types **pcr.seqs** can read.
 -   1.31.0 - Bug Fix: removing primers from aligned sequences with
     keepdots=f could result in an unaligned dataset if primers were not
     found at the same locations. Added gaps to preserve alignment.
@@ -103,11 +103,11 @@ available.
     parameters. [\#348](https://github.com/mothur/mothur/issues/348)
 -   1.40.0 - Bug Fix: \"name mismatch\" error when using paired primers
     and keepdots=f.
--   1.40.4 - Bug Fix: pcr.seqs and screen.seqs (with no bad reads
+-   1.40.4 - Bug Fix: **pcr.seqs** and screen.seqs (with no bad reads
     detected), causing accnos file issue.
--   1.41.0 - Bug Fix: Fixes pcr.seqs file mismatch.
+-   1.41.0 - Bug Fix: Fixes **pcr.seqs** file mismatch.
     [\#522](https://github.com/mothur/mothur/issues/522)
 -   1.42.0 - Bug Fix: Fixes file extensions of output files in pcr.seqs.
--   1.42.0 - Bug Fix: Fixes pcr.seqs end issue with keepdots=f.
+-   1.42.0 - Bug Fix: Fixes **pcr.seqs** end issue with keepdots=f.
 
 [Category:Commands](Category:Commands)

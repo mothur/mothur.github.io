@@ -1,7 +1,7 @@
 ---
 title: 'Unique.seqs'
 ---
-The [unique.seqs](unique.seqs) command returns only the
+The **unique.seqs** command returns only the
 unique sequences found in a fasta-formatted sequence file and a file
 that indicates those sequences that are identical to the reference
 sequence. Often times a collection of sequences will have a significant
@@ -23,7 +23,7 @@ the [ names option](read.dist#name) for the cluster command.
 
 If you align your unique sequences, filter and screen them, you might be
 removing bases from the sequences that accounted for differences between
-the sequences. You can then rerun your sequences through unique.seqs by
+the sequences. You can then rerun your sequences through **unique.seqs** by
 providing the [ name option](Names_file):
 
     mothur > unique.seqs(fasta=amazon.unique.filter.fasta, name=amazon.names)

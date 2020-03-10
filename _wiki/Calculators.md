@@ -1,7 +1,7 @@
 ---
 title: 'Calculators'
 ---
-The following are a list of [calculators](calculators)
+The following are a list of **calculators**
 currently available in mothur for OTU-based analyses. If there is a
 calculator that you think should be added, please consider either
 contributing your code or asking us to add it to our list of features

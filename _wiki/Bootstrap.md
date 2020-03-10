@@ -1,12 +1,12 @@
 ---
 title: 'Bootstrap'
 ---
-The [bootstrap](bootstrap) calculator returns the bootstrap
+The **bootstrap** calculator returns the bootstrap
 richness estimate for an OTU definition. This calculator can be used in
 the [summary.single](summary.single),
 [collect.single](collect.single), and
 [rarefaction.single](rarefaction.single) commands. The
-calculations for the bootstrap richness estimator are implemented as
+calculations for the **bootstrap** richness estimator are implemented as
 described by Smith and Van Belle for a single \"quadrant\".
 
 $$S_{bootstrap} = S_{obs} + \sum_{i=1}^{S_{obs}} \left ( 1 - \frac {S_i}{N}\right )^N$$

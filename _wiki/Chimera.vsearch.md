@@ -1,7 +1,7 @@
 ---
 title: 'Chimera.vsearch'
 ---
-The chimera.vsearch command reads a fasta file and reference file or a
+The **chimera.vsearch** command reads a fasta file and reference file or a
 fasta and name or count file and outputs potentially chimeric sequences.
 The vsearch program is donated to the public domain,
 <https://github.com/torognes/vsearch>.
@@ -180,13 +180,13 @@ range from 0.2 to 2.
 ## Revisions
 
 -   1.38.0 First Introduced
--   1.39.0 Adds chimera.vsearch for Windows users
+-   1.39.0 Adds **chimera.vsearch** for Windows users
 -   1.39.2 Bug Fix: removing last character of sequence names when
     processing with a reference. Not an issue with denovo method.
 -   1.40.0 Fixes screen output. \#309
 -   1.42.0 Updates vsearch version to 2.11.1
     [\#585](https://github.com/mothur/mothur/issues/585)
--   1.42.0 Adds vsearch parameter to chimera.vsearch so that you can
+-   1.42.0 Adds vsearch parameter to **chimera.vsearch** so that you can
     specify location of vsearch executable.
     [\#586](https://github.com/mothur/mothur/issues/586)
 

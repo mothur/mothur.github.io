@@ -1,7 +1,7 @@
 ---
 title: 'Get.current'
 ---
-The get.current command allows you to find out which files mothur has
+The **get.current** command allows you to find out which files mothur has
 saved as \"current\" for each type. You can also clear current files.
 
 
@@ -12,7 +12,7 @@ First let\'s get some current files saved.
     mothur > summary.seqs(fasta=stool.fasta)
     mothur > unique.seqs(fasta=stool.fasta)
 
-Now we can see how the get.current command works.
+Now we can see how the **get.current** command works.
 
     mothur > get.current()
 
@@ -81,10 +81,10 @@ or you can clear all files by setting clear=all.
 -   1.33.0 - added directory information. -
     <http://www.mothur.org/forum/viewtopic.php?f=8&t=332&p=7824#p7824>
 -   1.37.0 - Adds current RAM usage and total RAM available.
--   1.37.0 - Adds output file to get.current and input/output file to
+-   1.37.0 - Adds output file to **get.current** and input/output file to
     set.current . This allows the commands to work together to keep
     track of current files between instances of mothur. You can input
-    the output file of the get.current command into the set.current
+    the output file of the **get.current** command into the set.current
     command using the new current parameter.
 -   1.38.0 - Fixes RAM output for linux.
 

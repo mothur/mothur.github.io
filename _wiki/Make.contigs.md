@@ -1,12 +1,12 @@
 ---
 title: 'Make.contigs'
 ---
-The make.contigs command reads a forward fastq file and a reverse fastq
+The **make.contigs** command reads a forward fastq file and a reverse fastq
 file and outputs new fasta and report files.
 
 ## Default Settings
 
-The make.contigs command parameters are file, ffastq, rfastq, ffasta,
+The **make.contigs** command parameters are file, ffastq, rfastq, ffasta,
 rfasta, fqfile, rqfile, findex, rindex, oligos, format, tdiffs, bdiffs,
 pdiffs, align, match, mismatch, gapopen, gapextend, insert, deltaq,
 maxee, allfiles and processors.
@@ -156,7 +156,7 @@ be scrapped.
 
 ### checkorient
 
-If you are running the make.contigs command with paired barcodes or
+If you are running the **make.contigs** command with paired barcodes or
 primers, you can use the checkorient parameter. When checkorient=t and
 mothur can\'t find the barcodes and primers, it will search the reverse
 compliment. The default is false.
@@ -338,8 +338,8 @@ documentation,
     <https://forum.mothur.org/t/make-contigs-with-oligo-creating-new-names/3542>
 -   1.43.0 - Adds qfile option to make.contigs.
     [\#650](https://github.com/mothur/mothur/issues/650)
--   1.43.0 - Adds auto decompress feature to make.contigs if gz read
+-   1.43.0 - Adds auto decompress feature to **make.contigs** if gz read
     fails. [\#634](https://github.com/mothur/mothur/issues/634)
--   1.43.0 - Windows users can now run make.contigs with \*.gz files.
+-   1.43.0 - Windows users can now run **make.contigs** with \*.gz files.
 
 [Category:Commands](Category:Commands)

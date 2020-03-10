@@ -1,7 +1,7 @@
 ---
 title: 'Sharednseqs'
 ---
-The [sharednseqs](sharednseqs) calculator returns the number
+The **sharednseqs** calculator returns the number
 of individuals sampled from two communities. This calculator can be used
 in the [summary.shared](summary.shared) and
 [collect.shared](collect.shared) commands.

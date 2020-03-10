@@ -1,7 +1,7 @@
 ---
 title: 'Quit'
 ---
-The [quit](quit) command takes no options and can be called
+The **quit** command takes no options and can be called
 with or without the parentheses. For example:
 
     mothur > quit()

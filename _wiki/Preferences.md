@@ -4,7 +4,7 @@ title: 'Preferences'
 
 ## Preferences Under the File Menu
 
-You can set your preferences using the Preferences menu option under the
+You can set your **preferences** using the Preferences menu option under the
 File menu.
 
 ![ center](preferenceFileMenu.jpg " center")

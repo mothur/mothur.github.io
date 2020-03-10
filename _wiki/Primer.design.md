@@ -1,7 +1,7 @@
 ---
 title: 'Primer.design'
 ---
-The primer.design \..... It creates a \*.otu.cons.fasta,
+The **primer.design** \..... It creates a \*.otu.cons.fasta,
 \*.primer.summary and \*.pick.list files.
 
 ## Default Settings

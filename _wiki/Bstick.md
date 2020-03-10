@@ -1,7 +1,7 @@
 ---
 title: 'Bstick'
 ---
-The [bstick](bstick) calculator returns the
+The **bstick** calculator returns the
 Kolmogorov-Smirnov test statistic for the comparison of observed
 rank-abundance data to a fitted broken stick distribution and the
 critical values for α equal to 0.01 or 0.05. This calculator can be used

@@ -1,7 +1,7 @@
 ---
 title: 'Summary.seqs'
 ---
-The [summary.seqs](summary.seqs) command will summarize the
+The **summary.seqs** command will summarize the
 quality of sequences in an unaligned or aligned fasta-formatted sequence
 file.
 
@@ -70,7 +70,7 @@ quality using the [screen.seqs](screen.seqs) command.
 
 ## name
 
-You can also use a name file with the summary.seqs command.
+You can also use a name file with the **summary.seqs** command.
 
     mothur > summary.seqs(fasta=stool.unique.fasta)
 

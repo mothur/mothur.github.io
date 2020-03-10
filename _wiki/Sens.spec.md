@@ -1,7 +1,7 @@
 ---
 title: 'Sens.spec'
 ---
-The sens.spec command\...
+The **sens.spec** command\...
 
 ## Default Parameters
 

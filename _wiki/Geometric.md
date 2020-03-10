@@ -1,9 +1,9 @@
 ---
 title: 'Geometric'
 ---
-The [geometric](geometric) calculator returns the
+The **geometric** calculator returns the
 Kolmogorov-Smirnov test statistic for the comparison of observed
-rank-abundance data to a fitted geometric series distribution and the
+rank-abundance data to a fitted **geometric** series distribution and the
 critical values for α equal to 0.01 or 0.05. This calculator can be used
 in the [summary.single](summary.single),
 [collect.single](collect.single), and
@@ -57,7 +57,7 @@ The first column is the label for the OTU definition and the second
 column is an integer indicating the number of sequences in the dominant
 OTU. The numbers in the subsequent columns indicate the number of
 singletons, doubletons, etc. Here we will calculate the expected number
-of individuals in each OTU based on the geometric series distribution:
+of individuals in each OTU based on the **geometric** series distribution:
 
 $$\frac{1}{98}=\left(\frac{K}{1-K}\right)\frac{\left(1-K\right)^{55}}{1-\left(1-K\right)^{55}}$$,
 $$K = 0.019424$$, by Excel
@@ -124,7 +124,7 @@ $$S_i=\left(98\right)\left(1.5151\right) \left(0.019424\right) \left(1-0.019424\
   54         1             1.021      97          97.05       0.05
   55         1             1.001      98          98.05       0.05
 
-To determine whether the geometric model describes the distribution of
+To determine whether the **geometric** model describes the distribution of
 individuals among OTUs as we observed, we will use the
 Kolmogorov-Smirnov test statistic ($$D_{max}$$). The statistic is the
 maximum difference between the cumulative observed and expected values
@@ -136,7 +136,7 @@ can calculate the critical value for α=0.05 as
 calculated value is greater than both critical values we are confident
 (P\<0.01) that the observed and expected values are significantly
 different and we can reject the hypothesis that the observed data
-follows the geometric distribution.
+follows the **geometric** distribution.
 
 Running\...
 

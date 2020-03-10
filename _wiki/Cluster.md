@@ -2,7 +2,7 @@
 title: 'Cluster'
 ---
 Once a distance matrix gets read into mothur, the
-[cluster](cluster) command can be used to assign sequences to
+**cluster** command can be used to assign sequences to
 OTUs. Presently, mothur implements three clustering methods:
 
 -   [Nearest neighbor](Nearest_neighbor): Each of the
@@ -33,7 +33,7 @@ Either a [phylip-formatted distance
 matrix](phylip-formatted_distance_matrix) or a
 [column-formatted distance
 matrix](column-formatted_distance_matrix) must be inputted
-for cluster to be successful, the default output of the dist.seqs
+for **cluster** to be successful, the default output of the dist.seqs
 command is the column-format. If you have a favorite format, please let
 us know and we can work with you to incorporate that feature into
 mothur. Because the phylip format is so popular most software can
@@ -265,7 +265,7 @@ neighbor and nearest neighbor methods the cutoff should be significantly
 higher than the desired distance in the list file. We suggest
 cutoff=0.20. This will provide a boost in speed and less RAM will be
 required than if you didn\'t set the cutoff for reading in the matrix.
-The cutoff can be set for the cluster command as follows:
+The cutoff can be set for the **cluster** command as follows:
 
     mothur > cluster(column=final.dist, count=final.count_table, cutoff=0.05) 
 
@@ -441,7 +441,7 @@ The variability is caused by the randomization of the sequences.
     [\#454](https://github.com/mothur/mothur/issues/454)
 -   1.40.4 - Bug Fix: method agc and dgc do not require distance matrix.
     [\#456](https://github.com/mothur/mothur/issues/456)
--   1.41.0 - Adds multiple cutoffs to cluster command for opti, agc and
+-   1.41.0 - Adds multiple cutoffs to **cluster** command for opti, agc and
     dgc. [\#305](https://github.com/mothur/mothur/issues/305)
 -   1.41.0 - Nearest neighbor bug fix.
 -   1.43.0 - Changes datatype for opti method to correct overflow.

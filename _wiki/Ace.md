@@ -1,7 +1,7 @@
 ---
 title: 'Ace'
 ---
-The [ace](ace) calculator returns the ACE richness estimate
+The **ace** calculator returns the ACE richness estimate
 for an OTU definition. This calculator can be used in the
 [summary.single](summary.single),
 [collect.single](collect.single), and

@@ -1,7 +1,7 @@
 ---
 title: 'Write.paper'
 ---
-The [write.paper](write.paper) command will take in your
+The **write.paper** command will take in your
 original dataset and run all of the various commands on the data. Using
 our latest and greatest text parsing algorithms in combination with
 either a specified manuscript or a minimum impact factor the command

@@ -1,7 +1,7 @@
 ---
 title: 'Jest'
 ---
-The [jest](jest) calculator returns an estimate of the
+The **jest** calculator returns an estimate of the
 traditional [ Jaccard](jclass) index using Chao1 richness
 estimates for the richness of [ individual](chao) samples and
 the richness of the [ shared](sharedchao) OTUs. This

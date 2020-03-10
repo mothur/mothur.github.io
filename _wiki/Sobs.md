@@ -1,7 +1,7 @@
 ---
 title: 'Sobs'
 ---
-The [sobs](sobs) calculator returns the number of observed
+The **sobs** calculator returns the number of observed
 OTUs for an OTU definition. This calculator can be used in the
 [summary.single](summary.single),
 [collect.single](collect.single), and
@@ -31,7 +31,7 @@ executed:
 The first column is the label for the OTU definition and the second
 column is an integer indicating the number of sequences in the dominant
 OTU. Sobs is then calculated by summing the remaining columns. For
-example, sobs for an OTU definition of 0.10 would be calculated as:
+example, **sobs** for an OTU definition of 0.10 would be calculated as:
 
 $$S_{obs} = 34 + 13+ 3 + 2 + 0 + 0 + 3 = 55$$
 

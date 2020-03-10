@@ -43,7 +43,7 @@ freshwater metagenome, freshwater sediment metagenome, groundwater
 metagenome, halite metagenome, hot springs metagenome, hydrocarbon
 metagenome, hydrothermal vent metagenome, hypersaline lake metagenome,
 ice metagenome, indoor metagenome, industrial waste metagenome, mangrove
-metagenome, marine metagenome, marine sediment metagenome, microbial mat
+metagenome, marine metagenome, marine sediment metagenome, **microbial** mat
 metagenome, mine drainage metagenome, mixed culture metagenome, oil
 production facility metagenome, paper pulp metagenome, permafrost
 metagenome, plastisphere metagenome, power plant metagenome, retting

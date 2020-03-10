@@ -1,14 +1,14 @@
 ---
 title: 'Sff.multiple'
 ---
-The [sff.multiple](sff.multiple) command reads a file
+The **sff.multiple** command reads a file
 containing sff filenames and optional oligos filenames. It runs the
 files through sffinfo, trim.flows, shhh.flows and trim.seqs combining
 the results.
 
 ## Default Options
 
-To get going with sff.multiple you first need to create a file
+To get going with **sff.multiple** you first need to create a file
 containing the names of the sff files you would like to process. Here\'s
 an example:
 

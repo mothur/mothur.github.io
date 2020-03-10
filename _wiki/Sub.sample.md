@@ -1,7 +1,7 @@
 ---
 title: 'Sub.sample'
 ---
-The [sub.sample](sub.sample) command can be used as a way to
+The **sub.sample** command can be used as a way to
 normalize your data, or create a smaller set from your original set. It
 takes as an input the following file types: fasta, name, group, list,
 taxonomy, count, shared, rabund and sabund to generate a new file that
@@ -160,7 +160,7 @@ times. Default=f.
 
 ## Revisions
 
--   1.22.0 Improved speed of sub.sample command on list and fasta files.
+-   1.22.0 Improved speed of **sub.sample** command on list and fasta files.
 -   1.22.0 Now outputs a unique fasta file and names file.
 -   1.28.0 Added count option.
 -   1.30.0 Added taxonomy option.
@@ -172,12 +172,12 @@ times. Default=f.
 -   1.40.0 - Fixes segfault error for commands that use subsampling.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
--   1.42.0 - Adds tree parameter to sub.sample command.
--   1.42.0 - Adds withreplacement parameter to sub.sample command.
+-   1.42.0 - Adds tree parameter to **sub.sample** command.
+-   1.42.0 - Adds withreplacement parameter to **sub.sample** command.
     [\#262](https://github.com/mothur/mothur/issues/262)
 -   1.42.0 - Adds constaxonomy file to subsample
     command.[\#582](https://github.com/mothur/mothur/issues/582)
--   1.42.0 - Fixes sub.sample with multiple labels bug.
+-   1.42.0 - Fixes **sub.sample** with multiple labels bug.
     [\#559](https://github.com/mothur/mothur/issues/559)
 
 [Category:Commands](Category:Commands)

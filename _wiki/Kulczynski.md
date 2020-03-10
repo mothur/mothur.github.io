@@ -1,7 +1,7 @@
 ---
 title: 'Kulczynski'
 ---
-The [kulczynski](kulczynski) calculator returns the
+The **kulczynski** calculator returns the
 Kulczynski index describing the dissimilarity between two communities.
 This calculator can be used in the
 [summary.shared](summary.shared) and

@@ -1,7 +1,7 @@
 ---
 title: 'Mempearson'
 ---
-The [mempearson](mempearson) calculator returns a membership
+The **mempearson** calculator returns a membership
 based Pearson correlation coefficient index describing the assocation
 between two communities. This calculator can be used in the
 [summary.shared](summary.shared) and

@@ -1,7 +1,7 @@
 ---
 title: 'Make.lefse'
 ---
-The make.lefse command takes mothur\'s [ shared
+The **make.lefse** command takes mothur\'s [ shared
 file](Shared_file) or [ relabund](Relabund_file "wikilink")
 and creates a lefse formatted file. The LEfSe formatted file is can be
 used as an input to the LEfSe program. Segata, N., J. Izard, L. Waldron,
@@ -10,7 +10,7 @@ Metagenomic biomarker discovery and explanation. Genome Biol 12:R60
 
 ## Default Setting
 
-The make.lefse command requires a shared or relabund file.
+The **make.lefse** command requires a shared or relabund file.
 
     mothur > make.lefse(shared=final.an.shared)
 

@@ -1,12 +1,12 @@
 ---
 title: 'Merge.files'
 ---
-The [merge.files](merge.files) command will concatenate
+The **merge.files** command will concatenate
 multiple files and output the result to a new file. This command is
 useful for merging multiple fasta-formatted sequence files, 454 quality
 files, group files, name files, or anything else.
 
-To run the merge.files command you need to provide the input files
+To run the **merge.files** command you need to provide the input files
 separated by hyphens as well as the name file that the contents of those
 files should be written to. The merging occurs in the order that you
 provide the input files. The following example demonstrates how to use
@@ -14,7 +14,7 @@ the command:
 
     mothur > merge.files(input=fileA-fileB-fileC, output=fileABC)
 
-Alternatively, the merge.files command can be used to combine the
+Alternatively, the **merge.files** command can be used to combine the
 information in a fasta, taxonomy, name or count files into a new fasta
 file.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Shannon'
 ---
-The [shannon](shannon) calculator returns the Shannon
+The **shannon** calculator returns the Shannon
 diversity index for an OTU definition. This calculator can be used in
 the [summary.single](summary.single),
 [collect.single](collect.single), and

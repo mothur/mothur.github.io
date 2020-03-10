@@ -1,13 +1,13 @@
 ---
 title: 'Clearcut'
 ---
-The clearcut command allows mothur users to run the clearcut program
-from within mothur. The clearcut program written by Initiative for
+The **clearcut** command allows mothur users to run the clearcut program
+from within mothur. The **clearcut** program written by Initiative for
 Bioinformatics and Evolutionary Studies (IBEST) at the University of
-Idaho. For more information about clearcut please refer to
+Idaho. For more information about **clearcut** please refer to
 <http://bioinformatics.hungry.com/clearcut/> Note: In version 1.13.0 the
 clearcut source was added to mothur, so you no longer need the clearcut
-executable. You can still download the clearcut executable if you would
+executable. You can still download the **clearcut** executable if you would
 like, [Download Clearcut](Download_Clearcut).
 
 ## Default settings
@@ -18,20 +18,20 @@ provide a fasta file, you must specify DNA or protein.
 
     mothur > clearcut(phylip=abrecovery.dist)
 
-Note: clearcut requires sequence names to be at least 10 characters
+Note: **clearcut** requires sequence names to be at least 10 characters
 long.
 
 or
 
     mothur > clearcut(fasta=abrecovery.align, DNA=T)
 
-In both cases clearcut will generate a file called abrecovery.tre.
+In both cases **clearcut** will generate a file called abrecovery.tre.
 
 ## Options
 
 ### version
 
-The version parameter prints out the version of clearcut you are using,
+The version parameter prints out the version of **clearcut** you are using,
 default=F.
 
     mothur > clearcut(fasta=abrecovery.align, DNA=T, version=t)
@@ -111,7 +111,7 @@ distance matrix to.
 ### ntrees
 
 The ntrees parameter allows you to specify the number of output trees
-you want clearcut to generate, default=1.
+you want **clearcut** to generate, default=1.
 
      mothur > clearcut(fasta=abrecovery.align, DNA=t, ntrees=5)
 

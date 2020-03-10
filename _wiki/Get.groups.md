@@ -1,7 +1,7 @@
 ---
 title: 'Get.groups'
 ---
-The [get.groups](get.groups) command selects sequences from a
+The **get.groups** command selects sequences from a
 specific group or set of groups from the following file types: fasta,
 name, group, list, taxonomy. To complete this analysis, you need to
 download the folder compressed in the [

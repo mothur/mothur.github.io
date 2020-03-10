@@ -1,7 +1,7 @@
 ---
 title: 'Remove.groups'
 ---
-The [remove.groups](remove.groups) command removes sequences
+The **remove.groups** command removes sequences
 from a specific group or set of groups from the following file types:
 fasta, name, group, list, taxonomy and shared. To complete this
 analysis, you need to download the folder compressed in the [

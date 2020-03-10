@@ -1,7 +1,7 @@
 ---
 title: 'Seq.error'
 ---
-The [seq.error](seq.error) command reads a fasta file and
+The **seq.error** command reads a fasta file and
 searches for errors in sequence compared to a reference file. Using this
 command to assess error rate requires that your dataset includes one or
 more mock community samples of known composition. Error rate is defined
@@ -77,7 +77,7 @@ Output files are:
 -   1.40.0 Removes processors option.
 -   1.40.0 Bug Fix: Fixes seg fault.
     [\#280](https://github.com/mothur/mothur/issues/280)
--   1.40.5 Solves seq.error crash
+-   1.40.5 Solves **seq.error** crash
     [\#463](https://github.com/mothur/mothur/issues/463)
 
 [Category:Commands](Category:Commands)

@@ -1,7 +1,7 @@
 ---
 title: 'Lennon'
 ---
-The [lennon](lennon) calculator returns the Lennon index
+The **lennon** calculator returns the Lennon index
 describing the dissimilarity between two communities. This calculator
 can be used in the [summary.shared](summary.shared) and
 [collect.shared](collect.shared) commands.

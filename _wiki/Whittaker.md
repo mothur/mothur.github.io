@@ -1,7 +1,7 @@
 ---
 title: 'Whittaker'
 ---
-The [whittaker](whittaker) calculator returns the Whittaker
+The **whittaker** calculator returns the Whittaker
 index describing the dissimilarity between two communities. This
 calculator can be used in the
 [summary.shared](summary.shared) and

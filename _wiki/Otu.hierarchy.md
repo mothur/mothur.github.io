@@ -1,7 +1,7 @@
 ---
 title: 'Otu.hierarchy'
 ---
-The [otu.hierarchy](otu.hierarchy) command relates OTUs at
+The **otu.hierarchy** command relates OTUs at
 different distances
 
 

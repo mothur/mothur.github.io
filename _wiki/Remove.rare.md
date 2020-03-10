@@ -1,7 +1,7 @@
 ---
 title: 'Remove.rare'
 ---
-The [remove.rare](remove.rare) command removes OTUs at a
+The **remove.rare** command removes OTUs at a
 specified rarity (number of observations in the dataset) and outputs a
 new file. The files that we discuss in this tutorial can be obtained by
 downloading the [AmazonData.zip](Media:AmazonData.zip) file
@@ -10,7 +10,7 @@ and decompressing it.
 
 ## Default settings
 
-The [remove.rare](remove.rare) command can be run on a list,
+The **remove.rare** command can be run on a list,
 rabund, sabund, or shared file. Options include nseqs, label, groups,
 and bygroup.
 
@@ -50,7 +50,7 @@ Reading a [ rabund file](rabund_file):
     0.09   57  7   7   4   4   4   3   3   3   3   2   2 ...
     0.10   55  7   7   7   4   4   4   3   3   2   2   2 ...
 
-and after running [remove.rare](remove.rare),
+and after running **remove.rare**,
 98\_lt\_phylip\_amazon.fn.pick.rabund looks like:
 
     0.02   3   4   3   3   
@@ -84,7 +84,7 @@ Reading a [ sabund file](sabund_file):
     0.09   7   36  12  4   3   0   0   2   
     0.10   7   35  12  2   3   0   0   3
 
-and after running [remove.rare](remove.rare),
+and after running **remove.rare**,
 98\_lt\_phylip\_amazon.fn.pick.sabund looks like:
 
     0.02   4   0   0   2   1   
@@ -130,7 +130,7 @@ Reading a [ shared file](shared_file):
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2 ...
     0.10   pasture 55  0   0   0   1   0   0   1   0   0   5 ...
 
-and after running [remove.rare](remove.rare),
+and after running **remove.rare**,
 98\_lt\_phylip\_amazon.fn.pick.shared looks like:
 
     0.02   forest  3   3   0   0   
@@ -184,7 +184,7 @@ groupB.
 
     mothur > remove.rare(shared=98_lt_phylip_amazon.fn.shared, nseqs=2, bygroup=t)
 
-and after running [remove.rare](remove.rare),
+and after running **remove.rare**,
 98\_lt\_phylip\_amazon.fn.pick.shared looks like:
 
     0.02   forest  3   3   0   0   
