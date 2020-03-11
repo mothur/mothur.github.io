@@ -3,12 +3,9 @@ title: About
 permalink: /about/
 ---
 
-# About
+This is the website that supports the mothur software program - one of the most widely used tools for analyzing 16S rRNA gene sequence data. Step inside to learn how to use the software, get help, and join our community!
 
-This is a [starter template](https://vsoch.github.com/docsy-jekyll/) for a Docsy jekyll theme, based
-on the Beautiful [Docsy](https://github.com/google/docsy) that renders with Hugo. This version is intended for
-native deployment on GitHub pages. See the [respository]({{ site.repo }}) for more details.
+If you're looking for papers from the Schloss lab that form the basis of mothur's functions, the default values, and our approach, see [this listing](http://www.schlosslab.org/science/bioinformatic_tools) from the lab's website. Perhaps the most important papers are those that announced mothur and the 2020 retrospective on mothur's development.
 
-## Support
-
-If you need help, please don't hesitate to [open an issue](https://www.github.com/{{ site.github_user }}/{{ site.github_repo }}).
+* Schloss PD, Westcott SL, Ryabin T, Hall JR, Hartmann M, Hollister EB, Lesniewski RA, Oakley BB, Parks DH, Robinson CJ, Sahl JW, Stres B, Thallinger GG, Van Horn DJ, Weber CF. 2009. Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol. 75: 7537-41. DOI: [10.1128/AEM.01541-09](https://dx.doi.org/10.1128/AEM.01541-09).
+* Schloss PD. 2020. Reintroducing mothur: 10 years later. Applied and Environmental Microbiology. 86: e02343-19. DOI: [10.1128/AEM.02343-19](https://dx.doi.org/10.1128/AEM.02343-19).
