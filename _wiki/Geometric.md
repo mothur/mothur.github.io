@@ -30,7 +30,7 @@ $$N_{min}$$ = the number of individuals in the most rare OTU
 $$S_{obs}$$ = total number of observed OTUs
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
-Amazonian dataset](Media:AmazonData.zip) with the following
+Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following
 commands:
 
     mothur > read.dist(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
@@ -131,8 +131,10 @@ maximum difference between the cumulative observed and expected values
 (i.e. 16.43) divided by the total number of individuals sampled (i.e.
 98). So for this case the value was 0.1677. To test this statistic we
 can calculate the critical value for α=0.05 as
-0.886`{ {math|{ {radical|Sobs}}}}`{=mediawiki} or 0.1195 and α=0.01 as
-1.031`{ {math|{ {radical|Sobs}}}}`{=mediawiki} or 0.1390. Because our
+
+0\.886`{ {math|{ {radical|Sobs}}}}`{=mediawiki} or 0.1195 and α=0.01 as
+
+1\.031`{ {math|{ {radical|Sobs}}}}`{=mediawiki} or 0.1390. Because our
 calculated value is greater than both critical values we are confident
 (P\<0.01) that the observed and expected values are significantly
 different and we can reject the hypothesis that the observed data

@@ -22,7 +22,7 @@ SILVA-aligned sequences.
     than the RDP taxonomy.A README file is included that describes
     precisely how the files were created. You can also find this README
     on the [mothur blog
-    site](https://blog.mothur.org/2014/08/12/greengenes-v13_8_99-reference-files)
+    site](/blog/2014/greengenes-v13_8_99-reference-files)
 -   [greengenes reference
     alignment](https://www.mothur.org/w/images/1/19/Gg_13_8_99.refalign.tgz) -
     This is from the August 2013 release of gg\_13\_8\_99 and contains

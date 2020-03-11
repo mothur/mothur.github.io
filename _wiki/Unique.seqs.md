@@ -8,7 +8,7 @@ sequence. Often times a collection of sequences will have a significant
 number of identical sequences. It sucks up considerable processing time
 to have to align, calculate distances, and cluster each of these
 sequences individually. For this tutorial, you should use the files
-found in the [ AmazonData.zip](Media:AmazonData.zip) archive.
+found in the [ AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) archive.
 
 To run the command the name of a fasta-file needs to be provided:
 

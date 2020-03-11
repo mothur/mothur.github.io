@@ -26,7 +26,7 @@ distance. In contrast, the example on the right shows two communities
 that are maximally different as their lowest common ancestor is the root
 of the tree.
 
-![](UnweightedUniFracMeasure.jpg "UnweightedUniFracMeasure.jpg")
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/unweightedunifracmeasure.jpg)
 
 Formally, the measure is calculated using the following formula, where
 $$N$$ is the number of nodes in the tree, $$l_i$$ is the branch length
@@ -51,4 +51,4 @@ assignment of community labels to sequences while keeping the tree
 constant. The reported p-value is the proportion of random permutations
 that result in a UniFrac distance greater or equal to the observed data.
 
-![](UniFracSignificantsTest.jpg "UniFracSignificantsTest.jpg")
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/unifracsignificantstest.jpg)

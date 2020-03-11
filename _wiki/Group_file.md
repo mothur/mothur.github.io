@@ -20,9 +20,12 @@ example:
 
 Notes:
 
-1.  Be sure not to include the \"\>\" in the name of the sequence.
-2.  You sequence name and group name cannot contain blank spaces. For
+
+1\.  Be sure not to include the \"\>\" in the name of the sequence.
+
+2\.  You sequence name and group name cannot contain blank spaces. For
     example, the following will cause an error: AY457915 Dirt Sample
-3.  DO NOT use a hyphen in group names. The \"-\" character is used
+
+3\.  DO NOT use a hyphen in group names. The \"-\" character is used
     within mothur to separate group names, labels, taxonomies, ect.
     Including a hyphen will cause issues in your downstream analysis.

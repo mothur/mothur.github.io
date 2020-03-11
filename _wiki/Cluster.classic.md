@@ -19,7 +19,7 @@ If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
 developers and we\'ll see what we can do. The furthest neighbor
 algorithm is the default option. For this tutorial you should download
-the [AmazonData.zip](Media:AmazonData.zip) file and
+the [AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) file and
 decompress it.
 
 
@@ -57,7 +57,7 @@ Outputted to the screen is a label describing the distance cutoff used
 to form OTUs, the number of sequences in the largest OTU, the number of
 OTUs with only one sequence, with two, etc. Running the
 cluster.classic() command generates three output files whose names end
-in [sabund](sabund_file), [rabund](rabund_file "wikilink"),
+in [sabund](sabund_file), [rabund](rabund_file),
 and [list](list_file). The data outputted to the screen is
 the same as that in the sabund file. You will notice that the sample
 rabund, sabund, and list files each have a \".fn.\" tag inserted after

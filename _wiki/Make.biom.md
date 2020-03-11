@@ -3,9 +3,9 @@ title: 'Make.biom'
 ---
 The **make.biom** command is design to allow you to
 convert your [shared file](shared_file) to a biom file.
-<https://biom-format.org/documentation/biom_format.html> (Note: mothur
+[https://biom-format.org/documentation/biom_format.html](https://biom-format.org/documentation/biom_format.html) (Note: mothur
 currently supports format version 1.0) To run this tutorial please
-download, [ Example Files](Media:Make_biom_files.zip)
+download, [ Example Files](https://mothur.s3.us-east-2.amazonaws.com/wiki/make_biom_files.zip)
 
 ## Default Settings
 
@@ -106,9 +106,9 @@ file you used when classifying your sequences.
 
 -   1.25.0 - First Introduced
 -   1.28.0 - Added metadata option -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1786>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=1786](https://forum.mothur.org/viewtopic.php?f=5&t=1786)
 -   1.32.0 - Bug Fix: segfault with multiple labels in shared file. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2585&p=7072#p7072>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=2585&p=7072#p7072](https://forum.mothur.org/viewtopic.php?f=4&t=2585&p=7072#p7072)
 -   1.33.0 - Added the picrust and reftaxonomy parameters.
 -   1.36.0 - Bug Fix: - repeat labels when combining mothur OTU labels
     with non mothur OTU labels, this can results in a duplicate
@@ -116,7 +116,7 @@ file you used when classifying your sequences.
     to the OTU.
 -   1.36.0 - remove paths from filenames to make compliant with qiime
     parser. -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3781&p=11241#p11241>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=3781&p=11241#p11241](https://forum.mothur.org/viewtopic.php?f=3&t=3781&p=11241#p11241)
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)

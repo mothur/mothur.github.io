@@ -16,7 +16,7 @@ with 8 processors, 16 gigs of RAM, and running CentOS linux.
 The first thing I like to do is look at my sequence length distribution-
 here is a histogram from my pyrosequence dataset:
 
-![](histogram.png "histogram.png")
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/histogram.png)
 
 Work from Mitch Sogin\'s lab suggests that the sequencing error rate
 surrounding the normal distribution of sequence length is too high. From
@@ -31,7 +31,7 @@ I don\'t trim by average quality score.
 
 I used bacterial primers 8F and 357R (which contains the barcode) on 11
 separate DNA templates. I first found the unique sequences in the raw
-fasta file [ ZAC.tgz](Media:ZAC.tgz):
+fasta file [ ZAC.tgz](https://mothur.s3.us-east-2.amazonaws.com/wiki/zac.tgz):
 
     mothur > unique.seqs(fasta=ZAC.fas)
 
@@ -39,11 +39,11 @@ fasta file [ ZAC.tgz](Media:ZAC.tgz):
 
 I then attempted to align my sequences to the SILVA sequence space.
 Specifically, I used Pat\'s [ silva reference
-alignment](Media:silva.alignment.zip) as my template. The
+alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.alignment.zip) as my template. The
 metadata included in the fasta file title line will throw mothur off. It
 needs to be stripped off so only the name field remains. Here is a
 script which does this for you: [
-namestripper.zip](Media:Namestripper.zip) I then aligned my
+namestripper.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/namestripper.zip) I then aligned my
 sequences:
 
     mothur > align.seqs(template=SILVA, candidate=ZAC.unique.fasta, ksize=9, processors=8)
@@ -111,11 +111,15 @@ small Sanger libraries, it becomes almost impossible with hundreds of
 thousands of sequences. I aligned and processed my dataset with 4
 different alignment methods.
 
-1.  The greengenes coreset
-2.  Pat\'s SILVA seed database
-3.  An alignment obtained from the [comparative rRNA web
+
+1\.  The greengenes coreset
+
+2\.  Pat\'s SILVA seed database
+
+3\.  An alignment obtained from the [comparative rRNA web
     site](https://www.rna.ccbb.utexas.edu/)
-4.  [RDP pyrosequencing pipeline](https://pyro.cme.msu.edu/), which uses
+
+4\.  [RDP pyrosequencing pipeline](https://pyro.cme.msu.edu/), which uses
     the [Infernal aligner](https://infernal.janelia.org/)
 
 Here are the results of OTUs obtained at a 97% identity level for three
@@ -140,31 +144,44 @@ the terminal gaps in the distance calculation.
 This is an alternative method to generate the \'group\' file needed by
 many Mothur applications: it requires ARB
 
-1.  Start ARB
-2.  Click \'create and import\'
-3.  Find either your aligned or unaligned fasta file and import it
-4.  Once your sequences are imported, the Search and Query window opens,
+
+1\.  Start ARB
+
+2\.  Click \'create and import\'
+
+3\.  Find either your aligned or unaligned fasta file and import it
+
+4\.  Once your sequences are imported, the Search and Query window opens,
     with all of your sequences marked
-5.  Click \'Search species\' (on the left side of the window) and \'that
+
+5\.  Click \'Search species\' (on the left side of the window) and \'that
     are marked\' (on the right side), hit the search button
-6.  Now click on \'Keep species\' (left) \'that match the query\'
+
+6\.  Now click on \'Keep species\' (left) \'that match the query\'
     (right), in the search bar, enter specific characters for one
     environment followed by the wild card (\*) in the field below; for
     example, if you have 100 sequences labeled ENV1, ENV2,\....ENV100,
     type ENV\* in the search bar and hit the search button
-7.  Now only sequences from one environment are selected, now click
+
+7\.  Now only sequences from one environment are selected, now click
     \'write to fields of listed\'. Pick an unused field, such as
     \'acc\', and type in your environment name, click on write. DO NOT
     INCLUDE ANY SPACES IN YOUR ENVIRONMENT NAME. Mothur doesn\'t like
     those.
-8.  If you then go back to the Search and Query window, click on
+
+8\.  If you then go back to the Search and Query window, click on
     \'Search species\' \'that are marked\', you should see all of your
     sequences once again. Repeat this procedure for each environment in
     your dataset.
-9.  Under the \'Tree\' heading at the top of the main screen, select
+
+9\.  Under the \'Tree\' heading at the top of the main screen, select
     \'Select visible info (NDS)\'
-10. Make sure only the fields \'name\' and \'acc\' are selected. Close
+
+10\. Make sure only the fields \'name\' and \'acc\' are selected. Close
     window.
-11. Click File-\> Export -\> Export fields using NDS
-12. Name your file, click the \'tab for columns\' button, and hit save.
-13. Voila!
+
+11\. Click File-\> Export -\> Export fields using NDS
+
+12\. Name your file, click the \'tab for columns\' button, and hit save.
+
+13\. Voila!

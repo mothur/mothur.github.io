@@ -16,7 +16,7 @@ individual samples, much less make comparisons across samples. Here we
 describe how we would use mothur to analyze the dataset. Also, this
 analysis was done on my MacBook Pro laptop with 2 GB of RAM, using only
 one of the 2 GHz processors. Feel free to start from scratch as
-described below or to [ download](Media:SoginData.zip) all of
+described below or to [ download](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogindata.zip) all of
 the files that will be generated in this exercise.
 
 
@@ -141,7 +141,7 @@ sequences from your collection.
 Next, we want to calculate the column-formatted distance matrix, but we
 are only interested in distances smaller than 0.10. We will do this
 using mothur\'s [dist.seqs](dist.seqs) \[you can download the
-[ distance file](Media:sogin.unique.filter.dist.zip)\]:
+[ distance file](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.unique.filter.dist.zip)\]:
 
     mothur > dist.seqs(fasta=sogin.unique.filter.fasta, cutoff=0.10)
 
@@ -191,7 +191,8 @@ Sogin study. To do this we need to [ read in the OTU
 data](read.otu) and then use the
 [summary.single](summary.single) command to summarize the
 number of OTUs and the ACE and Chao1 richness estimates for the unique,
-0.03, 0.05, and 0.10 OTU definitions. The following commands will do
+
+0\.03, 0.05, and 0.10 OTU definitions. The following commands will do
 this:
 
     mothur > read.otu(rabund=sogin.unique.filter.fn.53R.rabund)
@@ -238,7 +239,7 @@ incorporated those changes. The resulting data are:
 
 ## Rarefaction analysis of sample FS396
 
-![](sogin.rarefaction.png "fig:sogin.rarefaction.png"){width="300"} The
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.rarefaction.png) The
 largest sample in the Sogin data set was FS396. Originally represented
 by 17,666 sequences, the updated data set contains 83,399 sequences.
 This data set was used to generate [rarefaction](rarefaction)
@@ -272,7 +273,7 @@ took their OTU-based analysis.
 
 ## Multi-sample rarefaction
 
-![ right \| 200px](sogin.shared.rarefaction.png "fig: right | 200px")
+![ right \| 200px](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.shared.rarefaction.png)
 Traditional ecology studies will rarefy across samples, not sequences.
 This is possible in mothur using the
 [rarefaction.shared](rarefaction.shared) command.
@@ -302,7 +303,7 @@ Seamount, Juan de Fuca Ridge.
     mothur > venn(calc=sharedsobs-sharedchao, groups=FS312-FS396, label=0.10)
 
 ![
-300px](sogin.sharedsobs.venn.png "fig: 300px")![](sogin.sharedchao.venn.png "fig:sogin.sharedchao.venn.png"){width="300"}
+300px](sogin.sharedsobs.venn.png "fig: 300px")![](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.sharedchao.venn.png)
 
 These are the raw output from mothur, which you would probably modify
 for publication in a program such as Adobe Illustrator. For example, you
@@ -329,7 +330,7 @@ dendrograms can be displayed and exported as SVG image files. Again,
 these SVG files can be edited in a program like Adobe Illustrator. Here
 we present the dendrograms as exported from TreeViewX.
 
-![ 300px](sogin.jest.tree.png "fig: 300px")![
+![ 300px](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.jest.tree.png)![
 300px](sogin.thetayc.tree.png "fig: 300px")
 
 ### Heatmap

@@ -12,7 +12,7 @@ also like to mask their sequences to remove variable regions using a
 soft or hard mask (e.g. Lane\'s mask). This type of masking is only
 encouraged for deep-level phylogenetic analysis, not fine level analysis
 such as that needed with calculating OTUs. This tutorial uses the data
-files in [ AmazonData.zip](Media:AmazonData.zip).
+files in [ AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
 
 
 ## Default settings

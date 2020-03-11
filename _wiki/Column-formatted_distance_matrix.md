@@ -9,7 +9,7 @@ alternative format, used by mothur, is to represent the matrix as a
 three column table. The first and second columns have the sequence names
 and the third column is the distance between those sequences. An example
 of this is provided in 96\_sq\_column\_amazon.dist, which can be
-obtained from the [ AmazonData.zip](Media:AmazonData.zip) zip
+obtained from the [ AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) zip
 file:
 
     U68589 U68589  0.0000

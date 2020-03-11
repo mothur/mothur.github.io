@@ -20,7 +20,7 @@ $$n$$ = the number of individuals in community A
 $$m$$ = the number of individuals in community B
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
-Amazonian dataset](Media:AmazonData.zip) with the following
+Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following
 commands:
 
     mothur > read.dist(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)

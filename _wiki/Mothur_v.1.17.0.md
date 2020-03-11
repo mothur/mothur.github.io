@@ -51,7 +51,7 @@ there is still time\...
 ## Bug fixes
 
 -   [catchall](catchall) command not finding files -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1114>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=1114](https://forum.mothur.org/viewtopic.php?f=3&t=1114)
 -   [sub.sample](sub.sample) command that caused mothur to
     stall if size was close to total number of sequences in file.
 -   unifrac commands - significance scores differing between multiple

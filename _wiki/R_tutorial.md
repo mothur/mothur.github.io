@@ -2,7 +2,7 @@
 title: 'R tutorial'
 ---
 The following tutorial makes use of the files available in the [
-Rtutorial files](Media:Rtutorial.zip)
+Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
 
     #===============================================================================
     #
@@ -254,7 +254,7 @@ Rtutorial files](Media:Rtutorial.zip)
     x <- TRUE
     y <- FALSE
 
-    !x              # NOT operator
+!x              # NOT operator
     x && y          # AND operator
     x & y           # bitwise AND operator (mainly for vectors)
     x || y          # OR operator

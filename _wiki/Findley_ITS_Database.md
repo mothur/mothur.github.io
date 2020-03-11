@@ -2,7 +2,7 @@
 title: 'Findley ITS Database'
 ---
 The [Segre Lab](https://www.genome.gov/10000354) at NHGRI has provided
-the [ ITS database](Media:Findley_ITS_database.zip) used in
+the [ ITS database](https://mothur.s3.us-east-2.amazonaws.com/wiki/findley_its_database.zip) used in
 their [Findley et al. 2013 Nature
 paper](https://www.ncbi.nlm.nih.gov/pubmed/23698366)
 
@@ -25,7 +25,8 @@ These classification data were developed for use with the classify.seqs
 command in mothur (Schloss, P.D., et al., Introducing mothur:
 Open-source, platform-independent, community-supported software for
 describing and comparing microbial communities. Appl Environ Microbiol,
-2009. 75(23):7537-41.).
+
+2009\. 75(23):7537-41.).
 
 For example:
 

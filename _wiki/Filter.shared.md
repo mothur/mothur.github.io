@@ -43,12 +43,14 @@ The minpercent parameter allows you indicate the minimum relative
 abundance of an OTU. For example, if the OTUs total abundance across all
 samples is 8, and the total abundance across all OTUs is 1000, and
 minpercent=1. The OTU\'s relative abundance is 0.008, the minimum is
-0.01, so the OTU will be removed. Default=0.
+
+0\.01, so the OTU will be removed. Default=0.
 
     mothur > filter.shared(shared=final.an.shared, minpercent=1)
 
 minpercent=1 requires each OTU to have a minimum relative abundance of
-0.01 or abundance \> 2.42.
+
+0\.01 or abundance \> 2.42.
 
 Let\'s look at an example:
 
@@ -191,7 +193,7 @@ like, and are also separated by dashes.
 
 -   1.29.0 - First Introduced
 -   1.31.0 - Added rarepercent and keepties parameters.
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=2007>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=2007](https://forum.mothur.org/viewtopic.php?f=5&t=2007)
 -   1.37.0 - Modifies rareOtus label to prevent mothurConvert error.
     [\#137](https://github.com/mothur/mothur/issues/137)
 -   1.40.0 - Speed and memory improvements for shared files.

@@ -4,7 +4,7 @@ title: 'Phylo.diversity'
 The **phylo.diversity** command requires an input tree file. Two files will
 be output: .phylo.diversity and (if you set rarefy=T) .rarefaction. To
 run this tutorial download [
-AbRecovery.zip](Media:AbRecovery.zip)
+AbRecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip)
 
 
 ## Default settings
@@ -192,7 +192,7 @@ processors that you can use.
 -   1.28.0 Added count parameter
 -   1.31.0 Added multiple processors for Windows.
 -   1.36.0 Adds sampledepth parameter. -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3320>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=3320](https://forum.mothur.org/viewtopic.php?f=3&t=3320)
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 

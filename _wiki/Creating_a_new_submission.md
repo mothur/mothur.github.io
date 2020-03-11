@@ -9,7 +9,7 @@ Mothur can help!
 get.mimarkspackage command helps you fill provide all the necessary
 experimental data about your samples. Here is a link to information
 about the different mimarks packages,
-<https://www.mothur.org/wiki/MIMarks_Data_Packages>.
+[MIMarks_Data_Packages](MIMarks_Data_Packages).
 
 2\. Create a project file. You can download a [ template
 here](Project_File).

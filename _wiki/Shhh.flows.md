@@ -22,7 +22,7 @@ come at a computational cost. Whereas the features in
 shhh.flows can take on the order of hours. Running **shhh.flows** with large
 datasets without multiple processors or MPI is not suggested. You can
 obtain the appropriate version of MPI for your operating system at
-<https://www.open-mpi.org/>. You will also need a lookup file that tells
+[https://www.open-mpi.org/](https://www.open-mpi.org/). You will also need a lookup file that tells
 shhh.flows the probability of observing an intensity value for a given
 homopolymer length. You can get mothur-compatible files [
 here](lookup_files) and will need to put these files either

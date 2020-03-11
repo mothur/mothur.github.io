@@ -12,7 +12,7 @@ sequence length and the presence of ambiguous bases and get the reverse
 complement of your sequences. While this analysis is clearly geared
 towards pyrosequencing collections, it can also be used with traditional
 Sanger sequences. Here we use the [ raw
-data](Media:SahlRawData.zip) used by Sahl in his [ example
+data](https://mothur.s3.us-east-2.amazonaws.com/wiki/sahlrawdata.zip) used by Sahl in his [ example
 analysis of deep anoxic
 cenotes](Pyrosequences_from_deep_anoxic_cenotes).
 

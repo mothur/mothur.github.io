@@ -82,7 +82,8 @@ want to use.
 ## accnos
 
 The accnos parameter allows you to output a .rare.accnos and
-.abund.accnos files to use with the get.seqs and remove.seqs commands.
+
+\.abund.accnos files to use with the get.seqs and remove.seqs commands.
 
     mothur > split.abund(fasta=abrecovery.fasta, list=abrecovery.fn.list, cutoff=10, accnos=true)
 

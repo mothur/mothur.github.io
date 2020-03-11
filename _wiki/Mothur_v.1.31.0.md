@@ -65,29 +65,29 @@ able to help so many people do great research!
     parameters. If sequences are removed from your fasta file by
     chop.seqs, mothur will create new \*.chop.names, \*.chop.groups and
     \*.chop.count\_table files. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=2136>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=2136](https://forum.mothur.org/viewtopic.php?f=5&t=2136)
 -   [get.oturep](get.oturep) - added method parameter.
     Options distance and abundance. Default=distance. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=2131>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=2131](https://forum.mothur.org/viewtopic.php?f=5&t=2131)
 -   [filter.shared](filter.shared) - added rarepercent and
     keepties parameters
-    (https://www.mothur.org/forum/viewtopic.php?f=5&t=2007)
+    (https://forum.mothur.org/viewtopic.php?f=5&t=2007)
 -   [unifrac.weighted](unifrac.weighted),
     [unifrac.unweighted](unifrac.unweighted),
-    [parsimony](parsimony), [indicator](indicator "wikilink")
+    [parsimony](parsimony), [indicator](indicator)
     and [phylo.diversity](phylo.diversity) - parallelized for
     Windows.
 -   [get.lineage](get.lineage) and
     [remove.lineage](remove.lineage)- added constaxonomy and
     shared parameters
-    (https://www.mothur.org/forum/viewtopic.php?f=3&t=2210)
+    (https://forum.mothur.org/viewtopic.php?f=3&t=2210)
 -   [sens.spec](sens.spec) - added square phylip format
 -   [create.database](create.database) - add count file
 -   [pcr.seqs](pcr.seqs) - added primer to types oligos can
     read
 -   added summary file to current types kept by mothur
 -   added modifynames parameter to [set.dir](set.dir) -
-    <https://www.mothur.org/forum/viewtopic.php?f=10&t=2324&p=6360#p6360>
+    [https://forum.mothur.org/viewtopic.php?f=10&t=2324&p=6360#p6360](https://forum.mothur.org/viewtopic.php?f=10&t=2324&p=6360#p6360)
 
 ## Bug fixes
 
@@ -100,7 +100,7 @@ able to help so many people do great research!
 -   [pcr.seqs](pcr.seqs) - For forward primer trimming with
     aligned sequences and keepdots=t. If the character before the first
     primer base was a base and not a gap the base was not trimmed.
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2209> - fixed
+    [https://forum.mothur.org/viewtopic.php?f=4&t=2209](https://forum.mothur.org/viewtopic.php?f=4&t=2209) - fixed
     1.30.2
 -   [summary.seqs](summary.seqs) - 32bit machines processing
     a file larger than 4G could hang.
@@ -110,7 +110,7 @@ able to help so many people do great research!
     alignment.
 -   [classify.tree](classify.tree) - when names file is given
     everything is unclassified -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2161&p=6116#p6116>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116](https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116)
 -   [remove.groups](remove.groups)(groups=notValidGroupName,
     \...) mothur removes all of the groups. Fix will ignore invalid
     group and continue.
@@ -124,7 +124,7 @@ able to help so many people do great research!
 
 ## Changes to wiki
 
--   [ HOMD Reference Files](Media:HOMD_Reference_Files.zip) -
+-   [ HOMD Reference Files](https://mothur.s3.us-east-2.amazonaws.com/wiki/homd_reference_files.zip) -
     Version 13
 
 ## Registered users

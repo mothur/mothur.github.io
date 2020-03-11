@@ -3,15 +3,15 @@ title: 'Remove.seqs'
 ---
 The **remove.seqs** command takes a list of
 sequence names and either a [ fastq](fastq_file), [
-fasta](fasta_file), [ name](name_file "wikilink"), [
-group](group_file), [ list](list_file "wikilink"), [
+fasta](fasta_file), [ name](name_file), [
+group](group_file), [ list](list_file), [
 count](Count_File) or [
 align.report](align.report_file) file to generate a new file
 that does not contain the sequences in the list. This command may be
 used in conjunction with the [list.seqs](list.seqs) command
 to help screen a sequence collection. To complete this analysis, you
 need to download the folder compressed in the [
-Esophagus.zip](Media:Esophagus.zip) archive.
+Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) archive.
 
 
 ## Options
@@ -82,7 +82,8 @@ following lines:
 
 By default, the entire line from a name file if you remove any name from
 the line. default=false. If dups=true, then **remove.seqs** outputs a new
-.accnos file containing all the sequences removed. To turn this setting
+
+\.accnos file containing all the sequences removed. To turn this setting
 off, see the [ dups](#dups) subsection, below.
 
 #### dups

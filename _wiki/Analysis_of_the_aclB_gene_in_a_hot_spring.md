@@ -6,13 +6,13 @@ sequences, it is possible to use mothur for any gene using nucleotide or
 amino acid sequences. In this tutorial, we will use the mothur tools to
 re-analyze ATP citrate lyase (*aclB*) gene sequences from Coffee Pots
 Hot Spring originally published by [ Hall et.
-al.](Media:Halletal_CoffeePotsSpring_AEM2008.pdf) and compare
+al.](https://mothur.s3.us-east-2.amazonaws.com/wiki/halletal_coffeepotsspring_aem2008.pdf) and compare
 the two approaches to analysis. In the original analysis, OTUs were
 defined by PHRAP assembly, the identity of the sequences was determined
 by phylogenetic analysis, and the *aclB* sequences from seven sites were
 compared using the pairwise dissimilarity statistic (Fst) implemented in
 [Arlequin](https://lgb.unige.ch/arlequin/). You can download all of the
-files needed for this analysis ([aclB.zip](Media:aclB.zip))
+files needed for this analysis ([aclB.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/aclb.zip))
 or generate your own by following the instructions below.
 
 NOTE: This tutorial was made with versions 1.1-1.4 of mothur and may be
@@ -43,9 +43,12 @@ to make distance matrices and trees. A good ARB tutorial is availalbe
 It is easy to translate nucleotide sequences to amino acid sequences in
 ARB, but it must be done before aligning either set of sequences:
 
-1.  Mark all of the sequences
-2.  In the ARB\_NT window, Sequence → Perform Translation
-3.  In the window that pops up, choose:
+
+1\.  Mark all of the sequences
+
+2\.  In the ARB\_NT window, Sequence → Perform Translation
+
+3\.  In the window that pops up, choose:
     -   Source Alignment = ali\_new
     -   Destination Alignment = ????? (ARB will make a new alignment
         database)
@@ -72,10 +75,13 @@ the *aclB* sequences, so the sequences were hand-aligned. A good
 alignment was obtained with about half of the sequences and then the
 remaining sequences were aligned using the Fast Aligner in ARB:
 
-1.  Mark and select all unaligned sequences and open the ARB\_EDIT
+
+1\.  Mark and select all unaligned sequences and open the ARB\_EDIT
     window
-2.  Go Edit → Integrated Aligners.
-3.  In the window that pops up, choose:
+
+2\.  Go Edit → Integrated Aligners.
+
+3\.  In the window that pops up, choose:
     -   Aligner = Fast Aligner
     -   Align what? = Selected Species
     -   Reference = Species by name (input an aligned sequence name in
@@ -92,14 +98,20 @@ alignment.
 A filter was made to mask out the "loose ends" of all the sequences in
 order to compare only overlapping regions:
 
-1.  In the ARB\_NT window, Go SAI → Create SAI Using\... → Filter by
+
+1\.  In the ARB\_NT window, Go SAI → Create SAI Using\... → Filter by
     base frequency
-2.  In the window that pops up, choose \"ali\_new\"
-3.  Go Config → Column filter
-4.  In the window that pops up, change the "start at column" to 864 and
+
+2\.  In the window that pops up, choose \"ali\_new\"
+
+3\.  Go Config → Column filter
+
+4\.  In the window that pops up, change the "start at column" to 864 and
     the "stop at column" to 1244
-5.  Go Calculate → Column filter
-6.  Go File → Export filter. Press \"Export\" to export the filter under
+
+5\.  Go Calculate → Column filter
+
+6\.  Go File → Export filter. Press \"Export\" to export the filter under
     the name \"aclB\_864\_1244\". Now press \"Close\". Press \"Quit\" in
     the window with the purple background
 
@@ -114,17 +126,23 @@ masked out were those present in other sequences used for making a tree.
 
 Finally, a phylip-formatted distance matrix was made:
 
-1.  In the ARB\_NT window, go Sequence → Compare sequences using
+
+1\.  In the ARB\_NT window, go Sequence → Compare sequences using
     Distance Matrix
-2.  In the window that pops up, choose:
+
+2\.  In the window that pops up, choose:
     -   Which species? = marked
     -   Alingment = ali\_new
     -   Filter = aclB\_864\_1244
-3.  You may or may not want to select a \"Correction\", but for this
+
+3\.  You may or may not want to select a \"Correction\", but for this
     example we will just look at the raw distance.
-4.  Press the \"Calculate Full Matrix\" button
-5.  Press the \"Save Matrix\" button
-6.  In the window that opens change the file name from \"infile\" to
+
+4\.  Press the \"Calculate Full Matrix\" button
+
+5\.  Press the \"Save Matrix\" button
+
+6\.  In the window that opens change the file name from \"infile\" to
     \"aclB.dist\" and press \"Save\". If it gives you an error message
     that says, \"No valid tree given to sort matrix (using default
     database order)\" just ignore it.
@@ -141,7 +159,8 @@ sequences were downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/) in
 fasta format, imported into ARB, and aligned using the same strategy
 used above. A maximum likelihood tree was made:
 
-1.  Mark all of the sequences to be used in the tree using the Search
+
+1\.  Mark all of the sequences to be used in the tree using the Search
     and Query window (\"Search\" button at the top of the ARB\_NT
     window). The NCBI sequences will be marked upon import. Our *aclB*
     genes can be marked by searching for them with the wildcard (\*).
@@ -151,10 +170,12 @@ used above. A maximum likelihood tree was made:
         \'Hitlist\' box
     -   Go More Functions → Mark Listed Species, Don\'t Change Rest
     -   Repeat search for \*p3\*
-2.  Go Tree → Build tree from sequence data → Maximum Likelihood methods
+
+2\.  Go Tree → Build tree from sequence data → Maximum Likelihood methods
     → AxML + FastdnaML![Phylogenetic tree from the original
-    paper](AclB_tree.jpg "fig:Phylogenetic tree from the original paper"){width="350"}
-3.  In the window that pops up, choose:
+    paper](AclB_tree.jpg "fig:Phylogenetic tree from the original paper")
+
+3\.  In the window that pops up, choose:
     -   Species = Marked
     -   Alignment = ali\_atpcl
     -   Filter = aclB\_864\_1244
@@ -162,7 +183,8 @@ used above. A maximum likelihood tree was made:
     -   Select Program to use = FastdnaML
     -   Use Quickadd = Yes
     -   Hit GO!
-4.  Another window will pop up to indicate the calculation is running.
+
+4\.  Another window will pop up to indicate the calculation is running.
 
 An amino acid-based maximum likelihood tree can be made by choosing
 Phylip PROML instead of FastdnaML. I ran it with all of the default
@@ -211,7 +233,8 @@ OTUs for the total dataset:
 In the original analysis, 11 unique OTUs were defined by PHRAP assembly
 of the nucleotide sequences. Using mothur, we can see that this is
 equivalent to nucleotide OTUs defined at a distance somewhere between
-0.05 and 0.06 (approximately genus level). Other important observations
+
+0\.05 and 0.06 (approximately genus level). Other important observations
 can be made from just this first step:
 
 -   All of the nucleotide sequences are \> 93% similar and amino acid
@@ -230,7 +253,8 @@ can be made from just this first step:
     the original paper.
 
 Next, we can identify the OTUs present in each sample by reading the
-.list files into memory and indicating which sequences belong to each
+
+\.list files into memory and indicating which sequences belong to each
 sample with the .groups files.
 
     mothur > read.otu(list=aclB.fn.list, group=aclB.groups)
@@ -258,7 +282,8 @@ sequences.
 
 ![Individual rarefaction curves for A) nucleotide and B) amino acid OTUs
 a distance of
-0.02.](AclBrarefaction.jpg "Individual rarefaction curves for A) nucleotide and B) amino acid OTUs a distance of 0.02."){width="600"}
+
+0\.02.](AclBrarefaction.jpg "Individual rarefaction curves for A) nucleotide and B) amino acid OTUs a distance of 0.02.")
 
 From the graphical representation of the mothur file, we can see that
 three samples have reached asymptotic saturation - 260CP for nucleotide
@@ -277,7 +302,8 @@ combined .list file (repeat for amino acid file):
 
 ![Rarefaction curve for all of the sequences obtained from Coffee Pots
 hot spring for a distance of
-0.02.](AclBrarefaction2.jpg "Rarefaction curve for all of the sequences obtained from Coffee Pots hot spring for a distance of 0.02."){width="299"}
+
+0\.02.](AclBrarefaction2.jpg "Rarefaction curve for all of the sequences obtained from Coffee Pots hot spring for a distance of 0.02.")
 
 The amino acid curve is closer to reaching an asymptote than the
 nucleotide curve, but there are likely more *aclB* nucleotide and amino
@@ -303,7 +329,7 @@ The following commands will produce a
 
 ![Heatmaps for A) nucleotide sequences and B) amino acid sequences for a
 distance of 0.02 (no scaling
-transformation)](AclB.fn.0.02.heatmap.jpg "Heatmaps for A) nucleotide sequences and B) amino acid sequences for a distance of 0.02 (no scaling transformation)"){width="350"}
+transformation)](AclB.fn.0.02.heatmap.jpg "Heatmaps for A) nucleotide sequences and B) amino acid sequences for a distance of 0.02 (no scaling transformation)")
 
 We can make a couple observations from this representation:
 
@@ -323,7 +349,8 @@ It is also possible to make comparisons of community composition for 2-3
 samples using a [Venn diagram](venn). For this tutorial, we
 will compare the samples that reached a plateau in the rarefaction
 curves (260CP, 261CP, 263CP). I had to make a new distance matrix and
-.groups file with only the samples I wanted to analyze for the venn
+
+\.groups file with only the samples I wanted to analyze for the venn
 command to work:
 
     mothur > read.dist(phylip=aclB_venn.dist)
@@ -333,7 +360,7 @@ command to work:
 
 ![Venn Diagram for A) nucleotide and B) amino acid sequences for a
 distance of 0.02 (not to
-scale)](AclB_venn.fn.0.02.venn.sharedsobs.jpg "Venn Diagram for A) nucleotide and B) amino acid sequences for a distance of 0.02 (not to scale)"){width="350"}
+scale)](AclB_venn.fn.0.02.venn.sharedsobs.jpg "Venn Diagram for A) nucleotide and B) amino acid sequences for a distance of 0.02 (not to scale)")
 
 Here we can see, like in the heatmap, there is quite a bit of overlap
 between samples in both nucleotide and amino acid sequences - 260CP and
@@ -356,7 +383,7 @@ and the comparisons made with COF\_61.7 (261CP) and COF65.7 (3Y35) had
 high, significant Fst values (0.34 - 0.60).
 
 ![Results from the pairwise comparison done in the original paper using
-Arlequin](Fst_table.jpg "Results from the pairwise comparison done in the original paper using Arlequin"){width="500"}
+Arlequin](Fst_table.jpg "Results from the pairwise comparison done in the original paper using Arlequin")
 
 In mothur, we can make global and pairwise comparisons based on distance
 ([libshuff](libshuff)) and phylogeny-associated information
@@ -392,7 +419,8 @@ statistic and significance of each comparison (truncated here):
 Since we need to apply the Bonferroni correction for multiple
 comparisons, we will consider a comparison significant if has a
 significance score \<0.0012 (experiment-wide false detection rate of
-0.05 divided by 42 comparisons). None of these comparisons have
+
+0\.05 divided by 42 comparisons). None of these comparisons have
 significant corrected p-values.
 
 ## Parsimony Test
@@ -457,7 +485,8 @@ it):
 
 After applying the Bonferroni correction (experiment-wide false
 detection rate of 0.05 divided by 21 comparisons = corrected p-value of
-0.0024), there are two significant pairwise comparisons for the
+
+0\.0024), there are two significant pairwise comparisons for the
 nucleotide tree (258CP-260CP and 258CP-261CP) and none for the amino
 acid tree.
 

@@ -41,15 +41,15 @@ like used, if none is given the first distance is used.
 
 The method parameter allows you to select what method you would like to
 use. Options are pearson, spearman and kendall. Default=pearson -
-<https://en.wikipedia.org/wiki/Pearson_correlation_coefficient>
+[Pearson_correlation_coefficient](Pearson_correlation_coefficient)
 
 To use the spearman method: -
-<https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient>
+[Spearman's_rank_correlation_coefficient](Spearman's_rank_correlation_coefficient)
 
     mothur > corr.axes(metadata=genus.pool.metadata, axes=genus.pool.thetayc.genus.lt.pcoa, method=spearman)
 
 or to use the kendall method: -
-<https://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient>
+[Kendall_tau_rank_correlation_coefficient](Kendall_tau_rank_correlation_coefficient)
 
     mothur > corr.axes(metadata=genus.pool.metadata, axes=genus.pool.thetayc.genus.lt.pcoa, method=kendall)
 

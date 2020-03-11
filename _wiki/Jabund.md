@@ -13,7 +13,8 @@ shared species. For a reference and background, see:
 Chao A, Chazdon RL, Colwell RK and Shen T-J. 2005. A new statistical
 approach for assessing similarity of species composition with incidence
 and abundance data. Ecology Letters 8: 148-159. DOI:
-10.1111/j.1461-0248.2004.00707.x
+
+10\.1111/j.1461-0248.2004.00707.x
 
 $$D_{J_{abund}} = 1-\frac{U_{est}V_{est}}{U_{est} + V_{est} - U_{est}V_{est}}$$
 
@@ -42,7 +43,7 @@ individuals observed in B
 I(•) = if the argument, •, is true then I(•) is 1; otherwise it is 0.
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
-Amazonian dataset](Media:AmazonData.zip) with the following
+Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following
 commands:
 
     mothur > read.dist(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)

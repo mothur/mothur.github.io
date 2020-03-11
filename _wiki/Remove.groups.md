@@ -5,8 +5,8 @@ The **remove.groups** command removes sequences
 from a specific group or set of groups from the following file types:
 fasta, name, group, list, taxonomy and shared. To complete this
 analysis, you need to download the folder compressed in the [
-Abrecovery.zip](Media:AbRecovery.zip) and [
-Abrecovery.accnosgroups.zip](Media:Abrecovery.accnosgroups.zip).
+Abrecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) and [
+Abrecovery.accnosgroups.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.accnosgroups.zip).
 
 
 ## Default Settings
@@ -208,7 +208,7 @@ To use the design option, follow this example:
 ## Revisions
 
 -   1.23.0 File mismatch bug -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1396&p=3560#p3560>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1396&p=3560#p3560](https://forum.mothur.org/viewtopic.php?f=4&t=1396&p=3560#p3560)
 -   1.24.0 Added design option
 -   1.28.0 Added count option
 -   1.31.0 Bug Fix: remove.groups(groups=notValidGroupName, \...) mothur

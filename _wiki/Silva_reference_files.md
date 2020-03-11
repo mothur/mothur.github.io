@@ -14,17 +14,17 @@ version of the SILVA references, we are providing the SEED database, the
 full-length sequences available from the NR SILVA database, and a SILVA
 aligned version of the gold database that is used for reference-based
 chimera detection. We have prepared a [README
-document](https://blog.mothur.org/2018/01/10/SILVA-v132-reference-files)
+document](/blog/2018/SILVA-v132-reference-files)
 where you can read about the process that we used to generate these
 references.
 
 -   [ Full length sequences and taxonomy references
-    ](Media:Silva.nr_v132.tgz) (188247 bacteria, 4626 archea,
+    ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.nr_v132.tgz) (188247 bacteria, 4626 archea,
     and 20246 eukarya sequences). This reference could be customized for
     alignments, but could also be used for classification. The
     uncompressed version is \~9.9 GB and the compressed version is 348
     MB.
--   [ Recreated SEED database ](Media:Silva.seed_v132.tgz)
+-   [ Recreated SEED database ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v132.tgz)
     (8517 bacteria, 147 archaea, and 2516 eukarya sequences). The actual
     reference alignment that SILVA uses with their SINA aligner is
     called the SEED alignment. We don\'t know what this actually is. We
@@ -37,7 +37,7 @@ references.
     The uncompressed version is 534 MB and the compressed version is 19
     MB.
 -   [ Silva-based alignment of template file for
-    chimera.slayer](Media:silva.gold.bacteria.zip) (5,181
+    chimera.slayer](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.gold.bacteria.zip) (5,181
     sequences)
 
 ## Release 128
@@ -50,17 +50,17 @@ version of the SILVA references, we are providing the SEED database, the
 full-length sequences available from the NR SILVA database, and a SILVA
 aligned version of the gold database that is used for reference-based
 chimera detection. We have prepared a [README
-document](https://blog.mothur.org/2017/03/22/SILVA-v128-reference-files)
+document](/blog/2017/SILVA-v128-reference-files)
 where you can read about the process that we used to generate these
 references.
 
 -   [ Full length sequences and taxonomy references
-    ](Media:Silva.nr_v128.tgz) (168111 bacteria, 4337 archea,
+    ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.nr_v128.tgz) (168111 bacteria, 4337 archea,
     and 18213 eukarya sequences). This reference could be customized for
     alignments, but could also be used for classification. The
     uncompressed version is \~8.9 GB and the compressed version is 311
     MB.
--   [ Recreated SEED database ](Media:Silva.seed_v128.tgz)
+-   [ Recreated SEED database ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v128.tgz)
     (8512 bacteria, 147 archaea, and 2554 eukarya sequences). The actual
     reference alignment that SILVA uses with their SINA aligner is
     called the SEED alignment. We don\'t know what this actually is. We
@@ -73,7 +73,7 @@ references.
     The uncompressed version is 536 MB and the compressed version is 19
     MB.
 -   [ Silva-based alignment of template file for
-    chimera.slayer](Media:silva.gold.bacteria.zip) (5,181
+    chimera.slayer](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.gold.bacteria.zip) (5,181
     sequences)
 
 ## Release 123
@@ -86,17 +86,17 @@ version of the SILVA references, we are now providing the SEED database,
 the full-length sequences available from the NR SILVA database, and a
 SILVA aligned version of the gold database that is used for
 reference-based chimera detection. We have prepared a [README
-document](https://blog.mothur.org/2015/12/03/SILVA-v123-reference-files)
+document](/blog/2015/SILVA-v123-reference-files)
 where you can read about the process that we used to generate these
 references.
 
 -   [ Full length sequences and taxonomy references
-    ](Media:Silva.nr_v123.tgz) (152308 bacteria, 3901 archea,
+    ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.nr_v123.tgz) (152308 bacteria, 3901 archea,
     and 16209 eukarya sequences). This reference could be customized for
     alignments, but could also be used for classification. The
     uncompressed version is \~7.2 GB and the compressed version is 249
     MB.
--   [ Recreated SEED database ](Media:Silva.seed_v123.tgz)
+-   [ Recreated SEED database ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v123.tgz)
     (12083 bacteria, 294 archaea, and 2537 eukarya sequences). The
     actual reference alignment that SILVA uses with their SINA aligner
     is called the SEED alignment. We don\'t know what this actually is.
@@ -109,7 +109,7 @@ references.
     The uncompressed version is \~700 MB and the compressed version is
     25 MB.
 -   [ Silva-based alignment of template file for
-    chimera.slayer](Media:silva.gold.bacteria.zip) (5,181
+    chimera.slayer](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.gold.bacteria.zip) (5,181
     sequences)
 
 ## Release 119
@@ -122,7 +122,7 @@ version of the SILVA references, we are now providing the SEED database,
 the full-length sequences available from the NR SILVA database, and a
 SILVA aligned version of the gold database that is used for
 reference-based chimera detection. We have prepared a [README
-document](https://blog.mothur.org/2014/08/08/SILVA-v119-reference-files)
+document](/blog/2014/SILVA-v119-reference-files)
 where you can read about the process that we used to generate these
 references.
 
@@ -146,7 +146,7 @@ references.
     The uncompressed version is \~700 MB and the compressed version is
     25 MB.
 -   [ Silva-based alignment of template file for
-    chimera.slayer](Media:Silva.gold.bacteria.zip) (5,181
+    chimera.slayer](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.gold.bacteria.zip) (5,181
     sequences)
 
 ## Release 102
@@ -164,12 +164,12 @@ are the aligned sequence file (e.g. silva.bacteria.fasta), an unaligned
 sequence file (e.g. nogap.bacteria.fasta), and taxonomy outlines (e.g.
 silva.bacteria.silva.tax):
 
--   [ Bacterial references](Media:silva.bacteria.zip) (14,956
+-   [ Bacterial references](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.zip) (14,956
     sequences)
--   [ Archaeal references](Media:silva.archaea.zip) (2,297
+-   [ Archaeal references](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.archaea.zip) (2,297
     sequences)
--   [ Eukaryotic references](Media:silva.eukarya.zip) (1,238
+-   [ Eukaryotic references](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.eukarya.zip) (1,238
     sequences)
 -   [ Silva-based alignment of template file for
-    chimera.slayer](Media:silva.gold.bacteria.zip) (5,181
+    chimera.slayer](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.gold.bacteria.zip) (5,181
     sequences)

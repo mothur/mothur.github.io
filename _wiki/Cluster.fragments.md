@@ -4,7 +4,7 @@ title: 'Cluster.fragments'
 The **cluster.fragments** command groups
 sequences that are part of a larger sequence. To run this tutorial
 please download [ esophagus.fasta
-file](Media:Esophagus.fasta.zip)
+file](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.fasta.zip)
 
 ## Default settings
 
@@ -59,7 +59,7 @@ number of sequences that will be found in the final dataset, and the
 number of sequences that have been clustered away. This should
 accelerate as the function runs.
 
-## What\'s the difference between **cluster.fragments** and [pre.cluster](pre.cluster "wikilink")?
+## What\'s the difference between **cluster.fragments** and [pre.cluster](pre.cluster)?
 
 -   Cluster.fragments: combine sequences that are pieces of a larger
     sequence

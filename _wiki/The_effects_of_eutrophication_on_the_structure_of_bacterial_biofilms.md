@@ -27,7 +27,7 @@ the impacts of the enrichment on biofilm community structure and
 diversity through the extraction, amplification, sequencing, and
 analysis of the bacterial 16S rRNA gene. The files used to conduct this
 analysis can be downloaded here
-[Media:BiofilmEu.zip](Media:BiofilmEu.zip).
+[https://mothur.s3.us-east-2.amazonaws.com/wiki/biofilmeu.zip](media:biofilmeu.zip).
 
 ## Preparing the Data for Mothur:
 
@@ -39,24 +39,29 @@ database. 2096 high quality partial (forward reads) 16S rRNA gene
 sequences were exported as a .fasta file
 
 Next the sequences were aligned using the Align tool on the
-<https://greengenes.lbl.gov> website. The .fasta file created in
+[https://greengenes.lbl.gov](https://greengenes.lbl.gov) website. The .fasta file created in
 CodonCode was imported and the following settings were applied:
 
 Settings:
 
-1.  Significant match requirements:
+
+1\.  Significant match requirements:
     -   Change minimum length to 300
     -   Minimum percent identity to 70
-2.  Files you desire:
+
+2\.  Files you desire:
     -   Select first two (1. tab delimitated file summarizing alignment
         fate etc., and 2. sequence file of successfully aligned
         sequences)
-3.  Formatting options:
+
+3\.  Formatting options:
     -   Select 'do not remove alignment gap characters'
     -   Select 'fasta' not 'fasta with description' as preferred format
-4.  Delivery:
+
+4\.  Delivery:
     -   Enter your email address
-5.  Select 'Process File'
+
+5\.  Select 'Process File'
 
 These commands generated a .tgz file, that when decompressed, created a
 folder with a fasta file of all the aligned sequences and an excel file
@@ -67,23 +72,32 @@ specifying which sequences would not align.
 The aligned fasta file was imported into ARB using the following import
 options:
 
-1.  Import - fasta\_wgap.ift
-2.  Type - DNA
-3.  Use found names
+
+1\.  Import - fasta\_wgap.ift
+
+2\.  Type - DNA
+
+3\.  Use found names
 
 Next, a filter was created in ARB to ensure all of the sequences were
 the same length (\~550 bp) using the following steps:
 
-1.  Under SAI → Create SAI using... → Filter by base frequency
-2.  Under Config → Column filter \_\_\_ to \_\_\_ (used 445, 3773)
-3.  Calculate
-4.  Export filter → name
+
+1\.  Under SAI → Create SAI using... → Filter by base frequency
+
+2\.  Under Config → Column filter \_\_\_ to \_\_\_ (used 445, 3773)
+
+3\.  Calculate
+
+4\.  Export filter → name
 
 Finally, a distance matrix was created using the following steps:
 
-1.  Under Sequence → Compare using distance matrix → Apply filter →
+
+1\.  Under Sequence → Compare using distance matrix → Apply filter →
     Calculate full matrix
-2.  Save matrix as \*.dist file
+
+2\.  Save matrix as \*.dist file
 
 ### Creating a Phylogenetic Tree:
 
@@ -91,15 +105,17 @@ A phylogenetic tree was created by adding the 2096 partial sequences to
 a tree containing \~ 9000 full length 16S rRNA gene sequences compiled
 by Philip Hugenholtz. This tree can be downloaded as an ARB file from
 the Ribosomal Database Project → Resources → Philip Hugenholtz\'s 16S
-rRNA ARB Database, at <https://rdp.cme.msu.edu/misc/resources.jsp>.
+rRNA ARB Database, at [https://rdp.cme.msu.edu/misc/resources.jsp](https://rdp.cme.msu.edu/misc/resources.jsp).
 
 The aligned sequences were added to the Hugenholtz data base by
 importing a filtered fasta file of all of the sequences using the
 following steps:
 
-1.  Import sequences: File → Import sequences and fields (ARB) → Mark
+
+1\.  Import sequences: File → Import sequences and fields (ARB) → Mark
     imported sequences
-2.  Add Sequences to tree: Tree → Add species to existing tree → ARB
+
+2\.  Add Sequences to tree: Tree → Add species to existing tree → ARB
     parsimony (quick add marked) → Filter (lane mask) → Weights (none) →
     Go (Hint: the Hugenholtz tree contains a sample named ISOT4(31...
     The parentheses in this name will cause problems in the .ntree file
@@ -107,8 +123,10 @@ following steps:
 
 The tree was then exported by:
 
-1.  Tree → Tree admin
-2.  Export → select 'Newick tree format', 'save branch lengths', and
+
+1\.  Tree → Tree admin
+
+2\.  Export → select 'Newick tree format', 'save branch lengths', and
     deselect 'keep group names' (these names will give mothur problems).
 
 ## OTU -- Based Approaches:
@@ -182,7 +200,7 @@ for every 20 samples instead of the default 100 samples, allowing the
 creation of the smoother rarefaction curve figures seen below.
 
 ![Rarefaction curves for the Control, 2X, 4X, 8X and 10X eutrophication
-enrichments.](AllRarefaction.jpg "Rarefaction curves for the Control, 2X, 4X, 8X and 10X eutrophication enrichments."){width="500"}
+enrichments.](AllRarefaction.jpg "Rarefaction curves for the Control, 2X, 4X, 8X and 10X eutrophication enrichments.")
 
 The rarefaction curves shown above indicate that: 1) the most diverse
 samples are from the control group where no nutrient or carbon
@@ -248,7 +266,8 @@ divergent bacterial communities.
 
 ![Venn Diagrams of shared Chao1 (left) and OTUs (right) for the Control
 (purple), 4X (green) and 10X (pink) treatments at a distance of
-0.03](Venn_sharedchao_sobs_16jun09.jpg "Venn Diagrams of shared Chao1 (left) and OTUs (right) for the Control (purple), 4X (green) and 10X (pink) treatments at a distance of 0.03"){width="500"}
+
+0\.03](Venn_sharedchao_sobs_16jun09.jpg "Venn Diagrams of shared Chao1 (left) and OTUs (right) for the Control (purple), 4X (green) and 10X (pink) treatments at a distance of 0.03")
 
 #### Venn Diagram
 
@@ -269,7 +288,7 @@ at the 97% identity level.
 
 ![Heatmap of the OTUs from each eutrophication treatment at a distance
 of 0.03. Heatmap columns from left to right are 10x, 2X, 4X, 8X and
-Control](Mt_allsamp_12jun09_f.fn.0.03._log10.heatmap.jpg "Heatmap of the OTUs from each eutrophication treatment at a distance of 0.03. Heatmap columns from left to right are 10x, 2X, 4X, 8X and Control"){width="300"}
+Control](Mt_allsamp_12jun09_f.fn.0.03._log10.heatmap.jpg "Heatmap of the OTUs from each eutrophication treatment at a distance of 0.03. Heatmap columns from left to right are 10x, 2X, 4X, 8X and Control")
 
 Additionally, two heatmaps were generated for further visualization of
 the OTU data from the various communities using the following commands:

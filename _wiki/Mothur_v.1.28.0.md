@@ -44,7 +44,7 @@ advertisements in the mothur window..
 
 -   [sffinfo](sffinfo) - added oligos, pdiffs, bdiffs,
     sdiffs, ldiffs and tdiffs parameters to split sff files. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1647>.
+    [https://forum.mothur.org/viewtopic.php?f=5&t=1647](https://forum.mothur.org/viewtopic.php?f=5&t=1647).
 -   added count parameter to [cluster](cluster),
     [cluster.classic](cluster.classic),
     [cluster.split](cluster.split),
@@ -58,14 +58,14 @@ advertisements in the mothur window..
     [classify.otu](classify.otu),
     [unifrac.unweighted](unifrac.unweighted),
     [unifrac.weighted](unifrac.weighted),
-    [parsimony](parsimony), [bin.seqs](bin.seqs "wikilink"),
+    [parsimony](parsimony), [bin.seqs](bin.seqs),
     [phylo.diversity](phylo.diversity),
     [cluster.fragments](cluster.fragments),
     [unique.seqs](unique.seqs),
     [consensus.seqs](consensus.seqs),
     [get.groups](get.groups),
     [remove.groups](remove.groups),
-    [get.seqs](get.seqs), [list.seqs](list.seqs "wikilink"),
+    [get.seqs](get.seqs), [list.seqs](list.seqs),
     [remove.seqs](remove.seqs),
     [get.lineage](get.lineage),
     [remove.lineage](remove.lineage),
@@ -79,7 +79,7 @@ advertisements in the mothur window..
     [screen.seqs](screen.seqs),
     [pre.cluster](pre.cluster),
     [get.oturep](get.oturep),
-    [pcr.seqs](pcr.seqs), [sort.seqs](sort.seqs "wikilink"),
+    [pcr.seqs](pcr.seqs), [sort.seqs](sort.seqs),
     [remove.rare](remove.rare),
     [count.groups](count.groups),
     [sub.sample](sub.sample) and
@@ -88,13 +88,13 @@ advertisements in the mothur window..
     adapt for different quality score bases.
 -   [classify.seqs](classify.seqs) - changed name of bayesian
     method to wang
--   [amova](amova) and [homova](homova "wikilink") - added
+-   [amova](amova) and [homova](homova) - added
     sets parameter -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1777>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=1777](https://forum.mothur.org/viewtopic.php?f=3&t=1777)
 -   [make.biom](make.biom) - added metadata parameter -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1786>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=1786](https://forum.mothur.org/viewtopic.php?f=5&t=1786)
 -   [otu.association](otu.association) - added cutoff
-    parameter - <https://www.mothur.org/forum/viewtopic.php?f=5&t=1639>
+    parameter - [https://forum.mothur.org/viewtopic.php?f=5&t=1639](https://forum.mothur.org/viewtopic.php?f=5&t=1639)
 -   mothur can read sequences with spaces in the sequence string.
 -   You can have \'-\'s in a file names as long as they are proceeded by
     a \'\\\'. Example: my-file-name should be entered as
@@ -113,14 +113,14 @@ advertisements in the mothur window..
     in the creation of the random trees which effected significance
     values.
 -   [fastq.info](fastq.info) - negative quality scores. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1727&p=4651&hilit=fastq.info#p4651>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1727&p=4651&hilit=fastq.info#p4651](https://forum.mothur.org/viewtopic.php?f=4&t=1727&p=4651&hilit=fastq.info#p4651)
 -   [chimera.uchime](chimera.uchime) - spaces in path causing
     crash
 -   [classify.seqs](classify.seqs) - if taxonomy file
     contained file path information \"cannot resolve path for\" error
     was thrown.
 -   [consensus.seqs](consensus.seqs) - cutoff rounding
-    error - <https://www.mothur.org/forum/viewtopic.php?f=4&t=1781>
+    error - [https://forum.mothur.org/viewtopic.php?f=4&t=1781](https://forum.mothur.org/viewtopic.php?f=4&t=1781)
 -   [align.check](align.check) - added name parameter back
     in.
 -   added check to [align.seqs](align.seqs) to make sure
@@ -128,7 +128,7 @@ advertisements in the mothur window..
 -   [clearcut](clearcut) - windows crash reports
 -   [get.lineage](get.lineage) &&
     [remove.lineage](remove.lineage) - can handle () in taxon
-    names, <https://www.mothur.org/forum/viewtopic.php?f=3&t=1815>
+    names, [https://forum.mothur.org/viewtopic.php?f=3&t=1815](https://forum.mothur.org/viewtopic.php?f=3&t=1815)
 
 ## Changes to wiki
 

@@ -1,10 +1,11 @@
 ---
 title: 'Gui'
 ---
-1.28.0 - Mac Version - 10.7
+
+1\.28.0 - Mac Version - 10.7
 
 -   [ mothurGUI 64bit version for
-    mac](Media:MothurGui.mac_64.OSX-10.7.zip)
+    mac](https://mothur.s3.us-east-2.amazonaws.com/wiki/mothurgui.mac_64.osx-10.7.zip)
 
 [Gui Tutorial](Gui_Tutorial)
 

@@ -14,7 +14,7 @@ If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
 developers and we\'ll see what we can do. The open method is the default
 option. For this tutorial you should download the [
-OptiFitDataSets.zip](Media:OptiFitDataSets.zip) file and
+OptiFitDataSets.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/optifitdatasets.zip) file and
 decompress it.
 
 

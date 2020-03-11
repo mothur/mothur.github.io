@@ -52,21 +52,29 @@ limit of interest.
 
 Output files are:
 
-.error.summary
 
-.error.seq
+\.error.summary
 
-.error.chimera
 
-.error.seq.forward
+\.error.seq
 
-.error.seq.reverse
 
-.error.count
+\.error.chimera
 
-.error.matrix
 
-.error.ref
+\.error.seq.forward
+
+
+\.error.seq.reverse
+
+
+\.error.count
+
+
+\.error.matrix
+
+
+\.error.ref
 
 ## Revisions
 

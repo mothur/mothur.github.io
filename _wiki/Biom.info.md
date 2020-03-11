@@ -118,11 +118,12 @@ Simple Format:
 ### Common Questions
 
 Can\'t find your question? Please feel free to ask questions on our
-forum, <https://forum.mothur.org>.
+forum, [https://forum.mothur.org](https://forum.mothur.org).
 
 ### Common Issues
 
-1.  **Cannot convert error. What do I do?** This issue is caused by a
+
+1\.  **Cannot convert error. What do I do?** This issue is caused by a
     matrix\_element\_type mismatch. The biom file contains a field
     called \'matrix\_element\_type\'. This field tells mothur what form
     your observation data is in: int or float. Mothur expects \'int\'
@@ -133,7 +134,8 @@ forum, <https://forum.mothur.org>.
     in float form, (ie. 31.0 instead of 31) you will get this error. You
     can resolve this issue by setting matrix\_element\_type=float in the
     biom file.
-2.  **Mothur can\'t read my biom file. What does this mean?** This
+
+2\.  **Mothur can\'t read my biom file. What does this mean?** This
     likely caused by failure to set format=hdf5. Mothur allows for 2
     formats: classic
     (https://biom-format.org/documentation/format\_versions/biom-1.0.html)
@@ -147,7 +149,7 @@ forum, <https://forum.mothur.org>.
 ### How To
 
 Not sure how to do what you want? Please feel free to ask questions on
-our forum, <https://forum.mothur.org>.
+our forum, [https://forum.mothur.org](https://forum.mothur.org).
 
 ## Revisions
 

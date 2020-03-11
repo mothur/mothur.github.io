@@ -11,5 +11,5 @@ own secondary structure mapping files.
 
 ## Secondary structure mapping files
 
--   [ SILVA](Media:silva_ss_map.zip)
--   [ greengenes](Media:gg_ss_map.zip)
+-   [ SILVA](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva_ss_map.zip)
+-   [ greengenes](https://mothur.s3.us-east-2.amazonaws.com/wiki/gg_ss_map.zip)

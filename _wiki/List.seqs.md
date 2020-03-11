@@ -3,15 +3,15 @@ title: 'List.seqs'
 ---
 The **list.seqs** command will write out the names
 of the sequences found within a [ fastq](fastq_file), [
-fasta](fasta_file), [ name](name_file "wikilink"), [
-group](group_file), [ count](Count_File "wikilink"), [
+fasta](fasta_file), [ name](name_file), [
+group](group_file), [ count](Count_File), [
 list](list_file), or [
 align.report](align.report_file) file. This could be useful
 for using the [get.seqs](get.seqs) and
 [remove.seqs](remove.seqs) commands as well as to generate a
 [group file](group_file). To complete this analysis, you need
 to download the folder compressed in the [
-Esophagus.zip](Media:Esophagus.zip) archive.
+Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) archive.
 
 \_\_NOTOC\_\_
 

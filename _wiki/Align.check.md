@@ -7,7 +7,7 @@ you are familiar with the editor window in ARB, this is the same as
 counting the number of \~, \#, -, and = signs. To run through the
 command below use the greengenes [secondary structure
 map](secondary_structure_map) and the [ esophagus
-dataset](Media:Esophagus.zip).
+dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip).
 
 ## Meaning of symbols
 
@@ -31,7 +31,8 @@ FASTA-formatted file. You also need to provide the appropriate file
 containing the [secondary structure
 map](secondary_structure_map). These esophagus sequences were
 aligned using the greengenes alignment. The output will be in
-.align.check file. Try the following command:
+
+\.align.check file. Try the following command:
 
     mothur > align.check(fasta=esophagus.align, map=gg.ss.map)
 

@@ -5,8 +5,8 @@ The **merge.groups** command reads a shared file
 and a design file and merges the groups in the shared file that are in
 the same grouping in the design file. The files that we discuss in this
 tutorial can be obtained by downloading the
-[AmazonData.zip](Media:AmazonData.zip) file and decompressing
-it, as well as [AmazonDesign.zip](Media:AmazonDesign.zip)
+[AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) file and decompressing
+it, as well as [AmazonDesign.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondesign.zip)
 
 
 ## Default settings
@@ -107,7 +107,7 @@ default=all. You may separate label names with dashes.
 ## Revisions
 
 -   1.24.0 - added group option. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1436#p3586>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=1436#p3586](https://forum.mothur.org/viewtopic.php?f=5&t=1436#p3586)
 -   1.37.0 - Adds fasta, count and method parameters.
     [\#88](https://github.com/mothur/mothur/issues/88)
     [\#105](https://github.com/mothur/mothur/issues/105)

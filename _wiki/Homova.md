@@ -19,7 +19,7 @@ observed B is greater than or equal to the randomized B-values. Those
 P-values less than 0.05 were considered significant.
 
 To run the tutorial below please download the [
-files](Media:AmazonAmovaData.zip) and follow along\...
+files](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazonamovadata.zip) and follow along\...
 
 ## Default Settings
 
@@ -53,9 +53,9 @@ dashes. The default is all sets in the design file.
 ## Revisions
 
 -   1.28.0 Added sets parameter -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1777>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=1777](https://forum.mothur.org/viewtopic.php?f=3&t=1777)
 -   1.29.0 Bug Fix:
-    <https://www.mothur.org/forum/viewtopic.php?f=1&t=1919>
+    [https://forum.mothur.org/viewtopic.php?f=1&t=1919](https://forum.mothur.org/viewtopic.php?f=1&t=1919)
 -   1.40.0 Bug Fix: Fixes pvalue bug for Windows.
     [\#408](https://github.com/mothur/mothur/issues/408)
 

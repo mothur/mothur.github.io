@@ -3,10 +3,10 @@ title: 'Estimator.single'
 ---
 **estimator.single** This command implements
 the diversity estimators from
-<https://github.com/chrisquince/DiversityEstimates>.
-<https://www.ncbi.nlm.nih.gov/pubmed/18650928>. Here are the sabund
+[https://github.com/chrisquince/DiversityEstimates](https://github.com/chrisquince/DiversityEstimates).
+[https://www.ncbi.nlm.nih.gov/pubmed/18650928](https://www.ncbi.nlm.nih.gov/pubmed/18650928). Here are the sabund
 files representing the data provided by the authors,
-[EstimatorSingleData.zip](Media:_EstimatorSingleData.zip)
+[EstimatorSingleData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/_estimatorsingledata.zip)
 
 
 ## Default settings
@@ -128,7 +128,7 @@ To run the single analysis with multiple samples:
 
 You can analyze your data using many of mothur\'s file types. These
 include: [ list](list_file), [
-sabund](sabund_file), [ rabund](rabund_file "wikilink") and [
+sabund](sabund_file), [ rabund](rabund_file) and [
 shared](shared_file) files.
 
 ## Options

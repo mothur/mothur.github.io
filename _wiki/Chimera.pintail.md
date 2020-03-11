@@ -2,8 +2,8 @@
 title: 'Chimera.pintail'
 ---
 Use Pintail approach \.... [ silva quantile
-file](Media:silva.bacteria.pintail.quan.zip), [ silva
-conservation file](Media:silva.bacteria.freq.zip)
+file](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.pintail.quan.zip), [ silva
+conservation file](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.freq.zip)
 
 
 ## Algorithm

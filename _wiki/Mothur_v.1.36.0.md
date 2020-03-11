@@ -44,7 +44,7 @@ Pat
     mothur will create it for you.
 -   [chimera.uchime](chimera.uchime) - adds method tag to
     output files. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=3636&p=10748#p10748>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=3636&p=10748#p10748](https://forum.mothur.org/viewtopic.php?f=5&t=3636&p=10748#p10748)
 -   [chop.seqs](chop.seqs) - adds qfile option to allows for
     chopping quality files.
 -   [classify.otu](classify.otu) - adds threshold parameter.
@@ -72,11 +72,11 @@ Pat
 -   automatically adjust number of processors when fork() fails
 -   Removes extra white spaces from mothur\'s print to make output files
     more compatible with other software packages. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=3703>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=3703](https://forum.mothur.org/viewtopic.php?f=4&t=3703)
 -   [degap.seqs](degap.seqs) - adds the processors option.
 -   Adds column headers to [Design\_File](Design_File)
 -   [phylo.diversity](phylo.diversity) - adds sampledepth
-    parameter. - <https://www.mothur.org/forum/viewtopic.php?f=3&t=3320>
+    parameter. - [https://forum.mothur.org/viewtopic.php?f=3&t=3320](https://forum.mothur.org/viewtopic.php?f=3&t=3320)
 -   [set.dir](set.dir) - Sets tempdefault location to
     mothur\'s executable location to help reduce \"unable to find file\"
     errors.
@@ -88,7 +88,7 @@ Pat
 ## Bug fixes
 
 -   [metastats](metastats) - infinite loop with certain
-    datasets - <https://www.mothur.org/forum/viewtopic.php?f=3&t=3701>
+    datasets - [https://forum.mothur.org/viewtopic.php?f=3&t=3701](https://forum.mothur.org/viewtopic.php?f=3&t=3701)
 -   [cluster.split](cluster.split) - did not allow you to use
     the classic option with the file option.
 -   [make.biom](make.biom) - repeat labels when combining
@@ -99,16 +99,16 @@ Pat
     for each label.
 -   [make.biom](make.biom) - remove paths from filenames to
     make compliant with qiime parser. -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3781&p=11241#p11241>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=3781&p=11241#p11241](https://forum.mothur.org/viewtopic.php?f=3&t=3781&p=11241#p11241)
 -   [sffinfo](sffinfo) - off by one in right side trimming.
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=3764>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=3764](https://forum.mothur.org/viewtopic.php?f=4&t=3764)
 -   [make.contigs](make.contigs) - Bug Fix - when using index
     files in version 1.35 quality data was over trimmed by the length of
     the barcode.
 
 ## Download
 
-<https://github.com/mothur/mothur/releases/tag/v1.36.0>
+[https://github.com/mothur/mothur/releases/tag/v1.36.0](https://github.com/mothur/mothur/releases/tag/v1.36.0)
 
 ## Registered users
 

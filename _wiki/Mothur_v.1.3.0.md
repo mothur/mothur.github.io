@@ -6,7 +6,7 @@ today, May 25, 2009. Since the April release we have added an additional
 nearly 100 users. Thanks to the 347 of you for your continued support!
 It was great to meet so many people at the 2009 ASM General Meeting in
 Philadelphia, PA and to hear what people are up to. The skinny on [ my
-poster](Media:ASMPoster.pdf) is that I reanalyzed the Sogin
+poster](https://mothur.s3.us-east-2.amazonaws.com/wiki/asmposter.pdf) is that I reanalyzed the Sogin
 pyrosequencing dataset of 222,000 V6 tags in under 6 hrs on my Mac
 laptop. Most of that time was spent calculating the pairwise distances,
 which we have parallelized so you can use up to 4 processors.

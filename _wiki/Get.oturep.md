@@ -7,7 +7,7 @@ generates a fasta-formatted sequence file containing only a
 representative sequence for each OTU. A .rep.fasta and .rep.names file
 or .rep.count\_table file is generated for each OTU definition. For this
 tutorial, download and decompress
-[AmazonData.zip](Media:AmazonData.zip).
+[AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
 
 
 ## Default settings
@@ -184,7 +184,7 @@ label. Rename is set to false by default.
 -   1.23.0 fasta parameter is no longer required.
 -   1.28.0 Added count option
 -   1.31.0 - added method parameter.
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=2131>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=2131](https://forum.mothur.org/viewtopic.php?f=5&t=2131)
 -   1.33.0 - changed otu numbers to be labels
 -   1.41.0 - Updates **get.oturep** command to use optiMatrix. Reduces time
     and memory needed. Removes large option.

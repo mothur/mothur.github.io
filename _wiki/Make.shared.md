@@ -31,7 +31,7 @@ This command will generate a [shared file](shared_file).
 ## Creating a shared file from a biom file
 
 You can also convert a biom file,
-<https://biom-format.org/documentation/biom_format.html>. (Note: mothur
+[https://biom-format.org/documentation/biom_format.html](https://biom-format.org/documentation/biom_format.html). (Note: mothur
 currently supports format version 1.0) to a shared file to import your
 data into mothur.
 
@@ -46,7 +46,8 @@ interested in summarizing. There are two options. You could: (i)
 manually delete the lines you aren\'t interested in from you rabund,
 sabund, list, or shared file; (ii) or use the label option. If you only
 want to read in the data for the lines labeled unique, 0.03, 0.05 and
-0.10 you would enter:
+
+0\.10 you would enter:
 
     mothur > make.shared(list=98_sq_phylip_amazon.fn.list, group=amazon.groups, label=unique-0.03-0.05-0.10)
 

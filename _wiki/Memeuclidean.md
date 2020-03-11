@@ -17,7 +17,7 @@ $$D_{Memeuclidean} = \sqrt{ \sum_{j=1}^{S_T}  \left ( S_{Aj} - S_{Bj} \right )^2
     greater than zero, otherwise 0.
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
-Amazonian dataset](Media:AmazonData.zip) with the following
+Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following
 commands:
 
     mothur > read.dist(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
@@ -102,7 +102,8 @@ $$D_{AB} = \sqrt{
 \left(1-0\right)^2 +
 \left(1-0\right)^2 +
 \left(1-1\right)^2 +
-...
+
+\...
 +\left(0-1\right)^2 +
 \left(0-1\right)^2 +
 \left(0-1\right)^2 +

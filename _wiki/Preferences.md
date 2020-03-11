@@ -7,32 +7,32 @@ title: 'Preferences'
 You can set your **preferences** using the Preferences menu option under the
 File menu.
 
-![ center](preferenceFileMenu.jpg " center")
+![ center](https://mothur.s3.us-east-2.amazonaws.com/wiki/preferencefilemenu.jpg)
 
 ## Preferences under the Mac Menu Bar
 
 Or if you are a Mac user, you can select the Preferences option on the
 Mac Menu.
 
-![ center](preferenceMacMenu.jpg " center")
+![ center](https://mothur.s3.us-east-2.amazonaws.com/wiki/preferencemacmenu.jpg)
 
 ## Default Processors
 
 Setting your default processors will save you the step of setting the
 processors parameter for each command that allows parallel processing.
 
-![ center](prefProcessors.jpg " center")
+![ center](https://mothur.s3.us-east-2.amazonaws.com/wiki/prefprocessors.jpg)
 
 ## Default Locations
 
 Setting your default locations can save you time when running multiple
 datasets.
 
-![ center](prefLocations.jpg " center")
+![ center](https://mothur.s3.us-east-2.amazonaws.com/wiki/preflocations.jpg)
 
 ## Default References
 
 Setting your default references can save you time when running multiple
 datasets.
 
-![ center](prefReferences.jpg " center")
+![ center](https://mothur.s3.us-east-2.amazonaws.com/wiki/prefreferences.jpg)

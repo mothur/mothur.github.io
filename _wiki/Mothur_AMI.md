@@ -40,14 +40,18 @@ tricked out for mothur users that you can build upon for your own use.
 
 You will first need to log into the AWS.
 
-1.  Go to <https://aws.amazon.com>
-2.  Click \"Sign In to the Console\"
-3.  Either Sign In using your existing Amazon account or create a new
+
+1\.  Go to [https://aws.amazon.com](https://aws.amazon.com)
+
+2\.  Click \"Sign In to the Console\"
+
+3\.  Either Sign In using your existing Amazon account or create a new
     account
-4.  Click on the icon in the upper left corner of the page that says
+
+4\.  Click on the icon in the upper left corner of the page that says
     \"EC2\"
 
-![](Aws_click_ec2.png){width="700"}
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_click_ec2.png)
 
 As you will have noticed, there are many options for where you could
 have gone. EC2 is the expandable cloud service that AWS offers. They
@@ -62,28 +66,34 @@ are using. If you\'ve never logged in before, you\'ll have a bunch of
 zeroes on this page. You\'ll notice that I already have some things
 stored here because I\'ve used this service before.
 
-![](Aws_ec2_dashboard.png){width="700"}
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_ec2_dashboard.png)
 
-1.  In the upper right corner of the screen you should see your name,
+
+1\.  In the upper right corner of the screen you should see your name,
     next to that is the region that your computer will be living in. If
     it isn\'t already set to \"N. Virginia\" click on the region that is
     there and change it.
 
-    :   ![](Aws_pick_region.png "fig:"){width="200"}
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_pick_region.png)
 
-2.  Click on the blue button in the middle of the dashboard screen that
+
+2\.  Click on the blue button in the middle of the dashboard screen that
     says \"Launch Instance.\" This will now take you to a series of
     screens that I will walk you through for setting up your instance.
-3.  Along the left side click on the tab that says \"Community AMIs\"
-4.  In the search bar that says \"Search Community AMIs\", type
+
+3\.  Along the left side click on the tab that says \"Community AMIs\"
+
+4\.  In the search bar that says \"Search Community AMIs\", type
     \"mothur\"
 
-    :   ![](Aws_step_1.png "fig:"){width="700"}
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_step_1.png)
 
-5.  Click the blue \"Select\" button to the right of the latest version
+
+5\.  Click the blue \"Select\" button to the right of the latest version
     of the mothur AMI. These will be named using \"mothur\" and the
     version number.
-6.  Now we need to decide what type of hardware we want to run our jobs
+
+6\.  Now we need to decide what type of hardware we want to run our jobs
     on. For demonstration purposes, let\'s pick the `m3.large` type.
     This will give you a computer with two processors and 7.5 Gb of RAM.
     If you later decide that this is too big or not big enough, you can
@@ -94,47 +104,60 @@ stored here because I\'ve used this service before.
     instances](https://aws.amazon.com/ec2/pricing/). Our     m3.large
     instance will cost \$$0.133 per hour. Peanuts. Of course, the cost
     will fluctuate with the number of processors and the amount of RAM.
-7.  Click \"Next: Configure Instance Details\" in the lower right corner
-8.  Click \"Next: Add Storage\" in the lower right corner
-9.  Again, we\'ll leave the defaults, but you should notice that we are
+
+7\.  Click \"Next: Configure Instance Details\" in the lower right corner
+
+8\.  Click \"Next: Add Storage\" in the lower right corner
+
+9\.  Again, we\'ll leave the defaults, but you should notice that we are
     going to request 10 GB of hard drive space. There are numerous
     storage options, but for the purposes of this tutorial, 10 GB will
     suffice. Click \"Next: Tag Instance\" in the lower right corner.
-10. You will see a \"Key\" and \"Value\" field on the screen. Under the
+
+10\. You will see a \"Key\" and \"Value\" field on the screen. Under the
     name \"Key\" type \"name\" and under \"Value\" type \"mothur\". This
     will be the name of our instance. Click \"Next: Configure Security
     Group\" in the lower right corner.
-11. Click \"Add Rule\" and change \"Custom TCP Rule\" to HTTP.
-12. Click \"Add Rule\" and change \"Custom TCP Rule\" to HTTPs.
-13. Click \"Add Rule\" and leave \"Custom TCP Rule\", but change the
+
+11\. Click \"Add Rule\" and change \"Custom TCP Rule\" to HTTP.
+
+12\. Click \"Add Rule\" and change \"Custom TCP Rule\" to HTTPs.
+
+13\. Click \"Add Rule\" and leave \"Custom TCP Rule\", but change the
     value of \"Port Range\" to \"8787\" and change the \"Custom\"
     setting from \"Custom\" to \"Anywhere\". Alternatively, you could
     change it to \"My IP\" for added security. Your screen should now
     look like this:
 
-    :   ![](Aws_security.png "fig:"){width="700"}
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_security.png)
 
-14. Click the blue \"Review and Launch\" button in the lower right
+
+14\. Click the blue \"Review and Launch\" button in the lower right
     corner.
-15. Click the blue \"Launch\" button in the lower right corner.
-16. You will get a pop up window. If this is your first time through,
+
+15\. Click the blue \"Launch\" button in the lower right corner.
+
+16\. You will get a pop up window. If this is your first time through,
     you will want to change the first drop down menu to \"Proceed
     without a key pair\" and check the box.
 
-    :   ![](Aws_key_pair.png "fig:"){width="700"}
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_key_pair.png)
 
-17. Click the blue \"Launch Instances\" box. This will take you to a
+
+17\. Click the blue \"Launch Instances\" box. This will take you to a
     screen that looks like this:
 
-    :   ![](Aws_launch.png "fig:"){width="700"}
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_launch.png)
 
-18. Click on the link to the right of where it says \"The following
+
+18\. Click on the link to the right of where it says \"The following
     instance launches have been initiated:\". In my example it says
     \"i-7023b5e0\". This will take you to a display of your instances.
 
-    :   ![](Aws_instance_console.png "fig:"){width="700"}
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_instance_console.png)
 
-19. Congrats! You have an instance up and running. In other words, you
+
+19\. Congrats! You have an instance up and running. In other words, you
     have a brand new shiny computer. Now we need to figure out how to
     connect to it.
 
@@ -194,11 +217,14 @@ the paths to tell mothur where your files are. For example, to run
 Now you\'ve run through your sequence processing with mothur and would
 like to do some awesomesauce analysis with RStudio. We can do that.
 
-1.  Point your browser to
+
+1\.  Point your browser to
     `ec2-23-20-53-229.compute-1.amazonaws.com:8787` making sure to
     substitute your DNS address for mine and add `:8787` to the end.
-2.  Enter \"mothur\" for both the username and password
-3.  Viola! RStudio!
+
+2\.  Enter \"mothur\" for both the username and password
+
+3\.  Viola! RStudio!
 
 ## Moving files in and out of your instance
 
@@ -254,17 +280,22 @@ shell and leave the AWS environment, you need to stop the instance in
 your AWS console. Return to your [EC2
 console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=statusChecks).
 
-1.  Identify your instance (remember we named it mothur above) and make
+
+1\.  Identify your instance (remember we named it mothur above) and make
     sure the box to the left of the tag is filled in with blue.
-2.  Then click on the \"Actions\" button along the top of the console.
-3.  Go Instance State -\> Stop and click the blue button \"Yes, Stop\".
+
+2\.  Then click on the \"Actions\" button along the top of the console.
+
+3\.  Go Instance State -\> Stop and click the blue button \"Yes, Stop\".
     You will see the \"Instance State\" change to \"stoping\" and then
     \"stopped\". This is a safe state to leave your instance without
     getting charged for processing time.
-4.  If you repeat the previous step, but click \"Start\", it will
+
+4\.  If you repeat the previous step, but click \"Start\", it will
     restart the instance, albeit with a different DNS address. All of
     the files you created previously should still be in the directories.
-5.  Finally, if you instead click \"Terminate\", it will shut down the
+
+5\.  Finally, if you instead click \"Terminate\", it will shut down the
     instance. At this point, all of your work will be deleted and you
     will have to go back to the beginning of this tutorial to restart an
     instance.

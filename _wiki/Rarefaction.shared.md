@@ -13,7 +13,7 @@ is possible to determine how well you have sampled the biodiversity
 within the individual. mothur has the ability to generate data for
 inter-sample rarefaction curves for the number of observed species. For
 this tutorial you should download and decompress [
-Patient70Data.zip](Media:Patient70Data.zip)
+Patient70Data.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/patient70data.zip)
 
 
 ## Default settings

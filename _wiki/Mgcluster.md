@@ -4,7 +4,7 @@ title: 'Mgcluster'
 The **mgcluster** command \....
 
 For this tutorial you should download the [ Example
-Files](Media:_Bap_Files.zip) file and decompress it.
+Files](https://mothur.s3.us-east-2.amazonaws.com/wiki/_bap_files.zip) file and decompress it.
 
 
 ## Default settings

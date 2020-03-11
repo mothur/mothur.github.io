@@ -9,7 +9,7 @@ sample additional individuals. If a collector\'s curve becomes parallel
 to the x-axis, you can be reasonably confident that you have done a good
 job of sampling and can trust the last value in the curve. Otherwise,
 you need to keep sampling. For this tutorial you should download and
-decompress [AmazonData.zip](Media:AmazonData.zip)
+decompress [AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip)
 
 
 ## Default settings

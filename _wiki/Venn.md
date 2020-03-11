@@ -8,9 +8,9 @@ file that can be further modified in a program like Gimp or Adobe
 Illustrator to scale the areas to be proportional to the richness
 represented by the region. Options are available to measure richness
 based on the observed richness or the estimated richness using the
-[chao](chao) and [sharedchao](sharedchao "wikilink")
+[chao](chao) and [sharedchao](sharedchao)
 calculators. This tutorial uses the data files in [
-AbRecovery.zip](Media:AbRecovery.zip).
+AbRecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip).
 
 
 ## Default settings
@@ -32,8 +32,8 @@ defined at the 0.10 level would be abrecovery.fn.0.10.venn.sobs.svg.
 
 By default the venn() command will calculate the shared richness based
 on the observed OTUs. Alternatively, it is possible to use the
-[chao](chao) and [sharedchao](sharedchao "wikilink") or the
-[ace](ace) and [sharedace](sharedace "wikilink") calculators
+[chao](chao) and [sharedchao](sharedchao) or the
+[ace](ace) and [sharedace](sharedace) calculators
 to predict the richness of each region. This option can be implemented
 by the following command:
 
@@ -176,7 +176,7 @@ For example:
 -   1.29.0 - Added the sharedotus parameter.
 -   1.29.1 - Bug Fix: segfault when no shared otus.
 -   1.33.0 - permute parameter can equal 1, 2, 3, 4 or true. -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2629&p=7252#p7252>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=2629&p=7252#p7252](https://forum.mothur.org/viewtopic.php?f=3&t=2629&p=7252#p7252)
 -   1.33.0 - Bug Fix: overwrote .sharedotu files when permute=t
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,

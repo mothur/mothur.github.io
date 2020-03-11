@@ -18,7 +18,7 @@ investigate how CO-oxidizer richness changes relative to total bacterial
 communities across the transect.
 
 The sequence files that are needed for this tutorial are located here:
-([Kilauea.zip](Media:Kilauea.zip)). The coxL and 16S
+([Kilauea.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/kilauea.zip)). The coxL and 16S
 sequences are located in the files CBE208coxL.pir and
 CBE485-16Salign.txt, respectively. You should be able to generate all
 other necessary files, such as the .groups and .ntree files from the
@@ -33,13 +33,17 @@ Data Preparation
 
 Data preparation for analyses in mothur consists of 4 primary steps:
 
-1.  Assemble DNA sequences into a fasta file (such as the ones provided
+
+1\.  Assemble DNA sequences into a fasta file (such as the ones provided
     in this tutorial). For protein-coding sequences, generate a fasta
     file of translated sequences.
-2.  align sequences
-3.  generate distance matrices and .ntree files. The latter is used for
+
+2\.  align sequences
+
+3\.  generate distance matrices and .ntree files. The latter is used for
     hypothesis-testing.
-4.  create a .groups file. This file allows mothur, to recognize the
+
+4\.  create a .groups file. This file allows mothur, to recognize the
     different groups or libraries of sequences in your distance matrix
     and allows you to generate OTU data for each group of sequences and
     perform hypothesis testing without needing to generate separate
@@ -77,14 +81,20 @@ of "P1;" with nothing and also a find and replace of "\*" with nothing.
 The file CBE208coxLmodifiedpir.txt can be used to make the distance
 matrix by doing the following:
 
-1.  open Arb and upload "CBE208coxLmodifiedpir.txt".
-2.  Click "Auto Detect" and make sure that the file is identified as a
+
+1\.  open Arb and upload "CBE208coxLmodifiedpir.txt".
+
+2\.  Click "Auto Detect" and make sure that the file is identified as a
     fasta\_wgap.ift
-3.  Press "Go".
-4.  Click "use found names"
-5.  Ignore error message saying that you do not have a tree and click
+
+3\.  Press "Go".
+
+4\.  Click "use found names"
+
+5\.  Ignore error message saying that you do not have a tree and click
     "OK"
-6.  Click "Always Skip (all)" on the next screen (if it pops up...from
+
+6\.  Click "Always Skip (all)" on the next screen (if it pops up...from
     my experience, sometimes it doesn't)
 
 There are several options for making distance matrices and using various
@@ -92,31 +102,46 @@ filters, but for the purposes of this tutorial we will keep it simple.
 However, by following the steps below you will be able to see what
 options and types of corrections are available in Arb:
 
-1.  in the menu bar, click "tree" and select "build tree from sequence
+
+1\.  in the menu bar, click "tree" and select "build tree from sequence
     data".
-2.  Select "distance matrix methods"
-3.  select "phylip distance matrix"
-4.  In the next window that pops up, make sure that "treat data as" is
+
+2\.  Select "distance matrix methods"
+
+3\.  select "phylip distance matrix"
+
+4\.  In the next window that pops up, make sure that "treat data as" is
     set to "AA" is selected and leave the default options selected.
-5.  select "Go"
-6.  In the terminal window that pops up, the phylip program will ask you
+
+5\.  select "Go"
+
+6\.  In the terminal window that pops up, the phylip program will ask you
     to input "Y" or "n" to proceed using the default options. Type "Y"
     and press return.
-7.  Allow the program to run and when finished save the distance matrix
+
+7\.  Allow the program to run and when finished save the distance matrix
     to the location of your choice.
-8.  To generate the tree file (.ntree extension) select "tree" from the
+
+8\.  To generate the tree file (.ntree extension) select "tree" from the
     menu bar and select "build tree from sequence data".
-9.  Select "distance matrix methods"
-10. select "phylip distance matrix (simple GUI based interface)"
-11. in the tree option choose neighbor-joining and again make sure that
+
+9\.  Select "distance matrix methods"
+
+10\. select "phylip distance matrix (simple GUI based interface)"
+
+11\. in the tree option choose neighbor-joining and again make sure that
     the "treat data as" is set to "AA"
-12. click "GO"
-13. After phylip is done running, click on the button in the main Arb
+
+12\. click "GO"
+
+13\. After phylip is done running, click on the button in the main Arb
     window that says "tree\_main". Select the tree that was just created
     from the coxL sequences (should contain 208 sequences) and click
     "modify\".
-14. In the next window that pops up, click on "export"
-15. In the next window, save the tree to the desired location. It should
+
+14\. In the next window that pops up, click on "export"
+
+15\. In the next window, save the tree to the desired location. It should
     have a .ntree extension.
 
 ### 16S rRNA genes
@@ -131,12 +156,14 @@ The group file will be created from the same fasta file used to generate
 the distance matrices and tree files. To make the coxL groups file,
 follow the instructions below:
 
-1.  In the terminal window type:
+
+1\.  In the terminal window type:
 
 grep "\>" CBE208coxLmodifiedpir.txt \>CBE208coxL.groups now, press
 return
 
-1.  type:
+
+1\.  type:
 
 more CBE208coxL.groups
 
@@ -152,12 +179,16 @@ sequences in this format in the terminal window:
 
 \>E45
 
-........and so on.
 
-1.  open your groups file (should be in the same place as
+\........and so on.
+
+
+1\.  open your groups file (should be in the same place as
     CBE208coxLmodifiedpir.txt) in a tab delimited format using Excel.
-2.  Find and replace "\>" with nothing.
-3.  The first column in your Excel file should have the names of each of
+
+2\.  Find and replace "\>" with nothing.
+
+3\.  The first column in your Excel file should have the names of each of
     the 208 coxL sequences. In the second column of the file, you need
     to insert the unique identifier for each of the groups. For example,
     each sequence from the Bare site should have a "B" in the second
@@ -182,8 +213,10 @@ C45 C
 
 C90 C
 
-1.  Save and close your groups file
-2.  In the terminal window type:
+
+1\.  Save and close your groups file
+
+2\.  In the terminal window type:
 
 more CBE208coxL.groups Hold down return until the file is done
 processing to see that each sequence is labeled with the proper group
@@ -214,7 +247,8 @@ that was ultimately used to analyze this data set.
 ![16S rRNA gene similarities vs. coxL gene similarities for CO-oxidizing
 isolates. An OTU cutoff of 0.03 for 16S rRNA roughly corresponds to a
 coxL OTU definition of
-0.10.](coxLOTUdefinition.jpg "16S rRNA gene similarities vs. coxL gene similarities for CO-oxidizing isolates. An OTU cutoff of 0.03 for 16S rRNA roughly corresponds to a coxL OTU definition of 0.10."){width="350"}
+
+0\.10.](coxLOTUdefinition.jpg "16S rRNA gene similarities vs. coxL gene similarities for CO-oxidizing isolates. An OTU cutoff of 0.03 for 16S rRNA roughly corresponds to a coxL OTU definition of 0.10.")
 
 OTUs: How Many? How Well were they Recovered? How Many are Unique? How Many are Shared?
 =======================================================================================
@@ -445,22 +479,26 @@ respectively.
 ## Rarefaction Analysis: How well were OTUs recovered from each site?
 
 If you plot the coxL and 16S rRNA gene rarefaction data in the
-.rarefaction output files, you can see how well the environment was
+
+\.rarefaction output files, you can see how well the environment was
 sampled. I have used my favorite graphing program
 [Kalaidagraph](https://www.synergy.com) to generate the rarefaction
 curves:
 
 ![Rarefaction curve for the 16S rRNA gene libraries using an OTU
 definition of
-0.03](16Srarefaction.jpg "fig:Rarefaction curve for the 16S rRNA gene libraries using an OTU definition of 0.03"){width="350"}
+
+0\.03](16Srarefaction.jpg "fig:Rarefaction curve for the 16S rRNA gene libraries using an OTU definition of 0.03")
 ![Rarefaction curve for the coxL gene libraries using an OTU definition
 of
-0.10](coxLrarefaction.jpg "fig:Rarefaction curve for the coxL gene libraries using an OTU definition of 0.10"){width="350"}
+
+0\.10](coxLrarefaction.jpg "fig:Rarefaction curve for the coxL gene libraries using an OTU definition of 0.10")
 
 ## Trends in Richness
 
 For coxL we have done a good job sampling the Bare site (at least at the
-0.10 cutoff level), and a little less so for the Edge and Canopy. None
+
+0\.10 cutoff level), and a little less so for the Edge and Canopy. None
 of the 16S rRNA gene libraries come close to reaching saturation and we
 would not expect them to given their small size and the vast bacterial
 richness of terrestrial environments. However, because we did sample
@@ -473,7 +511,7 @@ These observations also correlate well with activity data for these
 sites, which I won't bore you with in this tutorial.
 
 ![coxL OTU:16S rRNA OTU ratio for the Bare, Edge and Canopy
-sites.](coxL16SrRNAOTUratio.jpg "coxL OTU:16S rRNA OTU ratio for the Bare, Edge and Canopy sites."){width="350"}
+sites.](coxL16SrRNAOTUratio.jpg "coxL OTU:16S rRNA OTU ratio for the Bare, Edge and Canopy sites.")
 
 ## Comparing Richness: How many OTUs were shared among libraries? How many were unique?
 
@@ -500,9 +538,9 @@ is a very fast and convenient online file converter which can [convert
 SVG files into
 JPEGs](https://www.fileformat.info/convert/image/svg2raster.htm)
 
-![CoxL Venn diagram](coxLVenn.jpg "fig:CoxL Venn diagram"){width="350"}
+![CoxL Venn diagram](https://mothur.s3.us-east-2.amazonaws.com/wiki/coxlvenn.jpg)
 ![16S rRNA gene Venn
-diagram](16SVenn.jpg "fig:16S rRNA gene Venn diagram"){width="350"}
+diagram](16SVenn.jpg "fig:16S rRNA gene Venn diagram")
 
 You can see from the coxL and 16S rRNA gene Venn diagrams that each of
 the communities possess large numbers of unique OTUs and speaks to the
@@ -524,7 +562,8 @@ mothur \> get.rabund() 0.10 12
 
 This will generate data that look like this:
 
-0.10 20 19 18 5 4 4 3 2 2 2 2 2
+
+0\.10 20 19 18 5 4 4 3 2 2 2 2 2
 
 1 1 1 1 1 1 1 1 1 1
 
@@ -539,11 +578,11 @@ that the Bare site is heavily dominated by a couple of OTUs, but the
 community becomes more even in the Edge and Canopy sites.
 
 ![rank abundance curve for Bare site
-coxL](BarecoxL-rabund.jpg "fig:rank abundance curve for Bare site coxL"){width="350"}
+coxL](BarecoxL-rabund.jpg "fig:rank abundance curve for Bare site coxL")
 ![rank abundance curve for Edge site
-coxL](EdgecoxL-rabund.jpg "fig:rank abundance curve for Edge site coxL"){width="350"}
+coxL](EdgecoxL-rabund.jpg "fig:rank abundance curve for Edge site coxL")
 ![rank abundance curve for Canopy site
-coxL](CanopycoxL-rabund.jpg "fig:rank abundance curve for Canopy site coxL"){width="350"}
+coxL](CanopycoxL-rabund.jpg "fig:rank abundance curve for Canopy site coxL")
 
 ## "Who" is representative of the OTUs?
 

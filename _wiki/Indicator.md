@@ -9,7 +9,7 @@ if a tree is given. The new tree contains labels at each internal node.
 The label is the node number so you can relate the tree to the summary
 file. The summary file lists the **indicator** value for each OTU for each
 node. To run this tutorial please download
-[JCZData.zip](Media:JCZData.zip).
+[JCZData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/jczdata.zip).
 
 For background on the **indicator** metric, see:
 

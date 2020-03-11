@@ -4,7 +4,7 @@ title: 'Phylotype'
 The **phylotype** command can be used to assign sequences to OTUs based on
 their taxonomy and outputs a .list, .rabund and .sabund files. To run
 through the example below, download [Taxonomy
-Files](Media:TaxonomyFiles.zip).
+Files](https://mothur.s3.us-east-2.amazonaws.com/wiki/taxonomyfiles.zip).
 
 
 ## Default settings

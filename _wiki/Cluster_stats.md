@@ -4,7 +4,7 @@ title: 'Cluster stats'
 ## Used Version 1.27.0
 
 with [
-stool.final.phylip.dist](Media:stool.final.phylip.dist.zip)
+stool.final.phylip.dist](https://mothur.s3.us-east-2.amazonaws.com/wiki/stool.final.phylip.dist.zip)
 which is \~80M. 4800 sequences
 
 ### [cluster](cluster)
@@ -26,7 +26,7 @@ Used 45M and 110 seconds.
 ## Used Version 1.22.0
 
 with [
-stool.final.phylip.dist](Media:stool.final.phylip.dist.zip)
+stool.final.phylip.dist](https://mothur.s3.us-east-2.amazonaws.com/wiki/stool.final.phylip.dist.zip)
 which is \~80M.
 
 ### [cluster](cluster)

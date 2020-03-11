@@ -11,7 +11,7 @@ enjoy. First, to mark the acceptance of a manuscript in PLoS ONE
 describing a sequence analysis pipeline we are now announcing the
 presence of several commands - [trim.flows](trim.flows),
 [shhh.flows](shhh.flows), and
-[seq.error](seq.error); [shhh.flows](shhh.flows "wikilink")
+[seq.error](seq.error); [shhh.flows](shhh.flows)
 is our implementation of Chris Quince\'s PyroNoise algorithm and
 [seq.error](seq.error) allows you to compare mock community
 sequence data to reference sequences to measure error rates. Second, we
@@ -24,7 +24,7 @@ will be rewarded by the ability to parallelize the operations and make
 the overall process much faster. Third, Window\'s users will be happy to
 learn that we are in the process of parallelizing all of the appropriate
 commands. This release allows windows users to parallelize
-[align.seqs](align.seqs), [dist.seqs](dist.seqs "wikilink"),
+[align.seqs](align.seqs), [dist.seqs](dist.seqs),
 [summary.seqs](summary.seqs), and
 [classify.seqs](classify.seqs). This list will grow in future
 releases.
@@ -77,7 +77,7 @@ Pat Schloss
     file.
 -   [sub.sample](sub.sample) - now outputs a unique fasta
     file and new names file
-    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1299)
+    (https://forum.mothur.org/viewtopic.php?f=4&t=1299)
 -   [unique.seqs](unique.seqs) - name file prints in same
     order as fasta file
 -   [summary.seqs](summary.seqs) - added a column indicating
@@ -97,7 +97,7 @@ Pat Schloss
 -   [cluster.split](cluster.split) - changed default cutoffs
     for command. cutoff=0.25 and taxlevel=3.
 -   added leading \'0\' to OTU number labels. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1284>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=1284](https://forum.mothur.org/viewtopic.php?f=5&t=1284)
 
 ## Bug fixes
 
@@ -107,16 +107,16 @@ Pat Schloss
     of split files was less than the number of processors, the command
     crashed.
 -   added checking for mismatches between phylip and design files for
-    [amova](amova), [homova](homova "wikilink") and
+    [amova](amova), [homova](homova) and
     [anosim](anosim) commands.
 -   fixed colors for [heatmap.sim](heatmap.sim) - colors
     seemed reversed after change to calculators to output distance
     instead of similarity. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1293>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1293](https://forum.mothur.org/viewtopic.php?f=4&t=1293)
 -   fixed issue with [system](system) command that occurred
     when file redirects were used.
 -   fixed bug with Root level values in tax.summary file. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1316>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1316](https://forum.mothur.org/viewtopic.php?f=4&t=1316)
 -   1.22.2 fixed bug with [metastats](metastats)
 
 ## Wiki updates

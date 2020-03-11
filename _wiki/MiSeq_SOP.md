@@ -69,14 +69,14 @@ For this tutorial you will need several sets of files. To speed up the
 tutorial we provide some of the downstream files that take awhile to
 generate (e.g. the output of shhh.flows):
 
--   [ Example data from Schloss lab](Media:MiSeqSOPData.zip)
+-   [ Example data from Schloss lab](https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip)
     that will be used with this tutorial. It was extracted from the
     [full
     dataset](https://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
 -   [ SILVA-based bacterial reference
-    alignment](Media:silva.bacteria.zip)
+    alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.zip)
 -   [ mothur-formatted version of the RDP training set
-    (v.9)](Media:Trainset9_032012.pds.zip)
+    (v.9)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.pds.zip)
 
 You can easily substitute these choices (and should) for the reference
 and taxonomy alignments using the updated [Silva reference
@@ -491,7 +491,8 @@ Running summary.seqs we see what we\'re left with:
     total # of seqs:   118171
 
 Note that we went from 128,655 to 118,171 sequences for a reduction of
-8.2%; this is a reasonable number of sequences to be flagged as
+
+8\.2%; this is a reasonable number of sequences to be flagged as
 chimeric. As a final quality control step, we need to see if there are
 any \"undesirables\" in our dataset. Sometimes when we pick a primer set
 they will amplify other stuff that gets to this point in the pipeline
@@ -624,7 +625,7 @@ Mock sample from our dataset using the
 
 Now we have a couple of options for clustering sequences into OTUs. For
 a small dataset like this, we can do the traditional approach using
-[dist.seqs](dist.seqs) and [cluster](cluster "wikilink"):
+[dist.seqs](dist.seqs) and [cluster](cluster):
 
     mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, cutoff=0.03)
     mothur > cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
@@ -665,7 +666,8 @@ command we use taxlevel=4, which corresponds to the level of Order.
 Next we want to know how many sequences are in each OTU from each group
 and we can do this using the [make.shared](make.shared)
 command. Here we tell mothur that we\'re really only interested in the
-0.03 cutoff level:
+
+0\.03 cutoff level:
 
     mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=0.03)
 
@@ -825,7 +827,7 @@ that will allow us to rarefy our data to a common number of sequences.
 These two distance matrices (i.e.
 stability.opti\_mcc.jclass.0.03.lt.ave.dist and
 stability.opti\_mcc.thetayc.0.03.lt.ave.dist) can then be visualized
-using the [pcoa](pcoa) or [nmds](nmds "wikilink") plots.
+using the [pcoa](pcoa) or [nmds](nmds) plots.
 Principal Coordinates (PCoA) uses an eigenvector-based approach to
 represent multidimensional data in as few dimesnsions as possible. Our
 data is highly dimensional (\~9 dimensions).

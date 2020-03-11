@@ -5,7 +5,7 @@ In this tutorial we will complete a fairly comprehensive [esophageal
 community analysis](esophageal_community_analysis) using
 greengenes, ARB, and the tools available in mothur. To complete this
 analysis, you need to download the folder compressed in the [
-Esophagus.zip](Media:Esophagus.zip) archive. These sequences
+Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) archive. These sequences
 were originally published by [Pei et al.
 (2004)](https://www.ncbi.nlm.nih.gov/pubmed/15016918?ordinalpos=6&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum).
 
@@ -224,7 +224,8 @@ This will generate the following output:
     D-C                    0.00155345  <0.0001
 
 These significance values are all below the critical threshold (i.e.
-0.05/6 = 0.0083333). Therefore, the three communities have different
+
+0\.05/6 = 0.0083333). Therefore, the three communities have different
 structures.
 
 ### Parsimony test

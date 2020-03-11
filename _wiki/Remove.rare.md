@@ -4,7 +4,7 @@ title: 'Remove.rare'
 The **remove.rare** command removes OTUs at a
 specified rarity (number of observations in the dataset) and outputs a
 new file. The files that we discuss in this tutorial can be obtained by
-downloading the [AmazonData.zip](Media:AmazonData.zip) file
+downloading the [AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) file
 and decompressing it.
 
 

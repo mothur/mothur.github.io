@@ -4,7 +4,7 @@ title: 'Summary.tax'
 The **summary.tax** command reads a taxonomy file
 and an optional name and or group file, and summarizes the taxonomy
 information. To run this tutorial please download, [ Example Data
-](Media:sumTaxData.zip)
+](https://mothur.s3.us-east-2.amazonaws.com/wiki/sumtaxdata.zip)
 
 ## Default settings
 

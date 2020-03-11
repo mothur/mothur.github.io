@@ -6,7 +6,7 @@ listing of the different groups available for the multi-sample OTU data
 that are currently stored in memory. This feature should help in using
 the group option for other commands. For this tutorial you should
 download and decompress
-[AmazonData.zip](Media:AmazonData.zip).
+[AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
 
 ## Default Options
 

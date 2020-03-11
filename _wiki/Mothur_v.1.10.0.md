@@ -30,15 +30,15 @@ incorporate good ideas into mothur!
 -   added [phylo.diversity](phylo.diversity) command -
     [phylogenetic diversity](phylogenetic_diversity)
 -   added [make.group](make.group) command -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=385&sid=6260346b9aab4bf74e20f667fd135cb4>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=385&sid=6260346b9aab4bf74e20f667fd135cb4](https://forum.mothur.org/viewtopic.php?f=3&t=385&sid=6260346b9aab4bf74e20f667fd135cb4)
 -   added [chop.seqs](chop.seqs) command -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=399&sid=ecc7b9a7e046fb48f5a5345713ef3fd2>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=399&sid=ecc7b9a7e046fb48f5a5345713ef3fd2](https://forum.mothur.org/viewtopic.php?f=3&t=399&sid=ecc7b9a7e046fb48f5a5345713ef3fd2)
 -   added [clearcut](clearcut) command - wrapper for
     [clearcut](https://bioinformatics.hungry.com/clearcut/)
 
 ## Feature updates
 
--   <https://www.mothur.org/forum/viewtopic.php?f=5&t=300&p=749&sid=80af1914178877c36516229d2fe8d809#p749> -
+-   [https://forum.mothur.org/viewtopic.php?f=5&t=300&p=749&sid=80af1914178877c36516229d2fe8d809#p749](https://forum.mothur.org/viewtopic.php?f=5&t=300&p=749&sid=80af1914178877c36516229d2fe8d809#p749) -
     added group parameter to [classify.seqs](classify.seqs),
     reworked summary file so the taxids are based on the reference
     taxonomy.
@@ -65,7 +65,7 @@ incorporate good ideas into mothur!
 -   added 3 constructors to sequence class that just fill unaligned
     field to save space when we don\'t need an aligned sequence.
 -   made freq a percentage of number of sequences -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=402&sid=22d323d5316be7937cb6de9f3ea8cac4>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=402&sid=22d323d5316be7937cb6de9f3ea8cac4](https://forum.mothur.org/viewtopic.php?f=5&t=402&sid=22d323d5316be7937cb6de9f3ea8cac4)
 -   doubled the size of venn diagrams created.
 
 ## Bug fixes
@@ -73,7 +73,7 @@ incorporate good ideas into mothur!
 -   fixed bug with MPI Enabled version that would cause a malloc error
     if the number of seqs in your input file did not divide evenly
     between processes.
--   <https://www.mothur.org/forum/viewtopic.php?f=4&t=392&sid=54ce67de05b106db5435ba67e0583723>,
+-   [https://forum.mothur.org/viewtopic.php?f=4&t=392&sid=54ce67de05b106db5435ba67e0583723](https://forum.mothur.org/viewtopic.php?f=4&t=392&sid=54ce67de05b106db5435ba67e0583723),
     fixed bug that caused file mismatch issues because the read of qfile
     was based on sequence length in fasta file. It now reads the length
     directly from the qfile.
@@ -81,10 +81,10 @@ incorporate good ideas into mothur!
     cutoff not to work if iters was not equal to 100.
 -   fixed bug with [get.seqs](get.seqs) that would cause the
     command to abort if both the input and output are redirected. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=398&sid=271fe0ebe8c7e8cf2a9ffe87e30d4cbb>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=398&sid=271fe0ebe8c7e8cf2a9ffe87e30d4cbb](https://forum.mothur.org/viewtopic.php?f=4&t=398&sid=271fe0ebe8c7e8cf2a9ffe87e30d4cbb)
 -   [filter.seqs](filter.seqs) says it only uses 0 sequences
     to build filter
 -   you can now use the readline library with the mpi-enabled version -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=396&sid=ed88315308710479c553039fdfd21d7e>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=396&sid=ed88315308710479c553039fdfd21d7e](https://forum.mothur.org/viewtopic.php?f=4&t=396&sid=ed88315308710479c553039fdfd21d7e)
 -   fixed bug with mothur\'s interface to blast, caused
     \[NULL\_Caption\] FATAL ERROR.

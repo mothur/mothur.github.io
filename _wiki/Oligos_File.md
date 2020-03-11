@@ -118,7 +118,7 @@ example
 
     spacer tacgg
 
-## Ignoring samples with [trim.seqs](trim.seqs) && [trim.flows](trim.flows "wikilink")
+## Ignoring samples with [trim.seqs](trim.seqs) && [trim.flows](trim.flows)
 
 You can set the group to \"ignore\" to indicate to mothur to cull them
 from the trimmmed file.

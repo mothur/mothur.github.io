@@ -122,7 +122,8 @@ at the mothur prompt. mothur is installed.
 You can also add mothur to system PATH, this will enable you to run
 mothur from within any folder on your computer without having to move
 the binary everytime. For Ubuntu users, you can do so by editing the
-.bashrc file, a hidden file in your Home folder. Open the file in edit
+
+\.bashrc file, a hidden file in your Home folder. Open the file in edit
 mode and enter the following at the end (replace
 *path\_to\_mothur\_binary\_folder* with the real path):
 
@@ -276,7 +277,7 @@ and follow the instructions. Consider decompressing mothur to a
 directory such as C:\\mothur.
 
 Alternatively, you can build mothur from source using a tool like
-cygwin, <https://www.cygwin.com>:
+cygwin, [https://www.cygwin.com](https://www.cygwin.com):
 
 #### Download and install cygwin
 

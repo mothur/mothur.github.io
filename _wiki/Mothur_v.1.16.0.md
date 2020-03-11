@@ -6,7 +6,7 @@ v.1.16.0](mothur_v.1.16.0), aka the \"Brett who?\" version in
 celebration of the Green Bay Packers beating the Pittsburgh Steelers.
 This release contains a number of new features related to multivariate
 data visualization including implementations of tools to generate [
-PCA](pca) and [ NMDS](nmds "wikilink"), both of which
+PCA](pca) and [ NMDS](nmds), both of which
 complement the earlier [ PCoA](pcoa) command. Another new
 command [corr.axes](corr.axes) allows you to determine how
 well the relative abundance of your OTUs/phylotypes or metadata

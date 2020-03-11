@@ -23,20 +23,24 @@ regions affect our OTU-based analyses.
 
 The sequences from the two libraries can be downloaded from GenBank or,
 alternatively, directly retrieved from [
-LTSP07.zip](Media:LTSP07.zip) as BACT\_SSURIS.fasta and
+LTSP07.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/ltsp07.zip) as BACT\_SSURIS.fasta and
 EUKA\_SSURIS.fasta. Here is a quick guidline to retrieve batch sequences
 from GenBank:
 
-1.  Go to the [NCBI homepage](https://www.ncbi.nlm.nih.gov).
-2.  Select *NUCLEOTIDE* from the *SEARCH* drop-down menu.
-3.  Type "FJ550632:FJ552694 \[ACCN\]" or "FJ552695:FJ554464 \[ACCN\]" to
+
+1\.  Go to the [NCBI homepage](https://www.ncbi.nlm.nih.gov).
+
+2\.  Select *NUCLEOTIDE* from the *SEARCH* drop-down menu.
+
+3\.  Type "FJ550632:FJ552694 \[ACCN\]" or "FJ552695:FJ554464 \[ACCN\]" to
     retrieve the bacterial or eukaryal sequences and hit *GO*.
-4.  Select *FASTA* under the *DISPLAY* menu and *FILE* under the *SENT
+
+4\.  Select *FASTA* under the *DISPLAY* menu and *FILE* under the *SENT
     TO* menu. Save it to your preferred location.
 
 Since we will work with phylip formatted files, which allow only 10
 digit sequence identifiers, the identifiers need to be trimmed. For this
-reason, the fasta files in [ LTSP07.zip](Media:LTSP07.zip)
+reason, the fasta files in [ LTSP07.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/ltsp07.zip)
 contain sequences solely assigned with the GenBank accession numbers. We
 start the analysis using the bacterial dataset.
 
@@ -66,15 +70,17 @@ favourite sequence alignment editor (e.g.
 [BioEdit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html/)). Trim the
 alignment at the following conserved position on the 3'-end of the 16S:
 
-1.  Bacteria: TGCGGCTGGATCACCTCCTT (Normand et al. 1996, Molecular
+
+1\.  Bacteria: TGCGGCTGGATCACCTCCTT (Normand et al. 1996, Molecular
     Microbial Ecology Manual).
-2.  Eukarya: TCCGTAGGTGAACCTGCGG (White et al. 1990, PCR Protocols: a
+
+2\.  Eukarya: TCCGTAGGTGAACCTGCGG (White et al. 1990, PCR Protocols: a
     Guide to Methods and Applications).
 
 Trim sequences in order that BACT\_SSU.almafft.fasta ends and
 BACT\_RIS.almafft.fasta starts with this conserved positions. In case
 you have trouble splitting the alignment, I provided the subfiles in [
-LTSP07.zip](Media:LTSP07.zip).
+LTSP07.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/ltsp07.zip).
 
 ### Generate phylip4-formatted file
 
@@ -91,21 +97,28 @@ program
 [DNAdist](https://evolution.genetics.washington.edu/phylip/doc/dnadist.html)
 to generate a distance matrix from the phylip formatted alignment. The
 algorithm can be run online at several locations
-([<https://trishul.sci.gu.edu.au/tools/dnadist.html>](https://trishul.sci.gu.edu.au/tools/dnadist.html),
-[<https://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist>](https://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist))
+([[https://trishul.sci.gu.edu.au/tools/dnadist.html](https://trishul.sci.gu.edu.au/tools/dnadist.html)](https://trishul.sci.gu.edu.au/tools/dnadist.html),
+[[https://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist](https://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist)](https://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist))
 or can be downloaded and used according to the following instructions:
 
-1.  Download the [Phylip
+
+1\.  Download the [Phylip
     package](https://evolution.genetics.washington.edu/phylip/getme.html).
-2.  Copy the executable dnadist.exe into the directory with your data
+
+2\.  Copy the executable dnadist.exe into the directory with your data
     files and execute the program.
-3.  When prompted for the input file type the name of the phylip
+
+3\.  When prompted for the input file type the name of the phylip
     formatted alignment file (e.g. BACT\_SSURIS.almafft.phy).
-4.  Create new outfile (e.g. BACT\_SSURIS.almafft.dist).
-5.  Press D to select Jukes-Cantor as distance. Default can be used for
+
+4\.  Create new outfile (e.g. BACT\_SSURIS.almafft.dist).
+
+5\.  Press D to select Jukes-Cantor as distance. Default can be used for
     all other parameters.
-6.  Copy the file into the mothur folder.
-7.  Repeat procedure with the other files.
+
+6\.  Copy the file into the mothur folder.
+
+7\.  Repeat procedure with the other files.
 
 ## OTU-based analyses
 
@@ -172,8 +185,8 @@ ribosomal intergenic spacers.
 Both commands, [collect.single](collect.single) or
 [rarefaction.single](rarefaction.single) can be used to
 calculate [ richness and diversity estimators](Calculators)
-such as [ Chao1](Chao), [ ACE](Ace "wikilink"),
-[shannon](shannon), or [simpson](simpson "wikilink") to
+such as [ Chao1](Chao), [ ACE](Ace),
+[shannon](shannon), or [simpson](simpson) to
 mentioned only some popular estimators. For some analyses, only the
 final estimators are of interest, which can be calculated with the
 [summary.single](summary.single) command. It is interesting
@@ -196,7 +209,8 @@ estimators for all OTU definition levels determined by mothur. Richness
 and diversity estimators show again that a more detailed community
 structure is resolved by using hypervariable regions such as RIS. In our
 example, SSU-based richness/diversity become 0 at distances of around
-0.4, RIS-based estimators at distances of around 1.4.
+
+0\.4, RIS-based estimators at distances of around 1.4.
 
 ![Chao1 richness estimator of the bacterial SSU and RIS sequence
 datasets for all OTU definitions determined by
@@ -218,13 +232,17 @@ perform similarly at the SSU level. For this purpose, we will align the
 SSU sequences against the [ greengenes
 database](Alignment_database) using the following pipeline:
 
-1.  Open the file BACT\_SSU.almafft.fasta in the text editor and remove
+
+1\.  Open the file BACT\_SSU.almafft.fasta in the text editor and remove
     all gaps, e.g. by using the find/replace function.
-2.  Save the file as BACT\_SSU.fasta and copy it into the mothur folder
-3.  Download the [ greengenes reference
-    alignment](Media:greengenes.alignment.zip) and unpack it
+
+2\.  Save the file as BACT\_SSU.fasta and copy it into the mothur folder
+
+3\.  Download the [ greengenes reference
+    alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/greengenes.alignment.zip) and unpack it
     to the mothur folder
-4.  Use the following command to align your SSU sequences to the
+
+4\.  Use the following command to align your SSU sequences to the
     reference database
 
     mothur > align.seqs(candidate=BACT_SSU.fasta, fasta=core_set_aligned.imputed.fasta)

@@ -4,13 +4,13 @@ title: 'Get.lineage'
 The **get.lineage** command reads a taxonomy file
 and taxon then generates a new file containing only sequences from the
 specified taxon. You may also include either a [
-fasta](fasta_file), [ name](name_file "wikilink"), [
-group](group_file), [ list](list_file "wikilink"), [
+fasta](fasta_file), [ name](name_file), [
+group](group_file), [ list](list_file), [
 count](Count_File) or [align.report
 file](align.report_file) to this command and mothur will
 generate new files for each of those containing only the selected
 sequences. To complete this tutorial, you are encouraged to obtain the [
-AbRecovery](Media:AbRecovery.zip) dataset.
+AbRecovery](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) dataset.
 
 
 ## Default Settings
@@ -137,9 +137,9 @@ or
 
 -   1.28.0 Added count parameter
 -   1.28.0 Can handle () in taxon names,
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1815>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=1815](https://forum.mothur.org/viewtopic.php?f=3&t=1815)
 -   1.31.0 added constaxonomy and shared parameters. -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2210>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=2210](https://forum.mothur.org/viewtopic.php?f=3&t=2210)
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)

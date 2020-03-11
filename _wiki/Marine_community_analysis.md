@@ -8,7 +8,7 @@ Expedition](https://www.jcvi.org/cms/research/projects/gos/overview/)
 (GOS) Expedition which cover a diverse set of marine environments (e.g.,
 coastal, fresh water, estuarine, hypersaline). All the data files you
 need to complete this tutorial are contained in the [
-GOS.zip](Media:GOS.zip) (\~8MB) archive.
+GOS.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/gos.zip) (\~8MB) archive.
 
 
 ## Getting started
@@ -109,12 +109,17 @@ is included in the GOS archive (`gos_proxy_seq_NAST_job3353.tgz`), but
 you can follow these instructions if you wish to perform the alignment
 yourself:
 
-1.  Go to the main [GreenGenes](https://greengenes.lbl.gov) webpage and
+
+1\.  Go to the main [GreenGenes](https://greengenes.lbl.gov) webpage and
     click on the \"Align\" icon
-2.  Click on the \"Choose File\" button and select     gos_proxy_seq.fasta
-3.  In the field for \"Batch size for NAST\" enter \"50\"
-4.  Change the \"Minimum Length\" field to \"600\"
-5.  Enter your email address and press the \"Process FASTA File\"
+
+2\.  Click on the \"Choose File\" button and select     gos_proxy_seq.fasta
+
+3\.  In the field for \"Batch size for NAST\" enter \"50\"
+
+4\.  Change the \"Minimum Length\" field to \"600\"
+
+5\.  Enter your email address and press the \"Process FASTA File\"
     button.
 
 Do not close the webpage until you have receive an e-mail from Todd
@@ -142,15 +147,20 @@ walsbyi](https://www.ncbi.nlm.nih.gov/nuccore/110666976?ordinalpos=1&itool=Entre
 GreenGenes NAST aligner in the same manner as described above. To build
 the distance matrix:
 
-1.  Copy-and-paste the aligned Haloquadratum walsbyi sequence (contained
+
+1\.  Copy-and-paste the aligned Haloquadratum walsbyi sequence (contained
     in the archive `walsbyi_NAST_job31369.tgz` in the GOS archive) into
     the **top** of your `gos_proxy_seq_NAST.fasta` sequence file
-2.  Go to the main [GreenGenes](https://greengenes.lbl.gov) webpage and
+
+2\.  Go to the main [GreenGenes](https://greengenes.lbl.gov) webpage and
     click on the \"More tools\...\" link under the \"Functions\" menu
-3.  Click on the \"Create distance matrix\" link
-4.  Click on the \"Browse\" button and select your
+
+3\.  Click on the \"Create distance matrix\" link
+
+4\.  Click on the \"Browse\" button and select your
     `gos_proxy_seq_NAST.fasta` file
-5.  Enter your email address and press the \"Calculate Distances\"
+
+5\.  Enter your email address and press the \"Calculate Distances\"
     button.
 
 Do not close the webpage until you have receive an e-mail from Todd
@@ -166,16 +176,21 @@ We will use the PHYLIP program
 to build a neighbor-joining tree of our sequences. To generate the
 rooted tree:
 
-1.  Copy `neighbor.exe` into the directory with your data files and
+
+1\.  Copy `neighbor.exe` into the directory with your data files and
     execute the program
-2.  When prompted for the input file type `gos.dst` and press enter
-3.  Type `O` followed by enter to indicate we wish to specify an
+
+2\.  When prompted for the input file type `gos.dst` and press enter
+
+3\.  Type `O` followed by enter to indicate we wish to specify an
     outgroup sequence
-4.  Type `1` followed by enter to indicate that the first sequence
+
+4\.  Type `1` followed by enter to indicate that the first sequence
     should be used as an outgroup (this is why it is important to place
     the outgroup at the top of our sequence file when creating the
     distance matrix)
-5.  Type `Y` followed by enter to build the neighbor-joining tree
+
+5\.  Type `Y` followed by enter to build the neighbor-joining tree
 
 This will produce two files: `outfile` and `outtree`. The former
 contains useful information about the construction of your tree while
@@ -221,7 +236,8 @@ can use the [read.otu](read.otu) command which reads in the
 `gos.fn.list` file along with a group file indicating which sample each
 sequence comes from. Our analysis will focus on OTUs defined as clusters
 of sequences with a similarity of 97%, 95%, or 90% (i.e., a distance of
-0.03, 0.05, or 0.10):
+
+0\.03, 0.05, or 0.10):
 
     mothur > read.otu(list=gos.fn.list, group=gos.groups, label=unique-0.03-0.05-0.10)
 
@@ -255,7 +271,7 @@ This will generate the file `gos.fn.GS020.rarefaction`. The data in this
 file can be plotted using programs such as
 [R](https://www.r-project.org/) or Matlab. The following plot was
 generated with a [ simple R
-script](Media:RarefactionScriptR.zip):
+script](https://mothur.s3.us-east-2.amazonaws.com/wiki/rarefactionscriptr.zip):
 
 ![Rarefaction curves for sample GS020 at different OTU
 specifications.\|300px\|center](Gos_rarefraction.jpg "Rarefaction curves for sample GS020 at different OTU specifications.|300px|center")
@@ -321,7 +337,8 @@ generate a Venn diagram with mothur:
     venn(groups=GS018-GS019-GS020)
 
 Since we specified an interest in OTUs at a distance of 0.0, 0.03, 0.05,
-0.10, this will generate four output files:
+
+0\.10, this will generate four output files:
 `gos.fn.unique.venn.sharedsobs.svg`, `gos.fn.0.03.venn.sharedsobs.svg`,
 `gos.fn.0.05.venn.sharedsobs.svg`, and
 `gos.fn.0.10.venn.sharedsobs.svg`. These Venn diagrams show the
@@ -336,7 +353,8 @@ more in common with each other than they do with the fresh water sample
 
 ![Venn diagram of observed OTUs for three of the GOS sites at a distance
 of
-0.03.\|300px\|center](Gos_venn.jpg "Venn diagram of observed OTUs for three of the GOS sites at a distance of 0.03.|300px|center")
+
+0\.03.\|300px\|center](Gos_venn.jpg "Venn diagram of observed OTUs for three of the GOS sites at a distance of 0.03.|300px|center")
 
 #### Heatmaps
 

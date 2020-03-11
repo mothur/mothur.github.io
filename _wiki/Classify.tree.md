@@ -61,7 +61,7 @@ cannot be below 51.
 -   1.24.0 - First introduced.
 -   1.31.0 - Bug Fix: when names file is given everything is
     unclassified -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2161&p=6116#p6116>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116](https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116)
 -   1.40.0 Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 

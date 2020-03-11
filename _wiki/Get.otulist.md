@@ -5,7 +5,7 @@ The **get.otulist** command parses a list file and creates an .otu file
 for each distance containing 2 columns. The first column is the OTU
 number the second column is a list of sequences in that OTU. For this
 tutorial you should download and decompress
-[AmazonData.zip](Media:AmazonData.zip).
+[AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
 
 
 ### Default settings

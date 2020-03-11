@@ -7,36 +7,48 @@ potentially chimeric sequences.
 
 ## Algorithm
 
-1.  If filter==true, apply a 50% soft filter and generate a filter.align
+
+1\.  If filter==true, apply a 50% soft filter and generate a filter.align
     file \[this may require pulling filter methods into their own
     classes\]; otherwise no filtering (the Bellerophon server does 50%
     filtering)
-2.  Read sequences into ram as a vector of Sequence objects.
-3.  Find the average midpoint of all sequences in the alignment.
-4.  Define "left" as positions \[1-midpoint\] and right as
+
+2\.  Read sequences into ram as a vector of Sequence objects.
+
+3\.  Find the average midpoint of all sequences in the alignment.
+
+4\.  Define "left" as positions \[1-midpoint\] and right as
     \[midpoint-end\]
-5.  Generate a "Preference" structure with string (sequence name) and
+
+5\.  Generate a "Preference" structure with string (sequence name) and
     float (preference score) entries
-6.  Generate "vector<Preference> preferences(n)" where n corresponds to
+
+6\.  Generate "vector<Preference> preferences(n)" where n corresponds to
     the number of sequences and the sequence name is stored with each
     accession.
-7.  Calculate (use preference instead of col):
+
+7\.  Calculate (use preference instead of col):
     $$$$col\left[i\right]=\sum_j^{N}\left|dm^{left}\left[i\right]\left[j\right]-dm^{right}\left[i\right]\left[j\right]\right|$$$$
 
-    :   Where i is the sequence you are on and j is all the other
+        Where i is the sequence you are on and j is all the other
         sequences. If correction=T, then dm=sqrt(distance); if
         correction=F, then don't transform the distances. The distance
         calculator should be "eachgap". This step should be
         parallelized.
 
-8.  Sum across all preferences\[i\] to get dme
-9.  Recalculate each preferences\[i\] value as:
+
+8\.  Sum across all preferences\[i\] to get dme
+
+9\.  Recalculate each preferences\[i\] value as:
     $$$${preference}\left[i\right]=\frac{dme}{dme-2 * col\left[i\right]}$$$$
 
-10. Sort the preferences values from high to low.
-11. Output the sorted list to \*.chimera as well as the accession id for
+
+10\. Sort the preferences values from high to low.
+
+11\. Output the sorted list to \*.chimera as well as the accession id for
     the closest sequence on the left and right
-12. Output to the screen:
+
+12\. Output to the screen:
     -   average number of letters on either side of midpoint
     -   number of sequences with a preference score above the 95th
         percentile
@@ -128,7 +140,7 @@ square root of the distances is used instead of the distance value.
 ## Revisions
 
 -   1.23.0 - fixed bug with MPI-enabled version -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1151>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1151](https://forum.mothur.org/viewtopic.php?f=4&t=1151)
 -   1.40.0 - Removes processors option.
 
 [Category:Commands](Category:Commands)

@@ -54,7 +54,7 @@ suggestions, and questions.
     and sequence group in a groupfile.
 -   added groups option to [get.oturep](get.oturep)
     command. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=219&sid=90e7a96c678e887e09bc1d8a37c34052>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=219&sid=90e7a96c678e887e09bc1d8a37c34052](https://forum.mothur.org/viewtopic.php?f=5&t=219&sid=90e7a96c678e887e09bc1d8a37c34052)
 -   mods to [trim.seqs](trim.seqs):
     -   made it optional to give a name for the forward primer
     -   warned if the same barcode is used twice
@@ -64,10 +64,10 @@ suggestions, and questions.
         rolling average and a sliding window
 -   added confidence intervals for [thetayc](thetayc)
 -   You can now set a default path at compile time -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=493&sid=cb4f1276fa6bfc534be4a3d024628e5a>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=493&sid=cb4f1276fa6bfc534be4a3d024628e5a](https://forum.mothur.org/viewtopic.php?f=5&t=493&sid=cb4f1276fa6bfc534be4a3d024628e5a)
 -   you can now set the frequency as a percentage for the collect, and
     rarefaction commands.
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=402&sid=754ff6ec088428a5dcce50ed1e307d70>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=402&sid=754ff6ec088428a5dcce50ed1e307d70](https://forum.mothur.org/viewtopic.php?f=5&t=402&sid=754ff6ec088428a5dcce50ed1e307d70)
 -   added tempdefault parameter to [set.dir](set.dir) to
     override the default set at compile time.
 

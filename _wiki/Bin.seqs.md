@@ -5,7 +5,7 @@ title: 'Bin.seqs'
 sequences are ordered according to the OTU that they belong to. Such an
 output may be helpful for generating primers specific to an OTU or for
 classification of sequences. For this tutorial, download and decompress
-[AmazonData.zip](Media:AmazonData.zip).
+[AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
 
 
 ## Default settings

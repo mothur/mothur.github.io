@@ -203,7 +203,7 @@ when using sff files. Default=True.
 -   1.37.0 Bug Fix: Fastq.info error about no inputs selected when
     running **make.sra** with single fastq file and oligos file.
 -   1.37.0 Adds includescrap parameter
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3750&p=11122#p11122>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=3750&p=11122#p11122](https://forum.mothur.org/viewtopic.php?f=3&t=3750&p=11122#p11122)
 -   1.39.0 Adds trim parameter for use with sff files
 -   1.40.0 Adds additional format checks.
     [\#410](https://github.com/mothur/mothur/issues/410)

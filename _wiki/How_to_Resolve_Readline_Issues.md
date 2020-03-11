@@ -13,7 +13,7 @@ name, so use yum search to find it:
 
     yum search readline
 
-![](YumSearchReadline.png "YumSearchReadline.png")
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/yumsearchreadline.png)
 
 To compile properly mothur needs the devel files.
 
@@ -27,7 +27,7 @@ so use yum search to find it:
 
     yum search ncurses
 
-![](YumSearchNcurses.png "YumSearchNcurses.png")
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/yumsearchncurses.png)
 
 To compile properly mothur needs the devel files.
 

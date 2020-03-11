@@ -49,14 +49,15 @@ default is 7.
 ### svg
 
 The svg parameter allows you to specify whether or not you would like a
-.svg file outputted for each query sequence. This can be helpful in
+
+\.svg file outputted for each query sequence. This can be helpful in
 visualizing the chimeric break. By default svg=false and no picture
 files are outputted.
 
     mothur > chimera.check(fasta=ex.align, template=core_set_aligned.imputed.fasta, svg=t)
 
 To see the .svg files for these sequences download [svg
-files](Media:chimeraCheckSVGFiles.zip)
+files](https://mothur.s3.us-east-2.amazonaws.com/wiki/chimerachecksvgfiles.zip)
 
 ### name
 

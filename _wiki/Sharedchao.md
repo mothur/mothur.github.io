@@ -60,7 +60,7 @@ shown below.
 ### Two group example
 
 Open the file 98\_lt\_phylip\_amazon.fn.shared generated using the [
-Amazonian dataset](Media:AmazonData.zip) with the following
+Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following
 commands:
 
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
@@ -154,7 +154,7 @@ These are the same values that we found above for a cutoff of 0.10.
 ### Three group example
 
 Open the file esophagus.fn.shared generated using the [ Esophagus
-dataset](Media:Esophagus.zip) with the following commands:
+dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) with the following commands:
 
     mothur > cluster(phylip=abrecovery.dist, cutoff=0.10)
     mothur > make.shared(list=abrecovery.fn.list, group=abrecovery.groups, label=0.10)

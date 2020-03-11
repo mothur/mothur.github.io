@@ -9,7 +9,7 @@ with the [cluster](cluster) command. The command is also able
 to generate a phylip-formatted distance matrix. There are several
 options for how to handle gap comparisons and terminal gaps. This
 tutorial uses the data files in [
-AmazonData.zip](Media:AmazonData.zip).
+AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
 
 
 ## Default settings
@@ -86,7 +86,8 @@ The default is for countends to equal T.
 
 If you know that you are not going to form OTUs with distances larger
 than 0.10, you can tell mothur to not save any distances larger than
-0.10. This will significantly cut down on the amount of hard drive space
+
+0\.10. This will significantly cut down on the amount of hard drive space
 required to store the matrix. This can be done as follows:
 
     mothur > pairwise.seqs(fasta=amazon.fasta, cutoff=0.10)

@@ -94,7 +94,7 @@ Geographical environmental feature (eg., harbor, lake).
 ### geo\_loc\_name
 
 Geographical origin of the sample; use the appropriate name from this
-list <https://www.insdc.org/documents/country-qualifier-vocabulary>. Use
+list [https://www.insdc.org/documents/country-qualifier-vocabulary](https://www.insdc.org/documents/country-qualifier-vocabulary). Use
 a colon to separate the country or ocean from more detailed information
 about the location, eg \\\"Canada: Vancouver\\\" or \\\"Germany: halfway
 down Zugspitze, Alps\\\".
@@ -286,7 +286,7 @@ Links to additional analysis.
 
 ### link\_class\_info
 
-The link to digitized **soil** maps or other soil classification
+The link to digitized **soil** maps or other **soil** classification
 information.
 
     format: {PMID|DOI|URL}
@@ -299,7 +299,7 @@ The link to climate resource.
 
 ### local\_class
 
-The **soil** classification based on local soil classification system.
+The **soil** classification based on local **soil** classification system.
 
     format: {text} 
 

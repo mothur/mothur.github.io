@@ -12,7 +12,7 @@ columns contain the number of OTUs within each category (OTUs containing
 1 sequence, OTUs containing 2 sequences, 3 sequences, etc).
 
 Sample output of 98\_sq\_phylip\_amazon.fn.sabund, which can be download
-in the [AmazonData.zip](Media:AmazonData.zip) file:
+in the [AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) file:
 
     unique 2   94  2   
     0.00   2   92  3   

@@ -13,7 +13,7 @@ sequences were originally published by [Hartmann and Widmer
 
 Download the sequences from [NCBI GenBank](https://www.ncbi.nlm.nih.gov)
 by using the command DQ827724:DQ829627 \[ACCN\] or from [
-DOK03.zip](Media:DOK03.zip). We will first generate a
+DOK03.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/dok03.zip). We will first generate a
 multiple sequence alignment of the 1904 16S sequences by using mothur.
 You can download and unpack the [ greengenes or silva
 database](Alignment_database) to the mothur folder. Open the
@@ -46,16 +46,22 @@ algorithm can be run online (e.g.
 [mobyle.pasteur.fr](https://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist))
 or downloaded and used according to the following instructions:
 
-1.  Download the [Phylip
+
+1\.  Download the [Phylip
     package](https://evolution.genetics.washington.edu/phylip/getme.html).
-2.  Copy the executable dnadist.exe into the directory with your data
+
+2\.  Copy the executable dnadist.exe into the directory with your data
     files and execute the program.
-3.  When prompted for the input file type the name of the phylip
+
+3\.  When prompted for the input file type the name of the phylip
     formatted alignment file (e.g. DOK03.al.greengenes.phy).
-4.  Create new outfile (e.g. DOK03.al.greengenes.dist).
-5.  Press D to select Jukes-Cantor as distance. Default can be used for
+
+4\.  Create new outfile (e.g. DOK03.al.greengenes.dist).
+
+5\.  Press D to select Jukes-Cantor as distance. Default can be used for
     all other parameters.
-6.  Copy the file into the mothur folder.
+
+6\.  Copy the file into the mothur folder.
 
 ## OTU-based analyses
 
@@ -88,7 +94,8 @@ DOK03.al.greengenes.fn.sabund, and DOK03.al.greengenes.fn.rarefaction.
 Plot rarefaction curves of both alignments at OTU levels unique, 0.03
 and 0.05 and you will see that both alignments perform very similarly in
 generating OTUs. ![Rarefaction curves at OTU levels unique, 0.03 and
-0.05 for both alignments, i.e. greengenes (G) and mafft
+
+0\.05 for both alignments, i.e. greengenes (G) and mafft
 (M).\|300px\|centre](DOK03_CompAlign.png "fig:Rarefaction curves at OTU levels unique, 0.03 and 0.05 for both alignments, i.e. greengenes (G) and mafft (M).|300px|centre")
 
 #### Richness/diversity of samples
@@ -107,7 +114,7 @@ the definition file DOK.groups and the read.otu command:
 This command will generate the files DOK03.al.greengenes.fn.shared,
 DOK03.al.greengenes.fn.NOFERT.list, DOK03.al.greengenes.fn.CONFYM.list,
 and DOK03.al.greengenes.fn.BIODYN.list. Look at examples for a [
-shared](Shared_file) or [ list](List_file "wikilink") file.
+shared](Shared_file) or [ list](List_file) file.
 We are of course interested in how well our sampling effort covers the
 diversity of the bacterial communities as well as how diversity/richness
 of the communities compare between the three different treatments. For
@@ -128,13 +135,14 @@ and
     mothur > rarefaction.single()
 
 ![Rarefaction curves for samples NOFERT, CONFYM and BIODYN at OTU level
-0.03. Lower and higher confidence intervals are indicated as dashed
+
+0\.03. Lower and higher confidence intervals are indicated as dashed
 lines.\|300px\|centre](DOK03_rarefact.single.png "fig:Rarefaction curves for samples NOFERT, CONFYM and BIODYN at OTU level 0.03. Lower and higher confidence intervals are indicated as dashed lines.|300px|centre")
 The three datasets show no difference in the rarefaction curves,
 indicating that they have very similar diversity. We will calculate and
 compare some commonly used [ richness and diversity
-estimators](Calculators) such as [ Chao1](Chao "wikilink"), [
-ACE](Ace), [ Shannon](Shannon "wikilink"), and [
+estimators](Calculators) such as [ Chao1](Chao), [
+ACE](Ace), [ Shannon](Shannon), and [
 Simpson](Simpson):
 
     mothur > read.otu(list=DOK03.al.greengenes.fn.NOFERT.list)
@@ -152,7 +160,8 @@ and
 
 ![Richness (Chao1, ACE) and diversity (Shannon, 1-Simpson) estimators of
 the datasets NOFERT, BIODYN, and CONFYM at an OTU definition level of
-0.03. Lower and higher confidence intervals are indicated as error
+
+0\.03. Lower and higher confidence intervals are indicated as error
 bars.\|300px\|centre](DOK03_estimators.png "fig:Richness (Chao1, ACE) and diversity (Shannon, 1-Simpson) estimators of the datasets NOFERT, BIODYN, and CONFYM at an OTU definition level of 0.03. Lower and higher confidence intervals are indicated as error bars.|300px|centre")
 Generally, only small differences in richness and diversity were
 observed among the three communities. The Simpson diversity index
@@ -174,7 +183,7 @@ the number of OTUs that are shared between pairs or all three samples:
 This will create two files called DOK03.al.greengenes.fn.shared.summary
 and DOK03.al.greengenes.fn.sharedmultiple.summary that give several
 calculators of shared richness (e.g. [ Shared
-Sobs](Sharedsobs), [ Shared Chao1](Sharedchao "wikilink"), [
+Sobs](Sharedsobs), [ Shared Chao1](Sharedchao), [
 Shared ACE](Sharedace)) and community similarity (e.g. [
 Jaccard Similarity](Jabund), [ Sorenson
 Similarity](Sorabund), [ Yue & Clayton
@@ -185,7 +194,8 @@ whereas CONFYM is more similar to NOFERT than BIODYN to NOFERT. ![Shared
 richness (Sobs, Chao1, ACE) and similarity (abundance-based Jaccard and
 Sorenson, Yue & Clayton) indices of datasets NOFERT, BIODYN, and CONFYM
 at an OTU definition level of
-0.03.\|300px\|centre](DOK03_sharedOTU.png "fig:Shared richness (Sobs, Chao1, ACE) and similarity (abundance-based Jaccard and Sorenson, Yue & Clayton) indices of datasets NOFERT, BIODYN, and CONFYM at an OTU definition level of 0.03.|300px|centre")
+
+0\.03.\|300px\|centre](DOK03_sharedOTU.png "fig:Shared richness (Sobs, Chao1, ACE) and similarity (abundance-based Jaccard and Sorenson, Yue & Clayton) indices of datasets NOFERT, BIODYN, and CONFYM at an OTU definition level of 0.03.|300px|centre")
 Venn diagrams are particularly useful to display such data as long as
 the number of comparisons is not higher than three.
 
@@ -194,7 +204,8 @@ the number of comparisons is not higher than three.
 
 ![Venn diagram for shared richness (Sobs) among the datasets NOFERT,
 BIODYN, and CONFYM at OTU definition of
-0.03.\|300px\|centre](DOK03_SobsVenn.png "Venn diagram for shared richness (Sobs) among the datasets NOFERT, BIODYN, and CONFYM at OTU definition of 0.03.|300px|centre")
+
+0\.03.\|300px\|centre](DOK03_SobsVenn.png "Venn diagram for shared richness (Sobs) among the datasets NOFERT, BIODYN, and CONFYM at OTU definition of 0.03.|300px|centre")
 
 ## Hypothesis-based analyses
 
@@ -212,7 +223,8 @@ mothur in the shared file.
 
 ![Cluster analysis of NOFERT, BIODYN, and CONFYM at an OTU definition
 level of
-0.03.\|300px\|centre](DOK03_sharedcluster.png "Cluster analysis of NOFERT, BIODYN, and CONFYM at an OTU definition level of 0.03.|300px|centre")
+
+0\.03.\|300px\|centre](DOK03_sharedcluster.png "Cluster analysis of NOFERT, BIODYN, and CONFYM at an OTU definition level of 0.03.|300px|centre")
 
 We evaluate if these results can be confirmed by using [hypothesis
 testing approaches](hypothesis_testing_approaches) such as
@@ -246,16 +258,23 @@ The neighbor algorithm can be run online
 ([mobyle.pasteur.fr](https://mobyle.pasteur.fr/cgi-bin/portal.py?form=neighbor))
 or downloaded and used according to the following instructions:
 
-1.  Download the [Phylip
+
+1\.  Download the [Phylip
     package](https://evolution.genetics.washington.edu/phylip/getme.html).
-2.  Copy the executable neighbor.exe into the directory with your data
+
+2\.  Copy the executable neighbor.exe into the directory with your data
     files and execute the program.
-3.  When prompted for the input file type the name of the DNA distance
+
+3\.  When prompted for the input file type the name of the DNA distance
     matrix created above, i.e. DOK03.al.greengenes.dist).
-4.  Create new outfile (e.g. DOK03.al.greengenes.report).
-5.  Run neighbor.exe using default settings.
-6.  Create new treefile (e.g. DOK03.al.greengenes.tree).
-7.  Copy the file into the mothur folder.
+
+4\.  Create new outfile (e.g. DOK03.al.greengenes.report).
+
+5\.  Run neighbor.exe using default settings.
+
+6\.  Create new treefile (e.g. DOK03.al.greengenes.tree).
+
+7\.  Copy the file into the mothur folder.
 
 Now we are ready to run the [parsimony](parsimony) test in
 mothur:

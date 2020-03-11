@@ -16,13 +16,13 @@ mothur. Because the original sff file is not available, I\'ve created
 mock fasta and qual files complete with the forward primer and the
 barcode. To follow this tutorial you will need the following files\...
 
--   [ Costello dataset](Media:CostelloData.zip)
+-   [ Costello dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/costellodata.zip)
 -   [ SILVA-based bacterial reference
-    alignment](Media:silva.bacteria.zip)
+    alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.zip)
 -   [ SILVA-based alignment of the Gold reference
-    set](Media:silva.gold.bacteria.zip)
+    set](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.gold.bacteria.zip)
 -   [ mothur-formatted version of the RDP training
-    set](Media:RDPTrainingSet.zip)
+    set](https://mothur.s3.us-east-2.amazonaws.com/wiki/rdptrainingset.zip)
 
 In addition, you probably want to get your hands on the following\...
 
@@ -114,7 +114,7 @@ greater than 8 nt and if it contains an ambiguous base call (i.e. an
 
 ![Distribution of sequence lengths following trim.seqs step and can be
 found in
-stool.trim.fasta.summary](StoolTrimmedSeqLength.jpg "Distribution of sequence lengths following trim.seqs step and can be found in stool.trim.fasta.summary"){width="300"}
+stool.trim.fasta.summary](StoolTrimmedSeqLength.jpg "Distribution of sequence lengths following trim.seqs step and can be found in stool.trim.fasta.summary")
 
 This will generate several files - stool.trim.fasta, stool.scrap.fasta,
 and stool.groups. We are interested in the \*trim\* and \*groups file
@@ -233,7 +233,7 @@ reasons I articulated in a recent [PLoS Computational
 Biology](https://www.ncbi.nlm.nih.gov/pubmed/20011594) paper that I
 published. For now, if your computer has less than 2 GB of RAM you
 should probably stick with the [ greengenes reference
-alignment](Media:greengenes.alignment.zip) and tell your PI
+alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/greengenes.alignment.zip) and tell your PI
 to [order you some more
 RAM](https://www.google.com/search?client=safari&rls=en&q=ram&ie=UTF-8&oe=UTF-8#q=ram&hl=en&client=safari&rls=en&prmd=ivnsr&source=univ&tbs=shop:1&tbo=u&sa=X&ei=ywtoTbuxOJC6tgftipHmAw&ved=0CHwQrQQ&biw=1290&bih=1468&bav=on.1,or.&fp=61ddd4f1c4c47812).
 
@@ -557,7 +557,8 @@ was there as a holdover from the subject\'s diet. First we are going to
 classify our sequences using the mothur-formatted version of the RDP
 training set. The default is to do 100 iterators; however, if our
 threshold bootstrap value is 80%, then the confidence interval will be
-1.95 times the square root of (0.8 \* 0.2) / 100 or 0.078. This means
+
+1\.95 times the square root of (0.8 \* 0.2) / 100 or 0.078. This means
 that the confidence interval around 80% is 72 to 88%. Alternatively, we
 can increase our confidence in the bootstrap value by increasing the
 number of iterations to 1000. Our confidence interval would shrink to
@@ -827,7 +828,7 @@ the confidence interval about the richness estimate will shrink.
 Finally, let\'s get a table containing the [ number of
 sequences](nseqs), the sample
 [coverage](coverage), the number of [ observed
-OTUs](sobs), and the [invsimpson](invsimpson "wikilink")
+OTUs](sobs), and the [invsimpson](invsimpson)
 diversity estimate using the [summary.single](summary.single)
 command:
 
@@ -894,7 +895,7 @@ prediction that female subject 1\'s core microbiome contained at least
 
 Next, let\'s generate a dendrogram to describe the similarity of the
 samples to each other. We will generate a dendrogram using the
-[jclass](jclass) and [thetayc](thetayc "wikilink")
+[jclass](jclass) and [thetayc](thetayc)
 calculators within the [tree.shared](tree.shared) command:
 
     mothur > tree.shared(calc=thetayc-jclass)
@@ -967,7 +968,7 @@ ordination plots. We can calculate distances between samples using the
 The two resulting distance matrices (i.e.
 stool.final.an.thetayc.0.03.lt.dist and
 stool.final.an.jclass.0.03.lt.dist) can then be visualized using the
-[pcoa](pcoa) or [nmds](nmds "wikilink") plots. Principal
+[pcoa](pcoa) or [nmds](nmds) plots. Principal
 Coordinates (PCoA) uses an eigenvector-based approach to represent
 multidimensional data in as few dimesnsions as possible. Our data is
 highly dimensional (\~22 dimensions).
@@ -1222,7 +1223,7 @@ do, please let us know and we\'ll see about adding it to the package.
 There is a certain \"pipeline\" aspect to this analysis; however, it is
 also very much an art of working with sequences. If you want to
 basically do everything that was described above, you can use the [
-stool.batch file](Media:stool.batch.zip) and use mothur in
+stool.batch file](https://mothur.s3.us-east-2.amazonaws.com/wiki/stool.batch.zip) and use mothur in
 the [batch mode](batch_mode) as follows:
 
     $$ ./mothur stool.batch

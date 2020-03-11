@@ -25,7 +25,7 @@ mirror each other.
 
 The file 98\_sq\_phylip\_amazon.dist is an example of a square matrix,
 which can be obtained from the [
-AmazonData.zip](Media:AmazonData.zip) zip file:
+AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) zip file:
 
       98
     U68589      0.0000  0.3371  0.3610  0.4155  0.2873  0.2971  0.3922  0.3093

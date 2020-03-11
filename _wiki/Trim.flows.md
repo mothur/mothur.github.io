@@ -222,7 +222,7 @@ GQY1XT001.flow.files file.
 -   First Introduced - version 1.22.0.
 -   1.23.0 - fixed bug that occurred if you had multiple primers with
     blank names. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1358>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1358](https://forum.mothur.org/viewtopic.php?f=4&t=1358)
 -   1.24.0 - added linker and spacer option to the oligos file, as well
     as ldiffs and sdiffs parameters.
 -   1.25.0 - allow for characters other than ATGC in reverse primers.

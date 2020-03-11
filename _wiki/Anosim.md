@@ -6,7 +6,7 @@ of changes in community structure. \_Australian Journal of Ecology\_ 18,
 117-143.
 
 To run the tutorial below please download the [
-files](Media:DuneData.zip) and follow along\...
+files](https://mothur.s3.us-east-2.amazonaws.com/wiki/dunedata.zip) and follow along\...
 
 ## Default Settings
 

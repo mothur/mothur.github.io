@@ -96,11 +96,11 @@ File Size:
     options to help with this. The first is to use a cutoff. By using a
     cutoff mothur will only load distances that are below the cutoff. If
     that is still not enough, there is a command called cluster.split,
-    <https://www.mothur.org/wiki/cluster.split> which divides the
+    [cluster.split](cluster.split) which divides the
     distance matrix, and clusters the smaller pieces separately. You may
     also be able to reduce the size of the original distance matrix by
     using the commands outline in the Schloss SOP,
-    <https://www.mothur.org/wiki/Schloss_SOP>.
+    [Schloss_SOP](Schloss_SOP).
 
 Wrong Format:
 
@@ -120,7 +120,7 @@ processing can not be overstressed. Error filled reads produce error
 filled results.
 
 [Mothur Blog - Why do I have such a large distance
-matrix?](https://blog.mothur.org/2014/09/11/Why-such-a-large-distance-matrix/)
+matrix?](/blog/2014/Why-such-a-large-distance-matrix/)
 
 \"To take a step back, if you look through our MiSeq SOP, you'll see
 that we go to great pains to only work with the unique sequences to
@@ -202,7 +202,7 @@ The clearcut commands creates a phylogenetic tree that represents how
 sequences relate. The clearcut program written by Initiative for
 Bioinformatics and Evolutionary Studies (IBEST) at the University of
 Idaho. For more information about clearcut please refer to
-<https://bioinformatics.hungry.com/clearcut/>
+[https://bioinformatics.hungry.com/clearcut/](https://bioinformatics.hungry.com/clearcut/)
 
 The tree.shared command will generate a newick-formatted tree file that
 describes the dissimilarity (1-similarity) among multiple groups. Groups
@@ -237,25 +237,25 @@ sure to pay close attention to the \"unique\" and \"shared\" parameters,
 ### What are mothur\'s file types?
 
 Mothur uses and creates many file types. [
-Fasta](Fasta_file), [ name](Name_file "wikilink"), [
-group](Group_file), [ design](Design_File "wikilink"), [
-count](Count_File), [ list](List_file "wikilink"), [
-rabund](Rabund_file), [ sabund](Sabund_file "wikilink"), [
-shared](Shared_file), [ relabund](Relabund_file "wikilink"),
+Fasta](Fasta_file), [ name](Name_file), [
+group](Group_file), [ design](Design_File), [
+count](Count_File), [ list](List_file), [
+rabund](Rabund_file), [ sabund](Sabund_file), [
+shared](Shared_file), [ relabund](Relabund_file),
 [ oligos](Oligos_File), [
 taxonomy](Taxonomy_outline), [
 constaxonomy](Constaxonomy_file), [
 phylip](Phylip-formatted_distance_matrix), [
 column](Column-formatted_distance_matrix), [
-flow](Flow_file), [ qfile](Quality_File "wikilink"), [
-file](File_File) and [ tree](Tree_file "wikilink"). You can
-find out more here: <https://www.mothur.org/wiki/File_Types>.
+flow](Flow_file), [ qfile](Quality_File), [
+file](File_File) and [ tree](Tree_file). You can
+find out more here: [File_Types](File_Types).
 
 ### How do I select certain sequences or groups of sequences?
 
 Mothur has several \"get\" and \"remove\" commands:
-[get.seqs](get.seqs), [get.lineage](get.lineage "wikilink"),
-[get.groups](get.groups), [get.otus](get.otus "wikilink"),
+[get.seqs](get.seqs), [get.lineage](get.lineage),
+[get.groups](get.groups), [get.otus](get.otus),
 [get.dists](get.dists),
 [remove.seqs](remove.seqs),
 [remove.lineage](remove.lineage),
@@ -295,7 +295,7 @@ would cause a mismatch error downstream.
 ### Is there a list of all of mothur\'s commands?
 
 Yes! You can find it here,
-<https://www.mothur.org/wiki/Category:Commands>.
+[Category:Commands](Category:Commands).
 
 ### How do I visualize my results from mothur?
 

@@ -11,7 +11,7 @@ curves for the calculators you are interested in to determine how
 sensitive the values are to sampling. If the values are not sensitive to
 sampling, then you can trust the values. Otherwise, you need to keep
 sampling. For this tutorial you should download and decompress [
-Patient70Data.zip](Media:Patient70Data.zip)
+Patient70Data.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/patient70data.zip)
 
 
 ## Default settings
@@ -192,7 +192,7 @@ times. Default=f.
 -   1.29.0 - added subsampling parameters
 -   1.33.0 - Bug Fix: \*.ave.dist matrix = 0 when processors \> 2 when
     using the subsample parameter and not using the distance parameter.
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2660&p=7372#p7372>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=2660&p=7372#p7372](https://forum.mothur.org/viewtopic.php?f=4&t=2660&p=7372#p7372)
 -   1.33.0 - added [Square Root Jensen-Shannon
     Divergenceand](Square_Root_Jensen-Shannon_Divergence)
     [Jensen-Shannon Divergence](Jensen-Shannon_Divergence)

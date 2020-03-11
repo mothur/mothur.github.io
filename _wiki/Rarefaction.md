@@ -15,7 +15,7 @@ $$S_n$$ = Average number of OTUs observed after drawing n individuals.
 
 $$S_{t}$$ = Total number of OTUs in sample of N total individuals.
 
-In the [ Amazonian dataset](Media:AmazonData.zip) the total
+In the [ Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) the total
 number of sequences was 98, and there were 84 total OTUs with 75
 singletons, 6 doubletons, 1 tripleton, and 2 quadrupletons when defining
 OTUs at a 0.03 distance cutoff. If we were interested in the predicted

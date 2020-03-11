@@ -18,7 +18,7 @@ by mothur:
     mothur > make.shared(list=sogin.unique.good.filter.fn.list, group=sogin.good.groups)
 
 Then running the following command will generate the heatmaps for the
-[jest](jest) and [thetayc](thetayc "wikilink") calculators
+[jest](jest) and [thetayc](thetayc) calculators
 for each line in the [ list](list_file) or [shared
 file](shared_file)
 

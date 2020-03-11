@@ -4,7 +4,7 @@ title: 'Get.coremicrobiome'
 The **get.coremicrobiome** command
 determines the fraction of OTUs that are found in varying numbers of
 samples for different minimum relative abundances. To run this tutorial
-download, [ Example Files ](Media:_temp.job2.shared.zip)
+download, [ Example Files ](https://mothur.s3.us-east-2.amazonaws.com/wiki/_temp.job2.shared.zip)
 
 ## Default Settings
 
@@ -45,7 +45,8 @@ have a relative abundance at or above %X in at least %Y samples. X goes
 from 0 to 100, Y from 1 to the number of samples in your dataset. From
 the above file we can see that 0.615385 (roughly 62%) of the OTUs have a
 relative abundance at or above 0.01 in at least one sample, but only
-0.230769 (roughly 23%) have a relative abundance at or above 0.01 in all
+
+0\.230769 (roughly 23%) have a relative abundance at or above 0.01 in all
 the samples.
 
 ## Options

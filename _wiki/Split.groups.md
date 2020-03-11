@@ -2,12 +2,12 @@
 title: 'Split.groups'
 ---
 The **split.groups** command reads a [
-list](list_file), [ fasta](fasta_file "wikilink") file or [
-flow](flow_file) and [ group](group_file "wikilink") file or
-[ count](Count_File) or [ fastq](Fastq_File "wikilink") file
+list](list_file), [ fasta](fasta_file) file or [
+flow](flow_file) and [ group](group_file) file or
+[ count](Count_File) or [ fastq](Fastq_File) file
 and generates a fasta, flow or fastq files for each group in the
 groupfile. To run this tutorial please download [ Esophagus
-dataset](Media:Esophagus.zip).
+dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip).
 
 ## Default Settings
 

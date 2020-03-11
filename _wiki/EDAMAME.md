@@ -74,14 +74,14 @@ data. If you aren\'t getting these files off the sequencer, then you
 likely have the software parameters set incorrectly. For this tutorial
 you will need several sets of files that are already loaded in the AMI.
 
--   [ Example data from Schloss lab](Media:MiSeqSOPData.zip)
+-   [ Example data from Schloss lab](https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip)
     that will be used with this tutorial. It was extracted from the
     [full
     dataset](https://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
 -   [ SILVA-based bacterial reference
-    alignment](Media:Silva.seed_v128.tgz)
+    alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v128.tgz)
 -   [ mothur-formatted version of the RDP training set
-    (v.16)](Media:Trainset16_022016.pds.tgz)
+    (v.16)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset16_022016.pds.tgz)
 
 You can easily substitute these choices (and should) for the reference
 and taxonomy alignments using the updated [Silva reference
@@ -319,7 +319,7 @@ have the reference database (silva.bacteria.fasta) and know where in
 that alignment your sequences start and end. To remove the leading and
 trailing dots we will set keepdots to false. You could also run this
 command for different coordinates using your [primers of
-interest](https://blog.mothur.org/2016/07/07/Customization-for-your-region/):
+interest](/blog/2016/Customization-for-your-region/):
 
     mothur > pcr.seqs(fasta=data/references/silva.seed_v128.align, start=11894, end=25319, keepdots=F)
 
@@ -483,7 +483,8 @@ Running summary.seqs we see what we\'re left with:
     total # of seqs:   117883
 
 Note that we went from 128,365 to 117,883 sequences for a reduction of
-8.2%; this is a reasonable number of sequences to be flagged as
+
+8\.2%; this is a reasonable number of sequences to be flagged as
 chimeric. As a final quality control step, we need to see if there are
 any \"undesirables\" in our dataset. Sometimes when we pick a primer set
 they will amplify other stuff that gets to this point in the pipeline
@@ -605,7 +606,7 @@ Mock sample from our dataset using the
 
 Now we have a couple of options for clustering sequences into OTUs. For
 a small dataset like this, we can do the traditional approach using
-[dist.seqs](dist.seqs) and [cluster](cluster "wikilink"):
+[dist.seqs](dist.seqs) and [cluster](cluster):
 
     mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, cutoff=0.03)
     mothur > cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
@@ -642,7 +643,8 @@ command we use taxlevel=4, which corresponds to the level of Order.
 Next we want to know how many sequences are in each OTU from each group
 and we can do this using the [make.shared](make.shared)
 command. Here we tell mothur that we\'re really only interested in the
-0.03 cutoff level:
+
+0\.03 cutoff level:
 
     mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=0.03)
 
@@ -813,7 +815,7 @@ sequences.
     mothur > dist.shared(shared=stability.opti_mcc.shared, calc=thetayc-jclass, subsample=2391)
 
 We can visualize those distances as similarities in a heatmap with the [
-Jaccard](Jclass) and [thetayc](thetayc "wikilink")
+Jaccard](Jclass) and [thetayc](thetayc)
 coefficients. We will do this with the
 [heatmap.sim](heatmap.sim) command:
 
@@ -837,7 +839,7 @@ OTUs were shared by all four time points. We could look deeper at the
 shared file to see whether those OTUs were numerically rare or just had
 a low incidence. Next, let\'s generate a dendrogram to describe the
 similarity of the samples to each other. We will generate a dendrogram
-using the [jclass](jclass) and [thetayc](thetayc "wikilink")
+using the [jclass](jclass) and [thetayc](thetayc)
 calculators within the [tree.shared](tree.shared) command:
 
     mothur > tree.shared(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist)
@@ -1020,7 +1022,8 @@ Opening the file mouse.dpw.spearman.corr.axes, we see:
 
 Indicating that as the dpw increases the communities shift to in the
 negative direction along axis 1 and in the positive direction along axis
-3.
+
+3\.
 
 Another tool we can use is
 [get.communitytype](get.communitytype) to see whether our

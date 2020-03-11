@@ -19,6 +19,11 @@
 <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/android-192x192.png" sizes="192x192"> -->
 
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+{% if page.file_redirect %}
+<meta http-equiv="refresh" content="0;URL='{{page.file_redirect}}'" />  
+{% endif %}
+
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:type" content="website" />

@@ -73,7 +73,7 @@ next command.
 
 -   1.26.0 - added debug parameter
 -   1.31.0 - added modifynames parameter. -
-    <https://www.mothur.org/forum/viewtopic.php?f=10&t=2324&p=6360#p6360>
+    [https://forum.mothur.org/viewtopic.php?f=10&t=2324&p=6360#p6360](https://forum.mothur.org/viewtopic.php?f=10&t=2324&p=6360#p6360)
 -   1.36.0 - if output directory does not exist mothur will create it
     for you.
 -   1.36.0 - By default tempdefault is set to mothur\'s executable

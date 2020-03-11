@@ -26,7 +26,7 @@ created the [consensus.seqs](consensus.seqs) command to
 generate a consensus sequence for a list of sequences, OTUs or
 phylotypes. Finally, several utility commands such as
 [remove.groups](remove.groups),
-[get.groups](get.groups), [get.otus](get.otus "wikilink"),
+[get.groups](get.groups), [get.otus](get.otus),
 [remove.otus](remove.otus) have been added to make data
 processing added. As always, we have also added a number of smaller
 features to existing commands and cured a few bugs. These are generally
@@ -67,7 +67,7 @@ the [six packs](https://leinie.com/red.html) coming
 
 ## Feature updates
 
--   [cluster](cluster) and [hcluster](hcluster "wikilink") -
+-   [cluster](cluster) and [hcluster](hcluster) -
     added weighted method
 -   [get.seqs](get.seqs) and
     [remove.seqs](remove.seqs) - added qfile parameter

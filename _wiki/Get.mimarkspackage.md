@@ -22,7 +22,7 @@ or
 
 This command will create a template that looks like:
 
-    #This is a tab-delimited file. Additional Documentation can be found at `[`https://www.mothur.org/wiki/MIMarks_Data_Packages`](https://www.mothur.org/wiki/MIMarks_Data_Packages)`.
+    #This is a tab-delimited file. Additional Documentation can be found at `[`MIMarks_Data_Packages`](MIMarks_Data_Packages)`.
     #Please fill all the required fields indicated with '*'
     #Unknown or inapplicable fields can be assigned 'missing' value.
     #You may add extra custom fields to this template. Make sure all the fields are separated by tabs.

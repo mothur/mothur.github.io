@@ -25,7 +25,7 @@ secondary structure of the 16S rRNA gene, if the template database is
 based on the secondary structure, then the resulting alignment will at
 least be implicitly based on the secondary structure. To demonstrate the
 various features of this command, we will use the [ AbRecovery
-dataset](Media:AbRecovery.zip).
+dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip).
 
 
 ## Default settings
@@ -227,19 +227,22 @@ design a recA alignment and use that.
 There are several considerations to remember when aligning your
 sequences:
 
-1.  **The number of sequences to be aligned.** If you use a program such
+
+1\.  **The number of sequences to be aligned.** If you use a program such
     as muscle or clustal, doubling the number of sequences will increase
     the amount of time required by 16-fold and the amount of RAM
     required by 4-fold. In contrast, doubling the number of sequences
     will double the amount of time required and require no extra RAM.
-2.  **The number of sequences in the template database.** Since the
+
+2\.  **The number of sequences in the template database.** Since the
     templates are stored in RAM, you need to consider how many sequences
     to use. Our version of the SILVA SEED database can be loaded in less
     than 2GB of RAM. The number of sequences in the database will have
     an effect on search times. Roughly speaking, doubling the number of
     template sequences should double the amount of time required to find
     the best match.
-3.  **The length of candidate sequences.** Doubling the sequence length
+
+3\.  **The length of candidate sequences.** Doubling the sequence length
     will approximately double the time required to find the best match.
     In the alignment step, doubling the length of the sequences will
     quadruple the amount of time required. For comparison, align.seqs
@@ -247,7 +250,8 @@ sequences:
     needleman algorithm and 31 750-bp fragments (27f-787r) per second.
     There are optimizations that we do in the kmer searching which
     probably explain the differences.
-4.  **The length of the alignment.** Using a 50,000 character alignment
+
+4\.  **The length of the alignment.** Using a 50,000 character alignment
     vs. a 7,700 character alignment means that an extra 42,300 gaps need
     to be inserted into the alignment, which is pretty easy, but still
     takes time. The bigger problem is the effect that it has on storing
@@ -286,14 +290,16 @@ in alignment quality.
 
 There are two very important things to consider:
 
-1.  **Your alignment is only as good as the database you are aligning
+
+1\.  **Your alignment is only as good as the database you are aligning
     to.** The old adage - garbage in, garbage out - hold true in
     sequence alignment. If you are interested in a particular variable
     region, then it would be worth your while to make sure that the
     database you are using is well aligned in that region. This is the
     only reason we might suggest the SILVA alignment over the greengenes
     alignment.
-2.  **Don\'t instinctively trust the alignment you get from any
+
+2\.  **Don\'t instinctively trust the alignment you get from any
     aligner.** It would be worth your while to import your sequences
     into an alignment editor that takes into account the secondary
     structure (e.g. [ARB](https://arb-home.de)) to make sure that things
@@ -304,16 +310,18 @@ There are two very important things to consider:
 ### Common Questions
 
 Can\'t find your question? Please feel free to ask questions on our
-forum, <https://forum.mothur.org>.
+forum, [https://forum.mothur.org](https://forum.mothur.org).
 
 ### Common Issues
 
-1.  **\...template is not aligned, aborting. What do I do?** Mothur
+
+1\.  **\...template is not aligned, aborting. What do I do?** Mothur
     requires the reference file to be aligned to generate aligned
     sequences. You can download mothur\'s aligned silva references here,
-    <https://mothur.org/wiki/Silva_reference_files>. For ITS sequences,
+    [Silva_reference_files](Silva_reference_files). For ITS sequences,
     see \'how to\' below.
-2.  **\...xxx of your sequences generated alignments that eliminated too
+
+2\.  **\...xxx of your sequences generated alignments that eliminated too
     many bases\... What does this mean?** By default, mothur will align
     the reverse compliment of your sequences when the alignment process
     removes more than 50% of the bases indicating the read may be
@@ -322,13 +330,15 @@ forum, <https://forum.mothur.org>.
 
 ### How To
 
-1.  **How do I \'align\' ITS sequences?** You really can\'t do an
+
+1\.  **How do I \'align\' ITS sequences?** You really can\'t do an
     alignment because there isn\'t positional homology. You can use the
     pre.cluster and pairwise.seqs commands to generate a distance matrix
     from unaligned sequences.
-2.  **How do I create a custom reference for the region I am studying?**
+
+2\.  **How do I create a custom reference for the region I am studying?**
     You can tailor your reference using this method:
-    <https://blog.mothur.org/2016/07/07/Customization-for-your-region/>.
+    [/blog/2016/Customization-for-your-region/](/blog/2016/Customization-for-your-region/).
 
 ## Revisions
 

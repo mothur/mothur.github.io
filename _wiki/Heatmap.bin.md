@@ -9,7 +9,7 @@ of that OTU within the group. The command will generate a SVG file that
 can be further modified in a program like Gimp or Adobe Illustrator.
 Options are available to scale the relative abundance for each OTU using
 different approaches. This tutorial uses the data files in [
-AbRecovery.zip](Media:AbRecovery.zip).
+AbRecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip).
 
 ## Default settings
 
@@ -25,7 +25,8 @@ For example, the heatmap that is generated for OTUs defined at the 0.10
 level would be abrecovery.fn.0.10.heatmap.svg.
 
 Alternatively, you could use relative abundance shared data from a
-.relabund file.
+
+\.relabund file.
 
     mothur > make.shared(list=abrecovery.fn.list, group=abrecovery.groups)
     mothur > get.relabund(shared=abrecovery.fn.shared)

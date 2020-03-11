@@ -69,7 +69,8 @@ closest parent. Choices are blast and kmer. Default=blast. If you use
 the blast option you may want to set the blast location parameter as
 well (see below). The blastlocation parameter allows you to specify the
 location of your blast executable. By default mothur will look in
-./blast/bin relative to mothur\'s executable.
+
+\./blast/bin relative to mothur\'s executable.
 
 ### blastlocation
 
@@ -240,7 +241,7 @@ The results would be:
 -   1.30.0 - Bug Fix: dereplicate=t, remove.seqs(dups=f) was not
     removing all redundant chimeras.
 -   1.32.1 Bug Fix: count table and dereplicate=t caused total=0 error
-    message. - <https://www.mothur.org/forum/viewtopic.php?f=4&t=2620>
+    message. - [https://forum.mothur.org/viewtopic.php?f=4&t=2620](https://forum.mothur.org/viewtopic.php?f=4&t=2620)
 -   1.33.0 - improved work balance load between processors when
     processing by group.
 -   1.38.0 - Removes save option.

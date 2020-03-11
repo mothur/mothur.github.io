@@ -11,7 +11,7 @@ curves for the calculators you are interested in to determine how
 sensitive the values are to sampling. If the values are not sensitive to
 sampling, then you can trust the values. Otherwise, you need to keep
 sampling. For this tutorial you should download and decompress
-[AmazonData.zip](Media:AmazonData.zip)
+[AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip)
 
 
 ### Default settings

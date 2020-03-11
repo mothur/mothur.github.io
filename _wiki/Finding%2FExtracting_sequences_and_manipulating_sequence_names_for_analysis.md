@@ -59,7 +59,7 @@ click the thumbtack next to it, or type:
 Now we can export the sequences to our computer. Choose Display
 \"FASTA\" and Send To \"File\"
 
-![](ncbipic.png "ncbipic.png")
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/ncbipic.png)
 
 The default file name will be \"sequences.fasta\". It might be useful to
 name it something more informative.
@@ -92,7 +92,7 @@ changes.
 
 The numbers and letters should be separated as such:
 
-![`Examplspdsht.png`](Examplspdsht.png "Examplspdsht.png")
+![`Examplspdsht.png`](https://mothur.s3.us-east-2.amazonaws.com/wiki/examplspdsht.png)
 
 With some deleting, and some \"find and replace\" magic, you get your
 modified sequence names.
@@ -100,9 +100,9 @@ modified sequence names.
 I\'m sure you can figure out how to delete, and the \"find and replace\"
 is pretty self explanatory:
 
-![`findrplc3.png`](findrplc3.png "findrplc3.png")
+![`findrplc3.png`](https://mothur.s3.us-east-2.amazonaws.com/wiki/findrplc3.png)
 
-![`findrplc2.png`](findrplc2.png "findrplc2.png")
+![`findrplc2.png`](https://mothur.s3.us-east-2.amazonaws.com/wiki/findrplc2.png)
 
 When you are finished, and your sequence names look how you want them,
 save the file as a \".txt\" file but change the \".txt\" to \".fasta\".
@@ -117,7 +117,7 @@ If you are interested in submitting the file to an alignment program
 other than *Mothur* It may also require you to get rid of spaces between
 the sequences:
 
-![`findblue.png`](findblue.png "findblue.png")
+![`findblue.png`](https://mothur.s3.us-east-2.amazonaws.com/wiki/findblue.png)
 
 (highlight and copy the blue area into the find search, and replace with
 \"\>\")
@@ -138,20 +138,20 @@ GenBank summary page under \"isolation source\".
 Now go back to the spreadsheet with your modified sequence names and
 copy these two columns into a blank sheet:
 
-![`2columns.png`](2columns.png "2columns.png")
+![`2columns.png`](https://mothur.s3.us-east-2.amazonaws.com/wiki/2columns.png)
 
 Highlight both of the columns and sort the data based on the second
 column. This may not put them in exact order, but it will group all the
 sequences with similar depths together like such:
 
-![`sorted.png`](sorted.png "sorted.png")
+![`sorted.png`](https://mothur.s3.us-east-2.amazonaws.com/wiki/sorted.png)
 
 Now in a third column, just to the right of the names, type the depth of
 the corresponding name and drag (or copy) that depth for all the
 appropriate sequences. Repeat until every name has the appropriate depth
 next to it and it looks something like this:
 
-![`nowwnames.png`](nowwnames.png "nowwnames.png")
+![`nowwnames.png`](https://mothur.s3.us-east-2.amazonaws.com/wiki/nowwnames.png)
 
 Label them as you wish, just **NO SPACES!** You might be able to tell by
 my bold font that it has caused me troubles in the past\...\...
@@ -161,11 +161,11 @@ Save the sheet as a \".txt\" file but this time change it to \".group\".
 Open the file one more time and find an replace to remove the tab
 between the accession number and the name:
 
-![`undrscrtab.png`](undrscrtab.png "undrscrtab.png")
+![`undrscrtab.png`](https://mothur.s3.us-east-2.amazonaws.com/wiki/undrscrtab.png)
 
 So it looks like this:
 
-![`finalgrp.png`](finalgrp.png "finalgrp.png")
+![`finalgrp.png`](https://mothur.s3.us-east-2.amazonaws.com/wiki/finalgrp.png)
 
 Now you have a .group file with 352 sequence names in 7 different
 groups. You can append this file with more sequence names and groupings

@@ -10,7 +10,7 @@ outline](taxonomy_outline) page. The command requires that
 you provide a fasta-formatted input and database sequence file and a
 taxonomy file for the reference sequences. To complete this tutorial,
 you are encouraged to obtain the [
-AbRecovery](Media:AbRecovery.zip) dataset.
+AbRecovery](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) dataset.
 
 ## Output
 
@@ -185,7 +185,8 @@ This will output the following in the abrecovery.taxonomy file:
     ...
 
 Note: With the knn method using a distance search, mothur will create a
-.match.dist file containing the sequence name, the name of the best
+
+\.match.dist file containing the sequence name, the name of the best
 match in the template and the distance.
 
 ### numwanted
@@ -432,25 +433,28 @@ Simple Format:
 ### Common Questions
 
 Can\'t find your question? Please feel free to ask questions on our
-forum, <https://forum.mothur.org>.
+forum, [https://forum.mothur.org](https://forum.mothur.org).
 
-1.  **Does the reference need to be aligned?** No, mothur does not
+
+1\.  **Does the reference need to be aligned?** No, mothur does not
     require an aligned reference to assign a taxonomy. This is because
     it uses k-mers to find the probabilities of the taxonomic
     assignment.
-2.  **What reference should I use to classify?** We provide mothur
+
+2\.  **What reference should I use to classify?** We provide mothur
     formatted references on the wiki.
-    <https://www.mothur.org/wiki/RDP_reference_files>
-    <https://mothur.org/wiki/Silva_reference_files>
-    <https://www.mothur.org/wiki/Greengenes-formatted_databases>
+    [RDP_reference_files](RDP_reference_files)
+    [Silva_reference_files](Silva_reference_files)
+    [Greengenes-formatted_databases](Greengenes-formatted_databases)
     Alternatively, mothur allows you to create your own references as
     long as they are in fasta and taxonomy file format. You can find
     mothur\'s files formats here,
-    <https://www.mothur.org/wiki/File_Types>.
+    [File_Types](File_Types).
 
 ### Common Issues
 
-1.  **Why are my sequences \'unclassifed\'?** When it comes to
+
+1\.  **Why are my sequences \'unclassifed\'?** When it comes to
     classification there are two things main things that effect the
     number of unclassified results: the quality of the reads and the
     reference files. The bayesian classifier calculates the
@@ -464,7 +468,8 @@ forum, <https://forum.mothur.org>.
 
 ### How To
 
-1.  **How do you recommend classifying to the species level?**
+
+1\.  **How do you recommend classifying to the species level?**
     Unfortunately I do not. You will never get species level
     classification if you are using the RDP or Silva references. They
     only go to the genus level. Even the greengenes database only has
@@ -483,12 +488,12 @@ forum, <https://forum.mothur.org>.
 
 -   1.22.0 Added processors option for Windows users.
 -   1.23.0 - mothur couldn\'t handle parentheses in the taxonomy file. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1370>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1370](https://forum.mothur.org/viewtopic.php?f=4&t=1370)
 -   1.23.0 - fixed memory leak with Windows paralellization.
 -   1.24.0 - mothur will now check if a sequence is reversed before
     classifying.
 -   1.25.0 - segfault if no files are given. Should return error message
-    instead. - <https://www.mothur.org/forum/viewtopic.php?f=4&t=1525>
+    instead. - [https://forum.mothur.org/viewtopic.php?f=4&t=1525](https://forum.mothur.org/viewtopic.php?f=4&t=1525)
 -   1.28.0 Added count parameter
 -   1.28.0 Changed name of \"bayesian\" method to \"wang\"
 -   1.28.0 mothur will ignore sequences present in the taxonomy file,
@@ -499,7 +504,7 @@ forum, <https://forum.mothur.org>.
     path was incorrect.
 -   1.32.0 Removed extra name checks to speed up reading of taxonomy
     file. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&p=6608&sid=42525a60989d015feb8c10b2b5342691>
+    [https://forum.mothur.org/viewtopic.php?f=4&p=6608&sid=42525a60989d015feb8c10b2b5342691](https://forum.mothur.org/viewtopic.php?f=4&p=6608&sid=42525a60989d015feb8c10b2b5342691)
 -   1.33.0 Added relabund parameter
 -   1.37.0 Changes cutoff parameter default to 80. This change in the
     bootstrap threshold reflects the default values in the 454 and MiSeq

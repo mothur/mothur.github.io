@@ -65,7 +65,7 @@ Pat Schloss
     that overlap, but aren\'t exact
 -   [get.lineage](get.lineage) /
     [remove.lineage](remove.lineage) - similar to
-    [remove.seqs](remove.seqs)/[get.seqs](get.seqs "wikilink")
+    [remove.seqs](remove.seqs)/[get.seqs](get.seqs)
     except that instead of taking in an accnos file, one would give a
     taxonomy file and the name of a taxonomic group
 -   [fastq.info](fastq.info) - generate fasta and qual files

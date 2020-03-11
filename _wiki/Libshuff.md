@@ -11,7 +11,7 @@ probability that the communities have the same structure by chance.
 Because each pairwise comparison requires two significance tests, a
 correction for multiple comparisons (e.g. Bonferroni\'s correction) must
 be applied. The files that we discuss in this tutorial can be obtained
-by downloading the [ AmazonData.zip ](Media:_AmazonData.zip)
+by downloading the [ AmazonData.zip ](https://mothur.s3.us-east-2.amazonaws.com/wiki/_amazondata.zip)
 file and decompressing it.
 
 ## Default settings

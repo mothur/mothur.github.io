@@ -20,7 +20,7 @@ $$D_{ab} = \sqrt{S_T \sum_{j=1}^{S_T} \left ( \frac {1}{S_{+j}} \left ( \frac{S_
 -   where $$S_{+j}$$ is the number of samples that contain the jth OTU
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
-Amazonian dataset](Media:AmazonData.zip) with the following
+Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following
 commands:
 
     mothur > read.dist(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
@@ -106,7 +106,8 @@ $$D_{ab} = \sqrt{
 \frac{\left(1/33-0/31\right)^2}{1} -
 \frac{\left(1/33-0/31\right)^2}{1} -
 \frac{\left(1/33-1/31\right)^2}{2} -
-...
+
+\...
 \frac{\left(1/33-0/31\right)^2}{1} -
 \frac{\left(1/33-0/31\right)^2}{1} -
 \frac{\left(1/33-0/31\right)^2}{1} -

@@ -11,7 +11,7 @@ second column is the number of OTUs that have been formed. Subsequent
 columns contain the number of sequences in each OTU.
 
 Sample output of 98\_sq\_phylip\_amazon.fn.rabund, which can be download
-in the [AmazonData.zip](Media:AmazonData.zip) file:
+in the [AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) file:
 
     unique 96  2   2   1   1   1   1   1   1   1   1   1   1   1   1
        1   1   1   1   1   1   1   1   1   1   1   1   1   1   1

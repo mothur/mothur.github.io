@@ -12,7 +12,7 @@ test statistic can only indicate the probability that the communities
 have the same structure by chance. The value does not indicate a level
 of similarity. The files that we discuss in this tutorial can be
 obtained by downloading the [
-AbRecovery.zip](Media:AbRecovery.zip) file and decompressing
+AbRecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) file and decompressing
 it.
 
 

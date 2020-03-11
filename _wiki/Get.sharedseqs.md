@@ -6,7 +6,7 @@ file and outputs a \*.shared.seqs file for each distance. This is useful
 for those cases where you might be interested in identifying sequences
 that are either unique or shared by specific groups, which you could
 then classify. To run through the commands below use [ AbRecovery
-files](Media:AbRecovery.zip).
+files](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip).
 
 
 ## Default settings
@@ -124,7 +124,8 @@ contains:
 The sharedgroups parameter allows you to see sequences belonging to OTUs
 that contain specific groups or a particular group. For example to see
 the sequences from OTUs that contain sequences from group A at distance
-0.04, you would enter the following:
+
+0\.04, you would enter the following:
 
     mothur > get.sharedseqs(list=abrecovery.fn.list, group=abrecovery.groups, label=0.04, sharedgroups=A)
     0.04   57

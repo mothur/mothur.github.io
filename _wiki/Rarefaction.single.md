@@ -15,7 +15,7 @@ confident that you have done a good job of sampling and can trust the
 observed level of richness. Otherwise, you need to keep sampling.
 Rarefaction is actually a better measure of diversity than it is of
 richness. For this tutorial you should download and decompress
-[AmazonData.zip](Media:AmazonData.zip)
+[AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip)
 
 
 ## Default settings

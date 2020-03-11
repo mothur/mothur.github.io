@@ -25,7 +25,7 @@ like:
     escriba:~ pschloss$$ 
 
 You next need to move to the folder containing your data. If you
-decompress the [AmazonData.zip](Media:AmazonData.zip) file
+decompress the [AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) file
 into a folder in your home directory, you can move there by typing:
 
     escriba:~ pschloss$$ cd AmazonData
@@ -84,7 +84,7 @@ in windows select *Run* from the *Start* menu. Type `cmd` into the run
 window and click *OK*. This will bring up a terminal window. From here,
 it is convenient to move to the directory containing your data so it can
 be access without specifying path names within mothur. If you decompress
-the [AmazonData.zip](Media:AmazonData.zip) file into a folder
+the [AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) file into a folder
 in your *My Documents* directory, you can move there by typing:
 
     cd "C:\Documents and Settings\`<your name>`\My Documents\AmazonData"

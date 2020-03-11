@@ -75,6 +75,8 @@ collections:
   wiki:
     output: true
     permalink: /:collection/:path
+  redirects:
+    output: true
 
 # Defaults
 defaults:
@@ -82,7 +84,7 @@ defaults:
       path: "_wiki"
       type: "wiki"
     values:
-      layout: wiki
+      layout: "wiki"
   -
     scope:
       path: ""

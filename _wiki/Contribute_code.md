@@ -8,7 +8,7 @@ Thanks for wanting to be a part of the mothur project! \...
 All commands in mothur have the same basic structure inherited from the
 command class. Commands must have an execute and help function, and the
 constructor may only accept a string. Here are some template files to
-get you started [ Command Template ](Media:Command.zip).
+get you started [ Command Template ](https://mothur.s3.us-east-2.amazonaws.com/wiki/command.zip).
 
 Each command is responsible for error checking the inputs it receives,
 but there are several classes that can help with this, or you may create
@@ -23,15 +23,18 @@ these.
 Once you have created your command class, you will need to add a few
 lines to commandfactory.cpp to enable mothur to run it.
 
-1.  Include the c++ header file for your command.
-2.  In the CommandFactory::CommandFactory add your command to the list
+
+1\.  Include the c++ header file for your command.
+
+2\.  In the CommandFactory::CommandFactory add your command to the list
     of valid commands with a line like:
 
-    :   commands["yourAwesomeCommand"] = "yourAwesomeCommand";
+        commands["yourAwesomeCommand"] = "yourAwesomeCommand";
 
-3.  In CommandFactory::getCommand add another else if line like:
 
-    :   else if(commandName == "yourAwesomeCommand") { command = new YourCommand(optionString);  }
+3\.  In CommandFactory::getCommand add another else if line like:
+
+        else if(commandName == "yourAwesomeCommand") { command = new YourCommand(optionString);  }
 
 ## Submitting your command
 

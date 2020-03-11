@@ -92,48 +92,96 @@ convert_mw_to_md <- function(mediawiki_file){
 	write(md, file=markdown_file)
 
 	# get rid of weird wikilink tags
- 	md <- str_replace(md, ' "wikilink"', '')
+ 	md <- str_replace_all(md, ' "wikilink"', '')
 
-
-	stub <- str_replace(markdown_file, "_wiki/(.*).md", "\\1") %>% tolower()
+	# if a page has a self-link, make it bold instead
+	stub <- str_replace_all(markdown_file, "_wiki/(.*).md", "\\1") %>% tolower()
 	bold_stub <- paste0("**", stub, "**")
 	link_stub <- paste0("\\[", stub, "\\]\\(", stub, "\\)")
-	md <- str_replace(md, link_stub, bold_stub)
+	md <- str_replace_all(md, link_stub, bold_stub)
+	md <- str_replace_all(md, paste0(" ", stub, " "), paste0(" ", bold_stub, " "))
 
-	md <- str_replace(md, paste0(" ", stub, " "), paste0(" ", bold_stub, " "))
+	# make everything https
+	md <- str_replace_all(md, "http://", "https://")
+
+	# replace Media links with links to S3 mothur bucket
+	md <- gsub(md, pattern="Media:(.*?)\\)", replacement="https://mothur.s3.us-east-2.amazonaws.com/wiki/\\L\\1)", perl=TRUE, ignore.case=TRUE)
+
+	# fix naked links to wiki
+	naked_wiki_links <- any(str_detect(md, "<(http.*?/wiki/.*?)>"))
+	md <- str_replace_all(md, "<http.*?/wiki/(.*?)>", "[\\1](\\1)")
+	md <- str_replace_all(md, "<(http.*?)>", "[\\1](\\1)")
+
+	# remove hard links to wiki
+	md <- str_replace_all(md, "https://.{0,4}mothur.org/wiki/", "")
+
+	# fix links to old forum
+	md <- str_replace_all(md, "https://.{0,4}mothur.org/forum/", "https://forum.mothur.org/")
+
+	# fix links to old version of blog
+	md <- str_replace_all(md, "https://blog.mothur.org/(....)/../../", "/blog/\\1/")
+
+	# remove stray : characters
+	md <- str_replace_all(md, "  : ", "    ")
+
+	# fix images
+	md <- gsub(md, pattern="(!\\[.*?\\])\\(([^ ]*).*\\)", replacement="\\1(https://mothur.s3.us-east-2.amazonaws.com/wiki/\\L\\2)", perl=TRUE)
+	md <- str_replace_all(md, "\\)\\{.*?\\}", ")")
+	md <- str_replace(md, "^ +!", "!")
+
+	# fix numbered lists
+	md <- str_replace(md, "^(\\d*)\\.", "\n\\1\\\\.")
 
 
 	write(md, file=markdown_file)
 
+	naked_wiki_links
 }
 
 dir.create("_wiki", showWarnings=FALSE)
 unlink("_wiki/*")
 
-read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
-	mutate(convert = map(file, convert_mw_to_md))
+conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
+	mutate(convert = map_lgl(file, convert_mw_to_md))
 
 unlink("_wiki/Main_Page.md")
 ```
 
+## Additional files to scrap...
+* Software_development
+* mothur_newsletter
+
+
 ## Manual fixing
 * Find and replace < and > characters with \gt and \lt in mathjax code
 * Find and replace % with \% in mathjax code
+* Check for stray `\$$` that are meant to indicate dollars
+* Tables need help
+* Figures will need to be manually resized
+* get rid of stray `\"` and `\'` characters and replace with """ and "'" in atom
+* Clear errors...
+```
+#https://github.com/gjtorikian/html-proofer
+htmlproofer --assume-extension --only-4xx ./_site
+```
 
 
 ## To do...
-* categories - Possible to make tags and have a page for each tag?
+* wiki
+	- categories - Possible to make tags and have a page for each tag?
+	- Look for "Special:" pages
 
-* Customize header nav bar
+* blog
+  - check on embedded images `!\[.*\]\(.*\)` in blog
 
-* convert wikimedia hyper links
-  - get files that are linked in pages
-  - post files to new location
-  - create redirect pages from wiki path to new path
-  - https://superdevresources.com/redirects-jekyll-github-pages/
+* data
+  - Set up links to large data files for projects
 
-* Look for "Special:" pages
-* Link to license on each page
-* Update About page
-* Google tracking code - see what I have in config.yml to see if it works
-* robots.txt page
+* general site
+	* Customize header nav bar
+	* Link to license on each page
+	* Add announcement blurb
+	* Fix space between toc and edits
+	* fix stars/follows in the edit links
+	* Google tracking code - see what I have in config.yml to see if it works
+	* robots.txt page

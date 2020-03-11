@@ -22,7 +22,7 @@ Look for some more exciting features and commands in September!
     shared file to allow the user to sample or normalize the shared
     file.
 -   [chop.seqs](chop.seqs) - added processors option. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1683>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=1683](https://forum.mothur.org/viewtopic.php?f=5&t=1683)
 
 ## Bug fixes
 
@@ -30,10 +30,10 @@ Look for some more exciting features and commands in September!
 -   [sub.sample](sub.sample) - missing files if subsamples
     call of the unique.seqs command produced a file with the same name
     as subsamples output file name.
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1681>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1681](https://forum.mothur.org/viewtopic.php?f=4&t=1681)
 -   various commands would complain about missing names if the names
     file did not end in white space -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1698&p=4538#p4538>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1698&p=4538#p4538](https://forum.mothur.org/viewtopic.php?f=4&t=1698&p=4538#p4538)
 
 ## Changes to wiki
 

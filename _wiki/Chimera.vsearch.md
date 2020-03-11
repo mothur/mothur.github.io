@@ -4,7 +4,7 @@ title: 'Chimera.vsearch'
 The **chimera.vsearch** command reads a fasta file and reference file or a
 fasta and name or count file and outputs potentially chimeric sequences.
 The vsearch program is donated to the public domain,
-<https://github.com/torognes/vsearch>.
+[https://github.com/torognes/vsearch](https://github.com/torognes/vsearch).
 
 
 ## Default Settings
@@ -173,7 +173,8 @@ weight to around 3 or 4 may give better performance on denoised data.
 ### dn
 
 The dn parameter - pseudo-count prior on number of no votes. Default
-1.4. Probably no good reason to change this unless you can retune to a
+
+1\.4. Probably no good reason to change this unless you can retune to a
 good benchmark for your data. Reasonable values are probably in the
 range from 0.2 to 2.
 

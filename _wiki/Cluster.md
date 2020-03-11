@@ -24,7 +24,7 @@ If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
 developers and we\'ll see what we can do. The opticlust algorithm is the
 default option. For this tutorial you should download the [
-Final.zip](Media:Final.zip) file and decompress it.
+Final.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/final.zip) file and decompress it.
 
 
 ## Default settings
@@ -429,7 +429,7 @@ The variability is caused by the randomization of the sequences.
 -   1.35.0 - Clustering commands did not include the count file info.
     when printing list file OTU order. Only effects clustering commands.
     \*.pick commands must preserve otuLabels order. -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3460&p=10483#p10483>.
+    [https://forum.mothur.org/viewtopic.php?f=3&t=3460&p=10483#p10483](https://forum.mothur.org/viewtopic.php?f=3&t=3460&p=10483#p10483).
 -   1.37.0 - Adds vsearch clustering methods: agc and dgc.
     [\#169](https://github.com/mothur/mothur/issues/169)
 -   1.38.0 - Fixes bug with age method.

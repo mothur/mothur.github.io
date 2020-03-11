@@ -109,8 +109,8 @@ to pdiffs + bdiffs + ldiffs + sdiffs).
 -   1.33.0 - Added the group parameter.
 -   1.33.0 - Bug Fix: Windows version with oligos file caused corrupt
     sff files after parse. -
-    [1](https://www.mothur.org/forum/viewtopic.php?f=3&t=2555&p=7422#p7422)
+    [1](https://forum.mothur.org/viewtopic.php?f=3&t=2555&p=7422#p7422)
 -   1.36.0 - Bug Fix: Off by one in right side trimming.
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=3764>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=3764](https://forum.mothur.org/viewtopic.php?f=4&t=3764)
 
 [Category:Commands](Category:Commands)

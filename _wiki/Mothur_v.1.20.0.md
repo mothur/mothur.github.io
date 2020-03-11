@@ -45,11 +45,11 @@ Pat Schloss
 ## New commands
 
 -   [chimera.uchime](chimera.uchime) -
-    <https://drive5.com/uchime>
+    [https://drive5.com/uchime](https://drive5.com/uchime)
 -   [deunique.tree](deunique.tree) -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1143>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=1143](https://forum.mothur.org/viewtopic.php?f=5&t=1143)
 -   [count.seqs](count.seqs) -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1147&p=2691#p2691>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=1147&p=2691#p2691](https://forum.mothur.org/viewtopic.php?f=3&t=1147&p=2691#p2691)
 
 ## Feature updates
 
@@ -61,11 +61,11 @@ Pat Schloss
 -   [phylo.diversity](phylo.diversity) - no longer requires a
     groupfile or at least 2 groups to run, if no group file is given
     mothur assumes all sequences are from the same sample.
--   [get.lineage](get.lineage)/[remove.lineage](remove.lineage "wikilink")
+-   [get.lineage](get.lineage)/[remove.lineage](remove.lineage)
     = can now process multiple taxons separated by a dashes
 -   [dist.shared](dist.shared) - added processors option
 -   [consensus.seqs](consensus.seqs) - added cutoff option
-    (https://www.mothur.org/forum/viewtopic.php?f=5&t=693)
+    (https://forum.mothur.org/viewtopic.php?f=5&t=693)
 -   [summary.shared](summary.shared) and
     [collect.shared](collect.shared) - mothur no longer
     reports the similarity values, rather it now reports distances
@@ -79,9 +79,9 @@ Pat Schloss
 
 -   [cluster.split](cluster.split) - fixed an output redirect
     problem with fasta method
-    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1182&p=2803\#p2803)
+    (https://forum.mothur.org/viewtopic.php?f=4&t=1182&p=2803\#p2803)
 -   [summary.seqs](summary.seqs) - re-added processors option
-    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1185)
+    (https://forum.mothur.org/viewtopic.php?f=4&t=1185)
 
 ## Minor Releases
 

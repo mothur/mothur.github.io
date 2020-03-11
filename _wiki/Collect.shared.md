@@ -13,7 +13,7 @@ collector\'s curves much the same way that sons did; however, sons
 presented the data in the sons file, which was virtually impossible for
 novices to parse. mothur fixes many of these issues by generating
 separate files for each estimator. For this tutorial you should download
-and decompress [ Patient70Data.zip](Media:Patient70Data.zip)
+and decompress [ Patient70Data.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/patient70data.zip)
 
 ## Default settings
 

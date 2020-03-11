@@ -11,11 +11,11 @@ mothur. To maintain a consistent 6 taxonomic levels we have removed the
 various sub-classes, orders and families:
 
 -   [ 16S rRNA reference
-    (RDP)](Media:trainset16_022016.rdp.tgz): A collection of
+    (RDP)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset16_022016.rdp.tgz): A collection of
     12,681 bacterial and 531 archaeal 16S rRNA gene sequences with an
     improved taxonomy compared to version 14.
 -   [ 16S rRNA reference
-    (PDS)](Media:trainset16_022016.pds.tgz): The RDP
+    (PDS)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset16_022016.pds.tgz): The RDP
     reference with 119 mitochondrial 16S rRNA gene sequences added as
     members of the Rickettsiales and four 18S rRNA gene sequences added
     as members of the Eukarya.
@@ -49,11 +49,11 @@ compatible with mothur. To maintain a consistent 6 taxonomic levels we
 have removed the various sub-classes, orders and families:
 
 -   [ 16S rRNA reference (RDP)
-    ](Media:trainset14_032015.rdp.tgz): A collection of
+    ](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset14_032015.rdp.tgz): A collection of
     10,244 bacterial and 435 archaeal 16S rRNA gene sequences with an
     improved taxonomy compared to version 10.
 -   [ 16S rRNA reference
-    (PDS)](Media:trainset14_032015.pds.tgz): The RDP
+    (PDS)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset14_032015.pds.tgz): The RDP
     reference with 119 mitochondrial 16S rRNA gene sequences added as
     members of the Rickettsiales and four 18S rRNA gene sequences added
     as members of the Eukarya.
@@ -125,12 +125,12 @@ to be compatible with mothur. To maintain a consistent 6 taxonomic
 levels we have removed the various sub-classes, orders and families:
 
 -   [ 16S rRNA reference
-    (RDP)](Media:trainset9_032012.rdp.zip): A collection of
+    (RDP)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.rdp.zip): A collection of
     9,665 bacterial and 384 archaeal 16S rRNA gene sequences with an
     improved taxonomy compared to version 7 (there was no v.8 as far as
     we are aware).
 -   [ 16S rRNA reference
-    (PDS)](Media:trainset9_032012.pds.zip): The RDP reference
+    (PDS)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.pds.zip): The RDP reference
     with 119 mitochondrial 16S rRNA gene sequences added as members of
     the Rickettsiales and four 18S rRNA gene sequences added as members
     of the Eukarya.
@@ -153,14 +153,14 @@ consistent 6 taxonomic levels we have removed the various sub-classes,
 orders and families:
 
 -   [ 16S rRNA reference
-    (RDP)](Media:trainset7_112011.rdp.zip): A collection of
+    (RDP)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset7_112011.rdp.zip): A collection of
     9,662 bacterial and 384 archaeal 16S rRNA gene sequences with an
     improved taxonomy compared to version 6.
 -   [ 16S rRNA reference
-    (PDS)](Media:trainset7_112011.pds.zip): The RDP reference
+    (PDS)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset7_112011.pds.zip): The RDP reference
     with three sequences reversed and 119 mitochondrial 16S rRNA gene
     sequences added as members of the Rickettsiales
--   [ 28S rRNA reference (RDP)](Media:FungiLSU_train_v7.zip):
+-   [ 28S rRNA reference (RDP)](https://mothur.s3.us-east-2.amazonaws.com/wiki/fungilsu_train_v7.zip):
     A collection of 8506 reference 28S rRNA gene sequences from the
     Fungi that were curated by the Kuske lab
 
@@ -176,7 +176,7 @@ direction.
 
 ## Version 6
 
-The [ RDP training set](Media:RDPTrainingSet.zip) (version 6,
+The [ RDP training set](https://mothur.s3.us-east-2.amazonaws.com/wiki/rdptrainingset.zip) (version 6,
 released 03/02/2010) consists of 8,422 sequences (8,127 bacterial and
 295 archaeal) and is based on Bergey\'s taxonomic outline. This training
 set is our modification of the files that they posted to

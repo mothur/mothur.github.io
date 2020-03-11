@@ -8,7 +8,7 @@ generating shell script pipelines. Following the name of the executable
 first character being a pound sign (i.e. \'\#\'). The commands should be
 separated by semicolons. For example, if you want to run the traditional
 analysis performed by dotur using the
-[AmazonData.zip](Media:AmazonData.zip) data set, then your
+[AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) data set, then your
 command line should look like this:
 
     escriba:AmazonData pschloss$$ mothur "#read.dist(phylip=98_sq_phylip_amazon.dist, cutoff=0.1); cluster(); collect.single(); rarefaction.single()"

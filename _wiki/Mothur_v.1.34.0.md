@@ -62,7 +62,7 @@ don\'t hesitate to shoot us a note!
     and [Square Root Jensen-Shannon
     Divergence](Square_Root_Jensen-Shannon_Divergence)
     calculator, rjsd. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=2961>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=2961](https://forum.mothur.org/viewtopic.php?f=5&t=2961)
 -   [cluster.split](cluster.split) - added the file option
     which allows you to enter your file containing your list of column
     and names/count files as well as the singleton file. This file is
@@ -78,8 +78,8 @@ don\'t hesitate to shoot us a note!
     processors, you can avoid running the first part of the command
     multiple times.
 -   [make.contigs](make.contigs) - added checkorient
-    parameter. - <https://www.mothur.org/forum/viewtopic.php?f=3&t=2993>
--   [fastq.info](fastq.info), [sffinfo](sffinfo "wikilink"),
+    parameter. - [https://forum.mothur.org/viewtopic.php?f=3&t=2993](https://forum.mothur.org/viewtopic.php?f=3&t=2993)
+-   [fastq.info](fastq.info), [sffinfo](sffinfo),
     [trim.flows](trim.flows)- added checkorient parameter.
 -   [trim.flows](trim.flows) can now process paired barcodes
     and primers.
@@ -87,11 +87,11 @@ don\'t hesitate to shoot us a note!
 ## Bug fixes
 
 -   [fastq.info](fastq.info) stopped processing after 100001
-    seqs. - <https://www.mothur.org/forum/viewtopic.php?f=4&t=2829> -
+    seqs. - [https://forum.mothur.org/viewtopic.php?f=4&t=2829](https://forum.mothur.org/viewtopic.php?f=4&t=2829) -
     fixed 1.33.1
 -   [make.biom](make.biom) picrust couldn\'t handle
     unclassifieds -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2816> - fixed
+    [https://forum.mothur.org/viewtopic.php?f=4&t=2816](https://forum.mothur.org/viewtopic.php?f=4&t=2816) - fixed
     1.33.1
 -   [create.database](create.database) OutLabel bug -
     \"cannot convert Otu0001 to an integer\" fixed 1.33.3
@@ -102,12 +102,12 @@ don\'t hesitate to shoot us a note!
     multiple processors. fixed 1.33.3
 -   [rarefaction.single](rarefaction.single) -
     \*.groups.rarefaction file labels in wrong order -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2963> - fixed
+    [https://forum.mothur.org/viewtopic.php?f=4&t=2963](https://forum.mothur.org/viewtopic.php?f=4&t=2963) - fixed
     1.33.3
 -   [align.seqs](align.seqs) - Windows align.seqs flip=t
     caused segfault fixed 1.33.2 3/19 version
 -   [summary.shared](summary.shared) subsample issue -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2861> - fixed
+    [https://forum.mothur.org/viewtopic.php?f=4&t=2861](https://forum.mothur.org/viewtopic.php?f=4&t=2861) - fixed
     1.33.3
 -   seq.error is changing the current fasta file to the seq file. it
     shouldn\'t change the current fasta file.
@@ -124,10 +124,10 @@ don\'t hesitate to shoot us a note!
     file mismatches with count files that didn\'t include group data.
 -   [clearcut](clearcut) - distances out of range bug
 -   [dist.shared](dist.shared) -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3186>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=3186](https://forum.mothur.org/viewtopic.php?f=3&t=3186)
 -   [make.contigs](make.contigs) - rindex files -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3159&start=10#p9096>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=3159&start=10#p9096](https://forum.mothur.org/viewtopic.php?f=3&t=3159&start=10#p9096)
 
 ## Videoblog
 
--   <https://www.youtube.com/watch?v=IobnyTQ4F6Q></a>
+-   [https://www.youtube.com/watch?v=IobnyTQ4F6Q](https://www.youtube.com/watch?v=IobnyTQ4F6Q)</a>

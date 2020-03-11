@@ -18,7 +18,7 @@ names in each OTU for each group and can be processed using commands
 such as collect.single() like any other list files.
 
 Sample output of 98\_sq\_phylip\_amazon.fn.shared, which can be
-downloaded in the [AmazonData.zip](Media:AmazonData.zip)
+downloaded in the [AmazonData.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip)
 file:
 
     label  Group   numOtus Otu01   Otu02   Otu03   Otu04   Otu05   Otu06   Otu07   Otu08   Otu09   Otu10   ...

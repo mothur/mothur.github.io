@@ -1,7 +1,7 @@
 ---
 title: 'Analyzing H1N1 swine-origin Influenza A isolates'
 ---
-[link=<https://commons.wikimedia.org/wiki/File:H1N1_influenza_virus.jpg%7Cright%7Cthumb%7C200px%7CH1N1>
+[link=[File:H1N1_influenza_virus.jpg%7Cright%7Cthumb%7C200px%7CH1N1](File:H1N1_influenza_virus.jpg%7Cright%7Cthumb%7C200px%7CH1N1)
 influenza virus.](image:H1N1_influenza_virus.jpg)
 
 The swine-origin Influenza A virus (S-OIV) has spread rapidly around the
@@ -27,9 +27,10 @@ sequences were collected between March 30 to July 28, 2009. Due to the
 short collection period, sequences are highly similar and possess only a
 single insertion. A manual alignment of these sequences is possible, but
 we used [MUSCLE](https://www.ncbi.nlm.nih.gov/pubmed/15034147) version
-3.7 with a gap opening penalty of 20 and a gap extension penalty of 0 to
+
+3\.7 with a gap opening penalty of 20 and a gap extension penalty of 0 to
 produce the desired alignment. Your can download the aligned S-OIV
-sequences [here](Media:S-OIV_HA.zip).
+sequences [here](https://mothur.s3.us-east-2.amazonaws.com/wiki/s-oiv_ha.zip).
 
 ## Generating a distance matrix
 
@@ -84,7 +85,8 @@ names file using the *name* parameter. This ensures *all* our sequences
 will be clustered into OTUs. The default precision used by mothur is
 1e-2. Since we are interested in OTUs between 0 and 0.01 we will
 increase the precision to 1e-3 by setting the *precision* parameter to
-1000. The [cluster](cluster) command generates three files:
+
+1000\. The [cluster](cluster) command generates three files:
 
 -   HA.unique.fn.list: a [list](list_file) file indicating
     the sequences that cluster together within an OTU
@@ -124,7 +126,8 @@ This will generate a single file:
 The summary file gives us the following table that indicates that our
 dataset consists of 599 sequences that form 257 clusters consisting of
 identical sequences, 117 clusters of sequences within a distance of
-0.001, 49 clusters of sequences within a distance of 0.003, 15 clusters
+
+0\.001, 49 clusters of sequences within a distance of 0.003, 15 clusters
 of sequences within a distance of 0.005, and 7 clusters of sequences
 within a distance of 0.008. The richness and 95% confident intervals
 determined by the [Chao](Chao) calculator are also given.
@@ -213,7 +216,7 @@ A 197 of the 599 sequences in our dataset were collected in New
 Yorkstate . Here we will examine the sampling effort within New York
 state by taking advantage of mothur\'s notion of a *group*. A group file
 specifies which sample a sequence belongs to. This [HA
-groups](Media:HA_groups.zip) file indicates which samples
+groups](https://mothur.s3.us-east-2.amazonaws.com/wiki/ha_groups.zip) file indicates which samples
 were collected in New York state or elsewhere. In order to create a
 rarefaction curve for just the New York sequences we need to create an
 OTU file for this group:

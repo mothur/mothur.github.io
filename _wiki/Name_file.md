@@ -19,5 +19,7 @@ representatives separated by commas. Here is an example:
 
 Notes:
 
-1.  Be sure not to include the \"\>\" in the name of the sequence.
-2.  Your sequence name cannot contain blank spaces.
+
+1\.  Be sure not to include the \"\>\" in the name of the sequence.
+
+2\.  Your sequence name cannot contain blank spaces.

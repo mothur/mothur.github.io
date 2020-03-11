@@ -46,14 +46,14 @@ any questions.
     [classify.seqs](classify.seqs) command, - be sure to
     remove your old .tree.train, tree.sum, .numNonZero, and .prob files
 -   added taxonomy file to list of files
-    [list.seqs](list.seqs), [get.seqs](get.seqs "wikilink")
+    [list.seqs](list.seqs), [get.seqs](get.seqs)
     and [remove.seqs](remove.seqs) commands can process.
 -   [get.seqs](get.seqs) and
     [remove.seqs](remove.seqs) commands can now process more
     than one file at a time.
 -   added dups parameter to [get.seqs](get.seqs)
 -   added sort option to [get.otulist](get.otulist) command -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=368&sid=e81f0982fd4e09a24a2aff4ff1cde1c9>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=368&sid=e81f0982fd4e09a24a2aff4ff1cde1c9](https://forum.mothur.org/viewtopic.php?f=3&t=368&sid=e81f0982fd4e09a24a2aff4ff1cde1c9)
 -   allow for \'\>\' in sequence names
 -   reduced memory used to generate
     [chimera.pintail](chimera.pintail) commands quantile

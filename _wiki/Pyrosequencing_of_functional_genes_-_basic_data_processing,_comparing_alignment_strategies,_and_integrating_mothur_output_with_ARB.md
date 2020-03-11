@@ -38,7 +38,7 @@ The first thing to do upon receiving a batch of pyrosequencing data is
 to clean up the sequence names by removing the long header put into the
 fasta file and then giving the sequences some unique names that have
 some meaning and can be used for later analyses. This
-[\'fasta\_substring\_renamer\'](media:Mothur_WIKI_scripts.zip)
+[\'fasta\_substring\_renamer\'](https://mothur.s3.us-east-2.amazonaws.com/wiki/mothur_wiki_scripts.zip)
 script just strips out characters based on their position. So, for
 example, a batch of sequences typically might have headers like this:
 
@@ -50,7 +50,7 @@ to 14 to get this:
     >FUAROQY02D9NMW
 
 Next, we run the file through the
-[\'fasta\_renamer\'](media:Mothur_WIKI_scripts.zip) to
+[\'fasta\_renamer\'](https://mothur.s3.us-east-2.amazonaws.com/wiki/mothur_wiki_scripts.zip) to
 replace \'FUAROQY02\' which is common to all seqs with something more
 meaningful. In the case of our training dataset we now get a fasta file
 with headers that convey some meaning in a systematic way and are each
@@ -99,7 +99,7 @@ indels) of a single 380 bp template sequence. Sequence variants were
 randomly distributed between 0 and 10% divergence from the template
 sequence. Blank cells indicate processing failure; tests were conducted
 on a 2Ghz Pentium CPU w/ 3GB
-RAM.](table1.png "Table 1. Comparison of running times (hh:mm:ss) of popular multiple-sequence alignment (MSA) programs. Each program was run with default parameters using simple benchmark datasets comprising nucleotide sequences generated from in silico random point mutations (including indels) of a single 380 bp template sequence. Sequence variants were randomly distributed between 0 and 10% divergence from the template sequence. Blank cells indicate processing failure; tests were conducted on a 2Ghz Pentium CPU w/ 3GB RAM."){width="400"}
+RAM.](table1.png "Table 1. Comparison of running times (hh:mm:ss) of popular multiple-sequence alignment (MSA) programs. Each program was run with default parameters using simple benchmark datasets comprising nucleotide sequences generated from in silico random point mutations (including indels) of a single 380 bp template sequence. Sequence variants were randomly distributed between 0 and 10% divergence from the template sequence. Blank cells indicate processing failure; tests were conducted on a 2Ghz Pentium CPU w/ 3GB RAM.")
 
 Since Muscle, kalign and MAFFT were the only programs left standing in
 our benchmark tests, we will compare them with our training data set.
@@ -180,7 +180,7 @@ would like to improve on its performance.
 
 ![Figure 1. Comparison of Muscle and MAFFT alignments. Dashed line shows
 mean
-value.](Aligner_comparison1.png "Figure 1. Comparison of Muscle and MAFFT alignments. Dashed line shows mean value."){width="400"}
+value.](Aligner_comparison1.png "Figure 1. Comparison of Muscle and MAFFT alignments. Dashed line shows mean value.")
 
 ### Generating an accurate seed alignment from scratch combining Muscle and mothur
 
@@ -255,7 +255,7 @@ compare to that produced by Muscle and MAFFT shown above? Favorably
 
 ![Figure 2. Comparison of mothur, Muscle, and MAFFT alignments. Dashed
 line shows mean
-value.](Aligner_comparison2.png "Figure 2. Comparison of mothur, Muscle, and MAFFT alignments. Dashed line shows mean value."){width="400"}
+value.](Aligner_comparison2.png "Figure 2. Comparison of mothur, Muscle, and MAFFT alignments. Dashed line shows mean value.")
 
 So, bottom line: the mothur aligner was faster and better than Muscle or
 MAFFT implemented naively, <b>with a couple important caveats</b>. I
@@ -309,7 +309,7 @@ solution:
 The first step is to define representative sequences to start building a
 data table. The \'get.oturep\' command in mothur is quite good for this,
 or [the \'mothur\_conversion\'
-script](media:Mothur_WIKI_scripts.zip) will pull a
+script](https://mothur.s3.us-east-2.amazonaws.com/wiki/mothur_wiki_scripts.zip) will pull a
 user-defined number of representative sequences out of the \'\*.list\'
 file. The script will give you a table something like this:
 
@@ -318,7 +318,7 @@ file. The script will give you a table something like this:
     S1_XYZ     0.03        2   9
 
 Next, the [\'split\_fasta\_file\_based\_on\_a\_list\'
-script](media:Mothur_WIKI_scripts.zip) will take the sequence
+script](https://mothur.s3.us-east-2.amazonaws.com/wiki/mothur_wiki_scripts.zip) will take the sequence
 IDs from that text file as input and pull them out of the original fasta
 file to create a new fasta file containing just the representative
 sequences. The \'get.oturep\' command in mothur also automatically
@@ -331,7 +331,7 @@ The next step may be the most important. Once you have built a data
 table like the one above with representive sequences (adding
 environmental data, patient data, etc., etc.) for each sample as
 appropriate, [the \'ARB\_format\_conversion\'
-script](media:Mothur_WIKI_scripts.zip) will reformat any data
+script](https://mothur.s3.us-east-2.amazonaws.com/wiki/mothur_wiki_scripts.zip) will reformat any data
 table (i.e. spreadsheet) into a form that can be imported into ARB and
 will simultaneously generate the appropriate custom-import filter for
 ARB. All the required info on formatting the data table, etc. is given

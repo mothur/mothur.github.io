@@ -255,7 +255,7 @@ assembled. Default=false. NOTE: The assembled quality scores outputted
 by mothur cannot be used for downstream quality screening. The score
 calculations are modeled after pandseq\'s method. Here\'s a link to the
 explanation from their documentation,
-<https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong>.
+[https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong](https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong).
 \\n
 
 ### trimoverlap
@@ -283,18 +283,18 @@ The assembled quality scores outputted by mothur **cannot** be used for
 downstream quality screening. The score calculations are modeled after
 pandseq\'s method. Here\'s a link to the explanation from their
 documentation,
-<https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong>.
+[https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong](https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong).
 
 ## Revisions
 
 -   1.26.0 - First Introduced
 -   1.30.0 - Officially released
 -   1.31.2 - Bug Fix: -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2451>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=2451](https://forum.mothur.org/viewtopic.php?f=3&t=2451)
 -   1.32.0 - Bug Fix: if file option is used with group provided, and
     one or more files contain less good reads than number of processors,
     group assignments were incorrect. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2571&p=7025#p7025>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=2571&p=7025#p7025](https://forum.mothur.org/viewtopic.php?f=4&t=2571&p=7025#p7025)
 -   1.32.0 - Added findex and rindex parameters. Modified file options
     to add 4 column option - ffastq rfastq findex rindex. May use NONE
     as option for findex and rindex. Modified oligos file option to
@@ -302,7 +302,7 @@ documentation,
     NONE GCTGATGAGCTG Group1 would indicate you have a reverse index
     file, but no forward index file.
 -   1.34.0 - Added checkorient parameter. -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2993>.
+    [https://forum.mothur.org/viewtopic.php?f=3&t=2993](https://forum.mothur.org/viewtopic.php?f=3&t=2993).
 -   1.36.0 - Bug Fix: when using index files in version 1.35 quality
     data was over trimmed by the length of the barcode.
 -   1.36.0 - allow for missing reads in files.
@@ -320,7 +320,7 @@ documentation,
     oligos file.
 -   1.38.0 - Skips blanks files and continues.
 -   1.38.1 - Fixes filename expansion issue.
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=5869&p=14857#p14857>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=5869&p=14857#p14857](https://forum.mothur.org/viewtopic.php?f=3&t=5869&p=14857#p14857)
 -   1.39.0 - Fixes bug where mothur was not finding matches for sequence
     names \"off by one character\" in the name.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
@@ -335,7 +335,7 @@ documentation,
 -   1.41.0 - Fixes group file issue with \*.gz files.
     [\#480](https://github.com/mothur/mothur/issues/480)
 -   1.41.0 - Fixes group names appending issue.
-    <https://forum.mothur.org/t/make-contigs-with-oligo-creating-new-names/3542>
+    [https://forum.mothur.org/t/make-contigs-with-oligo-creating-new-names/3542](https://forum.mothur.org/t/make-contigs-with-oligo-creating-new-names/3542)
 -   1.43.0 - Adds qfile option to make.contigs.
     [\#650](https://github.com/mothur/mothur/issues/650)
 -   1.43.0 - Adds auto decompress feature to **make.contigs** if gz read

@@ -22,7 +22,7 @@ If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
 developers and we\'ll see what we can do. The opticlust algorithm is the
 default option. For this tutorial you should download the [
-Final.zip](Media:Final.zip) file and decompress it.
+Final.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/final.zip) file and decompress it.
 
 
 There are two part to the **cluster.split** command the splitting of your
@@ -390,9 +390,9 @@ The variability is caused by the randomization of the sequences.
 -   1.35.0 - Clustering commands did not include the count file info.
     when printing list file OTU order. Only effects clustering commands.
     \*.pick commands must preserve otuLabels order. -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3460&p=10483#p10483>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=3460&p=10483#p10483](https://forum.mothur.org/viewtopic.php?f=3&t=3460&p=10483#p10483)
 -   1.35.0 - Bug Fix: MPI version compile issue,
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=3453&p=10073#p10073>.
+    [https://forum.mothur.org/viewtopic.php?f=4&t=3453&p=10073#p10073](https://forum.mothur.org/viewtopic.php?f=4&t=3453&p=10073#p10073).
     fixed in 1.34.1.
 -   1.36.0 - Bug Fix: did not allow you to use the classic option with
     the file option.

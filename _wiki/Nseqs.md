@@ -9,7 +9,7 @@ the [summary.single](summary.single),
 probably only really makes sense for the
 [summary.single](summary.single) command. Open the file
 98\_lt\_phylip\_amazon.fn.sabund generated using the [ Amazonian
-dataset](Media:AmazonData.zip) with the following commands:
+dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following commands:
 
     mothur > read.dist(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
     mothur > cluster()
@@ -37,7 +37,8 @@ OTU. The third column indicates the number of OTUs with only one
 indivdiual, the fourth the number of OTUs with two individuals, etc.
 Nseqs is then calculated by summing the product of the column index and
 the value in the column. For example, Nseqs for an OTU definition of
-0.10 would be calculated as:
+
+0\.10 would be calculated as:
 
 $$N = 34\left(1\right) + 13 \left(2\right) + 3 \left(3\right) + 2 \left(4\right) + 0 \left(5\right) + 0 \left(6\right) + 3 \left(7\right) = 98$$
 

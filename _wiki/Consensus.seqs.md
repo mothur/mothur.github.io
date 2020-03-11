@@ -105,7 +105,7 @@ cutoff mothur would return s.
 
 -   1.28.0 Added count parameter
 -   1.28.0 Cutoff rounding error -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1781>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1781](https://forum.mothur.org/viewtopic.php?f=4&t=1781)
 -   1.30.0 changed consensus sequence name from seq1, seq2, \... to
     OTUlabel.
 

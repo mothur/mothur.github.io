@@ -57,7 +57,7 @@ Pat Schloss
 -   [chimera.uchime](chimera.uchime) - added column headings
     to output
 -   [screen.seqs](screen.seqs) - added taxonomy parameter
--   [heatmap.sim](heatmap.sim) and [venn](venn "wikilink") -
+-   [heatmap.sim](heatmap.sim) and [venn](venn) -
     added fontsize parameter
 -   [sens.spec](sens.spec) - fixed label option and added
     smart distancing.
@@ -68,24 +68,24 @@ Pat Schloss
 
 -   [trim.flows](trim.flows) - fixed bug that occurred if you
     had multiple primers with blank names -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1358>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1358](https://forum.mothur.org/viewtopic.php?f=4&t=1358)
 -   [chimera.uchime](chimera.uchime) - executable location -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1379>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1379](https://forum.mothur.org/viewtopic.php?f=4&t=1379)
 -   [classify.seqs](classify.seqs) - mothur couldn\'t handle
     parentheses in the taxonomy file. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1370>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1370](https://forum.mothur.org/viewtopic.php?f=4&t=1370)
 -   [chimera.bellerophon](chimera.bellerophon) -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1151> - segfault in
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1151](https://forum.mothur.org/viewtopic.php?f=4&t=1151) - segfault in
     chimera.bellerophon MPI-Enabled version.
 -   [chop.seqs](chop.seqs) - had an off by one error - if you
     put numbases=200 the sequence came out as 199 bases
 -   [trim.seqs](trim.seqs) - fixed flip parameter in -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1401&p=3486#p3486>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1401&p=3486#p3486](https://forum.mothur.org/viewtopic.php?f=4&t=1401&p=3486#p3486)
 -   fixed bug with newly paralellized commands for Windows that was
     causing crashes -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1422>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1422](https://forum.mothur.org/viewtopic.php?f=4&t=1422)
 -   get.groups and remove.groups file mismatch -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1396&p=3560#p3560>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1396&p=3560#p3560](https://forum.mothur.org/viewtopic.php?f=4&t=1396&p=3560#p3560)
 
 ## Wiki updates
 

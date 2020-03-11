@@ -6,7 +6,7 @@ Nagarajan, N. & Pop, M. Statistical methods for detecting differentially
 abundant features in clinical metagenomic samples. PLoS Comput Biol 5,
 e1000352 (2009). The **metastats** command outputs a .metastats file.
 
-See: <https://metastats.cbcb.umd.edu/> for more information on Metastats.
+See: [https://metastats.cbcb.umd.edu/](https://metastats.cbcb.umd.edu/) for more information on Metastats.
 
 ## Default Settings
 
@@ -70,7 +70,7 @@ processors and use all available.
 -   1.33.0 - improved work balance load between processors.
 -   1.36.0 - Remove qvalues. Also removes fortran source from mothur.
 -   1.36.0 - Bug Fix: Infinite loop with certain datasets -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3701>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=3701](https://forum.mothur.org/viewtopic.php?f=3&t=3701)
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)

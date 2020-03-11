@@ -43,7 +43,7 @@ substances flowing](https://leinie.com).
 
 -   [phylo.diversity](phylo.diversity) - improved speed
 -   [set.dir](set.dir) - added debug parameter
--   [catchall](catchall), [get.seqs](get.seqs "wikilink") and
+-   [catchall](catchall), [get.seqs](get.seqs) and
     [classify.seqs](classify.seqs) commands - added debugging
     information to the output
 -   [shhh.flows](shhh.flows) - added large parameter
@@ -70,30 +70,30 @@ substances flowing](https://leinie.com).
 ## Bug fixes
 
 -   [shhh.flows](shhh.flows) fixed output file location -
-    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1570&p=4131#p4131>
+    [https://forum.mothur.org/viewtopic.php?f=3&t=1570&p=4131#p4131](https://forum.mothur.org/viewtopic.php?f=3&t=1570&p=4131#p4131)
 -   [shhh.flows](shhh.flows) - added checks to make sure all
     flow files are completed when multiple processors are used. -
-    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1599>
+    [https://forum.mothur.org/viewtopic.php?f=5&t=1599](https://forum.mothur.org/viewtopic.php?f=5&t=1599)
 -   [shhh.flows](shhh.flows) - is producing an output file
     called \*.flow.fasta instead of \*.fasta. Also when using outputdir
     with the file option, it puts the shhh.fasta and shhh.names files in
     the wrong folder.
 -   [make.biom](make.biom) fixed bug that occurred if some
     taxonomies had confidence scores and others did not. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1585>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1585](https://forum.mothur.org/viewtopic.php?f=4&t=1585)
 -   [catchall](catchall) -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1569> - The
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1569](https://forum.mothur.org/viewtopic.php?f=4&t=1569) - The
     catchall executable name released with mothur contained \'C\'
     instead of \'c\'.
 -   [classify.otu](classify.otu) bootstrap values for
     \"unknown\" taxon too high -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1588>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1588](https://forum.mothur.org/viewtopic.php?f=4&t=1588)
 -   [align.seqs](align.seqs) - align=blast caused segfault
 -   [sffinfo](sffinfo) - reported error when \'\~\' was in
     sff file name.
 -   [classify.seqs](classify.seqs) - output taxonomy name
     missing tag when reference taxonomy file does not have 3 parts. -
-    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1613>
+    [https://forum.mothur.org/viewtopic.php?f=4&t=1613](https://forum.mothur.org/viewtopic.php?f=4&t=1613)
 
 ## Registered users
 
