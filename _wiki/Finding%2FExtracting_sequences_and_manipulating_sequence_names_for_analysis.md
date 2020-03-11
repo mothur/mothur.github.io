@@ -9,7 +9,7 @@ even quicker way to do this, but this method has served me well and can
 handle a large amount of sequences with many different groups. We will
 look at sequences from [Community genomics among stratified microbial
 assemblages in the ocean\'s
-interior](http://www.ncbi.nlm.nih.gov/pubmed/16439655) published in
+interior](https://www.ncbi.nlm.nih.gov/pubmed/16439655) published in
 Science 2006. I will walk you through extracting the sequences from
 genbank, manipulating the sequence names for convenience, and generating
 a group file based on where in the water column the sequences came from.
@@ -30,7 +30,7 @@ with accession numbers that link the submitted sequences.
 
 Since I am interested in the 16s rRNA gene from bacteria in ocean
 environments\....a good place to start your query would be to go to the
-[NCBI](http://www.ncbi.nlm.nih.gov/) nucleotide database and type:
+[NCBI](https://www.ncbi.nlm.nih.gov/) nucleotide database and type:
 
 **`16s`` ``AND`` ``ocean`` ``NOT`` ``Genome`**
 

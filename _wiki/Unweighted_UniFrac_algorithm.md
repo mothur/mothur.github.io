@@ -6,7 +6,7 @@ algorithm](unweighted_UniFrac_algorithm) is an attempt at
 creating a phylogenetic extension of the Jaccard index, which defines
 the distance between a pair of communities as the proportion of
 evolution that is unique to one community or the other [Lozupone and
-Knight (2005)](http://www.ncbi.nlm.nih.gov/pubmed/16332807). It attempts
+Knight (2005)](https://www.ncbi.nlm.nih.gov/pubmed/16332807). It attempts
 to capture the notion that processes such as adaptation and genetic
 drift will cause the amount of evolution unique to a community to
 increase as pairs of communities become increasingly genetically

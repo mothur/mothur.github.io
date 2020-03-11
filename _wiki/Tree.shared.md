@@ -26,7 +26,7 @@ This will generate newick-formatted file for the classical [
 Jaccard](jclass) and [ Yue & Clayton
 theta](thetayc) values. The tree can be visualized in a
 number of programs such as
-[TreeViewX](http://darwin.zoology.gla.ac.uk/~rpage/treeviewx/). The
+[TreeViewX](https://darwin.zoology.gla.ac.uk/~rpage/treeviewx/). The
 output files are as follows:
 
 **abrecovery.fn.jclass.0.03.tre**

@@ -4,7 +4,7 @@ title: 'RDP reference files'
 ## Version 16
 
 The [publicly released version
-16](http://rdp.cme.msu.edu/misc/rel10info.jsp) of its training set in
+16](https://rdp.cme.msu.edu/misc/rel10info.jsp) of its training set in
 February 2016 (we dropped the ball on version 15). We have modified the
 files that they make available on SourceForge to be compatible with
 mothur. To maintain a consistent 6 taxonomic levels we have removed the
@@ -42,7 +42,7 @@ from running summary.seqs on trainset16\_022016.rdp.fasta:
 ## Version 14
 
 The [publicly released version
-14](http://rdp.cme.msu.edu/misc/rel10info.jsp) of its training set in
+14](https://rdp.cme.msu.edu/misc/rel10info.jsp) of its training set in
 May 2015 (no idea what happened to releases 11 through 13). We have
 modified the files that they make available on SourceForge to be
 compatible with mothur. To maintain a consistent 6 taxonomic levels we
@@ -80,18 +80,18 @@ from running summary.seqs on trainset14\_052015.rdp.fasta:
 ## Version 10
 
 The [publicly released version
-10](http://rdp.cme.msu.edu/misc/rel10info.jsp) of its training set in
+10](https://rdp.cme.msu.edu/misc/rel10info.jsp) of its training set in
 September 2014. We have modified the files that they make available on
-[SourceForge](http://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/)
+[SourceForge](https://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/)
 to be compatible with mothur. To maintain a consistent 6 taxonomic
 levels we have removed the various sub-classes, orders and families:
 
 -   [16S rRNA reference
-    (RDP)](http://mothur.org/w/images/b/b5/Trainset10_082014.rdp.tgz): A
+    (RDP)](https://mothur.org/w/images/b/b5/Trainset10_082014.rdp.tgz): A
     collection of 10,240 bacterial and 410 archaeal 16S rRNA gene
     sequences with an improved taxonomy compared to version 9.
 -   [16S rRNA reference
-    (PDS)](http://mothur.org/w/images/2/24/Trainset10_082014.pds.tgz):
+    (PDS)](https://mothur.org/w/images/2/24/Trainset10_082014.pds.tgz):
     The RDP reference with 119 mitochondrial 16S rRNA gene sequences
     added as members of the Rickettsiales and four 18S rRNA gene
     sequences added as members of the Eukarya.
@@ -117,10 +117,10 @@ from running summary.seqs on trainset10\_082014.rdp.fasta:
 ## Version 9
 
 The [RDP publicly released version
-9](http://rdp.cme.msu.edu/misc/rel10info.jsp#taxonomy) of its training
+9](https://rdp.cme.msu.edu/misc/rel10info.jsp#taxonomy) of its training
 set in March 2012. We have modified the files that they make available
 on
-[SourceForge](http://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/)
+[SourceForge](https://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/)
 to be compatible with mothur. To maintain a consistent 6 taxonomic
 levels we have removed the various sub-classes, orders and families:
 
@@ -180,7 +180,7 @@ The [ RDP training set](Media:RDPTrainingSet.zip) (version 6,
 released 03/02/2010) consists of 8,422 sequences (8,127 bacterial and
 295 archaeal) and is based on Bergey\'s taxonomic outline. This training
 set is our modification of the files that they posted to
-[SourceForge](http://sourceforge.net/projects/rdp-classifier/). Their
+[SourceForge](https://sourceforge.net/projects/rdp-classifier/). Their
 archive provides a bunch of other files that mothur will calculate the
 first time you use the training set. Our archive consists of two files -
 a fasta-formatted sequence file and a mothur-compatible taxonomy file.

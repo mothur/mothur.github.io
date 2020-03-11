@@ -38,7 +38,7 @@ gmail com).
 
 As always, we appreciate your enthusiastic use of mothur and ideas.
 Within one year of publishing mothur, it received over 60 citations -
-thank you! Feel free to keep the [six packs](http://leinie.com/red.html)
+thank you! Feel free to keep the [six packs](https://leinie.com/red.html)
 and Russian vodka coming\...
 
 

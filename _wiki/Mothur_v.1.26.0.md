@@ -18,7 +18,7 @@ more. Stay tuned!
 Also, people frequently ask how we describe our analysis pipeline and
 how we analyze data in general. Of course plagiarism is the Worst
 Possible Thing In Science, [our most recent
-paper](http://www.ncbi.nlm.nih.gov/pubmed/22688727) may inspire you.
+paper](https://www.ncbi.nlm.nih.gov/pubmed/22688727) may inspire you.
 It\'s hot this summer in Michigan with hardly any rain. All of this
 makes it hard to keep the ideas flowing. Be sure to keep your [hydrating
 substances flowing](https://leinie.com).
@@ -70,30 +70,30 @@ substances flowing](https://leinie.com).
 ## Bug fixes
 
 -   [shhh.flows](shhh.flows) fixed output file location -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=1570&p=4131#p4131>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1570&p=4131#p4131>
 -   [shhh.flows](shhh.flows) - added checks to make sure all
     flow files are completed when multiple processors are used. -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=1599>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1599>
 -   [shhh.flows](shhh.flows) - is producing an output file
     called \*.flow.fasta instead of \*.fasta. Also when using outputdir
     with the file option, it puts the shhh.fasta and shhh.names files in
     the wrong folder.
 -   [make.biom](make.biom) fixed bug that occurred if some
     taxonomies had confidence scores and others did not. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1585>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1585>
 -   [catchall](catchall) -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1569> - The
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1569> - The
     catchall executable name released with mothur contained \'C\'
     instead of \'c\'.
 -   [classify.otu](classify.otu) bootstrap values for
     \"unknown\" taxon too high -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1588>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1588>
 -   [align.seqs](align.seqs) - align=blast caused segfault
 -   [sffinfo](sffinfo) - reported error when \'\~\' was in
     sff file name.
 -   [classify.seqs](classify.seqs) - output taxonomy name
     missing tag when reference taxonomy file does not have 3 parts. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1613>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1613>
 
 ## Registered users
 

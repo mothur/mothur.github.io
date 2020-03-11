@@ -2,7 +2,7 @@
 title: 'Human skin'
 ---
 Here is a link to NCBI definition page for the
-[human\_skin](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.human-skin.4.0/)
+[human\_skin](https://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.human-skin.4.0/)
 package.
 
 ## Required
@@ -94,7 +94,7 @@ Geographical environmental feature (eg., harbor, lake).
 ### geo\_loc\_name
 
 Geographical origin of the sample; use the appropriate name from this
-list <http://www.insdc.org/documents/country-qualifier-vocabulary>. Use
+list <https://www.insdc.org/documents/country-qualifier-vocabulary>. Use
 a colon to separate the country or ocean from more detailed information
 about the location, eg \\\"Canada: Vancouver\\\" or \\\"Germany: halfway
 down Zugspitze, Alps\\\".
@@ -147,7 +147,7 @@ The list of chemical compounds administered to the host or site where
 sampling occurred, and when (e.g. antibiotics, N fertilizer, air
 filter); can include multiple compounds. For Chemical Entities of
 Biological Interest ontology (CHEBI) (v1.72), please see
-<http://bioportal.bioontology.org/visualize/44603>.
+<https://bioportal.bioontology.org/visualize/44603>.
 
     format: {term}; {timestamp}
 
@@ -171,7 +171,7 @@ The list of diseases diagnosed; can include multiple diagnoses. the
 value of the field depends on host; for humans the terms should be
 chosen from DO (Disease Ontology), free text for non-human. For DO
 terms, please see
-<http://gemina.svn.sourceforge.net/viewvc/gemina/trunk/Gemina/ontologies/gemina_symptom.obo?view=log>
+<https://gemina.svn.sourceforge.net/viewvc/gemina/trunk/Gemina/ontologies/gemina_symptom.obo?view=log>
 
     format: {term}
 
@@ -270,7 +270,7 @@ include multiple perturbation types.
 
 Phenotype of sampled organism. For Phenotypic quality Ontology (PATO)
 (v1.269) terms, please see
-<http://bioportal.bioontology.org/visualize/44601>.
+<https://bioportal.bioontology.org/visualize/44601>.
 
     format: {term}
 

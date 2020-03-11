@@ -47,15 +47,15 @@ like used, if none is given all labels are processed.
 
 The method parameter allows you to select what method you would like to
 use. Options are pearson, spearman and kendall. Default=pearson -
-<http://en.wikipedia.org/wiki/Pearson_correlation_coefficient>
+<https://en.wikipedia.org/wiki/Pearson_correlation_coefficient>
 
 To use the spearman method: -
-<http://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient>
+<https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient>
 
     mothur > otu.association(shared=final.an.0.03.subsample.0.03.pick.shared, method=spearman)
 
 or to use the kendall method: -
-<http://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient>
+<https://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient>
 
     mothur > otu.association(shared=final.an.0.03.subsample.0.03.pick.shared, method=kendall)
 
@@ -78,7 +78,7 @@ reported.
 -   1.24.0 - First introduced.
 -   1.26.0 - added metadata parameter
 -   1.28.0 - added cutoff option -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=1639>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1639>
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)

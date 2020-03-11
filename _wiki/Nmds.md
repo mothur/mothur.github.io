@@ -51,6 +51,6 @@ point. Default=1e-12.
 ## Revisions
 
 -   1.33.0 Added group label to \*.axes file. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2677>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2677>
 
 [Category:Commands](Category:Commands)

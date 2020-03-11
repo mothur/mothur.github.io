@@ -87,7 +87,7 @@ There are several reasons to be interested in providing a name file with
 your distance matrix. First, as sequencing collections increase in size,
 the number of duplicate sequences is increasing. This is especially the
 case with sequences generated via pyrosequencing. Sogin and colleagues
-[1](http://www.pnas.org/content/103/32/12115.full) found that less than
+[1](https://www.pnas.org/content/103/32/12115.full) found that less than
 50% of their sequences were unique. Because the alignments and distances
 for the duplicate sequences are the same, re-processing each duplicate
 sequence takes a considerable amount of computing time and memory.
@@ -429,7 +429,7 @@ The variability is caused by the randomization of the sequences.
 -   1.35.0 - Clustering commands did not include the count file info.
     when printing list file OTU order. Only effects clustering commands.
     \*.pick commands must preserve otuLabels order. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=3460&p=10483#p10483>.
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3460&p=10483#p10483>.
 -   1.37.0 - Adds vsearch clustering methods: agc and dgc.
     [\#169](https://github.com/mothur/mothur/issues/169)
 -   1.38.0 - Fixes bug with age method.

@@ -4,7 +4,7 @@ title: 'Chimera.uchime'
 The **chimera.uchime** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The original uchime program was
 written by Robert C. Edgar and donated to the public domain,
-<http://drive5.com/uchime>. If you would like to follow along, please
+<https://drive5.com/uchime>. If you would like to follow along, please
 download [ UchimeExample.zip](Media:UchimeExample.zip).
 
 
@@ -18,7 +18,7 @@ reference file.
 The output to the screen should look like:
 
     uchime by Robert C. Edgar
-[`http://drive5.com/uchime`](http://drive5.com/uchime)
+[`https://drive5.com/uchime`](https://drive5.com/uchime)
     This code is donated to the public domain.
 
     Checking sequences from stool.trim.unique.good.align ...
@@ -265,7 +265,7 @@ ucl is true.
 -   1.23.0 Paralellized for Windows.
 -   1.23.0 Added column headings to .chimera file.
 -   1.23.0 fixed bug with uchime executable location. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1379>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1379>
 -   1.28.0 Added count parameter
 -   1.28.0 Bug Fix - spaces in uchime path causing crash
 -   1.29.0 Added dereplicate and strand parameters.
@@ -274,11 +274,11 @@ ucl is true.
 -   1.30.0 - Bug Fix: dereplicate=t, remove.seqs(dups=f) was not
     removing all redundant chimeras.
 -   1.32.1 Bug Fix: count table and dereplicate=t caused total=0 error
-    message. - <http://www.mothur.org/forum/viewtopic.php?f=4&t=2620>
+    message. - <https://www.mothur.org/forum/viewtopic.php?f=4&t=2620>
 -   1.33.0 Improved work balance load between processors when processing
     by group.
 -   1.36.0 Adds method tag to output files. -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=3636&p=10748#p10748>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=3636&p=10748#p10748>
 -   1.38.0 Error generated when filenames are too long for uchime
     program.
 -   1.39.0 Fixes Windows multiple processors with groups crash.

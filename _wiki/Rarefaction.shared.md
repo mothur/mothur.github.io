@@ -187,7 +187,7 @@ times. Default=f.
 ### Visualization with R
 
 To visual your data follow Pat\'s tutorial
-[here](http://www.riffomonas.org/minimalR/06_line_plots.html).
+[here](https://www.riffomonas.org/minimalR/06_line_plots.html).
 
 ## Revisions
 

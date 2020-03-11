@@ -31,14 +31,14 @@ Detroit is beautiful that time of year.
 ## New commands
 
 -   [rename.seqs](rename.seqs) -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=1918>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1918>
 -   [make.lefse](make.lefse) - creates a
-    [LEfSe](http://huttenhower.sph.harvard.edu/galaxy/root?tool_id=lefse_upload)
+    [LEfSe](https://huttenhower.sph.harvard.edu/galaxy/root?tool_id=lefse_upload)
     compatible input file from mothur\'s output files.
 -   [kruskal.wallis](kruskal.wallis) - find the Kruskal
     Wallis one way analysis of variance for each OTU.
 -   [lefse](lefse) - modelled after the
-    [LEfSe](http://huttenhower.sph.harvard.edu/galaxy/root?tool_id=lefse_upload)
+    [LEfSe](https://huttenhower.sph.harvard.edu/galaxy/root?tool_id=lefse_upload)
     program written by the Huttenhower lab.
 
 ## Feature updates
@@ -49,7 +49,7 @@ Detroit is beautiful that time of year.
     [classify.rf](classify.rf)
 -   [classify.seqs](classify.seqs) - removed extra name
     checks for speed up of reading taxonomy file. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&p=6608&sid=42525a60989d015feb8c10b2b5342691>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&p=6608&sid=42525a60989d015feb8c10b2b5342691>
 -   [screen.seqs](screen.seqs) - allowed for fractional
     percent in the criteria parameter (e.g. criteria=97.5)
 -   [classify.rf](classify.rf) - improved output
@@ -61,10 +61,10 @@ Detroit is beautiful that time of year.
 -   [unique.seqs](unique.seqs) - segfault with count file
     containing group info. - fixed 1.31.1
 -   [get.seqs](get.seqs) - dups=f, renaming issue,
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2371>. - fixed
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2371>. - fixed
     1.31.1
 -   [make.contigs](make.contigs) -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2451> - fixed
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2451> - fixed
     1.31.2
 -   [sffinfo](sffinfo) - when parsing an sff file using an
     oligos file mothur did not adjust the index offset and index length
@@ -79,7 +79,7 @@ Detroit is beautiful that time of year.
 -   [make.contigs](make.contigs) - if file option is used
     with group provided, and one or more files contain less good reads
     than number of processors, group assignments were incorrect. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2571&p=7025#p7025>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2571&p=7025#p7025>
 -   [trim.seqs](trim.seqs) - if primer length + barcode
     length + pdiffs + bdiffs \> sequence length, mothur crashed.
     Sequence should be scrapped.
@@ -87,7 +87,7 @@ Detroit is beautiful that time of year.
     caused crash on linux.
 -   [make.biom](make.biom) - segfault with multiple labels in
     shared file. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2585&p=7072#p7072>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2585&p=7072#p7072>
 -   [screen.seqs](screen.seqs) - for count tables without
     group information, mothur was not creating the \*good.count\_table
     correctly. Which could cause fasta/count file mismatch errors
@@ -95,7 +95,7 @@ Detroit is beautiful that time of year.
 -   removed -m64 flag from makefile for linux
 -   moved lookup file default position to
     pathToMothursExe/lookupFiles/LookUp\_Titanium.pat -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1366&sid=7f52c79920891f1532992c30f8fe6a3a&start=10>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1366&sid=7f52c79920891f1532992c30f8fe6a3a&start=10>
 
 ## Changes to wiki
 
@@ -104,7 +104,7 @@ Detroit is beautiful that time of year.
 
 ## GUI
 
--   <http://www.mothur.org/forum/viewtopic.php?f=4&t=2508&p=7147#p7147> -
+-   <https://www.mothur.org/forum/viewtopic.php?f=4&t=2508&p=7147#p7147> -
     Preferences file menu option not working. Preferences file
     overwriting references.
 -   when set.dir command was used logfile path name caused \"Could not

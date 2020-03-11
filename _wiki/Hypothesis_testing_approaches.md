@@ -25,7 +25,7 @@ index](Special:Categories).
 
 -   [parsimony](parsimony) - the parsimony test, which was
     previously available through
-    [TreeClimber](http://schloss.micro.umass.edu/software/treeclimber.html)
+    [TreeClimber](https://schloss.micro.umass.edu/software/treeclimber.html)
 -   [unifrac.unweighted](unifrac.unweighted) - the unweighted
     Unifrac algorithm
 -   [unifrac.weighted](unifrac.weighted) - the weighted

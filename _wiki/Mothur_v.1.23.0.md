@@ -68,24 +68,24 @@ Pat Schloss
 
 -   [trim.flows](trim.flows) - fixed bug that occurred if you
     had multiple primers with blank names -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1358>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1358>
 -   [chimera.uchime](chimera.uchime) - executable location -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1379>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1379>
 -   [classify.seqs](classify.seqs) - mothur couldn\'t handle
     parentheses in the taxonomy file. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1370>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1370>
 -   [chimera.bellerophon](chimera.bellerophon) -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1151> - segfault in
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1151> - segfault in
     chimera.bellerophon MPI-Enabled version.
 -   [chop.seqs](chop.seqs) - had an off by one error - if you
     put numbases=200 the sequence came out as 199 bases
 -   [trim.seqs](trim.seqs) - fixed flip parameter in -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1401&p=3486#p3486>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1401&p=3486#p3486>
 -   fixed bug with newly paralellized commands for Windows that was
     causing crashes -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1422>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1422>
 -   get.groups and remove.groups file mismatch -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1396&p=3560#p3560>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1396&p=3560#p3560>
 
 ## Wiki updates
 
@@ -94,7 +94,7 @@ Pat Schloss
     databases](greengenes-formatted_databases)
 -   [Schloss SOP](Schloss_SOP) - updated documentation to
     reflect the final version of the recently published [PLoS ONE
-    manuscript](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027310)
+    manuscript](https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027310)
 
 ## Registered users
 

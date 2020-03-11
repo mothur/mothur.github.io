@@ -5,7 +5,7 @@ author: "PD Schloss"
 date: "August 8, 2014"
 comments: true
 ---
-The good people at [SILVA](http://arb-silva.de) have released a new version of the SILVA database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](http://www.mothur.org/wiki/Silva_reference_files).
+The good people at [SILVA](https://arb-silva.de) have released a new version of the SILVA database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](https://www.mothur.org/wiki/Silva_reference_files).
 
 ## Curation of references
 
@@ -14,12 +14,12 @@ This README file explains how we generated the silva reference files for use wit
 
 
 {% highlight bash %}
-wget -N http://www.arb-silva.de/fileadmin/arb_web_db/release_119/ARB_files/SSURef_NR99_119_SILVA_14_07_14_opt.arb.tgz
+wget -N https://www.arb-silva.de/fileadmin/arb_web_db/release_119/ARB_files/SSURef_NR99_119_SILVA_14_07_14_opt.arb.tgz
 tar xvzf *arb.tgz
 arb SSURef_NR99_119_SILVA_14_07_14_opt.arb
 {% endhighlight %}
 
-This will launch us into the arb environment with the ''Ref NR 99'' database opened. This database has 534,968 sequences within it that are not more than 99% similar to each other. The release notes for [this database](http://www.arb-silva.de/documentation/release-119/) as well as the idea behind the [non-redundant database](http://www.arb-silva.de/projects/ssu-ref-nr/) are available from the silva website. Within arb do the following:  
+This will launch us into the arb environment with the ''Ref NR 99'' database opened. This database has 534,968 sequences within it that are not more than 99% similar to each other. The release notes for [this database](https://www.arb-silva.de/documentation/release-119/) as well as the idea behind the [non-redundant database](https://www.arb-silva.de/projects/ssu-ref-nr/) are available from the silva website. Within arb do the following:  
 
 1. Click the search button
 1. Set the first search field to 'ARB_color' and set it to 1. Click on the equal sign until it indicates not equal (this removes low quality reads and chimeras)

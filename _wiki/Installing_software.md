@@ -7,8 +7,8 @@ serious about doing bioinformatics in the field of microbial ecology:
 -   [ Installing
     mothur](General_operations#Installing_mothur) and [dotur,
     sons, slibshuff, and
-    treeclimber](http://schloss.micro.umass.edu/software/)
+    treeclimber](https://schloss.micro.umass.edu/software/)
 -   [Installing ARB](Installing_ARB)
--   [PHYLIP](http://evolution.genetics.washington.edu/phylip.html)
--   [MrBayes](http://mrbayes.csit.fsu.edu/)
--   [PAUP\*](http://paup.csit.fsu.edu/)
+-   [PHYLIP](https://evolution.genetics.washington.edu/phylip.html)
+-   [MrBayes](https://mrbayes.csit.fsu.edu/)
+-   [PAUP\*](https://paup.csit.fsu.edu/)

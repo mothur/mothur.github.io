@@ -2,7 +2,7 @@
 title: 'Wastewater'
 ---
 Here is a link to NCBI definition page for the
-[wastewater](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.wastewater.4.0/)
+[wastewater](https://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.wastewater.4.0/)
 package.
 
 ## Required
@@ -94,7 +94,7 @@ Geographical environmental feature (eg., harbor, lake).
 ### geo\_loc\_name
 
 Geographical origin of the sample; use the appropriate name from this
-list <http://www.insdc.org/documents/country-qualifier-vocabulary>. Use
+list <https://www.insdc.org/documents/country-qualifier-vocabulary>. Use
 a colon to separate the country or ocean from more detailed information
 about the location, eg \\\"Canada: Vancouver\\\" or \\\"Germany: halfway
 down Zugspitze, Alps\\\".
@@ -132,7 +132,7 @@ List of chemical compounds administered to the host or site where
 sampling occurred, and when (e.g. antibiotics, N fertilizer, air
 filter); can include multiple compounds. For Chemical Entities of
 Biological Interest ontology (CHEBI) (v1.72), please see
-<http://bioportal.bioontology.org/visualize/44603>
+<https://bioportal.bioontology.org/visualize/44603>
 
 ### chem\_oxygen\_dem
 

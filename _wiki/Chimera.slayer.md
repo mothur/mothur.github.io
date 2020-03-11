@@ -161,7 +161,7 @@ to see if they are chimeric. By default, split=F.
 
 This command was modeled after the chimeraSlayer written by the Broad
 Institute. Additional documentation can be found at the [Broad
-Institute\'s website](http://microbiomeutil.sourceforge.net/).
+Institute\'s website](https://microbiomeutil.sourceforge.net/).
 
 ### dereplicate
 
@@ -240,7 +240,7 @@ The results would be:
 -   1.30.0 - Bug Fix: dereplicate=t, remove.seqs(dups=f) was not
     removing all redundant chimeras.
 -   1.32.1 Bug Fix: count table and dereplicate=t caused total=0 error
-    message. - <http://www.mothur.org/forum/viewtopic.php?f=4&t=2620>
+    message. - <https://www.mothur.org/forum/viewtopic.php?f=4&t=2620>
 -   1.33.0 - improved work balance load between processors when
     processing by group.
 -   1.38.0 - Removes save option.

@@ -10,9 +10,9 @@ output:
 ---
 
 
-The good people at the [RDP](http://rdp.cme.msu.edu) have released a new version of the RDP database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](http://mothur.org/wiki/RDP_reference_files). The original files are available from the RDPs [sourceforge server](http://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/) and were used as the starting point for this README.
+The good people at the [RDP](https://rdp.cme.msu.edu) have released a new version of the RDP database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](https://mothur.org/wiki/RDP_reference_files). The original files are available from the RDPs [sourceforge server](https://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/) and were used as the starting point for this README.
 
-The [release notes](http://rdp.cme.msu.edu/misc/rel10info.jsp#release11_history) indicate the following:
+The [release notes](https://rdp.cme.msu.edu/misc/rel10info.jsp#release11_history) indicate the following:
 
 > The Bacteria and Archaea hierarchy model used by RDP Classifier and RDP Hierarchy Browser has been updated to training set No. 14. Six archaeal phyla (Woesearchaeota, Pacearchaeota, Aigarchaeota, Aenigmarchaeota, Parvarchaeota, Nanohaloarchaeota) were added to the current release to reflect discoveries by recent changes derived from metagenome assemblies or single cell amplified genomes (SAGs). Under archaeal class Halobacteria, recently proposed emendated order Halobacteriales and new orders Haloferacales and Natrialbales have been incorporated.
 
@@ -22,7 +22,7 @@ Let's get going...
 {% highlight bash %}
 rm -rf RDPClassifier_16S_trainsetNo14_rawtrainingdata* Trainset9_032012.pds.zip
 
-wget -N http://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/RDPClassifier_16S_trainsetNo14_rawtrainingdata.zip
+wget -N https://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/RDPClassifier_16S_trainsetNo14_rawtrainingdata.zip
 unzip -o RDPClassifier_16S_trainsetNo14_rawtrainingdata.zip
 mv RDPClassifier_16S_trainsetNo14_rawtrainingdata/* ./
 {% endhighlight %}
@@ -94,7 +94,7 @@ The RDP training sets do not include mitochondria or sequences from eukaryotes. 
 
 
 {% highlight bash %}
-wget -N http://mothur.org/w/images/2/24/Trainset10_082014.pds.tgz
+wget -N https://mothur.org/w/images/2/24/Trainset10_082014.pds.tgz
 tar xvzf Trainset10_082014.pds.tgz
 mv trainset10_082014.pds/trainset10_082014* ./
 rm -rf trainset10_082014.pds Trainset10_082014.pds.tgz

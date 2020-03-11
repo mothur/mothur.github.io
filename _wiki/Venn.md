@@ -176,7 +176,7 @@ For example:
 -   1.29.0 - Added the sharedotus parameter.
 -   1.29.1 - Bug Fix: segfault when no shared otus.
 -   1.33.0 - permute parameter can equal 1, 2, 3, 4 or true. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2629&p=7252#p7252>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2629&p=7252#p7252>
 -   1.33.0 - Bug Fix: overwrote .sharedotu files when permute=t
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,

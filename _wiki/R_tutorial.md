@@ -915,19 +915,19 @@ Rtutorial files](Media:Rtutorial.zip)
     #
     #  Websites:
     #      RTFM
-`#      `[`http://www.r-project.org/`](http://www.r-project.org/)
+`#      `[`https://www.r-project.org/`](https://www.r-project.org/)
     #
     #      R tips
-`#      `[`http://pj.freefaculty.org/R/Rtips.html`](http://pj.freefaculty.org/R/Rtips.html)
+`#      `[`https://pj.freefaculty.org/R/Rtips.html`](https://pj.freefaculty.org/R/Rtips.html)
     #  
     #      R Graph Gallery
-`#      `[`http://addictedtor.free.fr/graphiques/RGraphGallery.php`](http://addictedtor.free.fr/graphiques/RGraphGallery.php)
+`#      `[`https://addictedtor.free.fr/graphiques/RGraphGallery.php`](https://addictedtor.free.fr/graphiques/RGraphGallery.php)
     #
     #      Quick-R
     #      A website for experienced users of popular statistical packages such as
     #      SAS, SPSS, Stata, and Systat (although current R users should also find
     #      it useful).
-`#      `[`http://www.statmethods.net/index.html`](http://www.statmethods.net/index.html)
+`#      `[`https://www.statmethods.net/index.html`](https://www.statmethods.net/index.html)
     #
     #  Books:
     #      Dalgard, P (2008) _Introductory Statistics with R_.  Second edition.  

@@ -37,12 +37,12 @@ Pat Schloss
 ## Feature updates
 
 -   changed the output for [get.oturep](get.oturep) names -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=506&sid=b0e550aae63ff095ea48b51802a51526>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=506&sid=b0e550aae63ff095ea48b51802a51526>
 -   made minsnp=100 the default in
     [chimera.slayer](chimera.slayer)
 -   added groupmode parameter to
     [summary.single](summary.single) -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=513&sid=b44f89ef348ab38c197ffe489e656402>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=513&sid=b44f89ef348ab38c197ffe489e656402>
 -   added default option to [set.dir](set.dir), so that you
     can set input, output and tempdefault to the location of mothur\'s
     executable. This is helpful if you double click on the mothur
@@ -50,7 +50,7 @@ Pat Schloss
     directory.
 -   added countgaps parameter to [chop.seqs](chop.seqs)
     command -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=495&sid=4acb77fd1bf0275576c23be41e4ab8b5>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=495&sid=4acb77fd1bf0275576c23be41e4ab8b5>
 -   added summary and collect parameter to
     [phylo.diversity](phylo.diversity) - made summary=T the
     default and collect=F, rarefy=F by default. Summary=T creates a
@@ -77,7 +77,7 @@ Pat Schloss
     [heatmap.bin](heatmap.bin) command. Also added more
     sorting options for the picture: none, shared, totalotu,
     totalgroup. -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=504&sid=3ea797594a02a1bdbc0972a7120b9919>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=504&sid=3ea797594a02a1bdbc0972a7120b9919>
 -   increased speed of parallelized commands file division.
 -   new calculators:
     -   [invsimpson](invsimpson) - the inverse Simpson index
@@ -132,10 +132,10 @@ Pat Schloss
     negative results if the numbers were larger than the largest
     possible int for a given platform.
 -   fixed ambiguous output for align.seqs flip=T. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=533&sid=3ea797594a02a1bdbc0972a7120b9919>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=533&sid=3ea797594a02a1bdbc0972a7120b9919>
 -   fixed bug that truncated accession names in mpi-enabled version if a
     file with Windows line endings was used. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=492&p=1174>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=492&p=1174>
 -   modified [pre.cluster](pre.cluster) to make it faster
 -   fixed bug with tree.shared -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=549>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=549>

@@ -133,7 +133,7 @@ analyze 16S rRNA gene sequences. Thank you!
 -   [catchall](catchall) - \[ERROR\]: this command doesn\'t
     create a sabund output file.
 -   [amova](amova), [homova](homova "wikilink") -
-    <http://www.mothur.org/forum/viewtopic.php?f=1&t=1919>
+    <https://www.mothur.org/forum/viewtopic.php?f=1&t=1919>
 -   [get.seqs](get.seqs) - dups=f seq name mismatches.
 -   [cluster.split](cluster.split) - no longer creates
     concatenated distance matrix for splitmethod=fasta.

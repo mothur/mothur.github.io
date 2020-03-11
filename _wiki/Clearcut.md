@@ -5,7 +5,7 @@ The **clearcut** command allows mothur users to run the clearcut program
 from within mothur. The **clearcut** program written by Initiative for
 Bioinformatics and Evolutionary Studies (IBEST) at the University of
 Idaho. For more information about **clearcut** please refer to
-<http://bioinformatics.hungry.com/clearcut/> Note: In version 1.13.0 the
+<https://bioinformatics.hungry.com/clearcut/> Note: In version 1.13.0 the
 clearcut source was added to mothur, so you no longer need the clearcut
 executable. You can still download the **clearcut** executable if you would
 like, [Download Clearcut](Download_Clearcut).

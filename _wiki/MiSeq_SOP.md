@@ -30,7 +30,7 @@ divided into several parts shown here in the table of contents for the
 tutorial:
 
 -   [Korean translation of
-    MiSeq\_SOP](http://metagenomics.tistory.com/entry/Mothur-파이프라인-pipeline)
+    MiSeq\_SOP](https://metagenomics.tistory.com/entry/Mothur-파이프라인-pipeline)
 
 
 ## Logistics
@@ -72,7 +72,7 @@ generate (e.g. the output of shhh.flows):
 -   [ Example data from Schloss lab](Media:MiSeqSOPData.zip)
     that will be used with this tutorial. It was extracted from the
     [full
-    dataset](http://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
+    dataset](https://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
 -   [ SILVA-based bacterial reference
     alignment](Media:silva.bacteria.zip)
 -   [ mothur-formatted version of the RDP training set
@@ -94,16 +94,16 @@ put mothur in your path, but this will get you what you need for now.
 
 In addition, you probably want to get your hands on the following\...
 
--   [mono](http://www.mono-project.com/Main_Page) - if you are using Mac
+-   [mono](https://www.mono-project.com/Main_Page) - if you are using Mac
     OS X or linux
--   [TextWranger](http://www.barebones.com/products/textwrangler/) /
-    [emacs](http://www.gnu.org/software/emacs/) /
-    [vi](http://www.vim.org/) / or some other text editor
--   [R](http://www.r-project.org/), Excel, or another program to graph
+-   [TextWranger](https://www.barebones.com/products/textwrangler/) /
+    [emacs](https://www.gnu.org/software/emacs/) /
+    [vi](https://www.vim.org/) / or some other text editor
+-   [R](https://www.r-project.org/), Excel, or another program to graph
     data
--   Adobe Illustrator, Safari, or [Inkscape](http://inkscape.org/)
--   [TreeView](http://taxonomy.zoology.gla.ac.uk/rod/treeview.html),
-    [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) or another
+-   Adobe Illustrator, Safari, or [Inkscape](https://inkscape.org/)
+-   [TreeView](https://taxonomy.zoology.gla.ac.uk/rod/treeview.html),
+    [FigTree](https://tree.bio.ed.ac.uk/software/figtree/) or another
     program to visualize dendrograms
 
 It is generally easiest to use the \"current\" option for many of the

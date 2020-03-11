@@ -5,11 +5,11 @@ permalink: /wiki/
 ---
 
 Welcome to the website for the [ mothur](Main_Page) project,
-initiated by [Dr. Patrick Schloss](http://www.mothur.org) and his
+initiated by [Dr. Patrick Schloss](https://www.mothur.org) and his
 [software development team](software_development_team) in the
 [Department of Microbiology &
-Immunology](http://www.med.umich.edu/microbio/) at [The University of
-Michigan](http://www.umich.edu). This project seeks to develop a single
+Immunology](https://www.med.umich.edu/microbio/) at [The University of
+Michigan](https://www.umich.edu). This project seeks to develop a single
 piece of open-source, expandable software to fill the bioinformatics
 needs of the microbial ecology community. We have incorporated the
 functionality of dotur, sons, treeclimber, s-libshuff, unifrac, and much

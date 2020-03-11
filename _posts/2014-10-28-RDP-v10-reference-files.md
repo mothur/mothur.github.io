@@ -9,9 +9,9 @@ output:
     keep_md: yes
 ---
 
-The good people at the [RDP](http://rdp.cme.msu.edu) have released a new version of the RDP database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](http://mothur.org/wiki/RDP_reference_files). The original files are available from the RDPs [sourceforge server](http://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/) and were used as the starting point for this README.
+The good people at the [RDP](https://rdp.cme.msu.edu) have released a new version of the RDP database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](https://mothur.org/wiki/RDP_reference_files). The original files are available from the RDPs [sourceforge server](https://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/) and were used as the starting point for this README.
 
-The [release notes](http://rdp.cme.msu.edu/misc/rel10info.jsp#release11_history) indicate the following:
+The [release notes](https://rdp.cme.msu.edu/misc/rel10info.jsp#release11_history) indicate the following:
 
 > The Bacteria and Archaea hierarchy model used by RDP Classifier and RDP Hierarchy Browser has been updated to training set No. 10. The new addition includes 14 new bacterial phyla and 1 new archaeal phylum, and 159 new genera. The former phylum Nitrospira is renamed to Nitrospirae. The former candidate phyla OP11, TM7, OD1, WS3 are now the new bacterial phyla Microgenomates, Candidatus Saccharibacteria, Parcubacteria, Latescibacteria.
 
@@ -21,7 +21,7 @@ Let's get going...
 {% highlight bash %}
 rm -rf RDPClassifier_16S_trainsetNo10_rawtrainingdata* Trainset9_032012.pds.zip
 	
-wget -N http://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/RDPClassifier_16S_trainsetNo10_rawtrainingdata.zip
+wget -N https://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/RDPClassifier_16S_trainsetNo10_rawtrainingdata.zip
 unzip -o RDPClassifier_16S_trainsetNo10_rawtrainingdata.zip
 mv RDPClassifier_16S_trainsetNo10_rawtrainingdata/* ./
 {% endhighlight %}
@@ -74,7 +74,7 @@ The RDP training sets do not include mitochondria or sequences from eukaryotes. 
 
 
 {% highlight bash %}
-wget -N http://mothur.org/w/images/5/59/Trainset9_032012.pds.zip
+wget -N https://mothur.org/w/images/5/59/Trainset9_032012.pds.zip
 unzip -o Trainset9_032012.pds.zip
 {% endhighlight %}
 

@@ -49,7 +49,7 @@ Data preparation for analyses in mothur consists of 4 primary steps:
 
 After assembling a fasta file of DNA sequences, protein-coding sequences
 can be conveniently translated using the batch translator on the
-[searchlauncher website](http://searchlauncher.bcm.tmc.edu/).
+[searchlauncher website](https://searchlauncher.bcm.tmc.edu/).
 
 Alternatively, if you use Sequencher to assemble your sequences you can
 translate in the program and export them in a Fasta format.
@@ -57,15 +57,15 @@ translate in the program and export them in a Fasta format.
 ## Sequence Alignment
 
 For protein coding sequences such as coxL, I have been aligning them
-using Clustal X, which can be downloaded [here](http://www.clustal.org/)
+using Clustal X, which can be downloaded [here](https://www.clustal.org/)
 
 Other alignment programs such as MUSCLE or Arb can be used. Justine Hall
 has provided a great example of using Arb to align protein-coding genes
 [here](Analysis_of_the_aclB_gene_in_a_hot_spring:_a_non-16S_rRNA_gene_example).
 
 To align the 16S rRNA sequences I used the [Greengenes web
-server](http://greengenes.lbl.gov/). [Arb](http://www.arb-home.de/) and
-[Silva](http://www.arb-silva.de/shop/) can also be used.
+server](https://greengenes.lbl.gov/). [Arb](https://www.arb-home.de/) and
+[Silva](https://www.arb-silva.de/shop/) can also be used.
 
 ## Generating distance matrices and tree files
 
@@ -447,7 +447,7 @@ respectively.
 If you plot the coxL and 16S rRNA gene rarefaction data in the
 .rarefaction output files, you can see how well the environment was
 sampled. I have used my favorite graphing program
-[Kalaidagraph](http://www.synergy.com) to generate the rarefaction
+[Kalaidagraph](https://www.synergy.com) to generate the rarefaction
 curves:
 
 ![Rarefaction curve for the 16S rRNA gene libraries using an OTU
@@ -498,7 +498,7 @@ The output files have an .svg extension and can be viewed in Adobe
 illustrator. Alternatively, if you do not have Adobe Illustrator, there
 is a very fast and convenient online file converter which can [convert
 SVG files into
-JPEGs](http://www.fileformat.info/convert/image/svg2raster.htm)
+JPEGs](https://www.fileformat.info/convert/image/svg2raster.htm)
 
 ![CoxL Venn diagram](coxLVenn.jpg "fig:CoxL Venn diagram"){width="350"}
 ![16S rRNA gene Venn

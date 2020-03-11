@@ -2,7 +2,7 @@
 title: 'Human vaginal'
 ---
 Here is a link to NCBI definition page for the [human
-vaginal](http://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.human-vaginal.4.0/)
+vaginal](https://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.human-vaginal.4.0/)
 package.
 
 ## Required
@@ -94,7 +94,7 @@ Geographical environmental feature (eg., harbor, lake).
 ### geo\_loc\_name
 
 Geographical origin of the sample; use the appropriate name from this
-list <http://www.insdc.org/documents/country-qualifier-vocabulary>. Use
+list <https://www.insdc.org/documents/country-qualifier-vocabulary>. Use
 a colon to separate the country or ocean from more detailed information
 about the location, eg \\\"Canada: Vancouver\\\" or \\\"Germany: halfway
 down Zugspitze, Alps\\\".
@@ -132,7 +132,7 @@ Descriptionlist of chemical compounds administered to the host or site
 where sampling occurred, and when (e.g. antibiotics, N fertilizer, air
 filter); can include multiple compounds. For Chemical Entities of
 Biological Interest ontology (CHEBI) (v1.72), please see
-<http://bioportal.bioontology.org/visualize/44603>
+<https://bioportal.bioontology.org/visualize/44603>
 
 ### douche
 
@@ -172,8 +172,8 @@ types
 ### host\_disease
 
 Name of relevant disease, e.g. Salmonella gastroenteritis. Controlled
-vocabulary, <http://bioportal.bioontology.org/ontologies/1009> or
-<http://www.ncbi.nlm.nih.gov/mesh>
+vocabulary, <https://bioportal.bioontology.org/ontologies/1009> or
+<https://www.ncbi.nlm.nih.gov/mesh>
 
 ### host\_family\_relationship
 
@@ -209,7 +209,7 @@ de-identified, e.g. \#131
 ### host\_tissue\_sampled
 
 Type of tissue the initial sample was taken from. Controlled vocabulary,
-<http://bioportal.bioontology.org/ontologies/1005>)
+<https://bioportal.bioontology.org/ontologies/1005>)
 
 ### host\_tot\_mass
 

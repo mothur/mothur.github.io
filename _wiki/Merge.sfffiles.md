@@ -37,7 +37,7 @@ The output parameter allows you to provide an output filename.
 ## Revisions
 
 -   1.33.0 - First Introduced -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2466>.
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2466>.
 -   1.33.2 - Bug Fix: Windows version caused substring error on parse.
 
 [Category:Commands](Category:Commands)

@@ -31,7 +31,7 @@ This command will generate a [shared file](shared_file).
 ## Creating a shared file from a biom file
 
 You can also convert a biom file,
-<http://biom-format.org/documentation/biom_format.html>. (Note: mothur
+<https://biom-format.org/documentation/biom_format.html>. (Note: mothur
 currently supports format version 1.0) to a shared file to import your
 data into mothur.
 

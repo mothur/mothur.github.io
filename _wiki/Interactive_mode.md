@@ -12,7 +12,7 @@ When you start mothur, you will see a screen that looks like this:
     Department of Microbiology
     The University of Massachusetts
     pschloss@micro.umass.edu
-[`http://schloss.micro.umass.edu/mothur`](http://schloss.micro.umass.edu/mothur)
+[`https://schloss.micro.umass.edu/mothur`](https://schloss.micro.umass.edu/mothur)
 
 
     Distributed under the GNU General Public License

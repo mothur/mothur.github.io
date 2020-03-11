@@ -136,9 +136,9 @@ forum, <https://forum.mothur.org>.
 2.  **Mothur can\'t read my biom file. What does this mean?** This
     likely caused by failure to set format=hdf5. Mothur allows for 2
     formats: classic
-    (http://biom-format.org/documentation/format\_versions/biom-1.0.html)
+    (https://biom-format.org/documentation/format\_versions/biom-1.0.html)
     and hdf5
-    (http://biom-format.org/documentation/format\_versions/biom-2.0.html).
+    (https://biom-format.org/documentation/format\_versions/biom-2.0.html).
     By default mothur assumes your files are in classic form. If your
     file is in hdf5 format, then set format=hdf5. NOTE: you can only
     process hdf5 files if you are using our pre-built version or have

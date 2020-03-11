@@ -6,7 +6,7 @@ mothur. Please consult the [Schloss SOP](Schloss_SOP) page
 for the latest and greatest method of analyzing pyrosequencing data
 
 Recently, [Costello and
-colleagues](http://www.ncbi.nlm.nih.gov/pubmed/19892944) published a
+colleagues](https://www.ncbi.nlm.nih.gov/pubmed/19892944) published a
 paper in Science where they sampled 9 people at four time points at 27
 locations on their body. Fortunately, for us, they posted their data on
 the Short Read Archive. In this tutorial, I\'ll use mothur to analyze
@@ -26,16 +26,16 @@ barcode. To follow this tutorial you will need the following files\...
 
 In addition, you probably want to get your hands on the following\...
 
--   [mono](http://www.mono-project.com/Main_Page) - if you are using Mac
+-   [mono](https://www.mono-project.com/Main_Page) - if you are using Mac
     OS X or linux
--   [CatchAll](http://www.northeastern.edu/catchall/downloads.html)
--   [TextWranger](http://www.barebones.com/products/textwrangler/) /
-    [emacs](http://www.gnu.org/software/emacs/) /
-    [vi](http://www.vim.org/) / or some other text editor
--   [R](http://www.r-project.org/), Excel, or another program to graph
+-   [CatchAll](https://www.northeastern.edu/catchall/downloads.html)
+-   [TextWranger](https://www.barebones.com/products/textwrangler/) /
+    [emacs](https://www.gnu.org/software/emacs/) /
+    [vi](https://www.vim.org/) / or some other text editor
+-   [R](https://www.r-project.org/), Excel, or another program to graph
     data
--   Adobe Illustrator, Safari, or [Inkscape](http://inkscape.org/)
--   [TreeView](http://taxonomy.zoology.gla.ac.uk/rod/treeview.html) or
+-   Adobe Illustrator, Safari, or [Inkscape](https://inkscape.org/)
+-   [TreeView](https://taxonomy.zoology.gla.ac.uk/rod/treeview.html) or
     another program to visualize dendrograms
 
 Starting out we need to first determine, what is our question? I have
@@ -230,12 +230,12 @@ using the [align.seqs](align.seqs) command and I\'ll make use
 of the two processors on my laptop (Macs rock!). I prefer the [silva
 reference alignment](silva_reference_alignment), for the
 reasons I articulated in a recent [PLoS Computational
-Biology](http://www.ncbi.nlm.nih.gov/pubmed/20011594) paper that I
+Biology](https://www.ncbi.nlm.nih.gov/pubmed/20011594) paper that I
 published. For now, if your computer has less than 2 GB of RAM you
 should probably stick with the [ greengenes reference
 alignment](Media:greengenes.alignment.zip) and tell your PI
 to [order you some more
-RAM](http://www.google.com/search?client=safari&rls=en&q=ram&ie=UTF-8&oe=UTF-8#q=ram&hl=en&client=safari&rls=en&prmd=ivnsr&source=univ&tbs=shop:1&tbo=u&sa=X&ei=ywtoTbuxOJC6tgftipHmAw&ved=0CHwQrQQ&biw=1290&bih=1468&bav=on.1,or.&fp=61ddd4f1c4c47812).
+RAM](https://www.google.com/search?client=safari&rls=en&q=ram&ie=UTF-8&oe=UTF-8#q=ram&hl=en&client=safari&rls=en&prmd=ivnsr&source=univ&tbs=shop:1&tbo=u&sa=X&ei=ywtoTbuxOJC6tgftipHmAw&ved=0CHwQrQQ&biw=1290&bih=1468&bav=on.1,or.&fp=61ddd4f1c4c47812).
 
     mothur > align.seqs(fasta=stool.trim.unique.fasta, reference=silva.bacteria.fasta, processors=2)
 
@@ -741,7 +741,7 @@ uses these metrics a Lane mask is applied. Here, we\'ll repeat that
 analysis without using a Lane mask; although the Lane mask is useful for
 discriminating at broad phylogenetic levels, here we are interested in
 performing a fine-level analysis. As we have [shown
-previously](http://www.ncbi.nlm.nih.gov/pubmed/20628621), using a Lane
+previously](https://www.ncbi.nlm.nih.gov/pubmed/20628621), using a Lane
 mask can significantly reduce the overall genetic diversity in the
 dataset and have the effect of making things look more similar than they
 are. First, we will need to create a phylip-formatted distance matrix

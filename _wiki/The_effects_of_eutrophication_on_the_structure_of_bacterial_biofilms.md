@@ -39,7 +39,7 @@ database. 2096 high quality partial (forward reads) 16S rRNA gene
 sequences were exported as a .fasta file
 
 Next the sequences were aligned using the Align tool on the
-<http://greengenes.lbl.gov> website. The .fasta file created in
+<https://greengenes.lbl.gov> website. The .fasta file created in
 CodonCode was imported and the following settings were applied:
 
 Settings:
@@ -91,7 +91,7 @@ A phylogenetic tree was created by adding the 2096 partial sequences to
 a tree containing \~ 9000 full length 16S rRNA gene sequences compiled
 by Philip Hugenholtz. This tree can be downloaded as an ARB file from
 the Ribosomal Database Project → Resources → Philip Hugenholtz\'s 16S
-rRNA ARB Database, at <http://rdp.cme.msu.edu/misc/resources.jsp>.
+rRNA ARB Database, at <https://rdp.cme.msu.edu/misc/resources.jsp>.
 
 The aligned sequences were added to the Hugenholtz data base by
 importing a filtered fasta file of all of the sequences using the

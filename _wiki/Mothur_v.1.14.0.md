@@ -42,7 +42,7 @@ good social skills, 2) knowledge of some programming language
 skills.
 
 As always, happy writing and let us know if we can be of assistance.
-Most importantly, keep the [six packs](http://leinie.com/red.html)
+Most importantly, keep the [six packs](https://leinie.com/red.html)
 coming\...
 
 Pat Schloss

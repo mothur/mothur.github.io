@@ -128,7 +128,7 @@ square root of the distances is used instead of the distance value.
 ## Revisions
 
 -   1.23.0 - fixed bug with MPI-enabled version -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1151>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1151>
 -   1.40.0 - Removes processors option.
 
 [Category:Commands](Category:Commands)

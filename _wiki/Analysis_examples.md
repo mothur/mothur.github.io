@@ -12,7 +12,7 @@ wiki and add the link below.
 -   Schloss\'s [454 SOP](454_SOP) - Contributed by [ Pat
     Schloss](User:Pschloss) - This is the method used in the
     [Schloss et al. PLoS ONE
-    paper](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027310).
+    paper](https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027310).
 -   [Costello stool analysis](Costello_stool_analysis) -
     Contributed by [ Pat Schloss](User:Pschloss) \[Only for
     historical reference\]

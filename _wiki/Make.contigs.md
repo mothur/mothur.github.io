@@ -290,11 +290,11 @@ documentation,
 -   1.26.0 - First Introduced
 -   1.30.0 - Officially released
 -   1.31.2 - Bug Fix: -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2451>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2451>
 -   1.32.0 - Bug Fix: if file option is used with group provided, and
     one or more files contain less good reads than number of processors,
     group assignments were incorrect. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2571&p=7025#p7025>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2571&p=7025#p7025>
 -   1.32.0 - Added findex and rindex parameters. Modified file options
     to add 4 column option - ffastq rfastq findex rindex. May use NONE
     as option for findex and rindex. Modified oligos file option to
@@ -302,7 +302,7 @@ documentation,
     NONE GCTGATGAGCTG Group1 would indicate you have a reverse index
     file, but no forward index file.
 -   1.34.0 - Added checkorient parameter. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2993>.
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2993>.
 -   1.36.0 - Bug Fix: when using index files in version 1.35 quality
     data was over trimmed by the length of the barcode.
 -   1.36.0 - allow for missing reads in files.
@@ -320,7 +320,7 @@ documentation,
     oligos file.
 -   1.38.0 - Skips blanks files and continues.
 -   1.38.1 - Fixes filename expansion issue.
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=5869&p=14857#p14857>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=5869&p=14857#p14857>
 -   1.39.0 - Fixes bug where mothur was not finding matches for sequence
     names \"off by one character\" in the name.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect

@@ -80,7 +80,7 @@ Added common command line options. Can now use -q or \--quiet, -h or
     include the count file info. when printing list file OTU order. Only
     effects clustering commands. \*.pick commands must preserve
     otuLabels order. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=3460&p=10483#p10483>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3460&p=10483#p10483>
 -   [classify.tree](classify.tree) - added output parameter.
     Output=node or taxon. Default=node. Output=taxon will label tree
     with consensus taxonomies.
@@ -96,16 +96,16 @@ Added common command line options. Can now use -q or \--quiet, -h or
 
 -   [cluster.split](cluster.split) - MPI version compile
     issue,
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=3453&p=10073#p10073>.
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=3453&p=10073#p10073>.
     fixed in 1.34.1.
 -   [summary.seqs](summary.seqs) - multiple processors
     Windows. fixed 1.34.2
 -   [summary.seqs](summary.seqs) -MPI bug
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=3465> - fixed
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=3465> - fixed
     1.34.2
 -   [pcr.seqs](pcr.seqs) - use of mothur\'s paired primer tag
     instead of forward and reverse tags causing improper trimming. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=3482>. fixed in
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=3482>. fixed in
     1.34.3.
 -   [sffinfo](sffinfo) - parsed sff files giving corrupt
     error. - fixed 1.34.4
@@ -113,20 +113,20 @@ Added common command line options. Can now use -q or \--quiet, -h or
     start and end parameters giving errors. - fixed 1.34.4
 -   [make.contigs](make.contigs) - Bug in Windows paralell
     processing.
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=3571&p=10466#p10466>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=3571&p=10466#p10466>
 -   [dist.seqs](dist.seqs) - bug introduced in 1.34.4 -
     <https://github.com/mothur/mothur/issues/46></a>
 -   [rarefaction.single](rarefaction.single) - returning
     median instead of mean.
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=3484>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3484>
 -   [make.contigs](make.contigs) - skipping groups if invalid
     fastq files provided. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2571>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2571>
 -   [make.contigs](make.contigs) - bug that required barcodes
     to process. -
-    <http://www.mothur.org/forum/viewtopic.php?p=10649&sid=7b2d03a6ee3d24128a696aff59c09e87>
+    <https://www.mothur.org/forum/viewtopic.php?p=10649&sid=7b2d03a6ee3d24128a696aff59c09e87>
 -   [metastats](metastats) - infinite loop. -
-    <http://www.mothur.org/forum/posting.php?mode=reply&f=4&t=3270>
+    <https://www.mothur.org/forum/posting.php?mode=reply&f=4&t=3270>
 -   [pcr.seqs](pcr.seqs) - When sequence length \< primer
     Length + pdiffs, basic\_string error occurred. Rare case.
 -   mothur will now read over null strings to avoid pesky sequence not

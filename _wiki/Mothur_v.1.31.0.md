@@ -5,12 +5,12 @@ We are very happy to announce the release of [mothur
 v.1.31.0](mothur_v.1.31.0) and have a number of exciting new
 features to tell you about. First, we have re-implemented the SparCC
 program first described by [Friedman and
-Alm](http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002687).
+Alm](https://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002687).
 It calculates correlation coefficients that are not sensitive to the
 hideous effects of relative abundance data. You can run it with the
 [sparcc](sparcc) command. Second, we have implemented the
 approach described by [Holmes and
-colleagues](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0030126)
+colleagues](https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0030126)
 for assigning samples to metacommunities using Dirichlet multinomial
 mixture models that we are calling
 [get.metacommunity](get.metacommunity). Think of it as a
@@ -45,10 +45,10 @@ able to help so many people do great research!
 
 -   [get.metacommunity](get.metacommunity) - assign samples
     to metacommunities using the algorithm of [Holmes and
-    colleagues](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0030126)
+    colleagues](https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0030126)
 -   [sparcc](sparcc) - calculate the correlation between OTUs
     using the algorithm of [Friedman and
-    Alm](http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002687)
+    Alm](https://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002687)
 -   [classify.shared](classify.shared) - identify features
     (i.e. OTUs) that allow one to distinguish between sets of
     communities using the random forest machine learning algorithm.
@@ -65,13 +65,13 @@ able to help so many people do great research!
     parameters. If sequences are removed from your fasta file by
     chop.seqs, mothur will create new \*.chop.names, \*.chop.groups and
     \*.chop.count\_table files. -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=2136>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=2136>
 -   [get.oturep](get.oturep) - added method parameter.
     Options distance and abundance. Default=distance. -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=2131>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=2131>
 -   [filter.shared](filter.shared) - added rarepercent and
     keepties parameters
-    (http://www.mothur.org/forum/viewtopic.php?f=5&t=2007)
+    (https://www.mothur.org/forum/viewtopic.php?f=5&t=2007)
 -   [unifrac.weighted](unifrac.weighted),
     [unifrac.unweighted](unifrac.unweighted),
     [parsimony](parsimony), [indicator](indicator "wikilink")
@@ -80,14 +80,14 @@ able to help so many people do great research!
 -   [get.lineage](get.lineage) and
     [remove.lineage](remove.lineage)- added constaxonomy and
     shared parameters
-    (http://www.mothur.org/forum/viewtopic.php?f=3&t=2210)
+    (https://www.mothur.org/forum/viewtopic.php?f=3&t=2210)
 -   [sens.spec](sens.spec) - added square phylip format
 -   [create.database](create.database) - add count file
 -   [pcr.seqs](pcr.seqs) - added primer to types oligos can
     read
 -   added summary file to current types kept by mothur
 -   added modifynames parameter to [set.dir](set.dir) -
-    <http://www.mothur.org/forum/viewtopic.php?f=10&t=2324&p=6360#p6360>
+    <https://www.mothur.org/forum/viewtopic.php?f=10&t=2324&p=6360#p6360>
 
 ## Bug fixes
 
@@ -100,7 +100,7 @@ able to help so many people do great research!
 -   [pcr.seqs](pcr.seqs) - For forward primer trimming with
     aligned sequences and keepdots=t. If the character before the first
     primer base was a base and not a gap the base was not trimmed.
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2209> - fixed
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2209> - fixed
     1.30.2
 -   [summary.seqs](summary.seqs) - 32bit machines processing
     a file larger than 4G could hang.
@@ -110,7 +110,7 @@ able to help so many people do great research!
     alignment.
 -   [classify.tree](classify.tree) - when names file is given
     everything is unclassified -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2161&p=6116#p6116>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2161&p=6116#p6116>
 -   [remove.groups](remove.groups)(groups=notValidGroupName,
     \...) mothur removes all of the groups. Fix will ignore invalid
     group and continue.

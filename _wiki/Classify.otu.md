@@ -182,7 +182,7 @@ Simple Format:
     sequences were not added to .tax.summary file counts.
 -   1.32.0 Bug Fix: error in \*.tax.summary counts with basis=sequence
     when using a count file.
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2492&p=7420#p7420>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2492&p=7420#p7420>
 -   1.36.0 Adds threshold parameter. The threshold parameter allows you
     to specify a cutoff for the taxonomy file that is being inputted.
 -   1.37.0 Adds output, print level and relabund parameters

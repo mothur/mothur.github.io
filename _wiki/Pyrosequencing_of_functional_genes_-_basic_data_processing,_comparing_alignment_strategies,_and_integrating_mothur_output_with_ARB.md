@@ -158,7 +158,7 @@ We can assess the accuracy of our multiple-sequence alignment as
 follows. First, we need to know what the \'true\' alignment of each
 sequence should be. To calculate this, I implemented the [dpAlign
 pairwise alignment
-algorithm](http://search.cpan.org/~cjfields/BioPerl-1.6.0/Bio/Tools/dpAlign.pm)
+algorithm](https://search.cpan.org/~cjfields/BioPerl-1.6.0/Bio/Tools/dpAlign.pm)
 to perform a high-quality global pairwise comparison of each of the 5064
 sequences to the Sanger reference sequence of the isolate that was
 pyrosequenced. I then made another script which took the Muscle and

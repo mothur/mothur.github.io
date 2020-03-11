@@ -137,9 +137,9 @@ or
 
 -   1.28.0 Added count parameter
 -   1.28.0 Can handle () in taxon names,
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=1815>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1815>
 -   1.31.0 added constaxonomy and shared parameters. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2210>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2210>
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)

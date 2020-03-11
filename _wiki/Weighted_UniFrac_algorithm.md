@@ -7,13 +7,13 @@ is implemented within mothur as the
 represents an attempt to make a quantitative beta diversity measurement
 that can be seen as an extension of unweighted UniFrac . [Lozupone et
 al.
-(2006)](http://aem.asm.org/cgi/content/full/73/5/1576?maxtoshow=&HITS=10&hits=10&RESULTFORMAT=&fulltext=phylogenetic&searchid=1&FIRSTINDEX=800&resourcetype=HWFIG)
+(2006)](https://aem.asm.org/cgi/content/full/73/5/1576?maxtoshow=&HITS=10&hits=10&RESULTFORMAT=&fulltext=phylogenetic&searchid=1&FIRSTINDEX=800&resourcetype=HWFIG)
 have shown that it is beneficial to apply both quantitative (weighted
 UniFrac) and qualitative (unweighted UniFrac) measures to a data set as
 they can lead to different conclusions about the similarity of microbial
 communities and what factors are driving microbial biodiversity. As
 shown by [Schloss
-(2008)](http://www.ncbi.nlm.nih.gov/pubmed/18239608?ordinalpos=3&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum)
+(2008)](https://www.ncbi.nlm.nih.gov/pubmed/18239608?ordinalpos=3&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum)
 , this is not a reliable approach to measuring similarity; it is best
 used for hypothesis testing.
 

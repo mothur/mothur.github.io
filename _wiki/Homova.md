@@ -53,9 +53,9 @@ dashes. The default is all sets in the design file.
 ## Revisions
 
 -   1.28.0 Added sets parameter -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=1777>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1777>
 -   1.29.0 Bug Fix:
-    <http://www.mothur.org/forum/viewtopic.php?f=1&t=1919>
+    <https://www.mothur.org/forum/viewtopic.php?f=1&t=1919>
 -   1.40.0 Bug Fix: Fixes pvalue bug for Windows.
     [\#408](https://github.com/mothur/mothur/issues/408)
 

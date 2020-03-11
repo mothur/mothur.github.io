@@ -1,10 +1,10 @@
 ---
 title: 'Findley ITS Database'
 ---
-The [Segre Lab](http://www.genome.gov/10000354) at NHGRI has provided
+The [Segre Lab](https://www.genome.gov/10000354) at NHGRI has provided
 the [ ITS database](Media:Findley_ITS_database.zip) used in
 their [Findley et al. 2013 Nature
-paper](http://www.ncbi.nlm.nih.gov/pubmed/23698366)
+paper](https://www.ncbi.nlm.nih.gov/pubmed/23698366)
 
 ## README File
 

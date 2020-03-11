@@ -3,7 +3,7 @@ title: 'Lefse'
 ---
 The **lefse** command is modeled after the LEfSe program [written and
 published by the Huttenhower
-lab](http://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-6-r60).
+lab](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-6-r60).
 See [ Make.lefse](Make.lefse) for formating files for input
 into the original LEfSe program.
 

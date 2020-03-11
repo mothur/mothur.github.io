@@ -96,11 +96,11 @@ File Size:
     options to help with this. The first is to use a cutoff. By using a
     cutoff mothur will only load distances that are below the cutoff. If
     that is still not enough, there is a command called cluster.split,
-    <http://www.mothur.org/wiki/cluster.split> which divides the
+    <https://www.mothur.org/wiki/cluster.split> which divides the
     distance matrix, and clusters the smaller pieces separately. You may
     also be able to reduce the size of the original distance matrix by
     using the commands outline in the Schloss SOP,
-    <http://www.mothur.org/wiki/Schloss_SOP>.
+    <https://www.mothur.org/wiki/Schloss_SOP>.
 
 Wrong Format:
 
@@ -120,7 +120,7 @@ processing can not be overstressed. Error filled reads produce error
 filled results.
 
 [Mothur Blog - Why do I have such a large distance
-matrix?](http://blog.mothur.org/2014/09/11/Why-such-a-large-distance-matrix/)
+matrix?](https://blog.mothur.org/2014/09/11/Why-such-a-large-distance-matrix/)
 
 \"To take a step back, if you look through our MiSeq SOP, you'll see
 that we go to great pains to only work with the unique sequences to
@@ -202,7 +202,7 @@ The clearcut commands creates a phylogenetic tree that represents how
 sequences relate. The clearcut program written by Initiative for
 Bioinformatics and Evolutionary Studies (IBEST) at the University of
 Idaho. For more information about clearcut please refer to
-<http://bioinformatics.hungry.com/clearcut/>
+<https://bioinformatics.hungry.com/clearcut/>
 
 The tree.shared command will generate a newick-formatted tree file that
 describes the dissimilarity (1-similarity) among multiple groups. Groups
@@ -295,9 +295,9 @@ would cause a mismatch error downstream.
 ### Is there a list of all of mothur\'s commands?
 
 Yes! You can find it here,
-<http://www.mothur.org/wiki/Category:Commands>.
+<https://www.mothur.org/wiki/Category:Commands>.
 
 ### How do I visualize my results from mothur?
 
 To visual your data with R follow Pat\'s tutorial
-[here](http://www.riffomonas.org/minimalR/06_line_plots.html).
+[here](https://www.riffomonas.org/minimalR/06_line_plots.html).

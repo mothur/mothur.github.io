@@ -88,7 +88,7 @@ stored here because I\'ve used this service before.
     This will give you a computer with two processors and 7.5 Gb of RAM.
     If you later decide that this is too big or not big enough, you can
     [change the size of the
-    instance](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html).
+    instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html).
     If you\'re concerned about costs, AWS provides a listing of the
     [cost for different sized
     instances](https://aws.amazon.com/ec2/pricing/). Our     m3.large
@@ -271,6 +271,6 @@ console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:s
 ## 
 
 Large chunks of this were inspired by the amazing [C. Titus
-Brown](http://ged.msu.edu/angus/tutorials/starting-your-cloud-system.html)
+Brown](https://ged.msu.edu/angus/tutorials/starting-your-cloud-system.html)
 and the materials generated for the [EDAMAME
-workshop](http://www.edamamecourse.org).
+workshop](https://www.edamamecourse.org).

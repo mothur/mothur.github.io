@@ -4,7 +4,7 @@ title: 'Forest soil community analysis'
 In this tutorial we will analyze bacterial and eukaryal forest soil
 microbial communities using some of the tools implemented in mothur. The
 [long-term soil productivity (LTSP) experiment in British
-Columbia](http://www.for.gov.bc.ca/hre/ltsp/) served to compare soil
+Columbia](https://www.for.gov.bc.ca/hre/ltsp/) served to compare soil
 microbial community structures in harvested and naturally disturbed
 forest stands along replicated soil depth profiles. Two clone libraries,
 one for each domain, containing full length ribosomal intergenic spacer
@@ -27,7 +27,7 @@ LTSP07.zip](Media:LTSP07.zip) as BACT\_SSURIS.fasta and
 EUKA\_SSURIS.fasta. Here is a quick guidline to retrieve batch sequences
 from GenBank:
 
-1.  Go to the [NCBI homepage](http://www.ncbi.nlm.nih.gov).
+1.  Go to the [NCBI homepage](https://www.ncbi.nlm.nih.gov).
 2.  Select *NUCLEOTIDE* from the *SEARCH* drop-down menu.
 3.  Type "FJ550632:FJ552694 \[ACCN\]" or "FJ552695:FJ554464 \[ACCN\]" to
     retrieve the bacterial or eukaryal sequences and hit *GO*.
@@ -46,7 +46,7 @@ The sequences contain non-coding regions, therefore we cannot use the
 16S-based aligner implemented in mothur, but rather a target-independent
 alignment tool. In general, you can use your favourite software,
 however, I recommend using
-[MAFFT](http://align.bmr.kyushu-u.ac.jp/mafft/online/server) for this
+[MAFFT](https://align.bmr.kyushu-u.ac.jp/mafft/online/server) for this
 dataset since this tool performs reasonably well with respect to
 accuracy and speed of aligning large sequence sets with hypervariable
 regions. Upload your sequences (e.g. BACT\_SSURIS.fasta) to the server
@@ -63,7 +63,7 @@ will create two additional sequence files from
 BACT\_SSURIS.almafft.fasta, i.e. BACT\_SSU.almafft.fasta and
 BACT\_RIS.almafft.fasta. Open BACT\_SSURIS.almafft.fasta in your
 favourite sequence alignment editor (e.g.
-[BioEdit](http://www.mbio.ncsu.edu/BioEdit/bioedit.html/)). Trim the
+[BioEdit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html/)). Trim the
 alignment at the following conserved position on the 3'-end of the 16S:
 
 1.  Bacteria: TGCGGCTGGATCACCTCCTT (Normand et al. 1996, Molecular
@@ -78,7 +78,7 @@ LTSP07.zip](Media:LTSP07.zip).
 
 ### Generate phylip4-formatted file
 
-Use [ReadSeq](http://www.ebi.ac.uk/cgi-bin/readseq.cgi/) or equivalent
+Use [ReadSeq](https://www.ebi.ac.uk/cgi-bin/readseq.cgi/) or equivalent
 tools to convert the three aligned fasta files into phylip format. Use
 format phylip4 since phylip3.2 will not work with the newer phylip
 version. We name these files BACT\_SSURIS.almafft.phy,
@@ -86,17 +86,17 @@ BACT\_SSU.almafft.phy, and BACT\_RIS.almafft.phy.
 
 ### Create distance matrix
 
-Use the [Phylip](http://evolution.genetics.washington.edu/phylip.html)
+Use the [Phylip](https://evolution.genetics.washington.edu/phylip.html)
 program
-[DNAdist](http://evolution.genetics.washington.edu/phylip/doc/dnadist.html)
+[DNAdist](https://evolution.genetics.washington.edu/phylip/doc/dnadist.html)
 to generate a distance matrix from the phylip formatted alignment. The
 algorithm can be run online at several locations
-([<http://trishul.sci.gu.edu.au/tools/dnadist.html>](http://trishul.sci.gu.edu.au/tools/dnadist.html),
-[<http://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist>](http://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist))
+([<https://trishul.sci.gu.edu.au/tools/dnadist.html>](https://trishul.sci.gu.edu.au/tools/dnadist.html),
+[<https://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist>](https://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist))
 or can be downloaded and used according to the following instructions:
 
 1.  Download the [Phylip
-    package](http://evolution.genetics.washington.edu/phylip/getme.html).
+    package](https://evolution.genetics.washington.edu/phylip/getme.html).
 2.  Copy the executable dnadist.exe into the directory with your data
     files and execute the program.
 3.  When prompted for the input file type the name of the phylip

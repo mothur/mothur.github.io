@@ -8,15 +8,15 @@ server across the country and then had a hick-up or two while we
 reconnected everything. Hopefully, by now you have noticed that the
 picture of my young bride and son have moved to www.mothur.org. There
 you can find several useful links - the [ wiki](Main_Page), a
-[discussion forum](http://www.mothur.org/forum), and a link to [download
+[discussion forum](https://www.mothur.org/forum), and a link to [download
 mothur](download_mothur). In case you thought we take
 ourselves too seriously (please see the [system](system)
 command), we have \"[jumped the
 shark](wikipedia:Jumping_the_shark)\" and set-up a [facebook
-page](http://www.facebook.com/pages/mothur/133966409231) for all of the
+page](https://www.facebook.com/pages/mothur/133966409231) for all of the
 adoring fans. A final bit of very exciting news is that the [manuscript
 describing
-mothur](http://aem.asm.org/cgi/content/abstract/AEM.01541-09v1) has been
+mothur](https://aem.asm.org/cgi/content/abstract/AEM.01541-09v1) has been
 accepted by Applied & Environmental Microbiology. Please cite it
 liberally. Thanks for the cast of characters that joined me in this
 venture!
@@ -33,7 +33,7 @@ sense. If we missed an algorithm, please let us know. Also, the default
 options in mothur are the way they are implemented in their \"home\"
 programs. Second, we have added the
 [align.check](align.check) command. If you are familiar with
-the [ARB editor window](http://www.arb-home.de), you have noticed that
+the [ARB editor window](https://www.arb-home.de), you have noticed that
 for 16S rRNA sequences they put all sorts of marks under the bases to
 describe the secondary structure alignment quality. This command will
 count the number of those different markings for each sequence to allow
@@ -92,17 +92,17 @@ Documentation changes
 =====================
 
 -   [facebook fan
-    club](http://www.facebook.com/pages/mothur/133966409231) - we\'re up
+    club](https://www.facebook.com/pages/mothur/133966409231) - we\'re up
     to 25 friends!
 
 <!-- -->
 
--   [mothur forum](http://www.mothur.org/forum) - please feel free to
+-   [mothur forum](https://www.mothur.org/forum) - please feel free to
     direct questions to the forum and to answer other people\'s
     questions.
 
 <!-- -->
 
--   [publication](http://aem.asm.org/cgi/content/abstract/AEM.01541-09v1) -
+-   [publication](https://aem.asm.org/cgi/content/abstract/AEM.01541-09v1) -
     the paper describing mothur is now available ahead of print from
     Applied & Environmental Microbiology. Please cite it!

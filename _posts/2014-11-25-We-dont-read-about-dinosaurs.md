@@ -19,8 +19,8 @@ Normally this means that once a month I get to hear some interesting policy
 discussions while eating cheese and crackers. At the November session we were
 discussing the relationship between the Athletic Department and the rest of
 campus and the safeguards that are in place to make sure that [we don't turn into
-UNC](http://espn.go.com/college-sports/story/_/id/11745036/north-carolina-investigation-says-advisers-pushed-sham-classes). One of the Senate Assembly members indicated that he was teaching
-a [course on the culture of basketball](http://www.lsa.umich.edu/cg/cg_detail.aspx?content=2020RCHUMS334004&termArray=sp_15_2030,w_15_2020,f_14_2010) and had a number of athletes in his class. Predictably, a professor from a
+UNC](https://espn.go.com/college-sports/story/_/id/11745036/north-carolina-investigation-says-advisers-pushed-sham-classes). One of the Senate Assembly members indicated that he was teaching
+a [course on the culture of basketball](https://www.lsa.umich.edu/cg/cg_detail.aspx?content=2020RCHUMS334004&termArray=sp_15_2030,w_15_2020,f_14_2010) and had a number of athletes in his class. Predictably, a professor from a
 science department asked how this was tolerated. Thankfully, someone told the
 scientist he was out of line, but not before the basketball prof could make an
 important point. The point of the course is to use an accessible topic
@@ -36,10 +36,10 @@ about race, ethnicity, gender, etc. through the lense of sports. I have no
 skills, but I generally like sports and find they're a pretty fun topic to
 discuss because we get that they're games and generate a lot of interesting
 First World Problems. On my bookshelf right now I have a copy of [Baseball
-Hacks](http://www.amazon.com/Baseball-Hacks-Analyzing-Winning-Statistics/dp/0596009429/ref=sr_1_1?ie=UTF8&qid=1416947079&sr=8-1&keywords=baseball+hacks), which I poured over to learn more about
+Hacks](https://www.amazon.com/Baseball-Hacks-Analyzing-Winning-Statistics/dp/0596009429/ref=sr_1_1?ie=UTF8&qid=1416947079&sr=8-1&keywords=baseball+hacks), which I poured over to learn more about
 probability, R, markov models, SQL, and general data analysis. I get baseball. I
 can relate to the situation where a [team is up 3-0 with one out in the 8th
-inning](http://en.wikipedia.org/wiki/Steve_Bartman_incident) and five outs away
+inning](https://en.wikipedia.org/wiki/Steve_Bartman_incident) and five outs away
 from that team making the World Series. What's the probability that the team
 goes on to win? Now assume that some knucklehead interferes with a play and the
 batter goes on to walk. What is the probability that player scores? What is the
@@ -74,7 +74,7 @@ forth. If I assume they have the same motivations and interests, I'll wind up
 with a bunch of unmotivated kids that hate school. This leads us to the great
 philosopher:
 
-<blockquote class="twitter-tweet" lang="en"><p>Exactly why I don&#39;t like school. <a href="http://t.co/aeSzAKvT89">pic.twitter.com/aeSzAKvT89</a></p>&mdash; Calvin and Hobbes (@Calvinn_Hobbes) <a href="https://twitter.com/Calvinn_Hobbes/status/537025468026064896">November 24, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p>Exactly why I don&#39;t like school. <a href="https://t.co/aeSzAKvT89">pic.twitter.com/aeSzAKvT89</a></p>&mdash; Calvin and Hobbes (@Calvinn_Hobbes) <a href="https://twitter.com/Calvinn_Hobbes/status/537025468026064896">November 24, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This struck a chord with me. Perhaps it's because kid #3 reminds me of Calvin.
 Short, blond, doesn't really like school, and has an amazing imagination and
@@ -84,7 +84,7 @@ eat 3% of their body weight each day, he could probably do it. Asking him to
 solve: 2 x 500 x 0.03 x 180 / 800 will get you a tantrum. So why doesn't #3 love
 school? Because he doesn't get to read enough about cows or dinosaurs:
 
-<blockquote class="twitter-tweet" lang="en"><p>Too true. This is what&#39;s wrong with ed system &amp; the greatest challenge of parenting. Aligning interest w fundamentals <a href="http://t.co/JaNNm1uFKu">pic.twitter.com/JaNNm1uFKu</a></p>&mdash; Pat Schloss (@PatSchloss) <a href="https://twitter.com/PatSchloss/status/537030240372264960">November 24, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p>Too true. This is what&#39;s wrong with ed system &amp; the greatest challenge of parenting. Aligning interest w fundamentals <a href="https://t.co/JaNNm1uFKu">pic.twitter.com/JaNNm1uFKu</a></p>&mdash; Pat Schloss (@PatSchloss) <a href="https://twitter.com/PatSchloss/status/537030240372264960">November 24, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 A final thought on the power of examples... Remember Kid #2, the one who taught
 themselves to knit and crochet and made the $200 rug? Kid #2 is a boy. What

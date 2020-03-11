@@ -8,17 +8,17 @@ comments: true
 
 Why didn't I think of that?! In the last few years I've pretty much lost all my
 drive to go to conferences to give talks. So when I saw a Twitter post from
-[Jennifer Biddle (UDel)](http://www.ceoe.udel.edu/our-people/profiles/jfbiddle)
-this summer announcing the creation of the [MicroSeminar](http://microseminar.wordpress.com),
+[Jennifer Biddle (UDel)](https://www.ceoe.udel.edu/our-people/profiles/jfbiddle)
+this summer announcing the creation of the [MicroSeminar](https://microseminar.wordpress.com),
 I got excited. After seeing the seminar series roll out over the summer I
 noticed they have had a very "environmental" focus to the initial talks. I
 offered my services to give a microbiome-based microbial ecology talk and viola!
 My talk will be this Friday (10/17/2014) at 11 AM eastern. You can watch it through
 their [Google+ site](https://plus.google.com/106615363910557080981/posts)
-and later through their [YouTube channel](http://microseminar.wordpress.com/archived-talks/).
+and later through their [YouTube channel](https://microseminar.wordpress.com/archived-talks/).
 
 MicroSeminar is an online seminar series created by Jennifer and
-[Cameron Thrash (LSU)](http://thethrashlab.com) who are both awesome Assistant
+[Cameron Thrash (LSU)](https://thethrashlab.com) who are both awesome Assistant
 Professors that also do an effective job utilizing social media to engage
 colleagues. The goal of the seminar series is to provide a monthly microbiology
 seminar given by a different research group. I think this is great for a couple
@@ -39,7 +39,7 @@ seminar series that are either more specialized or more general.
 
 When Jennifer took me up on my offer to provide a talk, I was very excited for
 the opportunity to give a microbiome talk without the microbiome crap. You will
-not see [HMP Girl](http://news.bbcimg.co.uk/media/images/60893000/jpg/_60893806_body.jpg),
+not see [HMP Girl](https://news.bbcimg.co.uk/media/images/60893000/jpg/_60893806_body.jpg),
 no quotes of specious statistics, no mention of obscure disease, and no
 venturing into the weeds of bioinformatics. I will be describing ***unpublished***
 experiments from the lab where we have taken various sources of microorganisms

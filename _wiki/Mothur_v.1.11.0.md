@@ -53,7 +53,7 @@ any questions.
     than one file at a time.
 -   added dups parameter to [get.seqs](get.seqs)
 -   added sort option to [get.otulist](get.otulist) command -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=368&sid=e81f0982fd4e09a24a2aff4ff1cde1c9>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=368&sid=e81f0982fd4e09a24a2aff4ff1cde1c9>
 -   allow for \'\>\' in sequence names
 -   reduced memory used to generate
     [chimera.pintail](chimera.pintail) commands quantile

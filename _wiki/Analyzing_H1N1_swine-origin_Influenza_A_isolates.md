@@ -1,17 +1,17 @@
 ---
 title: 'Analyzing H1N1 swine-origin Influenza A isolates'
 ---
-[link=<http://commons.wikimedia.org/wiki/File:H1N1_influenza_virus.jpg%7Cright%7Cthumb%7C200px%7CH1N1>
+[link=<https://commons.wikimedia.org/wiki/File:H1N1_influenza_virus.jpg%7Cright%7Cthumb%7C200px%7CH1N1>
 influenza virus.](image:H1N1_influenza_virus.jpg)
 
 The swine-origin Influenza A virus (S-OIV) has spread rapidly around the
 world with [175
-countries](http://gamapserver.who.int/h1n1/cases-deaths/h1n1_casesdeaths.html)
+countries](https://gamapserver.who.int/h1n1/cases-deaths/h1n1_casesdeaths.html)
 now reporting confirmed cases. Here we use mothur to analyze all
 full-length [Hemagglutinin
-(HA)](http://www.pdb.org/pdb/static.do?p=education_discussion/molecule_of_the_month/pdb76_1.html)
+(HA)](https://www.pdb.org/pdb/static.do?p=education_discussion/molecule_of_the_month/pdb76_1.html)
 sequences available at the [NCBI Influenza Virus
-Resource](http://www.ncbi.nlm.nih.gov/genomes/FLU/SwineFlu.html) as of
+Resource](https://www.ncbi.nlm.nih.gov/genomes/FLU/SwineFlu.html) as of
 August 28, 2009 in order to assess if current sampling efforts are
 sufficient to capture the diversity of this protein. . This protein is
 of particular interest as it is responsible for binding to receptor
@@ -22,11 +22,11 @@ sites on a target cell.
 
 A total of 599 full-length S-OIV HA sequences were obtained from the
 [NCBI Influenza Virus
-Resource](http://www.ncbi.nlm.nih.gov/genomes/FLU/SwineFlu.html). These
+Resource](https://www.ncbi.nlm.nih.gov/genomes/FLU/SwineFlu.html). These
 sequences were collected between March 30 to July 28, 2009. Due to the
 short collection period, sequences are highly similar and possess only a
 single insertion. A manual alignment of these sequences is possible, but
-we used [MUSCLE](http://www.ncbi.nlm.nih.gov/pubmed/15034147) version
+we used [MUSCLE](https://www.ncbi.nlm.nih.gov/pubmed/15034147) version
 3.7 with a gap opening penalty of 20 and a gap extension penalty of 0 to
 produce the desired alignment. Your can download the aligned S-OIV
 sequences [here](Media:S-OIV_HA.zip).
@@ -186,7 +186,7 @@ by 10 samples. This command will generate two files:
     curve](rarefaction.single) file for the
     [Chao](Chao) calculator
 
-We can use [R](http://www.r-project.org) to plot the data contained in
+We can use [R](https://www.r-project.org) to plot the data contained in
 these files. The following commands will generate the rarefaction curves
 shown below:
 
@@ -247,7 +247,7 @@ This will generate two files:
     curve](rarefaction.single) file for our New York using
     the [Chao](Chao) calculator
 
-Plotting of this data using [R](http://www.r-project.org) is described
+Plotting of this data using [R](https://www.r-project.org) is described
 [above](Analyzing_H1N1_swine-origin_Influenza_A_isolates#Generating_a_rarefaction_curve).
 Similar to our results on the full dataset, we see that sampling effort
 needs to be increased if we wish to use OTUs defined by clusters of

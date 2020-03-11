@@ -7,15 +7,15 @@ Holiday. So as you gather around the table and tell your family what you
 are thankful for, be sure to thank your mothur. This has been a great
 month for mothur. The manuscript describing mothur has been published in
 [Applied & Environmental
-Microbiology](http://aem.asm.org/cgi/content/abstract/75/23/7537). Also,
+Microbiology](https://aem.asm.org/cgi/content/abstract/75/23/7537). Also,
 the manuscript describing the aligner that is used in mothur has been
 accepted by PLoS ONE and will hopefully be posted soon. I give you full
 permission to cite both liberally. Because of this we have had a fair
 amount of traffic by people downloading mothur - so if this is your
 first update, welcome. Many of you may remember that last month we
 launched two new ventures a [facebook
-page](http://www.facebook.com/pages/mothur/133966409231) and a [user
-forum](http://www.mothur.org/forum). We are up to 53 \"friends\" and
+page](https://www.facebook.com/pages/mothur/133966409231) and a [user
+forum](https://www.mothur.org/forum). We are up to 53 \"friends\" and
 have gotten a steady stream of forum users. Please feel free to use the
 wiki, forum, and facebook as means of communicating with and helping
 each other. December also promises to be a promising month as The
@@ -26,7 +26,7 @@ useful. First, we have added several commands for processing and
 characterizing OTUs. Second, we have added an alternative algorithm for
 clustering sequences using the furthest neighbor algorithm, which is
 based on the algorithm described by [Sun and colleagues
-(2009)](http://nar.oxfordjournals.org/cgi/content/abstract/gkp285v1). We
+(2009)](https://nar.oxfordjournals.org/cgi/content/abstract/gkp285v1). We
 are unable to replicate the numbers they describe for mothur, so take
 that part of their analysis with a grain of salt. What we have found is
 that the memory requirements using the [hcluster](hcluster)

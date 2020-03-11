@@ -6,7 +6,7 @@ date: "March 4, 2020"
 ---
 
 
-The good people at [SILVA](http://arb-silva.de) have released a new version of the SILVA database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](http://www.mothur.org/wiki/Silva_reference_files).
+The good people at [SILVA](https://arb-silva.de) have released a new version of the SILVA database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](https://www.mothur.org/wiki/Silva_reference_files).
 
 
 ## Getting the data in and out of the ARB database
@@ -17,7 +17,7 @@ This README file explains how we generated the silva reference files for use wit
     gunzip SILVA_138_SSURef_NR99_05_01_20_opt.arb.gz
     arb SILVA_138_SSURef_NR99_05_01_20_opt.arb
 
-This will launch us into the arb environment with the ''Ref NR 99'' database opened. This database has 510,984 sequences within it that are not more than 99% similar to each other. The release notes for [this database](http://www.arb-silva.de/documentation/release-138/) as well as the idea behind the [non-redundant database](http://www.arb-silva.de/projects/ssu-ref-nr/) are available from the silva website. Within arb do the following:
+This will launch us into the arb environment with the ''Ref NR 99'' database opened. This database has 510,984 sequences within it that are not more than 99% similar to each other. The release notes for [this database](https://www.arb-silva.de/documentation/release-138/) as well as the idea behind the [non-redundant database](https://www.arb-silva.de/projects/ssu-ref-nr/) are available from the silva website. Within arb do the following:
 
 1.  Click the search button
 2.  Set the first search field to 'ARB\_color' and set it to 1. Click on the equal sign until it indicates not equal (this removes low quality reads and chimeras)

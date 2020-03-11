@@ -2,13 +2,13 @@
 title: 'Mothur license'
 ---
 mothur source code is available under the [GNU General Public
-License](http://www.gnu.org/licenses/gpl.html)\...
+License](https://www.gnu.org/licenses/gpl.html)\...
 
 GNU GENERAL PUBLIC LICENSE
 
 Version 3, 29 June 2007
 
-Copyright © 2007 Free Software Foundation, Inc. \<<http://fsf.org/>\>
+Copyright © 2007 Free Software Foundation, Inc. \<<https://fsf.org/>\>
 
 Everyone is permitted to copy and distribute verbatim copies of this
 license document, but changing it is not allowed.

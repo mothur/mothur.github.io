@@ -58,17 +58,17 @@ workshop. Hopefully, he\'ll cross paths with some of you soon!
 
 -   [get.seqs](get.seqs) and
     [remove.seqs](remove.seqs) - fixed counts
-    (http://www.mothur.org/forum/viewtopic.php?f=4&t=1261)
+    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1261)
 -   fixed issue with \~ character and multiple processors -
-    (http://www.mothur.org/forum/viewtopic.php?f=4&t=1199)
+    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1199)
 -   [trim.seqs](trim.seqs) - if oligos file does not contain
     any valid group names.
 -   [normalize.shared](normalize.shared) - added a warning
-    (http://www.mothur.org/forum/viewtopic.php?f=3&t=1254)
+    (https://www.mothur.org/forum/viewtopic.php?f=3&t=1254)
 -   [chimera.uchime](chimera.uchime) -
-    (http://www.mothur.org/forum/viewtopic.php?f=4&t=1238,
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1239>,
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1237>)
+    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1238,
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1239>,
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1237>)
 
 ## Minor Releases
 

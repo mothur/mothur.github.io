@@ -285,7 +285,7 @@ labels on the leaves of the tree a large number of times and scores each
 tree to generate the distribution. The difference in p-values is next to
 nothing; however, the random joining trees were in the original
 description of the method by [Maddision & Slatkin
-(1990)](http://www.ncbi.nlm.nih.gov/pubmed/2227384)
+(1990)](https://www.ncbi.nlm.nih.gov/pubmed/2227384)
 
 ## Revisions
 

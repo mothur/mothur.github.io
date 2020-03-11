@@ -3,7 +3,7 @@ title: 'Sogin data analysis'
 ---
 In 2006, Mitch Sogin and his colleagues at the Marine Biology Laboratory
 in Woods Hole, MA published a ground breaking paper in
-[PNAS](http://www.pnas.org/content/103/32/12115.full?sid=f4979299-96b2-4687-b76c-330ba61ab48f),
+[PNAS](https://www.pnas.org/content/103/32/12115.full?sid=f4979299-96b2-4687-b76c-330ba61ab48f),
 which was titled, \"Microbial diversity in the deep sea and the
 underexplored \'rare biosphere\'. Their publication was the first to use
 pyrosequencing technology to sequence 16S rRNA gene tags. Specifically,
@@ -23,9 +23,9 @@ the files that will be generated in this exercise.
 ## Data availability
 
 The V6 sequence tags are available from the author\'s [MBL
-website](http://jbpc.mbl.edu/research_supplements/g454/20060412-private/)
+website](https://jbpc.mbl.edu/research_supplements/g454/20060412-private/)
 as a zip file. You can see the metadata in [Table
-1](http://www.pnas.org/content/103/32/12115/T1.expansion.html) of their
+1](https://www.pnas.org/content/103/32/12115/T1.expansion.html) of their
 paper. The decompressed folder will be called **supplemental** - rename
 it to something more meaningful like \"sogin\". Opening the sogin folder
 you will see two folders - original-data and updated-20080221. The
@@ -63,8 +63,8 @@ commands:
     pschloss$$ grep ">" FS396.fa > FS396.group
 
 Now, assuming you have a text editor like
-[TextWrangler](http://www.barebones.com/products/TextWrangler/) or
-[BBedit](http://www.barebones.com/products/bbedit/), type the following:
+[TextWrangler](https://www.barebones.com/products/TextWrangler/) or
+[BBedit](https://www.barebones.com/products/bbedit/), type the following:
 
     pschloss$$ edit *group   # for TextWrangler
 
@@ -186,7 +186,7 @@ OTU.
 ## Single sample analysis
 
 We would like to generate an updated version of [Table
-3](http://www.pnas.org/content/103/32/12115/T3.expansion.html) from the
+3](https://www.pnas.org/content/103/32/12115/T3.expansion.html) from the
 Sogin study. To do this we need to [ read in the OTU
 data](read.otu) and then use the
 [summary.single](summary.single) command to summarize the
@@ -243,7 +243,7 @@ largest sample in the Sogin data set was FS396. Originally represented
 by 17,666 sequences, the updated data set contains 83,399 sequences.
 This data set was used to generate [rarefaction](rarefaction)
 curves in [Fig.
-2](http://www.pnas.org/content/103/32/12115/F2.expansion.html) of the
+2](https://www.pnas.org/content/103/32/12115/F2.expansion.html) of the
 Sogin study. We did not observe any differences between the OTUs that
 were calculated for the unique, 0.01, and 0.02 OTU definitions. As
 mentioned above, this is probably due to muscle doing a poor job of
@@ -255,7 +255,7 @@ sequences:
     mothur > rarefaction.single(freq=5000)
 
 To plot the data (shown on the right) we use
-[R](http://www.r-project.org). The following commands will generate a
+[R](https://www.r-project.org). The following commands will generate a
 set of rarefaction curves:
 
     data<-read.table(file="sogin.unique.filter.fn.FS396.rarefaction", header=T)
@@ -324,7 +324,7 @@ richness values and we used the Yue & Clayton similarity value, [
 This will generate two newick-formatted tree files -
 sogin.unique.filter.fn.thetayc.0.10.tre and
 sogin.unique.filter.fn.jest.0.10.tre. Using
-[TreeViewX](http://darwin.zoology.gla.ac.uk/~rpage/treeviewx/), these
+[TreeViewX](https://darwin.zoology.gla.ac.uk/~rpage/treeviewx/), these
 dendrograms can be displayed and exported as SVG image files. Again,
 these SVG files can be edited in a program like Adobe Illustrator. Here
 we present the dendrograms as exported from TreeViewX.

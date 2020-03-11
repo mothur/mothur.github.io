@@ -107,7 +107,7 @@ default=all. You may separate label names with dashes.
 ## Revisions
 
 -   1.24.0 - added group option. -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=1436#p3586>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1436#p3586>
 -   1.37.0 - Adds fasta, count and method parameters.
     [\#88](https://github.com/mothur/mothur/issues/88)
     [\#105](https://github.com/mothur/mothur/issues/105)

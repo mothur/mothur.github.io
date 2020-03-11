@@ -72,8 +72,8 @@ dashes. The default is all sets in the designfile.
 ## Revisions
 
 -   1.28.0 Added sets parameter -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=1777>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1777>
 -   1.29.0 Bug Fix:
-    <http://www.mothur.org/forum/viewtopic.php?f=1&t=1919>
+    <https://www.mothur.org/forum/viewtopic.php?f=1&t=1919>
 
 [Category:Commands](Category:Commands)

@@ -44,7 +44,7 @@ weekends that would work best for you.
 
 Be sure to pad your CV as much as possible with papers that cite mothur
 between now and the end of 2010 and get ready for an exciting 2011. Keep
-the [six packs](http://leinie.com/red.html) coming
+the [six packs](https://leinie.com/red.html) coming
 
 ## New commands
 

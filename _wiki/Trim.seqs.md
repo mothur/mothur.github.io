@@ -3,7 +3,7 @@ title: 'Trim.seqs'
 ---
 The **trim.seqs** command provides the preprocessing
 features needed to screen and sort pyrosequences. Similar analyses are
-provided by the [RDP](http://rdp.cme.msu.edu); here we give you added
+provided by the [RDP](https://rdp.cme.msu.edu); here we give you added
 flexibility and speed. The command will enable you to trim off primer
 sequences and barcodes, use the barcode information to generate a group
 file and split a fasta file into sub-files, screen sequences based on

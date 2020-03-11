@@ -48,7 +48,7 @@ sequences:
 
     mothur > align.seqs(template=SILVA, candidate=ZAC.unique.fasta, ksize=9, processors=8)
 
-I then checked my alignment in [ARB](http://www.arb-home.de/) and a
+I then checked my alignment in [ARB](https://www.arb-home.de/) and a
 recent SILVA database and found that my alignment, which should cover E.
 coli positions 8-357, was spread out over the length of the 16S rRNA
 gene. Pat observed that my sequences weren\'t oriented correctly because
@@ -114,9 +114,9 @@ different alignment methods.
 1.  The greengenes coreset
 2.  Pat\'s SILVA seed database
 3.  An alignment obtained from the [comparative rRNA web
-    site](http://www.rna.ccbb.utexas.edu/)
-4.  [RDP pyrosequencing pipeline](http://pyro.cme.msu.edu/), which uses
-    the [Infernal aligner](http://infernal.janelia.org/)
+    site](https://www.rna.ccbb.utexas.edu/)
+4.  [RDP pyrosequencing pipeline](https://pyro.cme.msu.edu/), which uses
+    the [Infernal aligner](https://infernal.janelia.org/)
 
 Here are the results of OTUs obtained at a 97% identity level for three
 libraries. The number of sequences is the same for all 4 method

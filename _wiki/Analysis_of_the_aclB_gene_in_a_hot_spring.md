@@ -11,7 +11,7 @@ the two approaches to analysis. In the original analysis, OTUs were
 defined by PHRAP assembly, the identity of the sequences was determined
 by phylogenetic analysis, and the *aclB* sequences from seven sites were
 compared using the pairwise dissimilarity statistic (Fst) implemented in
-[Arlequin](http://lgb.unige.ch/arlequin/). You can download all of the
+[Arlequin](https://lgb.unige.ch/arlequin/). You can download all of the
 files needed for this analysis ([aclB.zip](Media:aclB.zip))
 or generate your own by following the instructions below.
 
@@ -34,9 +34,9 @@ The sample names used in the paper and in this tutorial are different
 
 ## Getting Started
 
-I used [ARB](http://www.arb-home.de/) to align and edit my sequences and
+I used [ARB](https://www.arb-home.de/) to align and edit my sequences and
 to make distance matrices and trees. A good ARB tutorial is availalbe
-[here](http://www.mm.helsinki.fi/users/GJURGENS/Arb/ARB_tutorial.htm)
+[here](https://www.mm.helsinki.fi/users/GJURGENS/Arb/ARB_tutorial.htm)
 
 ### Translating Nucleotide Sequences
 
@@ -63,7 +63,7 @@ align your nucleotide and amino acid sequences separately. To check your
 translation, choose the \"ali\_new\_pro\" from the alignment box. Your
 amino acid sequences should match the alignment published by [Campbell
 et
-al](http://aem.asm.org/cgi/content/abstract/69/9/5070?ijkey=549aeec65cf72e31e6eb07e6c6cbedffa2a154e0).
+al](https://aem.asm.org/cgi/content/abstract/69/9/5070?ijkey=549aeec65cf72e31e6eb07e6c6cbedffa2a154e0).
 
 ### Making an Alignment
 
@@ -137,7 +137,7 @@ your amino acid alignment and filter instead.
 We will use a few representative sequences from the
 *Epsilonproteobacteria* and *Aquificales* with the mouse gene as an
 outgroup to make a tree, as was done in the original analysis. These
-sequences were downloaded from [NCBI](http://www.ncbi.nlm.nih.gov/) in
+sequences were downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/) in
 fasta format, imported into ARB, and aligned using the same strategy
 used above. A maximum likelihood tree was made:
 
@@ -344,7 +344,7 @@ Hypothesis-Testing Approaches
 =============================
 
 Originally, community differences were analyzed using the pairwise
-dissimilarity index (Fst) in [Arlequin](http://lgb.unige.ch/arlequin/).
+dissimilarity index (Fst) in [Arlequin](https://lgb.unige.ch/arlequin/).
 The Fst index calculates the distribution of genetic variation between
 two samples and can take any value between 0 and 1. A 0 indicates the
 genetic variation between samples is equal to the genetic variation
@@ -560,4 +560,4 @@ More protein coding gene examples
 
 [Genetic Diversity and Abundance of Flavobacterial Proteorhodopsin in
 China
-Seas](http://www.ncbi.nlm.nih.gov/sites/entrez?db=pubmed&cmd=search&term=Genetic%20Diversity%20and%20Abundance%20of%20Flavobacterial%20Proteorhodopsin%20in%20China%20Seas)
+Seas](https://www.ncbi.nlm.nih.gov/sites/entrez?db=pubmed&cmd=search&term=Genetic%20Diversity%20and%20Abundance%20of%20Flavobacterial%20Proteorhodopsin%20in%20China%20Seas)

@@ -32,7 +32,7 @@ and use candidate and template in align.seqs mothur won\'t make a peep.
 
 Thinking about functionality\... We just published a paper in [Applied
 and Environmental
-Microbiology](http://aem.asm.org/cgi/content/abstract/AEM.02810-10v1)
+Microbiology](https://aem.asm.org/cgi/content/abstract/AEM.02810-10v1)
 that talks about clustering sequences into OTUs. In that manuscript we
 describe metrics for assessing clustering quality, this was done using
 the newly released [sens.spec](sens.spec) command. We also
@@ -123,7 +123,7 @@ Pat Schloss
 
 ## Bug fixes
 
--   <http://www.mothur.org/forum/viewtopic.php?f=4&t=1132&p=2653#p2653>
+-   <https://www.mothur.org/forum/viewtopic.php?f=4&t=1132&p=2653#p2653>
 -   [catchall](catchall) - fixed bug that caused a bad\_alloc
     after running with a shared file.
 -   [get.lineage](get.lineage) and

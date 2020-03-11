@@ -14,7 +14,7 @@ analysis of molecular variance](amova), [ test of homogeneity
 of variance](homova), [ analysis of
 similarity](anosim), and [ Mantel\'s
 test](mantel). We previously discussed using [AMOVA and
-HOMOVA with DNA sequences](http://www.ncbi.nlm.nih.gov/pubmed/18239608)
+HOMOVA with DNA sequences](https://www.ncbi.nlm.nih.gov/pubmed/18239608)
 and are finally bringing that functionality to mothur for comparing
 groups of samples.
 
@@ -29,7 +29,7 @@ using mothur that isn\'t receiving these emails, please spread the word.
 
 Thanks to all of you that have completed our survey. If you haven\'t
 [completed it
-yet](http://www.mothur.org/limesurvey/index.php?sid=13611&lang=en),
+yet](https://www.mothur.org/limesurvey/index.php?sid=13611&lang=en),
 there is still time\...
 
 ## New commands
@@ -51,7 +51,7 @@ there is still time\...
 ## Bug fixes
 
 -   [catchall](catchall) command not finding files -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=1114>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1114>
 -   [sub.sample](sub.sample) command that caused mothur to
     stall if size was close to total number of sequences in file.
 -   unifrac commands - significance scores differing between multiple

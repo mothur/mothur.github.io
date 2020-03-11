@@ -7,7 +7,7 @@ greengenes, ARB, and the tools available in mothur. To complete this
 analysis, you need to download the folder compressed in the [
 Esophagus.zip](Media:Esophagus.zip) archive. These sequences
 were originally published by [Pei et al.
-(2004)](http://www.ncbi.nlm.nih.gov/pubmed/15016918?ordinalpos=6&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum).
+(2004)](https://www.ncbi.nlm.nih.gov/pubmed/15016918?ordinalpos=6&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum).
 
 
 ## Getting started
@@ -201,7 +201,7 @@ you had more groups, it would be interesting to try out the
 ## Hypothesis testing approaches
 
 We have previously shown
-[1](http://www.ncbi.nlm.nih.gov/pubmed/18239608?ordinalpos=3&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum)
+[1](https://www.ncbi.nlm.nih.gov/pubmed/18239608?ordinalpos=3&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum)
 that it is not appropriate to apply every possible hypothesis testing
 approach. Pick one and stick with it. Otherwise you will run the risk of
 identifying differences as being statistically significant that are not.
@@ -264,7 +264,7 @@ community structures.
 The [ weighted UniFrac](unifrac.weighted) test measures the
 fraction of a tree\'s branch length that can be ascribed to each
 community. A similar analysis is available through the Knight Lab
-website [2](http://bmf2.colorado.edu/unifrac/index.psp). Similar to the
+website [2](https://bmf2.colorado.edu/unifrac/index.psp). Similar to the
 parsimony analysis, you first need to read in a tree and group file:
 
     mothur > unifrac.weighted(tree=esophagus.tree, group=esophagus.good.groups)
@@ -286,7 +286,7 @@ Similar to the [ weighted UniFrac](unifrac.weighted) test,
 the [ unweighted unifrac](unifrac.unweighted) test measures
 the fraction of a tree\'s branch length that is unique to each group
 represented in the tree. A similar analysis is available through the
-Knight Lab website [3](http://bmf2.colorado.edu/unifrac/index.psp).
+Knight Lab website [3](https://bmf2.colorado.edu/unifrac/index.psp).
 Similar to the parsimony analysis, you first need to read in a tree and
 group file:
 

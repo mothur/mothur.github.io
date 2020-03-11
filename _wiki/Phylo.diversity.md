@@ -192,7 +192,7 @@ processors that you can use.
 -   1.28.0 Added count parameter
 -   1.31.0 Added multiple processors for Windows.
 -   1.36.0 Adds sampledepth parameter. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=3320>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3320>
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 

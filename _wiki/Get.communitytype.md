@@ -7,7 +7,7 @@ attempts to model the data as an increasing number of enterotypes using
 several techniques to identify the best fit to the data. The default
 method is based on [Dirichlet multinomial mixtures as described by
 Holmes et
-al.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0030126).
+al.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0030126).
 This approach was developed as it allows for clustering from unevenly
 sampled populations (i.e. different numbers of sequences per group).
 Several statistical techniques are employed to evalulate the fit of each

@@ -8,7 +8,7 @@ approach we were using to measure our ability to detect true chimeras
 (sensitivity) while limiting the risk of falsely calling sequences
 chimeric (specificity) was flawed. It turns out that while we had
 significantly increased the sensitivity compared to the original version
-of ChimeraSlayer (http://microbiomeutil.sourceforge.net/), we also
+of ChimeraSlayer (https://microbiomeutil.sourceforge.net/), we also
 increased the false positive rate. For example, using the test set
 available with the original ChimeraSlayer on test sequences that were
 200 bp, the sensitivity increased from 63% to 70% and the specificity

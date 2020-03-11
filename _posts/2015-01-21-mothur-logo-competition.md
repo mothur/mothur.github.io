@@ -13,14 +13,14 @@ forever linked with mothur, that picture doesn't make for a very good logo.
 Would you like to help us do something about this?
 
 That's right! I'm announcing a competition to create a logo for mothur that we
-can use on websites, slides, and most importantly - [swag](http://en.wikipedia.org/wiki/Promotional_merchandise).
+can use on websites, slides, and most importantly - [swag](https://en.wikipedia.org/wiki/Promotional_merchandise).
 Perhaps you've noticed them. You know the kool kids with the cover of their
 laptop covered in stickers? Well here's my laptop cover:
 
 
 <img src="{{ site.url }}/assets/img/laptop_cover.jpg" alt="laptop" />
 
-Pretty lame, eh? There's a happy Octocat from [GitHub](http://www.github.com),
+Pretty lame, eh? There's a happy Octocat from [GitHub](https://www.github.com),
 but nothing else. It'd be great to go to workshops and conferences and hand out
 stickers, maybe send people coffee mugs, or T-shirts. We need some mothur swag.
 
@@ -35,7 +35,7 @@ plagiarize anyone's design, you will be drawn and quartered.
 
 * The logo should look good as a thumbnail and when scaled to larger sizes
 
-* Bonus points if you adhere to the [Sticker Constructor Standard](http://terinjokes.github.io/StickerConstructorSpec/)
+* Bonus points if you adhere to the [Sticker Constructor Standard](https://terinjokes.github.io/StickerConstructorSpec/)
 
 * <there's all sorts of fine print here that you can't read>
 

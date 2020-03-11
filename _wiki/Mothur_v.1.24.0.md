@@ -43,11 +43,11 @@ packs!
 ## Feature updates
 
 -   [merge.groups](merge.groups) - added group option -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=1436#p3586>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1436#p3586>
 -   [classify.seqs](classify.seqs) - mothur will now check to
     see if the sequence is reversed before classifying.
 -   [fastq.info](fastq.info) - added fasta and qfile
-    parameters - <http://www.mothur.org/forum/viewtopic.php?f=5&t=1444>
+    parameters - <https://www.mothur.org/forum/viewtopic.php?f=5&t=1444>
 -   [corr.axes](corr.axes) - added p\_values
 -   [remove.groups](remove.groups) and
     [get.groups](get.groups) - added design file
@@ -77,14 +77,14 @@ packs!
 -   [classify.seqs](classify.seqs) - knn method was
     eliminating sequences that could not be classified at the kingdom
     level. Now they are classified to \"unknown\". -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1435>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1435>
 -   fixed name of npshannon -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1449>
--   <http://www.mothur.org/forum/viewtopic.php?f=3&t=1469&p=3719#p3719> -
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1449>
+-   <https://www.mothur.org/forum/viewtopic.php?f=3&t=1469&p=3719#p3719> -
     put the full path names into the flow.files file.
 -   [trim.flows](trim.flows) - was not trimming the fasta
     output -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1491&p=3784#p3784>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1491&p=3784#p3784>
 -   [summary.seqs](summary.seqs) - in windows version, with
     multiple processors, occasionally you would get a crash.
 -   [rarefaction.single](rarefaction.single) - group names

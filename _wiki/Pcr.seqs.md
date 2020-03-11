@@ -87,14 +87,14 @@ available.
 -   1.30.2 - Bug Fix: For forward primer trimming with aligned sequences
     and keepdots=t. If the character before the first primer base was a
     base and not a gap the base was not trimmed.
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2209>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2209>
 -   1.31.0 - Added primer to oligos types **pcr.seqs** can read.
 -   1.31.0 - Bug Fix: removing primers from aligned sequences with
     keepdots=f could result in an unaligned dataset if primers were not
     found at the same locations. Added gaps to preserve alignment.
 -   1.33.0 - Bug Fix: keepdots=f could cause an aligned template to
     become unaligned.
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2653&p=7354#p7354>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2653&p=7354#p7354>
 -   1.38.0 - Adds rdiffs to allow for setting different diffs for the
     forward and reverse primers.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect

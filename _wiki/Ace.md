@@ -8,9 +8,9 @@ for an OTU definition. This calculator can be used in the
 [rarefaction.single](rarefaction.single) commands. The
 calculations for the ACE richness estimator are implemented as described
 by Chao in the user manual for her program
-[SPADE](http://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf) and modified
+[SPADE](https://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf) and modified
 by Colwell in his program
-[EstimateS](http://viceroy.eeb.uconn.edu/estimates). Note that this
+[EstimateS](https://viceroy.eeb.uconn.edu/estimates). Note that this
 implementation uses a bias-corrected version of γ when the coefficient
 of variation is too large.
 

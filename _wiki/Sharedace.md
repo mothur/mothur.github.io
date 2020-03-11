@@ -7,7 +7,7 @@ the [summary.shared](summary.shared) and
 [collect.shared](collect.shared) commands. The calculations
 for the shared ACE richness estimator are implemented as described by
 Chao in the user manual for her program
-[SPADE](http://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf).
+[SPADE](https://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf).
 
 $$S_{A,B ACE} = S_{12 \left ( abund \right )} + \frac {S_{12 \left ( rare \right )}}{c_{12}} + \frac {1}{C_{12}} \left [ f_{\left ( rare \right )1+} {\Gamma}_1  + f_{\left ( rare \right )+1} {\Gamma}_2 + f_{11}{\Gamma}_3 \right ]$$
 

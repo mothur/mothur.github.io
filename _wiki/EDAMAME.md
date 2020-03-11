@@ -77,7 +77,7 @@ you will need several sets of files that are already loaded in the AMI.
 -   [ Example data from Schloss lab](Media:MiSeqSOPData.zip)
     that will be used with this tutorial. It was extracted from the
     [full
-    dataset](http://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
+    dataset](https://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
 -   [ SILVA-based bacterial reference
     alignment](Media:Silva.seed_v128.tgz)
 -   [ mothur-formatted version of the RDP training set
@@ -319,7 +319,7 @@ have the reference database (silva.bacteria.fasta) and know where in
 that alignment your sequences start and end. To remove the leading and
 trailing dots we will set keepdots to false. You could also run this
 command for different coordinates using your [primers of
-interest](http://blog.mothur.org/2016/07/07/Customization-for-your-region/):
+interest](https://blog.mothur.org/2016/07/07/Customization-for-your-region/):
 
     mothur > pcr.seqs(fasta=data/references/silva.seed_v128.align, start=11894, end=25319, keepdots=F)
 

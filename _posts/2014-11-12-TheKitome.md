@@ -6,7 +6,7 @@ date: "November 12, 2014"
 comments: true
 ---
 
-An [important paper](http://www.biomedcentral.com/1741-7007/12/87) came out this
+An [important paper](https://www.biomedcentral.com/1741-7007/12/87) came out this
 week that everyone should be well aware. It went through the somewhat boring
 task of sequencing negative controls. Right now you're yawning, right? You might
 want to read the paper and go check that paper you just published to see if any
@@ -18,10 +18,10 @@ at the Wellcome Trust Sanger Institute:
 
 > Salter, Cox, Turek, Calus, Cookson, Moffatt, Turner, Parkhill, Loman & Walker.
 > Reagent and laboratory contamination can critically impact sequence-based
-> microbiome analyses. BMC Biology. http://www.biomedcentral.com/1741-7007/12/87
+> microbiome analyses. BMC Biology. https://www.biomedcentral.com/1741-7007/12/87
 
 To summarize, Salter and colleagues noticed some odd results in a [previous
-study](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038271)
+study](https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038271)
 and started to worry that some of the differences they observed were due to
 differences in the contaminants that were present in the DNA extraction kits
 that they used. They then went and diluted a control DNA into negative
@@ -33,10 +33,10 @@ abundant.
 There has been a surprising amount of press on this relatively simple paper that
 you might want to go and check out as well...
 
-* [*The Scientist*](http://www.the-scientist.com/?articles.view/articleNo/41421/title/DNA-Extraction-Kits-Contaminated/)
-* [*National Geographic*](http://phenomena.nationalgeographic.com/2014/11/11/contaminomics-why-some-microbiome-studies-may-be-wrong/)
-* [*Science News*](http://news.sciencemag.org/biology/2014/11/contamination-plagues-some-microbiome-studies)
-* [*Nature*](http://www.nature.com/news/microbiome-science-threatened-by-contamination-1.16327)
+* [*The Scientist*](https://www.the-scientist.com/?articles.view/articleNo/41421/title/DNA-Extraction-Kits-Contaminated/)
+* [*National Geographic*](https://phenomena.nationalgeographic.com/2014/11/11/contaminomics-why-some-microbiome-studies-may-be-wrong/)
+* [*Science News*](https://news.sciencemag.org/biology/2014/11/contamination-plagues-some-microbiome-studies)
+* [*Nature*](https://www.nature.com/news/microbiome-science-threatened-by-contamination-1.16327)
 
 I talked with Kerr Grens for her article in *The Scientist* and she boiled our
 30 min conversation down to 3 nice quotes. I'll expand on those for everyone's
@@ -133,6 +133,6 @@ control.
 
 I've gone on waaaay too long here, but it is important to emphasize that this
 is an important problem. As I see it, we can thank Salter and her colleagues for
-[re-identifying the problem](http://aem.asm.org/content/64/8/3110.full). Now, we
+[re-identifying the problem](https://aem.asm.org/content/64/8/3110.full). Now, we
 need to develop robust methods of identifying and culling contaminant
 sequences from our samples. Until then, be sure to sequence a negative control!

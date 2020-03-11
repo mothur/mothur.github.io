@@ -37,9 +37,9 @@ Pat Schloss
     patterns are different than what one would expect by chance
 -   [create.database](create.database) - synthesize sequence,
     group and taxonomy information
-    (http://www.mothur.org/forum/viewtopic.php?f=5&t=1524)
+    (https://www.mothur.org/forum/viewtopic.php?f=5&t=1524)
 -   [make.biom](make.biom) - creates a .biom file from a
-    shared file (http://biom-format.org/documentation/biom\_format.html)
+    shared file (https://biom-format.org/documentation/biom\_format.html)
 
 ## Feature updates
 
@@ -62,7 +62,7 @@ Pat Schloss
     correspond to the column names in the shared file
 -   [classify.seqs](classify.seqs) segfault if no files are
     given. Should return error message instead
-    (http://www.mothur.org/forum/viewtopic.php?f=4&t=1525)
+    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1525)
 -   [rarefaction.single](rarefaction.single) - groupnames
     that include \"\_\" causes parsing error in the creation of the
     groups.rarefaction file. Fixed, workaround until release,
@@ -73,7 +73,7 @@ Pat Schloss
     \".sff\" then the output files all end in \"flow\", for example,
     instead of \".flow\"
 -   [trim.seqs](trim.seqs) - windows version crash
-    (http://www.mothur.org/forum/viewtopic.php?f=4&t=1543)
+    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1543)
 -   [trim.seqs](trim.seqs) - fixed bug that caused seqs to go
     to scrap if no oligos file was given.
 -   [shhh.flows](shhh.flows) - outputdir didn\'t put all of
@@ -81,9 +81,9 @@ Pat Schloss
 -   [pairwise.seqs](pairwise.seqs) - checks for positive
     values for gap open, gap extend, or mismatch.
 -   [corr.axes](corr.axes) - fixed OTU labels
-    (http://www.mothur.org/forum/viewtopic.php?f=3&t=1500)
+    (https://www.mothur.org/forum/viewtopic.php?f=3&t=1500)
 -   mothur can handle leading spaces in command names
-    (http://www.mothur.org/forum/viewtopic.php?f=4&t=1557)
+    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1557)
 
 ## Wiki updates
 

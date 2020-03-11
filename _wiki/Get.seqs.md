@@ -200,7 +200,7 @@ The fastq option allows you to select sequences from your fastq file.
 -   1.30.0 Bug Fix: dups=f could cause sequence name mismatches between
     new fasta and name files.
 -   1.31.1 Bug Fix: dups=f, renaming issue,
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2371>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2371>
 -   1.33.0 Added fastq option
 -   1.37.0 Checks for repeat sequences names and eliminates them. Allows
     users creating their own templates to easily remove duplicate

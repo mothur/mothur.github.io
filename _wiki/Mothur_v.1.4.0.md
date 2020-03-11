@@ -31,7 +31,7 @@ There are also several news items of note:
 -   In the coming months mothur will be moving. I have taken a job at
     the University of Michigan in the Department of Microbiology &
     Immunology. Because of this, we have secured the
-    <http://www.mothur.org> domain and will be moving the mothur wiki to
+    <https://www.mothur.org> domain and will be moving the mothur wiki to
     that site in the next month.
 
 <!-- -->

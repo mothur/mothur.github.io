@@ -77,7 +77,7 @@ Pat Schloss
     file.
 -   [sub.sample](sub.sample) - now outputs a unique fasta
     file and new names file
-    (http://www.mothur.org/forum/viewtopic.php?f=4&t=1299)
+    (https://www.mothur.org/forum/viewtopic.php?f=4&t=1299)
 -   [unique.seqs](unique.seqs) - name file prints in same
     order as fasta file
 -   [summary.seqs](summary.seqs) - added a column indicating
@@ -97,7 +97,7 @@ Pat Schloss
 -   [cluster.split](cluster.split) - changed default cutoffs
     for command. cutoff=0.25 and taxlevel=3.
 -   added leading \'0\' to OTU number labels. -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=1284>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1284>
 
 ## Bug fixes
 
@@ -112,11 +112,11 @@ Pat Schloss
 -   fixed colors for [heatmap.sim](heatmap.sim) - colors
     seemed reversed after change to calculators to output distance
     instead of similarity. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1293>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1293>
 -   fixed issue with [system](system) command that occurred
     when file redirects were used.
 -   fixed bug with Root level values in tax.summary file. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1316>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1316>
 -   1.22.2 fixed bug with [metastats](metastats)
 
 ## Wiki updates

@@ -14,7 +14,7 @@ version of the SILVA references, we are providing the SEED database, the
 full-length sequences available from the NR SILVA database, and a SILVA
 aligned version of the gold database that is used for reference-based
 chimera detection. We have prepared a [README
-document](http://blog.mothur.org/2018/01/10/SILVA-v132-reference-files)
+document](https://blog.mothur.org/2018/01/10/SILVA-v132-reference-files)
 where you can read about the process that we used to generate these
 references.
 
@@ -50,7 +50,7 @@ version of the SILVA references, we are providing the SEED database, the
 full-length sequences available from the NR SILVA database, and a SILVA
 aligned version of the gold database that is used for reference-based
 chimera detection. We have prepared a [README
-document](http://blog.mothur.org/2017/03/22/SILVA-v128-reference-files)
+document](https://blog.mothur.org/2017/03/22/SILVA-v128-reference-files)
 where you can read about the process that we used to generate these
 references.
 
@@ -86,7 +86,7 @@ version of the SILVA references, we are now providing the SEED database,
 the full-length sequences available from the NR SILVA database, and a
 SILVA aligned version of the gold database that is used for
 reference-based chimera detection. We have prepared a [README
-document](http://blog.mothur.org/2015/12/03/SILVA-v123-reference-files)
+document](https://blog.mothur.org/2015/12/03/SILVA-v123-reference-files)
 where you can read about the process that we used to generate these
 references.
 
@@ -122,18 +122,18 @@ version of the SILVA references, we are now providing the SEED database,
 the full-length sequences available from the NR SILVA database, and a
 SILVA aligned version of the gold database that is used for
 reference-based chimera detection. We have prepared a [README
-document](http://blog.mothur.org/2014/08/08/SILVA-v119-reference-files)
+document](https://blog.mothur.org/2014/08/08/SILVA-v119-reference-files)
 where you can read about the process that we used to generate these
 references.
 
 -   [Full length sequences and taxonomy
-    references](http://www.mothur.org/w/images/2/27/Silva.nr_v119.tgz)
+    references](https://www.mothur.org/w/images/2/27/Silva.nr_v119.tgz)
     (137879 bacteria, 3155 archaea, and 12273 eukarya sequences). This
     reference could be customized for alignments, but could also be used
     for classification. The uncompressed version is \~7.2 GB and the
     compressed version is 249 MB.
 -   [Recreated SEED
-    database](http://www.mothur.org/w/images/5/56/Silva.seed_v119.tgz)
+    database](https://www.mothur.org/w/images/5/56/Silva.seed_v119.tgz)
     (12244 bacteria, 207 archaea, and 2558 eukarya sequences). The
     actual reference alignment that SILVA uses with their SINA aligner
     is called the SEED alignment. We don\'t know what this actually is.

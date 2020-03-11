@@ -79,7 +79,7 @@ or you can clear all files by setting clear=all.
 ## Revisions
 
 -   1.33.0 - added directory information. -
-    <http://www.mothur.org/forum/viewtopic.php?f=8&t=332&p=7824#p7824>
+    <https://www.mothur.org/forum/viewtopic.php?f=8&t=332&p=7824#p7824>
 -   1.37.0 - Adds current RAM usage and total RAM available.
 -   1.37.0 - Adds output file to **get.current** and input/output file to
     set.current . This allows the commands to work together to keep

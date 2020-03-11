@@ -8,9 +8,9 @@ estimate for an OTU definition. This calculator can be used in the
 [rarefaction.single](rarefaction.single) commands. The
 calculations for the bias-corrected Chao1 richness estimator are
 implemented as described by Chao in the user manual for her program
-[SPADE](http://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf) and modified
+[SPADE](https://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf) and modified
 by Colwell in his program
-[EstimateS](http://viceroy.eeb.uconn.edu/estimates).
+[EstimateS](https://viceroy.eeb.uconn.edu/estimates).
 
 $$S_{chao1} = S_{obs} + \frac{ {n_1}\left ({n_1}-1 \right )}{2\left ({n_2}+1 \right )}$$
 

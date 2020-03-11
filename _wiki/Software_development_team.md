@@ -9,4 +9,4 @@ Our **software development team** consists of\...
 This work has been funded through the Biological Databases & Informatics
 program (2008-present) at the National Science Foundation and the Sloan
 Foundation (2007-present). An abstract of the NSF award is
-[available](http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0743432).
+[available](https://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0743432).

@@ -96,11 +96,11 @@ sanger, solexa, illumina or illumina1.8+. default=sanger.
 ## Revisions
 
 -   1.24.0 Added fasta and qfile options. -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=1444>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1444>
 -   1.28.0 Added format option
 -   1.28.0 Fixed negative quality scores related to format of
     sequences. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1727&p=4651&hilit=fastq.info#p4651>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1727&p=4651&hilit=fastq.info#p4651>
 -   1.30.0 added illumina1.8+ format.
 -   1.30.0 added pacbio parameter.
 -   1.42.0 Adds Oligos class and split.groups commands fastq.info.

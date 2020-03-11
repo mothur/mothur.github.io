@@ -184,7 +184,7 @@ label. Rename is set to false by default.
 -   1.23.0 fasta parameter is no longer required.
 -   1.28.0 Added count option
 -   1.31.0 - added method parameter.
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=2131>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=2131>
 -   1.33.0 - changed otu numbers to be labels
 -   1.41.0 - Updates **get.oturep** command to use optiMatrix. Reduces time
     and memory needed. Removes large option.

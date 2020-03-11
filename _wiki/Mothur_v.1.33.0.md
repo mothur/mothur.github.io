@@ -45,7 +45,7 @@ mothur-related questions there (in 140 characters or less!)
 ## New commands
 
 -   [merge.sfffiles](merge.sfffiles) - combine sfffiles. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2466>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2466>
 
 ## Feature updates
 
@@ -61,13 +61,13 @@ mothur-related questions there (in 140 characters or less!)
     file.
 -   [venn](venn) - permute parameter can equal 1, 2, 3, or 4.
     -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2629&p=7252#p7252>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2629&p=7252#p7252>
 -   [get.oturep](get.oturep) - changed otu numbers to be
     labels
 -   [deunique.seqs](deunique.seqs) - added count table -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2673&sid=1df296b80f7a182faa8ebdf54f43122e>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2673&sid=1df296b80f7a182faa8ebdf54f43122e>
 -   [nmds](nmds) - added group label to \*.axes file -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2677>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2677>
 -   [fastq.info](fastq.info) - added oligos, group, pdiffs,
     bdiffs, ldiffs, sdiffs, tdiffs parameters so you can split fastq
     files by sample.
@@ -102,7 +102,7 @@ mothur-related questions there (in 140 characters or less!)
     subsample, iters parameters for calculations in pam and kmeans.
 -   [get.current](get.current) - added directory
     information. -
-    <http://www.mothur.org/forum/viewtopic.php?f=8&t=332&p=7824#p7824>
+    <https://www.mothur.org/forum/viewtopic.php?f=8&t=332&p=7824#p7824>
 -   [classify.seqs](classify.seqs) and
     [summary.tax](summary.tax) - added relabund parameter.
     relabund=t outputs relative abundances to \*.summary file instead of
@@ -114,24 +114,24 @@ mothur-related questions there (in 140 characters or less!)
     [chimera.perseus](chimera.perseus),
     [chimera.slayer](chimera.slayer) - with count table and
     dereplicate=t caused total=0 error message. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2620>. - 1.32.1
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2620>. - 1.32.1
 -   [sff.multiple](sff.multiple) - setting processors=1 for
     future commands. Not using file redirects in commands it runs.
 -   [venn](venn) - fixed bug where command overwrote
     .sharedotu files when permute=t
 -   [pcr.seqs](pcr.seqs) keepdots=f could cause an aligned
     template to become unaligned.
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2653&p=7354#p7354>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2653&p=7354#p7354>
 -   [summary.shared](summary.shared) - \*.ave.dist matrix = 0
     when processors \> 2 when using the subsample parameter and not
     using the distance parameter.
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2660&p=7372#p7372>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2660&p=7372#p7372>
 -   [classify.otu](classify.otu) - error in \*.tax.summary
     counts with basis=sequence when using a count file.
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2492&p=7420#p7420> -
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2492&p=7420#p7420> -
     fixed in 1.32.0.
 -   [sffinfo](sffinfo) - windows version with oligos file -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=2555&p=7422#p7422>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=2555&p=7422#p7422>
 -   [set.current](set.current) - setting processors option to
     1, if not set.
 -   [trim.flows](trim.flows) - printing trimmed number of

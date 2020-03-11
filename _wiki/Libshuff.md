@@ -2,7 +2,7 @@
 title: 'Libshuff'
 ---
 The **libshuff** command implements the
-[libshuff](http://whitman.myweb.uga.edu/libshuff.html) method as
+[libshuff](https://whitman.myweb.uga.edu/libshuff.html) method as
 previously implemented in the programs s-libshuff and libshuff. The
 libshuff method is a generic test that describes whether two or more
 communities have the same structure using the Cramer-von Mises test

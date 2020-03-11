@@ -30,9 +30,9 @@ Mothur. The example workflow described below talks about both:
 
 *Note: This analysis was done working back and forth between a Linux
 server and a Windows-based workstation. File manipulations done in
-[BioEdit](http://www.mbio.ncsu.edu/BioEdit/bioedit.html) and web
+[BioEdit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html) and web
 interaction with the [Ribosomal Database Project\'s Pyrosequencing
-Pipeline](http://pyro.cme.msu.edu/) were done via the Windows
+Pipeline](https://pyro.cme.msu.edu/) were done via the Windows
 workstation. Everything else was done via Linux.*
 
 ## Initial data manipulation
@@ -56,7 +56,7 @@ sequences:
 For each of these communities, new files were generated called
 \"Site\_A\_454.unique.fast\" and \"Site\_A\_454.names\". I changed the
 name of the FASTA file to Site\_A\_454\_unique.fasta so that other
-programs (like [BioEdit](http://www.mbio.ncsu.edu/BioEdit/bioedit.html))
+programs (like [BioEdit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html))
 would recognize the file. Note the replacement of .unique.fasta with
 \_unique.fasta . This makes a big difference when you are moving back
 and forth between Linux and Windows systems.
@@ -71,13 +71,13 @@ message from RDP stating that the your sequence IDs are empty.
 Once the sequence files for each of the communities had been
 deconvoluted, they were combined into a single community-wide sequence
 file using the File/Import/Import sequence alignment file function in
-[BioEdit](http://www.mbio.ncsu.edu/BioEdit/bioedit.html). Prior to
+[BioEdit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html). Prior to
 combining the individual sequence files, samples were given a
 site-specific identifier in addition to their sequence-specific ID (e.g.
 siteID\_sampleID) in order to be able to identify them quickly, as well
 as to simplify the creation of a GROUPS file later on. The \"paste
 over\" function in
-[BioEdit](http://www.mbio.ncsu.edu/BioEdit/bioedit.html) allows you to
+[BioEdit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html) allows you to
 manipulate sequence IDs in a program like Excel and then paste them back
 to their appropriate sequences with minimal difficulty.
 
@@ -85,9 +85,9 @@ to their appropriate sequences with minimal difficulty.
 
 Sequences from both the individual sampling sites (A through H) and the
 combined communities file were aligned using [RDP's
-Aligner](http://pyro.cme.msu.edu/spring/align.spr;jsessionid=2891C47658EC069E646F29941B28418E)
+Aligner](https://pyro.cme.msu.edu/spring/align.spr;jsessionid=2891C47658EC069E646F29941B28418E)
 function. The alignment was downloaded from RDP and then opened with
-[BioEdit](http://www.mbio.ncsu.edu/BioEdit/bioedit.html). The consensus
+[BioEdit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html). The consensus
 sequence was removed (\# GC SS cons), as were the RDP reference sequence
 (\#GC\_RF) and any sequences that did not align with the 16S region. The
 alignment was then minimized and saved in FASTA format (for Mothur) and
@@ -101,7 +101,7 @@ details on how to do this.
 
 Distance matrices were then calculated. Our initial pass at this
 involved using [PHYLIP's DNAdist
-program](http://evolution.genetics.washington.edu/phylip.html). This
+program](https://evolution.genetics.washington.edu/phylip.html). This
 works fairly well for sequence files containing 8,000 sequences or less
 on your average Windows-based workstation, but for the 39,000+ sequences
 that we had in our community-wide sequence file, using our university's
@@ -134,7 +134,7 @@ You'll probably have time to kill while you are waiting for your
 distance matrix to be calculated. This is a good time to generate your
 GROUPS file. The way we typically do this is to open our combined
 distance matrix in
-[BioEdit](http://www.mbio.ncsu.edu/BioEdit/bioedit.html), select all of
+[BioEdit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html), select all of
 the sequence titles and copy them, then paste them into an Excel
 worksheet.
 
@@ -181,7 +181,7 @@ generating OTUs.
 
 Once you have your distance matrix in hand, the next step in this
 process is to create a phylogenetic tree. We use
-[Clearcut](http://bioinformatics.hungry.com), a program written by Luke
+[Clearcut](https://bioinformatics.hungry.com), a program written by Luke
 Sheneman et al. Clearcut employs a relaxed neighbor-joining algorithm
 and is able to build a tree using either a distance matrix or an
 alignment. Although this is a more efficient option than PHYLIP\'s
@@ -195,7 +195,7 @@ or you can use\...
 
     $$> ./clearcut  --alignment --in=All_LSDR_454_unique.fasta --out=All_LSDR_454_unique.tree
 
-After [Clearcut](http://bioinformatics.hungry.com) generates your tree,
+After [Clearcut](https://bioinformatics.hungry.com) generates your tree,
 you\'ll need to open up the file in a text editor and remove the spaces
 between the tree\'s text and the file\'s final semi-colon (;). Mothur\'s
 [Parsimony](Parsimony) feature doesn\'t like these spaces it
@@ -203,7 +203,7 @@ and will return an error message if you leave them in place.
 
 ## Parsimony analysis
 
-The tree generated in [Clearcut](http://bioinformatics.hungry.com) was
+The tree generated in [Clearcut](https://bioinformatics.hungry.com) was
 used as input for Mothur's implementation of the
 [Parsimony](Parsimony) test. The parsimony test can be
 thought of as being similar to analysis of variance (ANOVA), in that
@@ -221,7 +221,7 @@ or you can use\...
     mothur> parsimony(groups=all)
 
 Before this function was available in Mothur, we used
-[Treeclimber](http://schloss.micro.umass.edu/software/treeclimber.html)
+[Treeclimber](https://schloss.micro.umass.edu/software/treeclimber.html)
 to run the parsimony test:
 
     $$> ./treeclimber -t All-LSDR_454_unique.tree -n All_LSDR_454_unique.names 
@@ -229,7 +229,7 @@ to run the parsimony test:
 This command will run your global test. In order to conduct pairwise
 comparisons, you\'ll have to go through and edit your .names file.
 Details for doing this can be found in the [Treeclimber
-manual](http://schloss.micro.umass.edu/software/treeclimber/TreeClimberManual.pdf).
+manual](https://schloss.micro.umass.edu/software/treeclimber/TreeClimberManual.pdf).
 
 ## Results
 

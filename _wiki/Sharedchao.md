@@ -7,7 +7,7 @@ used in the [summary.shared](summary.shared) and
 [collect.shared](collect.shared) commands. The calculations
 for the shared Chao1 richness estimator are implemented as described by
 Chao in the user manual for her program
-[SPADE](http://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf).
+[SPADE](https://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf).
 
 $$S_{SharedChao} = \begin{cases}
 S_{Shared\left ( Obs \right )} + \frac{f_{1+}^{2}}{2f_{2+}} + \frac{f_{+1}^{2}}{2f_{+2}} + \frac{f_{11}^{2}}{4f_{22}}\mbox{, for 2 communities and all denominators}>\mbox{0} 

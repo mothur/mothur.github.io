@@ -208,7 +208,7 @@ To use the design option, follow this example:
 ## Revisions
 
 -   1.23.0 File mismatch bug -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1396&p=3560#p3560>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1396&p=3560#p3560>
 -   1.24.0 Added design option
 -   1.28.0 Added count option
 -   1.31.0 Bug Fix: remove.groups(groups=notValidGroupName, \...) mothur

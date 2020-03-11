@@ -208,7 +208,7 @@ To use the design option, follow this example:
 ## Revisions
 
 -   1.23.0 file mismatch bug -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1396&p=3560#p3560>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1396&p=3560#p3560>
 -   1.24.0 added design option
 -   1.28.0 added count option
 -   1.37.0 Adds phylip and column options

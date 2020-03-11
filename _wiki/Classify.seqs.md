@@ -483,12 +483,12 @@ forum, <https://forum.mothur.org>.
 
 -   1.22.0 Added processors option for Windows users.
 -   1.23.0 - mothur couldn\'t handle parentheses in the taxonomy file. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=1370>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=1370>
 -   1.23.0 - fixed memory leak with Windows paralellization.
 -   1.24.0 - mothur will now check if a sequence is reversed before
     classifying.
 -   1.25.0 - segfault if no files are given. Should return error message
-    instead. - <http://www.mothur.org/forum/viewtopic.php?f=4&t=1525>
+    instead. - <https://www.mothur.org/forum/viewtopic.php?f=4&t=1525>
 -   1.28.0 Added count parameter
 -   1.28.0 Changed name of \"bayesian\" method to \"wang\"
 -   1.28.0 mothur will ignore sequences present in the taxonomy file,
@@ -499,7 +499,7 @@ forum, <https://forum.mothur.org>.
     path was incorrect.
 -   1.32.0 Removed extra name checks to speed up reading of taxonomy
     file. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&p=6608&sid=42525a60989d015feb8c10b2b5342691>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&p=6608&sid=42525a60989d015feb8c10b2b5342691>
 -   1.33.0 Added relabund parameter
 -   1.37.0 Changes cutoff parameter default to 80. This change in the
     bootstrap threshold reflects the default values in the 454 and MiSeq

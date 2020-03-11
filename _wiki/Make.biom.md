@@ -3,7 +3,7 @@ title: 'Make.biom'
 ---
 The **make.biom** command is design to allow you to
 convert your [shared file](shared_file) to a biom file.
-<http://biom-format.org/documentation/biom_format.html> (Note: mothur
+<https://biom-format.org/documentation/biom_format.html> (Note: mothur
 currently supports format version 1.0) To run this tutorial please
 download, [ Example Files](Media:Make_biom_files.zip)
 
@@ -87,7 +87,7 @@ allows you to provide the OTU ID mapping table associated with your
 reference taxonomy. When using the picrust option you must provide a
 reference taxonomy and a \*.cons.taxonomy file. You can download the
 version 13.5 OTU ID maps here: [GreenGenes Mapping
-Tables](http://www.mothur.org/w/images/b/be/GG_13_5_otuMapTable.zip).
+Tables](https://www.mothur.org/w/images/b/be/GG_13_5_otuMapTable.zip).
 
     mothur > make.biom(shared=abrecovery.an.shared, label=0.03, reftaxonomy=gg_13_5_99.gg.tax, constaxonomy=abrecovery.an.0.03.cons.taxonomy, picrust=97.gg.otu_map)
 
@@ -106,9 +106,9 @@ file you used when classifying your sequences.
 
 -   1.25.0 - First Introduced
 -   1.28.0 - Added metadata option -
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=1786>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=1786>
 -   1.32.0 - Bug Fix: segfault with multiple labels in shared file. -
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2585&p=7072#p7072>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2585&p=7072#p7072>
 -   1.33.0 - Added the picrust and reftaxonomy parameters.
 -   1.36.0 - Bug Fix: - repeat labels when combining mothur OTU labels
     with non mothur OTU labels, this can results in a duplicate
@@ -116,7 +116,7 @@ file you used when classifying your sequences.
     to the OTU.
 -   1.36.0 - remove paths from filenames to make compliant with qiime
     parser. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=3781&p=11241#p11241>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=3781&p=11241#p11241>
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)

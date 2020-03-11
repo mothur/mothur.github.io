@@ -191,7 +191,7 @@ like, and are also separated by dashes.
 
 -   1.29.0 - First Introduced
 -   1.31.0 - Added rarepercent and keepties parameters.
-    <http://www.mothur.org/forum/viewtopic.php?f=5&t=2007>
+    <https://www.mothur.org/forum/viewtopic.php?f=5&t=2007>
 -   1.37.0 - Modifies rareOtus label to prevent mothurConvert error.
     [\#137](https://github.com/mothur/mothur/issues/137)
 -   1.40.0 - Speed and memory improvements for shared files.

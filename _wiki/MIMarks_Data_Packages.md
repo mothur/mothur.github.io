@@ -2,7 +2,7 @@
 title: 'MIMarks Data Packages'
 ---
 The MIMarks Packages - Here\'s a link to NCBI\'s definitions, [Biosample
-attributes](http://www.ncbi.nlm.nih.gov/biosample/docs/attributes/)
+attributes](https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/)
 
 ## Package Options
 

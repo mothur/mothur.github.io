@@ -192,7 +192,7 @@ times. Default=f.
 -   1.29.0 - added subsampling parameters
 -   1.33.0 - Bug Fix: \*.ave.dist matrix = 0 when processors \> 2 when
     using the subsample parameter and not using the distance parameter.
-    <http://www.mothur.org/forum/viewtopic.php?f=4&t=2660&p=7372#p7372>
+    <https://www.mothur.org/forum/viewtopic.php?f=4&t=2660&p=7372#p7372>
 -   1.33.0 - added [Square Root Jensen-Shannon
     Divergenceand](Square_Root_Jensen-Shannon_Divergence)
     [Jensen-Shannon Divergence](Jensen-Shannon_Divergence)

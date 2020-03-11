@@ -5,9 +5,9 @@ author: "Patrick D. Schloss"
 date: "March 15, 2017"
 ---
 
-The good people at the [RDP](http://rdp.cme.msu.edu) have released a new version of the RDP database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](http://mothur.org/wiki/RDP_reference_files). The original files are available from the RDPs [sourceforge server](http://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/) and were used as the starting point for this README.
+The good people at the [RDP](https://rdp.cme.msu.edu) have released a new version of the RDP database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](https://mothur.org/wiki/RDP_reference_files). The original files are available from the RDPs [sourceforge server](https://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/) and were used as the starting point for this README.
 
-The [release notes](http://rdp.cme.msu.edu/misc/rel10info.jsp#release11_history) indicate the following:
+The [release notes](https://rdp.cme.msu.edu/misc/rel10info.jsp#release11_history) indicate the following:
 
 > RDP Release 11.5 consists of 3,356,809 aligned and annotated 16S rRNA sequences and 125,525 Fungal 28S rRNA sequences. The Bacteria and Archaea hierarchy model used by RDP Classifier and RDP Hierarchy Browser have been updated to training set No. 16. This new training set has over 300 new genera and 2000 new sequences added. There are some rearrangements in genera Gp1, Gp3 and Gp4 of the Acidobacteria due to addition of recently proposed new genera.
 
@@ -19,7 +19,7 @@ Let's get going...
 {% highlight bash %}
 rm -rf RDPClassifier_16S_trainsetNo16_rawtrainingdata*
 
-wget -N http://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/RDPClassifier_16S_trainsetNo16_rawtrainingdata.zip
+wget -N https://sourceforge.net/projects/rdp-classifier/files/RDP_Classifier_TrainingData/RDPClassifier_16S_trainsetNo16_rawtrainingdata.zip
 unzip -o RDPClassifier_16S_trainsetNo16_rawtrainingdata.zip
 mv RDPClassifier_16S_trainsetNo16_rawtrainingdata/* ./
 {% endhighlight %}
@@ -76,7 +76,7 @@ write.table(cbind(as.character(accession), no.subs.str), "trainset16_022016.rdp.
 The RDP training sets do not include mitochondria or sequences from eukaryotes. We find that it is helpful to have these sequences because we can get non-specific amplification at times and would like to be able to remove these lineages. Let's go ahead and pull down the pds version of training set v.9 and copy those sequences over to our new training set. The following steps will be done in bash:
 
 {% highlight bash %}
-wget -N http://mothur.org/w/images/2/24/Trainset10_082014.pds.tgz
+wget -N https://mothur.org/w/images/2/24/Trainset10_082014.pds.tgz
 tar xvzf Trainset10_082014.pds.tgz
 mv trainset10_082014.pds/trainset10_082014* ./
 rm -rf trainset10_082014.pds Trainset10_082014.pds.tgz

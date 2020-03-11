@@ -3,7 +3,7 @@ title: 'Shhh.flows'
 ---
 The **shhh.flows** command is Pat Schloss\'s
 translation of Chris Quince\'s PyroNoise algorithm
-[1](http://people.civil.gla.ac.uk/~quince/Software/PyroNoise.html) from
+[1](https://people.civil.gla.ac.uk/~quince/Software/PyroNoise.html) from
 C to C++ with the incorporation of mothur\'s bells and whistles. Based
 on processing of test datasets provided by Quince, **shhh.flows** gives the
 same/similar output to AmpliconNoise. (Note: The AmpliconNoise pipeline
@@ -22,7 +22,7 @@ come at a computational cost. Whereas the features in
 shhh.flows can take on the order of hours. Running **shhh.flows** with large
 datasets without multiple processors or MPI is not suggested. You can
 obtain the appropriate version of MPI for your operating system at
-<http://www.open-mpi.org/>. You will also need a lookup file that tells
+<https://www.open-mpi.org/>. You will also need a lookup file that tells
 shhh.flows the probability of observing an intensity value for a given
 homopolymer length. You can get mothur-compatible files [
 here](lookup_files) and will need to put these files either

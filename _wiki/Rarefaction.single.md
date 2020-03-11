@@ -79,7 +79,7 @@ individual or all of the individuals have been sampled.
 ### calc
 
 In the paper by Hughes et al.
-[1](http://aem.asm.org/cgi/content/full/67/10/4399?view=long&pmid=11571135)
+[1](https://aem.asm.org/cgi/content/full/67/10/4399?view=long&pmid=11571135)
 it was suggested that people may want to rarefy various non-parametric
 richness estimators. Our experience indicates that for some reason this
 generates very weird and misleading results. Regardless, it is possible
@@ -200,7 +200,7 @@ groupmode=F, you will get a separate output file for each sample.
 ### Visualization with R
 
 To visual your data follow Pat\'s tutorial
-[here](http://www.riffomonas.org/minimalR/06_line_plots.html).
+[here](https://www.riffomonas.org/minimalR/06_line_plots.html).
 
 ## Revisions
 

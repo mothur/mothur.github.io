@@ -4,14 +4,14 @@ title: 'Agricultural soil community analysis'
 In this tutorial we will analyze bacterial 16S-based communities
 originating from soil samples of three different farming systems. The
 sequences were originally published by [Hartmann and Widmer
-(2004)](http://www.ncbi.nlm.nih.gov/pubmed/17041161).
+(2004)](https://www.ncbi.nlm.nih.gov/pubmed/17041161).
 
 
 ## Getting started
 
 ### Download and align sequences
 
-Download the sequences from [NCBI GenBank](http://www.ncbi.nlm.nih.gov)
+Download the sequences from [NCBI GenBank](https://www.ncbi.nlm.nih.gov)
 by using the command DQ827724:DQ829627 \[ACCN\] or from [
 DOK03.zip](Media:DOK03.zip). We will first generate a
 multiple sequence alignment of the 1904 16S sequences by using mothur.
@@ -26,7 +26,7 @@ filter to remove columns only represented by gaps:
 
 We rename this file to DOK03.al.greengenes.fasta. Alternatively, you can
 use a database-independent alignment algorithm such as
-[MAFFT](http://align.bmr.kyushu-u.ac.jp/mafft/online/server). For this
+[MAFFT](https://align.bmr.kyushu-u.ac.jp/mafft/online/server). For this
 purpose, upload DOK03.fasta to the server and use the default parameters
 to run MAFFT. Copy the fasta formatted alignment into a text editor and
 rename the file to DOK03.al.mafft.fasta.
@@ -34,20 +34,20 @@ rename the file to DOK03.al.mafft.fasta.
 ### Create distance matrix
 
 We will use the
-[Phylip](http://evolution.genetics.washington.edu/phylip.html) program
-[DNAdist](http://evolution.genetics.washington.edu/phylip/doc/dnadist.html)
+[Phylip](https://evolution.genetics.washington.edu/phylip.html) program
+[DNAdist](https://evolution.genetics.washington.edu/phylip/doc/dnadist.html)
 to generate a distance matrix. Before we can run our file, we have to
 convert the fasta to phylip formatted files. Use
-[ReadSeq](http://www.ebi.ac.uk/cgi-bin/readseq.cgi/) or equivalent tools
+[ReadSeq](https://www.ebi.ac.uk/cgi-bin/readseq.cgi/) or equivalent tools
 to convert the aligned fasta files by using the format phylip4. We name
 the files DOK03.al.greengenes.phy and DOK03.al.mafft.phy. The DNAdist
 algorithm can be run online (e.g.
-[trishul.sci.gu.edu.au](http://trishul.sci.gu.edu.au/tools/dnadist.html),
-[mobyle.pasteur.fr](http://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist))
+[trishul.sci.gu.edu.au](https://trishul.sci.gu.edu.au/tools/dnadist.html),
+[mobyle.pasteur.fr](https://mobyle.pasteur.fr/cgi-bin/portal.py?form=dnadist))
 or downloaded and used according to the following instructions:
 
 1.  Download the [Phylip
-    package](http://evolution.genetics.washington.edu/phylip/getme.html).
+    package](https://evolution.genetics.washington.edu/phylip/getme.html).
 2.  Copy the executable dnadist.exe into the directory with your data
     files and execute the program.
 3.  When prompted for the input file type the name of the phylip
@@ -201,12 +201,12 @@ BIODYN, and CONFYM at OTU definition of
 Despite high similarity in OTU diversity between samples NOFERT, BIODYN,
 and CONFYM, we have found indication that the community structures of
 the samples might be different. The [original
-study](http://www.ncbi.nlm.nih.gov/pubmed/17041161) concluded that
+study](https://www.ncbi.nlm.nih.gov/pubmed/17041161) concluded that
 community structures from treatments receiving manure, i.e. BIODYN and
 CONFYM, are more similar to each other when compared to NOFERT. The
 results gained from the sequence libraries were in agreement with
 replicated community profiling data from a [preceding
-study](http://www.ncbi.nlm.nih.gov/pubmed/16907752). I re-generated the
+study](https://www.ncbi.nlm.nih.gov/pubmed/16907752). I re-generated the
 cluster analysis used in the original study with the data gained by
 mothur in the shared file.
 
@@ -240,14 +240,14 @@ analysis](parsimony), [ Unweighted
 UniFrac](unifrac.unweighted), or [ Weighted
 UniFrac](unifrac.weighted). First, we need to build a tree
 based on our sequence alignment, for example by the
-[Phylip](http://evolution.genetics.washington.edu/phylip.html) program
-[neighbor](http://evolution.genetics.washington.edu/phylip/doc/neighbor.html).
+[Phylip](https://evolution.genetics.washington.edu/phylip.html) program
+[neighbor](https://evolution.genetics.washington.edu/phylip/doc/neighbor.html).
 The neighbor algorithm can be run online
-([mobyle.pasteur.fr](http://mobyle.pasteur.fr/cgi-bin/portal.py?form=neighbor))
+([mobyle.pasteur.fr](https://mobyle.pasteur.fr/cgi-bin/portal.py?form=neighbor))
 or downloaded and used according to the following instructions:
 
 1.  Download the [Phylip
-    package](http://evolution.genetics.washington.edu/phylip/getme.html).
+    package](https://evolution.genetics.washington.edu/phylip/getme.html).
 2.  Copy the executable neighbor.exe into the directory with your data
     files and execute the program.
 3.  When prompted for the input file type the name of the DNA distance

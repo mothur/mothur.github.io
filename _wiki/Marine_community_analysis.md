@@ -4,7 +4,7 @@ title: 'Marine community analysis'
 In this tutorial we will perform an analysis of marine microbial
 communities using the tools available in mothur. Specifically, we will
 be looking at fourteen sites from the [Global Ocean Sampling
-Expedition](http://www.jcvi.org/cms/research/projects/gos/overview/)
+Expedition](https://www.jcvi.org/cms/research/projects/gos/overview/)
 (GOS) Expedition which cover a diverse set of marine environments (e.g.,
 coastal, fresh water, estuarine, hypersaline). All the data files you
 need to complete this tutorial are contained in the [
@@ -23,7 +23,7 @@ whichever point in the pipeline you wish.
 The aim of the GOS Expedition was to provide a comprehensive genomic
 survey of the diversity of microbial life in the world\'s oceans. To
 achieve this goal, approximately 150
-[metagenomic](http://camera.calit2.net/education/what-is-metagenomics)
+[metagenomic](https://camera.calit2.net/education/what-is-metagenomics)
 marine samples were collected from around the world. This has provided a
 wealth of information about both the taxonomic and metabolic
 compositions of marine communities.
@@ -34,16 +34,16 @@ investigate one possible pipeline for analyzing the taxonomic
 composition of environmental samples. Non-coding RNA (ncRNA) sequences
 for many of the GOS samples sites along with geographic and
 environmental data about these sites can be obtained from the
-[CAMERA](http://camera.calit2.net) web server. We can identify 16S
+[CAMERA](https://camera.calit2.net) web server. We can identify 16S
 sequences within this set of ncRNA sequences by:
 
 -   Performing a
-    [blastall](http://blast.ncbi.nlm.nih.gov/download.shtml) search with
+    [blastall](https://blast.ncbi.nlm.nih.gov/download.shtml) search with
     default parameters between the ncRNA sequences and the 16S rDNA
-    database compiled by [GreenGenes](http://greengenes.lbl.gov). Other
+    database compiled by [GreenGenes](https://greengenes.lbl.gov). Other
     16S databases could just as easily be used. The results shown here
     used the GreenGenes database compiled on [Jan. 28,
-    2009](http://greengenes.lbl.gov/Download/Sequence_Data/Fasta_data_files/).
+    2009](https://greengenes.lbl.gov/Download/Sequence_Data/Fasta_data_files/).
 
 We can filter these results so we are left with only those sequences we
 are confident in by:
@@ -101,15 +101,15 @@ in the same manner as specified for the [Esophageal community
 analysis](Esophageal_community_analysis). Later we will use
 this MSA to obtain the distance matrix and phylogenetic tree which are
 required to perform most of the analyses we would like to do in mothur.
-For this tutorial we will use [GreenGenes](http://greengenes.lbl.gov) to
+For this tutorial we will use [GreenGenes](https://greengenes.lbl.gov) to
 align our sequences, but you could certainly use
-[SILVA](http://arb-silva.de) as an alternative. The output of the
-GreenGenes [NAST](http://www.ncbi.nlm.nih.gov/pubmed/16845035) alignment
+[SILVA](https://arb-silva.de) as an alternative. The output of the
+GreenGenes [NAST](https://www.ncbi.nlm.nih.gov/pubmed/16845035) alignment
 is included in the GOS archive (`gos_proxy_seq_NAST_job3353.tgz`), but
 you can follow these instructions if you wish to perform the alignment
 yourself:
 
-1.  Go to the main [GreenGenes](http://greengenes.lbl.gov) webpage and
+1.  Go to the main [GreenGenes](https://greengenes.lbl.gov) webpage and
     click on the \"Align\" icon
 2.  Click on the \"Choose File\" button and select     gos_proxy_seq.fasta
 3.  In the field for \"Batch size for NAST\" enter \"50\"
@@ -129,7 +129,7 @@ long format used by GreenGenes.
 
 We will use GreenGenes to generate a distance matrix. GreenGenes
 provides a user friendly interface to the PHYLIP program
-[DNAdist](http://evolution.genetics.washington.edu/phylip/doc/dnadist.html).
+[DNAdist](https://evolution.genetics.washington.edu/phylip/doc/dnadist.html).
 It also conveniently masks out hyper-variable regions from the alignment
 file which is desirable since our sequences cover a significant range of
 phylogenetic diversity so these sites are unlikely to contain useful
@@ -137,7 +137,7 @@ phylogenetic signal. Downstream analysis with mothur and many other
 programs generally requires a rooted tree so we need to add an outgroup
 sequence to our sequence file. We will use the 16S gene of
 [Haloquadratum
-walsbyi](http://www.ncbi.nlm.nih.gov/nuccore/110666976?ordinalpos=1&itool=EntrezSystem2.PEntrez.Sequence.Sequence_ResultsPanel.Sequence_RVDocSum)
+walsbyi](https://www.ncbi.nlm.nih.gov/nuccore/110666976?ordinalpos=1&itool=EntrezSystem2.PEntrez.Sequence.Sequence_ResultsPanel.Sequence_RVDocSum)
 (an archaeon) as our outgroup. This sequence should be aligned using the
 GreenGenes NAST aligner in the same manner as described above. To build
 the distance matrix:
@@ -145,7 +145,7 @@ the distance matrix:
 1.  Copy-and-paste the aligned Haloquadratum walsbyi sequence (contained
     in the archive `walsbyi_NAST_job31369.tgz` in the GOS archive) into
     the **top** of your `gos_proxy_seq_NAST.fasta` sequence file
-2.  Go to the main [GreenGenes](http://greengenes.lbl.gov) webpage and
+2.  Go to the main [GreenGenes](https://greengenes.lbl.gov) webpage and
     click on the \"More tools\...\" link under the \"Functions\" menu
 3.  Click on the \"Create distance matrix\" link
 4.  Click on the \"Browse\" button and select your
@@ -162,7 +162,7 @@ from `distance_matrix_6080` to `gos.dst`.
 ### Creating a phylogenetic tree
 
 We will use the PHYLIP program
-[Neighbor](http://evolution.genetics.washington.edu/phylip/doc/neighbor.html)
+[Neighbor](https://evolution.genetics.washington.edu/phylip/doc/neighbor.html)
 to build a neighbor-joining tree of our sequences. To generate the
 rooted tree:
 
@@ -185,8 +185,8 @@ This suggests that a more robust method is needed to infer the
 evolutionary history of these sequences, but this tree will suffice for
 illustrating the use of mothur. Rename `outtree` to `gos.tre`. You can
 inspect the tree using programs such as
-[FigTree](http://tree.bio.ed.ac.uk/software/figtree/) or
-[TreeView](http://taxonomy.zoology.gla.ac.uk/rod/treeview.html).
+[FigTree](https://tree.bio.ed.ac.uk/software/figtree/) or
+[TreeView](https://taxonomy.zoology.gla.ac.uk/rod/treeview.html).
 
 ## OTU-based analyses
 
@@ -253,7 +253,7 @@ the [rarefaction.single](rarefaction.single) command:
 
 This will generate the file `gos.fn.GS020.rarefaction`. The data in this
 file can be plotted using programs such as
-[R](http://www.r-project.org/) or Matlab. The following plot was
+[R](https://www.r-project.org/) or Matlab. The following plot was
 generated with a [ simple R
 script](Media:RarefactionScriptR.zip):
 
@@ -377,8 +377,8 @@ This will produce a newick-formatted tree file called
 `gos.fn.ThetaYC.0.03.tre` which indicates how similar our samples are
 according to the [ Yue & Clayton theta](thetayc) structural
 diversity measure. Programs such as
-[FigTree](http://tree.bio.ed.ac.uk/software/figtree/) or
-[TreeViewX](http://darwin.zoology.gla.ac.uk/~rpage/treeviewx/) can be
+[FigTree](https://tree.bio.ed.ac.uk/software/figtree/) or
+[TreeViewX](https://darwin.zoology.gla.ac.uk/~rpage/treeviewx/) can be
 used to visualize the tree. Our samples result in the following
 community tree:
 
@@ -404,7 +404,7 @@ However, there are some exceptions:
 These results indicate that salinity has a significant influence of
 microbial community composition which is in agreement with a recent
 global study performed by [Lozupone and Knight
-(2007)](http://www.ncbi.nlm.nih.gov/pubmed/17592124). Further work is
+(2007)](https://www.ncbi.nlm.nih.gov/pubmed/17592124). Further work is
 needed to determine if geographic proximity influnces microbial
 community or if the similarity we are seeing between our \"pairs of
 sites\" is strictly a function of environmental similarity.
@@ -419,7 +419,7 @@ a leaf node in the tree. Unfortunately, for our data set this is
 computationally prohibitive since some sequences are present thousands
 of times. Mothur will likely support assigning weights to sequence in a
 future release. In the meantime, we can use the [UniFrac web
-portal](http://bmf2.colorado.edu/unifrac/index.psp) to analyze our data
+portal](https://bmf2.colorado.edu/unifrac/index.psp) to analyze our data
 set. To perform this analysis you will need the tree file `gos.tre` and
 the provided environment file `gos.env` which indicate the abundance of
 each sequence in a given sample. If you are new to the UniFrac web

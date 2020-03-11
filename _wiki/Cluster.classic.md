@@ -81,7 +81,7 @@ There are several reasons to be interested in providing a name file with
 your distance matrix. First, as sequencing collections increase in size,
 the number of duplicate sequences is increasing. This is especially the
 case with sequences generated via pyrosequencing. Sogin and colleagues
-[1](http://www.pnas.org/content/103/32/12115.full) found that less than
+[1](https://www.pnas.org/content/103/32/12115.full) found that less than
 50% of their sequences were unique. Because the alignments and distances
 for the duplicate sequences are the same, re-processing each duplicate
 sequence takes a considerable amount of computing time and memory.

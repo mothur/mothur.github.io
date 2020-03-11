@@ -234,7 +234,7 @@ analyze your data at 3% by either level of diffs. Remember that this
 method does not actually remove the noise, it just clusters sequences
 that are likely to be noisy. To remove the noise you would need to use a
 program like Chris Quince\'s
-[PyroNoise](http://userweb.eng.gla.ac.uk/christopher.quince/Software/PyroNoise.html)
+[PyroNoise](https://userweb.eng.gla.ac.uk/christopher.quince/Software/PyroNoise.html)
 or [AmpliconNoise](https://code.google.com/archive/p/ampliconnoise/).
 Considering using PyroNoise/AmpliconNoise may not be practical for many
 people, the **pre.cluster** option may be your best bet.

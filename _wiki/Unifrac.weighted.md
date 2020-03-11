@@ -5,7 +5,7 @@ The **unifrac.weighted** comand implements
 the [weighted UniFrac algorithm](weighted_UniFrac_algorithm).
 The [unifrac.unweighted](unifrac.unweighted) command
 implements the unweighted version of the command. Both of these methods
-are available through the [UniFrac](http://bmf2.colorado.edu/unifrac)
+are available through the [UniFrac](https://bmf2.colorado.edu/unifrac)
 website. The UniFrac methods are generic tests that describes whether
 two or more communities have the same structure. The significance of the
 test statistic can only indicate the probability that the communities

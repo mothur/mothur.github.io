@@ -49,7 +49,7 @@ would benefit from having in mothur!
     (default=t). If false, mothur will split the matrix but not cluster.
 -   [indicator](indicator) - added groups to the output of
     the indicator values. -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=1675>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1675>
 -   [summary.single](summary.single),
     [summary.shared](summary.shared),
     [rarefaction.shared](rarefaction.shared),
@@ -74,14 +74,14 @@ would benefit from having in mothur!
     memory needed to run
 -   [chimera.uchime](chimera.uchime) - added strand parameter
     to -
-    <http://www.mothur.org/forum/viewtopic.php?f=3&t=1882&p=5255#p5255>
+    <https://www.mothur.org/forum/viewtopic.php?f=3&t=1882&p=5255#p5255>
 
 ## Bug fixes
 
 -   [classify.otu](classify.otu) - if basis=sequence and
     count file is used, redundant sequences were not added to
     .tax.summary file counts.
--   <http://www.mothur.org/forum/viewtopic.php?f=3&t=1656> - ignore N\'s
+-   <https://www.mothur.org/forum/viewtopic.php?f=3&t=1656> - ignore N\'s
 -   [classify.seqs](classify.seqs) - if input directory was
     given with a group file, path was incorrect.
 -   if tree file had random Windows newlines, mothur could not read
