@@ -25,6 +25,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -47,7 +48,8 @@ feedback: false
 # privacy: https://domain.com/privacy
 
 # google-analytics: UA-XXXXXXXXXX
-#                   UA-10741102-1
+
+
 # Image and (square) dimension for logo (don't start with /)
 # If commented, will use material hat theme
 logo: "assets/img/mothur_RGB.png"

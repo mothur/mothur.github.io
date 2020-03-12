@@ -184,20 +184,26 @@ htmlproofer --assume-extension --only-4xx ./_site
 
 
 ## To do...
+* wiki
+  - make links all lowercase
+
 * blog
   - check on embedded images `!\[.*\]\(.*\)` in blog
+  - add comments
 
 * data
   - Set up links to large data files for projects
 
 * general site
-	* Customize header nav bar
-  	- Example analyses, etc. match header from old wiki
+	* Customize header nav bar with Example analyses, etc. match header from old wiki
 	* Add announcement blurb
 	* Fix space between toc and edits
-	* Google tracking code - see what I have in config.yml to see if it works
-	* robots.txt page
 
+* fresh pull from old wiki
+
+* once site is up...
+	* Google tracking code - get new code from
+	* google-site-verification - see what's in site_root
 
 * long term
   - make separate pages for tags, create three/four column listing of tags
