@@ -175,6 +175,7 @@ unlink("_wiki/Main_Page.md")
 * Figures will need to be manually resized
 * get rid of stray `\"` and `\'` characters and replace with """ and "'" in atom
 * Add calculators tag to calculators, remove calculators page and link
+* Add filetypes tag to file types, remove file type page and link, if needed
 * Clear errors...
 ```
 #https://github.com/gjtorikian/html-proofer
@@ -191,9 +192,12 @@ htmlproofer --assume-extension --only-4xx ./_site
 
 * general site
 	* Customize header nav bar
-	* Link to license on each page
+  	- Example analyses, etc. match header from old wiki
 	* Add announcement blurb
 	* Fix space between toc and edits
-	* fix stars/follows in the edit links
 	* Google tracking code - see what I have in config.yml to see if it works
 	* robots.txt page
+
+
+* long term
+  - make separate pages for tags, create three/four column listing of tags
