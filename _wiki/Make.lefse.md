@@ -1,5 +1,6 @@
 ---
 title: 'Make.lefse'
+tags: 'commands'
 ---
 The **make.lefse** command takes mothur\'s [ shared
 file](Shared_file) or [ relabund](Relabund_file)
@@ -87,4 +88,4 @@ like used, if none is given the first distance is used.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

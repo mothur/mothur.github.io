@@ -1,5 +1,6 @@
 ---
 title: 'Merge.files'
+tags: 'commands'
 ---
 The **merge.files** command will concatenate
 multiple files and output the result to a new file. This command is
@@ -40,4 +41,4 @@ executable:
 -   1.41.0 - Adds fasta, taxonomy, name and count options to
     merge.files. [\#506](https://github.com/mothur/mothur/issues/506)
 
-[Category:Commands](Category:Commands)
+

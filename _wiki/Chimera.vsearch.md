@@ -1,5 +1,6 @@
 ---
 title: 'Chimera.vsearch'
+tags: 'commands'
 ---
 The **chimera.vsearch** command reads a fasta file and reference file or a
 fasta and name or count file and outputs potentially chimeric sequences.
@@ -191,4 +192,4 @@ range from 0.2 to 2.
     specify location of vsearch executable.
     [\#586](https://github.com/mothur/mothur/issues/586)
 
-[Category:Commands](Category:Commands)
+

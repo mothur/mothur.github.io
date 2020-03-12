@@ -1,5 +1,6 @@
 ---
 title: 'Cluster.classic'
+tags: 'commands'
 ---
 The **cluster.classic** command can be used to
 assign sequences to OTUs. It is the dotur implementation of cluster.
@@ -325,4 +326,4 @@ approach to clustering.
 -   1.40.4 - Bug Fix: Cluster commands printing of list file.
     [\#454](https://github.com/mothur/mothur/issues/454)
 
-[Category:Commands](Category:Commands)
+

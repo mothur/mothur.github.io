@@ -1,5 +1,6 @@
 ---
 title: 'Rarefaction.single'
+tags: 'commands'
 ---
 The **rarefaction.single** command will
 generate intra-sample rarefaction curves using a re-sampling without
@@ -212,4 +213,4 @@ To visual your data follow Pat\'s tutorial
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

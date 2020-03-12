@@ -1,5 +1,6 @@
 ---
 title: 'Amova'
+tags: 'commands'
 ---
 Analysis of molecular variance is a nonparametric analog of traditional
 analysis of variance. This method is widely used in population genetics
@@ -76,4 +77,4 @@ dashes. The default is all sets in the designfile.
 -   1.29.0 Bug Fix:
     [https://forum.mothur.org/viewtopic.php?f=1&t=1919](https://forum.mothur.org/viewtopic.php?f=1&t=1919)
 
-[Category:Commands](Category:Commands)
+

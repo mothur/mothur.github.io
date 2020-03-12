@@ -1,5 +1,6 @@
 ---
 title: 'Make.biom'
+tags: 'commands'
 ---
 The **make.biom** command is design to allow you to
 convert your [shared file](shared_file) to a biom file.
@@ -121,4 +122,4 @@ file you used when classifying your sequences.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

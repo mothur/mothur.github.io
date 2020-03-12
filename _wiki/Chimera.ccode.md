@@ -1,5 +1,6 @@
 ---
 title: 'Chimera.ccode'
+tags: 'commands'
 ---
 Use Ccode approach \....
 
@@ -218,4 +219,4 @@ paper by Juan M. Gonzalez, Johannes Zimmerman and Cesareo Saiz-Jimenez.
 
 -   1.38.0 - Removes save option.
 
-[Category:Commands](Category:Commands)
+

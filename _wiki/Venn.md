@@ -1,5 +1,6 @@
 ---
 title: 'Venn'
+tags: 'commands'
 ---
 The **venn** command generates a Venn diagram from data
 provided in a \*.shared file. The command can generate diagrams (as SVG
@@ -182,4 +183,4 @@ For example:
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

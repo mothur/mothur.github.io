@@ -1,5 +1,6 @@
 ---
 title: 'Align.check'
+tags: 'commands'
 ---
 The **align.check** command allows you to calculate the number of
 potentially misaligned bases in a 16S rRNA gene sequence alignment. If
@@ -89,4 +90,4 @@ aligned sequences.
 -   1.28.0 Added count option
 -   1.28.0 Added name parameter back
 
-[Category:Commands](Category:Commands)
+

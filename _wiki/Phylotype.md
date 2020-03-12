@@ -1,5 +1,6 @@
 ---
 title: 'Phylotype'
+tags: 'commands'
 ---
 The **phylotype** command can be used to assign sequences to OTUs based on
 their taxonomy and outputs a .list, .rabund and .sabund files. To run
@@ -107,4 +108,4 @@ contain all your sequences, not just the unique ones.
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 
-[Category:Commands](Category:Commands)
+

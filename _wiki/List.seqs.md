@@ -1,5 +1,6 @@
 ---
 title: 'List.seqs'
+tags: 'commands'
 ---
 The **list.seqs** command will write out the names
 of the sequences found within a [ fastq](fastq_file), [
@@ -90,4 +91,4 @@ The taxonomy option is used as presented in the following command:
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 
-[Category:Commands](Category:Commands)
+

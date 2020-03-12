@@ -1,5 +1,6 @@
 ---
 title: 'Unifrac.unweighted'
+tags: 'commands'
 ---
 The **unifrac.unweighted** comand
 implements the [unweighted UniFrac
@@ -220,4 +221,4 @@ in your sequence or group names.
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
 
-[Category:Commands](Category:Commands)
+

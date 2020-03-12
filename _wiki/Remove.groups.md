@@ -1,5 +1,6 @@
 ---
 title: 'Remove.groups'
+tags: 'commands'
 ---
 The **remove.groups** command removes sequences
 from a specific group or set of groups from the following file types:
@@ -223,4 +224,4 @@ To use the design option, follow this example:
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Get.sabund'
+tags: 'commands'
 ---
 The **get.sabund** command will generate an [sabund
 file](sabund_file) based on the OTU data that you have read
@@ -39,4 +40,4 @@ the **get.sabund** command.
 
 -   1.31.0 - Added count parameter.
 
-[Category:Commands](Category:Commands)
+

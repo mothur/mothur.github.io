@@ -1,5 +1,6 @@
 ---
 title: 'Sort.seqs'
+tags: 'commands'
 ---
 The **sort.seqs** command puts sequences from a
 fasta, name, [ count](Count_File), group, quality, flow or
@@ -76,4 +77,4 @@ default=F.
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Remove.dists'
+tags: 'commands'
 ---
 The **remove.dists** command removes distances
 from a phylip or column file related to groups or sequences listed in an
@@ -98,4 +99,4 @@ amazon.pick.dist contains:
 
 -   1.30.0 - First Introduced
 
-[Category:Commands](Category:Commands)
+

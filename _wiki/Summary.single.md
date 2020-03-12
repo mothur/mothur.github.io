@@ -1,5 +1,6 @@
 ---
 title: 'Summary.single'
+tags: 'commands'
 ---
 The **summary.single** command will produce a
 summary file that has the calculator value for each line in the OTU data
@@ -212,4 +213,4 @@ times. Default=f.
     summary.shared. You may run with or without rarefaction, but not
     both. [\#607](https://github.com/mothur/mothur/issues/607)
 
-[Category:Commands](Category:Commands)
+

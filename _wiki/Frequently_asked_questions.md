@@ -1,5 +1,6 @@
 ---
 title: 'Frequently asked questions'
+tags: 'commands'
 ---
 If you have any questions, please feel free to email us or to use the
 discussion tab. If you have an answer, feel free to contribute!

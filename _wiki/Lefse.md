@@ -1,5 +1,6 @@
 ---
 title: 'Lefse'
+tags: 'commands'
 ---
 The **lefse** command is modeled after the LEfSe program [written and
 published by the Huttenhower
@@ -125,4 +126,4 @@ Recommended when very low values are present. Default=T.
 -   1.40.0 Bug Fix: Fixes seeded random issue.
     [\#416](https://github.com/mothur/mothur/issues/416)
 
-[Category:Commands](Category:Commands)
+

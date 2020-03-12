@@ -1,5 +1,6 @@
 ---
 title: 'Deunique.tree'
+tags: 'commands'
 ---
 The **deunique.tree** command reinserts the
 redundant sequence identiers back into a unique tree. For this tutorial,
@@ -14,4 +15,4 @@ provided:
 This will generate a new tree file containing all the sequences:
 test.deunique.tre.
 
-[Category:Commands](Category:Commands)
+

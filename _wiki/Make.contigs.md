@@ -1,5 +1,6 @@
 ---
 title: 'Make.contigs'
+tags: 'commands'
 ---
 The **make.contigs** command reads a forward fastq file and a reverse fastq
 file and outputs new fasta and report files.
@@ -342,4 +343,4 @@ documentation,
     fails. [\#634](https://github.com/mothur/mothur/issues/634)
 -   1.43.0 - Windows users can now run **make.contigs** with \*.gz files.
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Split.abund'
+tags: 'commands'
 ---
 The **split.abund** command reads a fasta file and a list or a names file
 splits the sequences into rare and abundant groups.
@@ -91,4 +92,4 @@ The accnos parameter allows you to output a .rare.accnos and
 
 -   1.28.0 Added count option
 
-[Category:Commands](Category:Commands)
+

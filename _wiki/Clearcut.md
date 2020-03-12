@@ -1,5 +1,6 @@
 ---
 title: 'Clearcut'
+tags: 'commands'
 ---
 The **clearcut** command allows mothur users to run the **clearcut** program
 from within mothur. The **clearcut** program written by Initiative for
@@ -137,4 +138,4 @@ Evol., 62, 785-792
 
 -   1.28.0 Bug Fix - windows crash
 
-[Category:Commands](Category:Commands)
+

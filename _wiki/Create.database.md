@@ -1,5 +1,6 @@
 ---
 title: 'Create.database'
+tags: 'commands'
 ---
 The **create.database** command reads a [list
 file](list_file), \*.cons.taxonomy, \*.rep.fasta,
@@ -128,4 +129,4 @@ list file.
 -   1.41.0 - Adds relabund option.
     [\#478](https://github.com/mothur/mothur/issues/478)
 
-[Category:Commands](Category:Commands)
+

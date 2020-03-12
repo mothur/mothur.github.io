@@ -1,5 +1,6 @@
 ---
 title: 'Summary.tax'
+tags: 'commands'
 ---
 The **summary.tax** command reads a taxonomy file
 and an optional name and or group file, and summarizes the taxonomy
@@ -169,4 +170,4 @@ Simple Format:
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 
-[Category:Commands](Category:Commands)
+

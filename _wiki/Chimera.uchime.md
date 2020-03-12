@@ -1,5 +1,6 @@
 ---
 title: 'Chimera.uchime'
+tags: 'commands'
 ---
 The **chimera.uchime** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The original uchime program was
@@ -288,4 +289,4 @@ ucl is true.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

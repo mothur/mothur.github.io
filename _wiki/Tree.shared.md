@@ -1,5 +1,6 @@
 ---
 title: 'Tree.shared'
+tags: 'commands'
 ---
 The **tree.shared** command will generate a
 newick-formatted tree file that describes the dissimilarity
@@ -157,4 +158,4 @@ times. Default=f.
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Get.seqs'
+tags: 'commands'
 ---
 The **get.seqs** command takes a list of sequence
 names (.accnos file) and either a [ fastq](fastq_file), [
@@ -209,4 +210,4 @@ The fastq option allows you to select sequences from your fastq file.
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Sffinfo'
+tags: 'commands'
 ---
 The **sffinfo** command extract sequences reads from a .sff file.
 
@@ -113,4 +114,4 @@ to pdiffs + bdiffs + ldiffs + sdiffs).
 -   1.36.0 - Bug Fix: Off by one in right side trimming.
     [https://forum.mothur.org/viewtopic.php?f=4&t=3764](https://forum.mothur.org/viewtopic.php?f=4&t=3764)
 
-[Category:Commands](Category:Commands)
+

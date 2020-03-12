@@ -1,5 +1,6 @@
 ---
 title: 'Sparcc'
+tags: 'commands'
 ---
 The **sparcc** command allows you to \.... To run this tutorial please
 download: [
@@ -70,4 +71,4 @@ and use all available.
     number of available processors and use all available.
 -   1.40.3 - Improves speed with threaded code and corrects small bug.
 
-[Category:Commands](Category:Commands)
+

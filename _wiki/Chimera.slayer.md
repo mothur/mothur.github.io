@@ -1,5 +1,6 @@
 ---
 title: 'Chimera.slayer'
+tags: 'commands'
 ---
 The **chimera.slayer** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The developers of the original
@@ -247,4 +248,4 @@ The results would be:
 -   1.38.0 - Removes save option.
 -   1.40.0 - Removes processors option
 
-[Category:Commands](Category:Commands)
+

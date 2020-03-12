@@ -1,5 +1,6 @@
 ---
 title: 'Set.current'
+tags: 'commands'
 ---
 The **set.current** command allows you to **set.current** files for mothur to
 use. You can also clear current files.
@@ -89,4 +90,4 @@ current files between instances of mothur.
 -   1.33.0 - Bug Fix: setting processors option to 1, if not set.
 -   1.37.0 - Adds current parameter.
 
-[Category:Commands](Category:Commands)
+

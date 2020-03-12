@@ -1,5 +1,6 @@
 ---
 title: 'Mantel'
+tags: 'commands'
 ---
 The **mantel** command calculates the Mantel
 correlation coefficient between two matrices. Sokal, R. R., & Rohlf, F.
@@ -43,4 +44,4 @@ opening veg.mantel you would see:
 
 The default is 1000.
 
-[Category:Commands](Category:Commands)
+

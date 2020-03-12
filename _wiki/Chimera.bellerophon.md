@@ -1,5 +1,6 @@
 ---
 title: 'Chimera.bellerophon'
+tags: 'commands'
 ---
 Use Bellerophon approach to create a sorted priority score list of
 potentially chimeric sequences.
@@ -143,4 +144,4 @@ square root of the distances is used instead of the distance value.
     [https://forum.mothur.org/viewtopic.php?f=4&t=1151](https://forum.mothur.org/viewtopic.php?f=4&t=1151)
 -   1.40.0 - Removes processors option.
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Collect.single'
+tags: 'commands'
 ---
 **collect.single** generates collector\'s
 curves using [calculators](calculators), that describe the
@@ -178,4 +179,4 @@ The second command would generate data such as this:
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

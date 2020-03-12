@@ -1,5 +1,6 @@
 ---
 title: 'Get.current'
+tags: 'commands'
 ---
 The **get.current** command allows you to find out which files mothur has
 saved as \"current\" for each type. You can also clear current files.
@@ -88,4 +89,4 @@ or you can clear all files by setting clear=all.
     command using the new current parameter.
 -   1.38.0 - Fixes RAM output for linux.
 
-[Category:Commands](Category:Commands)
+

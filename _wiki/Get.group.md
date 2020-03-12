@@ -1,5 +1,6 @@
 ---
 title: 'Get.group'
+tags: 'commands'
 ---
 The **get.group** command allows you to get a
 listing of the different groups available for the multi-sample OTU data
@@ -25,4 +26,4 @@ sequences and another for the pasture sequences.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

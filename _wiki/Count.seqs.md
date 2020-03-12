@@ -1,5 +1,6 @@
 ---
 title: 'Count.seqs'
+tags: 'commands'
 ---
 The **count.seqs** / make.table command counts the
 number of sequences represented by the representative sequence in a name
@@ -140,4 +141,4 @@ groups, not total from all groups.
 -   1.42.0 - Adds count and compress parameters to **count.seqs** to inflate
     or deflate count tables.
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Cluster'
+tags: 'commands'
 ---
 Once a distance matrix gets read into mothur, the
 **cluster** command can be used to assign sequences to
@@ -446,4 +447,4 @@ The variability is caused by the randomization of the sequences.
 -   1.41.0 - Nearest neighbor bug fix.
 -   1.43.0 - Changes datatype for opti method to correct overflow.
 
-[Category:Commands](Category:Commands)
+

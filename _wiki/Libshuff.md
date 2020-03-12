@@ -1,5 +1,6 @@
 ---
 title: 'Libshuff'
+tags: 'commands'
 ---
 The **libshuff** command implements the
 [libshuff](https://whitman.myweb.uga.edu/libshuff.html) method as
@@ -116,4 +117,4 @@ cutoff option:
     forest-pasture         0.00161599  0.0696
     pasture-forest         0.00149521  0.0854
 
-[Category:Commands](Category:Commands)
+

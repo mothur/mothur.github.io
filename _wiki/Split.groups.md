@@ -1,5 +1,6 @@
 ---
 title: 'Split.groups'
+tags: 'commands'
 ---
 The **split.groups** command reads a [
 list](list_file), [ fasta](fasta_file) file or [
@@ -69,4 +70,4 @@ The flow parameter is used to input your flow file.
 -   1.43.0 - Adds list parameter.
     [\#624](https://github.com/mothur/mothur/issues/624)
 
-[Category:Commands](Category:Commands)
+

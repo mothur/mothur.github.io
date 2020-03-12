@@ -1,5 +1,6 @@
 ---
 title: 'Deunique.seqs'
+tags: 'commands'
 ---
 The **deunique.seqs** command is the reverse of
 the [unique.seqs](unique.seqs) command, and creates a fasta
@@ -19,4 +20,4 @@ or
 This will generate a new fasta file containing all the sequences:
 amazon.redundant.fasta.
 
-[Category:Commands](Category:Commands)
+

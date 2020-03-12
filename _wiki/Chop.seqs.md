@@ -1,5 +1,6 @@
 ---
 title: 'Chop.seqs'
+tags: 'commands'
 ---
 The **chop.seqs** command reads a fasta file and outputs a .chop.fasta
 containing the trimmed sequences. It works on both aligned and unaligned
@@ -137,4 +138,4 @@ the fasta file will also be removed from those files.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

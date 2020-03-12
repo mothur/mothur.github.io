@@ -1,5 +1,6 @@
 ---
 title: 'Rarefaction.shared'
+tags: 'commands'
 ---
 The **rarefaction.shared** command will
 generate inter-sample rarefaction curves using a re-sampling without
@@ -204,4 +205,4 @@ To visual your data follow Pat\'s tutorial
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
 
-[Category:Commands](Category:Commands)
+

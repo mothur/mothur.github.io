@@ -1,5 +1,6 @@
 ---
 title: 'Remove.seqs'
+tags: 'commands'
 ---
 The **remove.seqs** command takes a list of
 sequence names and either a [ fastq](fastq_file), [
@@ -192,4 +193,4 @@ The fastq option allows you to remove sequences from your fastq file.
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Get.oturep'
+tags: 'commands'
 ---
 While the [bin.seqs](bin.seqs) command reports the OTU number
 for all sequences, the **get.oturep** command
@@ -198,4 +199,4 @@ label. Rename is set to false by default.
     [\#656](https://github.com/mothur/mothur/issues/656)
     [\#575](https://github.com/mothur/mothur/issues/575)
 
-[Category:Commands](Category:Commands)
+

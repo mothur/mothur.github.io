@@ -1,5 +1,6 @@
 ---
 title: 'Count.groups'
+tags: 'commands'
 ---
 The **count.groups** command counts sequences
 from a specific group or set of groups from the following file types:
@@ -78,4 +79,4 @@ and the output will look like:
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

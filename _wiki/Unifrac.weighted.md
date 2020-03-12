@@ -1,5 +1,6 @@
 ---
 title: 'Unifrac.weighted'
+tags: 'commands'
 ---
 The **unifrac.weighted** comand implements
 the [weighted UniFrac algorithm](weighted_UniFrac_algorithm).
@@ -234,4 +235,4 @@ in your sequence or group names.
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
 
-[Category:Commands](Category:Commands)
+

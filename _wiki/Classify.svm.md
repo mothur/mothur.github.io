@@ -1,5 +1,6 @@
 ---
 title: 'Classify.svm'
+tags: 'commands'
 ---
 The **classify.svm** command generates a summary
 file of ranked OTUs. This ranking is determined by the method of
@@ -270,4 +271,4 @@ Here is a sample command with all the options turned on.
 
 ## Revisions
 
-[Category:Commands](Category:Commands)
+

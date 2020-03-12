@@ -1,5 +1,6 @@
 ---
 title: 'Get.dists'
+tags: 'commands'
 ---
 The **get.dists** command selects distances from a
 phylip or column file related to groups or sequences listed in an accnos
@@ -85,4 +86,4 @@ amazon.pick.dist contains:
 
 -   1.30.0 - First Introduced
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Get.rabund'
+tags: 'commands'
 ---
 The **get.rabund** command will generate an [rabund
 file](rabund_file) based on the OTU data that you have read
@@ -60,4 +61,4 @@ the **get.rabund** command.
 -   1.41.0 - Adds shared and groups options.
     [\#325](https://github.com/mothur/mothur/issues/325)
 
-[Category:Commands](Category:Commands)
+

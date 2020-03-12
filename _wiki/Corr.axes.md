@@ -1,5 +1,6 @@
 ---
 title: 'Corr.axes'
+tags: 'commands'
 ---
 The **corr.axes** command will calculate the
 correlation coefficient for each column in a shared/relabund file to the
@@ -68,4 +69,4 @@ like to use. Default=3.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

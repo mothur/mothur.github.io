@@ -1,5 +1,6 @@
 ---
 title: 'Dist.shared'
+tags: 'commands'
 ---
 The **dist.shared** command will generate a
 phylip-formatted distance matrix that describes the dissimilarity
@@ -156,4 +157,4 @@ times. Default=f.
     summary.shared. You may run with or without rarefaction, but not
     both. [\#607](https://github.com/mothur/mothur/issues/607)
 
-[Category:Commands](Category:Commands)
+

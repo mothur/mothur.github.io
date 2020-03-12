@@ -1,5 +1,6 @@
 ---
 title: 'Mgcluster'
+tags: 'commands'
 ---
 The **mgcluster** command \....
 
@@ -116,4 +117,4 @@ default = 0.10
 -   1.40.4 - Bug Fix: Cluster commands printing of list file.
     [\#454](https://github.com/mothur/mothur/issues/454)
 
-[Category:Commands](Category:Commands)
+

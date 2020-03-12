@@ -1,5 +1,6 @@
 ---
 title: 'Indicator'
+tags: 'commands'
 ---
 The **indicator** command can be run in 3 ways: with a shared or relabund
 file and a design file, or with a shared or relabund file and a tree
@@ -168,4 +169,4 @@ the groupings relate to each other.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

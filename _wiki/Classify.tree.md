@@ -1,5 +1,6 @@
 ---
 title: 'Classify.tree'
+tags: 'commands'
 ---
 The **classify.tree** command is used to get a consensus taxonomy for each
 node on a tree.
@@ -65,4 +66,4 @@ cannot be below 51.
 -   1.40.0 Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Get.relabund'
+tags: 'commands'
 ---
 The **get.relabund** command calculates the relative abundance of each otu
 in a sample. It outputs a .relabund file.
@@ -145,4 +146,4 @@ use the groups option:
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

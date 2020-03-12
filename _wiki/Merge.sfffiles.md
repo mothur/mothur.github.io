@@ -1,5 +1,6 @@
 ---
 title: 'Merge.sfffiles'
+tags: 'commands'
 ---
 Merge.sfffiles The **merge.sfffiles** command reads a sff file or a file
 containing a list of sff files and merges the individual files into a
@@ -40,4 +41,4 @@ The output parameter allows you to provide an output filename.
     [https://forum.mothur.org/viewtopic.php?f=3&t=2466](https://forum.mothur.org/viewtopic.php?f=3&t=2466).
 -   1.33.2 - Bug Fix: Windows version caused substring error on parse.
 
-[Category:Commands](Category:Commands)
+

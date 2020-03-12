@@ -1,5 +1,6 @@
 ---
 title: 'Dist.seqs'
+tags: 'commands'
 ---
 The **dist.seqs** command will calculate uncorrected
 pairwise distances between aligned DNA sequences. This approach is
@@ -141,4 +142,4 @@ fasta file.
 -   1.43.0 - Improves speed of **dist.seqs** and
     pairwise.seqs.[\#653](https://github.com/mothur/mothur/issues/653)
 
-[Category:Commands](Category:Commands)
+

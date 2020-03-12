@@ -1,5 +1,6 @@
 ---
 title: 'Collect.shared'
+tags: 'commands'
 ---
 The **collect.shared** command generates
 collector\'s curves for [calculators](calculators), which
@@ -186,4 +187,4 @@ richness of all your groups, set the all parameter to true.
     files, aborting.\" error
     [\#497](https://github.com/mothur/mothur/issues/497)
 
-[Category:Commands](Category:Commands)
+

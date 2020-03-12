@@ -1,5 +1,6 @@
 ---
 title: 'Remove.otus'
+tags: 'commands'
 ---
 The **remove.otus** command removes otu labels from \*.cons.taxonomy,
 \*.corr.axes, \*.otu.corr, shared and list files. This can be useful
@@ -65,4 +66,4 @@ select OTUs from.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

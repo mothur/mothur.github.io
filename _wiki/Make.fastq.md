@@ -1,5 +1,6 @@
 ---
 title: 'Make.fastq'
+tags: 'commands'
 ---
 The **make.fastq** command reads a fasta file and a quality file and creates
 a fastq file.
@@ -23,4 +24,4 @@ sanger, solexa, illumina1.8+ or illumina, default=sanger.
 -   1.29.0 Added format parameter.
 -   1.30.0 Added illumina1.8+ format.
 
-[Category:Commands](Category:Commands)
+

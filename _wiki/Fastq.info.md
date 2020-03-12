@@ -1,5 +1,6 @@
 ---
 title: 'Fastq.info'
+tags: 'commands'
 ---
 The **fastq.info** command reads a fastq file and creates a fasta and
 quality file or can be used to parse fastq files by sample.
@@ -108,4 +109,4 @@ sanger, solexa, illumina or illumina1.8+. default=sanger.
 -   1.43.0 Adds 2 column pacbio file option to fastq.info.
     [\#649](https://github.com/mothur/mothur/issues/649)
 
-[Category:Commands](Category:Commands)
+

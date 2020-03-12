@@ -1,5 +1,6 @@
 ---
 title: 'Merge.taxsummary'
+tags: 'commands'
 ---
 The **merge.taxsummary** command will merge
 \*.tax.summary files.
@@ -66,4 +67,4 @@ Here is a sample from merge.tax.summary:
 
 -   1.30.0 First Introduced
 
-[Category:Commands](Category:Commands)
+

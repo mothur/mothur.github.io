@@ -1,5 +1,6 @@
 ---
 title: 'Heatmap.bin'
+tags: 'commands'
 ---
 The **heatmap.bin** command generates a heat map
 from data provided in either a \*.list or a \*.shared file. Each row in
@@ -130,4 +131,4 @@ the largest otus for each group displayed first.
 -   1.40.0 - Bug Fix: Fixes out of bounds error.
     [\#363](https://github.com/mothur/mothur/issues/363)
 
-[Category:Commands](Category:Commands)
+

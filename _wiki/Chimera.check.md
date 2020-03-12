@@ -1,5 +1,6 @@
 ---
 title: 'Chimera.check'
+tags: 'commands'
 ---
 Use chimeraCheck approach \.... Note: following the RDP model this
 method does not determine whether or not a sequence is chimeric, but
@@ -90,4 +91,4 @@ processors is set to the number of processes you have running.
 
 -   1.38.0 - Removes save option.
 
-[Category:Commands](Category:Commands)
+

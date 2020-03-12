@@ -1,5 +1,6 @@
 ---
 title: 'Homova'
+tags: 'commands'
 ---
 Homogeneity of molecular variance (HOMOVA) is a nonparametric analog of
 Bartlett's test for homo- geneity of variance, which has been used in
@@ -59,4 +60,4 @@ dashes. The default is all sets in the design file.
 -   1.40.0 Bug Fix: Fixes pvalue bug for Windows.
     [\#408](https://github.com/mothur/mothur/issues/408)
 
-[Category:Commands](Category:Commands)
+

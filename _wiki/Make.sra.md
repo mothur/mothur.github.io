@@ -1,5 +1,6 @@
 ---
 title: 'Make.sra'
+tags: 'commands'
 ---
 The **make.sra** command creates the necessary files for a NCBI submission.
 The xml file and individual sff or fastq files parsed from the original
@@ -208,4 +209,4 @@ when using sff files. Default=True.
 -   1.40.0 Adds additional format checks.
     [\#410](https://github.com/mothur/mothur/issues/410)
 
-[Category:Commands](Category:Commands)
+

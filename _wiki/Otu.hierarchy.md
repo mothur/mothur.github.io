@@ -1,5 +1,6 @@
 ---
 title: 'Otu.hierarchy'
+tags: 'commands'
 ---
 The **otu.hierarchy** command relates OTUs at
 different distances
@@ -32,4 +33,4 @@ is name.
 So Otu003 at distance 0.35 is made up of OTUs Otu002 Otu006 Otu016
 Otu020 Otu026 Otu029 Otu030 Otu031 Otu033\... at distance 0.03.
 
-[Category:Commands](Category:Commands)
+

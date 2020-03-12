@@ -1,5 +1,6 @@
 ---
 title: 'Get.otus'
+tags: 'commands'
 ---
 The **get.otus** command selects otus from a given
 
@@ -58,4 +59,4 @@ select OTUs from.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

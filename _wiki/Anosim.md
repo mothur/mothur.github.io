@@ -1,5 +1,6 @@
 ---
 title: 'Anosim'
+tags: 'commands'
 ---
 Referenced: Clarke, K. R. (1993). Non-parametric multivariate analysis
 of changes in community structure. \_Australian Journal of Ecology\_ 18,
@@ -38,4 +39,4 @@ The default for the alpha parameter is 0.05.
 
 The default for iters is 1000.
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Make.group'
+tags: 'commands'
 ---
 The **make.group** command reads a fasta file or series of fasta files and
 creates a [ group](group_file) file.
@@ -35,4 +36,4 @@ This command will generate a .group file that looks like:
 -   1.42.0 Bug Fix: Fixes output filename for make.group.
     [\#602](https://github.com/mothur/mothur/issues/602)
 
-[Category:Commands](Category:Commands)
+

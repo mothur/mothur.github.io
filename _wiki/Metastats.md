@@ -1,5 +1,6 @@
 ---
 title: 'Metastats'
+tags: 'commands'
 ---
 The **metastats** command is based on the Metastats program, White, J.R.,
 Nagarajan, N. & Pop, M. Statistical methods for detecting differentially
@@ -77,4 +78,4 @@ processors and use all available.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

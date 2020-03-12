@@ -1,5 +1,6 @@
 ---
 title: 'Get.coremicrobiome'
+tags: 'commands'
 ---
 The **get.coremicrobiome** command
 determines the fraction of OTUs that are found in varying numbers of
@@ -180,4 +181,4 @@ like, and are also separated by dashes.
 -   1.40.3 - Bug Fix: segfault with shared option.
     [\#445](https://github.com/mothur/mothur/issues/445)
 
-[Category:Commands](Category:Commands)
+

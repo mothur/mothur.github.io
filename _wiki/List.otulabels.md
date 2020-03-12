@@ -1,5 +1,6 @@
 ---
 title: 'List.otulabels'
+tags: 'commands'
 ---
 The **list.otulabels** command lists otu labels
 from shared, relabund or list file. This list can be used especially
@@ -67,4 +68,4 @@ like, and are also separated by dashes.
 -   1.42.0 - Added constaxonomy file
     [\#581](https://github.com/mothur/mothur/issues/581)
 
-[Category:Commands](Category:Commands)
+

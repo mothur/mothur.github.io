@@ -1,5 +1,6 @@
 ---
 title: 'Unique.seqs'
+tags: 'commands'
 ---
 The **unique.seqs** command returns only the
 unique sequences found in a fasta-formatted sequence file and a file
@@ -58,4 +59,4 @@ used then default=count.
 -   1.37.0 Adds format parameter
     [\#125](https://github.com/mothur/mothur/issues/125)
 
-[Category:Commands](Category:Commands)
+

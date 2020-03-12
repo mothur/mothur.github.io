@@ -1,5 +1,6 @@
 ---
 title: 'Otu.association'
+tags: 'commands'
 ---
 The **otu.association** command calculate the
 correlation coefficient for the otus in a shared/relabund file.
@@ -84,4 +85,4 @@ reported.
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.42.0 - Fixes bug with **otu.association** metadata file.
 
-[Category:Commands](Category:Commands)
+

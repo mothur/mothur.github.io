@@ -1,5 +1,6 @@
 ---
 title: 'Get.otulist'
+tags: 'commands'
 ---
 The **get.otulist** command parses a list file and creates an .otu file
 for each distance containing 2 columns. The first column is the OTU
@@ -92,4 +93,4 @@ as:
     U68603 15
     ...
 
-[Category:Commands](Category:Commands)
+

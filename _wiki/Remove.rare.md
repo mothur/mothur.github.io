@@ -1,5 +1,6 @@
 ---
 title: 'Remove.rare'
+tags: 'commands'
 ---
 The **remove.rare** command removes OTUs at a
 specified rarity (number of observations in the dataset) and outputs a
@@ -214,4 +215,4 @@ and after running **remove.rare**,
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

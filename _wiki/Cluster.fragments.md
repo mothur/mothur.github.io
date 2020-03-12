@@ -1,5 +1,6 @@
 ---
 title: 'Cluster.fragments'
+tags: 'commands'
 ---
 The **cluster.fragments** command groups
 sequences that are part of a larger sequence. To run this tutorial
@@ -92,4 +93,4 @@ cluster.fragments is the ability to sort unaligned sequences by length.
 
 -   1.28.0 Added count parameter
 
-[Category:Commands](Category:Commands)
+

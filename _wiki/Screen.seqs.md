@@ -1,5 +1,6 @@
 ---
 title: 'Screen.seqs'
+tags: 'commands'
 ---
 The **screen.seqs** command enables you to keep
 sequences that fulfill certain user defined criteria. Furthermore, it
@@ -280,4 +281,4 @@ and use all available.
 -   1.40.5 - Bug Fix: not making \*good.groups or \*good.count\_table
     files. [\#476](https://github.com/mothur/mothur/issues/476)
 
-[Category:Commands](Category:Commands)
+

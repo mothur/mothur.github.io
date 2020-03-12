@@ -1,5 +1,6 @@
 ---
 title: 'Merge.count'
+tags: 'commands'
 ---
 The **merge.count** command will combine multiple
 count table files and output the result to a new file.
@@ -21,4 +22,4 @@ that do not include group information. Data would be lost.
 -   1.42.0 - Merge.count command ignores duplicate names.
     [\#259](https://github.com/mothur/mothur/issues/259)
 
-[Category:Commands](Category:Commands)
+

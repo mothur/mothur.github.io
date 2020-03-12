@@ -1,5 +1,6 @@
 ---
 title: 'Parse.list'
+tags: 'commands'
 ---
 The **parse.list** command reads a [
 list](list_file) file and [ group](group_file) or
@@ -53,4 +54,4 @@ In the file abrecovery.fn.A.list you would see something like:
 
 -   1.29.0 Added count parameter
 
-[Category:Commands](Category:Commands)
+

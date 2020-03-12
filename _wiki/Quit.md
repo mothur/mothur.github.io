@@ -1,5 +1,6 @@
 ---
 title: 'Quit'
+tags: 'commands'
 ---
 The **quit** command takes no options and can be called
 with or without the parentheses. For example:
@@ -12,4 +13,4 @@ and
 
 will do the same thing.
 
-[Category:Commands](Category:Commands)
+

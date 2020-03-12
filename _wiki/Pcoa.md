@@ -1,5 +1,6 @@
 ---
 title: 'Pcoa'
+tags: 'commands'
 ---
 The **pcoa** command \...
 
@@ -16,4 +17,4 @@ or
 
     mothur > pcoa(phylip=98_lt_phylip_amazon.dist)
 
-[Category:Commands](Category:Commands)
+

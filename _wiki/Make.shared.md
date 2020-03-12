@@ -1,5 +1,6 @@
 ---
 title: 'Make.shared'
+tags: 'commands'
 ---
 The **make.shared** command reads a list and group file or biom file and
 creates a .shared file as well as a rabund file for each group.
@@ -78,4 +79,4 @@ included in your analysis:
     the associated files.
     [\#583](https://github.com/mothur/mothur/issues/583)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Pre.cluster'
+tags: 'commands'
 ---
 The **pre.cluster** command implements a
 pseudo-single linkage algorithm with the goal of removing sequences that
@@ -266,4 +267,4 @@ people, the **pre.cluster** option may be your best bet.
 -   1.43.0 Makes current file class thread safe. Caused random crashes
     in pre.cluster. [\#643](https://github.com/mothur/mothur/issues/643)
 
-[Category:Commands](Category:Commands)
+

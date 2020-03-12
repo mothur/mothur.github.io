@@ -1,5 +1,6 @@
 ---
 title: 'Cooccurrence'
+tags: 'commands'
 ---
 The **cooccurrence** command calculates four
 metrics and tests their significance to assess whether presence-absence
@@ -147,4 +148,4 @@ like, and are also separated by dashes.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

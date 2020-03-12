@@ -1,5 +1,6 @@
 ---
 title: 'Shhh.flows'
+tags: 'commands'
 ---
 The **shhh.flows** command is Pat Schloss\'s
 translation of Chris Quince\'s PyroNoise algorithm
@@ -159,4 +160,4 @@ From this output you are ready to carry out the rest of your pipeline.
 -   1.26.0 - added large parameter
 -   1.30.0 - added flow order options A, B and I.
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Heatmap.sim'
+tags: 'commands'
 ---
 The **heatmap.sim** command will generate a
 heatmap indicating the pairwise similarity between multiple samples
@@ -102,4 +103,4 @@ mothur creates. The default is 24.
 -   1.40.0 - Bug Fix: Fixes out of bounds error.
     [\#363](https://github.com/mothur/mothur/issues/363)
 
-[Category:Commands](Category:Commands)
+

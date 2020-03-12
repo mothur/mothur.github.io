@@ -1,5 +1,6 @@
 ---
 title: 'Sub.sample'
+tags: 'commands'
 ---
 The **sub.sample** command can be used as a way to
 normalize your data, or create a smaller set from your original set. It
@@ -180,4 +181,4 @@ times. Default=f.
 -   1.42.0 - Fixes **sub.sample** with multiple labels bug.
     [\#559](https://github.com/mothur/mothur/issues/559)
 
-[Category:Commands](Category:Commands)
+

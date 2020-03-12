@@ -1,5 +1,6 @@
 ---
 title: 'Kruskal.wallis'
+tags: 'commands'
 ---
 The **kruskal.wallis** command will find the [Kruskal Wallis one way
 analysis of
@@ -46,4 +47,4 @@ category will be used.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

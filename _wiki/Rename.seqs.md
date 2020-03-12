@@ -1,5 +1,6 @@
 ---
 title: 'Rename.seqs'
+tags: 'commands'
 ---
 Provided with a [ fasta-formatted](Fasta_file) sequence file
 and [ group](Group_file) file, the **rename.seqs** rename the
@@ -89,4 +90,4 @@ The resulting names would look like: F003D000\_GQY1XT001C296C.
     [\#132](https://github.com/mothur/mothur/issues/132)
 -   1.42.0 - Adds taxonomy parameter
 
-[Category:Commands](Category:Commands)
+

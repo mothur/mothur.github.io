@@ -1,5 +1,6 @@
 ---
 title: 'Trim.seqs'
+tags: 'commands'
 ---
 The **trim.seqs** command provides the preprocessing
 features needed to screen and sort pyrosequences. Similar analyses are
@@ -500,4 +501,4 @@ This represents approximately 89% of the original sequences.
 -   1.40.5 - Bug Fix: Trim.seqs \"could not open\" error. \#444
 -   1.43.0 - Bug Fix: Trim.seqs not removing paired primers. \#667
 
-[Category:Commands](Category:Commands)
+

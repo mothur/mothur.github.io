@@ -1,5 +1,6 @@
 ---
 title: 'Merge.otus'
+tags: 'commands'
 ---
 The **merge.otus** command will combine OTUs based
 on taxonomic assignment.
@@ -30,4 +31,4 @@ would like to use when merging. Default=maxlevel.
 -   1.42.0 - First Introduced
     [\#558](https://github.com/mothur/mothur/issues/558)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Help'
+tags: 'commands'
 ---
 The **help** command will output a list of the valid
 commands that are found in mothur.
@@ -43,4 +44,4 @@ informative than that provided by the **help** command and options.
 -   1.42.0 - Improves **help** command.
     [\#183](https://github.com/mothur/mothur/issues/183)
 
-[Category:Commands](Category:Commands)
+

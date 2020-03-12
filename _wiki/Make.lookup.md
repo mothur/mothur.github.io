@@ -1,5 +1,6 @@
 ---
 title: 'Make.lookup'
+tags: 'commands'
 ---
 The **make.lookup** command allows you to create custom lookup files for the
 [shhh.flows](shhh.flows) command. To run this tutorial please
@@ -35,4 +36,4 @@ The threshold parameter is\.... Default=10000.
 
 -   1.31.0 - First Introduced
 
-[Category:Commands](Category:Commands)
+

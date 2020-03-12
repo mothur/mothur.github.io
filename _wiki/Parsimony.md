@@ -1,5 +1,6 @@
 ---
 title: 'Parsimony'
+tags: 'commands'
 ---
 The **parsimony** command implements the [parsimony
 method](parsimony_method) (aka P-test), which was previously
@@ -297,4 +298,4 @@ description of the method by [Maddision & Slatkin
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

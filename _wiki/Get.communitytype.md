@@ -1,5 +1,6 @@
 ---
 title: 'Get.communitytype'
+tags: 'commands'
 ---
 The **get.communitytype** command employs probabilistic modelling to cluster
 microbial communities into metacommunities, or enterotypes. The approach
@@ -116,4 +117,4 @@ times. Default=f.
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
 
-[Category:Commands](Category:Commands)
+

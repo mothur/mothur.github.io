@@ -1,5 +1,6 @@
 ---
 title: 'Summary.seqs'
+tags: 'commands'
 ---
 The **summary.seqs** command will summarize the
 quality of sequences in an unaligned or aligned fasta-formatted sequence
@@ -184,4 +185,4 @@ with the following option:
 -   1.42.0 Removes extra space from output file names.
     [\#603](https://github.com/mothur/mothur/issues/603)
 
-[Category:Commands](Category:Commands)
+

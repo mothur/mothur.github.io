@@ -1,5 +1,6 @@
 ---
 title: 'Chimera.pintail'
+tags: 'commands'
 ---
 Use Pintail approach \.... [ silva quantile
 file](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.pintail.quan.zip), [ silva
@@ -153,4 +154,4 @@ and Andrew J. Weightman. Applied and Environmental Microbiology 71 (12):
 
 -   1.38.0 - Removes save option.
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Summary.qual'
+tags: 'commands'
 ---
 The **summary.qual** command reads a quality file
 and an optional name, and summarizes the quality information.
@@ -73,4 +74,4 @@ processors and use all available.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

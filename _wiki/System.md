@@ -1,5 +1,6 @@
 ---
 title: 'System'
+tags: 'commands'
 ---
 The **system** command allows the user to run programs
 outside of mothur without leaving the mothur environment. This command
@@ -25,4 +26,4 @@ To mock someone in the Mac environment:
 
     mothur > system(say -v Vicki joe smells)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Pcr.seqs'
+tags: 'commands'
 ---
 The **pcr.seqs** will trim inputted sequences based
 on a variety of user-defined options.
@@ -110,4 +111,4 @@ available.
 -   1.42.0 - Bug Fix: Fixes file extensions of output files in pcr.seqs.
 -   1.42.0 - Bug Fix: Fixes **pcr.seqs** end issue with keepdots=f.
 
-[Category:Commands](Category:Commands)
+

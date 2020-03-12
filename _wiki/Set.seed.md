@@ -1,5 +1,6 @@
 ---
 title: 'Set.seed'
+tags: 'commands'
 ---
 The **set.seed** command is used to seed random.
 
@@ -21,4 +22,4 @@ change the seed globally. For example:
 
 -   1.36.0 - First Introduced
 
-[Category:Commands](Category:Commands)
+

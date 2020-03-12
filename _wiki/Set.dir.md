@@ -1,5 +1,6 @@
 ---
 title: 'Set.dir'
+tags: 'commands'
 ---
 **set.dir** allows you to redirect the output files
 created by mothur, or set the directory where mothur will look for input
@@ -80,4 +81,4 @@ next command.
     location.
 -   1.39.0 - Adds blastdir parameter.
 
-[Category:Commands](Category:Commands)
+

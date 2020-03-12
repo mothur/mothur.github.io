@@ -1,5 +1,6 @@
 ---
 title: 'Remove.lineage'
+tags: 'commands'
 ---
 The **remove.lineage** command reads a taxonomy
 file and a taxon and generates a new file that contains only the
@@ -158,4 +159,4 @@ or
 -   1.42.0 - Bug Fix: Fixes bug in **remove.lineage** with constaxonomy and
     shared files. [\#580](https://github.com/mothur/mothur/issues/580)
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Set.logfile'
+tags: 'commands'
 ---
 You may want to give your logfile a specific name or append a series of
 logfiles. The **set.logfile** command allows you to do this.
@@ -164,4 +165,4 @@ You can shut off mothur\'s logging features by running the following:
 -   1.40.0 Updates to mothur\'s log file management.
     [\#377](https://github.com/mothur/mothur/issues/377)
 
-[Category:Commands](Category:Commands)
+

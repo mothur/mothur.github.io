@@ -1,5 +1,6 @@
 ---
 title: 'Normalize.shared'
+tags: 'commands'
 ---
 The **normalize.shared** command creates a .norm.shared file.
 
@@ -69,4 +70,4 @@ relabund file before you normalize. default=f.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

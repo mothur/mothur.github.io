@@ -1,5 +1,6 @@
 ---
 title: 'Primer.design'
+tags: 'commands'
 ---
 The **primer.design** \..... It creates a \*.otu.cons.fasta,
 \*.primer.summary and \*.pick.list files.
@@ -84,4 +85,4 @@ your list file. If no label is given the first distance is used.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

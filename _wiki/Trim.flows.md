@@ -1,5 +1,6 @@
 ---
 title: 'Trim.flows'
+tags: 'commands'
 ---
 The **trim.flows** command is analogous to the
 [trim.seqs](trim.seqs) command, except that it uses the
@@ -233,4 +234,4 @@ GQY1XT001.flow.files file.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

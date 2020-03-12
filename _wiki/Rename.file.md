@@ -1,5 +1,6 @@
 ---
 title: 'Rename.file'
+tags: 'commands'
 ---
 The **rename.file** command allows you to **rename.file** from within mothur.
 Mothur will update the current files saved by mothur as well.
@@ -159,4 +160,4 @@ You can enter you constaxonomy file using the constaxonomy parameter.
 -   1.39.1 Fixes Bug allowing an automatically rename with output
     directory specified
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Consensus.seqs'
+tags: 'commands'
 ---
 The **consensus.seqs** command can be used in 2 ways: create a consensus
 sequence from a fastafile, or with a listfile create a consensus
@@ -109,4 +110,4 @@ cutoff mothur would return s.
 -   1.30.0 changed consensus sequence name from seq1, seq2, \... to
     OTUlabel.
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Get.lineage'
+tags: 'commands'
 ---
 The **get.lineage** command reads a taxonomy file
 and taxon then generates a new file containing only sequences from the
@@ -150,4 +151,4 @@ or
 -   1.40.5 - Bug Fix: failing to find taxons
     [\#477](https://github.com/mothur/mothur/issues/477)
 
-[Category:Commands](Category:Commands)
+

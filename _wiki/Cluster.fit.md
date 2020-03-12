@@ -1,5 +1,6 @@
 ---
 title: 'Cluster.fit'
+tags: 'commands'
 ---
 The **cluster.fit** command can be used to assign
 sequences to OTUs or fit sequences to existing OTUs. Currently, mothur
@@ -250,4 +251,4 @@ The variability is caused by the randomization of the sequences.
 
 -   1.41.0 First Introduced
 
-[Category:Commands](Category:Commands)
+

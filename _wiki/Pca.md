@@ -1,5 +1,6 @@
 ---
 title: 'Pca'
+tags: 'commands'
 ---
 The **pca** command requires a shared or relabund file.
 
@@ -47,4 +48,4 @@ correlation coefficient calculated. Default=True
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

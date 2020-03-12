@@ -1,5 +1,6 @@
 ---
 title: 'Sens.spec'
+tags: 'commands'
 ---
 The **sens.spec** command\...
 
@@ -52,4 +53,4 @@ your distance matrix.
 -   1.29.0 - increased speed and reduced memory required.
 -   1.38.0 - added count parameter
 
-[Category:Commands](Category:Commands)
+

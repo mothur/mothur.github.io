@@ -1,5 +1,6 @@
 ---
 title: 'Chimera.perseus'
+tags: 'commands'
 ---
 The **chimera.perseus** command reads a fasta and name file, and outputs
 potentially chimeric sequences.
@@ -155,4 +156,4 @@ The results would be:
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

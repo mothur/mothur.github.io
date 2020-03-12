@@ -1,5 +1,6 @@
 ---
 title: 'Sff.multiple'
+tags: 'commands'
 ---
 The **sff.multiple** command reads a file
 containing sff filenames and optional oligos filenames. It runs the
@@ -274,4 +275,4 @@ and use all available.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

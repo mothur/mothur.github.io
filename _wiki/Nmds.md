@@ -1,5 +1,6 @@
 ---
 title: 'Nmds'
+tags: 'commands'
 ---
 The **nmds** command is modelled after the **nmds** code
 written in R by Sarah Goslee, using Non-metric multidimensional scaling
@@ -53,4 +54,4 @@ point. Default=1e-12.
 -   1.33.0 Added group label to \*.axes file. -
     [https://forum.mothur.org/viewtopic.php?f=3&t=2677](https://forum.mothur.org/viewtopic.php?f=3&t=2677)
 
-[Category:Commands](Category:Commands)
+

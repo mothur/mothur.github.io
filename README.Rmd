@@ -75,24 +75,39 @@ convert_mw_to_md <- function(mediawiki_file){
 	md <- str_replace_all(md, "\\{\\{", "{\ {")
 	md <- str_replace_all(md, "\\$", "$$")
 
+	# get rid of weird wikilink tags
+ 	md <- str_replace_all(md, ' "wikilink"', '')
+
 	# add yaml material
 	title <- str_replace(markdown_file, "_wiki/(.*).md", "\\1") %>% str_replace_all(., "_", " ") %>% str_replace_all(., ":.*", "")
-	md <- c(
-						"---",
-						paste0("title: '", title, "'"),
-						"---",
-						md
-					)
 
+	if(any(str_detect(md, "Category:Commands"))){
+
+		md <- c(
+							"---",
+							paste0("title: '", title, "'"),
+							paste0("tags: 'commands'"),
+							"---",
+							md
+						)
+
+		md <- str_replace(md, "\\[Category:Commands\\]\\(Category:Commands\\)", "")
+
+	} else {
+
+		md <- c(
+							"---",
+							paste0("title: '", title, "'"),
+							"---",
+							md
+						)
+	}
 	# remove the manually placed TOC
 	md <- md[!str_detect(md, "\\\\_\\\\_TOC\\\\_\\\\_")]
 
 	# remove tags for section headers from the mw files
  	md <- str_replace(md, " \\{\\#.*\\}", "")
 	write(md, file=markdown_file)
-
-	# get rid of weird wikilink tags
- 	md <- str_replace_all(md, ' "wikilink"', '')
 
 	# if a page has a self-link, make it bold instead
 	stub <- str_replace_all(markdown_file, "_wiki/(.*).md", "\\1") %>% tolower()
@@ -159,6 +174,7 @@ unlink("_wiki/Main_Page.md")
 * Tables need help
 * Figures will need to be manually resized
 * get rid of stray `\"` and `\'` characters and replace with """ and "'" in atom
+* Add calculators tag to calculators, remove calculators page and link
 * Clear errors...
 ```
 #https://github.com/gjtorikian/html-proofer
@@ -167,10 +183,6 @@ htmlproofer --assume-extension --only-4xx ./_site
 
 
 ## To do...
-* wiki
-	- categories - Possible to make tags and have a page for each tag?
-	- Look for "Special:" pages
-
 * blog
   - check on embedded images `!\[.*\]\(.*\)` in blog
 

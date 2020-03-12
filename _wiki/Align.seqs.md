@@ -1,5 +1,6 @@
 ---
 title: 'Align.seqs'
+tags: 'commands'
 ---
 The **align.seqs** command aligns a user-supplied
 fasta-formatted candidate sequence file to a user-supplied
@@ -352,4 +353,4 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 -   1.43.0 Improves speed and resource management for align.seqs
     command. [\#647](https://github.com/mothur/mothur/issues/647)
 
-[Category:Commands](Category:Commands)
+

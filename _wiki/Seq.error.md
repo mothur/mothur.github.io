@@ -1,5 +1,6 @@
 ---
 title: 'Seq.error'
+tags: 'commands'
 ---
 The **seq.error** command reads a fasta file and
 searches for errors in sequence compared to a reference file. Using this
@@ -88,4 +89,4 @@ Output files are:
 -   1.40.5 Solves **seq.error** crash
     [\#463](https://github.com/mothur/mothur/issues/463)
 
-[Category:Commands](Category:Commands)
+

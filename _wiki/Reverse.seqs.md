@@ -1,5 +1,6 @@
 ---
 title: 'Reverse.seqs'
+tags: 'commands'
 ---
 Provided with a fasta-formatted sequence file,
 **reverse.seqs** will generate a file containing
@@ -9,4 +10,4 @@ their reverse complement. For exampe:
 
 will generate the amazon.rc.fasta file.
 
-[Category:Commands](Category:Commands)
+

@@ -1,5 +1,6 @@
 ---
 title: 'Get.sharedseqs'
+tags: 'commands'
 ---
 The **get.sharedseqs** command takes a list and group file or shared
 file and outputs a \*.shared.seqs file for each distance. This is useful
@@ -247,4 +248,4 @@ For example:
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

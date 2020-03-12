@@ -1,5 +1,6 @@
 ---
 title: 'Classify.seqs'
+tags: 'commands'
 ---
 The **classify.seqs** command allows the user to
 use several different methods to assign their sequences to the taxonomy
@@ -527,4 +528,4 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 -   1.40.0 Bug Fix: Fixes seeded random issue.
     [\#416](https://github.com/mothur/mothur/issues/416)
 
-[Category:Commands](Category:Commands)
+

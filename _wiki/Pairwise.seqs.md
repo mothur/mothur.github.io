@@ -1,5 +1,6 @@
 ---
 title: 'Pairwise.seqs'
+tags: 'commands'
 ---
 The **pairwise.seqs** command will calculate
 uncorrected pairwise distances between sequences. The command will
@@ -191,4 +192,4 @@ fasta file.
 -   1.43.0 - Improves speed of dist.seqs and
     pairwise.seqs.[\#653](https://github.com/mothur/mothur/issues/653)
 
-[Category:Commands](Category:Commands)
+

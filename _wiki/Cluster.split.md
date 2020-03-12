@@ -1,5 +1,6 @@
 ---
 title: 'Cluster.split'
+tags: 'commands'
 ---
 The **cluster.split** command can be used to assign sequences to OTUs and
 outputs a .list file. It splits large distance matrices into smaller
@@ -414,4 +415,4 @@ The variability is caused by the randomization of the sequences.
     [\#454](https://github.com/mothur/mothur/issues/454)
 -   1.43.0 - Changes datatype for opti method to correct overflow.
 
-[Category:Commands](Category:Commands)
+

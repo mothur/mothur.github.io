@@ -1,5 +1,6 @@
 ---
 title: 'Merge.groups'
+tags: 'commands'
 ---
 The **merge.groups** command reads a shared file
 and a design file and merges the groups in the shared file that are in
@@ -115,4 +116,4 @@ default=all. You may separate label names with dashes.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 
-[Category:Commands](Category:Commands)
+

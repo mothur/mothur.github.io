@@ -1,5 +1,6 @@
 ---
 title: 'Estimator.single'
+tags: 'commands'
 ---
 **estimator.single** This command implements
 the diversity estimators from
@@ -270,4 +271,4 @@ times.
 -   1.43.0 - First Introduced
     [\#164](https://github.com/mothur/mothur/issues/164)
 
-[Category:Commands](Category:Commands)
+

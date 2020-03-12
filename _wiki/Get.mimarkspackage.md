@@ -1,5 +1,6 @@
 ---
 title: 'Get.mimarkspackage'
+tags: 'commands'
 ---
 The **get.mimarkspackage** command creates a MIMarks package template for
 your samples for the environment you select. See Creating a new
@@ -123,4 +124,4 @@ required mimarks fields printed. Default=F.
 -   1.38.1 Fixes group name issue with oligos file option so that it
     work with make.sra command.
 
-[Category:Commands](Category:Commands)
+

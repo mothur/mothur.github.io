@@ -1,5 +1,6 @@
 ---
 title: 'Get.label'
+tags: 'commands'
 ---
 The **get.label** command allows you to get a
 listing of the labels for each line of the OTU data that are currently
@@ -53,4 +54,4 @@ Or
     0.24
     ...
 
-[Category:Commands](Category:Commands)
+

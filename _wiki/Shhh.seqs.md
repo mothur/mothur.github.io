@@ -1,5 +1,6 @@
 ---
 title: 'Shhh.seqs'
+tags: 'commands'
 ---
 The **shhh.seqs** command is a mothur-based rewrite
 of Chris Quince\'s sequence denoising algorithm, SeqNoise
@@ -42,4 +43,4 @@ The sigma parameter \.... The default is 0.01.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

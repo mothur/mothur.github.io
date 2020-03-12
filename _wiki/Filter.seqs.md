@@ -1,5 +1,6 @@
 ---
 title: 'Filter.seqs'
+tags: 'commands'
 ---
 **filter.seqs** removes columns from alignments
 based on a criteria defined by the user. For example, alignments
@@ -193,4 +194,4 @@ and use all available.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

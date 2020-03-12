@@ -1,5 +1,6 @@
 ---
 title: 'Bin.seqs'
+tags: 'commands'
 ---
 **bin.seqs** prints out a fasta-formatted file where
 sequences are ordered according to the OTU that they belong to. Such an
@@ -96,4 +97,4 @@ data for the lines labeled unique, 0.03, 0.05 and 0.10 you would enter:
 
 -   1.28.0 Added count parameter
 
-[Category:Commands](Category:Commands)
+

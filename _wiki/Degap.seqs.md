@@ -1,5 +1,6 @@
 ---
 title: 'Degap.seqs'
+tags: 'commands'
 ---
 The **degap.seqs** command reads a fasta file and outputs a .ng.fasta
 containing the sequences after all gap characters are removed.
@@ -55,4 +56,4 @@ with the following option:
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

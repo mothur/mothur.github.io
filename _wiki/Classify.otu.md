@@ -1,5 +1,6 @@
 ---
 title: 'Classify.otu'
+tags: 'commands'
 ---
 The **classify.otu** command is used to get a consensus taxonomy for an otu.
 
@@ -197,4 +198,4 @@ Simple Format:
 -   1.40.0 Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
 
-[Category:Commands](Category:Commands)
+

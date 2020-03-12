@@ -1,5 +1,6 @@
 ---
 title: 'Phylo.diversity'
+tags: 'commands'
 ---
 The **phylo.diversity** command requires an input tree file. Two files will
 be output: .phylo.diversity and (if you set rarefy=T) .rarefaction. To
@@ -196,4 +197,4 @@ processors that you can use.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 
-[Category:Commands](Category:Commands)
+

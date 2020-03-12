@@ -1,5 +1,6 @@
 ---
 title: 'Make.file'
+tags: 'commands'
 ---
 Tired of creating the input files for make.contigs? Let mothur do that
 for you! The **make.file** command takes a input directory and creates a
@@ -76,4 +77,4 @@ myReallyAwesomeData.files.
 -   1.39.0 Fixes bug with \"find\" command for Linux user
 -   1.40.0 Bug Fix: Fixes group names.
 
-[Category:Commands](Category:Commands)
+
