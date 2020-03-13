@@ -18,7 +18,7 @@ Perhaps you've noticed them. You know the kool kids with the cover of their
 laptop covered in stickers? Well here's my laptop cover:
 
 
-<img src="{{ site.url }}/assets/img/laptop_cover.jpg" alt="laptop" />
+<img src="/assets/img/laptop_cover.jpg" alt="laptop" />
 
 Pretty lame, eh? There's a happy Octocat from [GitHub](https://www.github.com),
 but nothing else. It'd be great to go to workshops and conferences and hand out
