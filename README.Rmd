@@ -59,6 +59,7 @@ convert_mw_to_md <- function(mediawiki_file){
 	system(paste0("pandoc -f mediawiki -t markdown ", mediawiki_file, " -o ", markdown_file))
 
 	md <- scan(markdown_file, what=character(), quiet=TRUE, sep="\n", blank.lines.skip=FALSE)
+	unlink(markdown_file)
 
 	# convert second level headers denoted with underscores to pound symbols
 	hyphen_lines <- str_which(md, "^---")
@@ -81,12 +82,15 @@ convert_mw_to_md <- function(mediawiki_file){
 	# add yaml material
 	title <- str_replace(markdown_file, "_wiki/(.*).md", "\\1") %>% str_replace_all(., "_", " ") %>% str_replace_all(., ":.*", "")
 
+	redirect <- paste0("redirect_from: '/wiki/", str_replace_all(title, " ", "_"), "'")
+
 	if(any(str_detect(md, "Category:Commands"))){
 
 		md <- c(
 							"---",
-							paste0("title: '", title, "'"),
+							paste0("title: '", tolower(title), "'"),
 							paste0("tags: 'commands'"),
+							redirect,
 							"---",
 							md
 						)
@@ -98,6 +102,7 @@ convert_mw_to_md <- function(mediawiki_file){
 		md <- c(
 							"---",
 							paste0("title: '", title, "'"),
+							redirect,
 							"---",
 							md
 						)
@@ -107,7 +112,6 @@ convert_mw_to_md <- function(mediawiki_file){
 
 	# remove tags for section headers from the mw files
  	md <- str_replace(md, " \\{\\#.*\\}", "")
-	write(md, file=markdown_file)
 
 	# if a page has a self-link, make it bold instead
 	stub <- str_replace_all(markdown_file, "_wiki/(.*).md", "\\1") %>% tolower()
@@ -130,6 +134,10 @@ convert_mw_to_md <- function(mediawiki_file){
 	# remove hard links to wiki
 	md <- str_replace_all(md, "https://.{0,4}mothur.org/wiki/", "")
 
+	# make wiki links lowercase
+	md <- gsub(md, perl=TRUE, pattern="\\[([^h][^t].*?)\\]", replacement="[\\L\\1]")
+
+
 	# fix links to old forum
 	md <- str_replace_all(md, "https://.{0,4}mothur.org/forum/", "https://forum.mothur.org/")
 
@@ -147,43 +155,31 @@ convert_mw_to_md <- function(mediawiki_file){
 	# fix numbered lists
 	md <- str_replace(md, "^(\\d*)\\.", "\n\\1\\\\.")
 
-
-	write(md, file=markdown_file)
+	output <- tolower(markdown_file)
+	print(output)
+	write(x=md, file=output)
 
 	naked_wiki_links
 }
 
+unlink("_wiki/", recursive=TRUE)
 dir.create("_wiki", showWarnings=FALSE)
-unlink("_wiki/*")
 
 conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 	mutate(convert = map_lgl(file, convert_mw_to_md))
-
-unlink("_wiki/Main_Page.md")
 ```
 
-## Additional files to scrap...
-* Software_development
-* mothur_newsletter
 
 
-## Manual fixing
-* Find and replace < and > characters with \gt and \lt in mathjax code
-* Find and replace % with \% in mathjax code
-* Check for stray `\$$` that are meant to indicate dollars
-* Tables need help
-* Figures will need to be manually resized
-* get rid of stray `\"` and `\'` characters and replace with """ and "'" in atom
-* Add calculators tag to calculators, remove calculators page and link
-* Add filetypes tag to file types, remove file type page and link, if needed
-* Clear errors...
-```
-#https://github.com/gjtorikian/html-proofer
-htmlproofer --assume-extension --only-4xx ./_site
-```
 
 
 ## To do...
+* Additional files to scrap...
+ 	- Software_development
+  - mothur_newsletter
+	- Main_Page
+
+
 * wiki
   - make links all lowercase
 
@@ -207,3 +203,18 @@ htmlproofer --assume-extension --only-4xx ./_site
 
 * long term
   - make separate pages for tags, create three/four column listing of tags
+
+* Manual fixing
+	- Find and replace < and > characters with \gt and \lt in mathjax code
+	- Find and replace % with \% in mathjax code
+	- Check for stray `\$$` that are meant to indicate dollars
+	- Tables need help
+	- Figures will need to be manually resized
+	- get rid of stray `\"` and `\'` characters and replace with """ and "'" in atom
+	- Add calculators tag to calculators, remove calculators page and link
+	- Add filetypes tag to file types, remove file type page and link, if needed
+	- Clear errors...
+	```
+	#https://github.com/gjtorikian/html-proofer
+	htmlproofer --assume-extension --only-4xx ./_site
+	```

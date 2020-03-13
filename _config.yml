@@ -86,16 +86,16 @@ defaults:
       path: "_wiki"
       type: "wiki"
     values:
-      layout: "wiki"
+      layout: wiki
   -
     scope:
       path: ""
       type: "pages"
     values:
-      layout: "page"
+      layout: page
   -
     scope:
       path: "posts"
       type: "posts"
     values:
-      layout: "post"
+      layout: post

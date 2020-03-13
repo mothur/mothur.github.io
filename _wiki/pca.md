@@ -1,0 +1,52 @@
+---
+title: 'pca'
+tags: 'commands'
+redirect_from: '/wiki/Pca'
+---
+The **pca** command requires a shared or relabund file.
+
+
+## Default settings
+
+A shared or relabund file must be inputted for **pca** to be successful.
+
+    mothur > pca(shared=genus.pool.shared)
+
+or
+
+    mothur > pca(relabund=genus.pool.relabund)
+
+The output to the screen would look something like:
+
+    You did not provide a label, I will use the first label in your inputfile.
+
+    Processing genus
+    Rsq 1 axis: 0.777358
+    Rsq 2 axis: 0.893548
+    Rsq 3 axis: 0.953764
+
+## Options
+
+### label
+
+The label parameter is used to analyze specific labels in your input.
+Default is the first label in your shared or relabund file. Multiple
+labels may be separated by dashes.
+
+### groups
+
+The groups parameter allows you to specify which groups you would like
+analyzed. Groupnames are separated by dashes.
+
+### metric
+
+The metric parameter allows indicate you if would like the pearson
+correlation coefficient calculated. Default=True
+
+## Revisions
+
+-   1.40.0 - Speed and memory improvements for shared files.
+    [\#357](https://github.com/mothur/mothur/issues/357) ,
+    [\#347](https://github.com/mothur/mothur/issues/347)
+
+

@@ -1,0 +1,48 @@
+---
+title: 'mantel'
+tags: 'commands'
+redirect_from: '/wiki/Mantel'
+---
+The **mantel** command calculates the Mantel
+correlation coefficient between two matrices. Sokal, R. R., & Rohlf, F.
+J. (1995). Biometry, 3rd edn. New York: Freeman. To run the tutorial
+below please download the [ files](https://mothur.s3.us-east-2.amazonaws.com/wiki/vegenvdata.zip) and
+follow along\...
+
+## Default Settings
+
+The **mantel** command requires two phylip formatted distance matrices.
+
+    mothur > mantel(phylip1=veg.dist, phylip2=env.dist)
+
+opening veg.mantel you would see:
+
+    Mantel pValue
+    0.304745   0.001000
+
+## Options
+
+### method
+
+The method parameter allows you to select what method you would like to
+use. Options are pearson, spearman and kendall. Default=pearson.
+
+    mothur > mantel(phylip1=veg.dist, phylip2=env.dist, method=spearman)
+
+opening veg.mantel you would see:
+
+    Mantel pValue
+    0.283791   0.001000
+
+    mothur > mantel(phylip1=veg.dist, phylip2=env.dist, method=kendall)
+
+opening veg.mantel you would see:
+
+    Mantel pValue
+    0.189196   0.002000
+
+### iters
+
+The default is 1000.
+
+
