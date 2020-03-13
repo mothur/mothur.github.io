@@ -58,7 +58,6 @@ My apologies to those of you looking for a Mothur\'s Day release earlier
 in May. It was a golden opportunity to further milk the name, but so it
 goes. But you can look forward to a Fathur\'s Day release.
 
-\_\_NOTOC\_\_
 
 ## Minor updates
 

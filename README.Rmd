@@ -111,8 +111,10 @@ convert_mw_to_md <- function(mediawiki_file){
 							md
 						)
 	}
-	# remove the manually placed TOC
+
+	# remove the manually placed TOC and NOTOC
 	md <- md[!str_detect(md, "\\\\_\\\\_TOC\\\\_\\\\_")]
+	md <- md[!str_detect(md, "\\\\_\\\\_NOTOC\\\\_\\\\_")]
 
 	# remove tags for section headers from the mw files
  	md <- str_replace(md, " \\{\\#.*\\}", "")
@@ -183,8 +185,8 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 
 
 * wiki
-  - Remove __NO_TOC__
   - fresh pull from old wiki
+  - check for new categories
 
 * blog
   - check on embedded images `!\[.*\]\(.*\)` in blog

@@ -15,7 +15,6 @@ for using the [get.seqs](get.seqs) and
 to download the folder compressed in the [
 Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) archive.
 
-\_\_NOTOC\_\_
 
 ## Options
 

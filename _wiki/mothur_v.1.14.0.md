@@ -48,7 +48,6 @@ coming\...
 
 Pat Schloss
 
-\_\_NOTOC\_\_
 
 ## New commands
 
