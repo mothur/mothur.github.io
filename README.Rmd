@@ -183,7 +183,6 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 * Additional files to scrap...
 	- DONE
 
-
 * wiki
   - fresh pull from old wiki
   - check for new categories
@@ -193,7 +192,13 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
   - add comments
 
 * data
-  - Set up links to large data files for projects
+  - Missing data
+    + FamilyStudy
+    + MiSeqDevelopmentData
+    + MicrobiomeBiomarkerCRC
+    + transition (totally missing)
+    + WildPeromyscusStudy (totally missing)
+  - make sure old index files map to new ones
 
 * general site
 	- Customize header nav bar with Example analyses, etc. match header from old wiki
