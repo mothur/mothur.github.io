@@ -179,13 +179,12 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 
 ## To do...
 * Additional files to scrap...
- 	- Software_development
-  - mothur_newsletter
-	- Main_Page
+	- DONE
 
 
 * wiki
-  - make links all lowercase
+  - Remove __NO_TOC__
+  - fresh pull from old wiki
 
 * blog
   - check on embedded images `!\[.*\]\(.*\)` in blog
@@ -195,15 +194,12 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
   - Set up links to large data files for projects
 
 * general site
-	* Customize header nav bar with Example analyses, etc. match header from old wiki
-	* Add announcement blurb
-	* Fix space between toc and edits
-
-* fresh pull from old wiki
+	- Customize header nav bar with Example analyses, etc. match header from old wiki
+	- Add announcement blurb
 
 * once site is up...
-	* Google tracking code - get new code from
-	* google-site-verification - see what's in site_root
+	- Google tracking code - get new code from
+	- google-site-verification - see what's in site_root
 
 * long term
   - make separate pages for tags, create three/four column listing of tags

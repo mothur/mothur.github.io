@@ -111,3 +111,8 @@ code {
   white-space: nowrap;
   vertical-align: middle;
 }
+
+.toc-bump{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
