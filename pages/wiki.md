@@ -2,9 +2,10 @@
 layout: page
 title: mothur's wiki
 permalink: /wiki/
+redirect_from: /wiki/Main_Page
 ---
 
-Welcome to the website for the [ mothur](Main_Page) project,
+Welcome to the website for the **mothur** project,
 initiated by [Dr. Patrick Schloss](https://www.mothur.org) and his
 [software development team](software_development_team) in the
 [Department of Microbiology &
@@ -39,13 +40,6 @@ project monthly.
     to take a look around at what mothur can do for you. Don\'t worry,
     it won\'t tell you to wash behind your ears. Once you\'ve
     registered, feel free to add or edit content in the manual.
-
-<!-- -->
-
--   **Interested in helping with the [
-    development](software_development) of the mothur
-    project?** - Take a look at the steps you need to follow to develop
-    a command that can be integrated into mothur.
 
 <!-- -->
 

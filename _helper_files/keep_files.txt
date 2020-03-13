@@ -151,7 +151,6 @@ _mw_files/Logseries.mw
 _mw_files/Lookup_files.mw
 _mw_files/MIMarks_Data_Packages.mw
 _mw_files/MRCA_phylogenetic_beta-diversity_measure.mw
-_mw_files/Main_Page.mw
 _mw_files/Make.biom.mw
 _mw_files/Make.contigs.mw
 _mw_files/Make.fastq.mw
@@ -184,7 +183,6 @@ _mw_files/Morisitahorn.mw
 _mw_files/Mothur_AMI.mw
 _mw_files/Mothur_license.mw
 _mw_files/Mothur_manual.mw
-_mw_files/Mothur_newsletter.mw
 _mw_files/Mothur_v.1.0.0.mw
 _mw_files/Mothur_v.1.1.0.mw
 _mw_files/Mothur_v.1.10.0.mw
@@ -298,8 +296,6 @@ _mw_files/Silva_reference_files.mw
 _mw_files/Simpson.mw
 _mw_files/Sobs.mw
 _mw_files/Soergel.mw
-_mw_files/Software_development.mw
-_mw_files/Software_development_team.mw
 _mw_files/Sogin_data_analysis.mw
 _mw_files/Soil.mw
 _mw_files/Solow.mw
