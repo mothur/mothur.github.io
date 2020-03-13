@@ -58,7 +58,7 @@ feedback: false
 # If commented, will use material hat theme
 logo: "assets/img/mothur_RGB.png"
 logo_pixels: 40
-color: "#30638e"
+color: "#035893"
 # color: "#8c1515" # primary color for header, buttons
 
 # Build settings

@@ -1,5 +1,16 @@
 - title: "Wiki"
   url: "wiki"
+  links:
+    - title: MiSeq SOP
+      url: "wiki/miseq_sop"
+    - title: Manual
+      url: "wiki/mothur_manual"
+    - title: "FAQ"
+      url: "wiki/frequently_asked_questions"
+    - title: Download
+      external_url: "https://github.com/mothur/mothur/releases/latest"
+    - title: Workshops
+      url: "wiki/workshops"
 - title: "Blog"
   url: "blog"
 - title: "Forum"
