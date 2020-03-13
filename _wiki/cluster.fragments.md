@@ -1,7 +1,7 @@
 ---
 title: 'cluster.fragments'
 tags: 'commands'
-redirect_from: '/wiki/Cluster.fragments'
+redirect_from: '/wiki/Cluster.fragments.html'
 ---
 The **cluster.fragments** command groups
 sequences that are part of a larger sequence. To run this tutorial

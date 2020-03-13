@@ -1,7 +1,7 @@
 ---
 title: 'set.current'
 tags: 'commands'
-redirect_from: '/wiki/Set.current'
+redirect_from: '/wiki/Set.current.html'
 ---
 The **set.current** command allows you to **set.current** files for mothur to
 use. You can also clear current files.

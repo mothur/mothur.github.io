@@ -1,7 +1,7 @@
 ---
 title: 'chimera.perseus'
 tags: 'commands'
-redirect_from: '/wiki/Chimera.perseus'
+redirect_from: '/wiki/Chimera.perseus.html'
 ---
 The **chimera.perseus** command reads a fasta and name file, and outputs
 potentially chimeric sequences.

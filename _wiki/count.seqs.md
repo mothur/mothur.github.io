@@ -1,7 +1,7 @@
 ---
 title: 'count.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Count.seqs'
+redirect_from: '/wiki/Count.seqs.html'
 ---
 The **count.seqs** / make.table command counts the
 number of sequences represented by the representative sequence in a name

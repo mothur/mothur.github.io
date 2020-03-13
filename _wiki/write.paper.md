@@ -1,6 +1,6 @@
 ---
 title: 'Write.paper'
-redirect_from: '/wiki/Write.paper'
+redirect_from: '/wiki/Write.paper.html'
 ---
 The **write.paper** command will take in your
 original dataset and run all of the various commands on the data. Using

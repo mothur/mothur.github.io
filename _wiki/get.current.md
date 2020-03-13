@@ -1,7 +1,7 @@
 ---
 title: 'get.current'
 tags: 'commands'
-redirect_from: '/wiki/Get.current'
+redirect_from: '/wiki/Get.current.html'
 ---
 The **get.current** command allows you to find out which files mothur has
 saved as \"current\" for each type. You can also clear current files.

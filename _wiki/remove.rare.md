@@ -1,7 +1,7 @@
 ---
 title: 'remove.rare'
 tags: 'commands'
-redirect_from: '/wiki/Remove.rare'
+redirect_from: '/wiki/Remove.rare.html'
 ---
 The **remove.rare** command removes OTUs at a
 specified rarity (number of observations in the dataset) and outputs a

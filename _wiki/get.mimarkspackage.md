@@ -1,7 +1,7 @@
 ---
 title: 'get.mimarkspackage'
 tags: 'commands'
-redirect_from: '/wiki/Get.mimarkspackage'
+redirect_from: '/wiki/Get.mimarkspackage.html'
 ---
 The **get.mimarkspackage** command creates a MIMarks package template for
 your samples for the environment you select. See Creating a new

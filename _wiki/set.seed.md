@@ -1,7 +1,7 @@
 ---
 title: 'set.seed'
 tags: 'commands'
-redirect_from: '/wiki/Set.seed'
+redirect_from: '/wiki/Set.seed.html'
 ---
 The **set.seed** command is used to seed random.
 

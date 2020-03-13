@@ -1,7 +1,7 @@
 ---
 title: 'heatmap.sim'
 tags: 'commands'
-redirect_from: '/wiki/Heatmap.sim'
+redirect_from: '/wiki/Heatmap.sim.html'
 ---
 The **heatmap.sim** command will generate a
 heatmap indicating the pairwise similarity between multiple samples

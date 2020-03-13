@@ -1,7 +1,7 @@
 ---
 title: 'deunique.tree'
 tags: 'commands'
-redirect_from: '/wiki/Deunique.tree'
+redirect_from: '/wiki/Deunique.tree.html'
 ---
 The **deunique.tree** command reinserts the
 redundant sequence identiers back into a unique tree. For this tutorial,

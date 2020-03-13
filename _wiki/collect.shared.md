@@ -1,7 +1,7 @@
 ---
 title: 'collect.shared'
 tags: 'commands'
-redirect_from: '/wiki/Collect.shared'
+redirect_from: '/wiki/Collect.shared.html'
 ---
 The **collect.shared** command generates
 collector\'s curves for [calculators](calculators), which

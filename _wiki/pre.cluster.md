@@ -1,7 +1,7 @@
 ---
 title: 'pre.cluster'
 tags: 'commands'
-redirect_from: '/wiki/Pre.cluster'
+redirect_from: '/wiki/Pre.cluster.html'
 ---
 The **pre.cluster** command implements a
 pseudo-single linkage algorithm with the goal of removing sequences that

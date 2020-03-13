@@ -1,7 +1,7 @@
 ---
 title: 'align.check'
 tags: 'commands'
-redirect_from: '/wiki/Align.check'
+redirect_from: '/wiki/Align.check.html'
 ---
 The **align.check** command allows you to calculate the number of
 potentially misaligned bases in a 16S rRNA gene sequence alignment. If

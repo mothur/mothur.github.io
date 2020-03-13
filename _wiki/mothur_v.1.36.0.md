@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.36.0'
-redirect_from: '/wiki/Mothur_v.1.36.0'
+redirect_from: '/wiki/Mothur_v.1.36.0.html'
 ---
 We\'re excited to announce the release of
 [mothur\_v.1.36.0](mothur_v.1.36.0)! This release has a

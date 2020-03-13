@@ -1,7 +1,7 @@
 ---
 title: 'get.lineage'
 tags: 'commands'
-redirect_from: '/wiki/Get.lineage'
+redirect_from: '/wiki/Get.lineage.html'
 ---
 The **get.lineage** command reads a taxonomy file
 and taxon then generates a new file containing only sequences from the

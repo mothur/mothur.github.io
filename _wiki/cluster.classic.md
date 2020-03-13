@@ -1,7 +1,7 @@
 ---
 title: 'cluster.classic'
 tags: 'commands'
-redirect_from: '/wiki/Cluster.classic'
+redirect_from: '/wiki/Cluster.classic.html'
 ---
 The **cluster.classic** command can be used to
 assign sequences to OTUs. It is the dotur implementation of cluster.

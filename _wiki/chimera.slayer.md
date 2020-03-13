@@ -1,7 +1,7 @@
 ---
 title: 'chimera.slayer'
 tags: 'commands'
-redirect_from: '/wiki/Chimera.slayer'
+redirect_from: '/wiki/Chimera.slayer.html'
 ---
 The **chimera.slayer** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The developers of the original

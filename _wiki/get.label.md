@@ -1,7 +1,7 @@
 ---
 title: 'get.label'
 tags: 'commands'
-redirect_from: '/wiki/Get.label'
+redirect_from: '/wiki/Get.label.html'
 ---
 The **get.label** command allows you to get a
 listing of the labels for each line of the OTU data that are currently

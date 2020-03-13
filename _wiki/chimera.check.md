@@ -1,7 +1,7 @@
 ---
 title: 'chimera.check'
 tags: 'commands'
-redirect_from: '/wiki/Chimera.check'
+redirect_from: '/wiki/Chimera.check.html'
 ---
 Use chimeraCheck approach \.... Note: following the RDP model this
 method does not determine whether or not a sequence is chimeric, but

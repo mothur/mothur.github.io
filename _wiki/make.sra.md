@@ -1,7 +1,7 @@
 ---
 title: 'make.sra'
 tags: 'commands'
-redirect_from: '/wiki/Make.sra'
+redirect_from: '/wiki/Make.sra.html'
 ---
 The **make.sra** command creates the necessary files for a NCBI submission.
 The xml file and individual sff or fastq files parsed from the original

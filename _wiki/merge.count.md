@@ -1,7 +1,7 @@
 ---
 title: 'merge.count'
 tags: 'commands'
-redirect_from: '/wiki/Merge.count'
+redirect_from: '/wiki/Merge.count.html'
 ---
 The **merge.count** command will combine multiple
 count table files and output the result to a new file.

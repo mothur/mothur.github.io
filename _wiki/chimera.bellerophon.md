@@ -1,7 +1,7 @@
 ---
 title: 'chimera.bellerophon'
 tags: 'commands'
-redirect_from: '/wiki/Chimera.bellerophon'
+redirect_from: '/wiki/Chimera.bellerophon.html'
 ---
 Use Bellerophon approach to create a sorted priority score list of
 potentially chimeric sequences.

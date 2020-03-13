@@ -1,7 +1,7 @@
 ---
 title: 'shhh.flows'
 tags: 'commands'
-redirect_from: '/wiki/Shhh.flows'
+redirect_from: '/wiki/Shhh.flows.html'
 ---
 The **shhh.flows** command is Pat Schloss\'s
 translation of Chris Quince\'s PyroNoise algorithm

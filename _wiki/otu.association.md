@@ -1,7 +1,7 @@
 ---
 title: 'otu.association'
 tags: 'commands'
-redirect_from: '/wiki/Otu.association'
+redirect_from: '/wiki/Otu.association.html'
 ---
 The **otu.association** command calculate the
 correlation coefficient for the otus in a shared/relabund file.

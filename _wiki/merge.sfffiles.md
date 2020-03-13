@@ -1,7 +1,7 @@
 ---
 title: 'merge.sfffiles'
 tags: 'commands'
-redirect_from: '/wiki/Merge.sfffiles'
+redirect_from: '/wiki/Merge.sfffiles.html'
 ---
 Merge.sfffiles The **merge.sfffiles** command reads a sff file or a file
 containing a list of sff files and merges the individual files into a

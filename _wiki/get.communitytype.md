@@ -1,7 +1,7 @@
 ---
 title: 'get.communitytype'
 tags: 'commands'
-redirect_from: '/wiki/Get.communitytype'
+redirect_from: '/wiki/Get.communitytype.html'
 ---
 The **get.communitytype** command employs probabilistic modelling to cluster
 microbial communities into metacommunities, or enterotypes. The approach

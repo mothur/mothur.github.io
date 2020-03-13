@@ -1,7 +1,7 @@
 ---
 title: 'pcr.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Pcr.seqs'
+redirect_from: '/wiki/Pcr.seqs.html'
 ---
 The **pcr.seqs** will trim inputted sequences based
 on a variety of user-defined options.

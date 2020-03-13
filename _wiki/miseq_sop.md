@@ -7,7 +7,7 @@ continues to be modified as we learn more. If you are using this
 protocol in a paper, you must cite the Schloss et al. 2013 AEM paper and
 cite the date you accessed this page:
 
-> Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. (2013):
+Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. (2013):
 Development of a dual-index sequencing strategy and curation pipeline
 for analyzing amplicon sequence data on the MiSeq Illumina sequencing
 platform. Applied and Environmental Microbiology. 79(17):5112-20.

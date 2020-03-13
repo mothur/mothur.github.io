@@ -1,6 +1,6 @@
 ---
 title: 'Read.otu'
-redirect_from: '/wiki/Read.otu'
+redirect_from: '/wiki/Read.otu.html'
 ---
 NOTE: Starting with mothur version 1.18.0 the **read.otu** command no longer
 exists. You can enter your file names directly into the commands that

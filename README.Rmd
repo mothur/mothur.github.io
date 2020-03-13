@@ -82,7 +82,11 @@ convert_mw_to_md <- function(mediawiki_file){
 	# add yaml material
 	title <- str_replace(markdown_file, "_wiki/(.*).md", "\\1") %>% str_replace_all(., "_", " ") %>% str_replace_all(., ":.*", "")
 
-	redirect <- paste0("redirect_from: '/wiki/", str_replace_all(title, " ", "_"), "'")
+	if(str_detect(title, "\\.")){
+		redirect <- paste0("redirect_from: '/wiki/", str_replace_all(title, " ", "_"), ".html'")
+	} else {
+		redirect <- paste0("redirect_from: '/wiki/", str_replace_all(title, " ", "_"), "'")
+	}
 
 	if(any(str_detect(md, "Category:Commands"))){
 

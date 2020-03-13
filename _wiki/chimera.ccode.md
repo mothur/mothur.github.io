@@ -1,7 +1,7 @@
 ---
 title: 'chimera.ccode'
 tags: 'commands'
-redirect_from: '/wiki/Chimera.ccode'
+redirect_from: '/wiki/Chimera.ccode.html'
 ---
 Use Ccode approach \....
 

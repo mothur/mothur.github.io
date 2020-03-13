@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.15.0'
-redirect_from: '/wiki/Mothur_v.1.15.0'
+redirect_from: '/wiki/Mothur_v.1.15.0.html'
 ---
 We are happy to announce the release of [Mothur
 v.1.15.0](Mothur_v.1.15.0) in honor of Bret Favre finally

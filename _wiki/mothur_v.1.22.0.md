@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.22.0'
-redirect_from: '/wiki/Mothur_v.1.22.0'
+redirect_from: '/wiki/Mothur_v.1.22.0.html'
 ---
 After a three month layoff, we are happy to announce the release of
 [mothur v.1.22.0](mothur_v.1.22.0). A lot has been going on

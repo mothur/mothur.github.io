@@ -1,7 +1,7 @@
 ---
 title: 'dist.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Dist.seqs'
+redirect_from: '/wiki/Dist.seqs.html'
 ---
 The **dist.seqs** command will calculate uncorrected
 pairwise distances between aligned DNA sequences. This approach is

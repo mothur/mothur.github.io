@@ -1,7 +1,7 @@
 ---
 title: 'classify.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Classify.seqs'
+redirect_from: '/wiki/Classify.seqs.html'
 ---
 The **classify.seqs** command allows the user to
 use several different methods to assign their sequences to the taxonomy

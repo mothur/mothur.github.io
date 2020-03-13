@@ -1,7 +1,7 @@
 ---
 title: 'summary.qual'
 tags: 'commands'
-redirect_from: '/wiki/Summary.qual'
+redirect_from: '/wiki/Summary.qual.html'
 ---
 The **summary.qual** command reads a quality file
 and an optional name, and summarizes the quality information.

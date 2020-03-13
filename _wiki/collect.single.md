@@ -1,7 +1,7 @@
 ---
 title: 'collect.single'
 tags: 'commands'
-redirect_from: '/wiki/Collect.single'
+redirect_from: '/wiki/Collect.single.html'
 ---
 **collect.single** generates collector\'s
 curves using [calculators](calculators), that describe the

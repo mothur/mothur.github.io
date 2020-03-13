@@ -1,7 +1,7 @@
 ---
 title: 'create.database'
 tags: 'commands'
-redirect_from: '/wiki/Create.database'
+redirect_from: '/wiki/Create.database.html'
 ---
 The **create.database** command reads a [list
 file](list_file), \*.cons.taxonomy, \*.rep.fasta,

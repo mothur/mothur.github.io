@@ -1,7 +1,7 @@
 ---
 title: 'cluster.fit'
 tags: 'commands'
-redirect_from: '/wiki/Cluster.fit'
+redirect_from: '/wiki/Cluster.fit.html'
 ---
 The **cluster.fit** command can be used to assign
 sequences to OTUs or fit sequences to existing OTUs. Currently, mothur

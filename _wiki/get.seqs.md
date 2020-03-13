@@ -1,7 +1,7 @@
 ---
 title: 'get.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Get.seqs'
+redirect_from: '/wiki/Get.seqs.html'
 ---
 The **get.seqs** command takes a list of sequence
 names (.accnos file) and either a [ fastq](fastq_file), [

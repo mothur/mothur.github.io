@@ -1,7 +1,7 @@
 ---
 title: 'degap.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Degap.seqs'
+redirect_from: '/wiki/Degap.seqs.html'
 ---
 The **degap.seqs** command reads a fasta file and outputs a .ng.fasta
 containing the sequences after all gap characters are removed.

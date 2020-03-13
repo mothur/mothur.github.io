@@ -1,7 +1,7 @@
 ---
 title: 'sort.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Sort.seqs'
+redirect_from: '/wiki/Sort.seqs.html'
 ---
 The **sort.seqs** command puts sequences from a
 fasta, name, [ count](Count_File), group, quality, flow or

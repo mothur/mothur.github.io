@@ -1,7 +1,7 @@
 ---
 title: 'phylo.diversity'
 tags: 'commands'
-redirect_from: '/wiki/Phylo.diversity'
+redirect_from: '/wiki/Phylo.diversity.html'
 ---
 The **phylo.diversity** command requires an input tree file. Two files will
 be output: .phylo.diversity and (if you set rarefy=T) .rarefaction. To

@@ -1,6 +1,6 @@
 ---
 title: 'Biom.info'
-redirect_from: '/wiki/Biom.info'
+redirect_from: '/wiki/Biom.info.html'
 ---
 The **biom.info** command reads a biom file creates a
 [shared\_file](Shared_file). If your biom file contains

@@ -1,7 +1,7 @@
 ---
 title: 'corr.axes'
 tags: 'commands'
-redirect_from: '/wiki/Corr.axes'
+redirect_from: '/wiki/Corr.axes.html'
 ---
 The **corr.axes** command will calculate the
 correlation coefficient for each column in a shared/relabund file to the

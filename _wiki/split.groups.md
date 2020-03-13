@@ -1,7 +1,7 @@
 ---
 title: 'split.groups'
 tags: 'commands'
-redirect_from: '/wiki/Split.groups'
+redirect_from: '/wiki/Split.groups.html'
 ---
 The **split.groups** command reads a [
 list](list_file), [ fasta](fasta_file) file or [

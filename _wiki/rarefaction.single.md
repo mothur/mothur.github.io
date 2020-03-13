@@ -1,7 +1,7 @@
 ---
 title: 'rarefaction.single'
 tags: 'commands'
-redirect_from: '/wiki/Rarefaction.single'
+redirect_from: '/wiki/Rarefaction.single.html'
 ---
 The **rarefaction.single** command will
 generate intra-sample rarefaction curves using a re-sampling without

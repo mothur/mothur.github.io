@@ -1,7 +1,7 @@
 ---
 title: 'unifrac.weighted'
 tags: 'commands'
-redirect_from: '/wiki/Unifrac.weighted'
+redirect_from: '/wiki/Unifrac.weighted.html'
 ---
 The **unifrac.weighted** comand implements
 the [weighted unifrac algorithm](weighted_UniFrac_algorithm).

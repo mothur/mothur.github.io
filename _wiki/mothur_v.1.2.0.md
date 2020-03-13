@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.2.0'
-redirect_from: '/wiki/Mothur_v.1.2.0'
+redirect_from: '/wiki/Mothur_v.1.2.0.html'
 ---
 We are happy to release [mothur v.1.2.0](mothur_v.1.2.0)
 today, April 24, 2009. Since our last release we have nearly doubled the

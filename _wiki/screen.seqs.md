@@ -1,7 +1,7 @@
 ---
 title: 'screen.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Screen.seqs'
+redirect_from: '/wiki/Screen.seqs.html'
 ---
 The **screen.seqs** command enables you to keep
 sequences that fulfill certain user defined criteria. Furthermore, it

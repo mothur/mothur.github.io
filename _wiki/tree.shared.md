@@ -1,7 +1,7 @@
 ---
 title: 'tree.shared'
 tags: 'commands'
-redirect_from: '/wiki/Tree.shared'
+redirect_from: '/wiki/Tree.shared.html'
 ---
 The **tree.shared** command will generate a
 newick-formatted tree file that describes the dissimilarity

@@ -1,7 +1,7 @@
 ---
 title: 'merge.otus'
 tags: 'commands'
-redirect_from: '/wiki/Merge.otus'
+redirect_from: '/wiki/Merge.otus.html'
 ---
 The **merge.otus** command will combine OTUs based
 on taxonomic assignment.

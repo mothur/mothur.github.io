@@ -1,7 +1,7 @@
 ---
 title: 'list.seqs'
 tags: 'commands'
-redirect_from: '/wiki/List.seqs'
+redirect_from: '/wiki/List.seqs.html'
 ---
 The **list.seqs** command will write out the names
 of the sequences found within a [ fastq](fastq_file), [

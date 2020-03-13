@@ -1,7 +1,7 @@
 ---
 title: 'shhh.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Shhh.seqs'
+redirect_from: '/wiki/Shhh.seqs.html'
 ---
 The **shhh.seqs** command is a mothur-based rewrite
 of Chris Quince\'s sequence denoising algorithm, SeqNoise

@@ -1,7 +1,7 @@
 ---
 title: 'get.otulist'
 tags: 'commands'
-redirect_from: '/wiki/Get.otulist'
+redirect_from: '/wiki/Get.otulist.html'
 ---
 The **get.otulist** command parses a list file and creates an .otu file
 for each distance containing 2 columns. The first column is the OTU

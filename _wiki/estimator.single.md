@@ -1,7 +1,7 @@
 ---
 title: 'estimator.single'
 tags: 'commands'
-redirect_from: '/wiki/Estimator.single'
+redirect_from: '/wiki/Estimator.single.html'
 ---
 **estimator.single** This command implements
 the diversity estimators from

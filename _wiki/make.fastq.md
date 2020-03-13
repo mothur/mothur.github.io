@@ -1,7 +1,7 @@
 ---
 title: 'make.fastq'
 tags: 'commands'
-redirect_from: '/wiki/Make.fastq'
+redirect_from: '/wiki/Make.fastq.html'
 ---
 The **make.fastq** command reads a fasta file and a quality file and creates
 a fastq file.

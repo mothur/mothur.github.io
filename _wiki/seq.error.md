@@ -1,7 +1,7 @@
 ---
 title: 'seq.error'
 tags: 'commands'
-redirect_from: '/wiki/Seq.error'
+redirect_from: '/wiki/Seq.error.html'
 ---
 The **seq.error** command reads a fasta file and
 searches for errors in sequence compared to a reference file. Using this

@@ -1,7 +1,7 @@
 ---
 title: 'sens.spec'
 tags: 'commands'
-redirect_from: '/wiki/Sens.spec'
+redirect_from: '/wiki/Sens.spec.html'
 ---
 The **sens.spec** command\...
 

@@ -1,7 +1,7 @@
 ---
 title: 'unifrac.unweighted'
 tags: 'commands'
-redirect_from: '/wiki/Unifrac.unweighted'
+redirect_from: '/wiki/Unifrac.unweighted.html'
 ---
 The **unifrac.unweighted** comand
 implements the [unweighted UniFrac

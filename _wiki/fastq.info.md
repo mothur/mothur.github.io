@@ -1,7 +1,7 @@
 ---
 title: 'fastq.info'
 tags: 'commands'
-redirect_from: '/wiki/Fastq.info'
+redirect_from: '/wiki/Fastq.info.html'
 ---
 The **fastq.info** command reads a fastq file and creates a fasta and
 quality file or can be used to parse fastq files by sample.

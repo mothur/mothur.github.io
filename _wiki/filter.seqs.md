@@ -1,7 +1,7 @@
 ---
 title: 'filter.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Filter.seqs'
+redirect_from: '/wiki/Filter.seqs.html'
 ---
 **filter.seqs** removes columns from alignments
 based on a criteria defined by the user. For example, alignments

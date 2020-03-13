@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.0.0'
-redirect_from: '/wiki/Mothur_v.1.0.0'
+redirect_from: '/wiki/Mothur_v.1.0.0.html'
 ---
 February 13, 2009
 

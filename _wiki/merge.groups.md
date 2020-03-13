@@ -1,7 +1,7 @@
 ---
 title: 'merge.groups'
 tags: 'commands'
-redirect_from: '/wiki/Merge.groups'
+redirect_from: '/wiki/Merge.groups.html'
 ---
 The **merge.groups** command reads a shared file
 and a design file and merges the groups in the shared file that are in

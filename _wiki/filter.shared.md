@@ -1,6 +1,6 @@
 ---
 title: 'Filter.shared'
-redirect_from: '/wiki/Filter.shared'
+redirect_from: '/wiki/Filter.shared.html'
 ---
 The **filter.shared** command is used to remove OTUs based on various
 criteria. It creates a .filter.shared file.

@@ -1,7 +1,7 @@
 ---
 title: 'normalize.shared'
 tags: 'commands'
-redirect_from: '/wiki/Normalize.shared'
+redirect_from: '/wiki/Normalize.shared.html'
 ---
 The **normalize.shared** command creates a .norm.shared file.
 

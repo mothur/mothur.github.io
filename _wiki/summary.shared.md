@@ -1,7 +1,7 @@
 ---
 title: 'summary.shared'
 tags: 'commands'
-redirect_from: '/wiki/Summary.shared'
+redirect_from: '/wiki/Summary.shared.html'
 ---
 The **summary.shared** command will produce a
 summary file that has the calculator value for each line in the OTU data

@@ -1,7 +1,7 @@
 ---
 title: 'get.oturep'
 tags: 'commands'
-redirect_from: '/wiki/Get.oturep'
+redirect_from: '/wiki/Get.oturep.html'
 ---
 While the [bin.seqs](bin.seqs) command reports the OTU number
 for all sequences, the **get.oturep** command

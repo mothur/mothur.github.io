@@ -1,7 +1,7 @@
 ---
 title: 'remove.dists'
 tags: 'commands'
-redirect_from: '/wiki/Remove.dists'
+redirect_from: '/wiki/Remove.dists.html'
 ---
 The **remove.dists** command removes distances
 from a phylip or column file related to groups or sequences listed in an

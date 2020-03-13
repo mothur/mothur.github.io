@@ -1,7 +1,7 @@
 ---
 title: 'get.otus'
 tags: 'commands'
-redirect_from: '/wiki/Get.otus'
+redirect_from: '/wiki/Get.otus.html'
 ---
 The **get.otus** command selects otus from a given
 

@@ -1,7 +1,7 @@
 ---
 title: 'remove.lineage'
 tags: 'commands'
-redirect_from: '/wiki/Remove.lineage'
+redirect_from: '/wiki/Remove.lineage.html'
 ---
 The **remove.lineage** command reads a taxonomy
 file and a taxon and generates a new file that contains only the

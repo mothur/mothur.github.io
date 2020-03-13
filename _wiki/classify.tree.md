@@ -1,7 +1,7 @@
 ---
 title: 'classify.tree'
 tags: 'commands'
-redirect_from: '/wiki/Classify.tree'
+redirect_from: '/wiki/Classify.tree.html'
 ---
 The **classify.tree** command is used to get a consensus taxonomy for each
 node on a tree.

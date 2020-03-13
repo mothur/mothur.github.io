@@ -1,7 +1,7 @@
 ---
 title: 'summary.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Summary.seqs'
+redirect_from: '/wiki/Summary.seqs.html'
 ---
 The **summary.seqs** command will summarize the
 quality of sequences in an unaligned or aligned fasta-formatted sequence

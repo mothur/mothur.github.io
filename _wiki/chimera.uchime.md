@@ -1,7 +1,7 @@
 ---
 title: 'chimera.uchime'
 tags: 'commands'
-redirect_from: '/wiki/Chimera.uchime'
+redirect_from: '/wiki/Chimera.uchime.html'
 ---
 The **chimera.uchime** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The original uchime program was

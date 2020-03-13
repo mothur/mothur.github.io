@@ -1,7 +1,7 @@
 ---
 title: 'make.biom'
 tags: 'commands'
-redirect_from: '/wiki/Make.biom'
+redirect_from: '/wiki/Make.biom.html'
 ---
 The **make.biom** command is design to allow you to
 convert your [shared file](shared_file) to a biom file.

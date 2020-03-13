@@ -1,7 +1,7 @@
 ---
 title: 'get.group'
 tags: 'commands'
-redirect_from: '/wiki/Get.group'
+redirect_from: '/wiki/Get.group.html'
 ---
 The **get.group** command allows you to get a
 listing of the different groups available for the multi-sample OTU data

@@ -1,7 +1,7 @@
 ---
 title: 'otu.hierarchy'
 tags: 'commands'
-redirect_from: '/wiki/Otu.hierarchy'
+redirect_from: '/wiki/Otu.hierarchy.html'
 ---
 The **otu.hierarchy** command relates OTUs at
 different distances

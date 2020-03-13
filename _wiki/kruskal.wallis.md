@@ -1,7 +1,7 @@
 ---
 title: 'kruskal.wallis'
 tags: 'commands'
-redirect_from: '/wiki/Kruskal.wallis'
+redirect_from: '/wiki/Kruskal.wallis.html'
 ---
 The **kruskal.wallis** command will find the [Kruskal Wallis one way
 analysis of

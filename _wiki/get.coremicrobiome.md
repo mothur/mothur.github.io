@@ -1,7 +1,7 @@
 ---
 title: 'get.coremicrobiome'
 tags: 'commands'
-redirect_from: '/wiki/Get.coremicrobiome'
+redirect_from: '/wiki/Get.coremicrobiome.html'
 ---
 The **get.coremicrobiome** command
 determines the fraction of OTUs that are found in varying numbers of

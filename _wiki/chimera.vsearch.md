@@ -1,7 +1,7 @@
 ---
 title: 'chimera.vsearch'
 tags: 'commands'
-redirect_from: '/wiki/Chimera.vsearch'
+redirect_from: '/wiki/Chimera.vsearch.html'
 ---
 The **chimera.vsearch** command reads a fasta file and reference file or a
 fasta and name or count file and outputs potentially chimeric sequences.

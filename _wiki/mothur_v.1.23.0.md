@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.23.0'
-redirect_from: '/wiki/Mothur_v.1.23.0'
+redirect_from: '/wiki/Mothur_v.1.23.0.html'
 ---
 We are happy to release our first offering of 2012 -
 [mothur\_v.1.23.0](mothur_v.1.23.0). This promises to be yet

@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.11.0'
-redirect_from: '/wiki/Mothur_v.1.11.0'
+redirect_from: '/wiki/Mothur_v.1.11.0.html'
 ---
 In honor of the upcoming fathur\'s day weekend we are happy to release
 [mothur v.1.11.0](mothur_v.1.11.0). We are working on a

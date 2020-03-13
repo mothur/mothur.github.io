@@ -1,7 +1,7 @@
 ---
 title: 'get.relabund'
 tags: 'commands'
-redirect_from: '/wiki/Get.relabund'
+redirect_from: '/wiki/Get.relabund.html'
 ---
 The **get.relabund** command calculates the relative abundance of each otu
 in a sample. It outputs a .relabund file.

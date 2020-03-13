@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.4.0'
-redirect_from: '/wiki/Mothur_v.1.4.0'
+redirect_from: '/wiki/Mothur_v.1.4.0.html'
 ---
 We are happy to release [mothur v.1.4.0](mothur_v.1.4.0)
 today, June 21, 2009 (aka Fathur\'s Day). Since the May release we have

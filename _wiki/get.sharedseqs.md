@@ -1,7 +1,7 @@
 ---
 title: 'get.sharedseqs'
 tags: 'commands'
-redirect_from: '/wiki/Get.sharedseqs'
+redirect_from: '/wiki/Get.sharedseqs.html'
 ---
 The **get.sharedseqs** command takes a list and group file or shared
 file and outputs a \*.shared.seqs file for each distance. This is useful

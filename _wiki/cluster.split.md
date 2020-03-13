@@ -1,7 +1,7 @@
 ---
 title: 'cluster.split'
 tags: 'commands'
-redirect_from: '/wiki/Cluster.split'
+redirect_from: '/wiki/Cluster.split.html'
 ---
 The **cluster.split** command can be used to assign sequences to OTUs and
 outputs a .list file. It splits large distance matrices into smaller

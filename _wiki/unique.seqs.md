@@ -1,7 +1,7 @@
 ---
 title: 'unique.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Unique.seqs'
+redirect_from: '/wiki/Unique.seqs.html'
 ---
 The **unique.seqs** command returns only the
 unique sequences found in a fasta-formatted sequence file and a file

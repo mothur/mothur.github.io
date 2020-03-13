@@ -1,7 +1,7 @@
 ---
 title: 'get.sabund'
 tags: 'commands'
-redirect_from: '/wiki/Get.sabund'
+redirect_from: '/wiki/Get.sabund.html'
 ---
 The **get.sabund** command will generate an [sabund
 file](sabund_file) based on the OTU data that you have read

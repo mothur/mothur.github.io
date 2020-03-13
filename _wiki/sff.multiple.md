@@ -1,7 +1,7 @@
 ---
 title: 'sff.multiple'
 tags: 'commands'
-redirect_from: '/wiki/Sff.multiple'
+redirect_from: '/wiki/Sff.multiple.html'
 ---
 The **sff.multiple** command reads a file
 containing sff filenames and optional oligos filenames. It runs the

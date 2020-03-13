@@ -1,7 +1,7 @@
 ---
 title: 'make.shared'
 tags: 'commands'
-redirect_from: '/wiki/Make.shared'
+redirect_from: '/wiki/Make.shared.html'
 ---
 The **make.shared** command reads a list and group file or biom file and
 creates a .shared file as well as a rabund file for each group.

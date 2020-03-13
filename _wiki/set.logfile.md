@@ -1,7 +1,7 @@
 ---
 title: 'set.logfile'
 tags: 'commands'
-redirect_from: '/wiki/Set.logfile'
+redirect_from: '/wiki/Set.logfile.html'
 ---
 You may want to give your logfile a specific name or append a series of
 logfiles. The **set.logfile** command allows you to do this.

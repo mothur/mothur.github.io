@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.28.0'
-redirect_from: '/wiki/Mothur_v.1.28.0'
+redirect_from: '/wiki/Mothur_v.1.28.0.html'
 ---
 We are happy to release [mothur v.1.28.0](mothur_v.1.28.0) on
 the US election day - hopefully we can all agree that this is a good

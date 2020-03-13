@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.8.0'
-redirect_from: '/wiki/Mothur_v.1.8.0'
+redirect_from: '/wiki/Mothur_v.1.8.0.html'
 ---
 We are happy to release [mothur v.1.8.0](mothur_v.1.8.0) on
 the great American holiday of Groundhog Day! Well it\'s been a wild

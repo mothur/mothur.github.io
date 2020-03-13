@@ -1,7 +1,7 @@
 ---
 title: 'remove.groups'
 tags: 'commands'
-redirect_from: '/wiki/Remove.groups'
+redirect_from: '/wiki/Remove.groups.html'
 ---
 The **remove.groups** command removes sequences
 from a specific group or set of groups from the following file types:

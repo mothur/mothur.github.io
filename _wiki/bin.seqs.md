@@ -1,7 +1,7 @@
 ---
 title: 'bin.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Bin.seqs'
+redirect_from: '/wiki/Bin.seqs.html'
 ---
 **bin.seqs** prints out a fasta-formatted file where
 sequences are ordered according to the OTU that they belong to. Such an

@@ -1,7 +1,7 @@
 ---
 title: 'remove.otus'
 tags: 'commands'
-redirect_from: '/wiki/Remove.otus'
+redirect_from: '/wiki/Remove.otus.html'
 ---
 The **remove.otus** command removes otu labels from \*.cons.taxonomy,
 \*.corr.axes, \*.otu.corr, shared and list files. This can be useful

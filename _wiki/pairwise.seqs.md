@@ -1,7 +1,7 @@
 ---
 title: 'pairwise.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Pairwise.seqs'
+redirect_from: '/wiki/Pairwise.seqs.html'
 ---
 The **pairwise.seqs** command will calculate
 uncorrected pairwise distances between sequences. The command will

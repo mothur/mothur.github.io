@@ -1,7 +1,7 @@
 ---
 title: 'rename.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Rename.seqs'
+redirect_from: '/wiki/Rename.seqs.html'
 ---
 Provided with a [ fasta-formatted](Fasta_file) sequence file
 and [ group](Group_file) file, the **rename.seqs** rename the

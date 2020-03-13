@@ -1,7 +1,7 @@
 ---
 title: 'count.groups'
 tags: 'commands'
-redirect_from: '/wiki/Count.groups'
+redirect_from: '/wiki/Count.groups.html'
 ---
 The **count.groups** command counts sequences
 from a specific group or set of groups from the following file types:

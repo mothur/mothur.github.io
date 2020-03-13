@@ -1,7 +1,7 @@
 ---
 title: 'summary.tax'
 tags: 'commands'
-redirect_from: '/wiki/Summary.tax'
+redirect_from: '/wiki/Summary.tax.html'
 ---
 The **summary.tax** command reads a taxonomy file
 and an optional name and or group file, and summarizes the taxonomy

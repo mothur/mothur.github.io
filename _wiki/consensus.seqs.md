@@ -1,7 +1,7 @@
 ---
 title: 'consensus.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Consensus.seqs'
+redirect_from: '/wiki/Consensus.seqs.html'
 ---
 The **consensus.seqs** command can be used in 2 ways: create a consensus
 sequence from a fastafile, or with a listfile create a consensus

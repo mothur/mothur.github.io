@@ -1,7 +1,7 @@
 ---
 title: 'summary.single'
 tags: 'commands'
-redirect_from: '/wiki/Summary.single'
+redirect_from: '/wiki/Summary.single.html'
 ---
 The **summary.single** command will produce a
 summary file that has the calculator value for each line in the OTU data

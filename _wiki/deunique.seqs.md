@@ -1,7 +1,7 @@
 ---
 title: 'deunique.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Deunique.seqs'
+redirect_from: '/wiki/Deunique.seqs.html'
 ---
 The **deunique.seqs** command is the reverse of
 the [unique.seqs](unique.seqs) command, and creates a fasta

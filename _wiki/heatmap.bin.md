@@ -1,7 +1,7 @@
 ---
 title: 'heatmap.bin'
 tags: 'commands'
-redirect_from: '/wiki/Heatmap.bin'
+redirect_from: '/wiki/Heatmap.bin.html'
 ---
 The **heatmap.bin** command generates a heat map
 from data provided in either a \*.list or a \*.shared file. Each row in

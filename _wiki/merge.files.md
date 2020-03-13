@@ -1,7 +1,7 @@
 ---
 title: 'merge.files'
 tags: 'commands'
-redirect_from: '/wiki/Merge.files'
+redirect_from: '/wiki/Merge.files.html'
 ---
 The **merge.files** command will concatenate
 multiple files and output the result to a new file. This command is

@@ -1,7 +1,7 @@
 ---
 title: 'get.rabund'
 tags: 'commands'
-redirect_from: '/wiki/Get.rabund'
+redirect_from: '/wiki/Get.rabund.html'
 ---
 The **get.rabund** command will generate an [rabund
 file](rabund_file) based on the OTU data that you have read

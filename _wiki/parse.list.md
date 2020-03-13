@@ -1,7 +1,7 @@
 ---
 title: 'parse.list'
 tags: 'commands'
-redirect_from: '/wiki/Parse.list'
+redirect_from: '/wiki/Parse.list.html'
 ---
 The **parse.list** command reads a [
 list](list_file) file and [ group](group_file) or

@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.14.0'
-redirect_from: '/wiki/Mothur_v.1.14.0'
+redirect_from: '/wiki/Mothur_v.1.14.0.html'
 ---
 We are happy to announce the release of [ mothur
 v.1.14](mothur_v.1.14.0) in time for Halloween - trick or

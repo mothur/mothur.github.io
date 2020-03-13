@@ -1,7 +1,7 @@
 ---
 title: 'trim.flows'
 tags: 'commands'
-redirect_from: '/wiki/Trim.flows'
+redirect_from: '/wiki/Trim.flows.html'
 ---
 The **trim.flows** command is analogous to the
 [trim.seqs](trim.seqs) command, except that it uses the

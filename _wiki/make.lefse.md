@@ -1,7 +1,7 @@
 ---
 title: 'make.lefse'
 tags: 'commands'
-redirect_from: '/wiki/Make.lefse'
+redirect_from: '/wiki/Make.lefse.html'
 ---
 The **make.lefse** command takes mothur\'s [ shared
 file](Shared_file) or [ relabund](Relabund_file)

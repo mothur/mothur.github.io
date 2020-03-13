@@ -1,7 +1,7 @@
 ---
 title: 'align.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Align.seqs'
+redirect_from: '/wiki/Align.seqs.html'
 ---
 The **align.seqs** command aligns a user-supplied
 fasta-formatted candidate sequence file to a user-supplied

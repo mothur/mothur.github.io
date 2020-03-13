@@ -1,7 +1,7 @@
 ---
 title: 'dist.shared'
 tags: 'commands'
-redirect_from: '/wiki/Dist.shared'
+redirect_from: '/wiki/Dist.shared.html'
 ---
 The **dist.shared** command will generate a
 phylip-formatted distance matrix that describes the dissimilarity

@@ -1,7 +1,7 @@
 ---
 title: 'classify.svm'
 tags: 'commands'
-redirect_from: '/wiki/Classify.svm'
+redirect_from: '/wiki/Classify.svm.html'
 ---
 The **classify.svm** command generates a summary
 file of ranked OTUs. This ranking is determined by the method of

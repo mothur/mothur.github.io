@@ -1,7 +1,7 @@
 ---
 title: 'sub.sample'
 tags: 'commands'
-redirect_from: '/wiki/Sub.sample'
+redirect_from: '/wiki/Sub.sample.html'
 ---
 The **sub.sample** command can be used as a way to
 normalize your data, or create a smaller set from your original set. It

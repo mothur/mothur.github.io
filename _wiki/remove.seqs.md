@@ -1,7 +1,7 @@
 ---
 title: 'remove.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Remove.seqs'
+redirect_from: '/wiki/Remove.seqs.html'
 ---
 The **remove.seqs** command takes a list of
 sequence names and either a [ fastq](fastq_file), [

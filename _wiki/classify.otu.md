@@ -1,7 +1,7 @@
 ---
 title: 'classify.otu'
 tags: 'commands'
-redirect_from: '/wiki/Classify.otu'
+redirect_from: '/wiki/Classify.otu.html'
 ---
 The **classify.otu** command is used to get a consensus taxonomy for an otu.
 

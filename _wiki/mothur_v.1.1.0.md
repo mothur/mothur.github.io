@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.1.0'
-redirect_from: '/wiki/Mothur_v.1.1.0'
+redirect_from: '/wiki/Mothur_v.1.1.0.html'
 ---
 We are happy to release **mothur v.1.1.0** today, March 9, 2009. In the
 past 3 weeks we have had 136 people register as users of mothur - thank

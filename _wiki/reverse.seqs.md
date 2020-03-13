@@ -1,7 +1,7 @@
 ---
 title: 'reverse.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Reverse.seqs'
+redirect_from: '/wiki/Reverse.seqs.html'
 ---
 Provided with a fasta-formatted sequence file,
 **reverse.seqs** will generate a file containing

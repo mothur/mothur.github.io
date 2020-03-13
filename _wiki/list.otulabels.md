@@ -1,7 +1,7 @@
 ---
 title: 'list.otulabels'
 tags: 'commands'
-redirect_from: '/wiki/List.otulabels'
+redirect_from: '/wiki/List.otulabels.html'
 ---
 The **list.otulabels** command lists otu labels
 from shared, relabund or list file. This list can be used especially

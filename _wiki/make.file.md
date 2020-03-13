@@ -1,7 +1,7 @@
 ---
 title: 'make.file'
 tags: 'commands'
-redirect_from: '/wiki/Make.file'
+redirect_from: '/wiki/Make.file.html'
 ---
 Tired of creating the input files for make.contigs? Let mothur do that
 for you! The **make.file** command takes a input directory and creates a

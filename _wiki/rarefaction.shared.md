@@ -1,7 +1,7 @@
 ---
 title: 'rarefaction.shared'
 tags: 'commands'
-redirect_from: '/wiki/Rarefaction.shared'
+redirect_from: '/wiki/Rarefaction.shared.html'
 ---
 The **rarefaction.shared** command will
 generate inter-sample rarefaction curves using a re-sampling without

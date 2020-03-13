@@ -1,7 +1,7 @@
 ---
 title: 'merge.taxsummary'
 tags: 'commands'
-redirect_from: '/wiki/Merge.taxsummary'
+redirect_from: '/wiki/Merge.taxsummary.html'
 ---
 The **merge.taxsummary** command will merge
 \*.tax.summary files.

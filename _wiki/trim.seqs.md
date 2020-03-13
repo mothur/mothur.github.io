@@ -1,7 +1,7 @@
 ---
 title: 'trim.seqs'
 tags: 'commands'
-redirect_from: '/wiki/Trim.seqs'
+redirect_from: '/wiki/Trim.seqs.html'
 ---
 The **trim.seqs** command provides the preprocessing
 features needed to screen and sort pyrosequences. Similar analyses are

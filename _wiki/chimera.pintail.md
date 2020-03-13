@@ -1,7 +1,7 @@
 ---
 title: 'chimera.pintail'
 tags: 'commands'
-redirect_from: '/wiki/Chimera.pintail'
+redirect_from: '/wiki/Chimera.pintail.html'
 ---
 Use Pintail approach \.... [ silva quantile
 file](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.pintail.quan.zip), [ silva

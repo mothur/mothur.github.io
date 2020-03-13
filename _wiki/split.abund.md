@@ -1,7 +1,7 @@
 ---
 title: 'split.abund'
 tags: 'commands'
-redirect_from: '/wiki/Split.abund'
+redirect_from: '/wiki/Split.abund.html'
 ---
 The **split.abund** command reads a fasta file and a list or a names file
 splits the sequences into rare and abundant groups.

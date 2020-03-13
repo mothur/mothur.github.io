@@ -1,7 +1,7 @@
 ---
 title: 'make.lookup'
 tags: 'commands'
-redirect_from: '/wiki/Make.lookup'
+redirect_from: '/wiki/Make.lookup.html'
 ---
 The **make.lookup** command allows you to create custom lookup files for the
 [shhh.flows](shhh.flows) command. To run this tutorial please

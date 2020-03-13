@@ -1,7 +1,7 @@
 ---
 title: 'set.dir'
 tags: 'commands'
-redirect_from: '/wiki/Set.dir'
+redirect_from: '/wiki/Set.dir.html'
 ---
 **set.dir** allows you to redirect the output files
 created by mothur, or set the directory where mothur will look for input

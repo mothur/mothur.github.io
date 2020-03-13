@@ -1,7 +1,7 @@
 ---
 title: 'primer.design'
 tags: 'commands'
-redirect_from: '/wiki/Primer.design'
+redirect_from: '/wiki/Primer.design.html'
 ---
 The **primer.design** \..... It creates a \*.otu.cons.fasta,
 \*.primer.summary and \*.pick.list files.

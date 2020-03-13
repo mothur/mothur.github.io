@@ -1,7 +1,7 @@
 ---
 title: 'make.contigs'
 tags: 'commands'
-redirect_from: '/wiki/Make.contigs'
+redirect_from: '/wiki/Make.contigs.html'
 ---
 The **make.contigs** command reads a forward fastq file and a reverse fastq
 file and outputs new fasta and report files.

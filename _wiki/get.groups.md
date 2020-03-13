@@ -1,7 +1,7 @@
 ---
 title: 'get.groups'
 tags: 'commands'
-redirect_from: '/wiki/Get.groups'
+redirect_from: '/wiki/Get.groups.html'
 ---
 The **get.groups** command selects sequences from a
 specific group or set of groups from the following file types: fasta,

@@ -1,6 +1,6 @@
 ---
 title: 'Mothur v.1.17.0'
-redirect_from: '/wiki/Mothur_v.1.17.0'
+redirect_from: '/wiki/Mothur_v.1.17.0.html'
 ---
 February may be the shortest month of the year, but that doesn\'t keep
 us from releasing two updates in the month! We are happy to announce the

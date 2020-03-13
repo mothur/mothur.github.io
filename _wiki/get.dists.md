@@ -1,7 +1,7 @@
 ---
 title: 'get.dists'
 tags: 'commands'
-redirect_from: '/wiki/Get.dists'
+redirect_from: '/wiki/Get.dists.html'
 ---
 The **get.dists** command selects distances from a
 phylip or column file related to groups or sequences listed in an accnos
