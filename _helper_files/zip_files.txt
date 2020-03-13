@@ -1,0 +1,304 @@
+_wiki/454_SOP.md:-   [ Example data from Schloss lab](Media:SOPData.zip) that
+_wiki/454_SOP.md:    alignment](Media:silva.bacteria.zip)
+_wiki/454_SOP.md:    (v.9)](Media:Trainset9_032012.pds.zip)
+_wiki/454_SOP.md:alignment](Media:greengenes.alignment.zip) and tell your PI
+_wiki/454_SOP.md:above, you can use the [ batch file](Media:batch.zip) and use
+_wiki/Ace.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Agricultural_soil_community_analysis.md:DOK03.zip](Media:DOK03.zip). We will first generate a
+_wiki/Align.check.md:dataset](Media:Esophagus.zip).
+_wiki/Align.seqs.md:dataset](Media:AbRecovery.zip).
+_wiki/Amova.md:files](Media:AmazonAmovaData.zip) and follow along\...
+_wiki/Analysis_of_coxL_richness_in_relation_to_total_community_richness_across_a_succession_gradient_on_Kilauea_Volcano.md:([Kilauea.zip](Media:Kilauea.zip)). The coxL and 16S
+_wiki/Analysis_of_the_aclB_gene_in_a_hot_spring.md:files needed for this analysis ([aclB.zip](Media:aclB.zip))
+_wiki/Analyzing_H1N1_swine-origin_Influenza_A_isolates.md:sequences [here](Media:S-OIV_HA.zip).
+_wiki/Analyzing_H1N1_swine-origin_Influenza_A_isolates.md:groups](Media:HA_groups.zip) file indicates which samples
+_wiki/Anderberg.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Anosim.md:files](Media:DuneData.zip) and follow along\...
+_wiki/Bergerparker.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Bin.seqs.md:[AmazonData.zip](Media:AmazonData.zip).
+_wiki/Boneh.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Bootstrap.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Braycurtis.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Bstick.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Chao.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Chimera.check.md:files](Media:chimeraCheckSVGFiles.zip)
+_wiki/Chimera.pintail.md:file](Media:silva.bacteria.pintail.quan.zip), [ silva
+_wiki/Chimera.pintail.md:conservation file](Media:silva.bacteria.freq.zip)
+_wiki/Chimera.uchime.md:download [ UchimeExample.zip](Media:UchimeExample.zip).
+_wiki/Classify.seqs.md:AbRecovery](Media:AbRecovery.zip) dataset.
+_wiki/Cluster.classic.md:the [AmazonData.zip](Media:AmazonData.zip) file and
+_wiki/Cluster.fit.md:OptiFitDataSets.zip](Media:OptiFitDataSets.zip) file and
+_wiki/Cluster.fragments.md:file](Media:Esophagus.fasta.zip)
+_wiki/Cluster.md:Final.zip](Media:Final.zip) file and decompress it.
+_wiki/Cluster.split.md:Final.zip](Media:Final.zip) file and decompress it.
+_wiki/Cluster_stats.md:stool.final.phylip.dist](Media:stool.final.phylip.dist.zip)
+_wiki/Cluster_stats.md:stool.final.phylip.dist](Media:stool.final.phylip.dist.zip)
+_wiki/Collect.shared.md:and decompress [ Patient70Data.zip](Media:Patient70Data.zip)
+_wiki/Collect.single.md:decompress [AmazonData.zip](Media:AmazonData.zip)
+_wiki/Column-formatted_distance_matrix.md:obtained from the [ AmazonData.zip](Media:AmazonData.zip) zip
+_wiki/Command_line_mode.md:[AmazonData.zip](Media:AmazonData.zip) data set, then your
+_wiki/Contribute_code.md:get you started [ Command Template ](Media:Command.zip).
+_wiki/Costello_stool_analysis.md:-   [ Costello dataset](Media:CostelloData.zip)
+_wiki/Costello_stool_analysis.md:    alignment](Media:silva.bacteria.zip)
+_wiki/Costello_stool_analysis.md:    set](Media:silva.gold.bacteria.zip)
+_wiki/Costello_stool_analysis.md:    set](Media:RDPTrainingSet.zip)
+_wiki/Costello_stool_analysis.md:alignment](Media:greengenes.alignment.zip) and tell your PI
+_wiki/Costello_stool_analysis.md:stool.batch file](Media:stool.batch.zip) and use mothur in
+_wiki/Count.groups.md:Example Data ](Media:countGroupsDataset.zip)
+_wiki/Coverage.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Create.database.md:Files](Media:_Create_Database_Files.zip)
+_wiki/Deunique.seqs.md:files found in the [ AmazonData.zip](Media:AmazonData.zip)
+_wiki/Deunique.tree.md:TreeTest.zip](Media:TreeTest.zip) archive.
+_wiki/Dist.seqs.md:the data files in [ AmazonData.zip](Media:AmazonData.zip).
+_wiki/Dist.shared.md:AbRecovery.zip](Media:AbRecovery.zip).
+_wiki/Download_Clearcut.md:mac](Media:clearcut.mac.zip)
+_wiki/Download_Clearcut.md:windows](Media:clearcut.win.zip)
+_wiki/Download_Clearcut.md:code](Media:clearcut.source.zip) and follow the instruction
+_wiki/Download_mothur.md:    1.34.3](https://mothur.org/w/images/e/ef/Mothur.1.34.3.zip)
+_wiki/Download_mothur.md:    1.34.1](https://mothur.org/w/images/7/77/Mothur.1.34.1.zip)
+_wiki/Download_mothur.md:    1.33.3](https://mothur.org/w/images/6/65/Mothur.1.33.3.zip)
+_wiki/Download_mothur.md:    1.32.1](https://mothur.org/w/images/9/99/Mothur.1.32.1.zip)
+_wiki/Download_mothur.md:    1.31.2](https://mothur.org/w/images/b/bc/Mothur.1.31.2.zip)
+_wiki/Download_mothur.md:    1.30.2](https://mothur.org/w/images/d/d3/Mothur.1.30.2.zip)
+_wiki/Download_mothur.md:    1.29.2](https://mothur.org/w/images/a/a5/Mothur.1.29.2.zip)
+_wiki/Download_mothur.md:    1.28.0](https://mothur.org/w/images/6/68/Mothur.1.28.0.zip)
+_wiki/Download_mothur.md:    1.27.0](https://mothur.org/w/images/c/cb/Mothur.1.27.0.zip)
+_wiki/Download_mothur.md:    1.26.0](https://mothur.org/w/images/2/20/Mothur.1.26.0.zip)
+_wiki/Download_mothur.md:    1.25.1](https://mothur.org/w/images/7/7b/Mothur.1.25.1.zip)
+_wiki/Download_mothur.md:    1.24.1](https://mothur.org/w/images/0/09/Mothur.1.24.1.zip)
+_wiki/Download_mothur.md:    1.23.1](https://mothur.org/w/images/3/33/Mothur.1.23.1.zip)
+_wiki/Download_mothur.md:    1.22.2](https://mothur.org/w/images/4/4b/Mothur.1.22.2.zip)
+_wiki/Download_mothur.md:    1.21.1](https://mothur.org/w/images/6/64/Mothur.1.21.1.zip)
+_wiki/Download_mothur.md:    1.20.3](https://mothur.org/w/images/4/42/Mothur.1.20.3.zip)
+_wiki/Download_mothur.md:    1.19.4](https://mothur.org/w/images/0/08/Mothur.1.19.4.zip)
+_wiki/Download_mothur.md:    1.18.1](https://mothur.org/w/images/9/96/Mothur.1.18.1.zip)
+_wiki/Download_mothur.md:    1.17.3](https://mothur.org/w/images/9/9b/Mothur.1.17.3.zip)
+_wiki/Download_mothur.md:    1.16.1](https://mothur.org/w/images/8/8c/Mothur.1.16.1.zip)
+_wiki/Download_mothur.md:    1.15.0](https://mothur.org/w/images/a/a5/Mothur.1.15.0.zip)
+_wiki/Download_mothur.md:    1.14.0](https://mothur.org/w/images/2/2d/Mothur.1.14.0.zip)
+_wiki/Download_mothur.md:    1.13.0](https://mothur.org/w/images/0/05/Mothur.1.13.0.zip)
+_wiki/Download_mothur.md:    1.12.3](https://mothur.org/w/images/4/4d/Mothur.1.12.3.zip)
+_wiki/Download_mothur.md:    1.11.0](https://mothur.org/w/images/b/b9/Mothur.1.11.0.zip)
+_wiki/Download_mothur.md:    1.10.0](https://mothur.org/w/images/6/64/Mothur.1.10.0.zip)
+_wiki/Download_mothur.md:    1.9.0](https://mothur.org/w/images/e/e5/Mothur.1.9.0.zip)
+_wiki/Download_mothur.md:    1.8.0](https://mothur.org/w/images/e/ea/Mothur.1.8.0.zip)
+_wiki/Download_mothur.md:    1.6.0](https://mothur.org/w/images/e/e8/Mothur.1.6.0.zip)
+_wiki/Download_mothur.md:    1.4.2](https://mothur.org/w/images/7/7a/Mothur.1.4.2.zip)
+_wiki/Download_mothur.md:    1.3.0](https://mothur.org/w/images/f/f3/Mothur.1.3.0.zip)
+_wiki/Download_mothur.md:    1.2.0](https://mothur.org/w/images/a/a9/Mothur.1.2.0.zip)
+_wiki/Download_mothur.md:    1.1.0](https://mothur.org/w/images/3/33/Mothur.1.1.0.zip)
+_wiki/EDAMAME.md:-   [ Example data from Schloss lab](Media:MiSeqSOPData.zip)
+_wiki/Efron.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Esophageal_community_analysis.md:Esophagus.zip](Media:Esophagus.zip) archive. These sequences
+_wiki/Estimator.single.md:[EstimatorSingleData.zip](Media:_EstimatorSingleData.zip)
+_wiki/Execution.md:decompress the [AmazonData.zip](Media:AmazonData.zip) file
+_wiki/Execution.md:` wget `[`https://schloss.micro.umass.edu/w/images/2/2b/Mothur.source.zip`](https://schloss.micro.umass.edu/w/images/2/2b/Mothur.source.zip)
+_wiki/Execution.md:     unzip ../Mothur.source.zip
+_wiki/Execution.md:the [AmazonData.zip](Media:AmazonData.zip) file into a folder
+_wiki/Filter.seqs.md:files in [ AmazonData.zip](Media:AmazonData.zip).
+_wiki/Findley_ITS_Database.md:the [ ITS database](Media:Findley_ITS_database.zip) used in
+_wiki/Forest_soil_community_analysis.md:LTSP07.zip](Media:LTSP07.zip) as BACT\_SSURIS.fasta and
+_wiki/Forest_soil_community_analysis.md:reason, the fasta files in [ LTSP07.zip](Media:LTSP07.zip)
+_wiki/Forest_soil_community_analysis.md:LTSP07.zip](Media:LTSP07.zip).
+_wiki/Forest_soil_community_analysis.md:    alignment](Media:greengenes.alignment.zip) and unpack it
+_wiki/Geometric.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Get.coremicrobiome.md:download, [ Example Files ](Media:_temp.job2.shared.zip)
+_wiki/Get.group.md:[AmazonData.zip](Media:AmazonData.zip).
+_wiki/Get.groups.md:Abrecovery.zip](Media:AbRecovery.zip) and [
+_wiki/Get.groups.md:Abrecovery.accnosgroups.zip](Media:Abrecovery.accnosgroups.zip).
+_wiki/Get.label.md:[AmazonData.zip](Media:AmazonData.zip).
+_wiki/Get.lineage.md:AbRecovery](Media:AbRecovery.zip) dataset.
+_wiki/Get.otulist.md:[AmazonData.zip](Media:AmazonData.zip).
+_wiki/Get.oturep.md:[AmazonData.zip](Media:AmazonData.zip).
+_wiki/Get.seqs.md:Esophagus.zip](Media:Esophagus.zip) archive.
+_wiki/Get.sharedseqs.md:files](Media:AbRecovery.zip).
+_wiki/Greengenes-formatted_databases.md:    alignment](https://www.mothur.org/w/images/2/21/Greengenes.gold.alignment.zip) -
+_wiki/Greengenes-formatted_databases.md:    alignment](https://www.mothur.org/w/images/7/72/Greengenes.alignment.zip) -
+_wiki/Gui.md:    mac](Media:MothurGui.mac_64.OSX-10.7.zip)
+_wiki/Hamming.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Heatmap.bin.md:AbRecovery.zip](Media:AbRecovery.zip).
+_wiki/Homova.md:files](Media:AmazonAmovaData.zip) and follow along\...
+_wiki/Indicator.md:[JCZData.zip](Media:JCZData.zip).
+_wiki/Installation.md:installed on your machine. You simply download a zip file. Decompress it
+_wiki/Installation.md:    escriba:~ pschloss$$ unzip mothur.zip
+_wiki/Installation.md:     unzip ../Mothur.source.zip
+_wiki/Jabund.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Jack.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Jclass.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Jest.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Kulczynski.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Kulczynskicody.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Lennon.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Libshuff.md:by downloading the [ AmazonData.zip ](Media:_AmazonData.zip)
+_wiki/List.seqs.md:Esophagus.zip](Media:Esophagus.zip) archive.
+_wiki/List_file.md:in the AmazonData.zip file:
+_wiki/Logseries.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Lookup_files.md:-   [ GS FLX Titanium](Media:LookUp_Titanium.zip)
+_wiki/Lookup_files.md:-   [ GSFLX](Media:LookUp_GSFLX.zip)
+_wiki/Lookup_files.md:-   [ GS20](Media:LookUp_GS20.zip)
+_wiki/Make.biom.md:download, [ Example Files](Media:Make_biom_files.zip)
+_wiki/Make.biom.md:Tables](https://www.mothur.org/w/images/b/be/GG_13_5_otuMapTable.zip).
+_wiki/Make.contigs.md:-   1.36.0 - allow for gzipped version of fastq files as inputs. Mac and
+_wiki/Make.lookup.md:download: [ MakeLookup.zip](Media:MakeLookup.zip).
+_wiki/Mantel.md:below please download the [ files](Media:VegEnvData.zip) and
+_wiki/Marine_community_analysis.md:GOS.zip](Media:GOS.zip) (\~8MB) archive.
+_wiki/Marine_community_analysis.md:script](Media:RarefactionScriptR.zip):
+_wiki/Memchi2.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Memeuclidean.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Mempearson.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Merge.groups.md:[AmazonData.zip](Media:AmazonData.zip) file and decompressing
+_wiki/Merge.groups.md:it, as well as [AmazonDesign.zip](Media:AmazonDesign.zip)
+_wiki/Mgcluster.md:Files](Media:_Bap_Files.zip) file and decompress it.
+_wiki/MiSeq_SOP.md:-   [ Example data from Schloss lab](Media:MiSeqSOPData.zip)
+_wiki/MiSeq_SOP.md:    alignment](Media:silva.bacteria.zip)
+_wiki/MiSeq_SOP.md:    (v.9)](Media:Trainset9_032012.pds.zip)
+_wiki/Morisitahorn.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Mothur_AMI.md:`gzip data/mothur/stability.trim.contigs.fasta`, which will produce
+_wiki/Mothur_AMI.md:`gunzip data/mothur/stability.trim.contigs.fasta.gz`. Ok, back to
+_wiki/Mothur_v.1.31.0.md:-   [ HOMD Reference Files](Media:HOMD_Reference_Files.zip) -
+_wiki/Mothur_v.1.36.0.md:-   [make.contigs](make.contigs) - allow for gzipped version
+_wiki/Npshannon.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Nseqs.md:dataset](Media:AmazonData.zip) with the following commands:
+_wiki/Ochiai.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Pairwise.seqs.md:AmazonData.zip](Media:AmazonData.zip).
+_wiki/Parsimony.md:AbRecovery.zip](Media:AbRecovery.zip) file and decompressing
+_wiki/Phylip-formatted_distance_matrix.md:AmazonData.zip](Media:AmazonData.zip) zip file:
+_wiki/Phylo.diversity.md:AbRecovery.zip](Media:AbRecovery.zip)
+_wiki/Phylotype.md:Files](Media:TaxonomyFiles.zip).
+_wiki/Project_File.md:here](Media:Test.project.zip).
+_wiki/Pyrosequences_from_deep_anoxic_cenotes.md:alignment](Media:silva.alignment.zip) as my template. The
+_wiki/Pyrosequences_from_deep_anoxic_cenotes.md:namestripper.zip](Media:Namestripper.zip) I then aligned my
+_wiki/Pyrosequencing_of_functional_genes_-_basic_data_processing,_comparing_alignment_strategies,_and_integrating_mothur_output_with_ARB.md:[\'fasta\_substring\_renamer\'](media:Mothur_WIKI_scripts.zip)
+_wiki/Pyrosequencing_of_functional_genes_-_basic_data_processing,_comparing_alignment_strategies,_and_integrating_mothur_output_with_ARB.md:[\'fasta\_renamer\'](media:Mothur_WIKI_scripts.zip) to
+_wiki/Pyrosequencing_of_functional_genes_-_basic_data_processing,_comparing_alignment_strategies,_and_integrating_mothur_output_with_ARB.md:script](media:Mothur_WIKI_scripts.zip) will pull a
+_wiki/Pyrosequencing_of_functional_genes_-_basic_data_processing,_comparing_alignment_strategies,_and_integrating_mothur_output_with_ARB.md:script](media:Mothur_WIKI_scripts.zip) will take the sequence
+_wiki/Pyrosequencing_of_functional_genes_-_basic_data_processing,_comparing_alignment_strategies,_and_integrating_mothur_output_with_ARB.md:script](media:Mothur_WIKI_scripts.zip) will reformat any data
+_wiki/Qstat.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/RDP_reference_files.md:    (RDP)](Media:trainset9_032012.rdp.zip): A collection of
+_wiki/RDP_reference_files.md:    (PDS)](Media:trainset9_032012.pds.zip): The RDP reference
+_wiki/RDP_reference_files.md:    (RDP)](Media:trainset7_112011.rdp.zip): A collection of
+_wiki/RDP_reference_files.md:    (PDS)](Media:trainset7_112011.pds.zip): The RDP reference
+_wiki/RDP_reference_files.md:-   [ 28S rRNA reference (RDP)](Media:FungiLSU_train_v7.zip):
+_wiki/RDP_reference_files.md:The [ RDP training set](Media:RDPTrainingSet.zip) (version 6,
+_wiki/R_tutorial.md:Rtutorial files](Media:Rtutorial.zip)
+_wiki/Rabund_file.md:in the [AmazonData.zip](Media:AmazonData.zip) file:
+_wiki/Rarefaction.md:In the [ Amazonian dataset](Media:AmazonData.zip) the total
+_wiki/Rarefaction.shared.md:Patient70Data.zip](Media:Patient70Data.zip)
+_wiki/Rarefaction.single.md:[AmazonData.zip](Media:AmazonData.zip)
+_wiki/Remove.groups.md:Abrecovery.zip](Media:AbRecovery.zip) and [
+_wiki/Remove.groups.md:Abrecovery.accnosgroups.zip](Media:Abrecovery.accnosgroups.zip).
+_wiki/Remove.lineage.md:to obtain the [ AbRecovery](Media:AbRecovery.zip) dataset.
+_wiki/Remove.rare.md:downloading the [AmazonData.zip](Media:AmazonData.zip) file
+_wiki/Remove.seqs.md:Esophagus.zip](Media:Esophagus.zip) archive.
+_wiki/Sabund_file.md:in the [AmazonData.zip](Media:AmazonData.zip) file:
+_wiki/Secondary_structure_map.md:-   [ SILVA](Media:silva_ss_map.zip)
+_wiki/Secondary_structure_map.md:-   [ greengenes](Media:gg_ss_map.zip)
+_wiki/Shannon.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Shared_file.md:downloaded in the [AmazonData.zip](Media:AmazonData.zip)
+_wiki/Sharedace.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Sharedchao.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Sharedchao.md:dataset](Media:Esophagus.zip) with the following commands:
+_wiki/Sharednseqs.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Sharedsobs.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Shen.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Silva_reference_files.md:    chimera.slayer](Media:silva.gold.bacteria.zip) (5,181
+_wiki/Silva_reference_files.md:    chimera.slayer](Media:silva.gold.bacteria.zip) (5,181
+_wiki/Silva_reference_files.md:    chimera.slayer](Media:silva.gold.bacteria.zip) (5,181
+_wiki/Silva_reference_files.md:    chimera.slayer](Media:Silva.gold.bacteria.zip) (5,181
+_wiki/Silva_reference_files.md:-   [ Bacterial references](Media:silva.bacteria.zip) (14,956
+_wiki/Silva_reference_files.md:-   [ Archaeal references](Media:silva.archaea.zip) (2,297
+_wiki/Silva_reference_files.md:-   [ Eukaryotic references](Media:silva.eukarya.zip) (1,238
+_wiki/Silva_reference_files.md:    chimera.slayer](Media:silva.gold.bacteria.zip) (5,181
+_wiki/Simpson.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Sobs.md:dataset](Media:AmazonData.zip) with the following commands:
+_wiki/Sogin_data_analysis.md:described below or to [ download](Media:SoginData.zip) all of
+_wiki/Sogin_data_analysis.md:as a zip file. You can see the metadata in [Table
+_wiki/Sogin_data_analysis.md:[ distance file](Media:sogin.unique.filter.dist.zip)\]:
+_wiki/Solow.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Sorabund.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Sorclass.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Sorest.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Sparcc.md:fake\_data.1.subsample.shared.zip](Media:fake_data.1.subsample.shared.zip).
+_wiki/Split.groups.md:dataset](Media:Esophagus.zip).
+_wiki/Summary.shared.md:Patient70Data.zip](Media:Patient70Data.zip)
+_wiki/Summary.single.md:[AmazonData.zip](Media:AmazonData.zip)
+_wiki/Summary.tax.md:](Media:sumTaxData.zip)
+_wiki/The_effects_of_eutrophication_on_the_structure_of_bacterial_biofilms.md:[Media:BiofilmEu.zip](Media:BiofilmEu.zip).
+_wiki/Thetan.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Thetayc.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Tree.shared.md:AbRecovery.zip](Media:AbRecovery.zip).
+_wiki/Trim.seqs.md:data](Media:SahlRawData.zip) used by Sahl in his [ example
+_wiki/UNITE_ITS_database.md:![ Unite\_ITS\_02.zip](Unite_ITS_02.zip " Unite_ITS_02.zip")
+_wiki/UNITE_ITS_database.md:![ Unite\_ITS\_s\_02.zip](Unite_ITS_s_02.zip " Unite_ITS_s_02.zip")
+_wiki/Unifrac.unweighted.md:by downloading the [ AbRecovery.zip](Media:AbRecovery.zip)
+_wiki/Unifrac.weighted.md:AbRecovery.zip](Media:AbRecovery.zip) file and decompressing
+_wiki/Unique.seqs.md:found in the [ AmazonData.zip](Media:AmazonData.zip) archive.
+_wiki/Venn.md:AbRecovery.zip](Media:AbRecovery.zip).
+_wiki/Whittaker.md:Amazonian dataset](Media:AmazonData.zip) with the following
+_wiki/Workshop.md:    windows](Media:mothur.12-21-2011.zip)
+_wiki/Workshop.md:    windows](Media:mothur.32bit.12-21-2011.zip)
+_wiki/EDAMAME.md:    alignment](Media:Silva.seed_v128.tgz)
+_wiki/EDAMAME.md:    (v.16)](Media:Trainset16_022016.pds.tgz)
+_wiki/Greengenes-formatted_databases.md:    taxonomy](https://www.mothur.org/w/images/6/68/Gg_13_8_99.taxonomy.tgz) -
+_wiki/Greengenes-formatted_databases.md:    alignment](https://www.mothur.org/w/images/1/19/Gg_13_8_99.refalign.tgz) -
+_wiki/Greengenes-formatted_databases.md:    taxonomy](https://www.mothur.org/w/images/9/9d/Gg_13_5_99.taxonomy.tgz) -
+_wiki/Greengenes-formatted_databases.md:    alignment](https://www.mothur.org/w/images/c/cd/Gg_13_5_99.refalign.tgz) -
+_wiki/Greengenes-formatted_databases.md:    taxonomy](https://www.mothur.org/w/images/1/16/Greengenes.tax.tgz) -
+_wiki/Make.contigs.md:     mothur > make.contigs(ffastq=test_1.fastq.gz, rfastq=test_2.fastq.gz)
+_wiki/Make.contigs.md:-   1.36.0 - allow for gzipped version of fastq files as inputs. Mac and
+_wiki/Make.contigs.md:    formats and multiple processors. Three column format gz file not
+_wiki/Make.contigs.md:-   1.40.5 - Fixes gz file read issues.
+_wiki/Make.contigs.md:-   1.41.0 - Fixes group file issue with \*.gz files.
+_wiki/Make.contigs.md:-   1.43.0 - Adds auto decompress feature to **make.contigs** if gz read
+_wiki/Make.contigs.md:-   1.43.0 - Windows users can now run **make.contigs** with \*.gz files.
+_wiki/Make.file.md:file containing the fastq or gz files in the directory.
+_wiki/Make.file.md:mothur to look for. Options are gz or fastq. Default=fastq.
+_wiki/Make.file.md:     mothur > make.file(inputdir=gzTest, type=gz)
+_wiki/Make.file.md:    /Users/sarahwestcott/Desktop/gzTest/F8D0_S345_L001_R1_001.fastq.gz /Users/sarahwestcott/Desktop/gzTest/F8D0_S345_L001_R2_001.fastq.gz  
+_wiki/Make.file.md:    /Users/sarahwestcott/Desktop/gzTest/F8D125_S358_L001_R1_001.fastq.gz   /Users/sarahwestcott/Desktop/gzTest/F8D125_S358_L001_R2_001.fastq.gz    
+_wiki/Make.file.md:    /Users/sarahwestcott/Desktop/gzTest/F8D141_S359_L001_R1_001.fastq.gz   /Users/sarahwestcott/Desktop/gzTest/F8D141_S359_L001_R2_001.fastq.gz    
+_wiki/Make.file.md:    /Users/sarahwestcott/Desktop/gzTest/F8D142_S360_L001_R1_001.fastq.gz   /Users/sarahwestcott/Desktop/gzTest/F8D142_S360_L001_R2_001.fastq.gz    
+_wiki/Make.file.md:    /Users/sarahwestcott/Desktop/gzTest/F8D143_S361_L001_R1_001.fastq.gz   /Users/sarahwestcott/Desktop/gzTest/F8D143_S361_L001_R2_001.fastq.gz    
+_wiki/Make.file.md:     mothur > make.file(inputdir=gzTest, type=gz, prefix=myReallyAwesomeData)
+_wiki/Make.file.md:Would create a file containing the list of gz files in gzTest named
+_wiki/Marine_community_analysis.md:is included in the GOS archive (`gos_proxy_seq_NAST_job3353.tgz`), but
+_wiki/Marine_community_analysis.md:`gos_proxy_seq_NAST_job3353.tgz` archive in the GOS archive folder.
+_wiki/Marine_community_analysis.md:    in the archive `walsbyi_NAST_job31369.tgz` in the GOS archive) into
+_wiki/Marine_community_analysis.md:that resembles the `gos_proxy_seq_NAST_DM_job6080.tgz` archive in the
+_wiki/Mothur_AMI.md:     mothur > make.file(type=gz, inputdir=data/raw, outputdir=data/raw)
+_wiki/Mothur_AMI.md:`data` directory by running `tar cvzf data.tar.gz data/`, which will
+_wiki/Mothur_AMI.md:produce `data.tar.gz` or an individual file by doing
+_wiki/Mothur_AMI.md:`gzip data/mothur/stability.trim.contigs.fasta`, which will produce
+_wiki/Mothur_AMI.md:`data/mothur/stability.trim.contigs.fasta.gz`. You can uncompress these
+_wiki/Mothur_AMI.md:by doing `tar xvzf data.tar.gz` and
+_wiki/Mothur_AMI.md:`gunzip data/mothur/stability.trim.contigs.fasta.gz`. Ok, back to
+_wiki/Mothur_AMI.md:     scp mothur@ec2-23-20-53-229.compute-1.amazonaws.com:data.tar.gz ./
+_wiki/Mothur_AMI.md:       This will download data.tar.gz to my current directory (i.e. ./) on my computer.
+_wiki/Mothur_v.1.36.0.md:fastq.gz files as input. We are working on this feature for windows, but
+_wiki/Mothur_v.1.36.0.md:    of fastq or gz files for input to make.contigs.
+_wiki/Mothur_v.1.36.0.md:-   [make.contigs](make.contigs) - allow for gzipped version
+_wiki/Pyrosequences_from_deep_anoxic_cenotes.md:fasta file [ ZAC.tgz](Media:ZAC.tgz):
+_wiki/RDP_reference_files.md:    (RDP)](Media:trainset16_022016.rdp.tgz): A collection of
+_wiki/RDP_reference_files.md:    (PDS)](Media:trainset16_022016.pds.tgz): The RDP
+_wiki/RDP_reference_files.md:    ](Media:trainset14_032015.rdp.tgz): A collection of
+_wiki/RDP_reference_files.md:    (PDS)](Media:trainset14_032015.pds.tgz): The RDP
+_wiki/RDP_reference_files.md:    (RDP)](https://mothur.org/w/images/b/b5/Trainset10_082014.rdp.tgz): A
+_wiki/RDP_reference_files.md:    (PDS)](https://mothur.org/w/images/2/24/Trainset10_082014.pds.tgz):
+_wiki/Silva_reference_files.md:    ](Media:Silva.nr_v132.tgz) (188247 bacteria, 4626 archea,
+_wiki/Silva_reference_files.md:-   [ Recreated SEED database ](Media:Silva.seed_v132.tgz)
+_wiki/Silva_reference_files.md:    ](Media:Silva.nr_v128.tgz) (168111 bacteria, 4337 archea,
+_wiki/Silva_reference_files.md:-   [ Recreated SEED database ](Media:Silva.seed_v128.tgz)
+_wiki/Silva_reference_files.md:    ](Media:Silva.nr_v123.tgz) (152308 bacteria, 3901 archea,
+_wiki/Silva_reference_files.md:-   [ Recreated SEED database ](Media:Silva.seed_v123.tgz)
+_wiki/Silva_reference_files.md:    references](https://www.mothur.org/w/images/2/27/Silva.nr_v119.tgz)
+_wiki/Silva_reference_files.md:    database](https://www.mothur.org/w/images/5/56/Silva.seed_v119.tgz)
+_wiki/The_effects_of_eutrophication_on_the_structure_of_bacterial_biofilms.md:These commands generated a .tgz file, that when decompressed, created a
+_wiki/EDAMAME.md:    dataset](https://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
+_wiki/MiSeq_SOP.md:    dataset](https://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
+_wiki/Mothur_AMI.md:`data` directory by running `tar cvzf data.tar.gz data/`, which will
+_wiki/Mothur_AMI.md:produce `data.tar.gz` or an individual file by doing
+_wiki/Mothur_AMI.md:by doing `tar xvzf data.tar.gz` and
+_wiki/Mothur_AMI.md:     scp mothur@ec2-23-20-53-229.compute-1.amazonaws.com:data.tar.gz ./
+_wiki/Mothur_AMI.md:       This will download data.tar.gz to my current directory (i.e. ./) on my computer.
+_wiki/Mothur_AMI.md:     scp fastq.tar mothur@ec2-23-20-53-229.compute-1.amazonaws.com:data/raw
+_wiki/Mothur_AMI.md:       This will upload an archive from my local computer (i.e. fastq.tar) to the data/raw directory on the AWS instance.
