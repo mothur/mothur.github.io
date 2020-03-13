@@ -19,4 +19,11 @@
               {% endif %}</li></ul>{% endfor %}
     </ul></ul>{% endif %}{% endfor %}
   </nav>
+
+					{% if site.data.announcement.live %}
+					<div class="announcement">
+					{{ site.data.announcement.text }}
+					</div>
+					{% endif %}
+
 </div>

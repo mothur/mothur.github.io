@@ -9920,7 +9920,7 @@ button.bg-dark:focus {
     }
     .ml-md-auto,
     .mx-md-auto {
-        margin-left: auto!important
+        margin: auto!important
     }
 }
 

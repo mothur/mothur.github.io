@@ -183,35 +183,31 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 * Additional files to scrap...
 	- DONE
 
-* wiki
-  - fresh pull from old wiki
-  - check for new categories
-
 * blog
-  - check on embedded images `!\[.*\]\(.*\)` in blog
-  - add comments
+	- DONE
+
+* general site
+	- DONE
 
 * data
   - Missing data
     + FamilyStudy
     + MiSeqDevelopmentData
-    + MicrobiomeBiomarkerCRC
     + transition (totally missing)
     + WildPeromyscusStudy (totally missing)
-  - make sure old index files map to new ones
 
-* general site
-	- Customize header nav bar with Example analyses, etc. match header from old wiki
-	- Add announcement blurb
+* wiki
+  - fresh pull from old wiki
+  - check for new categories
 
 * once site is up...
 	- Google tracking code - get new code from
 	- google-site-verification - see what's in site_root
+	- create redirects from blog.mothur.org to mothur.org/blog/
+	- connect add comments
 
-* long term
-  - make separate pages for tags, create three/four column listing of tags
 
-* Manual fixing
+  * Manual fixing
 	- Find and replace < and > characters with \gt and \lt in mathjax code
 	- Find and replace % with \% in mathjax code
 	- Check for stray `\$$` that are meant to indicate dollars
@@ -220,8 +216,14 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 	- get rid of stray `\"` and `\'` characters and replace with """ and "'" in atom
 	- Add calculators tag to calculators, remove calculators page and link
 	- Add filetypes tag to file types, remove file type page and link, if needed
+	- Clean up "Analysis examples" page
+	- Put link to "Analysis examples" in "mothur_manual"
+	- Give FAQ page section headers to generate TOC, capitalize title
 	- Clear errors...
 	```
 	#https://github.com/gjtorikian/html-proofer
 	htmlproofer --assume-extension --only-4xx ./_site
 	```
+
+* long term
+  - make separate pages for tags, create three/four column listing of tags
