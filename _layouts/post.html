@@ -10,4 +10,8 @@ layout: page
 
   {{ content }}
 
+  {% if page.comments %}
+  	{% include comments.html %}
+  {% endif %}
+
 </div>
