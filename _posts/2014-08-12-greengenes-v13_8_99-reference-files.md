@@ -5,7 +5,7 @@ author: "PD. Schloss"
 date: "August 12, 2014"
 comments: true
 ---
-The greengenes developers periodically update their reference files on their ftp server. What follows is our process for generating a mothur-compatible set of files to generate a [greengenes taxonomy reference](https://www.mothur.org/wiki/Greengenes-formatted_databases) of those sequences.  
+The greengenes developers periodically update their reference files on their ftp server. What follows is our process for generating a mothur-compatible set of files to generate a [greengenes taxonomy reference](/wiki/Greengenes-formatted_databases) of those sequences.  
 
 The original files are available from the greengenes ftp server:
 
