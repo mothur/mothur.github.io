@@ -191,10 +191,8 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 
 * data
   - Missing data
-    + FamilyStudy
     + MiSeqDevelopmentData
-    + transition (totally missing)
-    + WildPeromyscusStudy (totally missing)
+		+ maybe retry data/FamilyStudy/family.metagenome.bz2.tar
 
 * wiki
   - fresh pull from old wiki
@@ -219,6 +217,10 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 	- Clean up "Analysis examples" page
 	- Put link to "Analysis examples" in "mothur_manual"
 	- Give FAQ page section headers to generate TOC, capitalize title
+	- Check alt text and sizing of figures, e.g...
+	  ```
+		![AMS Page](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_pick_region.png){: width="200px"}
+		```
 	- Clear errors...
 	```
 	#https://github.com/gjtorikian/html-proofer

@@ -52,7 +52,7 @@ You will first need to log into the AWS.
 4\.  Click on the icon in the upper left corner of the page that says
     \"EC2\"
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_click_ec2.png)
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_click_ec2.png){: width="700px"}
 
 As you will have noticed, there are many options for where you could
 have gone. EC2 is the expandable cloud service that AWS offers. They
@@ -67,7 +67,7 @@ are using. If you\'ve never logged in before, you\'ll have a bunch of
 zeroes on this page. You\'ll notice that I already have some things
 stored here because I\'ve used this service before.
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_ec2_dashboard.png)
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_ec2_dashboard.png){: width="700px"}
 
 
 1\.  In the upper right corner of the screen you should see your name,
@@ -75,7 +75,7 @@ stored here because I\'ve used this service before.
     it isn\'t already set to \"N. Virginia\" click on the region that is
     there and change it.
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_pick_region.png)
+![](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_pick_region.png){: width="200px"}
 
 
 2\.  Click on the blue button in the middle of the dashboard screen that
@@ -300,7 +300,7 @@ console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:s
     instance. At this point, all of your work will be deleted and you
     will have to go back to the beginning of this tutorial to restart an
     instance.
-## 
+##
 
 Large chunks of this were inspired by the amazing [C. Titus
 Brown](https://ged.msu.edu/angus/tutorials/starting-your-cloud-system.html)
