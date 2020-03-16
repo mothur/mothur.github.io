@@ -190,9 +190,7 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 	- DONE
 
 * data
-  - Missing data
-    + MiSeqDevelopmentData
-		+ maybe retry data/FamilyStudy/family.metagenome.bz2.tar
+  - DONE
 
 * wiki
   - fresh pull from old wiki
@@ -208,7 +206,7 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
   * Manual fixing
 	- Find and replace < and > characters with \gt and \lt in mathjax code
 	- Find and replace % with \% in mathjax code
-	- Check for stray `\$$` that are meant to indicate dollars
+	- Check for stray `\$$` that are meant to indicate dollars or prompts
 	- Tables need help
 	- Figures will need to be manually resized
 	- get rid of stray `\"` and `\'` characters and replace with """ and "'" in atom
