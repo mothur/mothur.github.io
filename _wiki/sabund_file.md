@@ -1,5 +1,6 @@
 ---
-title: 'Sabund file'
+title: 'sabund file'
+tags: 'file types'
 redirect_from: '/wiki/Sabund_file'
 ---
 The data reported in an sabund file is appropriate for plotting in a
@@ -21,3 +22,5 @@ in the [amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondat
     0.02   4   84  2   2   1   
     0.03   4   75  6   1   2   
     ...
+
+[category:filetypes](Category:FileTypes)

@@ -207,6 +207,12 @@ To use the design option, follow this example:
 
     mothur > remove.groups(shared=abrecovery.design, groups=B-C)
 
+### sets
+
+The sets parameter allows you to specify which of the sets in your
+designfile you would like to remove. You can separate set names with
+dashes.
+
 ## Revisions
 
 -   1.23.0 File mismatch bug -
@@ -224,5 +230,7 @@ To use the design option, follow this example:
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
+-   1.44.0 - Adds sets parameter.
+    [\#277](https://github.com/mothur/mothur/issues/277)
 
 

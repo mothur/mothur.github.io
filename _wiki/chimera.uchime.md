@@ -78,6 +78,15 @@ information.
     mothur > make.table(name=stool.trim.good.names, group=stool.good.groups)
     mothur > chimera.uchime(fasta=stool.trim.unique.good.align, count=stool.trim.good.count_table)
 
+### uchime
+
+The uchime parameter allows you to specify the name and location of your
+uchime executable. By default mothur will look in your path and
+mothur\'s executable location. You can set the uchime location as
+follows: uchime =/usr/bin/uchime.
+
+    mothur > chimera.uchime(uchime =/usr/bin/uchime,  fasta=stool.trim.unique.good.align, name=stool.trim.good.names)
+
 ### processors
 
 The processors parameter allows you to specify how many processors you
@@ -289,5 +298,7 @@ ucl is true.
 -   1.39.0 Fixes Windows multiple processors with groups crash.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
+-   1.44.0 Adds uchime parameter.
+    [\#682](https://github.com/mothur/mothur/issues/682)
 
 

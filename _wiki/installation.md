@@ -26,8 +26,9 @@ Install](https://github.com/mothur/mothur/blob/master/INSTALL.md)
 #### Boost
 
 Mothur uses the boost library to read compressed files in the
-make.contigs command. If you would like to be able to use this option,
-you must install Boost and set the boost flags in the makefile.
+make.contigs command. It is not required. If you would like to be able
+to use this option, you must install Boost and set the boost flags in
+the makefile.
 
     USEBOOST ?= yes
     BOOST_LIBRARY_DIR ?= "\"/usr/local/lib\""
@@ -35,13 +36,33 @@ you must install Boost and set the boost flags in the makefile.
 
 #### HDF5
 
-Mothur uses the HDF5 library to read biom files in HDF5 format. If you
-would like to use biom files in this format within mothur, you must
-install the HDF5 library and set the HDF5 flags.
+Mothur uses the HDF5 library to read biom files in HDF5 format. These
+libraries are used by the biom.info command to read biom files in hdf5
+format. It is not required. If you would like to use biom files in this
+format within mothur, you must install the HDF5 library and set the HDF5
+flags.
 
     USEHDF5 ?= yes
     HDF5_LIBRARY_DIR ?= "\"/usr/local/hdf5/lib\""
     HDF5_INCLUDE_DIR ?= "\"/usr/local/hdf5/include\""
+
+#### GSL
+
+Mothur uses the GSL library to run the estimator.single command. It is
+not required. If you would like to use the estimator.single command, you
+must install the GSL library and set the GSL flags.
+
+    USEGSL ?= yes
+    GSL_LIBRARY_DIR ?= "\"/usr/local/gsl/lib\""
+    GSL_INCLUDE_DIR ?= "\"/usr/local/gsl/include\""
+
+    ifeq  ($$(strip $$(USEGSL)),yes)
+
+    LDFLAGS += -L $${GSL_LIBRARY_DIR}
+    LIBS += -lgsl -lgslcblas -lm
+    CXXFLAGS += -DUSE_GSL -I $${GSL_INCLUDE_DIR}
+
+    endif
 
 ### Mac OSX
 

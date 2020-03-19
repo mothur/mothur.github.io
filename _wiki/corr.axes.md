@@ -69,5 +69,7 @@ like to use. Default=3.
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
+-   1.44.0 - Fixes **corr.axes** bug when metadata files contain zeroed
+    columns.
 
 

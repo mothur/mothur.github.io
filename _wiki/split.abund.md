@@ -9,8 +9,8 @@ splits the sequences into rare and abundant groups.
 ## Default Settings
 
 The **split.abund** command parameters are fasta, list, name, count, cutoff,
-group, label, groups and accnos. The fasta and a list or name parameter
-are required, and you must provide a cutoff value.
+group, label, groups and accnos. The list, count or name parameter are
+required, and you must provide a cutoff value.
 
 Using a list file the splitting is done based on the size of the otus.
 
@@ -56,7 +56,19 @@ than 10 other sequences, you only get .rare files.
 
 The cutoff parameter is used to qualify what is abundant and rare. A
 grouping is determined to be abundant if it contains more sequences than
-the cutoff.
+the cutoff. The cutoff can be a integer or a percentage. For example:
+
+    mothur > split.abund(count=final.count_table, cutoff=10)
+
+will place all sequences with 10 or less abundance in the
+\*.rare.count\_table file. You can also set the cutoff as a percentage
+of the total number of sequences. For example let\'s set the cutoff to
+
+0\.01, meaning reads that represent \<= 1% or the total reads in the
+dataset are considered rare. final.count\_table includes 113964
+sequences, so the cutoff is set to 1139:
+
+    mothur > split.abund(count=final.count_table, cutoff=0.01)
 
 ## group
 
@@ -92,5 +104,7 @@ The accnos parameter allows you to output a .rare.accnos and
 ## Revisions
 
 -   1.28.0 Added count option
+-   1.44.0 Cutoff parameter can now be a percentage. Removes fasta file
+    requirement. [\#263](https://github.com/mothur/mothur/issues/263)
 
 

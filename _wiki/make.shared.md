@@ -24,7 +24,8 @@ file and group file:
     mothur > make.shared(list=98_sq_phylip_amazon.an.unique_list, count=amazon.count_table)
 
 or you can convert a [ count file](Count_File) to a [shared
-file](shared_file).
+file](shared_file) and [list file](list_file)
+where each representative sequence is placed in it\'s own OTU..
 
     mothur > make.shared(count=amazon.count_table, label=0.03)
 
@@ -79,5 +80,6 @@ included in your analysis:
     mapping file can then be used with the rename.seqs command to modify
     the associated files.
     [\#583](https://github.com/mothur/mothur/issues/583)
+-   1.44.0 Adds list file output for **make.shared** with count table.
 
 

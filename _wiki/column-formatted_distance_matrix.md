@@ -1,5 +1,6 @@
 ---
-title: 'Column-formatted distance matrix'
+title: 'column-formatted distance matrix'
+tags: 'file types'
 redirect_from: '/wiki/Column-formatted_distance_matrix'
 ---
 Most of the currently used software packages store all of the pairwise
@@ -43,3 +44,5 @@ This file is similar in size to 96\_lt\_phylip\_amazon.dist. You\'ll
 note that the file does not have any rows where U68589 is in the first
 column. Because of this, it is mandatory that a name file be used with
 the read.column() command.
+
+[category:filetypes](Category:FileTypes)

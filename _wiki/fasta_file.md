@@ -1,5 +1,6 @@
 ---
-title: 'Fasta file'
+title: 'fasta file'
+tags: 'file types'
 redirect_from: '/wiki/Fasta_file'
 ---
 The Fasta File:
@@ -18,3 +19,5 @@ taxonomy information:
     G-GC--GA-G-A-A-G-T-A--TG-C--GG-A-ATG-C-G-T-G-GT-GT-A-G-CGGT-G-AAA--TG-C-AT-AG--AT-A-TCA-C-GCA-G-A-AC-T-CC--GAT-T-GC-...
     >GQY1XT001CD9IB Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(99);"Bacteroidales"(99);"Porphyromonadaceae"(92);
     G-GC--GA-G-A-A-G-T-A--TG-C--GG-A-ATG-C-G-T-G-GT-GT-A-G-CGGT-G-AAA--TG-C-AT-AG--AT-A-TCA-C-GCA-G-A-AC-T-CC--GAT-T-GC-...
+
+[category:filetypes](Category:FileTypes)

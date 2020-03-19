@@ -319,9 +319,9 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 
 1\.  **\...template is not aligned, aborting. What do I do?** Mothur
     requires the reference file to be aligned to generate aligned
-    sequences. You can download mothur\'s aligned silva references here,
-    [silva_reference_files](Silva_reference_files). For ITS sequences,
-    see \'how to\' below.
+    sequences. You can download mothur\'s aligned silva references
+    [here](Silva_reference_files). For ITS
+    sequences, see \'how to\' below.
 
 2\.  **\...xxx of your sequences generated alignments that eliminated too
     many bases\... What does this mean?** By default, mothur will align
@@ -339,8 +339,8 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     from unaligned sequences.
 
 2\.  **How do I create a custom reference for the region I am studying?**
-    You can tailor your reference using this method:
-    [/blog/2016/Customization-for-your-region/](/blog/2016/Customization-for-your-region/).
+    You can tailor your reference using [this
+    method](/blog/2016/Customization-for-your-region/).
 
 ## Revisions
 

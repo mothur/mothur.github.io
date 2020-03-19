@@ -1,5 +1,6 @@
 ---
-title: 'Phylip-formatted distance matrix'
+title: 'phylip-formatted distance matrix'
+tags: 'file types'
 redirect_from: '/wiki/Phylip-formatted_distance_matrix'
 ---
 Phylip [1](https://evolution.genetics.washington.edu/phylip.html) is a
@@ -81,3 +82,5 @@ matrix would be the mirror of a lower triangle matrix. All of this
 discussion is somewhat unnecessary because as long as mothur knows that
 you are providing a phylip-formatted matrix, it can identify the shape
 of the matrix.
+
+[category:filetypes](Category:FileTypes)

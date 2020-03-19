@@ -1,0 +1,20 @@
+---
+title: 'clr file'
+tags: 'file types'
+redirect_from: '/wiki/Clr_file'
+---
+The clr - centered log ratio - is the log2 of the value divided by the
+geometric mean of the values across all OTUs for each sample. Consider
+this simple example:
+
+The shared file:
+
+    label    Group    numOtus    Otu1    Otu2    Otu3  Otu4
+    0.03    sample1    4      10    5    3    1    
+
+results in a clr file as follows:
+
+    label    Group    numOtus    Otu1    Otu2    Otu3  Otu4
+    0.03    sample1  4    1.5147234    0.5147234    -0.2222422    -1.8072047
+
+[category:filetypes](Category:FileTypes)

@@ -2,17 +2,14 @@
 title: 'Workshops'
 redirect_from: '/wiki/Workshops'
 ---
-Throughout 2019, Pat will offer 6 **workshops** on mothur and programming in
-R for microbial ecologists. If you are interested in attending and would
-like to register or get more information about fees and specifics,
-please email him his gmail account (userid: pdschloss)
+Throughout 2020, Pat will offer **workshops** on mothur and programming in R
+for microbial ecologists. These will be offered online. If you are
+interested in attending and would like to register or get more
+information about fees and specifics, please email him his gmail account
+(userid: pdschloss). Other **workshops** will be announced throughout the
+year.
 
--   March 6-8: mothur
--   May 1-3: R
--   June 5-7: mothur
--   August 28-30: R
--   October 16-18: mothur
--   December 18-20: R
+-   March 30-April 1: mothur
 
 ## mothur workshop
 

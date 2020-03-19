@@ -1,5 +1,6 @@
 ---
-title: 'Taxonomy File'
+title: 'taxonomy file'
+tags: 'file types'
 redirect_from: '/wiki/Taxonomy_File'
 ---
 The taxonomy file is created by the
@@ -15,3 +16,5 @@ with the following format: sequenceName tab taxonomy.
     GQY1XT001CNF2P Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(99);"Bacteroidales"(99);"Porphyromonadaceae"(99);unclassified;
     GQY1XT001CJMDA Bacteria(100);"Bacteroidetes"(98);"Bacteroidia"(87);"Bacteroidales"(87);unclassified;unclassified;
     ...
+
+[category:filetypes](Category:FileTypes)

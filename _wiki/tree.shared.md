@@ -158,5 +158,7 @@ times. Default=f.
     [\#535](https://github.com/mothur/mothur/issues/535)
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
+-   1.44.0 - BUG FIX: Fixes **tree.shared** distance being used instead of
+    similarity.
 
 

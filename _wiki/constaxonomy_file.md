@@ -1,5 +1,6 @@
 ---
-title: 'Constaxonomy file'
+title: 'constaxonomy file'
+tags: 'file types'
 redirect_from: '/wiki/Constaxonomy_file'
 ---
 The constaxonomy file is created by
@@ -16,3 +17,5 @@ consensus taxonomy.
     Otu6   48  Bacteria(100);"Actinobacteria"(94);Actinobacteria(94);Coriobacteriales(71);Coriobacteriaceae(71);unclassified;
     Otu7   4   Bacteria(100);"Proteobacteria"(100);Gammaproteobacteria(100);unclassified;unclassified;unclassified;
     Otu8   2   Bacteria(100);TM7(100);TM7_class_incertae_sedis(100);TM7_order_incertae_sedis(100);TM7_family_incertae_sedis(100);TM7_genus_incertae_sedis(100);
+
+[category:filetypes](Category:FileTypes)

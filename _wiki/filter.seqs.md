@@ -49,11 +49,11 @@ number of sequences that the filter was based on:
     Number of sequences used to construct filter: 96
 
 You can also enter multiple files to filter together. You do this by
-separating the fasta files with dashes. Mothur creates a filter and
-filters the sequences as if they were all in the same file, but outputs
-separate .filtered.fasta files.
+separating the fasta files with \'\|\' characters. Mothur creates a
+filter and filters the sequences as if they were all in the same file,
+but outputs separate .filtered.fasta files.
 
-    mothur > filter.seqs(fasta=amazon.unique.align-core_set_aligned.imputed.fasta)
+    mothur > filter.seqs(fasta=amazon.unique.align|core_set_aligned.imputed.fasta)
 
 ## Options
 
@@ -194,5 +194,7 @@ and use all available.
     \"filename.filter\" file.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
+-   1.44.0 - Changes **filter.seqs** fasta file deliminator from \'-\' to
+    \'\|\' to allow for \'-\'\'s in filenames.
 
 

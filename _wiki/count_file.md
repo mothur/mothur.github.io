@@ -1,5 +1,6 @@
 ---
-title: 'Count File'
+title: 'count file'
+tags: 'file types'
 redirect_from: '/wiki/Count_File'
 ---
 The count file is a condensed version of the name file. It can also
@@ -82,3 +83,5 @@ form.
 
 The above command will convert a full format count file to it\'s sparse
 form.
+
+[category:filetypes](Category:FileTypes)

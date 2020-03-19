@@ -196,6 +196,11 @@ and can be used as follows:
 
 The fastq option allows you to select sequences from your fastq file.
 
+### contigsreport
+
+The contigsreport option allows you to select sequences from your
+contigsreport file.
+
 ## Revisions
 
 -   1.28.0 Added count option
@@ -210,5 +215,7 @@ The fastq option allows you to select sequences from your fastq file.
     [\#159](https://github.com/mothur/mothur/issues/159)
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
+-   1.44.0 - Adds contigsreport option.
+    [\#660](https://github.com/mothur/mothur/issues/660)
 
 

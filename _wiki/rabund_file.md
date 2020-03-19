@@ -1,5 +1,6 @@
 ---
-title: 'Rabund file'
+title: 'rabund file'
+tags: 'file types'
 redirect_from: '/wiki/Rabund_file'
 ---
 The data reported in the rabund file is appropriate for plotting as a
@@ -36,3 +37,5 @@ in the [amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondat
        1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
        1   1   1   1   
     ...
+
+[category:filetypes](Category:FileTypes)

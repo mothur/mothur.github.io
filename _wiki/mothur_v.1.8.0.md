@@ -53,7 +53,14 @@ free to tell us about it on the user forum.
 ## New features
 
 -   mothur now allows for comments in fasta files in the following
-    format, which will make analyzing output from the RDP easier
+    format, which will make analyzing output from the RDP easier:
+
+     >#=GC_SS_cons
+     ::::::::<<<<<_______>>>>>,{ {{ {-{ {{ {{ {,{ {{ {{ {{ {{-.---{ {{-.{ {.{.,,...
+     >FYV22AL02GBAKV
+     ------------------------------------------------.-------.--.-.--...
+    The sequence =GC_SS_cons is ignored and only FYV22AL02GBAKV is read in.
+
 -   added flip and threshold parameters as well as a progress indicator
     to [align.seqs](align.seqs) command.
 -   added list parameter to [list.seqs](list.seqs),

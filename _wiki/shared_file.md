@@ -1,5 +1,6 @@
 ---
-title: 'Shared file'
+title: 'shared file'
+tags: 'file types'
 redirect_from: '/wiki/Shared_file'
 ---
 A shared file is analogous to an [rabund file](rabund_file).
@@ -25,3 +26,5 @@ file:
     label  Group   numOtus Otu01   Otu02   Otu03   Otu04   Otu05   Otu06   Otu07   Otu08   Otu09   Otu10   ...
     0.10   forest  55  0   5   2   3   1   1   3   3   1   0   ...
     0.10   pasture 55  7   2   5   1   3   2   0   0   1   2   ...
+
+[category:filetypes](Category:FileTypes)

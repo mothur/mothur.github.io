@@ -1,5 +1,6 @@
 ---
-title: 'Relabund file'
+title: 'relabund file'
+tags: 'file types'
 redirect_from: '/wiki/Relabund_file'
 ---
 A relabund file is similar to a shared file. The data in a relabund file
@@ -15,3 +16,5 @@ number of columns that follow. Finally, the remaining columns indicate
 the relative abundance of each OTU from that group.
 
     mothur > get.relabund(shared=final.an.shared)
+
+[category:filetypes](Category:FileTypes)

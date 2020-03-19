@@ -1,5 +1,6 @@
 ---
-title: 'Name file'
+title: 'name file'
+tags: 'file types'
 redirect_from: '/wiki/Name_file'
 ---
 The name file is used to show the relationship between a representative
@@ -24,3 +25,5 @@ Notes:
 1\.  Be sure not to include the \"\>\" in the name of the sequence.
 
 2\.  Your sequence name cannot contain blank spaces.
+
+[category:filetypes](Category:FileTypes)

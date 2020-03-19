@@ -61,6 +61,12 @@ esophagus.C.names files.
 
 The flow parameter is used to input your flow file.
 
+### processors
+
+The processors option enables you to accelerate the parsing by using
+multiple processors. Default processors=Autodetect number of available
+processors and use all available.
+
 ## Revisions
 
 -   1.28.0 - Added count parameter
@@ -70,5 +76,7 @@ The flow parameter is used to input your flow file.
     [\#499](https://github.com/mothur/mothur/issues/499)
 -   1.43.0 - Adds list parameter.
     [\#624](https://github.com/mothur/mothur/issues/624)
+-   1.44.0 - Adds processors parameter.
+    [\#685](https://github.com/mothur/mothur/issues/685)
 
 

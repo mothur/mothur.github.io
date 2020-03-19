@@ -102,7 +102,20 @@ convert_mw_to_md <- function(mediawiki_file){
 
 		md <- str_replace(md, "\\[Category:Commands\\]\\(Category:Commands\\)", "")
 
-	} else {
+	} else if(any(str_detect(md, "Category:FileTypes"))){
+
+			md <- c(
+								"---",
+								paste0("title: '", tolower(title), "'"),
+								paste0("tags: 'file types'"),
+								redirect,
+								"---",
+								md
+							)
+
+			md <- str_replace(md, "\\[Category:FileTypes\\]\\(Category:Types\\)", "")
+
+		} else {
 
 		md <- c(
 							"---",
@@ -194,14 +207,7 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
   - DONE
 
 * wiki
-  - fresh pull from old wiki
-  - check for new categories
-
-* once site is up...
-	- Google tracking code - get new code from
-	- google-site-verification - see what's in site_root
-	- create redirects from blog.mothur.org to mothur.org/blog/
-	- connect add comments
+	- DONE
 
 
   * Manual fixing
@@ -225,6 +231,14 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 	#https://github.com/gjtorikian/html-proofer
 	htmlproofer --assume-extension --only-4xx ./_site
 	```
+
+* once site is up...
+	- Google tracking code - get new code from
+	- google-site-verification - see what's in site_root
+	- create redirects from blog.mothur.org to mothur.org/blog/
+	- connect add comments
+
+
 
 * long term
   - make separate pages for tags, create three/four column listing of tags

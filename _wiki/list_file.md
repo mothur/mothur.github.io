@@ -1,5 +1,6 @@
 ---
-title: 'List file'
+title: 'list file'
+tags: 'file types'
 redirect_from: '/wiki/List_file'
 ---
 The file ending in \"list\" contains data indicating the sequences that
@@ -39,3 +40,5 @@ in the AmazonData.zip file:
        U68688,U68665   U68666  U68668  U68669  U68670  U68671  U68672  U68673  U68674  U68675  U68676  U68677
        U68678  U68679  U68681  U68682  U68683  U68684  U68685  U68686  U68687  
     ...
+
+[category:filetypes](Category:FileTypes)

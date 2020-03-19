@@ -32,8 +32,8 @@ The chimeras file format is explained
 
 The vsearch parameter allows you to specify the name and location of
 your vsearch executable. By default mothur will look in your path and
-mothur\'s executable. You can set the vsearch location as follows:
-vsearch=/usr/bin/vsearch.
+mothur\'s executable location. You can set the vsearch location as
+follows: vsearch=/usr/bin/vsearch.
 
     mothur > chimera.vsearch(vsearch=/usr/bin/vsearch.2.11.1,  fasta=stool.trim.unique.good.align, name=stool.trim.good.names)
 
@@ -192,5 +192,7 @@ range from 0.2 to 2.
 -   1.42.0 Adds vsearch parameter to **chimera.vsearch** so that you can
     specify location of vsearch executable.
     [\#586](https://github.com/mothur/mothur/issues/586)
+-   1.44.0 Adds parallelization to **chimera.vsearch** when using denovo
+    method. [\#700](https://github.com/mothur/mothur/issues/700)
 
 

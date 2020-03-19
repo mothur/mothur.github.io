@@ -1,5 +1,6 @@
 ---
-title: 'Group file'
+title: 'group file'
+tags: 'file types'
 redirect_from: '/wiki/Group_file'
 ---
 The group file is used to assign sequences to a specific group. It
@@ -30,3 +31,5 @@ Notes:
 3\.  DO NOT use a hyphen in group names. The \"-\" character is used
     within mothur to separate group names, labels, taxonomies, ect.
     Including a hyphen will cause issues in your downstream analysis.
+
+[category:filetypes](Category:FileTypes)

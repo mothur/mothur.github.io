@@ -1,5 +1,6 @@
 ---
-title: 'Design File'
+title: 'design file'
+tags: 'file types'
 redirect_from: '/wiki/Design_File'
 ---
 The design file is used to assign samples to a specific treatments, or
@@ -34,3 +35,5 @@ following column contain the treatment names, or other information.
     M42Fcs M
     M43Fcs M
     M44Fcs M
+
+[category:filetypes](Category:FileTypes)

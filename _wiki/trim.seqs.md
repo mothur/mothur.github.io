@@ -498,8 +498,13 @@ This represents approximately 89% of the original sequences.
     primers.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
--   1.40.4 - Bug Fix: Trim.seqs multiple matches error. \#427
--   1.40.5 - Bug Fix: Trim.seqs \"could not open\" error. \#444
--   1.43.0 - Bug Fix: Trim.seqs not removing paired primers. \#667
+-   1.40.4 - Bug Fix: Trim.seqs multiple matches error.
+    [\#427](https://github.com/mothur/mothur/issues/427)
+-   1.40.5 - Bug Fix: Trim.seqs \"could not open\" error.
+    [\#444](https://github.com/mothur/mothur/issues/444)
+-   1.43.0 - Bug Fix: Trim.seqs not removing paired primers.
+    [\#667](https://github.com/mothur/mothur/issues/667)
+-   1.44.0 - Bug Fix: Fixes bug with **trim.seqs** if no name file is given
+    and allfiles=T. [\#696](https://github.com/mothur/mothur/issues/696)
 
 

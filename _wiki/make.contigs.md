@@ -161,7 +161,7 @@ be scrapped.
 If you are running the **make.contigs** command with paired barcodes or
 primers, you can use the checkorient parameter. When checkorient=t and
 mothur can\'t find the barcodes and primers, it will search the reverse
-compliment. The default is false.
+compliment. The default is true.
 
 ### oligos scrap code meanings
 
@@ -343,5 +343,7 @@ documentation,
 -   1.43.0 - Adds auto decompress feature to **make.contigs** if gz read
     fails. [\#634](https://github.com/mothur/mothur/issues/634)
 -   1.43.0 - Windows users can now run **make.contigs** with \*.gz files.
+-   1.44.0 - Improves mothur\'s checkorient option in make.contigs. Also
+    sets checkorient=t by default.
 
 
