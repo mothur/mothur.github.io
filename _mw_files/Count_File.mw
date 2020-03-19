@@ -61,3 +61,5 @@ The above command will convert a sparse format count file to it's full form.
  mothur > count.seqs(count=final.count_table, compress=t) 
 
 The above command will convert a full format count file to it's sparse form.
+
+[[Category:FileTypes]]

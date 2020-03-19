@@ -98,5 +98,6 @@ The withreplacement parameter allows you to indicate you want to subsample your 
 * 1.40.0 - Fixes segfault error for commands that use subsampling. [https://github.com/mothur/mothur/issues/357 #357] , [https://github.com/mothur/mothur/issues/347 #347] 
 * 1.41.0 - Fixes results with shared file. [https://github.com/mothur/mothur/issues/535 #535] 
 * 1.42.0 - Adds withreplacement parameter to sub.sample command. [https://github.com/mothur/mothur/issues/262 #262] 
+* 1.44.0 - BUG FIX: Fixes tree.shared distance being used instead of similarity.
 
 [[Category:Commands]]

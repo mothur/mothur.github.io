@@ -161,3 +161,5 @@ The make.contigs command is designed for paired primers, and operates like trim.
  forwardPrimer = 1 diffs, reversePrimer = 1 diffs -> primer will be successfully removed
  forwardPrimer = 0 diffs, reversePrimer = 1 diffs -> primer will be successfully removed
  forwardPrimer = 1 diffs, reversePrimer = 2 diffs ->  primer will not be removed because the paired primer total diffs = 3
+
+[[Category:FileTypes]]

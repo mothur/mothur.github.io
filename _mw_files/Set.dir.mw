@@ -11,6 +11,11 @@ If output directory does not exist mothur will create it for you.
  mothur > set.dir(output=../outputFiles)
  Changing output directory to /Users/Work/Desktop/outputFiles/
 
+==tools==
+Mothur's commands use several external tools. Default location=mothur's executable location. The vsearch, uchime, blast, prefetch and fasterq_dump executables can be placed in a central location like /usr/bin/. You can tell mothur where to find them by setting MOTHUR_TOOLS=/usr/bin/ in the makefile. Alternatively, you can run this command within mothur:
+
+mothur > set.dir(tools=/usr/bin/)
+
 ==tempdefault==
 By default tempdefault=mothur's executable location.
 
@@ -38,11 +43,11 @@ The modifynames flag is used to indicate how you want mothur to treat sequence n
 ==Order of searching==
 When mothur is trying to find a file without a full path here are the order of searches.
 
- 1. Default path
+ 1. Input directory
  2. Output directory
- 3. Input directory
-
-The output directory is listed before the input directory because many of mothur's command create files that then are used as inputs on the next command.
+ 3. Default path
+ 4. Mothur's executable location
+ 5. Mothur tools location
 
 ==Revisions==
 * 1.26.0 - added debug parameter
@@ -50,5 +55,6 @@ The output directory is listed before the input directory because many of mothur
 * 1.36.0 -  if output directory does not exist mothur will create it for you.
 * 1.36.0 - By default tempdefault is set to mothur's executable location.
 * 1.39.0 - Adds blastdir parameter.
+* 1.44.0 - Adds tools parameter.  [https://github.com/mothur/mothur/issues/682 #682] 
 
 [[Category:Commands]]

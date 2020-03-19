@@ -34,6 +34,7 @@ download <- function(x){
 
 }
 
+unlink("_mw_files", recursive=TRUE)
 dir.create("_mw_files", showWarnings=FALSE)
 pages %>% map(., download)
 ```

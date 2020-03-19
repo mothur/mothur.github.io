@@ -11,7 +11,7 @@ or if you used a [[Count_File | count file]] instead of a name file and group fi
  mothur > cluster(phylip=98_sq_phylip_amazon.dist, count=amazon.count_table)
  mothur > make.shared(list=98_sq_phylip_amazon.an.unique_list, count=amazon.count_table)
 
-or you can convert a [[Count_File | count file]] to a [[shared file]].
+or you can convert a [[Count_File | count file]] to a [[shared file]] and [[list file]] where each representative sequence is placed in it's own OTU..
 
  mothur > make.shared(count=amazon.count_table, label=0.03)
 
@@ -44,5 +44,6 @@ You can use the groups parameter to specify which groups you want included in yo
 * 1.41.0 Adds count file to shared file option in make.shared command. [https://github.com/mothur/mothur/issues/519  #519] 
 * 1.42.0 Expands make.shared to allow for count files with no groups. [https://github.com/mothur/mothur/issues/563  #563] 
 * 1.42.0 Adds map file to make.shared output from count file. This mapping file can then be used with the rename.seqs command to modify the associated files. [https://github.com/mothur/mothur/issues/583  #583] 
+* 1.44.0 Adds list file output for make.shared with count table.
 
 [[Category:Commands]]

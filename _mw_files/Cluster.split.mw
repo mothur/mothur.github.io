@@ -160,6 +160,10 @@ With the opticlust method the list file is created for the cutoff you set.  The 
  label	cutoff	tp	tn	fp	fn	sensitivity	specificity	ppv	npv	fdr	accuracy	mcc	f1score
  0.05	0.05	133482	6888777	30337	59510	0.6916	0.9956	0.8148	0.9914	0.1852	0.9874	0.7444	0.7482
 
+===vsearch===
+The vsearch parameter allows you to specify the name and location of your vsearch executable. By default mothur will look in your path and mothur's executable location.  You can set the vsearch location as follows: vsearch=/usr/bin/vsearch.
+
+ mothur > cluster.split(vsearch=/usr/bin/vsearch.2.11.1,  fasta=final.fasta, count=final.count_file, method=agc)
 
 ===precision===
 If you want greater precision, there is a precision option in the cluster() command:
@@ -244,5 +248,7 @@ The variability is caused by the randomization of the sequences.
 * 1.40.0 - Rewrite of threaded code. Default processors=Autodetect number of available processors and use all available. 
 * 1.40.4 - Bug Fix: Cluster commands printing of list file. [https://github.com/mothur/mothur/issues/454 #454]
 * 1.43.0 - Changes datatype for opti method to correct overflow.
+* 1.44.0 - Adds vsearch parameter so that you can specify location of vsearch executable.  [https://github.com/mothur/mothur/issues/682 #682]
+
 
 [[Category:Commands]]

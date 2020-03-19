@@ -137,10 +137,16 @@ The fastq option allows you to remove sequences from your fastq file.
 
  mothur > remove.seqs(fastq=C10Fst.fastq, accnos=temp.accnos)
 
+===contigsreport===
+The contigsreport option allows you to select sequences from your contigsreport file.
+
+
 ==Revisions==
 * 1.28.0 Added count option
 * 1.33.0 Added fastq option
 * 1.37.0 Checks for repeat sequences names and eliminates them. Allows users creating their own templates to easily remove duplicate sequences from their reference files. [https://github.com/mothur/mothur/issues/159 #159]
 * 1.40.0 - Allow for () characters in taxonomy definitions. [https://github.com/mothur/mothur/issues/350 #350] 
+* 1.44.0 - Adds contigsreport option.  [https://github.com/mothur/mothur/issues/660 #660]   
+* 1.44.0 - Fixes bug with remove.seqs not removing empty groups from the count table. [https://github.com/mothur/mothur/issues/675 #675]   
 
 [[Category:Commands]]

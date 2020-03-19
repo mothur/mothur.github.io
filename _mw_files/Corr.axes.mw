@@ -47,5 +47,6 @@ The numaxes parameter allows you to select the number of axes you would like to 
 * 1.24.0 - added p_values.
 * 1.25.0 - fixed OTU labels.
 * 1.40.0 - Speed and memory improvements for shared files. [https://github.com/mothur/mothur/issues/357 #357] , [https://github.com/mothur/mothur/issues/347 #347] 
+* 1.44.0 - Fixes corr.axes bug when metadata files contain zeroed columns.
 
 [[Category:Commands]]

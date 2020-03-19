@@ -9,3 +9,5 @@ The taxonomy file is created by the [[classify.seqs]] command.  It is a 2 column
  GQY1XT001CNF2P	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(99);"Bacteroidales"(99);"Porphyromonadaceae"(99);unclassified;
  GQY1XT001CJMDA	Bacteria(100);"Bacteroidetes"(98);"Bacteroidia"(87);"Bacteroidales"(87);unclassified;unclassified;
  ...
+
+[[Category:FileTypes]]

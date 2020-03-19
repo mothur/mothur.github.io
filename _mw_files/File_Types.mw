@@ -10,6 +10,7 @@ Mothur's file types and formats:
 * [[Sabund_file | Sabund File]]
 * [[Shared_file | Shared File]]
 * [[Relabund_file | Relative Abundance File]]
+* [[Clr_file | Centered Log Ratio File]]
 * [[Taxonomy_File | Taxonomy File]]
 * [[Constaxonomy_file | Consensus Taxonomy File]]
 * [[Oligos_File | Oligos File]]

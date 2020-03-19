@@ -16,9 +16,9 @@ The resulting alignment in the amazon.unique.filter.fasta file will be 2305 char
  Length of the original alignment: 7682
  Number of sequences used to construct filter: 96
 
-You can also enter multiple files to filter together.  You do this by separating the fasta files with dashes. Mothur creates a filter and filters the sequences as if they were all in the same file, but outputs separate .filtered.fasta files.
+You can also enter multiple files to filter together.  You do this by separating the fasta files with '|' characters. Mothur creates a filter and filters the sequences as if they were all in the same file, but outputs separate .filtered.fasta files.
 
- mothur > filter.seqs(fasta=amazon.unique.align-core_set_aligned.imputed.fasta)
+ mothur > filter.seqs(fasta=amazon.unique.align|core_set_aligned.imputed.fasta)
 
 ==Options==
 ===vertical===
@@ -120,5 +120,6 @@ The processors parameter allows you to run the command with multiple processors.
 * 1.24.0 - Paralellized for Windows.
 * 1.25.0 - When run with "current", it generated ".filter" and not "filename.filter" file. 
 * 1.40.0 - Rewrite of threaded code. Default processors=Autodetect number of available processors and use all available.
+* 1.44.0 - Changes filter.seqs fasta file deliminator from '-' to '|' to allow for '-''s in filenames.
 
 [[Category:Commands]]

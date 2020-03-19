@@ -343,3 +343,6 @@ _mw_files/Whittaker.mw
 _mw_files/Workshop.mw
 _mw_files/Workshops.mw
 _mw_files/Write.paper.mw
+_mw_files/Clr_file.mw
+_mw_files/Make.clr.mw
+_mw_files/Sra.info.mw

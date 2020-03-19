@@ -102,7 +102,7 @@ The oligos option takes a file that can contain the sequences of the paired prim
 These parameters are used to allow differences in the barcode and primers. pdiffs is maximum number of differences to the primer sequence, default=0. bdiffs is maximum number of differences to the barcode sequence, default=0.  tdiffs is maximum total number of differences to the barcode and primer (default to pdiffs + bdiffs). To clarify, the make.contigs command with pdiffs=2 sets the total allowed primer diffs to 2.  Mothur will allow for a max of 2 diffs on the forward read and 2 diffs on the reverse read, but the total number of primer diffs cannot exceed 2.  This means if you have a read with 2 diffs on the forward and 2 diffs on the reverse, the total primer diffs are 4, and the read would be scrapped.
 
 ===checkorient===
-If you are running the make.contigs command with paired barcodes or primers, you can use the checkorient parameter. When checkorient=t and mothur can't find the barcodes and primers, it will search the reverse compliment. The default is false.
+If you are running the make.contigs command with paired barcodes or primers, you can use the checkorient parameter. When checkorient=t and mothur can't find the barcodes and primers, it will search the reverse compliment. The default is true.
 
 ===oligos scrap code meanings===
 When you run mothur with an oligos file and the barcodes and or primers are not found mothur will assign the read to the *scrap file. Mothur includes scrap codes to indicate why the read failed. Let's look at an example:
@@ -186,5 +186,6 @@ The assembled quality scores outputted by mothur '''cannot''' be used for downst
 * 1.43.0 - Adds qfile option to make.contigs. [https://github.com/mothur/mothur/issues/650 #650]
 * 1.43.0 - Adds auto decompress feature to make.contigs if gz read fails. [https://github.com/mothur/mothur/issues/634 #634] 
 * 1.43.0 - Windows users can now run make.contigs with *.gz files.
+* 1.44.0 - Improves mothur's checkorient option in make.contigs. Also sets checkorient=t by default.
 
 [[Category:Commands]]

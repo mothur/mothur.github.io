@@ -39,11 +39,15 @@ The groups parameter allows you to select groups to create files for. For exampl
 ===flow===
 The flow parameter is used to input your flow file.
 
+===processors===
+The processors option enables you to accelerate the parsing by using multiple processors. Default processors=Autodetect number of available processors and use all available. 
+
 ==Revisions==
 * 1.28.0 - Added count parameter
 * 1.32.0 - Bug Fix: not splitting properly with a count file.
 * 1.40.0 - Adds flow parameter.
 * 1.42.0 - Adds fastq parameter. [https://github.com/mothur/mothur/issues/499  #499] 
 * 1.43.0 - Adds list parameter. [https://github.com/mothur/mothur/issues/624  #624] 
+* 1.44.0 - Adds processors parameter. [https://github.com/mothur/mothur/issues/685  #685] 
 
 [[Category:Commands]]

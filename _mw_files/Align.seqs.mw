@@ -133,13 +133,13 @@ Can't find your question? Please feel free to ask questions on our forum, https:
 
 ===Common Issues===
 
-# '''...template is not aligned, aborting. What do I do?'''  Mothur requires the reference file to be aligned to generate aligned sequences. You can download mothur's aligned silva references here, https://mothur.org/wiki/Silva_reference_files. For ITS sequences, see 'how to' below.
+# '''...template is not aligned, aborting. What do I do?'''  Mothur requires the reference file to be aligned to generate aligned sequences. You can download mothur's aligned silva references [https://mothur.org/wiki/Silva_reference_files here ]. For ITS sequences, see 'how to' below.
 # '''...xxx of your sequences generated alignments that eliminated too many bases... What does this mean?''' By default, mothur will align the reverse compliment of your sequences when the alignment process removes more than 50% of the bases indicating the read may be flipped. This process assembles the best possible alignment, and downstream analysis will remove any poor quality reads remaining.
 
 ===How To===
 
 # '''How do I 'align' ITS sequences?''' You really can't do an alignment because there isn't positional homology. You can use the pre.cluster and pairwise.seqs commands to generate a distance matrix from unaligned sequences.
-# '''How do I create a custom reference for the region I am studying?''' You can tailor your reference using this method: http://blog.mothur.org/2016/07/07/Customization-for-your-region/.
+# '''How do I create a custom reference for the region I am studying?''' You can tailor your reference using [http://blog.mothur.org/2016/07/07/Customization-for-your-region/ this method].
 
 ==Revisions==
 * 1.22.0 Added processors option for Windows users.

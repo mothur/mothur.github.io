@@ -16,14 +16,21 @@ Going forward we have many new ideas and are anxious to get them out to you.  So
 * added average neighbor and nearest neighbor methods to [[hcluster]] command
 
 ==New features==
-* mothur now allows for comments in fasta files in the following format, which will make analyzing output from the RDP easier
+* mothur now allows for comments in fasta files in the following format, which will make analyzing output from the RDP easier:
+
+  >#=GC_SS_cons
+  ::::::::<<<<<_______>>>>>,{{{{-{{{{{{,{{{{{{{{{-.---{{{-.{{.{.,,...
+  >FYV22AL02GBAKV
+  ------------------------------------------------.-------.--.-.--...
+ The sequence =GC_SS_cons is ignored and only FYV22AL02GBAKV is read in.
+
 * added flip and threshold parameters as well as a progress indicator to [[align.seqs]] command.
 * added list parameter to [[list.seqs]], [[get.seqs]] and [[remove.seqs]] commands.
 * added probs parameter to the [[classify.seqs]] command, so you can choose not to report the confidence scores with the bayesian method.
 * added iters and name parameters to [[classify.seqs]] command.
 * added distance search method to [[classify.seqs]]
 * added sorted parameter to [[get.oturep]] command, so the output can be sorted by sequence name, OTU number, OTU size, or group. The default is no sorting.
-* added large parameter to [[get.oturep]] command, so if your distance matrix is too large to fit in ram you can still run the command.
+* added large parameter to [[get.oturep]] command, so if your distance matrix is too large to fit in ram you can still run the command. 
 * removed the groups parameter from [[get.sharedseqs]] and in its place added the unique and shared parameters.
 * added file checking to read.dist to fix error that occured in the libshuff command if the files did not match.
 * you can now use a distance matrix as input for the [[heatmap.sim]] command.

@@ -1,3 +1,5 @@
+==Default mode==
+
 When you start mothur, you will see a screen that looks like this:
 
  mothur v1.0
@@ -24,7 +26,7 @@ All of your commands will be entered from the mothur prompt.  You can get a list
 
  mothur > align.seqs(help)
 
-Would give you the help file information for the read.dist() command.
+Would give you the help file information for the [[align.seqs]] command.
 
 
 If you want to quit mothur you simply enter:
@@ -38,6 +40,58 @@ or
 With the exception of quit, all commands require you to provide an open and close parentheses.  If you supply any options there cannot be a space between the option, the '=', and the option setting.  To separate options, use a comma.  For example:
 
  mothur > cluster(method=furthest, cutoff=0.10)
+
+==Environment Variables==
+Environment variables can be used to generalize variables for reuse. Let's add environment variables to our analysis.
+
+===Format===
+The format of environmental variables is [tag]=[value]. For example, let's create a environment variable for the processors option.
+
+ PROC=12
+
+Mothur will automatically pull in the systems environment variable. For example you can set variables in bash and then run mothur:
+
+ MothurMac-3% export REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release
+ MothurMac-3% export ALIGNREF=silva.v4.fasta
+ MothurMac-3% export TAXONREF_FASTA=trainset9_032012.pds.fasta
+ MothurMac-3% export TAXONREF_TAX=trainset9_032012.pds.tax
+ MothurMac-3% export CONTAMINENTS=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota
+ MothurMac-3% export LOGNAME=MiSEQ_SOP_mouse_03032020
+ MothurMac-3% export DATA=/Users/sarahwestcott/Desktop/MiSeq_SOP
+ MothurMac-3% export TYPE=gz
+ MothurMac-3% export PROC=12
+ MothurMac-3% ./mothur 
+ 
+ Type 'quit()' to exit program
+ 
+ [NOTE]: Setting random seed to 19760620.
+ 
+ mothur >  set.logfile(name=$LOGNAME)
+ 
+ mothur > set.dir(input=$DATA)
+ Mothur's directories:
+ inputDir=/Users/sarahwestcott/Desktop/MiSeq_SOP
+
+
+===Use===
+The '$' symbol indicates to mothur that the value is an environment variable to be replaced with the actual value at run time. For example:
+
+ PROC=12
+ make.contigs(file=current, processors=$PROC)
+
+is equivalent to 
+
+ make.contigs(file=current, processors=12)
+
+You can create an environment variable for anything you wish as well as combining variables. For example:
+
+ mothur > REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release
+ Setting environment variable REFERENCE_LOCATION to /Users/sarahwestcott/Desktop/release
+ 
+ mothur > ALIGNREF=silva.v4.fasta
+ Setting environment variable ALIGNREF to silva.v4.fasta
+ 
+ mothur > align.seqs(fasta=my.fasta, reference=$REFERENCE_LOCATION/$ALIGNREF)
 
 
 Alternatively, If you know what commands you will be running, you can use either the [[command line mode]] or [[batch mode]].

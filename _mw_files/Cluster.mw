@@ -189,6 +189,11 @@ To obtain the OTUs for more than one cutoff using the opti, agc or dgc method, r
  4	0	0.05	623	0.05	133899	6887991	30685	59531	0.692235	0.995565	0.81356	0.991431	0.81356	0.987315	0.744092	0.74801	
  5	1	0.05	623	0.05	133916	6888006	30670	59514	0.692323	0.995567	0.813654	0.991434	0.813654	0.98732	0.744185	0.748101	
  
+===vsearch===
+The vsearch parameter allows you to specify the name and location of your vsearch executable for use with the agc and doc methods. By default mothur will look in your path and mothur's executable location.  You can set the vsearch location as follows: vsearch=/usr/bin/vsearch.
+
+ mothur > cluster(fasta=final.fasta, count=final.count_table, vsearch=/usr/bin/vsearch.2.11.1,  method=agc)
+
 
 ===precision===
 If you want greater precision, there is a precision option in the cluster() command:
@@ -300,5 +305,6 @@ The variability is caused by the randomization of the sequences.
 * 1.41.0 - Adds multiple cutoffs to cluster command for opti, agc and dgc. [https://github.com/mothur/mothur/issues/305 #305]
 * 1.41.0 - Nearest neighbor bug fix.
 * 1.43.0 - Changes datatype for opti method to correct overflow.
+* 1.44.0 - Adds vsearch parameter so that you can specify location of vsearch executable.  [https://github.com/mothur/mothur/issues/682 #682]
 
 [[Category:Commands]]

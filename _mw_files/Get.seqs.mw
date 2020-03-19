@@ -138,6 +138,9 @@ The qfile option allows you to select sequences from your quality file, and can 
 ===fastq option===
 The fastq option allows you to select sequences from your fastq file.
 
+===contigsreport===
+The contigsreport option allows you to select sequences from your contigsreport file.
+
 
 ==Revisions==
 * 1.28.0 Added count option
@@ -146,5 +149,6 @@ The fastq option allows you to select sequences from your fastq file.
 * 1.33.0 Added fastq option
 * 1.37.0 Checks for repeat sequences names and eliminates them. Allows users creating their own templates to easily remove duplicate sequences from their reference files. [https://github.com/mothur/mothur/issues/159 #159]
 * 1.40.0 - Allow for () characters in taxonomy definitions. [https://github.com/mothur/mothur/issues/350 #350] 
+* 1.44.0 - Adds contigsreport option.  [https://github.com/mothur/mothur/issues/660 #660]   
 
 [[Category:Commands]]
