@@ -33,11 +33,11 @@ included in the March 2009 release of mothur v.1.1.0\...
 -   Don't need a space between comma and options
 -   Don't need to put a quit() command at the end of a [ batch
     file](Batch_mode)
--   The [ collect.single](collect.single#The_calc_option), [
-    collect.shared](collect.shared#The_calc_option), [
-    rarefaction.single](rarefaction.single#The_calc_option),
-    [ summary.single](summary.single#The_calc_option) and [
-    shared.summary](summary.shared#The_calc_option) all use
+-   The [ collect.single](collect.single#calc), [
+    collect.shared](collect.shared#calc), [
+    rarefaction.single](rarefaction.single#calc),
+    [ summary.single](summary.single#calc) and [
+    shared.summary](summary.shared#calc) all use
     the calc parameter.
 -   All estimator names are lowercase.
 -   Only filename parameters persist between commands, all others return
@@ -49,24 +49,21 @@ included in the March 2009 release of mothur v.1.1.0\...
 -   [parsimony](parsimony)
 -   [unifrac.weighted](unifrac.weighted)
 -   [unifrac.unweighted](unifrac.unweighted)
--   The [ shared
-    option](read.otu#Inputting_shared_data_for_multiple_samples)
-    to the read.otu command
+-   The shared option to the read.otu command
 
 ## Minor Feature Additions
 
 -   Ability to set comparisons for the [
-    collect.shared](collect.shared#The_groups_option), [
-    rarefaction.shared](rarefaction.shared#The_groups_option),
-    and [ summary.shared](summary.shared#The_groups_option)
+    collect.shared](collect.shared#groups), [
+    rarefaction.shared](rarefaction.shared#groups),
+    and [ summary.shared](summary.shared#groups)
     commands.
 -   Ability to define the threshold for "abundant" species in ACE
     estimator as something other than 10 in the [
-    collect.single](collect.single#The_abund_option), [
-    summary.single](summary.single#The_abund_option), and [
-    rarefaction.single](rarefaction.single#The_abund_option)
+    collect.single](collect.single#abund), [
+    summary.single](summary.single#abund), and [
+    rarefaction.single](rarefaction.single#abund)
     commands.
--   Added the [get.line](get.line),
-    [get.group](get.group), and
+-   Added the get.line, [get.group](get.group), and
     [get.label](get.label) commands so basic information
     about data files can be accessed through mothur.

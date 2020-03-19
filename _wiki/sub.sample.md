@@ -20,7 +20,7 @@ This generates the file esophagus.subsample.fasta.
 
 ## name option
 
-If you have a names file associated with the fasta file you may use the
+If you have a name file associated with the fasta file you may use the
 name option:
 
     mothur > sub.sample(fasta=esophagus.unique.fasta, name=esophagus.names)
@@ -163,7 +163,7 @@ times. Default=f.
 ## Revisions
 
 -   1.22.0 Improved speed of **sub.sample** command on list and fasta files.
--   1.22.0 Now outputs a unique fasta file and names file.
+-   1.22.0 Now outputs a unique fasta file and name file.
 -   1.28.0 Added count option.
 -   1.30.0 Added taxonomy option.
 -   1.40.0 - Speed and memory improvements for shared files.

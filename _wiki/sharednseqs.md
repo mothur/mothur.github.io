@@ -99,5 +99,3 @@ Running\...
     0.10   forest  pasture     98.000000
 
 These are the same values that we found above for a cutoff of 0.10.
-
-[recover deleted files](https://www.datarecoveryreview.net)

@@ -30,7 +30,7 @@ which should look like:
 
 ### name
 
-The name parameter allows you add a names file with your taxonomy file.
+The name parameter allows you add a name file with your taxonomy file.
 
     mothur > summary.tax(taxonomy=stool.trim.unique.good.filter.unique.precluster.pick.rdp.taxonomy, name=stool.trim.unique.good.filter.unique.precluster.pick.names)
 

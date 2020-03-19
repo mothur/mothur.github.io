@@ -21,7 +21,7 @@ at the Wellcome Trust Sanger Institute:
 > microbiome analyses. BMC Biology. https://www.biomedcentral.com/1741-7007/12/87
 
 To summarize, Salter and colleagues noticed some odd results in a [previous
-study](https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0038271)
+study](https://doi.org/10.1371/journal.pone.0038271)
 and started to worry that some of the differences they observed were due to
 differences in the contaminants that were present in the DNA extraction kits
 that they used. They then went and diluted a control DNA into negative
@@ -35,7 +35,7 @@ you might want to go and check out as well...
 
 * [*The Scientist*](https://www.the-scientist.com/?articles.view/articleNo/41421/title/DNA-Extraction-Kits-Contaminated/)
 * [*National Geographic*](https://phenomena.nationalgeographic.com/2014/11/11/contaminomics-why-some-microbiome-studies-may-be-wrong/)
-* [*Science News*](https://news.sciencemag.org/biology/2014/11/contamination-plagues-some-microbiome-studies)
+* [*Science News*](https://dx.doi.org/10.1126/science.346.6211.801)
 * [*Nature*](https://www.nature.com/news/microbiome-science-threatened-by-contamination-1.16327)
 
 I talked with Kerr Grens for her article in *The Scientist* and she boiled our

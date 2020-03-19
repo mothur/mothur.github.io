@@ -103,7 +103,7 @@ will be the confidence interval for the estimator, not the estimator's
 
 ### abund
 
-By default the [ace estimator](ACE_estimator) uses 10 as the
+By default the [ace estimator](ace) uses 10 as the
 cutoff between OTUs that are rare and abundant. So if an OTU has more
 than 10 individuals in it, then it is considered abundant. This is
 really just an empirical decision and we are merely following the lead

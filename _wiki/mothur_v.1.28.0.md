@@ -11,7 +11,7 @@ sequence data, please let us know, we'd be happy to have you test our
 new functions. Briefly, we have a new
 [sff.multiple](sff.multiple) command that makes life easier
 for those that get multiple sff files from their sequence provider.
-We've also updated the [schloss sop](Schloss_SOP) to reflect
+We've also updated the [454 SOP](454_SOP) to reflect
 some of the recent changes we've made to mothur over the past several
 releases.
 
@@ -133,7 +133,7 @@ advertisements in the mothur window..
 
 ## Changes to wiki
 
--   Updated [schloss sop](Schloss_SOP)
+-   Updated [454 SOP](454_SOP)
 -   [count\_file](Count_File) which is a combination of the
     name and group file's information. Uses less memory and runs faster
     with mothur's commands.

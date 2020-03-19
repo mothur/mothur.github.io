@@ -123,11 +123,8 @@ Added common command line options. Can now use -q or \--quiet, -h or
 -   [make.contigs](make.contigs) - skipping groups if invalid
     fastq files provided. -
     [https://forum.mothur.org/viewtopic.php?f=4&t=2571](https://forum.mothur.org/viewtopic.php?f=4&t=2571)
--   [make.contigs](make.contigs) - bug that required barcodes
-    to process. -
-    [https://forum.mothur.org/viewtopic.php?p=10649&sid=7b2d03a6ee3d24128a696aff59c09e87](https://forum.mothur.org/viewtopic.php?p=10649&sid=7b2d03a6ee3d24128a696aff59c09e87)
--   [metastats](metastats) - infinite loop. -
-    [https://forum.mothur.org/posting.php?mode=reply&f=4&t=3270](https://forum.mothur.org/posting.php?mode=reply&f=4&t=3270)
+-   [make.contigs](make.contigs) - bug that required barcodes to process
+-   [metastats](metastats) - infinite loop.
 -   [pcr.seqs](pcr.seqs) - When sequence length \< primer
     Length + pdiffs, basic\_string error occurred. Rare case.
 -   mothur will now read over null strings to avoid pesky sequence not

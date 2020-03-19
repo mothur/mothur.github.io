@@ -99,7 +99,7 @@ distances (i.e. 96x95/2 = 4560). With the cutoff only 56 distances are
 saved. The savings can be substantial when there are a large number of
 distances. The actual cutoff used by the command is 0.005 higher than
 the value that is set to allow for rounding in the [ clustering
-steps](cluster#The_precision_option).
+steps](cluster#precision).
 
 ### processors
 

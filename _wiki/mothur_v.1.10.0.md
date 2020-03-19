@@ -29,13 +29,13 @@ incorporate good ideas into mothur!
 -   added [set.logfile](set.logfile) command - allows user to
     set logfile name and/or append the log to an existing file
 -   added [phylo.diversity](phylo.diversity) command -
-    [phylogenetic diversity](phylogenetic_diversity)
+    [phylogenetic diversity](phylo.diversity)
 -   added [make.group](make.group) command -
     [https://forum.mothur.org/viewtopic.php?f=3&t=385&sid=6260346b9aab4bf74e20f667fd135cb4](https://forum.mothur.org/viewtopic.php?f=3&t=385&sid=6260346b9aab4bf74e20f667fd135cb4)
 -   added [chop.seqs](chop.seqs) command -
     [https://forum.mothur.org/viewtopic.php?f=3&t=399&sid=ecc7b9a7e046fb48f5a5345713ef3fd2](https://forum.mothur.org/viewtopic.php?f=3&t=399&sid=ecc7b9a7e046fb48f5a5345713ef3fd2)
 -   added [clearcut](clearcut) command - wrapper for
-    [clearcut](https://bioinformatics.hungry.com/clearcut/)
+    [clearcut](https://github.com/ibest/clearcut/)
 
 ## Feature updates
 
@@ -56,8 +56,8 @@ incorporate good ideas into mothur!
     processing into 2 parts so distance and list files are not in memory
     at the same time as fasta, name and group files.
 -   added hard parameter to [cluster](cluster),
-    [hcluster](hcluster) and
-    [read.dist](read.dist) for a hard cutoff (hard=T), where
+    hcluster and
+    read.dist for a hard cutoff (hard=T), where
     the cutoff is 0.03, not 0.0349, etc.
 -   [remove.seqs](remove.seqs) can remove sequences from
     multiple files at once.

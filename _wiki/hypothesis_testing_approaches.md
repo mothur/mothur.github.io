@@ -26,7 +26,7 @@ index](/wiki/tags#commands).
 
 -   [parsimony](parsimony) - the parsimony test, which was
     previously available through
-    [treeclimber](https://schloss.micro.umass.edu/software/treeclimber.html)
+    [treeclimber](https://github.com/mothur/TreeClimber)
 -   [unifrac.unweighted](unifrac.unweighted) - the unweighted
     Unifrac algorithm
 -   [unifrac.weighted](unifrac.weighted) - the weighted

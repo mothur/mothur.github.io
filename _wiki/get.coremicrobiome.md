@@ -5,8 +5,7 @@ redirect_from: '/wiki/Get.coremicrobiome.html'
 ---
 The **get.coremicrobiome** command
 determines the fraction of OTUs that are found in varying numbers of
-samples for different minimum relative abundances. To run this tutorial
-download, [ example files ](https://mothur.s3.us-east-2.amazonaws.com/wiki/_temp.job2.shared.zip)
+samples for different minimum relative abundances.
 
 ## Default Settings
 
@@ -181,5 +180,3 @@ like, and are also separated by dashes.
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.40.3 - Bug Fix: segfault with shared option.
     [\#445](https://github.com/mothur/mothur/issues/445)
-
-

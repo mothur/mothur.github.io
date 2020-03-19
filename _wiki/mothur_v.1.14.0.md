@@ -10,7 +10,7 @@ This is update has a number of new commands and options that are just
 plain awesome. I'll call your attention to three that we are
 particularly excited about. The first is a command for the complete
 pipeline that the Schloss lab uses to process their own data
-([pipeline.pds](pipeline.pds)). This command is written so
+(pipeline.pds). This command is written so
 that you can modify the pipeline to your lab's unique needs. The second
 is a wrapper for the [metastats](metastats) code that was
 generously provided by Mihai Pop's research group. The third will [
@@ -43,7 +43,7 @@ good social skills, 2) knowledge of some programming language
 skills.
 
 As always, happy writing and let us know if we can be of assistance.
-Most importantly, keep the [six packs](https://leinie.com/red.html)
+Most importantly, keep the [six packs](https://leinie.com)
 coming\...
 
 Pat Schloss
@@ -51,7 +51,7 @@ Pat Schloss
 
 ## New commands
 
--   [pipeline.pds](pipeline.pds) - an implementation of
+-   pipeline.pds - an implementation of
     Pat's pipeline in a single command, plus the ability to customize
 -   [metastats](metastats) - a wrapper for the metastats
     program from Mihai Pop's research group

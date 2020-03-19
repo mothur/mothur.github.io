@@ -174,7 +174,7 @@ cutoff of 0.03 was 136.
 Obviously many sequences are shared between the three patients. To
 estimate the overlap you can use
 [collect.shared](collect.shared) and
-[collect.summary](collect.summary). Here we will read in the
+[summary.shared](summary.shared). Here we will read in the
 shared file and calculate the shared richness, Jaccard coefficient, and
 thetaYC value between the three patients:
 
@@ -265,8 +265,8 @@ community structures.
 
 The [ weighted unifrac](unifrac.weighted) test measures the
 fraction of a tree's branch length that can be ascribed to each
-community. A similar analysis is available through the Knight Lab
-website [2](https://bmf2.colorado.edu/unifrac/index.psp). Similar to the
+community. A similar analysis was previously available through the Knight Lab
+website. Similar to the
 parsimony analysis, you first need to read in a tree and group file:
 
     mothur > unifrac.weighted(tree=esophagus.tree, group=esophagus.good.groups)
@@ -287,8 +287,8 @@ significantly different from each other.
 Similar to the [ weighted unifrac](unifrac.weighted) test,
 the [ unweighted unifrac](unifrac.unweighted) test measures
 the fraction of a tree's branch length that is unique to each group
-represented in the tree. A similar analysis is available through the
-Knight Lab website [3](https://bmf2.colorado.edu/unifrac/index.psp).
+represented in the tree. A similar analysis was previously available through the
+Knight Lab website.
 Similar to the parsimony analysis, you first need to read in a tree and
 group file:
 

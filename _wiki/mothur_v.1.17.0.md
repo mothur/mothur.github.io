@@ -29,9 +29,7 @@ that have brought these problems to our attention. If you know of anyone
 using mothur that isn't receiving these emails, please spread the word.
 
 Thanks to all of you that have completed our survey. If you haven't
-[completed it
-yet](https://www.mothur.org/limesurvey/index.php?sid=13611&lang=en),
-there is still time\...
+completed it yet, there is still time\...
 
 ## New commands
 
@@ -51,7 +49,7 @@ there is still time\...
 
 ## Bug fixes
 
--   [catchall](catchall) command not finding files -
+-   Catchall command not finding files -
     [https://forum.mothur.org/viewtopic.php?f=3&t=1114](https://forum.mothur.org/viewtopic.php?f=3&t=1114)
 -   [sub.sample](sub.sample) command that caused mothur to
     stall if size was close to total number of sequences in file.

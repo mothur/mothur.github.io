@@ -34,7 +34,7 @@ any questions.
 
 -   added [split.abund](split.abund) command - split sequence
     names into abundant and rare categories based on how many sequences
-    they represent in a names file
+    they represent in a name file
 -   added [classify.otu](classify.otu) command - get a
     consensus taxonomy for each OTU
 

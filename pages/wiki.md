@@ -7,7 +7,7 @@ redirect_from: /wiki/Main_Page
 
 Welcome to the website for the **mothur** project,
 initiated by [Dr. Patrick Schloss](https://www.mothur.org) and his
-[software development team](software_development_team) in the
+software development team in the
 [Department of Microbiology &
 Immunology](https://www.med.umich.edu/microbio/) at [The University of
 Michigan](https://www.umich.edu). This project seeks to develop a single
@@ -23,7 +23,7 @@ expertise, let us know and we\'ll add it to the queue of features we
 would like to add. Our current goal is to release a new iteration of the
 project monthly.
 
--   **[Download mothur](Download_mothur)** - If you want a
+-   **[Download mothur](https://github.com/mothur/mothur/releases/latest)** - If you want a
     copy of mothur, this is the link for you. But first, you must be a
     registered wiki user and be logged in so that we can inform you of
     any important updates.
@@ -44,17 +44,7 @@ project monthly.
 <!-- -->
 
 -   **Keep up to date on future [workshops](workshops)** -
-    Dr. Schloss offers several workshops a year near Detroit, Michigan
-
-<!-- -->
-
--   **[Collaboration](Collaboration)** - Are you pulling
-    together a grant proposal and don\'t think you can sell your
-    abilities to do computational microbial ecology? Do you have a chunk
-    of data that you don\'t know what to do with? We are happy to put
-    together subcontract quotes to meet your needs. [ Email
-    Pat](Special:EmailUser/Pschloss) to get the conversation
-    started.
+    Dr. Schloss offers several workshops a year covering mothur and R
 
 <!-- -->
 

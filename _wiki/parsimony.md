@@ -3,8 +3,8 @@ title: 'parsimony'
 tags: 'commands'
 redirect_from: '/wiki/Parsimony'
 ---
-The **parsimony** command implements the [parsimony
-method](parsimony_method) (aka P-test), which was previously
+The **parsimony** command implements the parsimony
+method (aka P-test), which was previously
 implemented in TreeClimber and is also available in MacClade and on the
 UniFrac website. The **parsimony** method is a generic test that describes
 whether two or more communities have the same structure. The
@@ -298,5 +298,3 @@ description of the method by [Maddision & Slatkin
 -   1.33.0 Improved work balance load between processors.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
-
-

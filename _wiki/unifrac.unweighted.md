@@ -7,9 +7,7 @@ The **unifrac.unweighted** comand
 implements the [unweighted UniFrac
 algorithm](unweighted_UniFrac_algorithm). The
 [unifrac.weighted](unifrac.weighted) command implements the
-weighted version of the command. Both of these methods are available
-through the [unifrac](https://bmf2.colorado.edu/unifrac) website. The
-UniFrac methods are generic tests that describes whether two or more
+weighted version of the command. The UniFrac methods are generic tests that describes whether two or more
 communities have the same structure. The significance of the test
 statistic can only indicate the probability that the communities have
 the same structure by chance. The value does not indicate a level of
@@ -221,5 +219,3 @@ in your sequence or group names.
 -   1.41.0 Fixes crashes with subsample option.
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
-
-

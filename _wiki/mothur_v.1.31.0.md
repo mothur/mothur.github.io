@@ -6,19 +6,18 @@ We are very happy to announce the release of [mothur
 v.1.31.0](mothur_v.1.31.0) and have a number of exciting new
 features to tell you about. First, we have re-implemented the SparCC
 program first described by [Friedman and
-Alm](https://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002687).
+Alm](https://dx.doi.org/10.1371/journal.pcbi.1002687).
 It calculates correlation coefficients that are not sensitive to the
 hideous effects of relative abundance data. You can run it with the
 [sparcc](sparcc) command. Second, we have implemented the
 approach described by [Holmes and
-colleagues](https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0030126)
+colleagues](https://dx.doi.org/10.1371/journal.pone.0030126)
 for assigning samples to metacommunities using Dirichlet multinomial
-mixture models that we are calling
-[get.metacommunity](get.metacommunity). Think of it as a
+mixture models that we are calling get.metacommunity. Think of it as a
 robust way of assigning samples to bins for doing things like finding
 enterotypes. Third, through a project carried out with Google's Summer
 of Code we have created the
-[classify.shared](classify.shared) command that currently
+classify.shared command that currently
 implements a feature selection algorithm using the random forest
 algorithm. It's faster and more accurate than the more commonly used R
 packages. Finally, since people are staring to develop their own mock
@@ -44,13 +43,13 @@ able to help so many people do great research!
 
 ## New commands
 
--   [get.metacommunity](get.metacommunity) - assign samples
+-   [get.metacommunity](get.communitytype) - assign samples
     to metacommunities using the algorithm of [Holmes and
-    colleagues](https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0030126)
+    colleagues](https://dx.doi.org/10.1371/journal.pone.0030126)
 -   [sparcc](sparcc) - calculate the correlation between OTUs
     using the algorithm of [Friedman and
-    Alm](https://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1002687)
--   [classify.shared](classify.shared) - identify features
+    Alm](https://dx.doi.org/10.1371/journal.pcbi.1002687)
+-   classify.shared - identify features
     (i.e. OTUs) that allow one to distinguish between sets of
     communities using the random forest machine learning algorithm.
 -   [make.lookup](make.lookup) - create custom lookup files
@@ -109,7 +108,7 @@ able to help so many people do great research!
     sequences with keepdots=f could result in an unaligned dataset if
     primers were not found at the same locations. Added gaps to preserve
     alignment.
--   [classify.tree](classify.tree) - when names file is given
+-   [classify.tree](classify.tree) - when name file is given
     everything is unclassified -
     [https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116](https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116)
 -   [remove.groups](remove.groups)(groups=notValidGroupName,

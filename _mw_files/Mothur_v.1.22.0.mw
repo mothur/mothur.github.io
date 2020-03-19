@@ -28,7 +28,7 @@ Pat Schloss
 * [[make.shared]] - removed ordergroup parameter
 * [[sub.sample]] - improved speed for sampling of fasta and list files
 * [[rarefaction.single]] - single output file for each rarefaction calculator when running with a shared file.
-* [[sub.sample]] - now outputs a unique fasta file and new names file (http://www.mothur.org/forum/viewtopic.php?f=4&t=1299)
+* [[sub.sample]] - now outputs a unique fasta file and new names file (https://www.mothur.org/forum/viewtopic.php?f=4&t=1299)
 * [[unique.seqs]] - name file prints in same order as fasta file
 * [[summary.seqs]] - added a column indicating the number of sequences represented by the different cutoffs in the output
 * [[summary.seqs]] - added mean values to  output

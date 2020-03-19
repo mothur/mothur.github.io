@@ -26,7 +26,7 @@ the files that will be generated in this exercise.
 The V6 sequence tags are available from the author's [MBL
 website](https://jbpc.mbl.edu/research_supplements/g454/20060412-private/)
 as a zip file. You can see the metadata in [Table
-1](https://www.pnas.org/content/103/32/12115/T1.expansion.html) of their
+1](https://www.pnas.org/highwire/markup/232343/expansion) of their
 paper. The decompressed folder will be called **supplemental** - rename
 it to something more meaningful like "sogin". Opening the sogin folder
 you will see two folders - original-data and updated-20080221. The
@@ -163,7 +163,7 @@ more than 200 hrs to run \[ thanks mothur! \].
 Now we want to assign these sequences to OTUs for every possible
 distance up to and including a distance of 0.10. Of course, we want to
 include the actual frequency information for the sequences. To do the
-clustering run the [read.dist](read.dist) and
+clustering run the read.dist and
 [cluster](cluster) commands:
 
     mothur > read.dist(column=sogin.unique.filter.dist, name=sogin.names)
@@ -187,7 +187,7 @@ OTU.
 ## Single sample analysis
 
 We would like to generate an updated version of [Table
-3](https://www.pnas.org/content/103/32/12115/T3.expansion.html) from the
+3](https://www.pnas.org/highwire/markup/232346/expansion) from the
 Sogin study. To do this we need to [ read in the OTU
 data](read.otu) and then use the
 [summary.single](summary.single) command to summarize the
@@ -246,7 +246,7 @@ The largest sample in the Sogin data set was FS396. Originally represented
 by 17,666 sequences, the updated data set contains 83,399 sequences.
 This data set was used to generate [rarefaction](rarefaction)
 curves in [Fig.
-2](https://www.pnas.org/content/103/32/12115/F2.expansion.html) of the
+2](https://www.pnas.org/content/pnas/103/32/12115/F2.large.jpg) of the
 Sogin study. We did not observe any differences between the OTUs that
 were calculated for the unique, 0.01, and 0.02 OTU definitions. As
 mentioned above, this is probably due to muscle doing a poor job of
@@ -326,13 +326,13 @@ richness values and we used the Yue & Clayton similarity value, [
 This will generate two newick-formatted tree files -
 sogin.unique.filter.fn.thetayc.0.10.tre and
 sogin.unique.filter.fn.jest.0.10.tre. Using
-[treeviewx](https://darwin.zoology.gla.ac.uk/~rpage/treeviewx/), these
+[FigTree](https://github.com/rambaut/figtree/), these
 dendrograms can be displayed and exported as SVG image files. Again,
 these SVG files can be edited in a program like Adobe Illustrator. Here
 we present the dendrograms as exported from TreeViewX.
 
-![ 300px](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.jest.tree.png)![
-300px](sogin.thetayc.tree.png "fig: 300px")
+![ Jaccard (esimated) dendrogram ]({{site.bucket}}/wiki/sogin.jest.tree.png){: width="300"}
+![ TheatYC dendrogram]({{site.bucket}}/wiki/sogin.thetayc.tree.png){: width="300"}
 
 ### Heatmap
 

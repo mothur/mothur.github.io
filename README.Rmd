@@ -194,30 +194,12 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 
 
 ## To do...
-* Additional files to scrap...
-	- DONE
 
-* blog
-	- DONE
-
-* general site
-	- DONE
-
-* data
-  - DONE
-
-* wiki
-	- DONE
-
-
-  * Manual fixing
-	- Tables need help
-	- Give FAQ page section headers to generate TOC, capitalize title
-	- Clear errors...
-	```
-	#https://github.com/gjtorikian/html-proofer
-	htmlproofer --assume-extension --only-4xx ./_site
-	```
+```
+#https://github.com/gjtorikian/html-proofer
+htmlproofer --assume-extension --http-status-ignore "429"  ./_site > todo.txt
+htmlproofer --assume-extension --check-html --enforce-https  ./_site > todo.txt
+```
 
 * once site is up...
 	- Google tracking code - get new code from
@@ -226,7 +208,17 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 	- connect add comments
 
 
-
 * long term
+  - Set up CI
+  - Make video showing people how to make changes
+	- Tables need help
 	- execution page
   - make separate pages for tags, create three/four column listing of tags
+	- read.dist littered throughout wiki
+	- cluster() littered throughout examples for calculators
+  - align.report_file needs help
+  - Jensen-Shannon Divergence
+	- Square root Jensen-Shannon Divergence
+	- shannonrange
+	- citation page, general update of citations for different function (more for mothur than wiki)
+	- get rid of extra files from mothur.s3

@@ -40,7 +40,7 @@ SILVA-aligned sequences.
     5,181 bacterial and archaeal sequences in it and the sequences do
     not necessarily cover the entire 16S rRNA gene.  This file was
     downloaded from the [Broad Institutes sourceforge
-    website](https://microbiomeutil.sourceforge.net) and should be used
+    website](http://microbiomeutil.sourceforge.net) and should be used
     with [chimera.slayer](chimera.slayer) or with
     [chimera.uchime](chimera.uchime). One side effect of the
     crappy greengenes alignment is that
@@ -70,10 +70,8 @@ SILVA-aligned sequences.
     alignment](https://www.mothur.org/w/images/7/72/Greengenes.alignment.zip) -
     4,938 bacterial and archaeal sequences in it and the sequences are
     "imputed" to cover the entire 16S rRNA gene. This file was
-    downloaded from the [greengenes
-    website](https://greengenes.lbl.gov/Download/Sequence_Data/Fasta_data_files/core_set_aligned.fasta.imputed)
-    and should be used (if necessary) to align sequences with
-    [align.seqs](align.seqs).
+    downloaded from the original greengenes
+    website, which is now defunct.
 -   [greengenes reference
     taxonomy](https://www.mothur.org/w/images/1/16/Greengenes.tax.tgz) -
     84,414 bacterial and archaeal sequences and their taxonomy. Pretty

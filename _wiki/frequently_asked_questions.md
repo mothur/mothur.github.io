@@ -60,7 +60,7 @@ Yes! Please see our [workshops](workshops) page for more information.
 
 ## Why is data missing for some distance levels?
 
-This should not be an issue if you are using the recommended [cluster.split](cluter.split) function.
+This should not be an issue if you are using the recommended [cluster.split](cluster.split) function.
 Once upon a time a commonly asked question was why there isn't a
 line for distance 0.XX. If you notice the previous example the distances
 jump from 0.003 to 0.006. Where are 0.004 and 0.005? mothur only outputs
@@ -102,8 +102,8 @@ File Size:
     [cluster.split](cluster.split) which divides the
     distance matrix, and clusters the smaller pieces separately. You may
     also be able to reduce the size of the original distance matrix by
-    using the commands outline in the Schloss SOP,
-    [schloss_sop](Schloss_SOP).
+    using the commands outline in the ,
+    [454_SOP](454_SOP).
 -    You should also check out [Pat's discussion](/blog/2014/Why-such-a-large-distance-matrix/) of
 problems caused by poor quality data.
 
@@ -213,16 +213,16 @@ The clearcut commands creates a phylogenetic tree that represents how
 sequences relate. The clearcut program written by Initiative for
 Bioinformatics and Evolutionary Studies (IBEST) at the University of
 Idaho. For more information about clearcut please refer to
-[https://bioinformatics.hungry.com/clearcut/](https://bioinformatics.hungry.com/clearcut/)
+[its GitHub repository](https://github.com/ibest/clearcut)
 
 The tree.shared command will generate a newick-formatted tree file that
 describes the dissimilarity (1-similarity) among multiple groups. Groups
 are clustered using the UPGMA algorithm using the distance between
 communities as calculated using any of the calculators describing the
 similarity in community [
-membership](Calculators#Similarity_in_community_membership)
+membership](calculators#similarity-in-community-membership)
 or [
-structure](Calculators#Similarity_in_community_structure).
+structure](calculators#similarity-in-community-structure).
 
 
 ## How do I know "who" is in an OTU in a shared file?
@@ -246,7 +246,7 @@ get.otulist(list=yourSubsampledListFile, label=0.03)
 ## How do I know "who" is in the OTUs represented in the Venn diagram?
 
 You can run the [get.sharedseqs](get.sharedseqs) command. Be
-sure to pay close attention to the ["unique" and "shared" parameters](http://127.0.0.1:4000/wiki/get.sharedseqs#uniquegroups--sharedgroups).
+sure to pay close attention to the ["unique" and "shared" parameters](get.sharedseqs#uniquegroups--sharedgroups).
 
 ## What are mothur's file types?
 

@@ -20,8 +20,7 @@ up on some of the features in the last release that were based on the
 work of Curtis Huttenhower, we have added the picrust and reftaxonomy
 options to [make.biom](make.biom) so that it is easier for
 mothur users to interface wihe picrust. Finally, there are a number of
-odds and ends that you'll see below [mothur v.1.33.0\#Feature
-updates](mothur_v.1.33.0#Feature_updates).
+[odds and ends](mothur_v.1.33.0#feature-updates) that you'll see below .
 
 We hope to have another release out to you in the next month or so with
 a really important new command. We have been working with the SRA at

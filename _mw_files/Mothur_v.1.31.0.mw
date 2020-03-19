@@ -17,9 +17,9 @@ Finally, a couple of important announcements.  First, Pat will be holding an R w
 * added intelligent warning in case where a group file is used were a design file was needed.
 * [[chop.seqs]] - added name, group and count parameters. If sequences are removed from your fasta file by chop.seqs, mothur will create new *.chop.names, *.chop.groups and *.chop.count_table files. - http://www.mothur.org/forum/viewtopic.php?f=5&t=2136
 * [[get.oturep]] - added method parameter. Options distance and abundance. Default=distance. - http://www.mothur.org/forum/viewtopic.php?f=5&t=2131
-* [[filter.shared]] - added rarepercent and keepties parameters (http://www.mothur.org/forum/viewtopic.php?f=5&t=2007)
+* [[filter.shared]] - added rarepercent and keepties parameters (https://www.mothur.org/forum/viewtopic.php?f=5&t=2007)
 * [[unifrac.weighted]], [[unifrac.unweighted]], [[parsimony]], [[indicator]] and [[phylo.diversity]] - parallelized for Windows.
-* [[get.lineage]] and [[remove.lineage]]- added constaxonomy and shared parameters (http://www.mothur.org/forum/viewtopic.php?f=3&t=2210)
+* [[get.lineage]] and [[remove.lineage]]- added constaxonomy and shared parameters (https://www.mothur.org/forum/viewtopic.php?f=3&t=2210)
 * [[sens.spec]] - added square phylip format
 * [[create.database]] - add count file 
 * [[pcr.seqs]]  - added primer to types oligos can read

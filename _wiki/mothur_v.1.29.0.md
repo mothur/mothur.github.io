@@ -6,8 +6,7 @@ This is an exciting day\... we are happy to announce the release of
 [mothur v.1.29.0](mothur_v.1.29.0) and the beta version of
 mothur v.2.0. The difference? The beta is our first public release of
 the GUI version of mothur that we have been developing off and on for
-almost two years now. You can play around with the [ GUI
-Tutorial](Gui_Tutorial) and send feedback to
+almost two years now. You can play around with the GUI Tutorial and send feedback to
 mothur.bugs\@gmail.com. It is built upon the command line version, which
 we continue to develop and support. Please send us your feedback
 regarding the GUI implementation and any problems and desires you might
@@ -22,7 +21,7 @@ there are other parameters you can think of, let us know. Second,
 although it's been in mothur for awhile, we are publicly releasing the
 ability to subsample alpha and beta diversity metrics to a common number
 of sequences per sample. We added these parameters to the [Schloss
-SOP](Schloss_SOP) with the last release. Finally, there are a
+SOP](454_SOP) with the last release. Finally, there are a
 number of other features and bug fixes that our loyal users have
 suggested via the forum - thanks for your suggestions!
 

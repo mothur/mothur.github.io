@@ -14,7 +14,7 @@ classification of sequences. For this tutorial, download and decompress
 
 To execute the bin.seqs() you must provide a [list
 file](list_file) and the fasta option must be used to provide
-a [fasta-formatted file](fasta-formatted_file) that has the
+a [fasta-formatted file](fasta_file) that has the
 sequences represented in the list file.
 
     mothur > bin.seqs(list=98_sq_phylip_amazon.an.list, fasta=amazon.fasta)
@@ -57,7 +57,7 @@ group will also be provided.
 
 ### name
 
-A [ names file](read.dist#The_name_option) indicating
+A [name file](name_file) indicating
 sequence names that are identical to a references sequence, may be
 inputted to **bin.seqs** so that the fasta and list files are complementary.
 The following commands illustrate this:
@@ -66,7 +66,7 @@ The following commands illustrate this:
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information. If
 you ran the cluster command with a count file, be sure to include the
@@ -97,5 +97,3 @@ data for the lines labeled unique, 0.03, 0.05 and 0.10 you would enter:
 ## Revisions
 
 -   1.28.0 Added count parameter
-
-

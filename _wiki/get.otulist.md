@@ -10,7 +10,7 @@ tutorial you should download and decompress
 [amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
 
 
-### Default settings
+## Default settings
 
     mothur > get.otulist(list=98_lt_phylip_amazon.fn.list)
 

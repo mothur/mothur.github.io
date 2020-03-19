@@ -79,7 +79,7 @@ index](tags#commands).
 -   [trim.seqs](trim.seqs) - pre-process sequences to remove
     primers, generate group file, and screen for quality
 -   [unique.seqs](unique.seqs) - identify the unique
-    sequences in a collection and generate a names file
+    sequences in a collection and generate a name file
 -   [deunique.seqs](deunique.seqs) - reverse unique.seqs
 -   [pre.cluster](pre.cluster) - implements a pseudo-single
     linkage algorithm with the goal of removing sequences that are

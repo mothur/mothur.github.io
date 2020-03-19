@@ -103,7 +103,7 @@ following lines:
 #### dups
 
 The dups parameter is only be used in tandem with a namefile. By default
-dups is true, so if any sequence in a specific line in the names file is
+dups is true, so if any sequence in a specific line in the name file is
 in your .accnos file, then all sequences in that line will be kept. This
 is especially useful when used with the groupfile, since for most
 commands your files can contain only the unique sequences, but the

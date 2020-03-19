@@ -15,7 +15,7 @@ noticed they have had a very "environmental" focus to the initial talks. I
 offered my services to give a microbiome-based microbial ecology talk and viola!
 My talk will be this Friday (10/17/2014) at 11 AM eastern. You can watch it through
 their [Google+ site](https://plus.google.com/106615363910557080981/posts)
-and later through their [YouTube channel](https://microseminar.wordpress.com/archived-talks/).
+and later through their [YouTube channel](https://microseminar.wordpress.com/archive-of-past-seminars/).
 
 MicroSeminar is an online seminar series created by Jennifer and
 [Cameron Thrash (LSU)](https://thethrashlab.com) who are both awesome Assistant

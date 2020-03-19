@@ -1,7 +1,9 @@
 ---
 title: 'Jensen-Shannon Divergence'
+tags: 'calculators'
 redirect_from: '/wiki/Jensen-Shannon_Divergence'
 ---
+
 Let x be the relative abundances of one sample and y be the relative
 abundances of the other and m be the average relative abundances of the
 2 samples.

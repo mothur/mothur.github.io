@@ -43,7 +43,7 @@ look like:
 
 ### name
 
-The name parameter allows you add a names file with your quality file.
+The name parameter allows you add a name file with your quality file.
 
     mothur > summary.qual(qfile=stool.trim.pick.qual, name=stool.trim.unique.good.filter.names)
 

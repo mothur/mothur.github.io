@@ -7,9 +7,9 @@ The **cluster.fit** command can be used to assign
 sequences to OTUs or fit sequences to existing OTUs. Currently, mothur
 has two options for doing this:
 
--   [closed](Closed): Fit reads to existing OTUs, scrapping
+-   Closed: Fit reads to existing OTUs, scrapping
     any reads unable to be fitted.
--   [open](Open): Fit reads to existing OTUs, any unfitted
+-   Open: Fit reads to existing OTUs, any unfitted
     reads are clustered separately into new OTUs.
 
 If there is an algorithm that you would like to see implemented, please
@@ -82,7 +82,7 @@ lower-triangular, mothur is able to figure this out for you.
 
 To read in a [column-formatted distance
 matrix](column-formatted_distance_matrix) you must provide a
-filename for the name or count option. The .names file was generated
+filename for the name or count option. The .name file was generated
 during the [unique.seqs](unique.seqs) command.
 
     mothur > cluster.fit(column=marine.0_2.01.dist, name=marine.0_2.01.names)
@@ -96,7 +96,7 @@ lower-triangle and mothur will figure it out.
 
 ### name
 
-A [ names file](Names_file) contains two columns. The first
+A [name file](name_file) contains two columns. The first
 column contains the name of a reference sequence that is in a distance
 matrix and the second column contains the names of the sequences
 (separated by commas) that the reference sequence represents. The list
@@ -127,7 +127,7 @@ Example from final.names:
 Second, if you pre-screen a clone library using ARDRA then you may only
 have a sequence for a handful of clones, but you know the number of
 times that you have seen a sequence like it. In such a case the second
-column of the names file would contain the sequence name as well as
+column of the name file would contain the sequence name as well as
 dummy sequence names
 
     ...
@@ -150,7 +150,7 @@ artificially inflate the matrix to its full size.
 The [ count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
-the correct OTU's. Unlike, when you use a names file the list file
+the correct OTU's. Unlike, when you use a name file the list file
 generated will contain only the unique names, so be sure to include the
 count file in downstream analysis with the list file.
 
@@ -187,9 +187,9 @@ and reference.
 The options for the method parameter are open or closed. The default is
 open.
 
--   [closed](Closed): Fit reads to existing OTUs, scrapping
+-   Closed: Fit reads to existing OTUs, scrapping
     any reads unable to be fitted.
--   [open](Open): Fit reads to existing OTUs, any unfitted
+-   Open: Fit reads to existing OTUs, any unfitted
     reads are clustered separately into new OTUs.
 
 ### metric
@@ -251,5 +251,3 @@ The variability is caused by the randomization of the sequences.
 ## Revisions
 
 -   1.41.0 First Introduced
-
-

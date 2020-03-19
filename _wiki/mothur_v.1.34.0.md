@@ -6,7 +6,7 @@ After a long delay, we are very happy to announce the release of
 [mothur\_v.1.34.0](mothur_v.1.34.0) ! We're anxious to get
 back on our normal release schedule of a new version ever month or two.
 In the current release, we've added a new machine learning algorithm
-[classify.svm](classify.svm) and added a bunch of new
+classify.svm and added a bunch of new
 features that you all have requested. There are also a number of bug
 fixes that have also been incorporated into the release. Some of the
 feature updates that you might find most interesting is the addition of
@@ -42,7 +42,7 @@ don't hesitate to shoot us a note!
 -   [get.mimarkspackage](get.mimarkspackage) - create blank
     mimarks package form for sra command
 -   [make.sra](make.sra) - create submission ready files
--   [classify.svm](Classify.svm) - Rank OTUs using the
+-   classify.svm - Rank OTUs using the
     support vector machine learning algorithm
 
 ## Feature updates

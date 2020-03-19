@@ -33,7 +33,7 @@ sequences in the otu and the third column is the consensus taxonomy.
 
 ## name
 
-The name parameter allows you add a names file with your taxonomy file.
+The name parameter allows you add a name file with your taxonomy file.
 
     mothur > classify.otu(taxonomy=abrecovery.silva.full.taxonomy, list=abrecovery.fn.list, name=abrecovery.names) 
 

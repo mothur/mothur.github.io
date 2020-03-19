@@ -34,7 +34,7 @@ or
 
 ### name
 
-The name parameter allows you add a names file with your fasta file and
+The name parameter allows you add a name file with your fasta file and
 a name file will be generated for each group.
 
     mothur > split.groups(fasta=esophagus.fasta, group=esophagus.groups, name=esophagus.names)
@@ -53,7 +53,7 @@ group.
 The groups parameter allows you to select groups to create files for.
 For example if you set groups=B-C, you will only get a
 esophagus.B.fasta, esophagus.B.names, esophagus.C.fasta,
-esophagus.C.names files.
+esophagus.C.name files.
 
     mothur > split.groups(fasta=esophagus.fasta, group=esophagus.groups, name=esophagus.names, groups=B-C)
 

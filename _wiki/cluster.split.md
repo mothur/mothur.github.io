@@ -7,18 +7,18 @@ The **cluster.split** command can be used to assign sequences to OTUs and
 outputs a .list file. It splits large distance matrices into smaller
 peices \...
 
--   [nearest neighbor](Nearest_neighbor): Each of the
+-   Nearest neighbor (nearest): Each of the
     sequences within an OTU are at most X% distant from the most similar
     sequence in the OTU.
--   [furthest neighbor](Furthest_neighbor): All of the
+-   Furthest neighbor (furthest): All of the
     sequences within an OTU are at most X% distant from all of the other
     sequences within the OTU.
--   [average neighbor](Average_neighbor): This method is a
+-   Average_neighbor (average): This method is a
     middle ground between the other two algorithms.
--   [agc](AGC):
--   [dgc](DGC):
--   [opti](Opti): OTUs are assembled using metrics to
-    determine the quality of clustering.
+-   AGC (agc):
+-   DGC (dgc):
+-   Opti (opti): OTUs are assembled using metrics to
+    determine the quality of clustering (default).
 
 If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
@@ -69,7 +69,7 @@ based on those groups.
 ### Splitting by classification using fasta
 
 For the classification method using a fasta file, you need to provide
-your fasta file, names file and taxonomy file. You will also need to set
+your fasta file, name file and taxonomy file. You will also need to set
 the taxlevel you want to split by. mothur will split the sequence into
 distinct taxonomy groups, and create distance files for each grouping.
 
@@ -122,7 +122,7 @@ multiple times.
 
 ### name
 
-A [ names file](Names_file) contains two columns. The first
+A [ name file](name_file) contains two columns. The first
 column contains the name of a reference sequence that is in a distance
 matrix and the second column contains the names of the sequences
 (separated by commas) that the reference sequence represents. The list
@@ -153,7 +153,7 @@ Example from final.names:
 Second, if you pre-screen a clone library using ARDRA then you may only
 have a sequence for a handful of clones, but you know the number of
 times that you have seen a sequence like it. In such a case the second
-column of the names file would contain the sequence name as well as
+column of the name file would contain the sequence name as well as
 dummy sequence names
 
     ...
@@ -184,17 +184,13 @@ apply to all of the sequences listed in the second column. Using a name
 file can considerably accelerate the amount of processing time required
 to analyze some data sets.
 
-By default cluster.split() executes the opticlust clustering algorithm.
-For a detailed description of this and the other algorithms check out
-the [example clustering
-calculations](example_clustering_calculations) page.
 
 ### count
 
 The [ count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
-the correct OTU's. Unlike, when you use a names file the list file
+the correct OTU's. Unlike, when you use a name file the list file
 generated will contain only the unique names, so be sure to include the
 count file in downstream analysis with the list file.
 
@@ -427,5 +423,3 @@ The variability is caused by the randomization of the sequences.
 -   1.44.0 - Adds vsearch parameter so that you can specify location of
     vsearch executable.
     [\#682](https://github.com/mothur/mothur/issues/682)
-
-

@@ -308,6 +308,5 @@ console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:s
 ---
 
 Large chunks of this were inspired by the amazing [C. Titus
-Brown](https://ged.msu.edu/angus/tutorials/starting-your-cloud-system.html)
-and the materials generated for the [EDAMAME
+Brown](https://web.archive.org/web/20170116154620/http://ged.msu.edu/angus/tutorials/starting-your-cloud-system.html) and the materials generated for the [EDAMAME
 workshop](https://www.edamamecourse.org).

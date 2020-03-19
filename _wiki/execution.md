@@ -62,10 +62,9 @@ into a batch mode where you provide a file of commands you need to type:
 
 ### Linux/Unix
 
-[ download file](Download_mothur), or for version 2.2b type
-in a terminal:
+[ download file](Download_mothur)
 
-` wget `[`https://schloss.micro.umass.edu/w/images/2/2b/mothur.source.zip`](https://schloss.micro.umass.edu/w/images/2/2b/Mothur.source.zip)
+
 
 Installation from the command line:
 

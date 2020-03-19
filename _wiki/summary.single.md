@@ -16,7 +16,7 @@ sampling. For this tutorial you should download and decompress
 [amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip)
 
 
-### Default settings
+## Default settings
 
 Enter either of the following commands:
 
@@ -107,7 +107,7 @@ This would generate the 98\_lt\_phylip\_amazon.fn.summary file:
 
 ### abund
 
-By default the [ace estimator](ACE_estimator) uses 10 as the
+By default the [ace estimator](ace) uses 10 as the
 cutoff between OTUs that are rare and abundant. So if an OTU has more
 than 10 individuals in it, then it is considered abundant. This is
 really just an empirical decision and we are merely following the lead
@@ -126,7 +126,7 @@ threshold.
 
 Within the suite of calculators available in mothur are a set that will
 predict the [number of additional
-OTUs](Calculators#Estimates_of_number_of_additional_OTUs_observed_with_extra_sampling)
+OTUs](calculators#estimates-of-number-of-additional-otus-observed-with-extra-sampling)
 that will be observed for a given sample size. By default these
 calculators will base the prediction on a sample that is the same size
 as the initial sampling. If you would like to use a different sample
@@ -213,5 +213,3 @@ times. Default=f.
 -   1.43.0 - Modifies output files from dist.shared, **summary.single** and
     summary.shared. You may run with or without rarefaction, but not
     both. [\#607](https://github.com/mothur/mothur/issues/607)
-
-

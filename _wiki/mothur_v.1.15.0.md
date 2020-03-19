@@ -13,7 +13,7 @@ with data processing and analysis. First, a number of people have asked
 for the "classic" form of the clustering algorithms that was
 originally implemented in DOTUR; this has been implemented as the
 [cluster.classic](cluster.classic) command. Second, we have
-also created the [catchall](catchall) command that wraps John
+also created the Catchall command that wraps John
 Bunge's CatchAll program for using parametric models to estimate
 community richness. Third, methods for performing indicator analyses
 have been on our radar for awhile and we are happy to finally add
@@ -45,13 +45,13 @@ weekends that would work best for you.
 
 Be sure to pad your CV as much as possible with papers that cite mothur
 between now and the end of 2010 and get ready for an exciting 2011. Keep
-the [six packs](https://leinie.com/red.html) coming
+the [six packs](https://leinie.com) coming
 
 ## New commands
 
 -   [cluster.classic](cluster.classic) - clustering method
     from dotur
--   [catchall](catchall) command - wrapper for the catchall
+-   Catchall command - wrapper for the catchall
     program
 -   [indicator](indicator) command - identify indicator
     "species" for nodes on a tree
@@ -68,7 +68,7 @@ the [six packs](https://leinie.com/red.html) coming
 
 ## Feature updates
 
--   [cluster](cluster) and [hcluster](hcluster) -
+-   [cluster](cluster) and hcluster -
     added weighted method
 -   [get.seqs](get.seqs) and
     [remove.seqs](remove.seqs) - added qfile parameter

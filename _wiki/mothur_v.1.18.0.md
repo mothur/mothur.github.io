@@ -75,8 +75,8 @@ Pat Schloss
     quality of OTU assignment
 -   [make.shared](make.shared) - creates a shared file from a
     list and group file.
--   removed [read.dist](read.dist),
-    [read.tree](read.tree), [read.otu](read.otu)
+-   removed read.dist,
+    read.tree, [read.otu](read.otu)
     commands - you will receive a warning if you use these commands
     -   you now use the actual command to read in the file
     -   For example: cluster(column=amazon.dist, name=amazon.names)
@@ -87,7 +87,7 @@ Pat Schloss
 
 ## Feature updates
 
--   [cluster](cluster), [hcluster](hcluster),
+-   [cluster](cluster), hcluster,
     [mgcluster](mgcluster) and
     [cluster.split](cluster.split) - changed default
     clustering method to average and set hard to true
@@ -125,7 +125,7 @@ Pat Schloss
 ## Bug fixes
 
 -   [https://forum.mothur.org/viewtopic.php?f=4&t=1132&p=2653#p2653](https://forum.mothur.org/viewtopic.php?f=4&t=1132&p=2653#p2653)
--   [catchall](catchall) - fixed bug that caused a bad\_alloc
+-   Catchall - fixed bug that caused a bad\_alloc
     after running with a shared file.
 -   [get.lineage](get.lineage) and
     [remove.lineage](remove.lineage) - fixed bug with that

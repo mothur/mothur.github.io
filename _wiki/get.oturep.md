@@ -6,7 +6,7 @@ redirect_from: '/wiki/Get.oturep.html'
 While the [bin.seqs](bin.seqs) command reports the OTU number
 for all sequences, the **get.oturep** command
 generates a fasta-formatted sequence file containing only a
-representative sequence for each OTU. A .rep.fasta and .rep.names file
+representative sequence for each OTU. A .rep.fasta and .rep.name file
 or .rep.count\_table file is generated for each OTU definition. For this
 tutorial, download and decompress
 [amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
@@ -29,7 +29,7 @@ or
 
     mothur > get.oturep(column=98_lt_column_amazon.dist, name=amazon.names, list=98_sq_phylip_amazon.an.list)
 
-The .rep.names file will look like:
+The .rep.name file will look like:
 
     U68589 U68589
     U68590 U68590
@@ -112,7 +112,7 @@ contains the following output:
 
 ### name
 
-A [names file](names_file) indicating sequence names that are
+A [name file](name_file) indicating sequence names that are
 identical to a references sequence, may be inputted into the
 get.oturep() command so that the fasta and list files are complementary.
 The following command illustrate this:

@@ -63,9 +63,8 @@ phylip option:
 #### column & name or count
 
 To read in a [column-formatted distance
-matrix](column-formatted_distance_matrix) you must provide a
-filename for [ the name option](read.dist#The_name_option) or
-[ count file](Count_File):
+matrix](column-formatted_distance_matrix) you must provide a [name file](name_file) or
+[count file](count_file):
 
     mothur > heatmap.sim(column=..., name=...)
 
@@ -103,5 +102,3 @@ mothur creates. The default is 24.
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.40.0 - Bug Fix: Fixes out of bounds error.
     [\#363](https://github.com/mothur/mothur/issues/363)
-
-

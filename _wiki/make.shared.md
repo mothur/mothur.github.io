@@ -33,8 +33,7 @@ This command will generate a [shared file](shared_file).
 
 ## Creating a shared file from a biom file
 
-You can also convert a biom file,
-[https://biom-format.org/documentation/biom_format.html](https://biom-format.org/documentation/biom_format.html). (Note: mothur
+You can also convert a [biom file](https://github.com/biocore/biom-format). (Note: mothur
 currently supports format version 1.0) to a shared file to import your
 data into mothur.
 
@@ -81,5 +80,3 @@ included in your analysis:
     the associated files.
     [\#583](https://github.com/mothur/mothur/issues/583)
 -   1.44.0 Adds list file output for **make.shared** with count table.
-
-

@@ -31,20 +31,20 @@ substances flowing](https://leinie.com).
     different minimum relative abundances
 -   [list.otulabels](list.otulabels) - lists otu labels from
     shared or relabund file.
--   [get.otulabels](get.otulabels) - can be used with output
+-   [get.otus](get.otus) - can be used with output
     from classify.otu, otu.association, or corr.axes to select specific
     otus
--   [remove.otulabels](remove.otulabels) - can be used with
+-   [remove.otus](remove.otus) - can be used with
     output from classify.otu, otu.association, or corr.axes to remove
     specific otus
--   [load.logfile](load.logfile) - extracts current file
+-   load.logfile - extracts current file
     names from a logfile
 
 ## Feature updates
 
 -   [phylo.diversity](phylo.diversity) - improved speed
 -   [set.dir](set.dir) - added debug parameter
--   [catchall](catchall), [get.seqs](get.seqs) and
+-   Catchall, [get.seqs](get.seqs) and
     [classify.seqs](classify.seqs) commands - added debugging
     information to the output
 -   [shhh.flows](shhh.flows) - added large parameter
@@ -56,7 +56,7 @@ substances flowing](https://leinie.com).
     format
 -   [chimera.uchime](chimera.uchime) - mothur will now look
     for uchime in your path, if it is not found with mothur.
--   [catchall](catchall) - mothur will now look for catchall
+-   Catchall - mothur will now look for catchall
     in your path, if it is not found with mothur.
 -   added buffered reads to improve the speed of reading name, taxonomy,
     design, accnos and group files.
@@ -77,12 +77,12 @@ substances flowing](https://leinie.com).
     [https://forum.mothur.org/viewtopic.php?f=5&t=1599](https://forum.mothur.org/viewtopic.php?f=5&t=1599)
 -   [shhh.flows](shhh.flows) - is producing an output file
     called \*.flow.fasta instead of \*.fasta. Also when using outputdir
-    with the file option, it puts the shhh.fasta and shhh.names files in
+    with the file option, it puts the shhh.fasta and shhh.name files in
     the wrong folder.
 -   [make.biom](make.biom) fixed bug that occurred if some
     taxonomies had confidence scores and others did not. -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1585](https://forum.mothur.org/viewtopic.php?f=4&t=1585)
--   [catchall](catchall) -
+-   Catchall -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1569](https://forum.mothur.org/viewtopic.php?f=4&t=1569) - The
     catchall executable name released with mothur contained 'C'
     instead of 'c'.

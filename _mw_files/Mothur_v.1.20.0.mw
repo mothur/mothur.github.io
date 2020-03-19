@@ -23,15 +23,15 @@ Pat Schloss
 * [[phylo.diversity]] - no longer requires a groupfile or at least 2 groups to run, if no group file is given mothur assumes all sequences are from the same sample.
 * [[get.lineage]]/[[remove.lineage]] = can now process multiple taxons separated by a dashes
 * [[dist.shared]] - added processors option
-* [[consensus.seqs]] - added cutoff option (http://www.mothur.org/forum/viewtopic.php?f=5&t=693)
+* [[consensus.seqs]] - added cutoff option (https://www.mothur.org/forum/viewtopic.php?f=5&t=693)
 * [[summary.shared]] and [[collect.shared]] - mothur no longer reports the similarity values, rather it now reports distances
 * Calculators - a bug was found in the [[spearman]] calculator and there was general wonkiness in how distances were converted to similarity values.  The solution has been to just use distance values throughout mothur
 * added column headings to the shared/relabund files
 
 
 ==Bug fixes==
-* [[cluster.split]] - fixed an output redirect problem with fasta method (http://www.mothur.org/forum/viewtopic.php?f=4&t=1182&p=2803#p2803)
-* [[summary.seqs]] - re-added processors option (http://www.mothur.org/forum/viewtopic.php?f=4&t=1185)
+* [[cluster.split]] - fixed an output redirect problem with fasta method (https://www.mothur.org/forum/viewtopic.php?f=4&t=1182&p=2803#p2803)
+* [[summary.seqs]] - re-added processors option (https://www.mothur.org/forum/viewtopic.php?f=4&t=1185)
 
 ==Minor Releases==
 * 1.20.1 - fixed bug with [[hcluster]] - was not changing the cutoff with average method  

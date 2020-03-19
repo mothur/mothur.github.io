@@ -6,7 +6,7 @@ redirect_from: '/wiki/Mgcluster'
 The **mgcluster** command \....
 
 For this tutorial you should download the [ Example
-Files](https://mothur.s3.us-east-2.amazonaws.com/wiki/_bap_files.zip) file and decompress it.
+Files](https://mothur.s3.us-east-2.amazonaws.com/wiki/bap_files.zip) file and decompress it.
 
 
 ## Default settings
@@ -26,7 +26,7 @@ The blast parameter is required\...
 The [ count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
-the correct OTU's. Unlike, when you use a names file the list file
+the correct OTU's. Unlike, when you use a name file the list file
 generated will contain only the unique names, so be sure to include the
 count file in downstream analysis with the list file.
 
@@ -35,20 +35,17 @@ count file in downstream analysis with the list file.
 
 ### method
 
--   [nearest neighbor](Nearest_neighbor): Each of the
+-   Nearest_neighbor (nearest): Each of the
     sequences within an OTU are at most X% distant from the most similar
     sequence in the OTU.
--   [furthest neighbor](Furthest_neighbor): All of the
+-   Furthest_neighbor (furthest): All of the
     sequences within an OTU are at most X% distant from all of the other
     sequences within the OTU.
--   [average neighbor](Average_neighbor): This method is a
+-   Average_neighbor (average): This method is a
     middle ground between the other two algorithms.
--   [opticlust](OptiClust): OTUs are assembled using metrics
+-   OptiClust (opti, the default): OTUs are assembled using metrics
     to determine the quality of clustering.
 
-    cluster method: opti, furthest, nearest or average. 
-
-default = opti
 
 ### metric
 
@@ -117,5 +114,3 @@ default = 0.10
 -   1.40.0 - Adds opti method
 -   1.40.4 - Bug Fix: Cluster commands printing of list file.
     [\#454](https://github.com/mothur/mothur/issues/454)
-
-

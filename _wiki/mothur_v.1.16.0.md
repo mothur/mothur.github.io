@@ -39,7 +39,7 @@ gmail com).
 
 As always, we appreciate your enthusiastic use of mothur and ideas.
 Within one year of publishing mothur, it received over 60 citations -
-thank you! Feel free to keep the [six packs](https://leinie.com/red.html)
+thank you! Feel free to keep the [six packs](https://leinie.com)
 and Russian vodka coming\...
 
 
@@ -70,7 +70,7 @@ and Russian vodka coming\...
 -   [chimera.slayer](chimera.slayer) - added a trim parameter
     to only include the portion of the sequence that corresponds to the
     largest parent
--   [parse.sff](parse.sff) - removed; but implemented in
+-   parse.sff - removed; but implemented in
     [sffinfo](sffinfo)
 -   [pcoa](pcoa) - added R2 metric to output
 -   [sub.sample](sub.sample) - added persample parameter to

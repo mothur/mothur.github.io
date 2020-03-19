@@ -15,8 +15,8 @@ candidate sequence alignment is compatible with the original template
 alignment. We provide several [ alignment
 databases](alignment_database) for 16S and 18S rRNA gene
 sequences that are compatible with the
-[greengenes](https://greengenes.jgi.doe.gov) or
-[silva](https://arb-silva.de) alignments; however, custom alignments for
+[greengenes](https://greengenes.secondgenome.com) or
+[silva](http://arb-home.de) alignments; however, custom alignments for
 any DNA sequence can be used as a template and users are encouraged to
 share their alignment for others to use. In general the alignment is
 very fast - we are able to align over 186,000 full-length sequences to
@@ -304,7 +304,7 @@ There are two very important things to consider:
 2\.  **Don't instinctively trust the alignment you get from any
     aligner.** It would be worth your while to import your sequences
     into an alignment editor that takes into account the secondary
-    structure (e.g. [arb](https://arb-home.de)) to make sure that things
+    structure (e.g. [arb](http://arb-home.de)) to make sure that things
     look right.
 
 ## Help

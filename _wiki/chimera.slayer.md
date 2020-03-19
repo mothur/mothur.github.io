@@ -12,7 +12,11 @@ have a copy of the megablast and formatdb executables in a folder called
 blast/bin, where the blast folder is next to the mothur executable. The
 version of megablast/formatdb that you need can be found in
 <ftp://ftp.ncbi.nlm.nih.gov/blast/executables/release/2.2.25/> or they
-are included with the executable versions of mothur.
+are included with the executable versions of mothur. This command was modeled after the chimeraSlayer written by the Broad
+Institute. Additional documentation can be found at the [Broad
+Institute's website](http://microbiomeutil.sourceforge.net/).
+
+
 
 
 ## Default Settings
@@ -162,10 +166,6 @@ quadmeras; this increases the number of false positives. When split=T,
 if a sequence comes back as non-chimeric, mothur will test the two sides
 to see if they are chimeric. By default, split=F.
 
-This command was modeled after the chimeraSlayer written by the Broad
-Institute. Additional documentation can be found at the [Broad
-Institute's website](https://microbiomeutil.sourceforge.net/).
-
 ### dereplicate
 
 The dereplicate parameter can be used when checking for chimeras by
@@ -248,5 +248,3 @@ The results would be:
     processing by group.
 -   1.38.0 - Removes save option.
 -   1.40.0 - Removes processors option
-
-

@@ -19,11 +19,11 @@ Please keep your comments coming in via the forum, emails, and facebook.  People
 * [[normalize.shared]] and [[sub.sample]] - OTU number labels in shared file persist to make downstream analysis easier.
 
 ==Bug fixes==
-* [[get.seqs]] and [[remove.seqs]] - fixed counts (http://www.mothur.org/forum/viewtopic.php?f=4&t=1261)
-* fixed issue with ~ character and multiple processors - (http://www.mothur.org/forum/viewtopic.php?f=4&t=1199)
+* [[get.seqs]] and [[remove.seqs]] - fixed counts (https://www.mothur.org/forum/viewtopic.php?f=4&t=1261)
+* fixed issue with ~ character and multiple processors - (https://www.mothur.org/forum/viewtopic.php?f=4&t=1199)
 * [[trim.seqs]] - if oligos file does not contain any valid group names.
-* [[normalize.shared]] - added a warning (http://www.mothur.org/forum/viewtopic.php?f=3&t=1254)
-* [[chimera.uchime]] - (http://www.mothur.org/forum/viewtopic.php?f=4&t=1238, http://www.mothur.org/forum/viewtopic.php?f=4&t=1239, http://www.mothur.org/forum/viewtopic.php?f=4&t=1237)
+* [[normalize.shared]] - added a warning (https://www.mothur.org/forum/viewtopic.php?f=3&t=1254)
+* [[chimera.uchime]] - (https://www.mothur.org/forum/viewtopic.php?f=4&t=1238, http://www.mothur.org/forum/viewtopic.php?f=4&t=1239, http://www.mothur.org/forum/viewtopic.php?f=4&t=1237)
 
 
 ==Minor Releases==

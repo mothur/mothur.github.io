@@ -157,7 +157,7 @@ around this you can use the group and name option:
     Maximum:   4655    5014    100 0   6
     # of Seqs: 20530
 
-Looking at the sogin.good.names files and
+Looking at the sogin.good.name files and
 sogin.good.unique.good.align.report files we see that there are now
 20,530 entries representing a total of 216,243 sequences, which agrees
 with sogin.unique.good.align. Next, looking at sogin.good.groups we see

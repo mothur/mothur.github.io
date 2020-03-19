@@ -7,7 +7,7 @@ comments: true
 ---
 
 Have you noticed that the same poor woman has been nursing an unknown child on
-the [mothur wiki](www.mothur.org/wiki) since the beginning of the project?
+the [mothur wiki](/wiki) since the beginning of the project?
 That's my wife and Schloss kid #4. Although she is now world renowned and
 forever linked with mothur, that picture doesn't make for a very good logo.
 Would you like to help us do something about this?

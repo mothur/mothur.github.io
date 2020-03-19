@@ -7,15 +7,15 @@ The **cluster.classic** command can be used to
 assign sequences to OTUs. It is the dotur implementation of cluster.
 Presently, mothur implements three clustering methods:
 
--   [nearest neighbor](Nearest_neighbor): Each of the
+-   Nearest_neighbor: Each of the
     sequences within an OTU are at most X% distant from the most similar
     sequence in the OTU.
--   [furthest neighbor](Furthest_neighbor): All of the
+-   Furthest_neighbor: All of the
     sequences within an OTU are at most X% distant from all of the other
     sequences within the OTU.
--   [average neighbor](Average_neighbor): This method is a
+-   Average_neighbor: This method is a
     middle ground between the other two algorithms.
--   [weighted neighbor](Weighted_neighbor):
+-   Weighted_neighbor: Kind of like average neighbor but OTUs are weighted by the number of sequences in the cluster
 
 If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
@@ -27,16 +27,12 @@ decompress it.
 
 ## Default settings
 
-In order for the cluster.classic() command to work, a distance matrix
-needs to be stored in memory.
+By default **cluster.classic** executes the furthest neighbor clustering
+algorithm. In order for the cluster.classic command to work, a distance matrix
+needs to be provided.
 
     mothur > cluster.classic(phylip=98_sq_phylip_amazon.dist)
 
-By default **cluster.classic** executes the furthest neighbor clustering
-algorithm. For a detailed description of this and the other algorithms
-check out the [example clustering
-calculations](example_clustering_calculations) page. Next
-lets run the cluster.classic() command:
 
 This command will generate the following output:
 
@@ -72,7 +68,7 @@ was used. Other possibilities include "an" for average neighbor and
 
 ### name
 
-A [ names file](Names_file) contains two columns. The first
+A [name file](name_file) contains two columns. The first
 column contains the name of a reference sequence that is in a distance
 matrix and the second column contains the names of the sequences
 (separated by commas) that the reference sequence represents. The list
@@ -101,7 +97,7 @@ Example from amazon.names:
 Second, if you pre-screen a clone library using ARDRA then you may only
 have a sequence for a handful of clones, but you know the number of
 times that you have seen a sequence like it. In such a case the second
-column of the names file would contain the sequence name as well as
+column of the name file would contain the sequence name as well as
 dummy sequence names
 
     ...
@@ -112,7 +108,7 @@ dummy sequence names
     AA1238 AA1238,AA1238.1
     ...
 
-A names file is not required, but depending on the data set to be
+A name file is not required, but depending on the data set to be
 analyzed, could significantly accelerate the processing time of
 downstream calculations. Although this is a simple example, the 98
 sequence amazon data set has two pairs of duplicate sequences (U68618
@@ -134,10 +130,10 @@ to analyze some data sets.
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
-the correct OTU's. Unlike, when you use a names file the list file
+the correct OTU's. Unlike, when you use a name file the list file
 generated will contain only the unique names, so be sure to include the
 count file in downstream analysis with the list file.
 
@@ -326,5 +322,3 @@ approach to clustering.
 -   1.38.1 - Removes hard parameter.
 -   1.40.4 - Bug Fix: Cluster commands printing of list file.
     [\#454](https://github.com/mothur/mothur/issues/454)
-
-

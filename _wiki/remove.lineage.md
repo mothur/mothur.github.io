@@ -89,7 +89,7 @@ given representative sequence. It can also contain group information.
 ## dups
 
 The dups parameter is only be used in tandem with a namefile. By default
-dups is true, so if any sequence in a specific line in the names file is
+dups is true, so if any sequence in a specific line in the name file is
 in your taxon, then all sequences in that line will be removed. This is
 especially useful when used with the groupfile, since for most commands
 your files can contain only the unique sequences, but the groupfile need

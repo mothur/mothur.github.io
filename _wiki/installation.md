@@ -2,6 +2,7 @@
 title: 'Installation'
 redirect_from: '/wiki/Installation'
 ---
+
 ## Quick and Easy Install
 
 Most of our users choose to download the prebuilt executable. This
@@ -299,7 +300,7 @@ and follow the instructions. Consider decompressing mothur to a
 directory such as C:\\mothur.
 
 Alternatively, you can build mothur from source using a tool like
-cygwin, [https://www.cygwin.com](https://www.cygwin.com):
+[cygwin](https://www.cygwin.com):
 
 #### Download and install cygwin
 

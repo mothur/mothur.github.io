@@ -94,7 +94,7 @@ Geographical environmental feature (eg., harbor, lake).
 ### geo\_loc\_name
 
 Geographical origin of the sample; use the appropriate name from this
-list [https://www.insdc.org/documents/country-qualifier-vocabulary](https://www.insdc.org/documents/country-qualifier-vocabulary). Use
+list [http://www.insdc.org/documents/country-qualifier-vocabulary](http://www.insdc.org/documents/country-qualifier-vocabulary). Use
 a colon to separate the country or ocean from more detailed information
 about the location, eg \\"Canada: Vancouver\\" or \\"Germany: halfway
 down Zugspitze, Alps\\".
@@ -192,8 +192,7 @@ types.
 The list of diseases diagnosed; can include multiple diagnoses. the
 value of the field depends on host; for humans the terms should be
 chosen from DO (Disease Ontology), free text for non-human. For DO
-terms, please see
-[https://gemina.svn.sourceforge.net/viewvc/gemina/trunk/Gemina/ontologies/gemina_symptom.obo?view=log](https://gemina.svn.sourceforge.net/viewvc/gemina/trunk/Gemina/ontologies/gemina_symptom.obo?view=log)
+terms, please see [https://disease-ontology.org](https://disease-ontology.org)
 
     format: {term}
 

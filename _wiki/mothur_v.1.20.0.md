@@ -86,7 +86,7 @@ Pat Schloss
 
 ## Minor Releases
 
--   1.20.1 - fixed bug with [hcluster](hcluster) - was not
+-   1.20.1 - fixed bug with hcluster - was not
     changing the cutoff with average method
 -   1.20.2 - fix chimera.uchime bug with Windows, exiting early
 -   1.20.3 - added "unclassified" bins to

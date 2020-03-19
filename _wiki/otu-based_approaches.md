@@ -23,7 +23,7 @@ index](tags#commands). There is also a list of mothur's
     phylip-formatted distance matrix
 -   [cluster](cluster) - clustering sequences into OTUs based
     on genetic distance
--   [hcluster](hcluster) - clustering sequences into OTUs
+-   hcluster - clustering sequences into OTUs
     based on genetic distance
 -   [cluster.classic](cluster.classic) - clustering sequences
     into OTUs based on genetic distance
@@ -40,7 +40,7 @@ index](tags#commands). There is also a list of mothur's
 -   [get.label](get.label) - determine the OTU definitions
     that are found in your OTU files
 -   [get.otulist](get.otulist) (was
-    [get.listcount](get.listcount)) - list sequences by OTU
+    [get.listcount](get.otulist)) - list sequences by OTU
     number
 -   [make.group](make.group) - generate a group file
 -   [make.shared](make.shared) - create a shared file from a
@@ -84,7 +84,7 @@ index](tags#commands). There is also a list of mothur's
     definition
 -   [heatmap.bin](heatmap.bin) - generate an svg-formatted
     heatmap for your OTU data
--   [catchall](catchall)
+-   Catchall
 
 ## Multiple sample analyses
 
@@ -100,7 +100,7 @@ index](tags#commands). There is also a list of mothur's
     distance matrix describing the pairwise similarity between samples
     using various [calculators](calculators)
 -   [get.sharedseqs](get.sharedseqs) (was
-    [get.sharedotu](get.sharedotu)) - identifies OTU's that
+    [get.sharedseqs](get.sharedseqs)) - identifies OTU's that
     are shared by multiple groups
 -   [heatmap.bin](heatmap.bin) - generate an svg-formatted
     heatmap for your OTU data

@@ -7,9 +7,9 @@ The **dist.shared** command will generate a
 phylip-formatted distance matrix that describes the dissimilarity
 (1-similarity) among multiple groups. This command will calculate any of
 the calculators describing the similarity in community [
-membership](Calculators#Similarity_in_community_membership)
+membership](calculators#similarity-in-community-membership)
 or [
-structure](Calculators#Similarity_in_community_structure).
+structure](calculators#similarity-in-community-structure).
 This tutorial uses the data files in [
 AbRecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip).
 
@@ -157,5 +157,3 @@ times. Default=f.
 -   1.43.0 - Modifies output files from dist.shared, summary.single and
     summary.shared. You may run with or without rarefaction, but not
     both. [\#607](https://github.com/mothur/mothur/issues/607)
-
-

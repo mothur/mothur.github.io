@@ -294,8 +294,8 @@ classification.
 
 ## name
 
-The name parameter allows you add a names file with your fasta file, if
-you enter multiple fasta files, you must enter matching names files for
+The name parameter allows you add a name file with your fasta file, if
+you enter multiple fasta files, you must enter matching name files for
 them.
 
 ## count
@@ -450,8 +450,7 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     [greengenes-formatted_databases](Greengenes-formatted_databases)
     Alternatively, mothur allows you to create your own references as
     long as they are in fasta and taxonomy file format. You can find
-    mothur's files formats here,
-    [file_types](File_Types).
+    mothur's files formats [here](tags#file_types).
 
 ### Common Issues
 
@@ -505,8 +504,7 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 -   1.29.0 Bug Fix: - if input directory was given with a group file,
     path was incorrect.
 -   1.32.0 Removed extra name checks to speed up reading of taxonomy
-    file. -
-    [https://forum.mothur.org/viewtopic.php?f=4&p=6608&sid=42525a60989d015feb8c10b2b5342691](https://forum.mothur.org/viewtopic.php?f=4&p=6608&sid=42525a60989d015feb8c10b2b5342691)
+    file
 -   1.33.0 Added relabund parameter
 -   1.37.0 Changes cutoff parameter default to 80. This change in the
     bootstrap threshold reflects the default values in the 454 and MiSeq
@@ -528,5 +526,3 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     [\#403](https://github.com/mothur/mothur/issues/403)
 -   1.40.0 Bug Fix: Fixes seeded random issue.
     [\#416](https://github.com/mothur/mothur/issues/416)
-
-

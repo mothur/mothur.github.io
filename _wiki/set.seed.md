@@ -6,7 +6,7 @@ redirect_from: '/wiki/Set.seed.html'
 The **set.seed** command is used to seed random.
 
 
-### Default Options
+## Default Options
 
 The only parameter is seed, and it is required.
 

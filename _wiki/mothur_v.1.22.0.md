@@ -36,7 +36,7 @@ necessary because the original data did not provide the flowgram data
 making it impossible to implement our new pipeline, which incorporates
 [shhh.flows](shhh.flows). So, the new pipeline, which is
 described in the PLoS ONE manuscript, is described at the [Schloss
-SOP](Schloss_SOP) wiki page. This is the culmination of many
+SOP](454_SOP) wiki page. This is the culmination of many
 years of effort and we are happy to have this behind us! The upshot is
 that we were able to reduce the error rate from \~0.8% to \~0.01%. If
 you would like a copy of the manuscript before it is posted online,
@@ -77,7 +77,7 @@ Pat Schloss
     file for each rarefaction calculator when running with a shared
     file.
 -   [sub.sample](sub.sample) - now outputs a unique fasta
-    file and new names file
+    file and new name file
     (https://forum.mothur.org/viewtopic.php?f=4&t=1299)
 -   [unique.seqs](unique.seqs) - name file prints in same
     order as fasta file
@@ -122,7 +122,7 @@ Pat Schloss
 
 ## Wiki updates
 
--   Added the [schloss sop](Schloss_SOP) for analyzing 16S
+-   Added the [454 SOP](454_SOP) for analyzing 16S
     rRNA gene pyrosequencing sequence data. This now supersedes the
     earlier [Costello stool
     analysis](Costello_stool_analysis) pipeline.

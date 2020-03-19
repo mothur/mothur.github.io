@@ -10,9 +10,9 @@ for an OTU definition. This calculator can be used in the
 [rarefaction.single](rarefaction.single) commands. The
 calculations for the ACE richness estimator are implemented as described
 by Chao in the user manual for her program
-[spade](https://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf) and modified
+[spade](http://140.114.36.3/wordpress/wp-content/uploads/software/SPADE_UserGuide.pdf) and modified
 by Colwell in his program
-[estimates](https://viceroy.eeb.uconn.edu/estimates). Note that this
+[estimates](http://viceroy.eeb.uconn.edu/estimates). Note that this
 implementation uses a bias-corrected version of γ when the coefficient
 of variation is too large.
 
@@ -46,10 +46,10 @@ $$S_{abund}$$ = The number of OTUs with more than 'abund' individuals
 
 $$abund$$ = the threshold to be considered an 'abundant' OTU; this is
 set to 10 by default and can be changed with the 'abund' parameter in
-[ summary.single](summary.single#The_abund_option), [
-collect.single](collect.single%27s_curves#The_abund_option),
+[ summary.single](summary.single#abund), [
+collect.single](collect.single#abund),
 and [
-rarefaction.single](rarefaction.single#The_abund_option).
+rarefaction.single](rarefaction.single#abund).
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
 Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following

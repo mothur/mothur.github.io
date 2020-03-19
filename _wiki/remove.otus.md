@@ -30,7 +30,7 @@ classify.otu command.
     mothur > remove.otus(accnos=final.an.0.03.subsample.0.03.pick.0.03.otus, constaxonomy=final.an.0.03cons.taxonomy)
 
 The final.an.0.03cons.taxonomy contains 684 otus, but the
-remove.otulabels command selected the 86 otus NOT in the accnos file.
+remove.otus command selected the 86 otus NOT in the accnos file.
 
 ### otucorr
 
@@ -62,7 +62,7 @@ select OTUs from.
 
 -   1.26.0 - First Introduced
 -   1.30.0 - Added list and shared parameters
--   1.37.0 - Remove.otulabels name changed to remove.otus
+-   1.37.0 - remove.otus name changed to remove.otus
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)

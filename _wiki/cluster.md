@@ -7,26 +7,21 @@ Once a distance matrix gets read into mothur, the
 **cluster** command can be used to assign sequences to
 OTUs. Presently, mothur implements three clustering methods:
 
--   [nearest neighbor](Nearest_neighbor): Each of the
-    sequences within an OTU are at most X% distant from the most similar
-    sequence in the OTU.
--   [furthest neighbor](Furthest_neighbor): All of the
+-   Nearest neighbor (nearest): Each of the sequences within an OTU are at most X% distant from the most similar sequence in the OTU.
+-   Furthest neighbor (furthest): All of the
     sequences within an OTU are at most X% distant from all of the other
     sequences within the OTU.
--   [average neighbor](Average_neighbor): This method is a
+-   Average neighbor (average): This method is a
     middle ground between the other two algorithms.
--   [agc](AGC):
--   [dgc](DGC):
--   [opti](Opti): OTUs are assembled using metrics to
-    determine the quality of clustering.
--   [unique](Unique): Creates a list file from a name or
-    count file where every unique sequence is assigned to it's own OTU
+-   AGC (agc):
+-   DGC (dgc):
+-   Opti (opti): OTUs are assembled using metrics to determine the quality of clustering (the default setting).
+-   Unique: Creates a list file from a name or count file where every unique sequence is assigned to it's own OTU
 
 If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
 developers and we'll see what we can do. The opticlust algorithm is the
-default option. For this tutorial you should download the [
-Final.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/final.zip) file and decompress it.
+default option. For this tutorial you should download the [Final.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/final.zip) file and decompress it.
 
 
 ## Default settings
@@ -64,7 +59,7 @@ progress bar:
 
 To read in a [column-formatted distance
 matrix](column-formatted_distance_matrix) you must provide a
-filename for the name or count option. The .names file was generated
+filename for the name or count option. The .name file was generated
 during the [unique.seqs](unique.seqs) command.
 
     mothur > cluster(column=final.dist, name=final.names)
@@ -78,7 +73,7 @@ lower-triangle and mothur will figure it out.
 
 ### name
 
-A [ names file](Names_file) contains two columns. The first
+A [ name file](name_file) contains two columns. The first
 column contains the name of a reference sequence that is in a distance
 matrix and the second column contains the names of the sequences
 (separated by commas) that the reference sequence represents. The list
@@ -109,7 +104,7 @@ Example from final.names:
 Second, if you pre-screen a clone library using ARDRA then you may only
 have a sequence for a handful of clones, but you know the number of
 times that you have seen a sequence like it. In such a case the second
-column of the names file would contain the sequence name as well as
+column of the name file would contain the sequence name as well as
 dummy sequence names
 
     ...
@@ -140,11 +135,8 @@ apply to all of the sequences listed in the second column. Using a name
 file can considerably accelerate the amount of processing time required
 to analyze some data sets.
 
-By default cluster() executes the opticlust clustering algorithm. For a
-detailed description of this and the other algorithms check out the
-[example clustering
-calculations](example_clustering_calculations) page. Next
-lets run the cluster() command:
+
+Next let's run the cluster() command:
 
     mothur > cluster(phylip=final.phylip.dist, name=final.names)
 
@@ -175,7 +167,7 @@ algorithms include: "agc" and "dgc".
 The [ count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
-the correct OTU's. Unlike, when you use a names file the list file
+the correct OTU's. Unlike, when you use a name file the list file
 generated will contain only the unique names, so be sure to include the
 count file in downstream analysis with the list file.
 
@@ -459,5 +451,3 @@ The variability is caused by the randomization of the sequences.
 -   1.44.0 - Adds vsearch parameter so that you can specify location of
     vsearch executable.
     [\#682](https://github.com/mothur/mothur/issues/682)
-
-

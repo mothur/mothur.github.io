@@ -4,7 +4,7 @@ title: Murine time course data
 permalink: /transition/
 ---
 
-This is the data file repository for the manuscript, [Stabilization of the murine gut microbiome following weaning](http://www.landesbioscience.com/journals/gutmicrobes/article/21008/?show_full_text=true) by Patrick Schloss and colleagues, which was published with Gut Microbes.
+This is the data file repository for the manuscript, [Stabilization of the murine gut microbiome following weaning](http://doi.org/10.4161/gmic.21008) by Patrick Schloss and colleagues, which was published with Gut Microbes.
 
 * [MIMARKS Spreadsheet](MIMARKS_Data.xlsx)
 * M001, M002, F003, F004; 0-9 and 141-150 dpw; Rep. 1: [sff](GO2JXTW01.sff.bz2), [oligos](GO2JXTW01.oligos)

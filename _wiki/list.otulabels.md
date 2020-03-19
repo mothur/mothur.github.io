@@ -8,7 +8,7 @@ from shared, relabund or list file. This list can be used especially
 with subsampled datasets when used with output from classify.otu,
 otu.association, or corr.axes to select specific otus using the
 [get.otus](get.otus) or
-[remove.otulabels](remove.otulabels) commands.
+[remove.otus](remove.otus) commands.
 
 ## Default Settings
 

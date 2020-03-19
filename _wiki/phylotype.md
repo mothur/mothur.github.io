@@ -96,7 +96,7 @@ taxonomy given has changed since we truncated the tree.
 
 ### name
 
-The name option allows you to add a names file so your list file will
+The name option allows you to add a name file so your list file will
 contain all your sequences, not just the unique ones.
 
     mothur > phylotype(taxonomy=abrecovery.taxonomy, name=abrecovery.names)

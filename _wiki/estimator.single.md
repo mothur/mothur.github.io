@@ -7,8 +7,7 @@ redirect_from: '/wiki/Estimator.single.html'
 the diversity estimators from
 [https://github.com/chrisquince/DiversityEstimates](https://github.com/chrisquince/DiversityEstimates).
 [https://www.ncbi.nlm.nih.gov/pubmed/18650928](https://www.ncbi.nlm.nih.gov/pubmed/18650928). Here are the sabund
-files representing the data provided by the authors,
-[estimatorsingledata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/_estimatorsingledata.zip)
+files representing the [data provided by the authors](https://mothur.s3.us-east-2.amazonaws.com/wiki/estimatorsingledata.zip)
 
 
 ## Default settings
@@ -271,5 +270,3 @@ times.
 
 -   1.43.0 - First Introduced
     [\#164](https://github.com/mothur/mothur/issues/164)
-
-

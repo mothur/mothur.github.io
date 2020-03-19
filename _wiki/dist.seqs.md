@@ -10,9 +10,8 @@ stored in RAM, rather they are printed directly to a file. Furthermore,
 it is possible to ignore "large" distances that one might not be
 interested in. The command will generate a [column-formatted distance
 matrix](column-formatted_distance_matrix) that is compatible
-with the [ column
-option](read.dist#The_column_.26_name_options) in the
-[read.dist](read.dist) command. The command is also able to
+with the column
+option in the various [cluster](cluster) commands. The command is also able to
 generate a phylip-formatted distance matrix. There are several options
 for how to handle gap comparisons and terminal gaps. This tutorial uses
 the data files in [ amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
@@ -104,7 +103,7 @@ distances (i.e. 96x95/2 = 4560). With the cutoff only 56 distances are
 saved. The savings can be substantial when there are a large number of
 distances. The actual cutoff used by the command is 0.005 higher than
 the value that is set to allow for rounding in the [ clustering
-steps](cluster#The_precision_option).
+steps](cluster#precision).
 
 ### processors
 
@@ -142,5 +141,3 @@ fasta file.
     number of available processors and use all available.
 -   1.43.0 - Improves speed of **dist.seqs** and
     pairwise.seqs.[\#653](https://github.com/mothur/mothur/issues/653)
-
-

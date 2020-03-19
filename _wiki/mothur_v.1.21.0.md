@@ -14,7 +14,7 @@ store a reference database in memory so that you can run a command (e.g.
 classify.seqs) multiple times without having to re-load the database.
 This may be useful for people that want to develop web-based
 implementations of the classifier; the memory can be cleared with the
-new [clear.memory](clear.memory) command. Third, we are now
+new clear.memory command. Third, we are now
 providing a 64-bit Windows version of the executable and hope to add
 parallelization for our windows users in the next release. Finally,
 there are a number of bug fixes and small feature updates that have been
@@ -30,7 +30,7 @@ workshop. Hopefully, he'll cross paths with some of you soon!
 
 ## New commands
 
--   [clear.memory](clear.memory) - removes saved reference
+-   clear.memory - removes saved reference
     data from memory
 
 ## Feature updates

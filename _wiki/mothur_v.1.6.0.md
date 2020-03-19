@@ -25,7 +25,7 @@ venture!
 This is a deceptively small update. We have added three commands. First,
 we have done our best to cull the literature, do some interpretive
 reading, and implement four algorithms to detect chimeras. The
-[chimera.seqs](chimera.seqs) command implements the
+[chimera.seqs](chimera.uchime) command implements the
 Bellerophon, Pintail, CCode, and ChimeraCheck algorithms. Please feel
 free to play around with these commands and let us know what you think
 of them. We have had to implement several of these based solely on what
@@ -34,13 +34,13 @@ sense. If we missed an algorithm, please let us know. Also, the default
 options in mothur are the way they are implemented in their "home"
 programs. Second, we have added the
 [align.check](align.check) command. If you are familiar with
-the [arb editor window](https://www.arb-home.de), you have noticed that
+the [arb editor window](http://www.arb-home.de), you have noticed that
 for 16S rRNA sequences they put all sorts of marks under the bases to
 describe the secondary structure alignment quality. This command will
 count the number of those different markings for each sequence to allow
 you to assess alignment quality. Third, we often receive requests from
 people for something like what we have provided in
-[get.sharedotu](get.sharedotu). This command will return the
+[get.sharedseqs](get.sharedseqs). This command will return the
 sequences shared between two or more groups. If people still have
 comments on this command, please let us know. Finally, as we release
 this version the documentation for these three commands is very sparse.
@@ -64,7 +64,7 @@ example analyses.
 Updates
 =======
 
--   [chimera.seqs](chimera.seqs) - a command to detect
+-   [chimera.seqs](chimera.uchime) - a command to detect
     chimeric sequences using bellerophon, pintail, ccode and chimera
     check methods.
 
@@ -75,7 +75,7 @@ Updates
 
 <!-- -->
 
--   [get.sharedotu](get.sharedotu) - identifies sequences
+-   [get.sharedseqs](get.sharedseqs) - identifies sequences
     that are shared by multiple OTUs
 
 Bug fixes

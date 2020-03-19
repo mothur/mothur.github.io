@@ -58,7 +58,7 @@ There are also several news items of note:
 -   I have been approached by several people about (i) writing letters
     of support for proposals, (ii) being a co-PI, (iii) being a
     subcontractor and (iv) doing people's analysis for them (for free).
-    Please see the [collaboration](collaboration) link on the
+    Please see the collaboration link on the
     main page of the wiki for collaboration options.
 
 If you haven't noticed, we're very excited about the mothur project
@@ -128,7 +128,7 @@ Happy Fathur's Day!
     root to tip length of 0.5 \[sw\]
 -   fixed bug where [unique.seqs](unique.seqs) would double
     the length of the last sequence \[ps\]
--   fixed bug with [read.dist](read.dist) for windows users
+-   fixed bug with read.dist for windows users
     \[sw\]
 -   fixed help for [filter.seqs](filter.seqs) and
     [align.seqs](align.seqs)
@@ -138,7 +138,7 @@ Happy Fathur's Day!
     defined arrays to comply with C++ standard to better support VS.
 -   added <ctime> and defined math functions for windows user.
 -   fixed memory access violation with
-    [read.dist](read.dist).
+    read.dist.
 -   fixed a minor bug in [tree.shared](tree.shared) command.
 -   [get.oturep](get.oturep) can now process aligned
     sequences as well as unaligned sequences.
@@ -147,5 +147,5 @@ Happy Fathur's Day!
 
 -   Reorganized the [mothur manual](mothur_manual)
 -   Changed page names for commands to be the name of the command (e.g.
-    read.dists is at [read.dist](read.dist))
+    read.dists is at read.dist)
 -   Created a commands [ category](/wiki/tags#commands)

@@ -77,8 +77,7 @@ similarity, and additional calculators.
 
 ## Minor Feature Additions
 
--   modified [ read.dist](read.dist#The_group_option) to read
-    matrix for libshuff command
+-   modified read.dist to read matrix for libshuff command
 -   New [calculators](calculators):
     -   [chao](chao) - updated the formulae to reflect what
         is done in EstimateS

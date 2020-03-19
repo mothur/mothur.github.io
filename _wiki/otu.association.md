@@ -48,18 +48,17 @@ like used, if none is given all labels are processed.
 ### method
 
 The method parameter allows you to select what method you would like to
-use. Options are pearson, spearman and kendall. Default=pearson -
-[pearson_correlation_coefficient](Pearson_correlation_coefficient)
+use. Options are [pearson](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) (default), [spearman](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient) and [kendall](https://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient).
 
-To use the spearman method: -
-[spearman's_rank_correlation_coefficient](Spearman's_rank_correlation_coefficient)
+To use the spearman method:
 
     mothur > otu.association(shared=final.an.0.03.subsample.0.03.pick.shared, method=spearman)
 
-or to use the kendall method: -
-[kendall_tau_rank_correlation_coefficient](Kendall_tau_rank_correlation_coefficient)
+or to use the kendall method:
 
     mothur > otu.association(shared=final.an.0.03.subsample.0.03.pick.shared, method=kendall)
+
+
 
 ### metadata
 
@@ -85,5 +84,3 @@ reported.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.42.0 - Fixes bug with **otu.association** metadata file.
-
-

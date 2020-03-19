@@ -1,7 +1,9 @@
 ---
 title: 'chimera.uchime'
 tags: 'commands'
-redirect_from: '/wiki/Chimera.uchime.html'
+redirect_from:
+ - '/wiki/Chimera.uchime.html'
+ - '/wiki/Chimera.seqs.html'
 ---
 The **chimera.uchime** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The original uchime program was
@@ -300,5 +302,3 @@ ucl is true.
     number of available processors and use all available.
 -   1.44.0 Adds uchime parameter.
     [\#682](https://github.com/mothur/mothur/issues/682)
-
-

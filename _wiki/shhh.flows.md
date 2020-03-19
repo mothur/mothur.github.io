@@ -5,7 +5,7 @@ redirect_from: '/wiki/Shhh.flows.html'
 ---
 The **shhh.flows** command is Pat Schloss's
 translation of Chris Quince's PyroNoise algorithm
-[1](https://people.civil.gla.ac.uk/~quince/Software/PyroNoise.html) from
+[1](https://code.google.com/archive/p/ampliconnoise/downloads) from
 C to C++ with the incorporation of mothur's bells and whistles. Based
 on processing of test datasets provided by Quince, **shhh.flows** gives the
 same/similar output to AmpliconNoise. (Note: The AmpliconNoise pipeline
@@ -43,12 +43,12 @@ This will generate several files including \...
 
 -   GQY1XT001.A01.v35.shhh.fasta - idealized fasta sequence data
     containing the de-noised sequences
--   GQY1XT001.A01.v35.shhh.names - a names file that maps each read to
+-   GQY1XT001.A01.v35.shhh.names - a name file that maps each read to
     an idealized fasta sequence
 -   GQY1XT001.A01.v35.shhh.qual - quality scores on a 100 point scale
     and should not be confused with the more conventional phred scores.
 -   GQY1XT001.A01.v35.shhh.groups - a group file indicating the group
-    that each sequence in the names file comes from
+    that each sequence in the name file comes from
 -   GQY1XT001.A01.v35.shhh.counts - a summary of the original translated
     sequences sorted with their idealized sequence counterpart
 
@@ -62,7 +62,7 @@ flow files:
 
 This will create the 5 files from above for each barcode / primer
 combination plus concatenated GQY1XT001.shhh.fasta and
-GQY1XT001.shhh.names files that can be used as input to
+GQY1XT001.shhh.name files that can be used as input to
 [trim.seqs](trim.seqs).
 
 ## Options

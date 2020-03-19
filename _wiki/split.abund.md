@@ -3,7 +3,7 @@ title: 'split.abund'
 tags: 'commands'
 redirect_from: '/wiki/Split.abund.html'
 ---
-The **split.abund** command reads a fasta file and a list or a names file
+The **split.abund** command reads a fasta file and a list or a name file
 splits the sequences into rare and abundant groups.
 
 ## Default Settings
@@ -34,12 +34,12 @@ Opening abrecovery.fn.abund.list you would see:
 
 or
 
-Using a names file the splitting is done based on the number of
+Using a name file the splitting is done based on the number of
 sequences a sequence represents.
 
     mothur > split.abund(fasta=abrecovery.fasta, name=abrecovery.names, cutoff=10)
 
-Since the names file does not contain any sequences that represent more
+Since the name file does not contain any sequences that represent more
 than 10 other sequences, you only get .rare files.
 
 or

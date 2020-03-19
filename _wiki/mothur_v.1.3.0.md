@@ -22,7 +22,7 @@ tree](tree.shared) to describe the similarity between
 communities. We have added an additional four calculators, which [
 predict the number of additional OTUs that would be observed with
 further
-sampling](Calculators#Estimates_of_number_of_additional_OTUs_observed_with_extra_sampling)
+sampling](calculators#estimates-of-number-of-additional-otus-observed-with-extra-sampling)
 and we have made use of Anne Chao's recent modifications to the [
 shared Chao estimator](sharedchao) to estimate the shared
 richness between two or more communities. For those of you using [ batch
@@ -71,7 +71,7 @@ goes. But you can look forward to a Fathur's Day release.
     character in it, a minimum base frequency, or a user-supplied filter
 -   The [dist.seqs](dist.seqs) command - Generate a
     column-formatted sequence-based pairwise distance matrix
--   The [shared.dist](shared.dist) command - Generate a
+-   The [dist.shared](dist.shared) command - Generate a
     phylip-formatted community-based pairwise distance matrix
 -   The [tree.shared](tree.shared) command - Generate a
     newick-formatted tree file comparing the membership or structure of

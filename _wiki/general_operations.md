@@ -32,4 +32,4 @@ Examples of each command are provided within their specific pages, but
 several users have provided several [analysis
 examples](analysis_examples), which use these commands. The [authorized SOP](/wiki/MiSeq_SOP) for using mothur for MiSeq data is also available there. An
 exhaustive list of the commands found in mothur is available within the
-[ commands tag index](wiki/tags/#commands).
+[ commands tag index](tags#commands).

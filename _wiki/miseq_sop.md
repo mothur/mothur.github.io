@@ -103,9 +103,8 @@ In addition, you probably want to get your hands on the following\...
 -   [R](https://www.r-project.org/), Excel, or another program to graph
     data
 -   Adobe Illustrator, Safari, or [inkscape](https://inkscape.org/)
--   [treeview](https://taxonomy.zoology.gla.ac.uk/rod/treeview.html),
-    [figtree](https://tree.bio.ed.ac.uk/software/figtree/) or another
-    program to visualize dendrograms
+-   [figtree](https://github.com/rambaut/figtree/) or
+    another program to visualize dendrograms
 
 It is generally easiest to use the "current" option for many of the
 commands since the file names get very long. Because this tutorial is

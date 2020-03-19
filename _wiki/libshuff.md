@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Libshuff'
 ---
 The **libshuff** command implements the
-[libshuff](https://whitman.myweb.uga.edu/libshuff.html) method as
+[libshuff](https://dx.doi.org/10.1128/AEM.67.9.4374-4376.2001) method as
 previously implemented in the programs s-libshuff and libshuff. The
 libshuff method is a generic test that describes whether two or more
 communities have the same structure using the Cramer-von Mises test
@@ -13,7 +13,7 @@ probability that the communities have the same structure by chance.
 Because each pairwise comparison requires two significance tests, a
 correction for multiple comparisons (e.g. Bonferroni's correction) must
 be applied. The files that we discuss in this tutorial can be obtained
-by downloading the [ amazondata.zip ](https://mothur.s3.us-east-2.amazonaws.com/wiki/_amazondata.zip)
+by downloading the [ amazondata.zip ](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip)
 file and decompressing it.
 
 ## Default settings
@@ -117,5 +117,3 @@ cutoff option:
     Comparison             dCXYScore   Significance
     forest-pasture         0.00161599  0.0696
     pasture-forest         0.00149521  0.0854
-
-

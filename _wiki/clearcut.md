@@ -7,7 +7,7 @@ The **clearcut** command allows mothur users to run the **clearcut** program
 from within mothur. The **clearcut** program written by Initiative for
 Bioinformatics and Evolutionary Studies (IBEST) at the University of
 Idaho. For more information about **clearcut** please refer to
-[https://bioinformatics.hungry.com/clearcut/](https://bioinformatics.hungry.com/clearcut/) Note: In version 1.13.0 the
+[https://github.com/ibest/clearcut/](https://github.com/ibest/clearcut/) Note: In version 1.13.0 the
 clearcut source was added to mothur, so you no longer need the clearcut
 executable. You can still download the **clearcut** executable if you would
 like, [download clearcut](Download_Clearcut).
@@ -15,7 +15,7 @@ like, [download clearcut](Download_Clearcut).
 ## Default settings
 
 You must provide either an aligned fasta file or a [phylip formatted
-distance matrix](phylip_formatted_distance_matrix). If you
+distance matrix](phylip-formatted_distance_matrix). If you
 provide a fasta file, you must specify DNA or protein.
 
     mothur > clearcut(phylip=abrecovery.dist)
@@ -138,5 +138,3 @@ Evol., 62, 785-792
 ## Revisions
 
 -   1.28.0 Bug Fix - windows crash
-
-

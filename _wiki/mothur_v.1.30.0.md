@@ -81,8 +81,8 @@ analyze 16S rRNA gene sequences. Thank you!
 -   added checks to make sure Windows paralellized commands complete
     their tasks.
 -   [list.otulabels](list.otulabels) - added list parameter
--   [get.otulabels](get.otulabels) and
-    [remove.otulabels](remove.otulabels) - added list and
+-   [get.otus](get.otus) and
+    [remove.otus](remove.otus) - added list and
     shared parameters
 -   [count.groups](count.groups) - creates a summary file
 -   [fastq.info](fastq.info) and
@@ -131,7 +131,7 @@ analyze 16S rRNA gene sequences. Thank you!
     trimmed properly. - fixed 1.29.2
 -   [tree.shared](tree.shared) - subsampling with eliminated
     groups. - fixed 1.29.2
--   [catchall](catchall) - \[error\]: this command doesn't
+-   Catchall - \[error\]: this command doesn't
     create a sabund output file.
 -   [amova](amova), [homova](homova) -
     [https://forum.mothur.org/viewtopic.php?f=1&t=1919](https://forum.mothur.org/viewtopic.php?f=1&t=1919)
@@ -148,7 +148,7 @@ analyze 16S rRNA gene sequences. Thank you!
 
 ## Changes to wiki
 
--   We renamed the "[schloss sop](Schloss_SOP)" to "[454
+-   We renamed the "[Schloss SOP](454_SOP)" to "[454
     SOP](454_SOP)". You will be automatically re-directed to
     the 454 page
 -   We created the [miseq\_sop](MiSeq_SOP) page that

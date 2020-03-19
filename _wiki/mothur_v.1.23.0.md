@@ -20,7 +20,7 @@ front, we have continued to add parallelization to a number of commands
 for Windows users. We have also added q-values to the output from
 [metastats](metastats) so that the output is more in line
 with the original R code. Finally, we have updated the [Schloss
-SOP](Schloss_SOP), which reflects how my lab uses mothur to
+SOP](454_SOP), which reflects how my lab uses mothur to
 process sff files and was published recently in PLoS ONE and we have
 posted a mothur-compatible version of a [ greengenes-formatted
 taxonomy](greengenes-formatted_databases) training set that
@@ -93,9 +93,9 @@ Pat Schloss
 -   Added the larger greengenes reference taxonomy that was recently
     published to the list of [greengenes-formatted
     databases](greengenes-formatted_databases)
--   [schloss sop](Schloss_SOP) - updated documentation to
+-   [454 SOP](454_SOP) - updated documentation to
     reflect the final version of the recently published [PLoS ONE
-    manuscript](https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027310)
+    manuscript](https://dx.doi.org/10.1371/journal.pone.0027310)
 
 ## Registered users
 

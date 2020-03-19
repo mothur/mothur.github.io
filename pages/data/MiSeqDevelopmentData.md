@@ -22,7 +22,7 @@ Run names correspond to Tables 1 and 2
 * [130403]({{site.bucket}}/data{{ page.permalink }}130403.tar)
 * [130417]({{site.bucket}}/data{{ page.permalink }}130417.tar)
 * [130422]({{site.bucket}}/data{{ page.permalink }}130422.tar)
-* [Reference sequences]({{site.bucket}}/data{{ page.permalink }}MiSeqDevelopmentData/HMP_MOCK.fasta)
+* [Reference sequences]({{site.bucket}}/data{{ page.permalink }}HMP_MOCK.fasta)
 
 ## Stability study runs
 
@@ -31,7 +31,7 @@ Run names correspond to Tables 1 and 2
 
 ## Metagenomic/Genomic Data
 
-* Mock community: [read 1]({{site.bucket}}/data{{ page.permalink }}MiSeqDevelopmentData/Mockmeta_S1_L001_R1_001.fastq.bz2) [read 2]({{site.bucket}}/data{{ page.permalink }}Mockmeta_S1_L001_R2_001.fastq.bz2)
+* Mock community: [read 1]({{site.bucket}}/data{{ page.permalink }}Mockmeta_S1_L001_R1_001.fastq.bz2) [read 2]({{site.bucket}}/data{{ page.permalink }}Mockmeta_S1_L001_R2_001.fastq.bz2)
 * Human feces: [read 1]({{site.bucket}}/data{{ page.permalink }}Humanmeta_S2_L001_R1_001.fastq.bz2) [read 2]({{site.bucket}}/data{{ page.permalink }}Humanmeta_S2_L001_R2_001.fastq.bz2)
 * *C. clostridioforme* D4: [read 1]({{site.bucket}}/data{{ page.permalink }}D4meta_S3_L001_R1_001.fastq.bz2) [read 2]({{site.bucket}}/data{{ page.permalink }}D4meta_S3_L001_R2_001.fastq.bz2)
 * *C. clostridioforme* CIP: [read 1]({{site.bucket}}/data{{ page.permalink }}Cipmeta_S4_L001_R1_001.fastq.bz2) [read 2]({{site.bucket}}/data{{ page.permalink }}Cipmeta_S4_L001_R2_001.fastq.bz2)

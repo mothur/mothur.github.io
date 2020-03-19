@@ -27,10 +27,10 @@ useful. First, we have added several commands for processing and
 characterizing OTUs. Second, we have added an alternative algorithm for
 clustering sequences using the furthest neighbor algorithm, which is
 based on the algorithm described by [Sun and colleagues
-(2009)](https://nar.oxfordjournals.org/cgi/content/abstract/gkp285v1). We
+(2009)](https://doi.org/10.1093/nar/gkp285). We
 are unable to replicate the numbers they describe for mothur, so take
 that part of their analysis with a grain of salt. What we have found is
-that the memory requirements using the [hcluster](hcluster)
+that the memory requirements using the hcluster
 command are minimal; however it tends to run a bit slower than the
 cluster command. Finally and most significantly, we have added two
 methods for classifying sequences - the k-Nearest Neighbor algorithm and
@@ -47,7 +47,7 @@ goal of making mothur everything you need it to be.
 -   [get.otulist](get.otulist) command - Outputs a .otu file
     for each distance specified containing the bin number and a list of
     the sequences in that bin.
--   [hcluster](hcluster) command - clusters distance files of
+-   hcluster command - clusters distance files of
     any size. It is slower than the [cluster](cluster)
     command, which stores the distance in RAM to increase performance,
     so if you can fit your file in RAM use

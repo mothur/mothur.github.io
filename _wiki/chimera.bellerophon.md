@@ -30,7 +30,7 @@ potentially chimeric sequences.
     accession.
 
 7\.  Calculate (use preference instead of col):
-    $$$$col\left[i\right]=\sum_j^{N}\left|dm^{left}\left[i\right]\left[j\right]-dm^{right}\left[i\right]\left[j\right]\right|$$$$
+    $$col\left[i\right]=\sum_j^{N}\left|dm^{left}\left[i\right]\left[j\right]-dm^{right}\left[i\right]\left[j\right]\right|$$
 
         Where i is the sequence you are on and j is all the other
         sequences. If correction=T, then dm=sqrt(distance); if
@@ -42,7 +42,7 @@ potentially chimeric sequences.
 8\.  Sum across all preferences\[i\] to get dme
 
 9\.  Recalculate each preferences\[i\] value as:
-    $$$${preference}\left[i\right]=\frac{dme}{dme-2 * col\left[i\right]}$$$$
+    $${preference}\left[i\right]=\frac{dme}{dme-2 * col\left[i\right]}$$
 
 
 10\. Sort the preferences values from high to low.
@@ -144,5 +144,3 @@ square root of the distances is used instead of the distance value.
 -   1.23.0 - fixed bug with MPI-enabled version -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1151](https://forum.mothur.org/viewtopic.php?f=4&t=1151)
 -   1.40.0 - Removes processors option.
-
-

@@ -8,9 +8,9 @@ newick-formatted tree file that describes the dissimilarity
 (1-similarity) among multiple groups. Groups are clustered using the
 UPGMA algorithm using the distance between communities as calculated
 using any of the calculators describing the similarity in community [
-membership](Calculators#Similarity_in_community_membership)
+membership](calculators#similarity-in-community-membership)
 or [
-structure](Calculators#Similarity_in_community_structure).
+structure](calculators#similarity-in-community-structure).
 Dissimilarity is calculated as one minus the similarity. This tutorial
 uses the data files in [
 AbRecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip).
@@ -28,7 +28,7 @@ This will generate newick-formatted file for the classical [
 Jaccard](jclass) and [ Yue & Clayton
 theta](thetayc) values. The tree can be visualized in a
 number of programs such as
-[treeviewx](https://darwin.zoology.gla.ac.uk/~rpage/treeviewx/). The
+[FigTree](https://github.com/rambaut/figtree/). The
 output files are as follows:
 
 **abrecovery.fn.jclass.0.03.tre**
@@ -71,7 +71,7 @@ phylip option:
 
 To read in a [column-formatted distance
 matrix](column-formatted_distance_matrix) you must provide a
-filename for [ the name option](read.dist#The_name_option) or
+filename for a [name file](name_file) or
 [ count file](Count_File):
 
     mothur > tree.shared(column=..., name=...)
@@ -160,5 +160,3 @@ times. Default=f.
     [\#262](https://github.com/mothur/mothur/issues/262)
 -   1.44.0 - BUG FIX: Fixes **tree.shared** distance being used instead of
     similarity.
-
-

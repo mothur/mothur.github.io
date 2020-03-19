@@ -24,7 +24,7 @@ classify.otu command.
 
     mothur > get.otus(accnos=final.an.0.03.subsample.0.03.pick.0.03.otulabels, constaxonomy=final.an.0.03cons.taxonomy)
 
-The final.an.0.03cons.taxonomy contains 684 otus, but the get.otulabels
+The final.an.0.03cons.taxonomy contains 684 otus, but the get.otus
 command selected the 598 otus from the accnos file.
 
 ### otucorr
@@ -55,9 +55,7 @@ select OTUs from.
 
 ## Revisions
 
--   1.37.0 Merged functionality of get.otulabels command.
+-   1.37.0 Merged functionality of get.otus command.
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
-
-

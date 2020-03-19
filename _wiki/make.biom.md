@@ -4,8 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Make.biom.html'
 ---
 The **make.biom** command is design to allow you to
-convert your [shared file](shared_file) to a biom file.
-[https://biom-format.org/documentation/biom_format.html](https://biom-format.org/documentation/biom_format.html) (Note: mothur
+convert your [shared file](shared_file) to a [biom file](https://github.com/biocore/biom-format). (Note: mothur
 currently supports format version 1.0) To run this tutorial please
 download, [ example files](https://mothur.s3.us-east-2.amazonaws.com/wiki/make_biom_files.zip)
 
@@ -122,5 +121,3 @@ file you used when classifying your sequences.
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
-
-

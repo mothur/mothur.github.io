@@ -12,7 +12,7 @@ Examples of each command are provided within their specific pages, but
 several users have provided several [analysis
 examples](analysis_examples), which use these commands. An
 exhaustive list of the commands found in mothur is available within the
-[ commands category index](wiki/tags/#commands). If you have
+[ commands category index](tags#commands). If you have
 any questions, complaints, or praise, please do not hesitate to [email Pat](mailto:pschloss@umich.edu) or to use the [user forum](https://forum.mothur.org):
 
 -   [general operations](General_operations)
@@ -22,7 +22,7 @@ any questions, complaints, or praise, please do not hesitate to [email Pat](mail
 -   [hypothesis testing approaches](Hypothesis_testing_approaches)
 -   [frequently asked questions](Frequently_asked_questions)
 -   [phylotype analysis](Phylotype_analysis)
--   [file types](File_Types)
+-   [file types](tags#file_types)
 
 Remember to cite mothur:
 

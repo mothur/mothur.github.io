@@ -3,7 +3,7 @@ title: 'Costello stool analysis'
 redirect_from: '/wiki/Costello_stool_analysis'
 ---
 **NOTE**: This wiki page ceased to be updated after release 1.21 of
-mothur. Please consult the [schloss sop](Schloss_SOP) page
+mothur. Please consult the [454 SOP](454_SOP) page
 for the latest and greatest method of analyzing pyrosequencing data
 
 Recently, [Costello and
@@ -36,7 +36,7 @@ In addition, you probably want to get your hands on the following\...
 -   [R](https://www.r-project.org/), Excel, or another program to graph
     data
 -   Adobe Illustrator, Safari, or [inkscape](https://inkscape.org/)
--   [treeview](https://taxonomy.zoology.gla.ac.uk/rod/treeview.html) or
+-   [figtree](https://github.com/rambaut/figtree/) or
     another program to visualize dendrograms
 
 Starting out we need to first determine, what is our question? I have
@@ -230,7 +230,7 @@ Next, let's use the SILVA-compatible [alignment
 database](alignment_database) and we will align the sequences
 using the [align.seqs](align.seqs) command and I'll make use
 of the two processors on my laptop (Macs rock!). I prefer the [silva
-reference alignment](silva_reference_alignment), for the
+reference alignment](silva_reference_files), for the
 reasons I articulated in a recent [PLoS Computational
 Biology](https://www.ncbi.nlm.nih.gov/pubmed/20011594) paper that I
 published. For now, if your computer has less than 2 GB of RAM you
@@ -418,7 +418,7 @@ I have found that trimming sequences so that they overlap over the same
 region generates new duplicate sequences that weren't detected the
 first go around. So let's re-run the
 [unique.seqs](unique.seqs) command making sure to use the
-name option so that our previous names file is included:
+name option so that our previous name file is included:
 
     mothur > unique.seqs(fasta=stool.trim.unique.good.filter.fasta, name=stool.trim.good.names)
 
@@ -500,7 +500,7 @@ randomization procedure involved.
 
 Alternatively, we could use chimera.slayer, but with our sequence
 collection as its own database. This is probably the best way of running
-it; however, you have to have a names file to tell the function the
+it; however, you have to have a name file to tell the function the
 frequency of each sequence. One advantage of this approach is that you
 aren't dependent on a database meaning that it should work for archaeal
 16S and other genes as well:
@@ -637,7 +637,7 @@ stool.final.an.[sabund file](sabund_file). In addition a
 stool.final.an.[ rabund](rabund_file) and
 stool.final.an.[list file](list_file) are generated as well.
 If the distance matrix is larger than the amount of RAM your computer
-has, you can also use the [hcluster](hcluster) command. This
+has, you can also use the hcluster command. This
 has a small memory footprint, but can take considerably longer to run
 than the cluster command.
 
@@ -822,7 +822,7 @@ individuals to cutoff the rarefaction curve isn't allowing a researcher
 to compare samples based on richness, but their diversity. Another
 alternative method where the richness estimate is not sensitive to
 sampling effort is to use parametric estimators of richness using the
-[catchall](catchall) command. By increasing sampling effort,
+Catchall command. By increasing sampling effort,
 the confidence interval about the richness estimate will shrink.
 
     mothur > catchall()

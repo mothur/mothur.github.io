@@ -8,8 +8,7 @@ and taxon then generates a new file containing only sequences from the
 specified taxon. You may also include either a [
 fasta](fasta_file), [ name](name_file), [
 group](group_file), [ list](list_file), [
-count](Count_File) or [align.report
-file](align.report_file) to this command and mothur will
+count](Count_File) or [align.report file](align.report_file) to this command and mothur will
 generate new files for each of those containing only the selected
 sequences. To complete this tutorial, you are encouraged to obtain the [
 AbRecovery](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) dataset.
@@ -82,7 +81,7 @@ names of sequences from Bacteria;Firmicutes;
 ### dups
 
 The dups parameter is only used in tandem with a namefile. By default,
-dups=TRUE, so if any sequence in a specific line in the names file is in
+dups=TRUE, so if any sequence in a specific line in the name file is in
 your taxon, then all sequences in that line will be kept. This is
 especially useful when used with the groupfile, since for most commands
 your files can contain only the unique sequences, but the groupfile
@@ -151,5 +150,3 @@ or
     [\#399](https://github.com/mothur/mothur/issues/399)
 -   1.40.5 - Bug Fix: failing to find taxons
     [\#477](https://github.com/mothur/mothur/issues/477)
-
-

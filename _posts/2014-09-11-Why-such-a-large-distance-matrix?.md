@@ -13,7 +13,7 @@ Without telling me how your data were generated, let me guess... Your PI got gre
 
 The problem is that if the reads do not fully overlap, your assembled reads (i.e. the contigs) will have a high error rate. Don't believe me? Take a look at [our 2013 paper](https://www.ncbi.nlm.nih.gov/pubmed/23793624) using the V2 MiSeq chemistry where we saw that the reads must fully overlap to get good desnoising of the data. If they don't fully overlap, the error rates escalate. This is independent of cluster density or percent PhiX. We've gone back and done the newer V3 chemistry and found that the data quality craps out around cycle 500. Again, this is independent of cluster density or percent PhiX. Check these data out for the V4-V5 region, which is 375 bp fragment:
 
-<img src="/assets/img/qscores.jpg" style="margin:0px auto;display:block" width="700">
+<img src="/assets/img/qscores.jpg" alt="quality score data" style="margin:0px auto;display:block" width="700">
 
 [ *In essence, Illumina took the old boxes of 500 PE V2 kits, and scratched out the 5 and 2 and replaced them with a 6 and a 3. I have shown Illumina these data and they ask, "what's your point?"* ]
 

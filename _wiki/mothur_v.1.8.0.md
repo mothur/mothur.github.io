@@ -48,7 +48,7 @@ free to tell us about it on the user forum.
 -   added [otu.hierarchy](otu.hierarchy) command which
     relates otus at different distance levels
 -   added average neighbor and nearest neighbor methods to
-    [hcluster](hcluster) command
+    hcluster command
 
 ## New features
 

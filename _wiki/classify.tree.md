@@ -39,7 +39,7 @@ taxonomy.
 
 ## name
 
-The name parameter allows you add a names file with your taxonomy file.
+The name parameter allows you add a name file with your taxonomy file.
 
     mothur > classify.tree(taxonomy=abrecovery.rdp.taxonomy, tree=abrecovery.phylip.tre, names=abrecovery.names) 
 
@@ -61,7 +61,7 @@ cannot be below 51.
 ## Revisions
 
 -   1.24.0 - First introduced.
--   1.31.0 - Bug Fix: when names file is given everything is
+-   1.31.0 - Bug Fix: when name file is given everything is
     unclassified -
     [https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116](https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116)
 -   1.40.0 Allow for () characters in taxonomy definitions.
