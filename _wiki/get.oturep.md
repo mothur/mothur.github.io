@@ -77,7 +77,7 @@ The cutoff parameter allows you to limit the distances read into memory
 as well as indicating the labels in the list file you want to process.
 There may only be a couple of lines in your OTU data that you are
 interested in running through get.oturep(). There are two options. You
-could: (i) manually delete the lines you aren\'t interested in from your
+could: (i) manually delete the lines you aren't interested in from your
 list file; (ii) or use the cutoff option. If you only want to read in
 the data for the lines labeled unique, 0.03, 0.05 and 0.10 you would
 enter:
@@ -193,7 +193,7 @@ label. Rename is set to false by default.
     [\#465](https://github.com/mothur/mothur/issues/465)
 -   1.42.0 - Adds rename option.
     [\#555](https://github.com/mothur/mothur/issues/555)
--   1.43.0 - **get.oturep** command wasn\'t handling multiple labels.
+-   1.43.0 - **get.oturep** command wasn't handling multiple labels.
     Removed labels parameter and modifies cutoff to act like cluster
     commands. ie. cutoff=0.01-0.03. Also failing with abundance method
     using count file without group information

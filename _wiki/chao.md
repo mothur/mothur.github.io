@@ -1,5 +1,6 @@
 ---
 title: 'Chao'
+tags: 'calculators'
 redirect_from: '/wiki/Chao'
 ---
 The **chao** calculator returns the Chao1 richness
@@ -22,10 +23,10 @@ $$S_{chao1}$$ = the estimated richness
 $$S_{obs}$$ = the observed number of species
 
 $$n_{1}$$ = the number of OTUs with only one sequence (i.e.
-\"singletons\")
+"singletons")
 
 $$n_{2}$$ = the number of OTUs with only two sequences (i.e.
-\"doubletons\")
+"doubletons")
 
 To calculate the 95% confidence intervals we assume a lognormal
 distribution of the variance:
@@ -43,17 +44,17 @@ If n1\>0, then:
 
 $$C = exp \left (1.96 \sqrt{\ln \left ( 1 + \frac{var\left ( S_{chao1} \right )}{\left ( S_{chao1} - S_{obs}\right )^2 }\right )} \right )$$
 
-$$LCI_{95%} = S_{obs} + \frac {S_{chao1} - S_{obs}}{C}$$
+$$LCI_{95\%} = S_{obs} + \frac {S_{chao1} - S_{obs}}{C}$$
 
-$$UCI_{95%} = S_{obs} + C \left ( {S_{chao1} - S_{obs}}  \right )$$
+$$UCI_{95\%} = S_{obs} + C \left ( {S_{chao1} - S_{obs}}  \right )$$
 
 Otherwise:
 
 $$P = e^{\left (-N/S_{obs}\right)}$$
 
-$$LCI_{95%} = max \left (S_{obs}, \frac{S_{obs}}{1-P}-1.96 \left ( \frac{S_{obs}P}{1-P} \right)^\frac{1}{2}\right )$$
+$$LCI_{95\%} = max \left (S_{obs}, \frac{S_{obs}}{1-P}-1.96 \left ( \frac{S_{obs}P}{1-P} \right)^\frac{1}{2}\right )$$
 
-$$UCI_{95%} = \frac{S_{obs}}{1-P} + 1.96 \left ( \frac{S_{obs}P}{1-P} \right)^\frac{1}{2}$$
+$$UCI_{95\%} = \frac{S_{obs}}{1-P} + 1.96 \left ( \frac{S_{obs}P}{1-P} \right)^\frac{1}{2}$$
 
 where,
 
@@ -99,9 +100,9 @@ $$var\left ( S_{chao1} \right ) = \frac{34\left (33 \right )^2}{2 \left(14 \righ
 
 $$C = exp \left (1.96 \sqrt{\ln \left ( 1 + \frac{341.2494}{\left (95.07 - 55\right )^2 }\right )} \right ) = 2.3641655$$
 
-$$LCI_{95%} = 55 + \frac {95.07 - 55}{2.3641655} = 71.9$$
+$$LCI_{95\%} = 55 + \frac {95.07 - 55}{2.3641655} = 71.9$$
 
-$$UCI_{95%} = 55 + 2.3641655\left ( {95.07 - 55}  \right ) = 149.7$$
+$$UCI_{95\%} = 55 + 2.3641655\left ( {95.07 - 55}  \right ) = 149.7$$
 
 Running\...
 

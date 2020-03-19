@@ -6,12 +6,12 @@ redirect_from: '/wiki/Filter.seqs.html'
 **filter.seqs** removes columns from alignments
 based on a criteria defined by the user. For example, alignments
 generated against reference alignments (e.g. from RDP, SILVA, or
-greengenes) often have columns where every character is either a \'.\'
-or a \'-\'. These columns are not included in calculating distances
+greengenes) often have columns where every character is either a '.'
+or a '-'. These columns are not included in calculating distances
 because they have no information in them. By removing these columns, the
 calculation of a large number of distances is accelerated. Also, people
 also like to mask their sequences to remove variable regions using a
-soft or hard mask (e.g. Lane\'s mask). This type of masking is only
+soft or hard mask (e.g. Lane's mask). This type of masking is only
 encouraged for deep-level phylogenetic analysis, not fine level analysis
 such as that needed with calculating OTUs. This tutorial uses the data
 files in [ amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
@@ -21,12 +21,12 @@ files in [ amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazon
 
 To run **filter.seqs** you need to provide your sequences to be filtered in
 either fasta, nexus, clustal, or phylip format. The output will be in
-fasta format. By default, any column with a \'-\' in every sequence is
+fasta format. By default, any column with a '-' in every sequence is
 removed from the alignment and put into a \*.filter.fasta file. For
 example the sequences in the file amazon.unique.align are the sequences
 in amazon.unique.fasta aligned to the **greengenes alignment**. The
 sequences in amazon.unique.fasta are generally less than 1 kb, but vary
-considerably in length. We\'d like to only consider those columns in the
+considerably in length. We'd like to only consider those columns in the
 alignments that overlap. Also, considering the overall alignment length
 is 7682 characters, we can probably remove a lot of positions from the
 alignment to speed up our distance calculations. Try the following
@@ -36,7 +36,7 @@ command:
 
 The resulting alignment in the amazon.unique.filter.fasta file will be
 2305 characters long and the average unaligned sequence is about 400 bp
-long. The file, amazon.unique.filter, is a series of 0\'s and 1\'s that
+long. The file, amazon.unique.filter, is a series of 0's and 1's that
 indicate, which columns were included in the filtered alignment. This
 file can be used with the [ hard option](filter.seqs#hard)
 below. Also, a series of statistics are written to the screen that
@@ -49,7 +49,7 @@ number of sequences that the filter was based on:
     Number of sequences used to construct filter: 96
 
 You can also enter multiple files to filter together. You do this by
-separating the fasta files with \'\|\' characters. Mothur creates a
+separating the fasta files with '\|' characters. mothur creates a
 filter and filters the sequences as if they were all in the same file,
 but outputs separate .filtered.fasta files.
 
@@ -60,7 +60,7 @@ but outputs separate .filtered.fasta files.
 ### vertical
 
 By default vertical option is set to T, and any column that only
-contains gap characters (i.e. \'-\' or \'.\') is ignored.
+contains gap characters (i.e. '-' or '.') is ignored.
 
     mothur > filter.seqs(fasta=amazon.unique.align, vertical=T)
 
@@ -79,8 +79,8 @@ Note that nothing was removed from the alignment.
 
 The trump option will remove a column if the trump character is found at
 that position in any sequence of the alignment. You can use any
-character with the trump setting (\'.\', \'-\', \'N\', etc). NOTE:
-having one or two sequences included that don\'t align with the bulk of
+character with the trump setting ('.', '-', 'N', etc). NOTE:
+having one or two sequences included that don't align with the bulk of
 your sequences may lead to all columns being removed by the trump
 option!
 
@@ -125,7 +125,7 @@ or
 
     mothur > filter.seqs(fasta=amazon.unique.align, trump=.)
 
-Because \'vertical=T\' is the default, both commands will produce the
+Because 'vertical=T' is the default, both commands will produce the
 following output:
 
     Length of filtered alignment: 577
@@ -136,9 +136,9 @@ following output:
 Thus, the final alignment is only 577 columns long. This is more than a
 13-fold reduction in the alignment length and will result in a speed up
 of more than 13-fold in the distance calculation. **Notice:**In 1.20
-vesion, the result of \"filter.seqs(fasta=amazon.unique.align,
-trump=.)\" is same of \"filter.seqs(fasta=amazon.unique.align, trump=.,
-**vertical=F**)\"
+vesion, the result of "filter.seqs(fasta=amazon.unique.align,
+trump=.)" is same of "filter.seqs(fasta=amazon.unique.align, trump=.,
+**vertical=F**)"
 
 ### soft
 
@@ -164,8 +164,8 @@ OTUs.
 
 Use of the file option will allow one to apply a hard mask to the
 sequences (e.g. the [lane mask](Lane_mask)). The inputted
-file should only contain one line consisting of 0\'s and 1\'s. A \"0\"
-indicates that the column should be excluded and a \"1\" indicates that
+file should only contain one line consisting of 0's and 1's. A "0"
+indicates that the column should be excluded and a "1" indicates that
 the column should be included. To use a hard mask you would enter:
 
     mothur > filter.seqs(fasta=amazon.unique.align, hard=Lane1349.gg.filter, vertical=F)
@@ -190,11 +190,11 @@ and use all available.
 ## Revisions
 
 -   1.24.0 - Paralellized for Windows.
--   1.25.0 - When run with \"current\", it generated \".filter\" and not
-    \"filename.filter\" file.
+-   1.25.0 - When run with "current", it generated ".filter" and not
+    "filename.filter" file.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
--   1.44.0 - Changes **filter.seqs** fasta file deliminator from \'-\' to
-    \'\|\' to allow for \'-\'\'s in filenames.
+-   1.44.0 - Changes **filter.seqs** fasta file deliminator from '-' to
+    '\|' to allow for '-''s in filenames.
 
 

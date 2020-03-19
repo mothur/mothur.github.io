@@ -1,5 +1,6 @@
 ---
 title: 'Morisitahorn'
+tags: 'calculators'
 redirect_from: '/wiki/Morisitahorn'
 ---
 The **morisitahorn** calculator returns the

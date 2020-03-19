@@ -82,7 +82,7 @@ information.
 
 The uchime parameter allows you to specify the name and location of your
 uchime executable. By default mothur will look in your path and
-mothur\'s executable location. You can set the uchime location as
+mothur's executable location. You can set the uchime location as
 follows: uchime =/usr/bin/uchime.
 
     mothur > chimera.uchime(uchime =/usr/bin/uchime,  fasta=stool.trim.unique.good.align, name=stool.trim.good.names)
@@ -101,7 +101,7 @@ the sequence to be chimeric, then all groups find it to be chimeric,
 default=f. If you set dereplicate=t, and then run remove.seqs with
 dups=f you can remove only the redundant chimeric sequences.
 
-Let\'s look at an example:
+Let's look at an example:
 
     >seq1
     attgacat....
@@ -183,7 +183,7 @@ may need to increase minh, and vice versa.
 
 The mindiv parameter - minimum divergence ratio, default 0.5. Div ratio
 is 100%% - %%identity between query sequence and the closest candidate
-for being a parent. If you don\'t care about very close chimeras, then
+for being a parent. If you don't care about very close chimeras, then
 you could increase mindiv to, say, 1.0 or 2.0, and also decrease minh,
 say to 0.1, to increase sensitivity. How well this works will depend on
 your data. Best is to tune parameters on a good benchmark.

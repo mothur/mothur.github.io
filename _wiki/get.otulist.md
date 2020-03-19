@@ -31,7 +31,7 @@ This will result in output to the screen looking like:
 ### label
 
 There may only be a couple of lines in your OTU data that you are
-interested in. You can either manually delete the lines you aren\'t
+interested in. You can either manually delete the lines you aren't
 interested in from your list file or use the label option. If you want
 the data for the lines labeled unique, 0.03, 0.05 and 0.10 you would
 enter:

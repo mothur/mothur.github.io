@@ -11,14 +11,14 @@ the results.
 ## Default Options
 
 To get going with **sff.multiple** you first need to create a file
-containing the names of the sff files you would like to process. Here\'s
+containing the names of the sff files you would like to process. Here's
 an example:
 
     F5MMO9001.1.F5MMO9001.water_blank_1.WUGSC.v35.sff  F5MMO9001.oligos
     F5MMO9001.1.F5MMO9001.water_blank_2.WUGSC.v13.sff  F5MMO9001.oligos
     #F5MMO9001.1.F5MMO9001.positive_mock_2.WUGSC.v13.sff   F5MMO9001.oligos
 
-The \'\#\' character indicates to mothur you wish to ignore that line in
+The '\#' character indicates to mothur you wish to ignore that line in
 the file. The oligos file name is optional.
 
     mothur > sff.multiple(file=sfffiles.txt)
@@ -136,7 +136,7 @@ The output to the screen will look like:
 ### minflows & maxflows
 
 The minflows parameter will set the minimum number of flows that each
-sequence must contain to make it in to a \"trim\" file while running the
+sequence must contain to make it in to a "trim" file while running the
 trim.flows command. By default this is set to 450; Chris Quince has
 preferred 360 in his documentation for processing GSFLX and Titanium
 data.
@@ -159,7 +159,7 @@ as a real signal and any intensity less than 0.70 as noise. If an
 intensity falls between 0.50 and 0.70, it is treated as ambiguous and
 set as a trim point. The settings of 0.50 and 0.70 are suggested by
 Quince and we really see no need to change it, but in case people want
-to play with the values here is how you\'d do it:
+to play with the values here is how you'd do it:
 
     mothur > sff.multiple(file=sfffiles.txt, signal=0.60, noise=0.65)
 

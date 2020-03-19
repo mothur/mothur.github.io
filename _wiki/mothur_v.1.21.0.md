@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.21.0'
+title: 'mothur v.1.21.0'
 redirect_from: '/wiki/Mothur_v.1.21.0.html'
 ---
 We are happy to announce the release of [mothur
@@ -9,7 +9,7 @@ important updates. First, we have completely rewritten the
 that have been detected in the original code provided by the developers.
 Second, we modified the [indicator](indicator) command to
 make its use more flexible and to include p-values to describe the
-significance of an indicator\'s strength. Third, it is now possible to
+significance of an indicator's strength. Third, it is now possible to
 store a reference database in memory so that you can run a command (e.g.
 classify.seqs) multiple times without having to re-load the database.
 This may be useful for people that want to develop web-based
@@ -26,7 +26,7 @@ these mechanisms and hopefully everyone finds us pretty responsive.
 August will be a busy month as Pat will be participating in the STAMPS
 course at the Marine Biology Laboratory and will be hosting his own
 workshop in Detroit, MI. Spaces are still available for the Detroit
-workshop. Hopefully, he\'ll cross paths with some of you soon!
+workshop. Hopefully, he'll cross paths with some of you soon!
 
 ## New commands
 

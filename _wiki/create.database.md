@@ -52,7 +52,7 @@ If you open the final.an.database file you will see:
 ### list
 
 The list parameter allows you to provide your [
-list](List_file) file. Mothur creates this file by running
+list](List_file) file. mothur creates this file by running
 the [cluster](cluster),
 [cluster.split](cluster.split) or
 [phylotype](phylotype) commands.
@@ -60,13 +60,13 @@ the [cluster](cluster),
 ### shared
 
 The shared parameter allows you to provide your [
-shared](Shared_file) file. Mothur creates this file by
+shared](Shared_file) file. mothur creates this file by
 running the [make.shared](make.shared) command.
 
 ### relabund
 
 The relabund parameter allows you to provide your relative abundance
-file. Mothur creates this file by running the
+file. mothur creates this file by running the
 [get.relabund](Get.relabund) command.
 
 ### count

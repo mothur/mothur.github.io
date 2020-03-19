@@ -138,7 +138,7 @@ options and types of corrections are available in Arb:
 13\. After phylip is done running, click on the button in the main Arb
     window that says "tree\_main". Select the tree that was just created
     from the coxL sequences (should contain 208 sequences) and click
-    "modify\".
+    "modify".
 
 14\. In the next window that pops up, click on "export"
 

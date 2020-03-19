@@ -1,8 +1,9 @@
 ---
 title: 'Coverage'
+tags: 'calculators'
 redirect_from: '/wiki/Coverage'
 ---
-The **coverage** calculator returns Good\'s coverage
+The **coverage** calculator returns Good's coverage
 for an OTU definition. This calculator can be used in the
 [summary.single](summary.single),
 [collect.single](collect.single), and
@@ -44,8 +45,8 @@ The first column is the label for the OTU definition and the second
 column is an integer indicating the number of sequences in the dominant
 OTU. The third column indicates the number of OTUs with only one
 indivdiual, the fourth the number of OTUs with two individuals, etc.
-Good\'s **coverage** is then calculated using the values found in the
-subsequent columns. For demonstration we will calculate Good\'s coverage
+Good's **coverage** is then calculated using the values found in the
+subsequent columns. For demonstration we will calculate Good's coverage
 for an OTU definition of 0.03:
 
 $$C=1-\frac{75}{98} = 0.23$$

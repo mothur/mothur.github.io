@@ -36,7 +36,7 @@ two column list with the first column indicating the sequence names of
 those sequences in the \*trim.fasta file and the second column the group
 that it came from. The \*scrap.fasta file is a fasta-formatted sequence
 file with the original untrimmed sequences. In addition, following the
-sequence name there is a pipe (i.e. \"\|\") followed by a one-letter
+sequence name there is a pipe (i.e. "\|") followed by a one-letter
 code for why the sequence failed. For example:
 
     >001030_1690_3908|bf
@@ -72,8 +72,8 @@ following:
 
 The oligos option takes a file that can contain the sequences of the
 forward and reverse primers and barcodes and their sample identifier.
-Each line of the oligos file can start with the key words \"forward\",
-\"reverse\", and \"barcode\" or it can start with a \"\#\" to tell
+Each line of the oligos file can start with the key words "forward",
+"reverse", and "barcode" or it can start with a "\#" to tell
 mothur to ignore that line of the oligos file. For example, consider a
 trimmed version of sahl09.oligos:
 
@@ -92,12 +92,12 @@ The forward primer is best thought of as the forward sequencing primer.
 So if you are using the 16S rRNA primers 27f and 338r to generate
 sequencing substrate, but you are sequencing off of the 338r end of the
 fragment, you would list 338r as the forward primer and 27f as the
-reverse. Here we are using a \"\#\" for the reverse primer to indicate
-that we don\'t want mothur to screen for the reverse primer because the
+reverse. Here we are using a "\#" for the reverse primer to indicate
+that we don't want mothur to screen for the reverse primer because the
 GSFLX sequencing platform cannot generate sequences that are \>250 bp
-long. If the \"\#\" were removed, all of the sequences would wind up in
+long. If the "\#" were removed, all of the sequences would wind up in
 the scrap file. The lines starting with barcode follow the format of
-\"barcode\" - tab - barcode sequence - tab - sample identifier - line
+"barcode" - tab - barcode sequence - tab - sample identifier - line
 break. There is no limit to the number of primers or barcodes that
 mothur can handle. The forward and reverse primers can also be
 degenerate using standard IUPAC nomenclature. You can enter your oligos
@@ -173,7 +173,7 @@ that contains group labels, **trim.seqs** will create a new
 In addition to a fna file, the 454 platform generates a qual file which
 mirrors the fna file. The differences is that in place of letters, the
 qual file has numbers indicating the quality of each base. For example,
-an \"N\" will be represented by a \"0\" because it is a poor base call.
+an "N" will be represented by a "0" because it is a poor base call.
 If a qfile is provided, you must provide either the qaverage or
 qthreshold options as well.
 
@@ -199,7 +199,7 @@ below the value provided to the option. For example:
 
 Notice that more than 99% of the sequences passed this quality check. If
 you look at those sequences relegated to the scrap.fasta file you will
-find a \"q\" code to indicate that they failed this test. Incidentally,
+find a "q" code to indicate that they failed this test. Incidentally,
 Huse and colleagues found that sequences generated with a GS20 and had
 an average score below 25 had more errors than those with higher
 averages. Since it is unclear how this will translate between platforms,
@@ -268,9 +268,9 @@ the scrap file.
 One of the popular approaches to generating pyrosequences from the 16S
 rRNA gene is to sequence off of the end of the fragments with the
 reverse PCR primer. Obviously you would then want to get the reverse
-complement of the sequences. Because the keyword \"reverse\" is already
-taken and \"reversecomplement\" is too long, we use the highly
-scientific \"flip\" option to calculate the reverse complement of the
+complement of the sequences. Because the keyword "reverse" is already
+taken and "reversecomplement" is too long, we use the highly
+scientific "flip" option to calculate the reverse complement of the
 sequence. Also be aware of the [reverse.seqs](reverse.seqs)
 command, which does the same thing:
 
@@ -280,7 +280,7 @@ command, which does the same thing:
 
 If you are running the **trim.seqs** command with paired barcodes or
 primers, you can use the checkorient parameter. When checkorient=t and
-mothur can\'t find the barcodes and primers, it will search the reverse
+mothur can't find the barcodes and primers, it will search the reverse
 compliment.
 
 ### maxambig
@@ -304,8 +304,8 @@ sequences that have ambiguous bases:
     # of Seqs: 119753
 
 This removed about 4% of the sequences. Those sequences that wind up in
-scrap.fasta for failing this option will be denoted with the \"n\" code.
-If you like to play with fire (and didn\'t your mothur warn you about
+scrap.fasta for failing this option will be denoted with the "n" code.
+If you like to play with fire (and didn't your mothur warn you about
 such things?) you can change the value of maxambig to any positive
 integer.
 
@@ -331,7 +331,7 @@ option:
     # of Seqs: 124473
 
 This removed 7 sequences from the original collection and they are coded
-with an \"h\" in the scrap.fasta file. You should investigate your
+with an "h" in the scrap.fasta file. You should investigate your
 region to determine an appropriate homopolymer length.
 
 ### minlength & maxlength
@@ -383,7 +383,7 @@ than 300 bp are probably bad, but it is a judgement call:
     # of Seqs: 119171
 
 With both the minlength and maxlength criteria set we lose about 4% of
-the sequences. These will be denoted the an \"l\" code in the
+the sequences. These will be denoted the an "l" code in the
 scrap.fasta file.
 
 ### bdiffs & pdiffs & ldiffs & sdiffs & tdiffs
@@ -500,7 +500,7 @@ This represents approximately 89% of the original sequences.
     number of available processors and use all available.
 -   1.40.4 - Bug Fix: Trim.seqs multiple matches error.
     [\#427](https://github.com/mothur/mothur/issues/427)
--   1.40.5 - Bug Fix: Trim.seqs \"could not open\" error.
+-   1.40.5 - Bug Fix: Trim.seqs "could not open" error.
     [\#444](https://github.com/mothur/mothur/issues/444)
 -   1.43.0 - Bug Fix: Trim.seqs not removing paired primers.
     [\#667](https://github.com/mothur/mothur/issues/667)

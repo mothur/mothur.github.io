@@ -53,7 +53,7 @@ command will work:
     mothur > screen.seqs(fasta=sogin.unique.align, end=4928)
 
 Putting it all together the following command will remove those
-sequences that don\'t start by position 4655 and do end before position
+sequences that don't start by position 4655 and do end before position
 4928:
 
     mothur > screen.seqs(fasta=sogin.unique.align, start=4655, end=4928)
@@ -71,7 +71,7 @@ sequences that don\'t start by position 4655 and do end before position
 
 ### minlength & maxlength
 
-In some studies an investigator may get a bunch of 5\' sequences and
+In some studies an investigator may get a bunch of 5' sequences and
 some full length sequences, in others an investigator might want to make
 sure that pyrosequences are within some window for length as a quality
 control measure. As an example, the Sogin data set had 16S rRNA V6
@@ -114,11 +114,11 @@ maxambig option:
 The maxn parameter has the same function as maxambig. It is retained as
 a separate command to avoid problems for users running scripts developed
 on older versions of the program. As a sequence is read in, any
-degenerate bases are converted to \'N\'s.
+degenerate bases are converted to 'N's.
 
 ### maxhomop
 
-While we don\'t necessarily know the longest acceptable homopolymer for
+While we don't necessarily know the longest acceptable homopolymer for
 a 16S rRNA gene, the max length of 31 is clearly a sequencing artifact.
 If you are interested in removing sequences with excessively long
 homopolymers, then you should use the maxhomop option:
@@ -234,19 +234,19 @@ parameters: minscore, maxinsert and minsim.
 #### minscore
 
 The minscore parameter allows you to set the minimum search score during
-alignment. Found in column \'SearchScore\' in align.report file.
+alignment. Found in column 'SearchScore' in align.report file.
 
 #### maxinsert
 
 The maxinsert parameter allows you to set the maximum number of
-insertions during alignment. Found in column \'LongestInsert\' in
+insertions during alignment. Found in column 'LongestInsert' in
 align.report file.
 
 #### minsim
 
 The minsim parameter allows you to set the minimum similarity to
 template sequences during alignment. Found in column
-\'SimBtwnQuery&Template\' in align.report file.
+'SimBtwnQuery&Template' in align.report file.
 
 ### processors
 

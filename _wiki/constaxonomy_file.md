@@ -1,6 +1,6 @@
 ---
 title: 'constaxonomy file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Constaxonomy_file'
 ---
 The constaxonomy file is created by

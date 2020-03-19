@@ -1,10 +1,10 @@
 ---
-title: 'Mothur v.1.26.0'
+title: 'mothur v.1.26.0'
 redirect_from: '/wiki/Mothur_v.1.26.0.html'
 ---
 We are happy to announce the release of [mothur
 v.1.26.0](mothur_v.1.26.0). We have added a improvements to a
-number of commands to make them faster and easier to use. We\'ve also
+number of commands to make them faster and easier to use. We've also
 added several new commands for you to try out. Of particular note is
 [get.coremicrobiome](get.coremicrobiome), which will tell you
 how many OTUs are observed in varying numbers of samples for different
@@ -12,7 +12,7 @@ relative abundance cutoffs. Although this has been a popular concept
 with the human microbiome research, it can certainly be applied to other
 environments as well. We are busy working on a number of other commands
 behind the scenes that we hope to release over the next few months.
-Specifically, we\'re working on SOPs for Illumina, IonTorrent, and
+Specifically, we're working on SOPs for Illumina, IonTorrent, and
 PacBio, implementing machine learning algorithms, a new classifier, and
 more. Stay tuned!
 
@@ -20,7 +20,7 @@ Also, people frequently ask how we describe our analysis pipeline and
 how we analyze data in general. Of course plagiarism is the Worst
 Possible Thing In Science, [our most recent
 paper](https://www.ncbi.nlm.nih.gov/pubmed/22688727) may inspire you.
-It\'s hot this summer in Michigan with hardly any rain. All of this
+It's hot this summer in Michigan with hardly any rain. All of this
 makes it hard to keep the ideas flowing. Be sure to keep your [hydrating
 substances flowing](https://leinie.com).
 
@@ -84,13 +84,13 @@ substances flowing](https://leinie.com).
     [https://forum.mothur.org/viewtopic.php?f=4&t=1585](https://forum.mothur.org/viewtopic.php?f=4&t=1585)
 -   [catchall](catchall) -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1569](https://forum.mothur.org/viewtopic.php?f=4&t=1569) - The
-    catchall executable name released with mothur contained \'C\'
-    instead of \'c\'.
+    catchall executable name released with mothur contained 'C'
+    instead of 'c'.
 -   [classify.otu](classify.otu) bootstrap values for
-    \"unknown\" taxon too high -
+    "unknown" taxon too high -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1588](https://forum.mothur.org/viewtopic.php?f=4&t=1588)
 -   [align.seqs](align.seqs) - align=blast caused segfault
--   [sffinfo](sffinfo) - reported error when \'\~\' was in
+-   [sffinfo](sffinfo) - reported error when '\~' was in
     sff file name.
 -   [classify.seqs](classify.seqs) - output taxonomy name
     missing tag when reference taxonomy file does not have 3 parts. -

@@ -13,7 +13,7 @@ are provided within their specific pages, but several users have
 provided several [analysis examples](analysis_examples),
 which use these commands. An exhaustive list of the commands found in
 mothur is available within the [ commands category
-index](Special:Categories).
+index](/wiki/tags#commands).
 
 ## General commands
 

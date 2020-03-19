@@ -37,7 +37,7 @@ or
     AY457911   Bacteria;Firmicutes;Clostridiales;Ruminococcus_et_rel.;Anaerofilum-Faecalibacterium;Faecalibacterium;Faecalibacterium_prausnitzii;
 
 This output indicates the sequence identifier in the first column as
-well as it\'s taxonomy. In the former case, bootstrap values are
+well as it's taxonomy. In the former case, bootstrap values are
 provided. In the latter case, they are either not calculated
 (method=knn) or suppressed (method=wang, probs=F).
 
@@ -64,7 +64,7 @@ the following:
 The first column indicates the taxonomic level in the outline.
 Obviously, the Root is the highest one can go. In this case the deepest
 any of the sequences go is to level 12. The second column indicates the
-\"pedigree\" for each lineage. The third column is the name of the
+"pedigree" for each lineage. The third column is the name of the
 lineage. Column four indicates the number of children lineages that the
 current lineage has. Finally, the last column indicates the number of
 sequences that were found in that lineage.
@@ -129,8 +129,8 @@ running with cutoff=0 will yield the following output:
     AY457910   Bacteria(100);Firmicutes(100);Clostridiales(100);Ruminococcus_et_rel.(100);Anaerofilum-Faecalibacterium(100);Faecalibacterium(100);Faecalibacterium_prausnitzii(100);unclassified;unclassified;unclassified;unclassified;unclassified;unclassified;
 
 You will notice that sequence AY457912 has a bootstrap value of 54% for
-the assignment to the *Lachnospira pectinoschiza*. This isn\'t much of a
-vote of confidence for this assignment. mothur\'s default is set to a
+the assignment to the *Lachnospira pectinoschiza*. This isn't much of a
+vote of confidence for this assignment. mothur's default is set to a
 value of 80%, which mirrors the original implementation in the Wang
 paper and the general approach to using 80% confidene in bootstrap
 values for phylogenetics.:
@@ -434,7 +434,7 @@ Simple Format:
 
 ### Common Questions
 
-Can\'t find your question? Please feel free to ask questions on our
+Can't find your question? Please feel free to ask questions on our
 forum, [https://forum.mothur.org](https://forum.mothur.org).
 
 
@@ -450,13 +450,13 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     [greengenes-formatted_databases](Greengenes-formatted_databases)
     Alternatively, mothur allows you to create your own references as
     long as they are in fasta and taxonomy file format. You can find
-    mothur\'s files formats here,
+    mothur's files formats here,
     [file_types](File_Types).
 
 ### Common Issues
 
 
-1\.  **Why are my sequences \'unclassifed\'?** When it comes to
+1\.  **Why are my sequences 'unclassifed'?** When it comes to
     classification there are two things main things that effect the
     number of unclassified results: the quality of the reads and the
     reference files. The bayesian classifier calculates the
@@ -465,7 +465,7 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     quality of the query sequences affects the ability of the classifier
     to find enough kmers to find a good classification. A poor quality
     sequence is like turning up the noise in a crowded restaurant and
-    trying to hear your date\'s father\'s name. Was that John, Tom or
+    trying to hear your date's father's name. Was that John, Tom or
     Ron? Uh oh\... A good reference is also needed for similar reasons.
 
 ### How To
@@ -489,7 +489,7 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 ## Revisions
 
 -   1.22.0 Added processors option for Windows users.
--   1.23.0 - mothur couldn\'t handle parentheses in the taxonomy file. -
+-   1.23.0 - mothur couldn't handle parentheses in the taxonomy file. -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1370](https://forum.mothur.org/viewtopic.php?f=4&t=1370)
 -   1.23.0 - fixed memory leak with Windows paralellization.
 -   1.24.0 - mothur will now check if a sequence is reversed before
@@ -497,11 +497,11 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 -   1.25.0 - segfault if no files are given. Should return error message
     instead. - [https://forum.mothur.org/viewtopic.php?f=4&t=1525](https://forum.mothur.org/viewtopic.php?f=4&t=1525)
 -   1.28.0 Added count parameter
--   1.28.0 Changed name of \"bayesian\" method to \"wang\"
+-   1.28.0 Changed name of "bayesian" method to "wang"
 -   1.28.0 mothur will ignore sequences present in the taxonomy file,
     but not in the reference file.
 -   1.28.0 Bug Fix: - if taxonomy file contained file path information
-    \"cannot resolve path for\" error was thrown.
+    "cannot resolve path for" error was thrown.
 -   1.29.0 Bug Fix: - if input directory was given with a group file,
     path was incorrect.
 -   1.32.0 Removed extra name checks to speed up reading of taxonomy
@@ -518,7 +518,7 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     [\#29](https://github.com/mothur/mothur/issues/29)
 -   1.38.0 Removes save option
 -   1.39.0 Taxonomy files can now contain spaces in the taxon names.
--   1.39.0 Fixes bug with number of \"taxon\"\_unclassifeds appended to
+-   1.39.0 Fixes bug with number of "taxon"\_unclassifeds appended to
     taxonomy
 -   1.40.0 Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)

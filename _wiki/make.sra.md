@@ -43,7 +43,7 @@ If you are running the command with a 2 column file and ffastq and
 rfastq you must provide an oligos file or mothur will assume your rfastq
 file is an oligos file.
 
-Here\'s an example of the 2 column form with sff files:
+Here's an example of the 2 column form with sff files:
 
     G3BMWHG01.sff   G3BMWHG01.oligos
     GHL4YHV01.sff     GHL4YHV01.oligos
@@ -52,11 +52,11 @@ Here\'s an example of the 2 column form with sff files:
     GQY1XT001.sff    GQY1XT001.oligos
     GZGO5KL01.sff    GZGO5KL01.oligos
 
-Here\'s an example of the 2 column form with a fastq file:
+Here's an example of the 2 column form with a fastq file:
 
     test.ccs.fastq   barcodes.oligos
 
-Here\'s an example of the 2 column form with a paired fastq files. Note:
+Here's an example of the 2 column form with a paired fastq files. Note:
 This option must be run with an oligos file or mothur will assume the
 reverse.fastq file is an oligos file:
 
@@ -87,7 +87,7 @@ or for single fastq files assigned to a group
     F8D141 F8D141.fastq    NONE
     ...
 
-Here\'s an example of a 4 column file using index files:
+Here's an example of a 4 column file using index files:
 
     My.forward.fastq My.reverse.fastq NONE My.rindex.fastq 
     ...
@@ -105,7 +105,7 @@ The mimark parameter is required. You can generate a mimark template for
 your groups using the
 [get.mimarkspackage](get.mimarkspackage) command. **Please
 note, NCBI has controlled language to ensure uniform submissions.
-Unknown or inapplicable fields MUST be assigned \'missing\' value.**
+Unknown or inapplicable fields MUST be assigned 'missing' value.**
 
     mothur > get.mimarkspackage(oligos=GHL4YHV01.oligos)
     mothur > make.sra(sff=sff=GHL4YHV01.sff, oligos=GHL4YHV01.oligos, project=test.project, mimark=MIMarksData.txt)
@@ -114,10 +114,10 @@ Unknown or inapplicable fields MUST be assigned \'missing\' value.**
 
 The oligos option takes a file that can contain the sequences of the
 forward and reverse primers and barcodes and their sample identifier.
-Each line of the oligos file can start with the key words \"forward\",
-\"reverse\", and \"barcode\" or it can start with a \"\#\" to tell
-mothur to ignore that line of the oligos file. Here\'s a link to more
-information about mothur\'s\[ \[oligos\_file\]\]
+Each line of the oligos file can start with the key words "forward",
+"reverse", and "barcode" or it can start with a "\#" to tell
+mothur to ignore that line of the oligos file. Here's a link to more
+information about mothur's\[ \[oligos\_file\]\]
 
     mothur > make.sra(sff=GHL4YHV01.sff, GHL4YHV01.oligos)
 

@@ -69,7 +69,7 @@ Other scaling options could be incorporated if you have a suggestion.
 
 There may only be a couple of lines in your OTU data that you are
 interested in generating a heatmap for. There are two options. You
-could: (i) manually delete the lines you aren\'t interested in from you
+could: (i) manually delete the lines you aren't interested in from you
 list or shared file; (ii) or use the label option. If you only want to
 read in the data for the lines labeled unique, 0.03, 0.05 and 0.10 you
 would enter:

@@ -1,5 +1,6 @@
 ---
 title: 'Whittaker'
+tags: 'calculators'
 redirect_from: '/wiki/Whittaker'
 ---
 The **whittaker** calculator returns the Whittaker

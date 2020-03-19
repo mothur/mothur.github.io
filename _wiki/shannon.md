@@ -1,5 +1,6 @@
 ---
 title: 'Shannon'
+tags: 'calculators'
 redirect_from: '/wiki/Shannon'
 ---
 The **shannon** calculator returns the Shannon
@@ -12,9 +13,9 @@ $$H_{shannon} = - \sum_{i=1}^{S_{obs}} \frac{n_i}{N} ln \frac{n_i}{N}$$
 
 $$var\left ( H_{Shannon} \right ) = \frac {\sum_{i=1}^{S_{obs}} \frac{n_i}{N} \left ( ln \frac{n_i}{N} \right )^2 - H_{shannon}^{2}}{N} + \frac{S_{obs} - 1}{2N^{2}}$$
 
-$$LCI_{95%}=H_{shannon}-1.96\sqrt{var\left ( H_{shannon} \right )}$$
+$$LCI_{95\%}=H_{shannon}-1.96\sqrt{var\left ( H_{shannon} \right )}$$
 
-$$UCI_{95%}=H_{shannon}+1.96\sqrt{var\left ( H_{shannon} \right )}$$
+$$UCI_{95\%}=H_{shannon}+1.96\sqrt{var\left ( H_{shannon} \right )}$$
 
 where,
 
@@ -59,9 +60,9 @@ $$H_{shannon} = -\left(75\left(\frac{1}{98}\right)\ln\left(\frac{1}{98}\right)+6
 
 $$var\left(H_{shannon}\right)=\frac{75\frac{1}{98}\left(\ln\frac{1}{98}\right)^2+6\frac{2}{98}\left(\ln\frac{2}{98}\right)^2+1\frac{3}{98}\left(\ln\frac{3}{98}\right)^2+2\frac{4}{98}\left(\ln\frac{4}{98}\right)^2-\left(4.35\right)^2}{98}+\frac{83}{2\left(98\right)^2} = 0.006644$$
 
-$$LCI_{95%}= 4.3533-1.96\sqrt{0.006644}=4.19$$
+$$LCI_{95\%}= 4.3533-1.96\sqrt{0.006644}=4.19$$
 
-$$UCI_{95%}= 4.3533 +1.96\sqrt{0.006644}=4.51$$
+$$UCI_{95\%}= 4.3533 +1.96\sqrt{0.006644}=4.51$$
 
 Running\...
 

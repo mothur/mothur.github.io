@@ -4,12 +4,12 @@ tags: 'commands'
 redirect_from: '/wiki/Get.current.html'
 ---
 The **get.current** command allows you to find out which files mothur has
-saved as \"current\" for each type. You can also clear current files.
+saved as "current" for each type. You can also clear current files.
 
 
 ## Default Options
 
-First let\'s get some current files saved.
+First let's get some current files saved.
 
     mothur > summary.seqs(fasta=stool.fasta)
     mothur > unique.seqs(fasta=stool.fasta)
@@ -22,7 +22,7 @@ Now we can see how the **get.current** command works.
     fasta=/Users/SarahsWork/Desktop/release/stool.unique.fasta
     name=/Users/SarahsWork/Desktop/release/stool.names
 
-You can also use these current files to help with mothur\'s long file
+You can also use these current files to help with mothur's long file
 names.
 
     mothur > summary.seqs(fasta=stool.fasta)

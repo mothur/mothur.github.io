@@ -9,7 +9,7 @@ The **sffinfo** command extract sequences reads from a .sff file.
 ## Default settings
 
 The **sffinfo** command requires that the user provide a .sff or sff.txt
-file. You may enter multiple sff files by separating them by -\'s. For
+file. You may enter multiple sff files by separating them by -'s. For
 example: F5MMO9001.sff-GHL4YHV01.sff.
 
     mothur > sffinfo(sff=F5MMO9001.sff)
@@ -67,7 +67,7 @@ file generated. By default flow=true.
 
 The accnos parameter allows you to provide a accnos file containing the
 names of the sequences you would like extracted. You may enter multiple
-files by separating them by -\'s.
+files by separating them by -'s.
 
      mothur > sffinfo(sff=F5MMO9001.sff, accnos=F5MMO9001.accnos)
 
@@ -75,9 +75,9 @@ files by separating them by -\'s.
 
 The oligos option takes a file that can contain the sequences of the
 forward and reverse primers and barcodes and their sample identifier.
-Each line of the oligos file can start with the key words \"forward\",
-\"reverse\", \"barcode\", \"linker\" and \"spacer\" or it can start with
-a \"\#\" to tell mothur to ignore that line of the oligos file. For
+Each line of the oligos file can start with the key words "forward",
+"reverse", "barcode", "linker" and "spacer" or it can start with
+a "\#" to tell mothur to ignore that line of the oligos file. For
 example, consider a trimmed version of F5MMO9001.oligos:
 
     forward    ATTACCGCGGCTGCTGG   v13

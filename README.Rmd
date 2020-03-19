@@ -211,21 +211,8 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 
 
   * Manual fixing
-	- Find and replace < and > characters with \gt and \lt in mathjax code
-	- Find and replace % with \% in mathjax code
-	- Check for stray `\$$` that are meant to indicate dollars or prompts
 	- Tables need help
-	- Figures will need to be manually resized
-	- get rid of stray `\"` and `\'` characters and replace with """ and "'" in atom
-	- Add calculators tag to calculators, remove calculators page and link
-	- Add filetypes tag to file types, remove file type page and link, if needed
-	- Clean up "Analysis examples" page
-	- Put link to "Analysis examples" in "mothur_manual"
 	- Give FAQ page section headers to generate TOC, capitalize title
-	- Check alt text and sizing of figures, e.g...
-	  ```
-		![AMS Page](https://mothur.s3.us-east-2.amazonaws.com/wiki/aws_pick_region.png){: width="200px"}
-		```
 	- Clear errors...
 	```
 	#https://github.com/gjtorikian/html-proofer
@@ -241,4 +228,5 @@ conversion <- read_tsv("_helper_files/keep_files.txt", col_name=c("file")) %>%
 
 
 * long term
+	- execution page
   - make separate pages for tags, create three/four column listing of tags

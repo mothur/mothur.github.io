@@ -1,10 +1,10 @@
 ---
-title: 'Mothur v.1.5.0'
+title: 'mothur v.1.5.0'
 redirect_from: '/wiki/Mothur_v.1.5.0.html'
 ---
 Today, August 10, we are happy to be releasing [mothur
-v.1.5.0](mothur_v.1.5.0). As you\'ll notice below, there
-aren\'t any \"major\" updates in this release. Instead, we have fixed a
+v.1.5.0](mothur_v.1.5.0). As you'll notice below, there
+aren't any "major" updates in this release. Instead, we have fixed a
 number of bugs and made a few minor modifications. Perhaps the most
 significant update was provided by Gerhard Thallinger, a mothur user,
 which dramatically accelerates the [cluster](cluster)
@@ -19,7 +19,7 @@ A few announcements:
 
 -   On August 14th the mothur wiki will be down for a week as we move
     the lab from the University of Massachusetts to the University of
-    Michigan. The new address will be www.mothur.org. I don\'t know the
+    Michigan. The new address will be www.mothur.org. I don't know the
     exact date that we will have the wiki back up, so please check in
     with us towards the end of next week. We appreciate the support we
     have received from the folks at UMass and look forward to new
@@ -32,8 +32,8 @@ A few announcements:
     people and led a workshop at Penn State with 27 people. Both were a
     lot of fun and I enjoyed interacting with everyone. I have a few
     workshops lined up for the Fall and Spring at U of Hawaii and
-    possibly the U of Tennessee. Hopefully, I\'ll be doing one in Ann
-    Arbor as well. Other than that, I don\'t think I\'ll be able to do
+    possibly the U of Tennessee. Hopefully, I'll be doing one in Ann
+    Arbor as well. Other than that, I don't think I'll be able to do
     any other workshops until next summer. Just as a heads-up, in the
     future I may start charging a modest amount to compensate my wife
     and make sure that the people who sign up are serious about taking

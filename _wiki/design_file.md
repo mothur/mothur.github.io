@@ -1,6 +1,6 @@
 ---
 title: 'design file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Design_File'
 ---
 The design file is used to assign samples to a specific treatments, or
@@ -8,7 +8,7 @@ other categories. The design file consists of multiple columns separated
 by a tabs. The first line is a header line containing the names of the
 columns. The first column contains the sample or group names. The
 following column contain the treatment names, or other information.
-**The first column should be named \"group\"**. Here is an example:
+**The first column should be named "group"**. Here is an example:
 
     group     sex
     F11Fcs F

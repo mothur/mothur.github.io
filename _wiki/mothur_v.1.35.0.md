@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.35.0'
+title: 'mothur v.1.35.0'
 redirect_from: '/wiki/Mothur_v.1.35.0.html'
 ---
 We have an exciting new release of mothur for you with the release of
@@ -11,20 +11,20 @@ generate the files needed to submit 454 and Illumina amplicon data to
 the Sequence Read Archive at the NCBI. That can be achieved using the
 [get.mimarkspackage](get.mimarkspackage) and
 [make.sra](make.sra) commands. To learn more about how to
-pull this off you\'ll want to follow the tutorial at [Creating a new
+pull this off you'll want to follow the tutorial at [Creating a new
 submission](Creating_a_new_submission). We have been working
 with the SRA curators to make sure that all of the formatting is right.
 There may be a few bumps in the road as this is rolled out and people
-start to use it, but we\'re pretty confident that it is working. I\'ve
-even been able to seamlessly submit data from our lab. We\'ve tried to
-make it as painless as possible, so let us know if there\'s anything
+start to use it, but we're pretty confident that it is working. I've
+even been able to seamlessly submit data from our lab. We've tried to
+make it as painless as possible, so let us know if there's anything
 more we can do to make the process easy. **Second**, we have rewriten
 the implementation of [make.contigs](make.contigs). This
-update significantly increases the command\'s speed. We\'ve also
+update significantly increases the command's speed. We've also
 implemented the alignment methods implemented in PandaSeq and their
 methods for calculating quality scores. We still think the default
 settings in [make.contigs](make.contigs) are the best, but
-have gotten enough requests that we thought we\'d include them in the
+have gotten enough requests that we thought we'd include them in the
 new version. **Third**, using the [set.dir](set.dir) command
 you can now set the seed for the random number generator. This is
 important for improving the reproducibility of your results between runs
@@ -104,7 +104,7 @@ Added common command line options. Can now use -q or \--quiet, -h or
 -   [summary.seqs](summary.seqs) -MPI bug
     [https://forum.mothur.org/viewtopic.php?f=4&t=3465](https://forum.mothur.org/viewtopic.php?f=4&t=3465) - fixed
     1.34.2
--   [pcr.seqs](pcr.seqs) - use of mothur\'s paired primer tag
+-   [pcr.seqs](pcr.seqs) - use of mothur's paired primer tag
     instead of forward and reverse tags causing improper trimming. -
     [https://forum.mothur.org/viewtopic.php?f=4&t=3482](https://forum.mothur.org/viewtopic.php?f=4&t=3482). fixed in
     1.34.3.

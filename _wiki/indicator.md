@@ -25,7 +25,7 @@ Legendre P, Legendre L (1998). Numerical Ecology. Elsevier: New York.
 
 ## Default Settings
 
-First let\'s run the **indicator** command with a tree and shared file:
+First let's run the **indicator** command with a tree and shared file:
 
     mothur > indicator(tree=jcz.tx.morisitahorn.1.tre, shared=jcz.tx.shared)
     You did not provide a label, I will use the first label in your inputfile.
@@ -52,7 +52,7 @@ First let\'s run the **indicator** command with a tree and shared file:
 mothur will output any OTU with a pValue \<= 0.05 for each tree node.
 All values are reported in the .indicator.summary file.
 
-Now let\'s run it with a shared, tree and design file. When using a
+Now let's run it with a shared, tree and design file. When using a
 design file the tree file should represent how the groupings relate to
 each other.
 

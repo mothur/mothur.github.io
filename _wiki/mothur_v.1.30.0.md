@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.30.0'
+title: 'mothur v.1.30.0'
 redirect_from: '/wiki/Mothur_v.1.30.0.html'
 ---
 We are very happy to announce the release of [mothur
@@ -9,32 +9,32 @@ number of new commands and feature updates. First, we have updated
 testing of paired end sequencing on a MiSeq using a dual index approach.
 Use of this command and the overall MiSeq-based workflow has been added
 to the stable of [analysis examples](Analysis_examples) as
-the Schloss lab\'s [miseq sop](MiSeq_SOP). We have also
+the Schloss lab's [miseq sop](MiSeq_SOP). We have also
 posted our wetlab protocol there as well. A manuscript describing the
 SOPs has been submitted to *Applied and Environmental Microbiology*.
 This brings us to our second big new command, which we used to write the
-MiSeq pipeline manuscirpt: [write.paper](write.paper). We\'re
+MiSeq pipeline manuscirpt: [write.paper](write.paper). We're
 all overburdened and the climate of publish or perish has convinced us
-that this new command will help everyone. We\'re working on
-write.dissertation but it\'s not quite cleared our stringent QC
+that this new command will help everyone. We're working on
+write.dissertation but it's not quite cleared our stringent QC
 standards quite yet. A third important new command is
 [primer.design](primer.design), which will allow you to
 create a list of candidate primers/probes designed to groups of bacteria
 within OTUs or phylotypes.
 
-We\'ve also added several other useful commands and a number of new
+We've also added several other useful commands and a number of new
 feature updates to commands that you will likely find useful. One of
 note is the ability to use output from
 [summary.seqs](summary.seqs),
 [make.contigs](make.contigs), and
 [align.seqs](align.seqs) in
 [screen.seqs](screen.seqs). This should give more flexibility
-and quicker execution times. We\'ve demonstrated how to do this in the
+and quicker execution times. We've demonstrated how to do this in the
 [miseq sop](MiSeq_SOP). A second option that many will find
 useful is the ability to set the flow order in
 [trim.flows](trim.flows) and
-[shhh.flows](shhh.flows) to allow 454\'s new acyclic flow
-order (order=B) and Ion Torrent\'s acyclic flow order (order=I).
+[shhh.flows](shhh.flows) to allow 454's new acyclic flow
+order (order=B) and Ion Torrent's acyclic flow order (order=I).
 Although we have these options available, we are still encouraging
 people to stick with the original 454 flow order and to stay away from
 Ion Torrent. Our testing with mock communities has shown that the new
@@ -46,12 +46,12 @@ added a pacbio option to [fastq.info](fastq.info) which
 corrects quality scores of 0 to ambiguous base calls. There should be a
 PacBio SOP posted prior to the next release as well.
 
-This is a big release and there\'s a lot going on trying to figure out
+This is a big release and there's a lot going on trying to figure out
 the best way to generate an analyze data from these new sequencing
 platforms. If you would like to stay at the bleeding edge of this
-progress, consider coming to one of Pat\'s workshops in Detroit, MI. The
+progress, consider coming to one of Pat's workshops in Detroit, MI. The
 next workshops are April 15-17 and May 6-8. Email Pat for more
-information. Thanks as always for everyone\'s feedback and citations.
+information. Thanks as always for everyone's feedback and citations.
 mothur is far and away the most cited bioinformatics program used to
 analyze 16S rRNA gene sequences. Thank you!
 
@@ -76,8 +76,8 @@ analyze 16S rRNA gene sequences. Thank you!
 ## Feature updates
 
 -   [pre.cluster](pre.cluster) - added topdown parameter
--   various commands - mothur will change \':\' characters in sequence
-    names to \'\_\' to avoid problems in downstream analysis with trees.
+-   various commands - mothur will change ':' characters in sequence
+    names to '\_' to avoid problems in downstream analysis with trees.
 -   added checks to make sure Windows paralellized commands complete
     their tasks.
 -   [list.otulabels](list.otulabels) - added list parameter
@@ -123,7 +123,7 @@ analyze 16S rRNA gene sequences. Thank you!
     fixed in 1.29.1.
 -   [venn](venn) - segfault when no shared otus - fixed in
     1.29.1.
--   Windows version removing \'\\\' if full path was given.
+-   Windows version removing '\\' if full path was given.
 -   [sffinfo](sffinfo) - trimmed the entire sequence if
     clipQualRight=0.
 -   [pcr.seqs](pcr.seqs) - if file was aligned and both
@@ -131,7 +131,7 @@ analyze 16S rRNA gene sequences. Thank you!
     trimmed properly. - fixed 1.29.2
 -   [tree.shared](tree.shared) - subsampling with eliminated
     groups. - fixed 1.29.2
--   [catchall](catchall) - \[error\]: this command doesn\'t
+-   [catchall](catchall) - \[error\]: this command doesn't
     create a sabund output file.
 -   [amova](amova), [homova](homova) -
     [https://forum.mothur.org/viewtopic.php?f=1&t=1919](https://forum.mothur.org/viewtopic.php?f=1&t=1919)
@@ -148,8 +148,8 @@ analyze 16S rRNA gene sequences. Thank you!
 
 ## Changes to wiki
 
--   We renamed the \"[schloss sop](Schloss_SOP)\" to \"[454
-    SOP](454_SOP)\". You will be automatically re-directed to
+-   We renamed the "[schloss sop](Schloss_SOP)" to "[454
+    SOP](454_SOP)". You will be automatically re-directed to
     the 454 page
 -   We created the [miseq\_sop](MiSeq_SOP) page that
     describes how to use mothur to process MiSeq generated amplicon
@@ -157,7 +157,7 @@ analyze 16S rRNA gene sequences. Thank you!
 
 ## GUI
 
--   fixed bug with \"reset to default\" menu option.
+-   fixed bug with "reset to default" menu option.
 -   removed autofilled file names of removed commands from file input
     combo boxes.
 

@@ -27,7 +27,7 @@ distance. In contrast, the example on the right shows two communities
 that are maximally different as their lowest common ancestor is the root
 of the tree.
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/unweightedunifracmeasure.jpg)
+![Schematic comparing phylogenetic trees](https://mothur.s3.us-east-2.amazonaws.com/wiki/unweightedunifracmeasure.jpg)
 
 Formally, the measure is calculated using the following formula, where
 $$N$$ is the number of nodes in the tree, $$l_i$$ is the branch length
@@ -35,8 +35,7 @@ between node $$i$$ and its parent, and $$A_i$$ and $$B_i$$ are indicators
 equal to 0 or 1 as descendants of node $$i$$ are absent or present in
 communities A and B respectively.
 
-$$$$u = \frac{\sum_{i=1}^{N} l_i | A_i - B_i |}
-{\sum_{i=1}^{N} l_i \max(A_i, B_i)}$$$$
+$$u = \frac{\sum_{i=1}^{N} l_i | A_i - B_i |}{\sum_{i=1}^{N} l_i \max(A_i, B_i)}$$
 
 UniFrac can be applied to multiple communities by first constructing a
 single tree consisting of all sequences. The distance between any pair
@@ -52,4 +51,4 @@ assignment of community labels to sequences while keeping the tree
 constant. The reported p-value is the proportion of random permutations
 that result in a UniFrac distance greater or equal to the observed data.
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/unifracsignificantstest.jpg)
+![Schematic describing unifrac hypothesis test](https://mothur.s3.us-east-2.amazonaws.com/wiki/unifracsignificantstest.jpg)

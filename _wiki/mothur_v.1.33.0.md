@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.33.0'
+title: 'mothur v.1.33.0'
 redirect_from: '/wiki/Mothur_v.1.33.0.html'
 ---
 We are happy to be releasing [mothur
@@ -11,7 +11,7 @@ Root Jensen-Shannon
 Divergence](Square_Root_Jensen-Shannon_Divergence) and
 [jensen-shannon divergence](Jensen-Shannon_Divergence)
 calculators, which you can use to calculate distances between samples
-using \"rjsd\" and \"jsd\". These have been popular in some of the
+using "rjsd" and "jsd". These have been popular in some of the
 recent microbiome literature and thought you would appreciate having
 access to these. We have also added the ability to assign samples to
 community types in [get.communitytype](get.communitytype)
@@ -20,7 +20,7 @@ up on some of the features in the last release that were based on the
 work of Curtis Huttenhower, we have added the picrust and reftaxonomy
 options to [make.biom](make.biom) so that it is easier for
 mothur users to interface wihe picrust. Finally, there are a number of
-odds and ends that you\'ll see below [mothur v.1.33.0\#Feature
+odds and ends that you'll see below [mothur v.1.33.0\#Feature
 updates](mothur_v.1.33.0#Feature_updates).
 
 We hope to have another release out to you in the next month or so with
@@ -31,16 +31,16 @@ are very excited about this. The folks at the SRA have been great about
 faciliating this and understanding the difficulties users are facing in
 getting their data up to the SRA.
 
-If you haven\'t heard, I will be hosting another mothur-based workshop
+If you haven't heard, I will be hosting another mothur-based workshop
 in Detroit on March 24-26. See the [workshops](Workshops)
 page for more information. There are still a few seats available. There
 will likely be another R workshop in June and mothur workshops in August
 and December.
 
-Keep your great ideas coming and we\'ll do our best to work them into
+Keep your great ideas coming and we'll do our best to work them into
 mothur!
 
-Pat PS. I\'m now on twitter (\@PatSchloss) and you can feel free to ask
+Pat PS. I'm now on twitter (\@PatSchloss) and you can feel free to ask
 mothur-related questions there (in 140 characters or less!)
 
 ## New commands
@@ -51,7 +51,7 @@ mothur-related questions there (in 140 characters or less!)
 ## Feature updates
 
 -   [heatmap.bin](heatmap.bin) - added otuLabels to 1.32.1
--   make mothur \"smarter\" about OTULabels. OTU001 and OTU01 should be
+-   make mothur "smarter" about OTULabels. OTU001 and OTU01 should be
     the same. - 1.32.1
 -   [list.seqs](list.seqs), [get.seqs](get.seqs)
     and [remove.seqs](remove.seqs) - added fastq as an option

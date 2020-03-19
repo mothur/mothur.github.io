@@ -1,6 +1,6 @@
 ---
 title: 'phylip-formatted distance matrix'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Phylip-formatted_distance_matrix'
 ---
 Phylip [1](https://evolution.genetics.washington.edu/phylip.html) is a
@@ -63,7 +63,7 @@ representation is possible. In this case the first line again has the
 number of sequences in the matrix. The difference is that each
 subsequent line has the distance between the sequence represented by the
 line and every sequence up to that sequence. So when you look at the
-matrix in a text editor, you\'ll notice that it contains the distances
+matrix in a text editor, you'll notice that it contains the distances
 below the diagonal of zeros that you would have in a square matrix.
 
 The file 98\_lt\_phylip\_amazon.dist is an example of a square matrix:

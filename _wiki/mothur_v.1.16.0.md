@@ -1,9 +1,9 @@
 ---
-title: 'Mothur v.1.16.0'
+title: 'mothur v.1.16.0'
 redirect_from: '/wiki/Mothur_v.1.16.0.html'
 ---
 We are happy to announce the release of [mothur
-v.1.16.0](mothur_v.1.16.0), aka the \"Brett who?\" version in
+v.1.16.0](mothur_v.1.16.0), aka the "Brett who?" version in
 celebration of the Green Bay Packers beating the Pittsburgh Steelers.
 This release contains a number of new features related to multivariate
 data visualization including implementations of tools to generate [
@@ -65,7 +65,7 @@ and Russian vodka coming\...
     [remove.lineage](remove.lineage) - allows users to make
     use of confidence scores
 -   [chimera.slayer](chimera.slayer) - can now use the
-    template file as it\'s own reference to look for chimeras specific
+    template file as it's own reference to look for chimeras specific
     to your data
 -   [chimera.slayer](chimera.slayer) - added a trim parameter
     to only include the portion of the sequence that corresponds to the

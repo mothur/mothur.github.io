@@ -1,5 +1,6 @@
 ---
 title: 'Nseqs'
+tags: 'calculators'
 redirect_from: '/wiki/Nseqs'
 ---
 The **nseqs** calculator returns the number of sequences

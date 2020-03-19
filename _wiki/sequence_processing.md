@@ -13,7 +13,7 @@ command are provided within their specific pages, but several users have
 provided several [analysis examples](analysis_examples),
 which use these commands. An exhaustive list of the commands found in
 mothur is available within the [ commands category
-index](Special:Categories).
+index](tags#commands).
 
 ## General commands
 
@@ -73,7 +73,7 @@ index](Special:Categories).
 -   [make.contigs](make.contigs) - create contigs from
     forward and reverse fastq files.
 -   [shhh.seqs](shhh.seqs) - a mothur-based rewrite of Chris
-    Quince\'s sequence denoising program, SeqNoise
+    Quince's sequence denoising program, SeqNoise
 -   [fastq.info](fastq.info) - parses fastq file into fasta
     and quality files
 -   [trim.seqs](trim.seqs) - pre-process sequences to remove
@@ -91,7 +91,7 @@ index](Special:Categories).
     reference alignment
 -   [filter.seqs](filter.seqs) - filter positions out of an
     alignment
--   [screen.seqs](screen.seqs) - remove sequences that don\'t
+-   [screen.seqs](screen.seqs) - remove sequences that don't
     satisfy criteria
 -   [seq.error](seq.error) - a function that assesses error
     rates in sequencing data

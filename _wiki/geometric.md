@@ -1,5 +1,6 @@
 ---
 title: 'Geometric'
+tags: 'calculators'
 redirect_from: '/wiki/Geometric'
 ---
 The **geometric** calculator returns the
@@ -161,8 +162,8 @@ Running\...
     0.09   0.148807    0.136559    0.117354
     0.10   0.167704    0.139020    0.119468 <---
 
-In this table the data in the column \"geometric\" are the calculated
-statistic value, those in column \"geometric\_lci\" are the critical
-values for α=0.01, and those in column \"geometric\_hci\" are the
+In this table the data in the column "geometric" are the calculated
+statistic value, those in column "geometric\_lci" are the critical
+values for α=0.01, and those in column "geometric\_hci" are the
 critical values for α=0.05. These are the same values that we found
 above for a cutoff of 0.10.

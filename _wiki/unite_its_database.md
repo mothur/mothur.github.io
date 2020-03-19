@@ -2,7 +2,7 @@
 title: 'UNITE ITS database'
 redirect_from: '/wiki/UNITE_ITS_database'
 ---
-There are full \"UNITE+INSD\" datasets available in mothur format:
+There are full "UNITE+INSD" datasets available in mothur format:
 
 This dataset comprises of all quality filtered unclustered UNITE + INSD
 sequences (311 302) included in the UNITE Species Hypotheses.

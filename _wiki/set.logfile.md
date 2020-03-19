@@ -157,13 +157,13 @@ Now myCollectLogfile will look like:
 
 ## To shut off logging
 
-You can shut off mothur\'s logging features by running the following:
+You can shut off mothur's logging features by running the following:
 
     mothur > set.logfile(name=silent)
 
 ## Revisions
 
--   1.40.0 Updates to mothur\'s log file management.
+-   1.40.0 Updates to mothur's log file management.
     [\#377](https://github.com/mothur/mothur/issues/377)
 
 

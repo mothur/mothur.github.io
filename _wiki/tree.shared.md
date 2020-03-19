@@ -45,7 +45,7 @@ output files are as follows:
 
 Using the calc option allows one to select any of the calculators of
 similarity of community membership and structure. The different
-calculators can be separated with hyphens (i.e. \"-\"). For example the
+calculators can be separated with hyphens (i.e. "-"). For example the
 following command will generate distance matrices for the [ Jaccard
 coefficient using richness estimators](jest), the [ Yue &
 Clayton theta](thetayc), and the [ Bray-Curtis
@@ -108,7 +108,7 @@ This is the same as:
 
 There may only be a couple of lines in your OTU data that you are
 interested in summarizing. There are two options. You could: (i)
-manually delete the lines you aren\'t interested in from you rabund,
+manually delete the lines you aren't interested in from you rabund,
 sabund, list, or shared file; (ii) or use the label option. If you only
 want to read in the data for the lines labeled unique, 0.03, 0.05 and
 

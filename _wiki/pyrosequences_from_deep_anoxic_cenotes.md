@@ -17,18 +17,18 @@ with 8 processors, 16 gigs of RAM, and running CentOS linux.
 The first thing I like to do is look at my sequence length distribution-
 here is a histogram from my pyrosequence dataset:
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/histogram.png)
+![sequence length distribution](https://mothur.s3.us-east-2.amazonaws.com/wiki/histogram.png)
 
-Work from Mitch Sogin\'s lab suggests that the sequencing error rate
+Work from Mitch Sogin's lab suggests that the sequencing error rate
 surrounding the normal distribution of sequence length is too high. From
 this histogram, I choose to trim sequences \>300nt and \<250nt (270 and
 220 trimmed length respectively)
 
     mothur > trim.seqs(fasta=sahl09.fna, oligos=sahl09.oligos, maxambig=0, minlength=220, maxlength=270, allfiles=T, maxhomop=10)
 
-I don\'t trim by average quality score.
+I don't trim by average quality score.
 
-## Using Mothur
+## Usin. mothur
 
 I used bacterial primers 8F and 357R (which contains the barcode) on 11
 separate DNA templates. I first found the unique sequences in the raw
@@ -39,7 +39,7 @@ fasta file [ zac.tgz](https://mothur.s3.us-east-2.amazonaws.com/wiki/zac.tgz):
 ### Alignment
 
 I then attempted to align my sequences to the SILVA sequence space.
-Specifically, I used Pat\'s [ silva reference
+Specifically, I used Pat's [ silva reference
 alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.alignment.zip) as my template. The
 metadata included in the fasta file title line will throw mothur off. It
 needs to be stripped off so only the name field remains. Here is a
@@ -52,7 +52,7 @@ sequences:
 I then checked my alignment in [arb](https://www.arb-home.de/) and a
 recent SILVA database and found that my alignment, which should cover E.
 coli positions 8-357, was spread out over the length of the 16S rRNA
-gene. Pat observed that my sequences weren\'t oriented correctly because
+gene. Pat observed that my sequences weren't oriented correctly because
 my barcode sequence was on the reverse primer. Therefore, I run:
 
     mothur > reverse.seqs(fasta=ZAC.unique.fasta)
@@ -67,13 +67,13 @@ looked great in ARB. I then filtered out empty columns with the
 
 I then created a distance matrix with the
 [dist.seqs](dist.seqs) command from my aligned sequences. I
-wasn\'t interested in sequences less related than 90%. Our server has 8
+wasn't interested in sequences less related than 90%. Our server has 8
 processors available and I use all of them for the alignment.
 
     mothur > dist.seqs(fasta=ZAC.unique.filter.fasta, cutoff=0.1, calc=eachgap, processors=8)
 
 This step took an hour or so. I then read the distance matrix with the
-[read.dist](read.dist) command, using the \"names\" file that
+[read.dist](read.dist) command, using the "names" file that
 I generated during the unique.seqs step:
 
     mothur > read.dist(column=ZAC.unique.filter.dist, name=ZAC.names, cutoff=0.1)
@@ -86,7 +86,7 @@ I then read the OTUs at 3% distance with:
 
     mothur > read.otu(list=ZAC.unique.filter.list, label=0.03, group=ZAC.groups)
 
-(to see how I make the \"group\" file, see instructions below)
+(to see how I make the "group" file, see instructions below)
 
 Part of the study design was to see how the samples cluster- I do this
 with:
@@ -115,7 +115,7 @@ different alignment methods.
 
 1\.  The greengenes coreset
 
-2\.  Pat\'s SILVA seed database
+2\.  Pat's SILVA seed database
 
 3\.  An alignment obtained from the [comparative rRNA web
     site](https://www.rna.ccbb.utexas.edu/)
@@ -142,47 +142,47 @@ the terminal gaps in the distance calculation.
 
 ## Making groups file
 
-This is an alternative method to generate the \'group\' file needed by
-many Mothur applications: it requires ARB
+This is an alternative method to generate the 'group' file needed by
+many mothur applications: it requires ARB
 
 
 1\.  Start ARB
 
-2\.  Click \'create and import\'
+2\.  Click 'create and import'
 
 3\.  Find either your aligned or unaligned fasta file and import it
 
 4\.  Once your sequences are imported, the Search and Query window opens,
     with all of your sequences marked
 
-5\.  Click \'Search species\' (on the left side of the window) and \'that
-    are marked\' (on the right side), hit the search button
+5\.  Click 'Search species' (on the left side of the window) and 'that
+    are marked' (on the right side), hit the search button
 
-6\.  Now click on \'Keep species\' (left) \'that match the query\'
+6\.  Now click on 'Keep species' (left) 'that match the query'
     (right), in the search bar, enter specific characters for one
     environment followed by the wild card (\*) in the field below; for
     example, if you have 100 sequences labeled ENV1, ENV2,\....ENV100,
     type ENV\* in the search bar and hit the search button
 
 7\.  Now only sequences from one environment are selected, now click
-    \'write to fields of listed\'. Pick an unused field, such as
-    \'acc\', and type in your environment name, click on write. DO NOT
-    INCLUDE ANY SPACES IN YOUR ENVIRONMENT NAME. Mothur doesn\'t like
+    'write to fields of listed'. Pick an unused field, such as
+    'acc', and type in your environment name, click on write. DO NOT
+    INCLUDE ANY SPACES IN YOUR ENVIRONMENT NAME. mothur doesn't like
     those.
 
 8\.  If you then go back to the Search and Query window, click on
-    \'Search species\' \'that are marked\', you should see all of your
+    'Search species' 'that are marked', you should see all of your
     sequences once again. Repeat this procedure for each environment in
     your dataset.
 
-9\.  Under the \'Tree\' heading at the top of the main screen, select
-    \'Select visible info (NDS)\'
+9\.  Under the 'Tree' heading at the top of the main screen, select
+    'Select visible info (NDS)'
 
-10\. Make sure only the fields \'name\' and \'acc\' are selected. Close
+10\. Make sure only the fields 'name' and 'acc' are selected. Close
     window.
 
 11\. Click File-\> Export -\> Export fields using NDS
 
-12\. Name your file, click the \'tab for columns\' button, and hit save.
+12\. Name your file, click the 'tab for columns' button, and hit save.
 
 13\. Voila!

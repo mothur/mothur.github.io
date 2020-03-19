@@ -30,7 +30,7 @@ The resulting fasta file would look like:
     C-G--T-T--GA-A-A-C-T-G-G--CG-T-T-C--T-T-G-A-G-T-G-G-GC-GA-G-A-A-G-T-A--TG-C-GG-A-ATG-C-G-T-G-GT-GT-A-G-CGGT-G-AAA--TG-C-AT-AG--AT-A-TC-A-C-G-CA-G-A-AC-T-...
     ...
 
-To merge SFF files you can simply use this command using 454\'s
+To merge SFF files you can simply use this command using 454's
 executable:
 
     sfffile -o combined.sff infile1.sff infile2.sff

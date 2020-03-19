@@ -221,7 +221,7 @@ all less than 0.01667 (i.e. 0.05/3).
 ### iters
 
 If you run the parsimony() command multiple times, you will notice that
-while the score for your user tree doesn\'t change, it\'s significance
+while the score for your user tree doesn't change, it's significance
 may change some. This is because the testing procedure is based on a
 randomization process that becomes more accurate as you increase the
 number of randomizations. By default, parsimony() will do 1,000
@@ -273,7 +273,7 @@ use all available.
 ### Missing names in tree or group file
 
 If you are missing a name from your tree or groups file mothur will warn
-you and return to the mothur prompt. Be sure that you don\'t have spaces
+you and return to the mothur prompt. Be sure that you don't have spaces
 in your sequence or group names.
 
 ### Differences in implementation
@@ -282,7 +282,7 @@ A minor difference between the mothur/TreeClimber and UniFrac
 implementations concerns how the significance is assessed. We test the
 significance by generating a large number (e.g. 1,000) of random-joining
 trees and score each tree to generate the distribution. The UniFrac web
-site\'s implementation uses the input tree topology and randomizes the
+site's implementation uses the input tree topology and randomizes the
 labels on the leaves of the tree a large number of times and scores each
 tree to generate the distribution. The difference in p-values is next to
 nothing; however, the random joining trees were in the original

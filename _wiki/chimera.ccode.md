@@ -213,7 +213,7 @@ processors is set to the number of processes running.
     mothur > chimera.ccode(fasta=ex.align, template=core_set_aligned.imputed.fasta, processors=2)
 
 This method was written using the algorithms described in the
-\"Evaluating putative chimeric sequences from PCR-amplified products\"
+"Evaluating putative chimeric sequences from PCR-amplified products"
 paper by Juan M. Gonzalez, Johannes Zimmerman and Cesareo Saiz-Jimenez.
 
 ## Revisions

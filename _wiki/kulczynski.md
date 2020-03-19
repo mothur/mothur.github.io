@@ -1,5 +1,6 @@
 ---
 title: 'Kulczynski'
+tags: 'calculators'
 redirect_from: '/wiki/Kulczynski'
 ---
 The **kulczynski** calculator returns the

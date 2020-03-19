@@ -1,5 +1,6 @@
 ---
 title: 'Sharednseqs'
+tags: 'calculators'
 redirect_from: '/wiki/Sharednseqs'
 ---
 The **sharednseqs** calculator returns the number

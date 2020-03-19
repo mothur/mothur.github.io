@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.1.0'
+title: 'mothur v.1.1.0'
 redirect_from: '/wiki/Mothur_v.1.1.0.html'
 ---
 We are happy to release **mothur v.1.1.0** today, March 9, 2009. In the
@@ -30,8 +30,8 @@ included in the March 2009 release of mothur v.1.1.0\...
 ## Cosmetic Changes
 
 -   Better type checking on option parameters
--   Don\'t need a space between comma and options
--   Don\'t need to put a quit() command at the end of a [ batch
+-   Don't need a space between comma and options
+-   Don't need to put a quit() command at the end of a [ batch
     file](Batch_mode)
 -   The [ collect.single](collect.single#The_calc_option), [
     collect.shared](collect.shared#The_calc_option), [
@@ -60,7 +60,7 @@ included in the March 2009 release of mothur v.1.1.0\...
     rarefaction.shared](rarefaction.shared#The_groups_option),
     and [ summary.shared](summary.shared#The_groups_option)
     commands.
--   Ability to define the threshold for \"abundant\" species in ACE
+-   Ability to define the threshold for "abundant" species in ACE
     estimator as something other than 10 in the [
     collect.single](collect.single#The_abund_option), [
     summary.single](summary.single#The_abund_option), and [

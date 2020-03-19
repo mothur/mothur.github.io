@@ -45,7 +45,7 @@ this you can use the group and name or count option:
 ### ecoli
 
 The ecoli parameter is used to provide a fasta file containing a single
-reference sequence (e.g. for e. coli) this must be aligned. Mothur will
+reference sequence (e.g. for e. coli) this must be aligned. mothur will
 trim to the start and end positions of the reference sequence.
 
 ### start && end
@@ -70,7 +70,7 @@ finds multiple potential matches to a given primer sequence.
 
 ### keepdots
 
-The keepdots parameter allows you to keep the leading and trailing .\'s,
+The keepdots parameter allows you to keep the leading and trailing .'s,
 default=true.
 
 ### processors
@@ -103,7 +103,7 @@ available.
     number of available processors and use all available.
 -   1.40.0 - Bug Fix: Trimming extra base when using the start and end
     parameters. [\#348](https://github.com/mothur/mothur/issues/348)
--   1.40.0 - Bug Fix: \"name mismatch\" error when using paired primers
+-   1.40.0 - Bug Fix: "name mismatch" error when using paired primers
     and keepdots=f.
 -   1.40.4 - Bug Fix: **pcr.seqs** and screen.seqs (with no bad reads
     detected), causing accnos file issue.

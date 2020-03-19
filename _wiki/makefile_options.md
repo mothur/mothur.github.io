@@ -12,7 +12,7 @@ executables, there are several options for you to consider.
     USEHDF5 ?= no
     USEGSL ?= no
     LOGFILE_NAME ?= no
-    VERSION = "\"1.44.0\""
+    VERSION = ""1.44.0""
 
 ## Optimize
 
@@ -21,7 +21,7 @@ compile time, but reduces execution time and code size.
 
     OPTIMIZE ?= yes
 
-    ifeq  ($$(strip $$(OPTIMIZE)),yes)
+    ifeq  ($(strip $(OPTIMIZE)),yes)
         CXXFLAGS += -O3
     endif
 
@@ -33,14 +33,14 @@ one location and save time typing lengthy filenames. This location can
 be overridden using the set.dir command at run time.
 
 To do this: change Enter\_your\_default\_path\_here to the location you
-would like to use as a default. For example let\'s set my default to the
+would like to use as a default. For example let's set my default to the
 release folder on my desktop:
 
     MOTHUR_FILES = "/Users/sarahwestcott/desktop/release"
 
-    ifeq  ($$(strip $$(MOTHUR_FILES)),"\"Enter_your_default_path_here\"")
+    ifeq  ($(strip $(MOTHUR_FILES)),""Enter_your_default_path_here"")
     else
-       CXXFLAGS += -DMOTHUR_FILES=$${MOTHUR_FILES}
+       CXXFLAGS += -DMOTHUR_FILES=${MOTHUR_FILES}
     endif
 
 To clear this at run time:
@@ -51,18 +51,18 @@ or to set it to another location:
 
     mothur > set.dir(tempdefault=/Users/sarahwestcott/desktop/MiSeq_SOP)
 
-## Set location for mothur\'s external tools
+## Set location for mothur's external tools
 
 The mothur tools option can be used to set a default location for
-mothur\'s external tools. For example, you might install vsearch,
+mothur's external tools. For example, you might install vsearch,
 uchime, prefetch and fasterq-dump in a central location like /usr/bin,
 and indicate to mothur to look there:
 
     MOTHUR_TOOLS="/usr/bin"
 
-    ifeq  ($$(strip $$(MOTHUR_TOOLS)),"\"Enter_your_mothur_tools_path_here\"")
+    ifeq  ($(strip $(MOTHUR_TOOLS)),""Enter_your_mothur_tools_path_here"")
     else
-        CXXFLAGS += -DMOTHUR_TOOLS=$${MOTHUR_TOOLS}
+        CXXFLAGS += -DMOTHUR_TOOLS=${MOTHUR_TOOLS}
     endif
 
 You can set this location at run time using the set.dir command:
@@ -78,14 +78,14 @@ that will be overwritten with each run of mothur try the following:
 
     LOGFILE_NAME ?=yes
 
-    ifeq  ($$(strip $$(LOGFILE_NAME)),yes)
-        LOGFILE_NAME="\"mothur.logfile\""
+    ifeq  ($(strip $(LOGFILE_NAME)),yes)
+        LOGFILE_NAME=""mothur.logfile""
     endif
 
 To silence the log feature compile with the name set to silent:
 
-    ifeq  ($$(strip $$(LOGFILE_NAME)),yes)
-        LOGFILE_NAME="\"silent\""
+    ifeq  ($(strip $(LOGFILE_NAME)),yes)
+        LOGFILE_NAME=""silent""
     endif
 
 To set the log file name at run time:
@@ -103,7 +103,7 @@ machine.
 
      USEREADLINE ?= yes
      
-     ifeq  ($$(strip $$(USEREADLINE)),yes)
+     ifeq  ($(strip $(USEREADLINE)),yes)
          CXXFLAGS += -DUSE_READLINE
          LDFLAGS += \
            -lreadline\
@@ -124,12 +124,12 @@ boost libraries in /usr/local/lib with the include headers in
     BOOST_INCLUDE_DIR="/usr/local/include"
     BOOST_LIBRARY_DIR="/usr/local/lib"
 
-    ifeq  ($$(strip $$(USEBOOST)),yes)
+    ifeq  ($(strip $(USEBOOST)),yes)
 
-        LDFLAGS += -L $${BOOST_LIBRARY_DIR}
+        LDFLAGS += -L ${BOOST_LIBRARY_DIR}
 
         LIBS += -lboost_iostreams -lz
-        CXXFLAGS += -DUSE_BOOST -I $${BOOST_INCLUDE_DIR}
+        CXXFLAGS += -DUSE_BOOST -I ${BOOST_INCLUDE_DIR}
     endif
 
 ## HDF5 Libraries
@@ -145,11 +145,11 @@ set the hdf5 locations. For example, I installed the hdf5 libraries in
     HDF5_INCLUDE_DIR="/usr/local/include"
     HDF5_LIBRARY_DIR="/usr/local/lib"
 
-    ifeq  ($$(strip $$(USEHDF5)),yes)
+    ifeq  ($(strip $(USEHDF5)),yes)
 
-    LDFLAGS += -L $${HDF5_LIBRARY_DIR}
+    LDFLAGS += -L ${HDF5_LIBRARY_DIR}
     LIBS += -lhdf5 -lhdf5_cpp
-    CXXFLAGS += -DUSE_HDF5 -I $${HDF5_INCLUDE_DIR}
+    CXXFLAGS += -DUSE_HDF5 -I ${HDF5_INCLUDE_DIR}
 
     endif
 
@@ -163,13 +163,13 @@ locations. For example, I installed the GSL libraries in
 /usr/local/gsl/lib with the include headers in /usr/local/gsl/include:
 
     USEGSL ?= yes
-    GSL_LIBRARY_DIR ?= "\"/usr/local/gsl/lib\""
-    GSL_INCLUDE_DIR ?= "\"/usr/local/gsl/include\""
+    GSL_LIBRARY_DIR ?= ""/usr/local/gsl/lib""
+    GSL_INCLUDE_DIR ?= ""/usr/local/gsl/include""
 
-    ifeq  ($$(strip $$(USEGSL)),yes)
+    ifeq  ($(strip $(USEGSL)),yes)
 
-    LDFLAGS += -L $${GSL_LIBRARY_DIR}
+    LDFLAGS += -L ${GSL_LIBRARY_DIR}
     LIBS += -lgsl -lgslcblas -lm
-    CXXFLAGS += -DUSE_GSL -I $${GSL_INCLUDE_DIR}
+    CXXFLAGS += -DUSE_GSL -I ${GSL_INCLUDE_DIR}
 
     endif

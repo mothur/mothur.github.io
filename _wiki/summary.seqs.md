@@ -27,7 +27,7 @@ Fasta is the only required parameter:
     # of Seqs: 98
 
 For this unaligned fasta file, we see that all of the sequences started
-at position 1 (they\'re unaligned) and had between 422 and 978 bases in
+at position 1 (they're unaligned) and had between 422 and 978 bases in
 them. The median length was 530 bases. We can also see that more than
 75% of the sequences had at least one ambiguous base in them and at
 least one had 20. The final column indicates the length of the longest
@@ -67,7 +67,7 @@ greengenes [alignment database](alignment_database):
 Now we see that all of the sequences are at least 1,423 bases long, very
 few have any ambiguous bases and most sequences start by position 109
 and end by position 6,849. These data can be useful for removing
-sequences that don\'t overlap or that have features indicating poor
+sequences that don't overlap or that have features indicating poor
 quality using the [screen.seqs](screen.seqs) command.
 
 ## name

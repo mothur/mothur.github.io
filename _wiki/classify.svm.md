@@ -126,7 +126,7 @@ and `Otu19061` to be the top three most important features.
 
 By default **classify.svm** will use recursive feature elimination to rank
 OTUs in order of relevance for discriminating among the design file
-groups. If \'mode=classify\' is specified **classify.svm** will train
+groups. If 'mode=classify' is specified **classify.svm** will train
 support vector machines on the specified data and report the best
 classification performance.
 
@@ -134,8 +134,8 @@ classification performance.
 
 SVM performance depends on scaling the features. By default the data
 will be transformed so that each feature has zero mean and unit variance
-\'zeromeanunitvariance\'. If SVM performance is poor with the default
-normalization the optional normalization \'zeroone\' may give better
+'zeromeanunitvariance'. If SVM performance is poor with the default
+normalization the optional normalization 'zeroone' may give better
 results. This option transforms all feature values to lie in the range
 \[0.0, 1.0\].
 
@@ -147,7 +147,7 @@ parameters chosen during training. For example,     evaluationfoldcount=5
 means 4/5 of the data will be used for training and choosing the best
 parameters while 1/5 of the data will be used to test the performance of
 the best SVMs. The larger fraction of the data will be referred to as
-the \'development\' dataset and the smaller fraction as \'evaluation\'
+the 'development' dataset and the smaller fraction as 'evaluation'
 dataset.
 
 Increasing `evaluationfoldcount` may result in better classification and
@@ -164,11 +164,11 @@ The default value for `evaluationfoldcount` is 3.
 
 Option `trainigfoldcount` specifies the number of cross validation folds
 that will be used when training SVMs. For example, if
-`trainingfoldcount=5` then 4/5 of the \'development\' dataset will be
-used to train and 1/5 of the \'development\' dataset will be used to
+`trainingfoldcount=5` then 4/5 of the 'development' dataset will be
+used to train and 1/5 of the 'development' dataset will be used to
 measure and compare performance of the SVMs. The larger fraction of data
-will be referred to as the \'training\' dataset and the smaller as the
-\'testing\' dataset.
+will be referred to as the 'training' dataset and the smaller as the
+'testing' dataset.
 
 Increasing `trainingfoldcount` may improve classification score but will
 certainly increase the training time. Choosing a large
@@ -184,8 +184,8 @@ The default value for `trainingfoldcount` is 10.
 For simple classification, but not feature selection with SVM-RFE, one
 or more kernel functions may be specified. SVMs will be trained with all
 specified kernel functions and the best performing kernel will chosen by
-cross validation. The allowed values are \'linear\', \'rbf\',
-\'polynomial\', and \'sigmoid\'.
+cross validation. The allowed values are 'linear', 'rbf',
+'polynomial', and 'sigmoid'.
 
 Training time will increase with each additional kernel.
 
@@ -227,12 +227,12 @@ The default values are `polynomialdegree=2;3;4` and
 ### sigmoidalpha,sigmoidconstant
 
 The sigmoid kernel has two parameters, a multiplicative constant
-referred to here as \'alpha\' and an additive constant.
+referred to here as 'alpha' and an additive constant.
 
 ### linearsmoc,rbfsmoc,polynomialsmoc,sigmoidsmoc
 
 The Sequential Minimal Optimization (SMO) algorithm is used to train
-SVMs. This algorithm has one tunable parameter generally known as \'C\'.
+SVMs. This algorithm has one tunable parameter generally known as 'C'.
 This parameter scales the penalty for misclassified observations during
 training. A list of C values can be specified for each kernel with the
 `linearsmoc`,`rbfsmoc`, and `polynomialsmoc` options and the best value

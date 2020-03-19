@@ -3,10 +3,10 @@ title: 'shhh.flows'
 tags: 'commands'
 redirect_from: '/wiki/Shhh.flows.html'
 ---
-The **shhh.flows** command is Pat Schloss\'s
-translation of Chris Quince\'s PyroNoise algorithm
+The **shhh.flows** command is Pat Schloss's
+translation of Chris Quince's PyroNoise algorithm
 [1](https://people.civil.gla.ac.uk/~quince/Software/PyroNoise.html) from
-C to C++ with the incorporation of mothur\'s bells and whistles. Based
+C to C++ with the incorporation of mothur's bells and whistles. Based
 on processing of test datasets provided by Quince, **shhh.flows** gives the
 same/similar output to AmpliconNoise. (Note: The AmpliconNoise pipeline
 includes a second algorithm, SeqNoise. SeqNoise does not operate on the
@@ -54,7 +54,7 @@ This will generate several files including \...
 
 Alternatively, if you used multiple barcodes and or primers in
 [trim.flows](trim.flows), then the names of the resulting
-flow files will be stored in a file ending in \"flow.files\". Using the
+flow files will be stored in a file ending in "flow.files". Using the
 files option will tell the **shhh.flows** command to process each of those
 flow files:
 
@@ -156,7 +156,7 @@ From this output you are ready to carry out the rest of your pipeline.
 ## Revisions
 
 -   First introduced - version 1.22.0.
--   1.25.0 - with outputdir didn\'t put all of the files to the output
+-   1.25.0 - with outputdir didn't put all of the files to the output
     directory
 -   1.26.0 - added large parameter
 -   1.30.0 - added flow order options A, B and I.

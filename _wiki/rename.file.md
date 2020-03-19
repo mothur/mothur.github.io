@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Rename.file.html'
 ---
 The **rename.file** command allows you to **rename.file** from within mothur.
-Mothur will update the current files saved by mothur as well.
+mothur will update the current files saved by mothur as well.
 
 
 ## Default Settings

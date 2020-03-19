@@ -14,13 +14,13 @@ year.
 ## mothur workshop
 
 This workshop is geared towards people with diverse backgrounds so you
-shouldn\'t feel like this isn\'t for you if you are a beginner. I assume
+shouldn't feel like this isn't for you if you are a beginner. I assume
 no previous computer programming experience. The workshop is an even
 blend of lecture/discussion and hands on use of mothur with real
 sequence data. Here is a rough outline of what the workshop schedule
 will look like (although it is subject to some minor changes)\...
 
-*\' Day 1:*\'
+*' Day 1:*'
 
 -   Overview of methods used in microbial ecology
 -   DNA sequencing technologies (Sanger, 454, Illumina, IonTorrent,
@@ -47,13 +47,13 @@ will look like (although it is subject to some minor changes)\...
 
 This workshop is being filled on a first come, first served basis. The
 workshop is geared towards people with interests in microbial ecology
-that would like to learn R or to learn it better so you shouldn\'t feel
-like this isn\'t for you if you are a beginner. I assume no previous
+that would like to learn R or to learn it better so you shouldn't feel
+like this isn't for you if you are a beginner. I assume no previous
 computer programming experience. The workshop is an even blend of
 lecture/discussion and hands on use of R with real data and typically
 uses mothur output files as a starting point. It is taught around the
 generation of data visualization methods commonly used by microbial
-ecologists. Along the way we\'ll learn a number of ways to work with
+ecologists. Along the way we'll learn a number of ways to work with
 data from within R. Here is a rough outline of what the workshop
 schedule will look like (it is subject to some minor changes)\...
 

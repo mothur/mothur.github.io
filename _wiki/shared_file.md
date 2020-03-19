@@ -1,6 +1,6 @@
 ---
 title: 'shared file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Shared_file'
 ---
 A shared file is analogous to an [rabund file](rabund_file).

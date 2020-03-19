@@ -6,7 +6,7 @@ In the [command line mode](command_line_mode) you can run
 mothur directly from the terminal. This may be advantageous for people
 generating shell script pipelines. Following the name of the executable
 (i.e. mothur) you would type out the commands within quote marks and the
-first character being a pound sign (i.e. \'\#\'). The commands should be
+first character being a pound sign (i.e. '\#'). The commands should be
 separated by semicolons.
 
 ## Default
@@ -14,54 +14,54 @@ separated by semicolons.
 For example, if you want to cluster your data and perform some alpha
 diversity analysis, then your command line could look like this:
 
-    escriba: pschloss$$ mothur "#dist.seqs(fasta=final.fasta, processors=12);cluster(column=current, count=final.count_table);collect.single();rarefaction.single()"
+    $ mothur "#dist.seqs(fasta=final.fasta, processors=12);cluster(column=current, count=final.count_table);collect.single();rarefaction.single()"
 
 ## Environment Variables
 
 Environment variables can be used within mothur. This can be helpful for
-standardizing analysis done in your lab. Let\'s add environment
+standardizing analysis done in your lab. Let's add environment
 variables to the above commands.
 
-    escriba: pschloss$$ mothur "#PROC=12;DATA_LOCATION=/Users/sarahwestcott/Desktop/MiSeq_SOP;dist.seqs(fasta=$$DATA_LOCATION/final.fasta, processors=$$PROC);cluster(column=current, count=final.count_table);collect.single();rarefaction.single()"
+    $ mothur "#PROC=12;DATA_LOCATION=/Users/sarahwestcott/Desktop/MiSeq_SOP;dist.seqs(fasta=$DATA_LOCATION/final.fasta, processors=$PROC);cluster(column=current, count=final.count_table);collect.single();rarefaction.single()"
 
 ### Format
 
 The format of environmental variables is \[tag\]=\[value\]. For example,
-let\'s create a environment variable for the processors option.
+let's create a environment variable for the processors option.
 
     PROC=12
 
 ### Use
 
-The \'\$$\' symbol indicates to mothur that the value is an environment
+The '$' symbol indicates to mothur that the value is an environment
 variable to be replaced with the actual value at run time. For example:
 
     PROC=12
-    make.contigs(file=current, processors=$$PROC)
+    make.contigs(file=current, processors=$PROC)
 
 is equivalent to
 
     make.contigs(file=current, processors=12)
 
-Mothur will automatically pull in the systems environment variable. For
+mothur will automatically pull in the systems environment variable. For
 example you can set variables in bash and then run mothur in command
 line mode:
 
-    MothurMac-3% export REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release
-    MothurMac-3% export ALIGNREF=silva.v4.fasta
-    MothurMac-3% export TAXONREF_FASTA=trainset9_032012.pds.fasta
-    MothurMac-3% export TAXONREF_TAX=trainset9_032012.pds.tax
-    MothurMac-3% export CONTAMINENTS=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota
-    MothurMac-3% export LOGNAME=MiSEQ_SOP_mouse_03032020
-    MothurMac-3% export DATA=/Users/sarahwestcott/Desktop/MiSeq_SOP
-    MothurMac-3% export TYPE=gz
-    MothurMac-3% export PROC=12
-    MothurMac-3% ./mothur "#set.logfile(name=$$LOGNAME);make.file(inputdir=$$DATA, type=$$TYPE, prefix=stability);make.contigs(file=current, processors=$$PROC);" 
+    $ export REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release
+    $ export ALIGNREF=silva.v4.fasta
+    $ export TAXONREF_FASTA=trainset9_032012.pds.fasta
+    $ export TAXONREF_TAX=trainset9_032012.pds.tax
+    $ export CONTAMINENTS=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota
+    $ export LOGNAME=MiSEQ_SOP_mouse_03032020
+    $ export DATA=/Users/sarahwestcott/Desktop/MiSeq_SOP
+    $ export TYPE=gz
+    $ export PROC=12
+    $ ./mothur "#set.logfile(name=$LOGNAME);make.file(inputdir=$DATA, type=$TYPE, prefix=stability);make.contigs(file=current, processors=$PROC);" 
 
 You can create an environment variable for anything you wish as well as
 combining variables. For example:
 
-    MothurMac-3% ./mothur "#REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release;TAXONREF_FASTA=trainset9_032012.pds.fasta;TAXONREF_TAX=trainset9_032012.pds.tax;CONTAMINENTS=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota;DATA=/Users/sarahwestcott/Desktop/MiSeq_SOP; PROC=12;classify.seqs(fasta=$$DATA/my.fasta, count=$$DATA/my.count_table, reference=$$REFERENCE_LOCATION/$$TAXONREF_FASTA, taxonomy=$$REFERENCE_LOCATION/$$TAXONREF_TAX, cutoff=80);remove.lineage(fasta=current, count=current, taxonomy=current, taxon=$$CONTAMINENTS);"
+    $ ./mothur "#REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release;TAXONREF_FASTA=trainset9_032012.pds.fasta;TAXONREF_TAX=trainset9_032012.pds.tax;CONTAMINENTS=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota;DATA=/Users/sarahwestcott/Desktop/MiSeq_SOP; PROC=12;classify.seqs(fasta=$DATA/my.fasta, count=$DATA/my.count_table, reference=$REFERENCE_LOCATION/$TAXONREF_FASTA, taxonomy=$REFERENCE_LOCATION/$TAXONREF_TAX, cutoff=80);remove.lineage(fasta=current, count=current, taxonomy=current, taxon=$CONTAMINENTS);"
 
 A related option is to run mothur in [batch
 mode](batch_mode).

@@ -30,7 +30,7 @@ analysis of the bacterial 16S rRNA gene. The files used to conduct this
 analysis can be downloaded here
 [https://mothur.s3.us-east-2.amazonaws.com/wiki/biofilmeu.zip](media:biofilmeu.zip).
 
-## Preparing the Data for Mothur:
+## Preparing the Data fo. mothur:
 
 ### Initial Data Preparation: Preprocessing and Alignment
 
@@ -105,7 +105,7 @@ Finally, a distance matrix was created using the following steps:
 A phylogenetic tree was created by adding the 2096 partial sequences to
 a tree containing \~ 9000 full length 16S rRNA gene sequences compiled
 by Philip Hugenholtz. This tree can be downloaded as an ARB file from
-the Ribosomal Database Project → Resources → Philip Hugenholtz\'s 16S
+the Ribosomal Database Project → Resources → Philip Hugenholtz's 16S
 rRNA ARB Database, at [https://rdp.cme.msu.edu/misc/resources.jsp](https://rdp.cme.msu.edu/misc/resources.jsp).
 
 The aligned sequences were added to the Hugenholtz data base by

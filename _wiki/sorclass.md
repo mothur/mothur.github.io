@@ -1,5 +1,6 @@
 ---
 title: 'Sorclass'
+tags: 'calculators'
 redirect_from: '/wiki/Sorclass'
 ---
 The **sorclass** calculator returns the traditional
@@ -8,11 +9,12 @@ This is also known as the Dice coefficient. This calculator can be used
 in the [summary.shared](summary.shared) and
 [collect.shared](collect.shared) commands.
 
-$$D_{Sorenson} = 1-\frac{2S_{AB}}{S_A + S_B}$$,
+$$D_{Sorenson} = 1-\frac{2S_{AB}}{S_A + S_B}$$
 
-where, $$S_{AB}$$ = the number of shared OTUs between communities A and B
-$$S_{A}$$ = the number of OTUs in community A $$S_{B}$$ = the number of OTUs
-in community B
+where,
+* $$S_{AB}$$ = the number of shared OTUs between communities A and B
+* $$S_{A}$$ = the number of OTUs in community A
+* $$S_{B}$$ = the number of OTUs in community B
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
 Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following

@@ -185,8 +185,8 @@ following option:
 
     mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups, processors=2)
 
-Running this command on my laptop doesn\'t exactly cut the time in half,
-but it\'s pretty close. There is no software limit on the number of
+Running this command on my laptop doesn't exactly cut the time in half,
+but it's pretty close. There is no software limit on the number of
 processors that you can use.
 
 ## Revisions

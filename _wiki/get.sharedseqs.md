@@ -78,7 +78,7 @@ The .shared.fasta output files look like:
 ### label
 
 There may only be a couple of lines in your list file that you are
-interested in. You could either manually delete the lines you aren\'t
+interested in. You could either manually delete the lines you aren't
 interested in from you list file or use the label option.
 
     mothur > get.sharedseqs(list=abrecovery.fn.list, group=abrecovery.groups, label=0.04-0.82)
@@ -185,7 +185,7 @@ Opening abrecovery.fn.0.04.shared.seqs you would see the output as:
 
 Confusion can occur when you have a shared file with more groups than
 just the subset you are looking at in your venn diagram. For this
-example let\'s look at a simple shared file like:
+example let's look at a simple shared file like:
 
 Full shared file:
 

@@ -71,7 +71,7 @@ an equal change of occurring in the null matrix.
 
 Proportional rows or columns means that the proportion of occurrences in
 rows, columns or both in the original co-occurrence matrix are preserved
-but the totals may differ. Each species or site\'s chances of occurring
+but the totals may differ. Each species or site's chances of occurring
 are proportional to their occurrence in the original co-occurrence
 matrix.
 
@@ -107,11 +107,11 @@ equiprobable rows (species). This is because tests of co-occurrence are
 quite sensitive to the frequency of species occurrence. As such,
 rowtotals should be maintained or at least kept proportional in the null
 models. Sim9 is well suited to co-occurrence matrices that have an
-\"island list\" structure. Island lists are often found in classical
+"island list" structure. Island lists are often found in classical
 ecology datasets that contain species with well defined habitat patches
 and are rarely degenerate (matrices that contain empty rows or columns).
-Sim2 is well suited for co-occurrence matrices that have a \"sample
-list\" structure. Sample list structured data are found where species
+Sim2 is well suited for co-occurrence matrices that have a "sample
+list" structure. Sample list structured data are found where species
 have relatively homogeneous habitats and degenerate matrices are common.
 In these matrices species will often occur in only one site.
 

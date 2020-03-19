@@ -2,7 +2,7 @@
 title: 'Download mothur'
 redirect_from: '/wiki/Download_mothur'
 ---
-**Mothur\'s source and executables are now available on
+**Mothur's source and executables are now available on
 [github](https://github.com/mothur/mothur/releases/latest).**
 
 Downloading an executable version of mothur is the easiest and fastest
@@ -22,7 +22,7 @@ you will only receive an email from us about once a month or so.
     files](Greengenes-formatted_databases)
 -   [lookup files](Lookup_files)
 
-## Pat\'s example analyses to get you started
+## Pat's example analyses to get you started
 
 -   [miseq\_sop](MiSeq_SOP)
 -   [454\_sop](454_SOP)

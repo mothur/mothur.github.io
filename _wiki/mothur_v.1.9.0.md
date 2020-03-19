@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.9.0'
+title: 'mothur v.1.9.0'
 redirect_from: '/wiki/Mothur_v.1.9.0.html'
 ---
 We are happy to announce the release of [mothur
@@ -15,7 +15,7 @@ purify your sequence collection of chimeras. Perhaps the biggest update
 in this release is the incorporation of MPI. You can still use multiple
 processors without using MPI, but for those power users that have a
 cluster and would like to run mothur jobs across machines or nodes, it
-is now possible. We are curious to hear people\'s experiences with the
+is now possible. We are curious to hear people's experiences with the
 MPI version of mothur. These are just a few of the many new features
 that we have added to this release.
 
@@ -25,7 +25,7 @@ great resource for users to suggest new features and ask questions. Many
 of the features in this release have come from users. Thanks for the
 great suggestions and bug reports - this feed back helps to make mothur
 the great program it is! We have a number of features that we are
-working on for v.1.10.0 and hopefully we won\'t have such a long time
+working on for v.1.10.0 and hopefully we won't have such a long time
 lag before the next release.
 
 ## Options
@@ -62,7 +62,7 @@ lag before the next release.
 
 ## Bug fixes
 
--   Problem with \"../\" ==\> align.seqs(candidate=wobus.unique.fasta,
+-   Problem with "../" ==\> align.seqs(candidate=wobus.unique.fasta,
     template=../DataAnalysis/silva.refalign.fasta, processors=2);
     Segmentation fault
 -   fixed bug in merge.files that inserted the eof character in between

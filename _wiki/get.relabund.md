@@ -64,7 +64,7 @@ In the file abrecovery.fn.relabund you would see something like:
 #### averagegroup
 
 Abundance / (Total number of sequences in the group / Total number of
-OTU\'s).
+OTU's).
 
     mothur > get.relabund(shared=abrecovery.fn.shared, label=unique-0.03-0.05-0.10, scale=averagegroup)
 
@@ -110,7 +110,7 @@ In the file abrecovery.fn.relabund you would see something like:
 
 There may only be a couple of lines in your OTU data that you are
 interested in finding the relative abundance for. There are two options.
-You could: (i) manually delete the lines you aren\'t interested in from
+You could: (i) manually delete the lines you aren't interested in from
 your list file; (ii) or use the label option. To use the label option
 with the get.relabund() command you need to know the labels you are
 interested in. If you want the relative abundance for the lines labeled

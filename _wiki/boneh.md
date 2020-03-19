@@ -1,5 +1,6 @@
 ---
 title: 'Boneh'
+tags: 'calculators'
 redirect_from: '/wiki/Boneh'
 ---
 The **boneh** calculator returns the Boneh estimate of
@@ -29,7 +30,7 @@ $$\nu\left(1-\left[1-\frac{f_1}{n\nu}\right]^N\right)= \sum_{i=1}^N f_i \left(1-
 
 provided that:
 
-$$f_1 > \sum_{i=1}^N f_i \exp\left(-i\right)$$
+$$f_1 \gt \sum_{i=1}^N f_i \exp\left(-i\right)$$
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
 Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following

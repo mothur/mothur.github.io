@@ -1,5 +1,6 @@
 ---
 title: 'Jack'
+tags: 'calculators'
 redirect_from: '/wiki/Jack'
 ---
 The **jack** calculator returns the interpolated
@@ -18,7 +19,7 @@ $$S_{jack,k} = S_{obs} + \sum_{i=1}^k \left ( -1 \right )^{i+1} {k \choose i} n_
 $$var \left( S_{jack,k} \right ) = \sum_{i=1}^{n_t} \left ( a_{ik} \right )^2 n_i - S_{jack,k}$$
 
 $$a_{ik} = \begin{cases}
-\left ( -1 \right )^{i+1} {k \choose i} + 1\mbox{, i}=\mbox{1...k} 
+\left ( -1 \right )^{i+1} {k \choose i} + 1\mbox{, i}=\mbox{1...k}
 1\mbox{, i}>\mbox{k}
 \end{cases}$$
 
@@ -90,7 +91,7 @@ $$a_{21}= a_{31}= a_{41}=1$$
 
 $$var \left( S_{jack,1} \right ) = \left(a_{11}^2 \right) 75 + \left(a_{21}^2 \right) 6 + \left(a_{31}^2 \right) 1 + \left(a_{41}^2 \right) 2-S_{jack,k}= \left(4\right) 75 + \left(1\right) 6 + \left(1\right) 1 + \left(1\right) 2 -159= 150$$
 
-The statistics for the remaining k\'s and the Tk and Pk can be
+The statistics for the remaining k's and the Tk and Pk can be
 calculated:
 
     k     Sj,k    var      Tk       Pk

@@ -32,7 +32,7 @@ The calc parameter will allow you to use any of the similarity
 [calculators](calculators) provided within mothur to generate
 heatmaps comparing the membership or structure of your samples. For
 example, the following command will generate heatmaps for the [
-classical Sorenson index](sorclass), [ Yue & Clayton\'s
+classical Sorenson index](sorclass), [ Yue & Clayton's
 theta](thetayc), and the [ Morisita-Horn
 index](morisitahorn):
 
@@ -42,7 +42,7 @@ index](morisitahorn):
 
 There may only be a couple of lines in your OTU data that you are
 interested in generating a heatmap diagram for. There are two options.
-You could: (i) manually delete the lines you aren\'t interested in from
+You could: (i) manually delete the lines you aren't interested in from
 you list or shared file; (ii) or use the label option. If you only want
 to read in the data for the lines labeled unique, 0.03, 0.05 and 0.10
 you would enter:

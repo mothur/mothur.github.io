@@ -20,7 +20,7 @@ Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) arc
 
 To run get.seqs, you must provide the accnos option and at least one
 other option. The command will generate a \*.pick.\* file. To generate
-an accnos file, let\'s first run [unique.seqs](unique.seqs),
+an accnos file, let's first run [unique.seqs](unique.seqs),
 [summary.seqs](summary.seqs),
 [screen.seqs](screen.seqs), and
 [list.seqs](list.seqs):
@@ -54,7 +54,7 @@ names) in a text editor or spreadsheet program that allows you to save
 your work as tab-delimited text. Notepad and Excel both allow you to do
 this, just be sure to use quotation marks around your file name in order
 to get your .accnos file type designation (e.g.
-\"My\_subset\_sequences.accnos\").
+"My\_subset\_sequences.accnos").
 
 ### accnos option
 
@@ -108,7 +108,7 @@ in your .accnos file, then all sequences in that line will be kept. This
 is especially useful when used with the groupfile, since for most
 commands your files can contain only the unique sequences, but the
 groupfile need to contain all the sequences in your namefile. For
-example, let\'s look at the following line from the
+example, let's look at the following line from the
 esophagus.unique.good.accnos:
 
     65_1_2 65_1_2,65_1_23,65_2_1,65_2_8

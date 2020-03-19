@@ -72,13 +72,13 @@ the blast option you may want to set the blast location parameter as
 well (see below). The blastlocation parameter allows you to specify the
 location of your blast executable. By default mothur will look in
 
-\./blast/bin relative to mothur\'s executable.
+\./blast/bin relative to mothur's executable.
 
 ### blastlocation
 
 The blastlocation parameter allows you to specify the location of your
 blast executable. By default mothur will look in ./blast/bin relative to
-mothur\'s executable.
+mothur's executable.
 
 ### ksize
 
@@ -164,7 +164,7 @@ to see if they are chimeric. By default, split=F.
 
 This command was modeled after the chimeraSlayer written by the Broad
 Institute. Additional documentation can be found at the [Broad
-Institute\'s website](https://microbiomeutil.sourceforge.net/).
+Institute's website](https://microbiomeutil.sourceforge.net/).
 
 ### dereplicate
 
@@ -174,7 +174,7 @@ the sequence to be chimeric, then all groups find it to be chimeric,
 default=f. If you set dereplicate=t, and then run remove.seqs with
 dups=f you can remove only the redundant chimeric sequences.
 
-Let\'s look at an example:
+Let's look at an example:
 
     >seq1
     attgacat....
@@ -235,7 +235,7 @@ The results would be:
 ## Revisions
 
 -   1.22.0 - Added the group option for use with reference=self.
--   1.23.0 - Paralellized by group for all OS\'s.
+-   1.23.0 - Paralellized by group for all OS's.
 -   1.28.0 - added count parameter.
 -   1.29.0 - added the dereplicate parameter.
 -   1.30.0 - with count file and dereplicate=t will create a

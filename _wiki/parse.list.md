@@ -39,7 +39,7 @@ Output to the screen looks like:
 
 There may only be a couple of lines in your list file that you are
 interested in. There are two options. You could: (i) manually delete the
-lines you aren\'t interested in from your list file; (ii) or use the
+lines you aren't interested in from your list file; (ii) or use the
 label option.
 
     mothur > parse.list(list=abrecovery.fn.list, group=abrecovery.groups, label=unique-0.03-0.05-0.10)

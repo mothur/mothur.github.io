@@ -86,7 +86,7 @@ LDA. Default=30.
 ### curv
 
 The curv parameter is used to set whether perform the wilcoxon testing
-the Curtis\'s approach \[beta version\] Default=F.
+the Curtis's approach \[beta version\] Default=F.
 
 ### fboots
 
@@ -119,7 +119,7 @@ Recommended when very low values are present. Default=T.
 ## Revisions
 
 -   1.32.0 - First Introduced
--   1.37.0 - Fixes \"Skipping x iter\...\" warning.
+-   1.37.0 - Fixes "Skipping x iter\..." warning.
 -   1.38.0 - Adds sets parameter
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,

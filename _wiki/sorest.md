@@ -1,5 +1,6 @@
 ---
 title: 'Sorest'
+tags: 'calculators'
 redirect_from: '/wiki/Sorest'
 ---
 The **sorest** calculator returns an estimate of the

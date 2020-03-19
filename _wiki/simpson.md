@@ -1,5 +1,6 @@
 ---
 title: 'Simpson'
+tags: 'calculators'
 redirect_from: '/wiki/Simpson'
 ---
 The **simpson** calculator returns the Simpson
@@ -12,9 +13,9 @@ $$D_{simpson} = \frac {\sum_{i=1}^{S_{obs}} {n_i \left ( n_i - 1 \right )}}{N \l
 
 $$var\left(D_{simpson}\right)=\frac{\sum_{i=1}^{S_{obs}} \left(\frac{n_i}{N}\right)^3-\left(\sum_{i=1}^{S_{obs}} \left(\frac{n_i}{N}\right)^2\right)^2}{0.25N}$$
 
-$$LCI_{95%}=D_{simpson}-1.96\sqrt{var\left ( D_{simpson} \right )}$$
+$$LCI_{95\%}=D_{simpson}-1.96\sqrt{var\left ( D_{simpson} \right )}$$
 
-$$UCI_{95%}=D_{simpson}+1.96\sqrt{var\left ( D_{simpson} \right )}$$
+$$UCI_{95\%}=D_{simpson}+1.96\sqrt{var\left ( D_{simpson} \right )}$$
 
 where,
 
@@ -59,9 +60,9 @@ $$D_{simpson} = \frac {75 \left(1\right)\left(1-1\right)+6 \left(2\right)\left(2
 
 $$var\left(D_{simpson}\right)=\frac{75\left(\frac{1}{98} \right)^3+6\left(\frac{2}{98} \right)^3+1\left(\frac{3}{98} \right)^3+2\left(\frac{4}{98} \right)^3-\left(75\left(\frac{1}{98} \right)^2+6\left(\frac{2}{98} \right)^2+1\left(\frac{3}{98} \right)^2+2\left(\frac{4}{98} \right)^2\right)^2}{\frac{98}{4}} = 3.3826x10^{-6}$$
 
-$$LCI_{95%}= 0.004418 -1.96\sqrt{var\left ( 3.3826x10^{-6} \right )} = 0.0008$$
+$$LCI_{95\%}= 0.004418 -1.96\sqrt{var\left ( 3.3826x10^{-6} \right )} = 0.0008$$
 
-$$UCI_{95%}= 0.004418 +1.96\sqrt{var\left ( 3.3826x10^{-6} \right )} = 0.0080$$
+$$UCI_{95\%}= 0.004418 +1.96\sqrt{var\left ( 3.3826x10^{-6} \right )} = 0.0080$$
 
 Running\...
 

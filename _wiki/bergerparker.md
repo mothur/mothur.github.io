@@ -1,5 +1,6 @@
 ---
 title: 'Bergerparker'
+tags: 'calculators'
 redirect_from: '/wiki/Bergerparker'
 ---
 The **bergerparker** calculator returns the

@@ -1,5 +1,6 @@
 ---
 title: 'Jclass'
+tags: 'calculators'
 redirect_from: '/wiki/Jclass'
 ---
 The **jclass** calculator returns the traditional

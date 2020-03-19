@@ -5,8 +5,8 @@ redirect_from: '/wiki/Sogin_data_analysis'
 In 2006, Mitch Sogin and his colleagues at the Marine Biology Laboratory
 in Woods Hole, MA published a ground breaking paper in
 [pnas](https://www.pnas.org/content/103/32/12115.full?sid=f4979299-96b2-4687-b76c-330ba61ab48f),
-which was titled, \"Microbial diversity in the deep sea and the
-underexplored \'rare biosphere\'. Their publication was the first to use
+which was titled, "Microbial diversity in the deep sea and the
+underexplored 'rare biosphere'. Their publication was the first to use
 pyrosequencing technology to sequence 16S rRNA gene tags. Specifically,
 they sequenced 118,000 V6 tags from the 16S rRNA gene. This region was
 approximately 60 bp long and was ideal for use with the GS20 454
@@ -23,12 +23,12 @@ the files that will be generated in this exercise.
 
 ## Data availability
 
-The V6 sequence tags are available from the author\'s [MBL
+The V6 sequence tags are available from the author's [MBL
 website](https://jbpc.mbl.edu/research_supplements/g454/20060412-private/)
 as a zip file. You can see the metadata in [Table
 1](https://www.pnas.org/content/103/32/12115/T1.expansion.html) of their
 paper. The decompressed folder will be called **supplemental** - rename
-it to something more meaningful like \"sogin\". Opening the sogin folder
+it to something more meaningful like "sogin". Opening the sogin folder
 you will see two folders - original-data and updated-20080221. The
 updated folder contains the result of a reanalysis of the raw sequences
 resulting in a total of more than 222,000 V6 tags. These are the
@@ -37,7 +37,7 @@ commands to navigate to the updated-20080221 folder. Within this folder
 are 8 fasta-formatted sequence files and a readme.txt file. At the
 prompt type the following:
 
-    pschloss$$ grep -c ">" *.fa  
+    $ grep -c ">" *.fa  
 
 This will produce the following output, which indicates the number of
 sequences in each file:
@@ -54,37 +54,37 @@ sequences in each file:
 First, we want to generate a groups file. To do this type the following
 commands:
 
-    pschloss$$ grep ">" 112R.fa > 112R.group
-    pschloss$$ grep ">" 115R.fa > 115R.group
-    pschloss$$ grep ">" 137.fa > 137.group
-    pschloss$$ grep ">" 138.fa > 138.group
-    pschloss$$ grep ">" 53R.fa > 53R.group
-    pschloss$$ grep ">" 55R.fa > 55R.group
-    pschloss$$ grep ">" FS312.fa > FS312.group
-    pschloss$$ grep ">" FS396.fa > FS396.group
+    $ grep ">" 112R.fa > 112R.group
+    $ grep ">" 115R.fa > 115R.group
+    $ grep ">" 137.fa > 137.group
+    $ grep ">" 138.fa > 138.group
+    $ grep ">" 53R.fa > 53R.group
+    $ grep ">" 55R.fa > 55R.group
+    $ grep ">" FS312.fa > FS312.group
+    $ grep ">" FS396.fa > FS396.group
 
 Now, assuming you have a text editor like
 [textwrangler](https://www.barebones.com/products/TextWrangler/) or
 [bbedit](https://www.barebones.com/products/bbedit/), type the following:
 
-    pschloss$$ edit *group   # for TextWrangler
+    $ edit *group   # for TextWrangler
 
 or
 
-    pschloss$$ bbedit *group   # for BBedit
+    $ bbedit *group   # for BBedit
 
 Within the text editor for each file go Search-\>Find\... and in the
-\"Find\" window enter a \'\>\' character and leave the \"Replace\"
-window blank. Hit the \"Replace all\" button. Next, make sure the
-\"Grep\" box is checked. Then in the \"Find\" window enter \'\\r\' and
-in the \"Replace\" window type \'\\t\' followed by the name of the group
-(e.g. 112R) followed by a \'\\r\' \[\'\\t112r\\r\]. Then hit the
-\"Replace All\" button. Close the Find window, save the file, and close
+"Find" window enter a '\>' character and leave the "Replace"
+window blank. Hit the "Replace all" button. Next, make sure the
+"Grep" box is checked. Then in the "Find" window enter '\\r' and
+in the "Replace" window type '\\t' followed by the name of the group
+(e.g. 112R) followed by a '\\r' \['\\t112r\\r\]. Then hit the
+"Replace All" button. Close the Find window, save the file, and close
 it. Repeat for the remaining 7 files. Once all 8 files have been
 processed this way, enter the following commands in the terminal:
 
-    pschloss$$ cat *.group > sogin.groups
-    pschloss$$ cat *.fa > sogin.fasta
+    $ cat *.group > sogin.groups
+    $ cat *.fa > sogin.fasta
 
 You now have a massive fasta-formatted file and a group file, which each
 have 222,291 sequences in them. You are now ready to use mothur.
@@ -93,14 +93,14 @@ have 222,291 sequences in them. You are now ready to use mothur.
 
 The first thing we want to do is to [
 deconvolute](unique.seqs) the sequences in mothur so that we
-aren\'t analyzing all 222,291 sequences. Open mothur and enter the
+aren't analyzing all 222,291 sequences. Open mothur and enter the
 following command:
 
     mothur > unique.seqs(fasta=sogin.fasta)
 
 This will generate two files - sogin.unique.fasta and sogin.names. Each
 of these files has 21,908 sequences. Now we will align the sequences
-using mothur\'s [align.seqs](align.seqs) command. Unpublished
+using mothur's [align.seqs](align.seqs) command. Unpublished
 results from our lab has shown that when analyzing V6 tags, the best
 kmer size is 9 and the optimal alignment method is needleman with a
 gap-opening penalty of -1. We will use the [ greengenes
@@ -115,15 +115,15 @@ some statistics on your alignments and the \*align file will give you an
 alignment that is compatible with the greengenes arb database. Go ahead
 and change the name of sogin.unique.kmer.needleman.nast.align to
 something shorter like sogin.unique.align. Now we want to shrink the
-alignment using mothur\'s [filter.seqs](filter.seqs) command
-so that it isn\'t the full 7,682 columns. We will remove any vertical
+alignment using mothur's [filter.seqs](filter.seqs) command
+so that it isn't the full 7,682 columns. We will remove any vertical
 gaps from the alignment:
 
     mothur > filter.seqs(fasta=sogin.unique.align, vertical=T)
 
 This will generate two new files - sogin.unique.filter.fasta and
 sogin.unique.filter. The sogin.unique.filter file contains a series of
-0\'s and 1\'s indicating those positions in the alignment that were
+0's and 1's indicating those positions in the alignment that were
 retained. The sogin.unique.filter.fasta file is the trimmed file.
 Looking at the screen output we see the following:
 
@@ -133,15 +133,15 @@ Looking at the screen output we see the following:
     Number of sequences used to construct filter: 21908
 
 This basically tells us that the alignment is now one-third the length
-of the original alignment. It\'s not even shorter in part because the V6
+of the original alignment. It's not even shorter in part because the V6
 region is difficult to align and there are probably some bad sequences
-in there. We won\'t worry about those for this analysis, but needless to
-say, if you\'re doing this for real, you should probably cull those
+in there. We won't worry about those for this analysis, but needless to
+say, if you're doing this for real, you should probably cull those
 sequences from your collection.
 
 Next, we want to calculate the column-formatted distance matrix, but we
 are only interested in distances smaller than 0.10. We will do this
-using mothur\'s [dist.seqs](dist.seqs) \[you can download the
+using mothur's [dist.seqs](dist.seqs) \[you can download the
 [ distance file](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.unique.filter.dist.zip)\]:
 
     mothur > dist.seqs(fasta=sogin.unique.filter.fasta, cutoff=0.10)
@@ -174,7 +174,7 @@ uses the furthest neighbor clustering algorithm to generate the
 sogin.unique.filter.fn.[sabund](sabund_file),
 sogin.unique.filter.fn.[list](list_file), and
 sogin.unique.filter.fn.[rabund](rabund_file) files. Next
-we\'d like to parse the list file so that we can have separate rabund
+we'd like to parse the list file so that we can have separate rabund
 files for each of the 8 samples for the unique, 0.03, 0.05, and 0.10 OTU
 definitions:
 
@@ -240,8 +240,9 @@ incorporated those changes. The resulting data are:
 
 ## Rarefaction analysis of sample FS396
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.rarefaction.png) The
-largest sample in the Sogin data set was FS396. Originally represented
+![Distriution of sequences across samples](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.rarefaction.png)
+
+The largest sample in the Sogin data set was FS396. Originally represented
 by 17,666 sequences, the updated data set contains 83,399 sequences.
 This data set was used to generate [rarefaction](rarefaction)
 curves in [Fig.
@@ -261,15 +262,15 @@ To plot the data (shown on the right) we use
 set of rarefaction curves:
 
     data<-read.table(file="sogin.unique.filter.fn.FS396.rarefaction", header=T)
-    plot(x=data$$numsampled, y=data$$unique, xlab="Number of Tags Sampled",ylab="OTUs", type="l", col="black", font.lab=3)
-    points(x=data$$numsampled, y=data$$X0.03, type="l", col="blue")
-    points(x=data$$numsampled, y=data$$X0.05, type="l", col="red")
-    points(x=data$$numsampled, y=data$$X0.10, type="l", col="green")
+    plot(x=data$numsampled, y=data$unique, xlab="Number of Tags Sampled",ylab="OTUs", type="l", col="black", font.lab=3)
+    points(x=data$numsampled, y=data$X0.03, type="l", col="blue")
+    points(x=data$numsampled, y=data$X0.05, type="l", col="red")
+    points(x=data$numsampled, y=data$X0.10, type="l", col="green")
     legend(x=50000, y=1500, c("unique", "0.03", "0.05", "0.10"), c("black", "blue", "red", "green"))
 
 Clearly, regardless of the differences in methods and increased number
 of sequences, the story remains: a lot more sequences are needed to
-fully sample the community. This was basically as far as Sogin\'s group
+fully sample the community. This was basically as far as Sogin's group
 took their OTU-based analysis.
 
 ## Multi-sample rarefaction
@@ -284,7 +285,7 @@ This is possible in mothur using the
 
 Similar to the R commands described above, we can generate the
 rarefaction curve shown at the right. This study is somewhat artificial
-because the samples weren\'t taken from the same site or at even spatial
+because the samples weren't taken from the same site or at even spatial
 increments; however, you should be able to see that such curves could be
 fit to a power law model to assess biogeography or to obtain a more
 robust estimate of community richness.
@@ -303,8 +304,7 @@ Seamount, Juan de Fuca Ridge.
 
     mothur > venn(calc=sharedsobs-sharedchao, groups=FS312-FS396, label=0.10)
 
-![
-300px](sogin.sharedsobs.venn.png "fig: 300px")![](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.sharedchao.venn.png)
+![venn diagram comparing communities](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.sharedchao.venn.png)
 
 These are the raw output from mothur, which you would probably modify
 for publication in a program such as Adobe Illustrator. For example, you
@@ -336,7 +336,7 @@ we present the dendrograms as exported from TreeViewX.
 
 ### Heatmap
 
-Finally, we\'ll present the relative abundance of the OTUs found across
+Finally, we'll present the relative abundance of the OTUs found across
 all 8 communities for an 0.10 OTU definition. Because these data
 typically follow a highly skewed distribution, we will scale the
 relative abundance between red and black using a log-transformation

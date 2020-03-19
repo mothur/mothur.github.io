@@ -1,11 +1,11 @@
 ---
 title: 'sabund file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Sabund_file'
 ---
 The data reported in an sabund file is appropriate for plotting in a
 species-abundance plot. In DOTUR these data were found in files ending
-in \"rank\". Like the [rabund](rabund_file) and [list
+in "rank". Like the [rabund](rabund_file) and [list
 files](list_file), the first column represents the distance
 that sequences were assigned to OTUs. If you are making your own sabund
 file you can make the label anything without spaces. The number in the

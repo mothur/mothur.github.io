@@ -83,7 +83,7 @@ And the top of the resulting esophagus.align.check file looks like:
     ...
 
 You can seem by comparing the greengenes and SILVA alignments for these
-5 sequences that there are significantly fewer \#\'s in the SILVA
+5 sequences that there are significantly fewer \#'s in the SILVA
 aligned sequences.
 
 ## Revisions

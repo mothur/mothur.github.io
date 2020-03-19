@@ -56,7 +56,7 @@ cannot be below 51.
 ## threshold
 
 The threshold parameter allows you to specify a cutoff for your taxonomy
-input file. It\'s a way to after the fact \"adjust\" the cutoff used in
+input file. It's a way to after the fact "adjust" the cutoff used in
 classify.seqs command without having to reclassify.
 
     mothur > classify.otu(taxonomy=abrecovery.silva.full.taxonomy, list=abrecovery.fn.list, threshold=90) 

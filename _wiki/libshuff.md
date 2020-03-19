@@ -11,7 +11,7 @@ communities have the same structure using the Cramer-von Mises test
 statistic. The significance of the test statistic indicates the
 probability that the communities have the same structure by chance.
 Because each pairwise comparison requires two significance tests, a
-correction for multiple comparisons (e.g. Bonferroni\'s correction) must
+correction for multiple comparisons (e.g. Bonferroni's correction) must
 be applied. The files that we discuss in this tutorial can be obtained
 by downloading the [ amazondata.zip ](https://mothur.s3.us-east-2.amazonaws.com/wiki/_amazondata.zip)
 file and decompressing it.
@@ -54,7 +54,7 @@ The libshuff() command will generate two files:
 98\_lt\_phylip\_amazon.libshuff.summary and
 98\_lt\_phylip\_amazon.libshuff.coverage. The \*.summary file contains
 the same output that is outputted to the screen. The \*.coverage file
-provides the Good\'s coverage value within a community and between
+provides the Good's coverage value within a community and between
 communities for each distance level.
 
 ## Options
@@ -62,7 +62,7 @@ communities for each distance level.
 ### iters
 
 If you run the libshuff() command multiple times, you will notice that
-while the significance score doesn\'t change, it\'s significance may
+while the significance score doesn't change, it's significance may
 change some. This is because the testing procedure is based on a
 randomization process that becomes more accurate as you increase the
 number of randomizations. By default, libshuff() will do 10,000

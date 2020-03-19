@@ -1,12 +1,12 @@
 ---
-title: 'Mothur v.1.27.0'
+title: 'mothur v.1.27.0'
 redirect_from: '/wiki/Mothur_v.1.27.0.html'
 ---
 With a quick turn around, we are happy to announce the release of
-[mothur v.1.27.0](mothur_v.1.27.0). You\'ll see that we
-haven\'t added any new commands; however, we have made some significant
+[mothur v.1.27.0](mothur_v.1.27.0). You'll see that we
+haven't added any new commands; however, we have made some significant
 changes to the various cluster commands resulting in much reduced memory
-requirements and faster executions. We\'ve also fixed a couple of bugs
+requirements and faster executions. We've also fixed a couple of bugs
 and posted the mothur-compatible version of the latest RDP taxonomy
 files.
 

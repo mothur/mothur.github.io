@@ -28,7 +28,7 @@ If you open the listOfSff.files file you will see:
 ### sff
 
 The sff parameter allows you to enter the sff list of sff files
-separated by -\'s.
+separated by -'s.
 
     mothur > merge.sfffiles(sff=GQY1XT001.F003D002.sff-GQY1XT001.F003D004.sff-GQY1XT001.F003D006.sff, output=merged.sff)
 

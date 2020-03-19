@@ -14,7 +14,7 @@ has two options for doing this:
 
 If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
-developers and we\'ll see what we can do. The open method is the default
+developers and we'll see what we can do. The open method is the default
 option. For this tutorial you should download the [
 OptiFitDataSets.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/optifitdatasets.zip) file and
 decompress it.
@@ -35,10 +35,10 @@ generate this format for you.
 
 ### denovo
 
-The denovo method allows you to use your dataset as a reference. Mothur
+The denovo method allows you to use your dataset as a reference. mothur
 will randomly select a portion of your dataset to be the reference. The
 reference is then clustered and the remaining sequences are fitted into
-the \"reference\" otus. This process is repeated x number of times with
+the "reference" otus. This process is repeated x number of times with
 the best list file chosen as the output.
 
     mothur > cluster.fit(column=marine.0_2.01.dist, count=marine.0_2.01.count_table)
@@ -51,9 +51,9 @@ The best sensspec results were found on the 4th iteration:
 ### reference
 
 The reference method uses a user provided reference and fits the new
-dataset\'s sequences into the reference otus. For example, perhaps you
+dataset's sequences into the reference otus. For example, perhaps you
 have a study where 20 patients were sampled, and you want to see how a
-new patient\'s data would fit in with the existing results. You could
+new patient's data would fit in with the existing results. You could
 use the reference method to do so. Or if you want to fit your reads to a
 mothur formatted reference you could run the following:
 
@@ -149,8 +149,8 @@ artificially inflate the matrix to its full size.
 
 The [ count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
-given representative sequence. Mothur will use this information to form
-the correct OTU\'s. Unlike, when you use a names file the list file
+given representative sequence. mothur will use this information to form
+the correct OTU's. Unlike, when you use a names file the list file
 generated will contain only the unique names, so be sure to include the
 count file in downstream analysis with the list file.
 

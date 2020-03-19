@@ -67,7 +67,7 @@ processors and use all available.
 -   1.23.0 - Added qvalues.
 -   1.24.0 - paralellized for Windows.
 -   1.29.1 - Bug Fix: error with output filename
--   1.32.0 - Bug Fix: generate p values for sparse data using fisher\'s
+-   1.32.0 - Bug Fix: generate p values for sparse data using fisher's
     exact test instead of permutted values
 -   1.33.0 - improved work balance load between processors.
 -   1.36.0 - Remove qvalues. Also removes fortran source from mothur.

@@ -1,5 +1,6 @@
 ---
 title: 'Sharedchao'
+tags: 'calculators'
 redirect_from: '/wiki/Sharedchao'
 ---
 The **sharedchao** calculator returns the shared
@@ -11,31 +12,31 @@ Chao in the user manual for her program
 [spade](https://chao.stat.nthu.edu.tw/SPADE_UserGuide.pdf).
 
 $$S_{SharedChao} = \begin{cases}
-S_{Shared\left ( Obs \right )} + \frac{f_{1+}^{2}}{2f_{2+}} + \frac{f_{+1}^{2}}{2f_{+2}} + \frac{f_{11}^{2}}{4f_{22}}\mbox{, for 2 communities and all denominators}>\mbox{0} 
-S_{Shared\left ( Obs \right )} + \frac{f_{1+}\left(f_{1+}-1\right)}{2\left(f_{2+}+1\right)} + \frac{f_{+1}\left(f_{+1}-1\right)}{2\left(f_{+2}+1\right)} + \frac{f_{11}\left(f_{11}-1\right)}{4\left(f_{22}+1\right)}\mbox{, for 2 communities and any denominator}=\mbox{0} 
+S_{Shared\left ( Obs \right )} + \frac{f_{1+}^{2}}{2f_{2+}} + \frac{f_{+1}^{2}}{2f_{+2}} + \frac{f_{11}^{2}}{4f_{22}}\mbox{, for 2 communities and all denominators}>\mbox{0}
+S_{Shared\left ( Obs \right )} + \frac{f_{1+}\left(f_{1+}-1\right)}{2\left(f_{2+}+1\right)} + \frac{f_{+1}\left(f_{+1}-1\right)}{2\left(f_{+2}+1\right)} + \frac{f_{11}\left(f_{11}-1\right)}{4\left(f_{22}+1\right)}\mbox{, for 2 communities and any denominator}=\mbox{0}
 
 
-S_{Shared\left ( Obs \right )} + \frac{f_{1++}^{2}}{2f_{2++}} + \frac{f_{+1+}^{2}}{2f_{+2+}}  + \frac{f_{++1}^{2}}{2f_{++2}} + \frac{f_{11+}^{2}}{4f_{22+}} + \frac{f_{1+1}^{2}}{4f_{2+2}}  + \frac{f_{+11}^{2}}{4f_{+22}} +  \frac{f_{111}^{2}}{8f_{222}}\mbox{, for 3 communities and all denominators}>\mbox{0} 
+S_{Shared\left ( Obs \right )} + \frac{f_{1++}^{2}}{2f_{2++}} + \frac{f_{+1+}^{2}}{2f_{+2+}}  + \frac{f_{++1}^{2}}{2f_{++2}} + \frac{f_{11+}^{2}}{4f_{22+}} + \frac{f_{1+1}^{2}}{4f_{2+2}}  + \frac{f_{+11}^{2}}{4f_{+22}} +  \frac{f_{111}^{2}}{8f_{222}}\mbox{, for 3 communities and all denominators}>\mbox{0}
 
 S_{Shared\left ( Obs \right )}
 + \frac{f_{1++}\left(f_{1++}-1\right)}{2\left(f_{2++}+1\right)} + \frac{f_{+1+}\left(f_{+1+}-1\right)}{2\left(f_{+2+}+1\right)} + \frac{f_{++1}\left(f_{++1}-1\right)}{2\left(f_{++2}+1\right)}
 + \frac{f_{11+}\left(f_{11+}-1\right)}{4\left(f_{22+}+1\right)} + ... + \frac{f_{+11}\left(f_{+11}-1\right)}{4\left(f_{+22}+1\right)}
 + \frac{f_{111}\left(f_{111}-1\right)}{8\left(f_{222}+1\right)}
 
-\mbox{, for 3 communities and any denominator}=\mbox{0} 
+\mbox{, for 3 communities and any denominator}=\mbox{0}
 
 
 S_{Shared\left ( Obs \right )}+ \frac{f_{1+++}^{2}}{2f_{2+++}} + ...  + \frac{f_{+++1}^{2}}{2f_{+++2}}
 + \frac{f_{11++}^{2}}{4f_{22++}} + \frac{f_{1+1+}^{2}}{4f_{2+2+}} + ...  + \frac{f_{++11}^{2}}{4f_{++22}}
 + \frac{f_{111+}^{2}}{8f_{222+}} + \frac{f_{11+1}^{2}}{8f_{22+2}} + ...  + \frac{f_{++11}^{2}}{8f_{+222}}
-+  \frac{f_{1111}^{2}}{16f_{2222}}\mbox{, for 4 communities and all denominators}>\mbox{0} 
++  \frac{f_{1111}^{2}}{16f_{2222}}\mbox{, for 4 communities and all denominators}>\mbox{0}
 S_{Shared\left ( Obs \right )}
 
 + \frac{f_{1+++}\left(f_{1+++}-1\right)}{2\left(f_{2+++}+1\right)} + ... + \frac{f_{+++1}\left(f_{+++1}-1\right)}{2\left(f_{+++2}+1\right)}
 + \frac{f_{11++}\left(f_{11++}-1\right)}{4\left(f_{22++}+1\right)} + ... + \frac{f_{++11}\left(f_{++11}-1\right)}{4\left(f_{++22}+1\right)}+
 + \frac{f_{111+}\left(f_{111+}-1\right)}{4\left(f_{222+}+1\right)} + ... + \frac{f_{+111}\left(f_{+111}-1\right)}{8\left(f_{+222}+1\right)}+
 \frac{f_{1111}\left(f_{1111}-1\right)}{16\left(f_{2222}+1\right)}
-\mbox{, for 4 communities and any denominator}=\mbox{0} 
+\mbox{, for 4 communities and any denominator}=\mbox{0}
 
 \mbox{etc.}
 

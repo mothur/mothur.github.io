@@ -1,29 +1,29 @@
 ---
-title: 'Mothur v.1.36.0'
+title: 'mothur v.1.36.0'
 redirect_from: '/wiki/Mothur_v.1.36.0.html'
 ---
-We\'re excited to announce the release of
+We're excited to announce the release of
 [mothur\_v.1.36.0](mothur_v.1.36.0)! This release has a
 number of exciting new commands and features. The new commands include
 [set.seed](set.seed), which allows you to peg the seed for
 the random number generator that is used by a number of other commands
-(e.g. cluster) to improve reproducibility. We\'ve also added
+(e.g. cluster) to improve reproducibility. We've also added
 [make.file](make.file), which will generate the files file
 that you use in [make.contigs](make.contigs) based on the
 sequence files in your directory. On the new features, there are a
-number of things we\'ve done to tidy up the overall package. More
+number of things we've done to tidy up the overall package. More
 meaningful, however, is that in the mac and linux versions of mothur you
 can now give [make.contigs](make.contigs) your uncompressed
 fastq.gz files as input. We are working on this feature for windows, but
 \... windows. This should save you a bunch of hard drive space :).
-We\'ve also added a feature to [pre.cluster](pre.cluster) so
+We've also added a feature to [pre.cluster](pre.cluster) so
 that you do not need to provide a full multiple sequence alignment.
 Instead, you can provide it unaligned sequences and it will carry out
 the typical algorithm but will also do a pairwise alignment. I \*think\*
 this will be useful for people doing ITS sequencing.
 
 We have a number of other features on our docket for the next release.
-As always, don\'t hesitate to email us or use the forum to propose new
+As always, don't hesitate to email us or use the forum to propose new
 features and commands. As I mentioned in an earlier email, I will be
 hosting a mothur [workshop](workshop) in the Detroit area in
 early September, holler if you are interested or have questions.
@@ -58,7 +58,7 @@ Pat
 -   [make.shared](make.shared) - mothur no longer checks for
     biom matrix type to allow for more flexibility.
 -   [make.shared](make.shared) - rabund files are no longer
-    outputted. Mothur will create a rabund file with the
+    outputted. mothur will create a rabund file with the
     [get.rabund](get.rabund) command.
 -   [set.dir](set.dir) - if output directory does not exist
     it will be created.
@@ -71,7 +71,7 @@ Pat
 -   [metastats](metastats) - remove qvalues. Also removes
     fortran source from mothur.
 -   automatically adjust number of processors when fork() fails
--   Removes extra white spaces from mothur\'s print to make output files
+-   Removes extra white spaces from mothur's print to make output files
     more compatible with other software packages. -
     [https://forum.mothur.org/viewtopic.php?f=4&t=3703](https://forum.mothur.org/viewtopic.php?f=4&t=3703)
 -   [degap.seqs](degap.seqs) - adds the processors option.
@@ -79,7 +79,7 @@ Pat
 -   [phylo.diversity](phylo.diversity) - adds sampledepth
     parameter. - [https://forum.mothur.org/viewtopic.php?f=3&t=3320](https://forum.mothur.org/viewtopic.php?f=3&t=3320)
 -   [set.dir](set.dir) - Sets tempdefault location to
-    mothur\'s executable location to help reduce \"unable to find file\"
+    mothur's executable location to help reduce "unable to find file"
     errors.
 -   [make.contigs](make.contigs) - allow for gzipped version
     for fastq files as inputs.
@@ -94,7 +94,7 @@ Pat
     the classic option with the file option.
 -   [make.biom](make.biom) - repeat labels when combining
     mothur OTU labels with non mothur OTU labels, this can results in a
-    duplicate \"simple\" label. This causes an incorrect taxonomy to be
+    duplicate "simple" label. This causes an incorrect taxonomy to be
     assigned to the OTU.
 -   [remove.groups](remove.groups) - not creating a list file
     for each label.

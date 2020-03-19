@@ -73,12 +73,12 @@ fastq and the third column contains the reverse fastq.
 
 The 4 column format is for use with index files. The format is forward
 fastq file then reverse fastq then forward index and reverse index file.
-If you only have one index file add \'none\' for the other one. Here\'s
+If you only have one index file add 'none' for the other one. Here's
 an example with just a reverse index file:
 
     My.forward.fastq My.reverse.fastq none My.index.fastq
 
-Mothur will process each pair and create a combined fasta and report
+mothur will process each pair and create a combined fasta and report
 file with all the sequences.
 
 ### ffastq & rfastq
@@ -127,9 +127,9 @@ sanger, solexa, illumina1.8+ or illumina, default=illumina1.8+.
 
 The oligos option takes a file that can contain the sequences of the
 paired primers and barcodes and their sample identifier. Each line of
-the oligos file can start with the key words \"primer\" and \"barcode\"
-or it can start with a \"\#\" to tell mothur to ignore that line of the
-oligos file. Here\'s an example:
+the oligos file can start with the key words "primer" and "barcode"
+or it can start with a "\#" to tell mothur to ignore that line of the
+oligos file. Here's an example:
 
     primer CCTACGGGAGGCAGCAG ATTACCGCGGCTGCTGG V3
     primer ATTAGAWACCCBDGTAGTCC    CCCGTCAATTCMTTTRAGT V5
@@ -150,7 +150,7 @@ default=0. bdiffs is maximum number of differences to the barcode
 sequence, default=0. tdiffs is maximum total number of differences to
 the barcode and primer (default to pdiffs + bdiffs). To clarify, the
 make.contigs command with pdiffs=2 sets the total allowed primer diffs
-to 2. Mothur will allow for a max of 2 diffs on the forward read and 2
+to 2. mothur will allow for a max of 2 diffs on the forward read and 2
 diffs on the reverse read, but the total number of primer diffs cannot
 exceed 2. This means if you have a read with 2 diffs on the forward and
 2 diffs on the reverse, the total primer diffs are 4, and the read would
@@ -160,14 +160,14 @@ be scrapped.
 
 If you are running the **make.contigs** command with paired barcodes or
 primers, you can use the checkorient parameter. When checkorient=t and
-mothur can\'t find the barcodes and primers, it will search the reverse
+mothur can't find the barcodes and primers, it will search the reverse
 compliment. The default is true.
 
 ### oligos scrap code meanings
 
 When you run mothur with an oligos file and the barcodes and or primers
-are not found mothur will assign the read to the \*scrap file. Mothur
-includes scrap codes to indicate why the read failed. Let\'s look at an
+are not found mothur will assign the read to the \*scrap file. mothur
+includes scrap codes to indicate why the read failed. Let's look at an
 example:
 
 -   seqName \| failureCode(checkorientFailureCode) ee=expectedError
@@ -240,7 +240,7 @@ the base in the consensus will be an N (30-28\<5) The default is 6.
 
 The maxee parameter allows you to specify the maximum number of errors
 to allow in a sequence. Makes sense to use with deltaq=0. The expected
-number of errors is based on Edgar\'s approach used in USEARCH/VSEARCH.
+number of errors is based on Edgar's approach used in USEARCH/VSEARCH.
 
 ### allfiles
 
@@ -255,7 +255,7 @@ fasta and groups file for each barcode defined in your oligos file:
 The qfile parameter is used to indicate you want a quality file
 assembled. Default=false. NOTE: The assembled quality scores outputted
 by mothur cannot be used for downstream quality screening. The score
-calculations are modeled after pandseq\'s method. Here\'s a link to the
+calculations are modeled after pandseq's method. Here's a link to the
 explanation from their documentation,
 [https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong](https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong).
 \\n
@@ -283,7 +283,7 @@ processors and use all available.
 
 The assembled quality scores outputted by mothur **cannot** be used for
 downstream quality screening. The score calculations are modeled after
-pandseq\'s method. Here\'s a link to the explanation from their
+pandseq's method. Here's a link to the explanation from their
 documentation,
 [https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong](https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong).
 
@@ -324,7 +324,7 @@ documentation,
 -   1.38.1 - Fixes filename expansion issue.
     [https://forum.mothur.org/viewtopic.php?f=3&t=5869&p=14857#p14857](https://forum.mothur.org/viewtopic.php?f=3&t=5869&p=14857#p14857)
 -   1.39.0 - Fixes bug where mothur was not finding matches for sequence
-    names \"off by one character\" in the name.
+    names "off by one character" in the name.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 -   1.40.2 - Fixes \*contigs.report file append issue that resulted in
@@ -343,7 +343,7 @@ documentation,
 -   1.43.0 - Adds auto decompress feature to **make.contigs** if gz read
     fails. [\#634](https://github.com/mothur/mothur/issues/634)
 -   1.43.0 - Windows users can now run **make.contigs** with \*.gz files.
--   1.44.0 - Improves mothur\'s checkorient option in make.contigs. Also
+-   1.44.0 - Improves mothur's checkorient option in make.contigs. Also
     sets checkorient=t by default.
 
 

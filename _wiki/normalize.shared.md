@@ -52,7 +52,7 @@ group will be removed.
 
 There may only be a couple of lines in your OTU data that you are
 interested in finding the normalized abundance for. There are two
-options. You could: (i) manually delete the lines you aren\'t interested
+options. You could: (i) manually delete the lines you aren't interested
 in from your list file; (ii) or use the label option. To use the label
 option with the normalize.shared() command you need to know the labels
 you are interested in. If you want the normalized abundance for the

@@ -48,12 +48,12 @@ allowed in the primer. The default is 0.
 ### mintim
 
 The mintm parameter is used to indicate minimum melting temperature. If
-a primer\'s melting temperature is below the minimum then it is ignored.
+a primer's melting temperature is below the minimum then it is ignored.
 
 ### maxtm
 
 The maxtm parameter is used to indicate maximum melting temperature. If
-a primer\'s melting temperature is above the maximum then it is ignored.
+a primer's melting temperature is above the maximum then it is ignored.
 
 ### cutoff
 

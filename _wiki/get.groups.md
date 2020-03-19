@@ -198,7 +198,7 @@ the following lines:
     0.03   B   52  0   0   0   0   0   1   1   8   1   7   1   ... 
     0.03   C   52  1   1   1   1   1   0   0   0   7   0   1   ...
 
-You can see that some OTU\'s were entirely eliminated because they only
+You can see that some OTU's were entirely eliminated because they only
 contained sequences from group A.
 
 ### design

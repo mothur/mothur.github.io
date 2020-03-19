@@ -1,5 +1,6 @@
 ---
 title: 'Ochiai'
+tags: 'calculators'
 redirect_from: '/wiki/Ochiai'
 ---
 The **ochiai** calculator returns the Ochiai index

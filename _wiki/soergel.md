@@ -1,5 +1,6 @@
 ---
 title: 'Soergel'
+tags: 'calculators'
 redirect_from: '/wiki/Soergel'
 ---
 $$D_{Soergel} = \frac{ \sum_{j=1}^{S_T} |S_{Aj} - S_{Bj} |} {\sum_{j=1}^{m} \max (S_{Aj}, S_{Bj})}$$

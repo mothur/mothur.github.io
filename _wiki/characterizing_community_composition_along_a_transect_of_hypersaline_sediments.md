@@ -14,9 +14,9 @@ communities from the sediments of a hypersaline lake ecosystem. Samples
 were collected at 8 points (A through H) along a transect that
 represented gradients of salt and water content, as well as substantial
 variation in cation concentrations, and carbon and nitrogen content.
-Points A and B were located at the most \"upland\" and/or
-\"terrestrial\" end of the transect, while points F, G, and H were the
-located at the most \"aquatic\" and water-logged end of the transect.
+Points A and B were located at the most "upland" and/or
+"terrestrial" end of the transect, while points F, G, and H were the
+located at the most "aquatic" and water-logged end of the transect.
 
 The goals of this study were to: 1) describe the communities associated
 with this fairly extreme environment, and 2) determine what differences,
@@ -24,15 +24,15 @@ if any, could be detected among them.
 
 In total, 39,590 sequences were generated for our 8 sites (average
 \~5000 sequences per library), with an average read length of 455 bp.
-Much of this analysis was conducted as the first version of Mothur was
+Much of this analysis was conducted as the first version of mothur was
 being released. We did a lot of the analysis "the hard" way (i.e. via
 supercomputer), and then we found alternatives to the hard way using
-Mothur. The example workflow described below talks about both:
+mothur. The example workflow described below talks about both:
 
 *Note: This analysis was done working back and forth between a Linux
 server and a Windows-based workstation. File manipulations done in
 [bioedit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html) and web
-interaction with the [Ribosomal Database Project\'s Pyrosequencing
+interaction with the [Ribosomal Database Project's Pyrosequencing
 Pipeline](https://pyro.cme.msu.edu/) were done via the Windows
 workstation. Everything else was done via Linux.*
 
@@ -55,15 +55,15 @@ sequences:
     etc...
 
 For each of these communities, new files were generated called
-\"Site\_A\_454.unique.fast\" and \"Site\_A\_454.names\". I changed the
+"Site\_A\_454.unique.fast" and "Site\_A\_454.names". I changed the
 name of the FASTA file to Site\_A\_454\_unique.fasta so that other
 programs (like [bioedit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html))
 would recognize the file. Note the replacement of .unique.fasta with
 \_unique.fasta . This makes a big difference when you are moving back
 and forth between Linux and Windows systems.
 
-RDP doesn\'t seem to like file names with multiple periods either. In
-addition, \"blank sequences\" (i.e. additional lines containing no data)
+RDP doesn't seem to like file names with multiple periods either. In
+addition, "blank sequences" (i.e. additional lines containing no data)
 may appear in your sequence files if sequences were removed during the
 deconvolution process. If you are going to use RDP for your alignments,
 make sure that you remove them. Otherwise, you will receive an error
@@ -76,8 +76,8 @@ file using the File/Import/Import sequence alignment file function in
 combining the individual sequence files, samples were given a
 site-specific identifier in addition to their sequence-specific ID (e.g.
 siteID\_sampleID) in order to be able to identify them quickly, as well
-as to simplify the creation of a GROUPS file later on. The \"paste
-over\" function in
+as to simplify the creation of a GROUPS file later on. The "paste
+over" function in
 [bioedit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html) allows you to
 manipulate sequence IDs in a program like Excel and then paste them back
 to their appropriate sequences with minimal difficulty.
@@ -91,10 +91,10 @@ function. The alignment was downloaded from RDP and then opened with
 [bioedit](https://www.mbio.ncsu.edu/BioEdit/bioedit.html). The consensus
 sequence was removed (\# GC SS cons), as were the RDP reference sequence
 (\#GC\_RF) and any sequences that did not align with the 16S region. The
-alignment was then minimized and saved in FASTA format (for Mothur) and
+alignment was then minimized and saved in FASTA format (fo. mothur) and
 PHYLIP format (for DNAdist).
 
-Alternatively, Mothur's [align.seqs](Align.seqs) feature,
+Alternatively. mothur's [align.seqs](Align.seqs) feature,
 followed by the [filter.seqs](Filter.seqs) feature, can be
 used. See the [Pyrosequences from deep anoxic
 cenotes](Pyrosequences_from_deep_anoxic_cenotes) example for
@@ -110,10 +110,10 @@ supercomputer system became necessary. It was a long and slow process
 (26 hours) that had to be submitted through a batch request, but it
 worked.
 
-An alternative to DNAdist is to use Mothur's
+An alternative to DNAdist is to us. mothur's
 [dist.seqs](Dist.seqs) function. For generating OTUs and
 OTU-related statistics, the column-formatted distance matrices work just
-fine. This is what you\'ll get if you run the program in default mode,
+fine. This is what you'll get if you run the program in default mode,
 and this is what I did to generate OTUs. Since I also planned to run the
 parsimony test on all of my communities downstream (and use Clearcut to
 construct my phylogenetic trees), I used the Phylip-formatted distance
@@ -158,11 +158,11 @@ function to generate clusters (i.e. OTUs). The command looks like this:
     mothur> cluster()
 
 The first command: 1) identifies your distance matrix as being column
-formatted; 2) and allows Mothur to read it. \*\*Note, you really do want
-to use \"name=\" and not \"names=\" to identify your .names file. The
-second command is given immediately after Mothur finishes reading your
-matrix and requires no other input than \"cluster ()\". Mothur knows to
-cluster the data that it\'s just read through.
+formatted; 2) and allows mothur to read it. \*\*Note, you really do want
+to use "name=" and not "names=" to identify your .names file. The
+second command is given immediately after mothur finishes reading your
+matrix and requires no other input than "cluster ()". mothur knows to
+cluster the data that it's just read through.
 
 After the cluster command has finished running, you will find that three
 new files have been generated. These are fn.list, fn.sabund, and
@@ -174,7 +174,7 @@ fn.rabund. Enter:
 This set of commands will generate a .fn.summary file that contains your
 OTUs, as well as a number of richness and diversity estimators. More
 information on how to use the summary.single command can be found [
-here](summary.single), and Pat\'s [Sogin data
+here](summary.single), and Pat's [Sogin data
 analysis](Sogin_data_analysis) example also goes through
 generating OTUs.
 
@@ -185,32 +185,32 @@ process is to create a phylogenetic tree. We use
 [clearcut](https://bioinformatics.hungry.com), a program written by Luke
 Sheneman et al. Clearcut employs a relaxed neighbor-joining algorithm
 and is able to build a tree using either a distance matrix or an
-alignment. Although this is a more efficient option than PHYLIP\'s
-Neighbor, it\'s still pretty computationally intense. We ran it through
-our university\'s supercomputer facility. It is implemented via the
+alignment. Although this is a more efficient option than PHYLIP's
+Neighbor, it's still pretty computationally intense. We ran it through
+our university's supercomputer facility. It is implemented via the
 command(s):
 
-    $$> ./clearcut  --distance --in=All_LSDR_454_unique.dist --out=All_LSDR_454_unique.tree 
+    $ ./clearcut  --distance --in=All_LSDR_454_unique.dist --out=All_LSDR_454_unique.tree 
 
 or you can use\...
 
-    $$> ./clearcut  --alignment --in=All_LSDR_454_unique.fasta --out=All_LSDR_454_unique.tree
+    $ ./clearcut  --alignment --in=All_LSDR_454_unique.fasta --out=All_LSDR_454_unique.tree
 
 After [clearcut](https://bioinformatics.hungry.com) generates your tree,
-you\'ll need to open up the file in a text editor and remove the spaces
-between the tree\'s text and the file\'s final semi-colon (;). Mothur\'s
-[parsimony](Parsimony) feature doesn\'t like these spaces it
+you'll need to open up the file in a text editor and remove the spaces
+between the tree's text and the file's final semi-colon (;). mothur's
+[parsimony](Parsimony) feature doesn't like these spaces it
 and will return an error message if you leave them in place.
 
 ## Parsimony analysis
 
 The tree generated in [clearcut](https://bioinformatics.hungry.com) was
-used as input for Mothur's implementation of the
+used as input fo. mothur's implementation of the
 [parsimony](Parsimony) test. The parsimony test can be
 thought of as being similar to analysis of variance (ANOVA), in that
 your "global" test should yield a statistically significant difference
 before you start examining any of your pairwise contrasts. The following
-set of commands implements the global test first, then it asks Mothur to
+set of commands implements the global test first, then it asks mothur to
 process all of the pairwise comparisons in your dataset.
 
     mothur>read.tree(tree=All_LSDR_454_unique.tree, group=LSDR_454_unique.groups)
@@ -221,14 +221,14 @@ or you can use\...
     mothur>read.tree(tree=All_LSDR_454_unique.tree, group=LSDR_454_unique.groups)
     mothur> parsimony(groups=all)
 
-Before this function was available in Mothur, we used
+Before this function was available i. mothur, we used
 [treeclimber](https://schloss.micro.umass.edu/software/treeclimber.html)
 to run the parsimony test:
 
-    $$> ./treeclimber -t All-LSDR_454_unique.tree -n All_LSDR_454_unique.names 
+    $ ./treeclimber -t All-LSDR_454_unique.tree -n All_LSDR_454_unique.names 
 
 This command will run your global test. In order to conduct pairwise
-comparisons, you\'ll have to go through and edit your .names file.
+comparisons, you'll have to go through and edit your .names file.
 Details for doing this can be found in the [Treeclimber
 manual](https://schloss.micro.umass.edu/software/treeclimber/TreeClimberManual.pdf).
 
@@ -248,7 +248,7 @@ various genetic distances:
   Site F      6742    2592    4556 (4296, 4856)   6113 (5962, 6270)
   Site G      5007    2290    4407 (4119, 4741)   6559 (6378, 6749)
   Site H      4840    2523    5285 (4931, 5691)   8149 (7917, 8391)
-                                                  
+
 
 Parsimony analysis results:
 
@@ -283,7 +283,7 @@ Parsimony analysis results:
   1                 F vs. G                         6388              p \< 0.001
   1                 F vs. H                         6389              p \< 0.001
   1                 G vs. H                         4997              p \< 0.001
-                                                                      
+
 
 In addition to the global test, 28 pairwise comparisons were made. Using
 the Bonferroni correction for multiple comparisons $$a/n$$, a significance
@@ -295,12 +295,12 @@ significantly different from one another.
 ## Conclusions
 
 Pyrosequencing data sets are providing big challenges to the fast,
-efficient analysis of community data sets. Mothur, and the functions
+efficient analysis of community data sets. mothur, and the functions
 implemented within it, are a huge step forward in this challenge.
-Relative to our first attempts to analyze this data set, Mothur improved
+Relative to our first attempts to analyze this data set, mothur improved
 both the speed and flexibility of analysis, allowing us to move most
 tasks away from our supercomputer system and onto a relatively modest
-Linux workstation. Yay, Mothur!
+Linux workstation. Yay. mothur!
 
 While additional tests could certainly be carried out on this data, the
 purpose of this example was to: 1) show how one might quickly obtain

@@ -25,7 +25,7 @@ The file lines can be 2, 3, or 4 columns. The forward fastq files in the
 first column and their matching reverse fastq files in the second
 column, or a groupName then forward fastq file and reverse fastq file,
 or forward fastq file then reverse fastq then forward index and reverse
-index file. If you only have one index file add \'none\' for the other
+index file. If you only have one index file add 'none' for the other
 one.
 
     Two Column 
@@ -72,7 +72,7 @@ to pdiffs + bdiffs + ldiffs + sdiffs).
 
 If you are running the **fastq.info** command with paired barcodes or
 primers, you can use the checkorient parameter. When checkorient=t and
-mothur can\'t find the barcodes and primers, it will search the reverse
+mothur can't find the barcodes and primers, it will search the reverse
 compliment.
 
 ### fasta

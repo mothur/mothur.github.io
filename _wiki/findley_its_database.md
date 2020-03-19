@@ -38,6 +38,6 @@ gapopen=-2, gapextend=-1, numwanted=1)
 Some of classification parameters (method=knn, search=blast,
 numwanted=1) should not be changed. The ITS1 sequence data were
 clustered at 95% identity using CD-HIT and may not work as expected for
-other methods (e.g., wang) or values of \"numwanted\". See the Methods
+other methods (e.g., wang) or values of "numwanted". See the Methods
 and Supplemental Materials for Findley et al 2013 for details on how
 these data were generated and used.

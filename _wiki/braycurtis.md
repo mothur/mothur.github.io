@@ -1,5 +1,6 @@
 ---
 title: 'Braycurtis'
+tags: 'calculators'
 redirect_from: '/wiki/Braycurtis'
 ---
 The **braycurtis** calculator returns the

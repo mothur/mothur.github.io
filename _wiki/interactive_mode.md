@@ -46,7 +46,7 @@ or
 
 With the exception of quit, all commands require you to provide an open
 and close parentheses. If you supply any options there cannot be a space
-between the option, the \'=\', and the option setting. To separate
+between the option, the '=', and the option setting. To separate
 options, use a comma. For example:
 
     mothur > cluster(method=furthest, cutoff=0.10)
@@ -54,46 +54,46 @@ options, use a comma. For example:
 ## Environment Variables
 
 Environment variables can be used to generalize variables for reuse.
-Let\'s add environment variables to our analysis.
+Let's add environment variables to our analysis.
 
 ### Format
 
 The format of environmental variables is \[tag\]=\[value\]. For example,
-let\'s create a environment variable for the processors option.
+let's create a environment variable for the processors option.
 
     PROC=12
 
-Mothur will automatically pull in the systems environment variable. For
+mothur will automatically pull in the systems environment variable. For
 example you can set variables in bash and then run mothur:
 
-    MothurMac-3% export REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release
-    MothurMac-3% export ALIGNREF=silva.v4.fasta
-    MothurMac-3% export TAXONREF_FASTA=trainset9_032012.pds.fasta
-    MothurMac-3% export TAXONREF_TAX=trainset9_032012.pds.tax
-    MothurMac-3% export CONTAMINENTS=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota
-    MothurMac-3% export LOGNAME=MiSEQ_SOP_mouse_03032020
-    MothurMac-3% export DATA=/Users/sarahwestcott/Desktop/MiSeq_SOP
-    MothurMac-3% export TYPE=gz
-    MothurMac-3% export PROC=12
-    MothurMac-3% ./mothur 
+  . mothurMac-3% export REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release
+  . mothurMac-3% export ALIGNREF=silva.v4.fasta
+  . mothurMac-3% export TAXONREF_FASTA=trainset9_032012.pds.fasta
+  . mothurMac-3% export TAXONREF_TAX=trainset9_032012.pds.tax
+  . mothurMac-3% export CONTAMINENTS=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota
+  . mothurMac-3% export LOGNAME=MiSEQ_SOP_mouse_03032020
+  . mothurMac-3% export DATA=/Users/sarahwestcott/Desktop/MiSeq_SOP
+  . mothurMac-3% export TYPE=gz
+  . mothurMac-3% export PROC=12
+  . mothurMac-3% ./mothur 
 
     Type 'quit()' to exit program
 
     [note]: Setting random seed to 19760620.
 
-    mothur >  set.logfile(name=$$LOGNAME)
+    mothur >  set.logfile(name=$LOGNAME)
 
-    mothur > set.dir(input=$$DATA)
-    Mothur's directories:
+    mothur > set.dir(input=$DATA)
+  . mothur's directories:
     inputDir=/Users/sarahwestcott/Desktop/MiSeq_SOP
 
 ### Use
 
-The \'\$$\' symbol indicates to mothur that the value is an environment
+The '$' symbol indicates to mothur that the value is an environment
 variable to be replaced with the actual value at run time. For example:
 
     PROC=12
-    make.contigs(file=current, processors=$$PROC)
+    make.contigs(file=current, processors=$PROC)
 
 is equivalent to
 
@@ -108,7 +108,7 @@ combining variables. For example:
     mothur > ALIGNREF=silva.v4.fasta
     Setting environment variable ALIGNREF to silva.v4.fasta
 
-    mothur > align.seqs(fasta=my.fasta, reference=$$REFERENCE_LOCATION/$$ALIGNREF)
+    mothur > align.seqs(fasta=my.fasta, reference=$REFERENCE_LOCATION/$ALIGNREF)
 
 Alternatively, If you know what commands you will be running, you can
 use either the [command line mode](command_line_mode) or

@@ -3,7 +3,7 @@ title: 'Creating a new submission'
 redirect_from: '/wiki/Creating_a_new_submission'
 ---
 You have finished your analysis and now you want to share your data.
-Mothur can help!
+mothur can help!
 
 1\. The first command you want to run is
 [get.mimarkspackage](get.mimarkspackage). The

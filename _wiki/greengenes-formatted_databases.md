@@ -4,7 +4,7 @@ redirect_from: '/wiki/Greengenes-formatted_databases'
 ---
 The greengenes-based alignment is 7,682 columns wide. Because of the
 poor alignment quality in the variable regions we strongly discourage
-people from using it for their \"real\" analysis. One side effect of
+people from using it for their "real" analysis. One side effect of
 this is that [chimera.slayer](chimera.slayer) detects fewer
 real chimeras when using greengenes-aligned sequences compared to
 SILVA-aligned sequences.
@@ -33,7 +33,7 @@ SILVA-aligned sequences.
     [align.seqs](align.seqs). The greengenes-based alignment
     is 7,682 columns wide. Because of the poor alignment quality in the
     variable regions we strongly discourage people from using it for
-    their \"real\" analysis. A README file is included that describes
+    their "real" analysis. A README file is included that describes
     precisely how the files were created.
 -   [greengenes gold
     alignment](https://www.mothur.org/w/images/2/21/Greengenes.gold.alignment.zip) -
@@ -69,7 +69,7 @@ SILVA-aligned sequences.
 -   [greengenes reference
     alignment](https://www.mothur.org/w/images/7/72/Greengenes.alignment.zip) -
     4,938 bacterial and archaeal sequences in it and the sequences are
-    \"imputed\" to cover the entire 16S rRNA gene. This file was
+    "imputed" to cover the entire 16S rRNA gene. This file was
     downloaded from the [greengenes
     website](https://greengenes.lbl.gov/Download/Sequence_Data/Fasta_data_files/core_set_aligned.fasta.imputed)
     and should be used (if necessary) to align sequences with

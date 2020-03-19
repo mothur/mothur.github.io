@@ -6,9 +6,9 @@ redirect_from: '/wiki/Summary.single.html'
 The **summary.single** command will produce a
 summary file that has the calculator value for each line in the OTU data
 and for all possible comparisons between the different groups in the
-group file. This can be useful if you aren\'t interested in generating
-collector\'s or rarefaction curves for your multi-sample data analysis.
-It would be worth your while, however, to look at the collector\'s
+group file. This can be useful if you aren't interested in generating
+collector's or rarefaction curves for your multi-sample data analysis.
+It would be worth your while, however, to look at the collector's
 curves for the calculators you are interested in to determine how
 sensitive the values are to sampling. If the values are not sensitive to
 sampling, then you can trust the values. Otherwise, you need to keep
@@ -50,9 +50,9 @@ This will result in output to the screen looking like:
 
 The left column indicates the label for each line in the data set and
 the right column indicates the row number in the data set. In dotur, the
-summary data was provided in separate files ending in \"ltt\" and was
-only generated after the collector\'s curves were generated. Now, in
-mothur, all of this data is contained within a single \"summary\" file.
+summary data was provided in separate files ending in "ltt" and was
+only generated after the collector's curves were generated. Now, in
+mothur, all of this data is contained within a single "summary" file.
 In this case data was written to the file
 98\_lt\_phylip\_amazon.fn.summary, which looks like:
 
@@ -84,7 +84,7 @@ lower and upper bound on the interval.
 
 ### calc
 
-If you don\'t want to see all of the default calculators, you can tell
+If you don't want to see all of the default calculators, you can tell
 mothur which ones to use in the summary file:
 
     mothur > summary.single(list=98_lt_phylip_amazon.fn.list, calc=sobs-chao-npshannon)
@@ -116,7 +116,7 @@ like to use a different cutoff, you can use the abund option:
 
     mothur > summary.single(calc=ace, abund=5)
 
-Looking at the file, 98\_lt\_phylip\_amazon.fn.summary, you\'ll see that
+Looking at the file, 98\_lt\_phylip\_amazon.fn.summary, you'll see that
 when the distance is 0.10, the ACE estimate value is 101.1 (95%
 CI=75.5-158.8) compared to 161.4 (95% CI=120.3-228.4) when abund was 10.
 You will not see a difference when the maximum abundance is below the
@@ -142,7 +142,7 @@ used.
 
 There may only be a couple of lines in your OTU data that you are
 interested in summarizing. There are two options. You could: (i)
-manually delete the lines you aren\'t interested in from you rabund,
+manually delete the lines you aren't interested in from you rabund,
 sabund, or list file; (ii) or use the label option. To use the label
 option with either the summary.single() command you need to know the
 labels you are interested in. If you want the summary data for the lines

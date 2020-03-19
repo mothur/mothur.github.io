@@ -9,7 +9,7 @@ package](https://www.ncbi.nlm.nih.gov/biosample/docs/packages/MIMARKS.survey.pla
 
 ### sample\_name
 
-This is your group name. Mothur will fill this in for you, thanks mom!
+This is your group name. mothur will fill this in for you, thanks mom!
 
 ### description
 
@@ -30,7 +30,7 @@ library.
 
 ### organism
 
-You must choose this from the NCBI\'s list found here. This is
+You must choose this from the NCBI's list found here. This is
 controlled vocabulary. Your choices are: activated carbon metagenome,
 activated sludge metagenome, air metagenome, anaerobic digester
 metagenome, ant fungus garden metagenome, aquatic metagenome, activated
@@ -71,10 +71,10 @@ metagenome. You can modify your choice after submission.
 
 ### collection\_date
 
-Date of sampling, in \\\"DD-Mmm-YYYY\\\", \\\"Mmm-YYYY\\\" or
-\\\"YYYY\\\" format (single instance, eg., 05-Oct-1990, Oct-1990 or
-1990) or ISO 8601 standard \\\"YYYY-mm-dd\\\" or
-\\\"YYYY-mm-ddThh:mm:ss\\\" (eg. 1990-11-05 or 1990-11-05T14:41:36)
+Date of sampling, in \\"DD-Mmm-YYYY\\", \\"Mmm-YYYY\\" or
+\\"YYYY\\" format (single instance, eg., 05-Oct-1990, Oct-1990 or
+1990) or ISO 8601 standard \\"YYYY-mm-dd\\" or
+\\"YYYY-mm-ddThh:mm:ss\\" (eg. 1990-11-05 or 1990-11-05T14:41:36)
 
     format: {timestamp}
 
@@ -96,8 +96,8 @@ Geographical environmental feature (eg., harbor, lake).
 Geographical origin of the sample; use the appropriate name from this
 list [https://www.insdc.org/documents/country-qualifier-vocabulary](https://www.insdc.org/documents/country-qualifier-vocabulary). Use
 a colon to separate the country or ocean from more detailed information
-about the location, eg \\\"Canada: Vancouver\\\" or \\\"Germany: halfway
-down Zugspitze, Alps\\\".
+about the location, eg \\"Canada: Vancouver\\" or \\"Germany: halfway
+down Zugspitze, Alps\\".
 
     format: {term}:{term}:{text}
 
@@ -105,7 +105,7 @@ down Zugspitze, Alps\\\".
 
 The geographical coordinates of the location where the sample was
 collected. Specify as degrees latitude and longitude in format
-\\\"d\[d.dddd\] N\|S d\[dd.dddd\] W\|E\\\", eg, 38.98 N 77.11 W.
+\\"d\[d.dddd\] N\|S d\[dd.dddd\] W\|E\\", eg, 38.98 N 77.11 W.
 
     format: {float} {float}
 
@@ -138,7 +138,7 @@ antibiotic regimens.
 
 ### altitude
 
-The altitude of the sample is the vertical distance between Earth\'s
+The altitude of the sample is the vertical distance between Earth's
 surface above Sea Level and the sampled position in the air.
 
     format: {float} m
@@ -430,7 +430,7 @@ either to the original material collected or to any derived sub-samples.
 
 ### standing\_water\_regm
 
-Treatment involving an exposure to standing water during a plant\'s life
+Treatment involving an exposure to standing water during a plant's life
 span, types can be flood water or standing water; can include multiple
 regimens
 

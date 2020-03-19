@@ -1,9 +1,9 @@
 ---
 title: 'list file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/List_file'
 ---
-The file ending in \"list\" contains data indicating the sequences that
+The file ending in "list" contains data indicating the sequences that
 cluster together within an OTU. Like the rabund and sabund files, the
 first column represents the distance that sequences were assigned to
 OTUs. If you are making your own rabund file you can make the label

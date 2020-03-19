@@ -1,5 +1,6 @@
 ---
 title: 'Bstick'
+tags: 'calculators'
 redirect_from: '/wiki/Bstick'
 ---
 The **bstick** calculator returns the
@@ -146,8 +147,8 @@ Running\...
     0.09   0.136796    0.117354    0.136559
     0.10   0.127853    0.119468    0.139020 <---
 
-In this table the data in the column \"bstick\" are the calculated
-statistic value, those in column \"bstick\_lci\" are the critical values
-for α=0.01, and those in column \"bstick\_hci\" are the critical values
+In this table the data in the column "bstick" are the calculated
+statistic value, those in column "bstick\_lci" are the critical values
+for α=0.01, and those in column "bstick\_hci" are the critical values
 for α=0.05. These are the same values that we found above for a cutoff
 of 0.10.

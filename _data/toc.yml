@@ -7,6 +7,8 @@
       url: "wiki/mothur_manual"
     - title: "FAQ"
       url: "wiki/frequently_asked_questions"
+    - title: Analysis examples
+      url: "wiki/analysis_examples"
     - title: Download
       external_url: "https://github.com/mothur/mothur/releases/latest"
     - title: Workshops

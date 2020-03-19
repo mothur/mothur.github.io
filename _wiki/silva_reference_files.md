@@ -10,7 +10,7 @@ If you use the SILVA reference files you should be aware of their
 The SILVA alignment is 50,000 columns long so that it can be compatible
 with 18S rRNA sequences as well as archaeal 16S rRNA sequences. In our
 published opinion, this is the best reference alignment out there - far
-superior to the greengenes or RDP alignments. It\'s unclear why this
+superior to the greengenes or RDP alignments. It's unclear why this
 version of the release is smaller than previous releases. We have
 prepared a [README
 document](/blog/2020/SILVA-v138-reference-files)
@@ -27,10 +27,10 @@ the CC-BY license opening the data up to commercial use
 -   [ recreated seed database ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v138.tgz)
     (5741 bacteria, 81 archaea, and 1834 eukarya sequences). The actual
     reference alignment that SILVA uses with their SINA aligner is
-    called the SEED alignment. We don\'t know what this actually is. We
+    called the SEED alignment. We don't know what this actually is. We
     have tried to duplicate it by identifying the unique sequences in
     the SSURef database that have a 100% quality score to the SEED
-    alignment (field \'align\_ident\_slv\' in the arb database) and that
+    alignment (field 'align\_ident\_slv' in the arb database) and that
     go from the end of the traditional 8f/27f primer to the beginning of
     the traditional 1492r primer. We are providing a composite dataset
     for bacterial, archaeal, and eukaryotic sequences. The uncompressed
@@ -62,10 +62,10 @@ references.
 -   [ recreated seed database ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v132.tgz)
     (8517 bacteria, 147 archaea, and 2516 eukarya sequences). The actual
     reference alignment that SILVA uses with their SINA aligner is
-    called the SEED alignment. We don\'t know what this actually is. We
+    called the SEED alignment. We don't know what this actually is. We
     have tried to duplicate it by identifying the unique sequences in
     the SSURef database (v123) that have a 100% quality score to the
-    SEED alignment (field \'align\_ident\_slv\' in the arb database) and
+    SEED alignment (field 'align\_ident\_slv' in the arb database) and
     that go from the end of the traditional 8f/27f primer to the
     beginning of the traditional 1492r primer. We are providing a
     composite dataset for bacterial, archaeal, and eukaryotic sequences.
@@ -98,10 +98,10 @@ references.
 -   [ recreated seed database ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v128.tgz)
     (8512 bacteria, 147 archaea, and 2554 eukarya sequences). The actual
     reference alignment that SILVA uses with their SINA aligner is
-    called the SEED alignment. We don\'t know what this actually is. We
+    called the SEED alignment. We don't know what this actually is. We
     have tried to duplicate it by identifying the unique sequences in
     the SSURef database (v123) that have a 100% quality score to the
-    SEED alignment (field \'align\_ident\_slv\' in the arb database) and
+    SEED alignment (field 'align\_ident\_slv' in the arb database) and
     that go from the end of the traditional 8f/27f primer to the
     beginning of the traditional 1492r primer. We are providing a
     composite dataset for bacterial, archaeal, and eukaryotic sequences.
@@ -134,10 +134,10 @@ references.
 -   [ recreated seed database ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v123.tgz)
     (12083 bacteria, 294 archaea, and 2537 eukarya sequences). The
     actual reference alignment that SILVA uses with their SINA aligner
-    is called the SEED alignment. We don\'t know what this actually is.
+    is called the SEED alignment. We don't know what this actually is.
     We have tried to duplicate it by identifying the unique sequences in
     the SSURef database (v123) that have a 100% quality score to the
-    SEED alignment (field \'align\_ident\_slv\' in the arb database) and
+    SEED alignment (field 'align\_ident\_slv' in the arb database) and
     that go from the end of the traditional 8f/27f primer to the
     beginning of the traditional 1492r primer. We are providing a
     composite dataset for bacterial, archaeal, and eukaryotic sequences.
@@ -171,10 +171,10 @@ references.
     database](https://www.mothur.org/w/images/5/56/Silva.seed_v119.tgz)
     (12244 bacteria, 207 archaea, and 2558 eukarya sequences). The
     actual reference alignment that SILVA uses with their SINA aligner
-    is called the SEED alignment. We don\'t know what this actually is.
+    is called the SEED alignment. We don't know what this actually is.
     We have tried to duplicate it by identifying the unique sequences in
     the SSURef database (v119) that have a 100% quality score to the
-    SEED alignment (field \'align\_ident\_slv\' in the arb database) and
+    SEED alignment (field 'align\_ident\_slv' in the arb database) and
     that go from the end of the traditional 8f/27f primer to the
     beginning of the traditional 1492r primer. We are providing a
     composite dataset for bacterial, archaeal, and eukaryotic sequences.
@@ -189,7 +189,7 @@ references.
 The SILVA alignment is 50,000 columns long so that it can be compatible
 with 18S rRNA sequences as well as archaeal 16S rRNA sequences. The
 actual reference alignment that SILVA uses with their SINA aligner is
-called the SEED alignment. We don\'t know what this actually is. We have
+called the SEED alignment. We don't know what this actually is. We have
 tried to duplicate it by identifying the unique sequences in the SSURef
 database (v102) that have a 100% quality score to the SEED alignment and
 that go from the end of the traditional 8f/27f primer to the beginning

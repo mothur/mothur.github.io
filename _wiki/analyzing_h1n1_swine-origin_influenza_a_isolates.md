@@ -195,9 +195,9 @@ these files. The following commands will generate the rarefaction curves
 shown below:
 
     data<-read.table(file="HA.unique.fn.rarefaction", header=T)
-    plot(x=data$$numsampled, y=data$$unique, xlab="Number of Sequences Sampled",ylab="OTUs", type="l", col="red", font.lab=3)
-    lines(x=data$$numsampled, y=data$$X0.001, type="l", col="green", font.lab=3)
-    lines(x=data$$numsampled, y=data$$X0.003, type="l", col="blue", font.lab=3)
+    plot(x=data$numsampled, y=data$unique, xlab="Number of Sequences Sampled",ylab="OTUs", type="l", col="red", font.lab=3)
+    lines(x=data$numsampled, y=data$X0.001, type="l", col="green", font.lab=3)
+    lines(x=data$numsampled, y=data$X0.003, type="l", col="blue", font.lab=3)
     legend(x=1, y=257, c("unique", "0.001", "0.003"), c("red", "green", "blue"))
 
 The rarefaction curve for clusters of unique sequences indicates that
@@ -215,7 +215,7 @@ sequences.](image:RarefactionCurveGlobal.png)
 
 A 197 of the 599 sequences in our dataset were collected in New
 Yorkstate . Here we will examine the sampling effort within New York
-state by taking advantage of mothur\'s notion of a *group*. A group file
+state by taking advantage of mothur's notion of a *group*. A group file
 specifies which sample a sequence belongs to. This [HA
 groups](https://mothur.s3.us-east-2.amazonaws.com/wiki/ha_groups.zip) file indicates which samples
 were collected in New York state or elsewhere. In order to create a
@@ -233,7 +233,7 @@ This will generate three files:
     [rank-abundance](rabund_file) file for the remaining
     *Global* sequences
 -   HA.unique.fn.shared: a [shared file](shared_file) which
-    can be used by mothur\'s [multiple sample
+    can be used by mothur's [multiple sample
     analyses](OTU-based_approaches#multiple_sample_analyses)
     commands
 

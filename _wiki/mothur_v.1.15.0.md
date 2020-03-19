@@ -1,20 +1,20 @@
 ---
-title: 'Mothur v.1.15.0'
+title: 'mothur v.1.15.0'
 redirect_from: '/wiki/Mothur_v.1.15.0.html'
 ---
 We are happy to announce the release of [Mothur
 v.1.15.0](Mothur_v.1.15.0) in honor of Bret Favre finally
 ending his consecutive game streak (and hopefully his career). Although
 impressive, he really should have hung up the shoulder pads back when we
-were postdocs. Regardless, mothur isn\'t going anywhere.
+were postdocs. Regardless, mothur isn't going anywhere.
 
 Our latest release includes a number of exciting new commands to help
 with data processing and analysis. First, a number of people have asked
-for the \"classic\" form of the clustering algorithms that was
+for the "classic" form of the clustering algorithms that was
 originally implemented in DOTUR; this has been implemented as the
 [cluster.classic](cluster.classic) command. Second, we have
 also created the [catchall](catchall) command that wraps John
-Bunge\'s CatchAll program for using parametric models to estimate
+Bunge's CatchAll program for using parametric models to estimate
 community richness. Third, methods for performing indicator analyses
 have been on our radar for awhile and we are happy to finally add
 [indicator](indicator) to the stable of mothur commands.
@@ -35,7 +35,7 @@ all suggested by users and we appreciate your continued support and
 feedback. We are always curious to hear how people are using the
 software and what we can do to make input and output more useful. Our
 goal is to help you take raw data and get it into a format that you can
-use to do science. If we aren\'t doing that for you, let us know!
+use to do science. If we aren't doing that for you, let us know!
 
 Once again, Pat is thinking about hosting one or two workshops this
 Spring in the Detroit/Ann Arbor area with a slightly different format.
@@ -54,7 +54,7 @@ the [six packs](https://leinie.com/red.html) coming
 -   [catchall](catchall) command - wrapper for the catchall
     program
 -   [indicator](indicator) command - identify indicator
-    \"species\" for nodes on a tree
+    "species" for nodes on a tree
 -   [consensus.seqs](consensus.seqs) command - finds a
     consensus sequence for each OTU or phylotype
 -   [sub.sample](sub.sample) - create a file containing a
@@ -80,7 +80,7 @@ the [six packs](https://leinie.com/red.html) coming
     [remove.lineage](remove.lineage) - change default for
     dups parameter in to true if a name file is given
 -   [trim.seqs](trim.seqs) - added group parameter
--   added strip command to mothur\'s makefile to reduce the size of the
+-   added strip command to mothur's makefile to reduce the size of the
     executable
 -   [parsimony](parsimony) - added processors option for
     parallelization
@@ -93,4 +93,4 @@ the [six packs](https://leinie.com/red.html) coming
 -   [unifrac.weighted](unifrac.weighted) - bug introduced in
     version 1.14.0.
 -   [classify.seqs](classify.seqs) - bug where summary file
-    not printing last level\'s summary info has been fixed
+    not printing last level's summary info has been fixed

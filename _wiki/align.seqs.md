@@ -22,7 +22,7 @@ share their alignment for others to use. In general the alignment is
 very fast - we are able to align over 186,000 full-length sequences to
 the SILVA alignment in less than 3 hrs with a quality as good as the
 SINA aligner. Furthermore, this rate can be accelerated using multiple
-processors. While the aligner doesn\'t explicitly take into account the
+processors. While the aligner doesn't explicitly take into account the
 secondary structure of the 16S rRNA gene, if the template database is
 based on the secondary structure, then the resulting alignment will at
 least be implicitly based on the secondary structure. To demonstrate the
@@ -51,7 +51,7 @@ This will generate the following output:
 Note that once the database was generated, it took 7 seconds. The
 command will generate two files - abrecovery.align and
 abrecovery.align.report. The align file is a fasta-formatted file that
-contains the 242 aligned sequences. We put periods (i.e. \'.\') leading
+contains the 242 aligned sequences. We put periods (i.e. '.') leading
 up to the first base in the sequence and following the last base of the
 sequence. The report file contains information about the quality of the
 alignment. For example\...
@@ -66,7 +66,7 @@ found in AY457915. Next, we see that we used the needleman alignment
 method, which resulted in a pairwise alignment that was 501 characters
 long. In this example we see that the alignment actually starts at
 candidate sequence position 5. This occurred because the sequence
-actually has vector sequence at the 5\' end, which is not represented in
+actually has vector sequence at the 5' end, which is not represented in
 the reference alignment, which includes the traditional 27f and 1492r
 primer sites. Next, we see that during the pairwise alignment stage, 2
 gaps were entered into the candidate sequence and none were introduced
@@ -100,7 +100,7 @@ executable to the blast executables is /blast/bin/. For the search, you
 need to have formatdb and blastall in the bin folder. Also, be
 forewarned that to make this as fast as possible, we chose a word size
 of 28 (-W 28), which has the unintended consequence of returning more
-\"no significant\" searches.
+"no significant" searches.
 
 The final option is to use suffix trees for searching:
 
@@ -172,13 +172,13 @@ etc.
 
 Keep in mind that if you are using the align=blast option, blast will
 limit the combinations of match, mismatch, gapopen, and gapextend that
-you can use. Hopefully, we\'ve scared you off of using blast at all so
-that this won\'t be an issue.
+you can use. Hopefully, we've scared you off of using blast at all so
+that this won't be an issue.
 
 ### flip and threshold
 
 The threshold parameter is used to specify a cutoff at which an
-alignment is deemed \'bad\' and the reverse complement may be tried. The
+alignment is deemed 'bad' and the reverse complement may be tried. The
 default threshold is 0.50, meaning if 50% of the bases are removed in
 the alignment process. The flip parameter is used to specify whether or
 not you want mothur to try the reverse complement of a sequence if the
@@ -201,8 +201,8 @@ the following option:
 
     mothur > align.seqs(candidate=abrecovery.fasta, template=core_set_aligned.imputed.fasta, processors=2)
 
-Running this command on my laptop doesn\'t exactly cut the time in half,
-but it\'s pretty close. There is no software limit on the number of
+Running this command on my laptop doesn't exactly cut the time in half,
+but it's pretty close. There is no software limit on the number of
 processors that you can use.
 
 ## Fine points
@@ -301,7 +301,7 @@ There are two very important things to consider:
     only reason we might suggest the SILVA alignment over the greengenes
     alignment.
 
-2\.  **Don\'t instinctively trust the alignment you get from any
+2\.  **Don't instinctively trust the alignment you get from any
     aligner.** It would be worth your while to import your sequences
     into an alignment editor that takes into account the secondary
     structure (e.g. [arb](https://arb-home.de)) to make sure that things
@@ -311,17 +311,17 @@ There are two very important things to consider:
 
 ### Common Questions
 
-Can\'t find your question? Please feel free to ask questions on our
+Can't find your question? Please feel free to ask questions on our
 forum, [https://forum.mothur.org](https://forum.mothur.org).
 
 ### Common Issues
 
 
-1\.  **\...template is not aligned, aborting. What do I do?** Mothur
+1\.  **\...template is not aligned, aborting. What do I do?** mothur
     requires the reference file to be aligned to generate aligned
-    sequences. You can download mothur\'s aligned silva references
+    sequences. You can download mothur's aligned silva references
     [here](Silva_reference_files). For ITS
-    sequences, see \'how to\' below.
+    sequences, see 'how to' below.
 
 2\.  **\...xxx of your sequences generated alignments that eliminated too
     many bases\... What does this mean?** By default, mothur will align
@@ -333,8 +333,8 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 ### How To
 
 
-1\.  **How do I \'align\' ITS sequences?** You really can\'t do an
-    alignment because there isn\'t positional homology. You can use the
+1\.  **How do I 'align' ITS sequences?** You really can't do an
+    alignment because there isn't positional homology. You can use the
     pre.cluster and pairwise.seqs commands to generate a distance matrix
     from unaligned sequences.
 
@@ -353,5 +353,3 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     number of available processors and use all available.
 -   1.43.0 Improves speed and resource management for align.seqs
     command. [\#647](https://github.com/mothur/mothur/issues/647)
-
-

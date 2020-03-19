@@ -1,5 +1,6 @@
 ---
 title: 'Ace'
+tags: 'calculators'
 redirect_from: '/wiki/Ace'
 ---
 The **ace** calculator returns the ACE richness estimate
@@ -16,7 +17,8 @@ implementation uses a bias-corrected version of γ when the coefficient
 of variation is too large.
 
 $$S_{ACE} = \begin{cases}
-    S_{abund} + \frac {S_{rare}}{C_{ACE}} + \frac{n_1}{C_{ACE}}{ {\hat{\gamma}}_{ACE}^2}\mbox{, for }\hat{\gamma}_{ACE}<\mbox{0.80} 
+    S_{abund} + \frac {S_{rare}}{C_{ACE}} + \frac{n_1}{C_{ACE}}{ {\hat{\gamma}}_{ACE}^2}\mbox{, for }\hat{\gamma}_{ACE}<\mbox{0.80}\\
+
     S_{abund} + \frac {S_{rare}}{C_{ACE}} + \frac{n_1}{C_{ACE}}{ {\tilde{\gamma}}_{ACE}^2}\mbox{, for }\hat{\gamma}_{ACE}\geqslant\mbox{0.80}
 \end{cases}$$
 
@@ -38,12 +40,12 @@ $$cov\left ( f_i, f_j \right) = -f_i f_j / {S_{ACE}}, i\ne j$$
 
 $$n_{i}$$ = The number of OTUs with i individuals
 
-$$S_{rare}$$ = The number of OTUs with \'abund\' or fewer individuals
+$$S_{rare}$$ = The number of OTUs with 'abund' or fewer individuals
 
-$$S_{abund}$$ = The number of OTUs with more than \'abund\' individuals
+$$S_{abund}$$ = The number of OTUs with more than 'abund' individuals
 
-$$abund$$ = the threshold to be considered an \'abundant\' OTU; this is
-set to 10 by default and can be changed with the \'abund\' parameter in
+$$abund$$ = the threshold to be considered an 'abundant' OTU; this is
+set to 10 by default and can be changed with the 'abund' parameter in
 [ summary.single](summary.single#The_abund_option), [
 collect.single](collect.single%27s_curves#The_abund_option),
 and [

@@ -1,5 +1,6 @@
 ---
 title: 'Anderberg'
+tags: 'calculators'
 redirect_from: '/wiki/Anderberg'
 ---
 The **anderberg** calculator returns the Anderberg

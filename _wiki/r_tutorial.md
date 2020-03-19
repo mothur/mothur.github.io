@@ -171,8 +171,8 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  the data easier to manipulate you can do the following:
 
     colnames(seq.sum)        # see the column heading names
-    seq.sum$$nbases[1:10]    # get the column "nbases" out of the table
-    attach(seq.sum)          # "attach" the table so that you don't need the "$$"
+    seq.sum$nbases[1:10]    # get the column "nbases" out of the table
+    attach(seq.sum)          # "attach" the table so that you don't need the "$"
     nbases[1:10]
 
     #  Don't worry if you don't understand everything in the last several lines.
@@ -507,7 +507,7 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     seq.sum[1,]              # get all of the data in the first row
     seq.sum[,4]              # get all of the data in the column labelled "nbases"
     seq.sum[,"nbases"]       # get all of the data in the column labelled "nbases"
-    seq.sum$$nbases           # get all of the data in the column labelled "nbases"
+    seq.sum$nbases           # get all of the data in the column labelled "nbases"
     attach(seq.sum);nbases   # get all of the data in the column labelled "nbases"
     detach(seq.sum)
 
@@ -528,7 +528,7 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  Looking at the output from the 'rownames' command we know we can do better
     #  than those row names.  Let's use the sequence names as the row names...
 
-    rownames(seq.sum)<-seq.sum$$seqname
+    rownames(seq.sum)<-seq.sum$seqname
     seq.sum<-seq.sum[,-1]
     seq.sum[1:10,]
 
@@ -541,23 +541,23 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  To get the sequence names we could then do...
 
     rownames(seq.sum)[(1:length(nbases))[nbases > 200]]  #wonky
-    rownames(seq.sum)[seq.sum$$nbases > 200]              #better
+    rownames(seq.sum)[seq.sum$nbases > 200]              #better
 
     #  Earlier we showed how to sort vectors.  Let's sort seqeunce legnth by the
     #  length of the longest homopolymer in the sequence...
 
-    polymerOrder <- order(seq.sum$$polymer)
+    polymerOrder <- order(seq.sum$polymer)
     seq.sum[polymerorder,c("polymer", "nbases")]
 
     #  You can see that's not exactly what we were hoping for.  We can actually 
     #  use the order command to sort on multiple columns...
 
-    polymerLengthOrder <- order(seq.sum$$polymer, seq.sum$$nbases)
+    polymerLengthOrder <- order(seq.sum$polymer, seq.sum$nbases)
     polymerLength <- seq.sum[polymerlengthorder,c("polymer", "nbases")]
     polymerLength
 
     #  Let's write the sorted lengths to a new file
-    write(polymerLength$$nbases,file="lengths.txt")
+    write(polymerLength$nbases,file="lengths.txt")
 
     #  To read a vector in from a file...
 
@@ -611,23 +611,23 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  polluted as categorical variables.  
     #  Factors can be created using factor() routine.
 
-    seq.sum$$polymer <-factor(seq.sum$$polymer)
-    levels(seq.sum$$polymer)
+    seq.sum$polymer <-factor(seq.sum$polymer)
+    levels(seq.sum$polymer)
 
     #  If we wanted to convert our factors from factors to strings or to numbers
     #  we could do the following...
     #
-    #      seq.sum$$polymer <- as.character(seq.sum$$polymer)
-    #      seq.sum$$polymer <- as.numeric(seq.sum$$polymer)
+    #      seq.sum$polymer <- as.character(seq.sum$polymer)
+    #      seq.sum$polymer <- as.numeric(seq.sum$polymer)
     #
     #
     #  We might be interested to see if sequence length varies with the length
     #  of the homopolymer in the sequence.  We can do this with the aggregate
     #  command and treating polymer as a factor...
 
-    aggregate(seq.sum$$nbases, list(polymer), mean)
-    aggregate(seq.sum$$nbases, list(polymer), median)
-    aggregate(seq.sum$$nbases, list(polymer), sd)
+    aggregate(seq.sum$nbases, list(polymer), mean)
+    aggregate(seq.sum$nbases, list(polymer), median)
+    aggregate(seq.sum$nbases, list(polymer), sd)
 
     #  Similar to the aggregate command, the "by" command will allow you to take
     #  all of the columns and perform an operation on the...
@@ -686,11 +686,11 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
 
     lengthCat <- numeric(nrow(seq.sum))
 
-    for ( i in 1:length(seq.sum$$nbases) ){
+    for ( i in 1:length(seq.sum$nbases) ){
 
-      if ( seq.sum$$nbases[i] < 150 ){
+      if ( seq.sum$nbases[i] < 150 ){
         lengthCat[i] <- "short"
-      }else if ( seq.sum$$nbases[i] < 200 ){
+      }else if ( seq.sum$nbases[i] < 200 ){
         lengthCat[i] <- "medium"
       }else {
         lengthCat[i] <- "long"
@@ -720,17 +720,17 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  --Histogram--
     #  Let's look at the distribution of sequence lengths in our seq.sum table
 
-    hist(seq.sum$$nbases)
+    hist(seq.sum$nbases)
 
     #  Let's gussy it up a bit...
 
-    hist(seq.sum$$nbases, col="skyblue", freq=T, xlab="Sequence Length",
+    hist(seq.sum$nbases, col="skyblue", freq=T, xlab="Sequence Length",
        main="Distribution of Sequence Lengths")
     box()
 
     #  The hist command actually returns a value other than the graph...
 
-    histData <- hist(seq.sum$$nbases, col="skyblue", freq=T, xlab="Sequence Length",
+    histData <- hist(seq.sum$nbases, col="skyblue", freq=T, xlab="Sequence Length",
        main="Distribution of Sequence Lengths")
     histData
 
@@ -739,16 +739,16 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  We can also create a strip chart of the sequence lengths for each 
     #  homopolymer class...
 
-    stripchart(seq.sum$$nbases~seq.sum$$polymer, ylab="Sequence Length", 
+    stripchart(seq.sum$nbases~seq.sum$polymer, ylab="Sequence Length", 
        xlab="Homopolymer Length")
 
-    stripchart(seq.sum$$nbases~seq.sum$$polymer, method="jitter", 
+    stripchart(seq.sum$nbases~seq.sum$polymer, method="jitter", 
        ylab="Sequence Length", xlab="Homopolymer Length")
 
-    stripchart(seq.sum$$nbases~seq.sum$$polymer, method="jitter", vertical=T, 
+    stripchart(seq.sum$nbases~seq.sum$polymer, method="jitter", vertical=T, 
        ylab="Sequence Length", xlab="Homopolymer Length")
 
-    stripchart(seq.sum$$nbases~seq.sum$$polymer, method="jitter", vertical=T,
+    stripchart(seq.sum$nbases~seq.sum$polymer, method="jitter", vertical=T,
        jitter=0.4, pch=1, cex=.2, col=rainbow(5), ylab="Sequence Length", 
        xlab="Homopolymer Length")
 
@@ -757,7 +757,7 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  Those strip charts had a lot of data and may be too difficult to interpret.
     #  Instead, let's try to represent the data as box plots
 
-    boxplot(seq.sum$$nbases~seq.sum$$polymer, ylab="Sequence Length", 
+    boxplot(seq.sum$nbases~seq.sum$polymer, ylab="Sequence Length", 
        xlab="Homopolymer Length")
 
 
@@ -768,22 +768,22 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
 
     ?pie
 
-    polymerCount <- aggregate(seq.sum$$polymer, list(polymer), length)
-    polymerFreq <- polymerCount$$x / length(seq.sum$$polymer)
+    polymerCount <- aggregate(seq.sum$polymer, list(polymer), length)
+    polymerFreq <- polymerCount$x / length(seq.sum$polymer)
     pie(polymerFreq)
 
 
     #  --Bar plots--
 
-    barplot(polymerCount$$x, names.arg=polymerCount$$Group, xlab="Homopolymer length",
+    barplot(polymerCount$x, names.arg=polymerCount$Group, xlab="Homopolymer length",
        ylab="Number of Sequences")
-    barplot(polymerCount$$x, names.arg=polymerCount$$Group, ylab="Homopolymer length",
+    barplot(polymerCount$x, names.arg=polymerCount$Group, ylab="Homopolymer length",
        xlab="Number of Sequences", horiz=T)
 
 
 
     shared<-read.table(file="stool.final.tx.shared", header=T)
-    rownames(shared)<-shared$$V2
+    rownames(shared)<-shared$V2
     shared<-as.matrix(shared[,-c(1,2,3)])
     colnames(shared)<-paste("Phylotype", 1:ncol(shared), sep="")
     shared.ra<-shared/apply(shared, 1, sum) # calculate the relative abundance of 
@@ -803,11 +803,11 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  tutorial.  The necessary file is in your folder.
 
     nmds<-read.table(file="stool.final.an.thetayc.0.03.lt.nmds.axes", header=T)
-    plot(nmds$$axis1, nmds$$axis2)
+    plot(nmds$axis1, nmds$axis2)
 
     #  or
 
-    plot(nmds$$axis2~nmds$$axis1)
+    plot(nmds$axis2~nmds$axis1)
 
     #  Looking at the group names in the nmds table we see that the first 12 sample
     #  names are from women ("F") and the last 12 are from men ("M").  There are
@@ -815,17 +815,17 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
 
     nmds.col<-c(rep("pink", 12), rep("blue", 12))
 
-    plot(nmds$$axis2~nmds$$axis1, col=nmds.col, xlab="Axis 1", ylab="Axis 2")
+    plot(nmds$axis2~nmds$axis1, col=nmds.col, xlab="Axis 1", ylab="Axis 2")
     legend(x=0.3, y=0.6, legend=c("Female", "Male"), pch=1, col=c("pink", "blue"))
 
-    plot(nmds$$axis2~nmds$$axis1, col=nmds.col, xlab="Axis 1", ylab="Axis 2", pch=18,
+    plot(nmds$axis2~nmds$axis1, col=nmds.col, xlab="Axis 1", ylab="Axis 2", pch=18,
        cex=2)
     legend(x=0.3, y=0.6, legend=c("Female", "Male"), pch=18, cex=1, col=c("pink", 
        "blue"))
 
     #  Although these points aren't linked you could connect them...
 
-    plot(nmds$$axis2~nmds$$axis1, col=nmds.col, xlab="Axis 1", ylab="Axis 2", pch=18, 
+    plot(nmds$axis2~nmds$axis1, col=nmds.col, xlab="Axis 1", ylab="Axis 2", pch=18, 
        cex=2, type="b")
     legend(x=0.3, y=0.6, legend=c("Female", "Male"), pch=18, cex=1, lty=1, 
        col=c("pink", "blue"))
@@ -834,9 +834,9 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  command.  Here we'll put the cumulative number of sequences that have that 
     #  sequence length or higher.
 
-    hist(seq.sum$$nbases, col="skyblue", freq=T, xlab="Sequence Length",
-       main="Distribution of Sequence Lengths", ylim=c(0,length(seq.sum$$nbases)))
-    points(sort(seq.sum$$nbases), length(seq.sum$$nbases):1, type="l")
+    hist(seq.sum$nbases, col="skyblue", freq=T, xlab="Sequence Length",
+       main="Distribution of Sequence Lengths", ylim=c(0,length(seq.sum$nbases)))
+    points(sort(seq.sum$nbases), length(seq.sum$nbases):1, type="l")
     box()
 
 
@@ -846,10 +846,10 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     #  a maximum homopolymer length of 5 and one for the 6's
 
     par(mfrow=c(2,1))
-    hist(seq.sum[seq.sum$$polymer==5,]$$nbases, col="skyblue", freq=T, 
+    hist(seq.sum[seq.sum$polymer==5,]$nbases, col="skyblue", freq=T, 
        xlab="Length of sequences with a maximum polymer length of 5", main="", 
        xlim=c(0,300), breaks=seq(0,260, 20))
-    hist(seq.sum[seq.sum$$polymer==6,]$$nbases, col="red", freq=T,
+    hist(seq.sum[seq.sum$polymer==6,]$nbases, col="red", freq=T,
        xlab="Length of sequences with a maximum polymer length of 6", main="", 
        xlim=c(0,300), breaks=seq(0,260, 20))
     par(mfrow=c(1,1))
@@ -872,7 +872,7 @@ Rtutorial files](https://mothur.s3.us-east-2.amazonaws.com/wiki/rtutorial.zip)
     library(rgl)
 
     pcoa<-read.table(file="stool.final.an.thetayc.0.03.lt.pcoa.axes", header=T)
-    rownames(pcoa)<-pcoa$$V1
+    rownames(pcoa)<-pcoa$V1
     pcoa<-pcoa[,-1]
     plot3d(pcoa, col=nmds.col, type="s")
 

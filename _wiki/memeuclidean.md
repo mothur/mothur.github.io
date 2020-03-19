@@ -1,5 +1,6 @@
 ---
 title: 'Memeuclidean'
+tags: 'calculators'
 redirect_from: '/wiki/Memeuclidean'
 ---
 The **memeuclidean** calculator returns a
@@ -97,7 +98,7 @@ Writing the data in a more presentable manner we see:
 
 Using these sums to evaluate <i>D</i> we get:
 
-$$D_{AB} = \sqrt{ 
+$$D_{AB} = \sqrt{
 
 \left(1-0\right)^2 +
 \left(1-0\right)^2 +

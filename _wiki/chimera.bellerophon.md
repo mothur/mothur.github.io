@@ -126,7 +126,7 @@ set it up to half the sequence length.
 
 ### increment
 
-The increment parameter determines how far the 2 windows \"slide\" each
+The increment parameter determines how far the 2 windows "slide" each
 iteration. By default the increment parameter is 25, but if you may set
 it up to sequence length minus twice the window.
 

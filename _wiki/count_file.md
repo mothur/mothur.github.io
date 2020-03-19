@@ -1,13 +1,13 @@
 ---
 title: 'count file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Count_File'
 ---
 The count file is a condensed version of the name file. It can also
 include the group information. It can be created using the
 [count.seqs](count.seqs) command, aka make.table.
 
-**NOTE: DO NOT use a hyphen in group names. The \"-\" character is used
+**NOTE: DO NOT use a hyphen in group names. The "-" character is used
 within mothur to separate group names, labels, taxonomies, ect.
 Including a hyphen will cause issues in your downstream analysis.**
 
@@ -76,12 +76,12 @@ You can compress or inflate your count table using the
 
     mothur > count.seqs(count=final.count_table, compress=f) 
 
-The above command will convert a sparse format count file to it\'s full
+The above command will convert a sparse format count file to it's full
 form.
 
     mothur > count.seqs(count=final.count_table, compress=t) 
 
-The above command will convert a full format count file to it\'s sparse
+The above command will convert a full format count file to it's sparse
 form.
 
 [category:filetypes](Category:FileTypes)

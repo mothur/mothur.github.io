@@ -1,5 +1,6 @@
 ---
 title: 'Sobs'
+tags: 'calculators'
 redirect_from: '/wiki/Sobs'
 ---
 The **sobs** calculator returns the number of observed

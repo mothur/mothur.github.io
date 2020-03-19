@@ -1,5 +1,6 @@
 ---
 title: 'Logseries'
+tags: 'calculators'
 redirect_from: '/wiki/Logseries'
 ---
 The **logseries** calculator returns the
@@ -116,8 +117,8 @@ Running\...
     0.09   0.017544    0.117354    0.136559
     0.10   0.037017    0.119468    0.139020 <---
 
-In this table the data in the column \"logseries\" are the calculated
-statistic value, those in column \"logseries\_lci\" are the critical
-values for α=0.01, and those in column \"logseries\_hci\" are the
+In this table the data in the column "logseries" are the calculated
+statistic value, those in column "logseries\_lci" are the critical
+values for α=0.01, and those in column "logseries\_hci" are the
 critical values for α=0.05. These are the same values that we found
 above for a cutoff of 0.10.

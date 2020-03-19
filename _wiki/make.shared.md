@@ -25,7 +25,7 @@ file and group file:
 
 or you can convert a [ count file](Count_File) to a [shared
 file](shared_file) and [list file](list_file)
-where each representative sequence is placed in it\'s own OTU..
+where each representative sequence is placed in it's own OTU..
 
     mothur > make.shared(count=amazon.count_table, label=0.03)
 
@@ -46,7 +46,7 @@ data into mothur.
 
 There may only be a couple of lines in your OTU data that you are
 interested in summarizing. There are two options. You could: (i)
-manually delete the lines you aren\'t interested in from you rabund,
+manually delete the lines you aren't interested in from you rabund,
 sabund, list, or shared file; (ii) or use the label option. If you only
 want to read in the data for the lines labeled unique, 0.03, 0.05 and
 
@@ -68,7 +68,7 @@ included in your analysis:
 -   1.28.0 added count parameter
 -   1.36.0 mothur no longer checks for biom matrix type to allow for
     more flexibility.
--   1.36.0 rabund files are no longer outputted. Mothur will create a
+-   1.36.0 rabund files are no longer outputted. mothur will create a
     rabund file with the [get.rabund](get.rabund) command.
 -   1.39.0 Eliminates zero abundance OTUs created by some floating point
     biom files converted to shared files.

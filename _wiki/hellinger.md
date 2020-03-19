@@ -1,5 +1,6 @@
 ---
 title: 'Hellinger'
+tags: 'calculators'
 redirect_from: '/wiki/Hellinger'
 ---
 $$D_{Hellinger} = \sqrt{ \sum_{j=1}^{S_T}  \left ( \sqrt{\frac{S_{Aj}}{S_{A+}}} - \sqrt{\frac{S_{Bj}}{S_{B+}}} \right )^2  }$$

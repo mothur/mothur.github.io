@@ -1,6 +1,6 @@
 ---
 title: 'file file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/File_File'
 ---
 The File file is 2, 3 or 4 column file containing the fastq files. Tired
@@ -35,16 +35,16 @@ fastq and the third column contains the reverse fastq.
 
 \... The 4 column format is for use with index files. The format is
 forward fastq file then reverse fastq then forward index and reverse
-index file. If you only have one index file add \'none\' for the other
-one. Here\'s an example with just a reverse index file:
+index file. If you only have one index file add 'none' for the other
+one. Here's an example with just a reverse index file:
 
     My.forward.fastq My.reverse.fastq none My.index.fastq
 
-Mothur will process each pair and create a combined fasta and report
+mothur will process each pair and create a combined fasta and report
 file with all the sequences.
 
 Note: You can add comments to the file file, or ignore files by adding a
-\'\#\' to the beginning of the line.
+'\#' to the beginning of the line.
 
     #My sample comment ...
     F8D0   F8D0_S345_L001_R1_001.fastq F8D0_S345_L001_R2_001.fastq

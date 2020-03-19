@@ -1,6 +1,6 @@
 ---
 title: 'fasta file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Fasta_file'
 ---
 The Fasta File:

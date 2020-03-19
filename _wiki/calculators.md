@@ -24,8 +24,8 @@ Amazonian dataset.
     measure of evenness
 -   [shannoneven](shannoneven) - a Shannon index-based
     measure of evenness
--   [heip](heip) - Heip\'s metric of community evenness
--   [smithwilson](smithwilson) - Smith and Wilson\'s metric
+-   [heip](heip) - Heip's metric of community evenness
+-   [smithwilson](smithwilson) - Smith and Wilson's metric
     of community evenness
 
 ## Community diversity
@@ -41,10 +41,10 @@ Amazonian dataset.
 
 ## Estimates of number of additional OTUs observed with extra sampling
 
--   [boneh](boneh) - Boneh\'s estimator
--   [efron](efron) - Efron\'s estimator
--   [shen](shen) - Shen\'s estimator
--   [solow](solow) - Solow\'s estimator
+-   [boneh](boneh) - Boneh's estimator
+-   [efron](efron) - Efron's estimator
+-   [shen](shen) - Shen's estimator
+-   [solow](solow) - Solow's estimator
 
 ## Statistical distributions
 

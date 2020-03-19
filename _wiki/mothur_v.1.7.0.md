@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.7.0'
+title: 'mothur v.1.7.0'
 redirect_from: '/wiki/Mothur_v.1.7.0.html'
 ---
 We hare happy to announce the release of [mothur
@@ -16,11 +16,11 @@ amount of traffic by people downloading mothur - so if this is your
 first update, welcome. Many of you may remember that last month we
 launched two new ventures a [facebook
 page](https://www.facebook.com/pages/mothur/133966409231) and a [user
-forum](https://www.mothur.org/forum). We are up to 53 \"friends\" and
+forum](https://www.mothur.org/forum). We are up to 53 "friends" and
 have gotten a steady stream of forum users. Please feel free to use the
 wiki, forum, and facebook as means of communicating with and helping
 each other. December also promises to be a promising month as The
-Mothur, is due to release dotur v.2.0 \"Ruth\" on December 6th.
+Mothur, is due to release dotur v.2.0 "Ruth" on December 6th.
 
 This update has a number of features that people are sure to find
 useful. First, we have added several commands for processing and
@@ -34,7 +34,7 @@ that the memory requirements using the [hcluster](hcluster)
 command are minimal; however it tends to run a bit slower than the
 cluster command. Finally and most significantly, we have added two
 methods for classifying sequences - the k-Nearest Neighbor algorithm and
-RDP\'s Bayesian Classifier. These data can then be used to assign
+RDP's Bayesian Classifier. These data can then be used to assign
 sequences to phylotypes. As with everything we do, our goal is to
 provide the flexibility to use any classifier you want with any taxonomy
 scheme you want. With these additions, we now have the ability to pursue

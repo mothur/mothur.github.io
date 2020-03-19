@@ -1,11 +1,11 @@
 ---
 title: 'rabund file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Rabund_file'
 ---
 The data reported in the rabund file is appropriate for plotting as a
 rank-abundance plot. In DOTUR these data were found in files ending in
-\"otu\". Like the [sabund](sabund_file) and [list
+"otu". Like the [sabund](sabund_file) and [list
 files](list_file), the first column represents the distance
 that sequences were assigned to OTUs. If you are making your own rabund
 file you can make the label anything without spaces. The number in the

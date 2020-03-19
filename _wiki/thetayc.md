@@ -1,5 +1,6 @@
 ---
 title: 'Thetayc'
+tags: 'calculators'
 redirect_from: '/wiki/Thetayc'
 ---
 The **thetayc** calculator returns the Yue & Clayton

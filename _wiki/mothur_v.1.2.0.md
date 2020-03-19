@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.2.0'
+title: 'mothur v.1.2.0'
 redirect_from: '/wiki/Mothur_v.1.2.0.html'
 ---
 We are happy to release [mothur v.1.2.0](mothur_v.1.2.0)
@@ -24,31 +24,31 @@ I would like you to consider helping me with an experiment. It is very
 important to me that I engage the broader microbial ecology community in
 this project. One way that anyone can help out would be to contribute
 text to the wiki. There are at least three ways that almost anyone could
-help. First, if you look around our pages you\'ll notice a lack of
+help. First, if you look around our pages you'll notice a lack of
 images and references. We are up to about 85 pages on the wiki and I
-don\'t know that I can \"beautify\" these pages on my own. Second, the
+don't know that I can "beautify" these pages on my own. Second, the
 pages describing the calculators are very dry and missing from them is a
 discussion of why one is better than the other and some of the theory
 that explains what the calculator is trying to do. Third, people learn
-from example and find it very helpful to copy someone else\'s work to
+from example and find it very helpful to copy someone else's work to
 learn how to use a piece of software. This month I have posted a page
 describing an [esophageal community
 analysis](esophageal_community_analysis). I would love to
 have more of these pages for people to look at and learn from. But the
 problem with getting people to contribute to such an endeavor is how to
-reward and give credit to contributors. So here\'s an offer that no
+reward and give credit to contributors. So here's an offer that no
 junior scientist should turn down. If you make a significant
 contribution to the wiki, I will add your name to a publication we are
 preparing that describes mothur. My goal is to submit a manuscript
 sometime during the summer. By significant contribution, I mean
 something of the magnitude of a full page or more, not fixing someone
-else\'s typos. Authorship order will be determined by the level of
+else's typos. Authorship order will be determined by the level of
 contribution. If you have any questions, please do not hesitate to be in
 touch.
 
 If you are going to Philadelphia for the 2009 ASM meeting, please stop
-by our poster, \"Introducing mothur: A Computational Toolbox for
-Describing and Comparing Microbial Communities.\" I will be presenting
+by our poster, "Introducing mothur: A Computational Toolbox for
+Describing and Comparing Microbial Communities." I will be presenting
 the poster in the **Molecular Microbial Ecology - Communities - I**
 session on May 18th at 1:00 PM. The presentation number is N-099. I
 would love to get your feedback and suggestions. I have benefited

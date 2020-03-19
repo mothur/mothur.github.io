@@ -1,5 +1,5 @@
 ---
-title: 'Mothur license'
+title: 'mothur license'
 redirect_from: '/wiki/Mothur_license'
 ---
 mothur source code is available under the [GNU General Public
@@ -50,16 +50,16 @@ Developers that use the GNU GPL protect your rights with two steps: (1)
 assert copyright on the software, and (2) offer you this License giving
 you legal permission to copy, distribute and/or modify it.
 
-For the developers\' and authors\' protection, the GPL clearly explains
-that there is no warranty for this free software. For both users\' and
-authors\' sake, the GPL requires that modified versions be marked as
+For the developers' and authors' protection, the GPL clearly explains
+that there is no warranty for this free software. For both users' and
+authors' sake, the GPL requires that modified versions be marked as
 changed, so that their problems will not be attributed erroneously to
 authors of previous versions.
 
 Some devices are designed to deny users access to install or run
 modified versions of the software inside them, although the manufacturer
 can do so. This is fundamentally incompatible with the aim of protecting
-users\' freedom to change the software. The systematic pattern of such
+users' freedom to change the software. The systematic pattern of such
 abuse occurs in the area of products for individuals to use, which is
 precisely where it is most unacceptable. Therefore, we have designed
 this version of the GPL to prohibit the practice for those products. If
@@ -140,7 +140,7 @@ or an object code interpreter used to run it.
 The "Corresponding Source" for a work in object code form means all the
 source code needed to generate, install, and (for an executable work)
 run the object code and to modify the work, including scripts to control
-those activities. However, it does not include the work\'s System
+those activities. However, it does not include the work's System
 Libraries, or general-purpose tools or generally available free programs
 which are used unmodified in performing those activities but which are
 not part of the work. For example, Corresponding Source includes
@@ -180,7 +180,7 @@ Conveying under any other circumstances is permitted solely under the
 conditions stated below. Sublicensing is not allowed; section 10 makes
 it unnecessary.
 
-3\. Protecting Users\' Legal Rights From Anti-Circumvention Law. No
+3\. Protecting Users' Legal Rights From Anti-Circumvention Law. No
 covered work shall be deemed part of an effective technological measure
 under any applicable law fulfilling obligations under article 11 of the
 WIPO copyright treaty adopted on 20 December 1996, or similar laws
@@ -190,12 +190,12 @@ When you convey a covered work, you waive any legal power to forbid
 circumvention of technological measures to the extent such circumvention
 is effected by exercising rights under this License with respect to the
 covered work, and you disclaim any intention to limit operation or
-modification of the work as a means of enforcing, against the work\'s
-users, your or third parties\' legal rights to forbid circumvention of
+modification of the work as a means of enforcing, against the work's
+users, your or third parties' legal rights to forbid circumvention of
 technological measures.
 
 4\. Conveying Verbatim Copies. You may convey verbatim copies of the
-Program\'s source code as you receive it, in any medium, provided that
+Program's source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an appropriate
 copyright notice; keep intact all notices stating that this License and
 any non-permissive terms added in accord with section 7 apply to the
@@ -229,7 +229,7 @@ which are not by their nature extensions of the covered work, and which
 are not combined with it such as to form a larger program, in or on a
 volume of a storage or distribution medium, is called an "aggregate" if
 the compilation and its resulting copyright are not used to limit the
-access or legal rights of the compilation\'s users beyond what the
+access or legal rights of the compilation's users beyond what the
 individual works permit. Inclusion of a covered work in an aggregate
 does not cause this License to apply to the other parts of the
 aggregate.
@@ -421,7 +421,7 @@ organization, or substantially all assets of one, or subdividing an
 organization, or merging organizations. If propagation of a covered work
 results from an entity transaction, each party to that transaction who
 receives a copy of the work also receives whatever licenses to the work
-the party\'s predecessor in interest had or could give under the
+the party's predecessor in interest had or could give under the
 previous paragraph, plus a right to possession of the Corresponding
 Source of the work from the predecessor in interest, if the predecessor
 has it or can get it with reasonable efforts.
@@ -436,10 +436,10 @@ or importing the Program or any portion of it.
 
 11\. Patents. A "contributor" is a copyright holder who authorizes use
 under this License of the Program or a work on which the Program is
-based. The work thus licensed is called the contributor\'s "contributor
+based. The work thus licensed is called the contributor's "contributor
 version".
 
-A contributor\'s "essential patent claims" are all patent claims owned
+A contributor's "essential patent claims" are all patent claims owned
 or controlled by the contributor, whether already acquired or hereafter
 acquired, that would be infringed by some manner, permitted by this
 License, of making, using, or selling its contributor version, but do
@@ -449,7 +449,7 @@ definition, "control" includes the right to grant patent sublicenses in
 a manner consistent with the requirements of this License.
 
 Each contributor grants you a non-exclusive, worldwide, royalty-free
-patent license under the contributor\'s essential patent claims, to
+patent license under the contributor's essential patent claims, to
 make, use, sell, offer for sale, import and otherwise run, modify and
 propagate the contents of its contributor version.
 
@@ -470,7 +470,7 @@ patent license for this particular work, or (3) arrange, in a manner
 consistent with the requirements of this License, to extend the patent
 license to downstream recipients. "Knowingly relying" means you have
 actual knowledge that, but for the patent license, your conveying the
-covered work in a country, or your recipient\'s use of the covered work
+covered work in a country, or your recipient's use of the covered work
 in a country, would infringe one or more identifiable patents in that
 country that you have reason to believe are valid.
 
@@ -501,7 +501,7 @@ Nothing in this License shall be construed as excluding or limiting any
 implied license or other defenses to infringement that may otherwise be
 available to you under applicable patent law.
 
-12\. No Surrender of Others\' Freedom. If conditions are imposed on you
+12\. No Surrender of Others' Freedom. If conditions are imposed on you
 (whether by court order, agreement or otherwise) that contradict the
 conditions of this License, they do not excuse you from the conditions
 of this License. If you cannot convey a covered work so as to satisfy
@@ -537,7 +537,7 @@ License, you may choose any version ever published by the Free Software
 Foundation.
 
 If the Program specifies that a proxy can decide which future versions
-of the GNU General Public License can be used, that proxy\'s public
+of the GNU General Public License can be used, that proxy's public
 statement of acceptance of a version permanently authorizes you to
 choose that version for the Program.
 

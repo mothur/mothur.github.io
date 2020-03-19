@@ -1,12 +1,12 @@
 ---
 title: 'name file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Name_file'
 ---
 The name file is used to show the relationship between a representative
 sequence and the sequences it represents. It consists of 2 columns
 separated by a tab. The first column contains the representative
-sequence\'s name. The second column contains the names of its
+sequence's name. The second column contains the names of its
 representatives separated by commas. Here is an example:
 
     65_6_19    65_6_19
@@ -22,7 +22,7 @@ representatives separated by commas. Here is an example:
 Notes:
 
 
-1\.  Be sure not to include the \"\>\" in the name of the sequence.
+1\.  Be sure not to include the "\>" in the name of the sequence.
 
 2\.  Your sequence name cannot contain blank spaces.
 

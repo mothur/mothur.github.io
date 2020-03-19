@@ -22,7 +22,7 @@ below the minimum, the OTU is removed. Default=1.
 
     mothur > filter.shared(shared=final.an.shared, minabund=1)
 
-Let\'s look at an example:
+Let's look at an example:
 
     0.16   A   13  1   0   0   0   0   27  0   2   37  0   0   16  1   
     0.16   B   13  0   2   1   13  2   14  0   6   14  0   4   28  0   
@@ -35,7 +35,7 @@ would become:
     0.16   B   4   6   14  28  36  
     0.16   C   4   4   4   11  55
 
-where OTU242 is the \"rare\" OTU created by mothur to preserve the
+where OTU242 is the "rare" OTU created by mothur to preserve the
 abundance of each group.
 
 ### minpercent
@@ -43,7 +43,7 @@ abundance of each group.
 The minpercent parameter allows you indicate the minimum relative
 abundance of an OTU. For example, if the OTUs total abundance across all
 samples is 8, and the total abundance across all OTUs is 1000, and
-minpercent=1. The OTU\'s relative abundance is 0.008, the minimum is
+minpercent=1. The OTU's relative abundance is 0.008, the minimum is
 
 0\.01, so the OTU will be removed. Default=0.
 
@@ -53,7 +53,7 @@ minpercent=1 requires each OTU to have a minimum relative abundance of
 
 0\.01 or abundance \> 2.42.
 
-Let\'s look at an example:
+Let's look at an example:
 
     0.16   A   13  1   0   0   0   0   27  0   2   37  0   0   16  1   
     0.16   B   13  0   2   1   13  2   14  0   6   14  0   4   28  0   
@@ -66,7 +66,7 @@ would become:
     0.16   B   9   13  14  6   14  0   4   28  0   5   
     0.16   C   9   0   0   4   4   4   25  11  25  1   
 
-where OTU242 is the \"rare\" OTU created by mothur to preserve the
+where OTU242 is the "rare" OTU created by mothur to preserve the
 abundance of each group.
 
 ### mintotal
@@ -77,7 +77,7 @@ the minimum, the OTU is removed. Default=0.
 
     mothur > filter.shared(shared=final.an.shared, mintotal=10)
 
-Let\'s look at an example:
+Let's look at an example:
 
     0.16   A   13  1   0   0   0   0   27  0   2   37  0   0   16  1   
     0.16   B   13  0   2   1   13  2   14  0   6   14  0   4   28  0   
@@ -90,7 +90,7 @@ would become:
     0.16   B   8   13  14  6   14  4   28  0   5   
     0.16   C   8   0   0   4   4   25  11  25  5   
 
-where OTU242 is the \"rare\" OTU created by mothur to preserve the
+where OTU242 is the "rare" OTU created by mothur to preserve the
 abundance of each group.
 
 ### minnumsamples
@@ -101,7 +101,7 @@ the minimum, the OTU is removed. Default=0.
 
     mothur > filter.shared(shared=final.an.shared, minnumsamples=2)
 
-Let\'s look at an example:
+Let's look at an example:
 
     0.16   A   13  1   0   0   0   0   27  0   2   37  0   0   16  1   
     0.16   B   13  0   2   1   13  2   14  0   6   14  0   4   28  0   
@@ -114,7 +114,7 @@ would become:
     0.16   B   7   14  6   14  4   28  0   18  
     0.16   C   7   0   4   4   25  11  25  5       
 
-where OTU242 is the \"rare\" OTU created by mothur to preserve the
+where OTU242 is the "rare" OTU created by mothur to preserve the
 abundance of each group.
 
 ### minpercentsamples
@@ -122,7 +122,7 @@ abundance of each group.
 The minpercentsamples parameter allows you indicate the minimum
 percentage of samples present in an OTU. For example, if the total
 number of samples is 10, the number present is 3, and the
-minpercentsamples=50. The OTU\'s precent of samples is 0.333, the
+minpercentsamples=50. The OTU's precent of samples is 0.333, the
 minimum is 0.50, so the OTU will be removed. Default=0.
 
     mothur > filter.shared(shared=final.an.shared, minpercentsamples=50)
@@ -130,7 +130,7 @@ minimum is 0.50, so the OTU will be removed. Default=0.
 minpercentsamples=50 requires each OTU to have a minimum percent of
 samples present of 0.50 or \> 1.5.
 
-Let\'s look at an example:
+Let's look at an example:
 
     0.16   A   13  1   0   0   0   0   27  0   2   37  0   0   16  1   
     0.16   B   13  0   2   1   13  2   14  0   6   14  0   4   28  0   
@@ -143,13 +143,13 @@ would become:
     0.16   B   7   14  6   14  4   28  0   18  
     0.16   C   7   0   4   4   25  11  25  5       
 
-where OTU242 is the \"rare\" OTU created by mothur to preserve the
+where OTU242 is the "rare" OTU created by mothur to preserve the
 abundance of each group.
 
 ### makerare
 
 The makerare parameter allows you indicate you want the abundances of
-any removed OTUs to be saved and a new \"rare\" OTU created with its
+any removed OTUs to be saved and a new "rare" OTU created with its
 abundances equal to the sum of the OTUs removed. This will preserve the
 number of reads in your dataset. Default=T.
 
@@ -164,7 +164,7 @@ abundance. Default=0.
 
 The keepties parameter is used with the rarepercent parameter. It allows
 you indicate you want to keep the OTUs with the same abundance as the
-first \'not rare\' OTU. For example if you have 10 OTUs, rarepercent=20
+first 'not rare' OTU. For example if you have 10 OTUs, rarepercent=20
 abundances of 20, 18, 15, 15, 10, 5, 3, 3, 3, 1. keepties=t, would
 remove the 10th OTU, but keep the 9th because its abundance ties the 8th
 OTU. keepties=f would remove OTUs 9 and 10. Default=T.

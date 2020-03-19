@@ -1,5 +1,6 @@
 ---
 title: 'Efron'
+tags: 'calculators'
 redirect_from: '/wiki/Efron'
 ---
 The **efron** calculator returns the Efron estimate of

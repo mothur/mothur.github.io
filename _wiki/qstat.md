@@ -1,5 +1,6 @@
 ---
 title: 'Qstat'
+tags: 'calculators'
 redirect_from: '/wiki/Qstat'
 ---
 The **qstat** calculator returns the Q statistic for an

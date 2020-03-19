@@ -7,7 +7,7 @@ original dataset and run all of the various commands on the data. Using
 our latest and greatest text parsing algorithms in combination with
 either a specified manuscript or a minimum impact factor the command
 will produce a submission-ready manuscript complete with figures and
-interpretation. When you\'ve given up (or haven\'t started trying) to
+interpretation. When you've given up (or haven't started trying) to
 make sense of your poorly designed experiment, run this command instead
 of emailing us to interpret your P-values. This command will do it all:
 sequence curation, combine data from different variable regions and

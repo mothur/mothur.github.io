@@ -1,5 +1,6 @@
 ---
 title: 'Mempearson'
+tags: 'calculators'
 redirect_from: '/wiki/Mempearson'
 ---
 The **mempearson** calculator returns a membership
@@ -10,7 +11,7 @@ between two communities. This calculator can be used in the
 
 $$R_{Pearson} = 1-\frac{
 
-\sum_{j=1}^{S_T} 
+\sum_{j=1}^{S_T}
 \left ( S_{Aj} - \left( \frac{S_{A}}{S_T}\right) \right )
 \left ( S_{Bj} - \left( \frac{S_{B}}{S_T}\right) \right )
 }

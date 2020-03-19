@@ -1,29 +1,29 @@
 ---
-title: 'Mothur v.1.24.0'
+title: 'mothur v.1.24.0'
 redirect_from: '/wiki/Mothur_v.1.24.0.html'
 ---
 We are happy to announce the release of [mothur
 v.1.24.0](mothur_v.1.24.0)! In this release we have three new
-commands that we think you\'ll find useful. Perhaps the most significant
+commands that we think you'll find useful. Perhaps the most significant
 is the addition of [otu.association](otu.association), which
 will use a shared or relabund file to create a matrix of correlation
 values indicating the association between different OTUs. Just remember
-that association is not the same as causation :). We\'ve also added
+that association is not the same as causation :). We've also added
 [classify.tree](classify.tree) which will take a tree and
 classification data as input and will output the consensus taxonomy at
 each node and [sort.seqs](sort.seqs), which will sort files
-for you. We\'ve also added a number of important feature updates
+for you. We've also added a number of important feature updates
 including the addition of p-values to the output from
 [corr.axes](corr.axes). We are very much indebted to the
-great feedback we\'ve been getting through the forum and this feedback
+great feedback we've been getting through the forum and this feedback
 is the inspiration of many of the newest commands and features that
-we\'ve added. Thanks!
+we've added. Thanks!
 
-As I emailed you earlier in the month we\'ve also made a number of
+As I emailed you earlier in the month we've also made a number of
 project-related changes. First, you can now pull down the bleeding-edge
 version of mothur whenever you want via GitHub. We look forward to more
 interaction with other developers and hope this will foster even greater
-collaboration. Second, we\'ve added the new RDP training sets. In the
+collaboration. Second, we've added the new RDP training sets. In the
 next release, look for a command that will allow you to trim the
 training set sequences to only include the region you are interested in.
 Also, be on the lookout in the next few weeks for an updated SILVA
@@ -39,7 +39,7 @@ packs!
 -   [sort.seqs](sort.seqs) - puts sequences from a fasta,
     name, group, quality, flow or taxonomy file in the same order.
 -   [classify.tree](classify.tree) - finds the consensus
-    taxonomy for each tree node\'s descendants.
+    taxonomy for each tree node's descendants.
 
 ## Feature updates
 
@@ -77,7 +77,7 @@ packs!
     1.23.1).
 -   [classify.seqs](classify.seqs) - knn method was
     eliminating sequences that could not be classified at the kingdom
-    level. Now they are classified to \"unknown\". -
+    level. Now they are classified to "unknown". -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1435](https://forum.mothur.org/viewtopic.php?f=4&t=1435)
 -   fixed name of npshannon -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1449](https://forum.mothur.org/viewtopic.php?f=4&t=1449)
@@ -89,7 +89,7 @@ packs!
 -   [summary.seqs](summary.seqs) - in windows version, with
     multiple processors, occasionally you would get a crash.
 -   [rarefaction.single](rarefaction.single) - group names
-    parsing issue if your group names contain \'.\' and groupmode=t.
+    parsing issue if your group names contain '.' and groupmode=t.
 
 ## Wiki updates
 

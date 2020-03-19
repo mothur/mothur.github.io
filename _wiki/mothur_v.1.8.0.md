@@ -1,16 +1,16 @@
 ---
-title: 'Mothur v.1.8.0'
+title: 'mothur v.1.8.0'
 redirect_from: '/wiki/Mothur_v.1.8.0.html'
 ---
 We are happy to release [mothur v.1.8.0](mothur_v.1.8.0) on
-the great American holiday of Groundhog Day! Well it\'s been a wild
+the great American holiday of Groundhog Day! Well it's been a wild
 couple of months since the last release of mothur - within hours of
 sending out the announcement for the last version dotur 2.0 - Ruth - was
 born. Blame the delay on a new baby, Christmas and New Years, and a
-crazy January full of grant deadlines and conferences. But as you\'ve
+crazy January full of grant deadlines and conferences. But as you've
 come to expect, we have added a number of new features and bug fixes.
-We\'ve been encouraged by the expanding traffic on the mothur forum and
-appreciate everyone\'s willingness to answer other people\'s questions.
+We've been encouraged by the expanding traffic on the mothur forum and
+appreciate everyone's willingness to answer other people's questions.
 
 We are pretty excited about the new commands that we have added to
 mothur and the long list of added features to previous commands. I am
@@ -25,7 +25,7 @@ have XCode to compile the source code. Let us know what you think of
 this option.
 
 Going forward we have many new ideas and are anxious to get them out to
-you. Some things we\'re working on include incorporating non-parametric
+you. Some things we're working on include incorporating non-parametric
 estimation tools, wrapping clearcut so you can build trees within
 mothur, and parallelizing the clustering pipeline. As always, feel free
 to cite mothur liberally and if a paper you publish uses mothur, feel
@@ -56,10 +56,11 @@ free to tell us about it on the user forum.
     format, which will make analyzing output from the RDP easier:
 
      >#=GC_SS_cons
-     ::::::::<<<<<_______>>>>>,{ {{ {-{ {{ {{ {,{ {{ {{ {{ {{-.---{ {{-.{ {.{.,,...
+     ::::::::<<<<<_______>>>>>,\{ \{\{ \{-\{ \{\{ \{\{ \{,\{ \{\{ \{\{ \{\{ \{\{-.---\{ \{\{-.\{ \{.\{.,,...
      >FYV22AL02GBAKV
      ------------------------------------------------.-------.--.-.--...
-    The sequence =GC_SS_cons is ignored and only FYV22AL02GBAKV is read in.
+
+	The sequence =GC_SS_cons is ignored and only FYV22AL02GBAKV is read in.
 
 -   added flip and threshold parameters as well as a progress indicator
     to [align.seqs](align.seqs) command.
@@ -111,18 +112,18 @@ free to tell us about it on the user forum.
     [align.seqs](align.seqs) and
     [classify.seqs](classify.seqs) commands by separating
     filenames with dashes. i.e. fasta=abrecovery.fasta-amazon.fasta
--   added a timestamp to the mothur.logfiles (it\'s unix time)
+-   added a timestamp to the mothur.logfiles (it's unix time)
 
 ## Bug fixes
 
 -   added warning about average neighbor clustering near cutoff.
 -   fixed a bug in how the morisitahorn index was being calculated
--   mothur\'s logfiles are now time stamped and not overwritten with
+-   mothur's logfiles are now time stamped and not overwritten with
     each execution of mothur.
 -   fixed bug in aligner that caused a bus error if your candidate
     sequence had more bases than your longest template sequence.
 -   fixed bug in [merge.files](merge.files) command that gave
-    a \"cannot open file\" error in the windows version.
+    a "cannot open file" error in the windows version.
 -   added formatting to mothur to make phylip formatted distance files
     compatible with other software tools.
 -   corrected error in help for [align.seqs](align.seqs) and

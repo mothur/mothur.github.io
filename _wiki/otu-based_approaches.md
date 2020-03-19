@@ -14,7 +14,7 @@ are provided within their specific pages, but several users have
 provided several [analysis examples](analysis_examples),
 which use these commands. An exhaustive list of the commands found in
 mothur is available within the [ commands category
-index](Special:Categories). Also list of mothur\'s
+index](tags#commands). There is also a list of mothur's
 [calculators](calculators) with detailed examples.
 
 ## General commands
@@ -100,7 +100,7 @@ index](Special:Categories). Also list of mothur\'s
     distance matrix describing the pairwise similarity between samples
     using various [calculators](calculators)
 -   [get.sharedseqs](get.sharedseqs) (was
-    [get.sharedotu](get.sharedotu)) - identifies OTU\'s that
+    [get.sharedotu](get.sharedotu)) - identifies OTU's that
     are shared by multiple groups
 -   [heatmap.bin](heatmap.bin) - generate an svg-formatted
     heatmap for your OTU data

@@ -35,7 +35,7 @@ you want to keep.
 The keep parameter is set to front by default, meaning you want to keep
 the front of the sequence. You can also set keep to back.
 
-Here\'s what abrecovery.fasta looks like before the **chop.seqs** command:
+Here's what abrecovery.fasta looks like before the **chop.seqs** command:
 
     >AY457915
     CCCTTAGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGC
@@ -77,7 +77,7 @@ Here\'s what abrecovery.fasta looks like before the **chop.seqs** command:
     AGTGAAGAAGTAATTCGTTATGTAAAGCTCTATCAGCAGGGAAGATAGTGACGGTACCTGACTAAGAAGC
     TCCGGCTAATCGT
 
-Here\'s what abrecovery.chop.fasta looks like after running:
+Here's what abrecovery.chop.fasta looks like after running:
 
      mothur > chop.seqs(fasta=abrecovery.fasta, numbases=100, keep=front)
 
@@ -90,7 +90,7 @@ Here\'s what abrecovery.chop.fasta looks like after running:
     >AY457912
     CCCTTAGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCATTTGCGACAGATTTCTTCGGATTGAAGT
 
-Here\'s what abrecovery.chop.fasta looks like after running:
+Here's what abrecovery.chop.fasta looks like after running:
 
      mothur > chop.seqs(fasta=abrecovery.fasta, numbases=100, keep=back)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.31.0'
+title: 'mothur v.1.31.0'
 redirect_from: '/wiki/Mothur_v.1.31.0.html'
 ---
 We are very happy to announce the release of [mothur
@@ -16,30 +16,30 @@ for assigning samples to metacommunities using Dirichlet multinomial
 mixture models that we are calling
 [get.metacommunity](get.metacommunity). Think of it as a
 robust way of assigning samples to bins for doing things like finding
-enterotypes. Third, through a project carried out with Google\'s Summer
+enterotypes. Third, through a project carried out with Google's Summer
 of Code we have created the
 [classify.shared](classify.shared) command that currently
 implements a feature selection algorithm using the random forest
-algorithm. It\'s faster and more accurate than the more commonly used R
+algorithm. It's faster and more accurate than the more commonly used R
 packages. Finally, since people are staring to develop their own mock
 communities and are interested in using
 [shhh.flows](shhh.flows) with Ion Torrent data and new 454
 platforms, we have created [make.lookup](make.lookup) for
 making your own lookup file to use with shhh.flows. In our testing, we
-don\'t see much of an effect, but hey, you might. As always, we have a
-number of new features that we\'ve added to existing functions. As
-always, we\'ve added a number of new options to make your life easier.
+don't see much of an effect, but hey, you might. As always, we have a
+number of new features that we've added to existing functions. As
+always, we've added a number of new options to make your life easier.
 
 Finally, a couple of important announcements. First, Pat will be holding
 an R workshop in July and a mothur workshop in August. We assume no
 experience for either workshop and you can get more information by
 emailing Pat by clicking on the link at the top of this page. Second,
-we\'d be lying if we told you we didn\'t keep track of how many times
+we'd be lying if we told you we didn't keep track of how many times
 the original mothur paper has been cited. Watching the number tick up
-has been humbling over the past 3 or so years. Well, we\'re currently
-sitting at 983 citations. Thank you, thank you, thank you! We\'ll be
+has been humbling over the past 3 or so years. Well, we're currently
+sitting at 983 citations. Thank you, thank you, thank you! We'll be
 watching Web of Knowledge to see who gets us to 1000 and will be sending
-them a special gift in appreciation. We\'re honored that we\'ve been
+them a special gift in appreciation. We're honored that we've been
 able to help so many people do great research!
 
 ## New commands
@@ -118,7 +118,7 @@ able to help so many people do great research!
 -   [sff.multiple](sff.multiple) - fixed order parameter to
     use A, B and I.
 -   [cluster.split](cluster.split) - when splitting by
-    taxonomy mothur was saving temp fasta files as the \"current\" fasta
+    taxonomy mothur was saving temp fasta files as the "current" fasta
     file.
 -   [indicator](indicator) - fixed bug with pvalues when
     multiple processors were used.

@@ -1,14 +1,14 @@
 ---
-title: 'Mothur v.1.20.0'
+title: 'mothur v.1.20.0'
 redirect_from: '/wiki/Mothur_v.1.20.0.html'
 ---
 We are happy to announce the release of [mothur
-v.1.20.0](mothur_v.1.20.0) in honor of Fathur\'s Day and
-version 1\'s Golden Birthday. We have a few new features and a number of
+v.1.20.0](mothur_v.1.20.0) in honor of Fathur's Day and
+version 1's Golden Birthday. We have a few new features and a number of
 small, but significant feature updates that you are sure to enjoy.
 First, we have heard from a lot of people about the pain of dealing with
 blast in chimera.slayer. As a work around that is actually better, we
-have ported in the source code from Robert Edgar\'s latest venture
+have ported in the source code from Robert Edgar's latest venture
 UChime. It is available within mothur as
 [chimera.uchime](chimera.uchime). The downside is that the
 tool is not published yet; however, based on testing, it is better than
@@ -28,7 +28,7 @@ algorithm. We have also decided to convert all of the calculator-related
 output to distances to make things uniform; in addition, several of the
 parameters did not work as similarities. Finally, we have added column
 headings to the shared and relabund files. We realize this may screw up
-people\'s scripts; however, having these headings will hopefully help
+people's scripts; however, having these headings will hopefully help
 people that merge mothur and R for their analysis.
 
 This is shaping up to be a great summer as we continue to add new
@@ -55,7 +55,7 @@ Pat Schloss
 ## Feature updates
 
 -   citation feature: gives the reference that should be cited for each
-    command and calculator. It\'s accessed just like help for commands,
+    command and calculator. It's accessed just like help for commands,
     example: align.seqs(citation). For calculators, just add citation to
     your calc string, example: collect.single(calc=sobs-chao-citation).
 -   [trim.seqs](trim.seqs) - added a name parameter
@@ -89,7 +89,7 @@ Pat Schloss
 -   1.20.1 - fixed bug with [hcluster](hcluster) - was not
     changing the cutoff with average method
 -   1.20.2 - fix chimera.uchime bug with Windows, exiting early
--   1.20.3 - added \"unclassified\" bins to
+-   1.20.3 - added "unclassified" bins to
     [classify.otu](classify.otu) summary file
 -   1.20.3 - added warning to [trim.seqs](trim.seqs) for
     non-numeric quality scores

@@ -1,5 +1,6 @@
 ---
 title: 'Jest'
+tags: 'calculators'
 redirect_from: '/wiki/Jest'
 ---
 The **jest** calculator returns an estimate of the

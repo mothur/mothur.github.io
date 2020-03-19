@@ -23,7 +23,7 @@ other option. The command will generate a \*.pick.\* file.
 
 ### accnos option
 
-To generate an accnos file, let\'s first run
+To generate an accnos file, let's first run
 [unique.seqs](unique.seqs),
 [summary.seqs](summary.seqs),
 [screen.seqs](screen.seqs), and
@@ -93,7 +93,7 @@ off, see the [ dups](#dups) subsection, below.
 The dups parameter is only be used in tandem with a namefile. By default
 dups is set to true, which means that if any sequence in a specific line
 of the names file is in your .accnos file all sequences in that line
-will be removed. For example, let\'s look at the following line from the
+will be removed. For example, let's look at the following line from the
 esophagus.unique.good.accnos:
 
     65_1_2 65_1_2,65_1_23,65_2_1,65_2_8

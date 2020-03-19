@@ -53,7 +53,7 @@ Both can be run simultaneously by the command:
 
 There may only be a couple of lines in your OTU data that you are
 interested in generating a **venn** diagram for. There are two options. You
-could: (i) manually delete the lines you aren\'t interested in from you
+could: (i) manually delete the lines you aren't interested in from you
 list or shared file; (ii) or use the label option. If you only want to
 read in the data for the lines labeled unique, 0.03, 0.05 and 0.10 you
 would enter:
@@ -118,7 +118,7 @@ The abrecovery.fn.0.03.sharedsobs.sharedotus file contains:
 
 Confusion can occur when you have a shared file with more groups than
 just the subset you are looking at in your **venn** diagram. For this
-example let\'s look at a simple shared file like:
+example let's look at a simple shared file like:
 
 Full shared file:
 

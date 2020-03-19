@@ -20,11 +20,11 @@ OTUs. Presently, mothur implements three clustering methods:
 -   [opti](Opti): OTUs are assembled using metrics to
     determine the quality of clustering.
 -   [unique](Unique): Creates a list file from a name or
-    count file where every unique sequence is assigned to it\'s own OTU
+    count file where every unique sequence is assigned to it's own OTU
 
 If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
-developers and we\'ll see what we can do. The opticlust algorithm is the
+developers and we'll see what we can do. The opticlust algorithm is the
 default option. For this tutorial you should download the [
 Final.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/final.zip) file and decompress it.
 
@@ -163,19 +163,19 @@ This command will generate the following output:
 
 Running the cluster() command generates a [list](list_file).
 The data outputted to the screen is the same as that in the sabund file.
-You will notice that the list file has a \".opti.\" tag inserted after
+You will notice that the list file has a ".opti." tag inserted after
 the name of the distance matrix. opti corresponds to the algorithm that
 was used to perform the clustering. In this case opticlust (opti) was
-used. Other possibilities include \"an\" for average neighbor, \"fn\"
-for furthest neighbor, \"nn\" for nearest neighbor. Vsearch clustering
-algorithms include: \"agc\" and \"dgc\".
+used. Other possibilities include "an" for average neighbor, "fn"
+for furthest neighbor, "nn" for nearest neighbor. Vsearch clustering
+algorithms include: "agc" and "dgc".
 
 ### count
 
 The [ count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
-given representative sequence. Mothur will use this information to form
-the correct OTU\'s. Unlike, when you use a names file the list file
+given representative sequence. mothur will use this information to form
+the correct OTU's. Unlike, when you use a names file the list file
 generated will contain only the unique names, so be sure to include the
 count file in downstream analysis with the list file.
 
@@ -266,7 +266,7 @@ set. The default cutoff is 0.03. With the average neighbor, furthest
 neighbor and nearest neighbor methods the cutoff should be significantly
 higher than the desired distance in the list file. We suggest
 cutoff=0.20. This will provide a boost in speed and less RAM will be
-required than if you didn\'t set the cutoff for reading in the matrix.
+required than if you didn't set the cutoff for reading in the matrix.
 The cutoff can be set for the **cluster** command as follows:
 
     mothur > cluster(column=final.dist, count=final.count_table, cutoff=0.05) 
@@ -312,7 +312,7 @@ method, run the following:
 
 The vsearch parameter allows you to specify the name and location of
 your vsearch executable for use with the agc and doc methods. By default
-mothur will look in your path and mothur\'s executable location. You can
+mothur will look in your path and mothur's executable location. You can
 set the vsearch location as follows: vsearch=/usr/bin/vsearch.
 
     mothur > cluster(fasta=final.fasta, count=final.count_table, vsearch=/usr/bin/vsearch.2.11.1,  method=agc)
@@ -359,7 +359,7 @@ cluster() command:
 
 Remember that the 16S rRNA gene is roughly 1,500 bp long. So it would
 seem silly to have a precision greater than 1,000. Just because you can
-calculate a number to 20 digits, doesn\'t mean they\'re all significant.
+calculate a number to 20 digits, doesn't mean they're all significant.
 
 ### sim
 
@@ -389,10 +389,10 @@ The available clustering methods are agc and dgc.
 
 ### Missing distances
 
-Perhaps the second most commonly asked question is why there isn\'t a
+Perhaps the second most commonly asked question is why there isn't a
 line for distance 0.XX. If you notice the previous example the distances
 jump from 0.003 to 0.006. Where are 0.004 and 0.005? mothur only outputs
-data if the clustering has been updated for a distance. So if you don\'t
+data if the clustering has been updated for a distance. So if you don't
 have data at your favorite distance, that means that nothing changed
 between the previous distance and the next one. Therefore if you want
 OTU data for a distance of 0.005 in this case, you would use the data

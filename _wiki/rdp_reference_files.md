@@ -179,7 +179,7 @@ direction.
 
 The [ rdp training set](https://mothur.s3.us-east-2.amazonaws.com/wiki/rdptrainingset.zip) (version 6,
 released 03/02/2010) consists of 8,422 sequences (8,127 bacterial and
-295 archaeal) and is based on Bergey\'s taxonomic outline. This training
+295 archaeal) and is based on Bergey's taxonomic outline. This training
 set is our modification of the files that they posted to
 [sourceforge](https://sourceforge.net/projects/rdp-classifier/). Their
 archive provides a bunch of other files that mothur will calculate the

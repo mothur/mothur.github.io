@@ -14,7 +14,7 @@ researchers who like to use linux, mac, and windows operating systems.
 ### Mac OSX
 
 To run mothur on a Mac, you need to open the Terminal program. If it
-isn\'t already on your dock, in the Finder press Command-Shift-A, which
+isn't already on your dock, in the Finder press Command-Shift-A, which
 will open a window with the list of programs on your machine. From there
 open the Utilities folder. Drag the Terminal.app icon to your doc and
 click on the icon to open the terminal window. Alternatively, you can
@@ -23,38 +23,42 @@ moving it to your dock. The terminal window automatically opens in your
 home directory (/Users/yourname/ aka \~/). You should see something
 like:
 
-    escriba:~ pschloss$$ 
+    escriba:~ pschloss$ 
+
+Note that throughout the wiki, we'll represent that with a simple prompt:
+
+    $ 
 
 You next need to move to the folder containing your data. If you
 decompress the [amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) file
 into a folder in your home directory, you can move there by typing:
 
-    escriba:~ pschloss$$ cd AmazonData
+    $ cd AmazonData
 
 If you type:
 
-    escriba:~ pschloss$$ ls
+    $ ls
 
 You will see the contents of the AmazonData folder.
 
 Now you need to know the path of the mothur executable. Assuming you
 installed mothur to a folder called mothur in your home directory, type:
 
-    escriba:AmazonData pschloss$$  ../mothur/mothur
+    $  ../mothur/mothur
 
 or
 
-    escriba:AmazonData pschloss$$  ~/mothur/mothur
+    $  ~/mothur/mothur
 
-If you\'re a unix pro, you can add mothur to your path so that you only
+If you're a unix pro, you can add mothur to your path so that you only
 need to type:
 
-    escriba:AmazonData pschloss$$ mothur
+    $ mothur
 
 This will put mothur into an interactive mode. Alternatively, to put it
 into a batch mode where you provide a file of commands you need to type:
 
-    escriba:AmazonData pschloss$$  ~/mothur/mothur batchfile
+    $  ~/mothur/mothur batchfile
 
 ### Linux/Unix
 
@@ -77,7 +81,7 @@ running mothur, from the command line:
 
 ### Windows
 
-Mothur is a command line program. You can run it in interactive mode by
+mothur is a command line program. You can run it in interactive mode by
 double-clicking on the `mothur.exe` executable.
 
 Alternatively, you can run it from the command line. To open a terminal

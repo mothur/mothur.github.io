@@ -1,5 +1,6 @@
 ---
 title: 'Shen'
+tags: 'calculators'
 redirect_from: '/wiki/Shen'
 ---
 The **shen** calculator returns the Shen estimate of the

@@ -1,6 +1,6 @@
 ---
 title: 'taxonomy file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Taxonomy_File'
 ---
 The taxonomy file is created by the

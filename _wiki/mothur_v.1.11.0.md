@@ -1,12 +1,12 @@
 ---
-title: 'Mothur v.1.11.0'
+title: 'mothur v.1.11.0'
 redirect_from: '/wiki/Mothur_v.1.11.0.html'
 ---
-In honor of the upcoming fathur\'s day weekend we are happy to release
+In honor of the upcoming fathur's day weekend we are happy to release
 [mothur v.1.11.0](mothur_v.1.11.0). We are working on a
-number of things behind the scenes that aren\'t quite ready for
+number of things behind the scenes that aren't quite ready for
 primetime, so this is a relatively light release consisting primarily of
-feature updates and bug fixes. We think you\'ll find the feature updates
+feature updates and bug fixes. We think you'll find the feature updates
 go along way to expanding the flexibility of existing commands and
 making them more computationally and memory efficient. Two new commands
 have been added - [split.abund](split.abund) and
@@ -25,7 +25,7 @@ we were having with sending emails out of our server - this should be
 fixed. Regardless, you should probably take a look at the last several
 release notes to see how far we have come in the last few months.
 
-Finally, we are trying to gauge people\'s interest in attending a
+Finally, we are trying to gauge people's interest in attending a
 workshop on August 23-25 at a hotel near the Detroit airport (DTW). Feel
 free to email us (mothur.bugs\@gmail.com) if you are interested or have
 any questions.
@@ -55,7 +55,7 @@ any questions.
 -   added dups parameter to [get.seqs](get.seqs)
 -   added sort option to [get.otulist](get.otulist) command -
     [https://forum.mothur.org/viewtopic.php?f=3&t=368&sid=e81f0982fd4e09a24a2aff4ff1cde1c9](https://forum.mothur.org/viewtopic.php?f=3&t=368&sid=e81f0982fd4e09a24a2aff4ff1cde1c9)
--   allow for \'\>\' in sequence names
+-   allow for '\>' in sequence names
 -   reduced memory used to generate
     [chimera.pintail](chimera.pintail) commands quantile
     values by 65%.

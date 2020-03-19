@@ -1,5 +1,6 @@
 ---
 title: 'Npshannon'
+tags: 'calculators'
 redirect_from: '/wiki/Npshannon'
 ---
 The **npshannon** calculator returns a

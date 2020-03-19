@@ -25,8 +25,8 @@ The blast parameter is required\...
 
 The [ count](Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
-given representative sequence. Mothur will use this information to form
-the correct OTU\'s. Unlike, when you use a names file the list file
+given representative sequence. mothur will use this information to form
+the correct OTU's. Unlike, when you use a names file the list file
 generated will contain only the unique names, so be sure to include the
 count file in downstream analysis with the list file.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.19.0'
+title: 'mothur v.1.19.0'
 redirect_from: '/wiki/Mothur_v.1.19.0.html'
 ---
 We are pleased to be releasing [mothur

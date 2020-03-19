@@ -51,7 +51,7 @@ The resulting fileList.paired.file looks like:
 The numcols parameter allows you to set number of columns you mothur to
 make in the file. Options 2 or 3. Default=3, meaning groupName
 forwardFastq reverseFastq. The groupName is made from the beginning part
-of the forwardFastq file. Everything up to the first \'\' or if no \'\'
+of the forwardFastq file. Everything up to the first '' or if no ''
 is found then the root of the forwardFastq filename.
 
 ### prefix
@@ -75,7 +75,7 @@ myReallyAwesomeData.files.
     [\#251](https://github.com/mothur/mothur/issues/251)
 -   1.39.0 Fixes Windows bug - unable to find files
 -   1.39.0 Creates unique group names for 3 column format
--   1.39.0 Fixes bug with \"find\" command for Linux user
+-   1.39.0 Fixes bug with "find" command for Linux user
 -   1.40.0 Bug Fix: Fixes group names.
 
 

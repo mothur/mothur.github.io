@@ -69,7 +69,7 @@ Opening ex.pintail.chimeras you would see:
 ### conservation
 
 You can upload a file containing the frequency information for your
-template file to increase speed. Mothur will generate this for you but
+template file to increase speed. mothur will generate this for you but
 it takes a long time.
 
     mothur > chimera.pintail(fasta=ex.align, template=core_set_aligned.imputed.fasta,
@@ -78,7 +78,7 @@ it takes a long time.
 ### quantile
 
 You can upload a file containing the quantiles information for your
-template file to increase speed. Mothur can generate this for you but it
+template file to increase speed. mothur can generate this for you but it
 takes a VERY long time. Note that when you use the filter, mask or mask
 and filter you need to select the appropriate quantile file. The filter
 parameter makes the quantile file generated specific to the query set
@@ -145,8 +145,8 @@ processors is set to the number of processors you have running.
     method=pintail, quantile=core_set_aligned.imputed.pintail.quan, processors=2)
 
 This method was written using the algorithms described in the paper:
-\"At Least 1 in 20 16S rRNA Sequence Records Currently Held in the
-Public Repositories is Estimated To Contain Substantial Anomalies\" by
+"At Least 1 in 20 16S rRNA Sequence Records Currently Held in the
+Public Repositories is Estimated To Contain Substantial Anomalies" by
 Kevin E. Ashelford, Nadia A. Chuzhanova, John C. Fry, Antonia J. Jones
 and Andrew J. Weightman. Applied and Environmental Microbiology 71 (12):
 7724:7736.

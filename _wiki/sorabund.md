@@ -1,10 +1,11 @@
 ---
 title: 'Sorabund'
+tags: 'calculators'
 redirect_from: '/wiki/Sorabund'
 ---
 The **sorabund** calculator returns the
 abundance-based Sorenson dissimilarity index describing the fraction of
-individuals that don\'t belong to shared OTUs. This calculator can be
+individuals that don't belong to shared OTUs. This calculator can be
 used in the [summary.shared](summary.shared) and
 [collect.shared](collect.shared) commands.
 

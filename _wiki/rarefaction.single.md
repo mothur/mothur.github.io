@@ -8,7 +8,7 @@ generate intra-sample rarefaction curves using a re-sampling without
 replacement approach. Rarefaction curves provide a way of comparing the
 richness observed in different samples. Roughly speaking you get the
 number of OTUs, on average, that you would have been expected to have
-observed if you hadn\'t sampled as many individuals. Although a formula
+observed if you hadn't sampled as many individuals. Although a formula
 exists to generate a rarefaction curve (see the [ example
 calculation](rarefaction)), mothur uses a randomization
 procedure. It can also help you to assess your sampling intensity. If a
@@ -86,7 +86,7 @@ it was suggested that people may want to rarefy various non-parametric
 richness estimators. Our experience indicates that for some reason this
 generates very weird and misleading results. Regardless, it is possible
 to rarefy any of the estimators and the output file will end in the name
-of the estimator with an \"r\_\" prefix:
+of the estimator with an "r\_" prefix:
 
     mothur > rarefaction.single(list=98_lt_phylip_amazon.fn.list, calc=chao)
 
@@ -95,10 +95,10 @@ estimators with the command:
 
     mothur > rarefaction.single(list=98_lt_phylip_amazon.fn.list, calc=sobs-chao-ace)
 
-The above command will generate files ending in \"rarefaction\",
-\"r\_chao\", and \"r\_ace\". They will have the same format as described
+The above command will generate files ending in "rarefaction",
+"r\_chao", and "r\_ace". They will have the same format as described
 above. It is important to note that the 95% confidence interval data
-will be the confidence interval for the estimator, not the estimator\'s
+will be the confidence interval for the estimator, not the estimator's
 95% confidence interval.
 
 ### abund
@@ -112,7 +112,7 @@ like to use a different cutoff, you can use the abund option:
 
     mothur > rarefaction.single(list=98_lt_phylip_amazon.fn.list, calc=ace, abund=5)
 
-Looking at the file, 98\_lt\_phylip\_amazon.fn.r\_ace, you\'ll see that
+Looking at the file, 98\_lt\_phylip\_amazon.fn.r\_ace, you'll see that
 when the distance is 0.10, the final ACE estimate value is 101.1 (95%
 CI=75.5-158.8) compared to 161.4 (95% CI=120.3-228.4) when abund was 10.
 You will not see a difference when the maximum abundance is below the
@@ -131,7 +131,7 @@ long as the default:
 
 There may only be a couple of lines in your OTU data that you are
 interested in generating rarefaction curves for. There are two options.
-You could: (i) manually delete the lines you aren\'t interested in from
+You could: (i) manually delete the lines you aren't interested in from
 you rabund, sabund, or list file; (ii) or use the label option. To use
 the label option with the rarefaction.single() command you need to know
 the labels you are interested in. If you want the rarefaction curve data
@@ -190,8 +190,8 @@ found. You can set the processors with the following option:
 
     mothur > rarefaction.single(list=98_lt_phylip_amazon.fn.list, processors=2)
 
-Running this command on my laptop doesn\'t exactly cut the time in half,
-but it\'s pretty close. There is no software limit on the number of
+Running this command on my laptop doesn't exactly cut the time in half,
+but it's pretty close. There is no software limit on the number of
 processors that you can use.
 
 ### groupmode
@@ -201,14 +201,14 @@ groupmode=F, you will get a separate output file for each sample.
 
 ### Visualization with R
 
-To visual your data follow Pat\'s tutorial
+To visual your data follow Pat's tutorial
 [here](https://www.riffomonas.org/minimalR/06_line_plots.html).
 
 ## Revisions
 
 -   1.22.0 - When running with a shared file, only one file is outputted
     instead of one for each group.
--   1.25.0 - groupnames that include \"\_\" causes parsing error in the
+-   1.25.0 - groupnames that include "\_" causes parsing error in the
     creation of the groups.rarefaction file.
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,

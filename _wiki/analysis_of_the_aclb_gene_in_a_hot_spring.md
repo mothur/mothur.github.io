@@ -17,7 +17,7 @@ files needed for this analysis ([aclb.zip](https://mothur.s3.us-east-2.amazonaws
 or generate your own by following the instructions below.
 
 NOTE: This tutorial was made with versions 1.1-1.4 of mothur and may be
-out of date now. [ justine hall](User:kestrel), the original
+out of date now. Justine Hall, the original
 author of this page, will not be updating it, but feel free to add or
 modify commands yourself as mothur grows!
 
@@ -57,14 +57,14 @@ ARB, but it must be done before aligning either set of sequences:
         below (same for all species)
     -   Start Position = 1
     -   Codon Table = (1) Standard Code
-    -   Check \"Translate all data\"
+    -   Check "Translate all data"
     -   Click Translate!
-    -   In the window that pops up, choose \"Create\"
+    -   In the window that pops up, choose "Create"
 
-ARB won\'t translate the nucleotide sequences correctly if they are
+ARB won't translate the nucleotide sequences correctly if they are
 aligned, so it is important to perform a translation first and then
 align your nucleotide and amino acid sequences separately. To check your
-translation, choose the \"ali\_new\_pro\" from the alignment box. Your
+translation, choose the "ali\_new\_pro" from the alignment box. Your
 amino acid sequences should match the alignment published by [Campbell
 et
 al](https://aem.asm.org/cgi/content/abstract/69/9/5070?ijkey=549aeec65cf72e31e6eb07e6c6cbedffa2a154e0).
@@ -103,7 +103,7 @@ order to compare only overlapping regions:
 1\.  In the ARB\_NT window, Go SAI → Create SAI Using\... → Filter by
     base frequency
 
-2\.  In the window that pops up, choose \"ali\_new\"
+2\.  In the window that pops up, choose "ali\_new"
 
 3\.  Go Config → Column filter
 
@@ -112,8 +112,8 @@ order to compare only overlapping regions:
 
 5\.  Go Calculate → Column filter
 
-6\.  Go File → Export filter. Press \"Export\" to export the filter under
-    the name \"aclB\_864\_1244\". Now press \"Close\". Press \"Quit\" in
+6\.  Go File → Export filter. Press "Export" to export the filter under
+    the name "aclB\_864\_1244". Now press "Close". Press "Quit" in
     the window with the purple background
 
 This filter masks out all of the positions outside of the input range,
@@ -136,17 +136,17 @@ Finally, a phylip-formatted distance matrix was made:
     -   Alingment = ali\_new
     -   Filter = aclB\_864\_1244
 
-3\.  You may or may not want to select a \"Correction\", but for this
+3\.  You may or may not want to select a "Correction", but for this
     example we will just look at the raw distance.
 
-4\.  Press the \"Calculate Full Matrix\" button
+4\.  Press the "Calculate Full Matrix" button
 
-5\.  Press the \"Save Matrix\" button
+5\.  Press the "Save Matrix" button
 
-6\.  In the window that opens change the file name from \"infile\" to
-    \"aclB.dist\" and press \"Save\". If it gives you an error message
-    that says, \"No valid tree given to sort matrix (using default
-    database order)\" just ignore it.
+6\.  In the window that opens change the file name from "infile" to
+    "aclB.dist" and press "Save". If it gives you an error message
+    that says, "No valid tree given to sort matrix (using default
+    database order)" just ignore it.
 
 You can make a distance matrix for the amino acid sequences by choosing
 your amino acid alignment and filter instead.
@@ -162,14 +162,14 @@ used above. A maximum likelihood tree was made:
 
 
 1\.  Mark all of the sequences to be used in the tree using the Search
-    and Query window (\"Search\" button at the top of the ARB\_NT
+    and Query window ("Search" button at the top of the ARB\_NT
     window). The NCBI sequences will be marked upon import. Our *aclB*
     genes can be marked by searching for them with the wildcard (\*).
-    -   Enter \*p2\* in the search field with the \'name\' option
+    -   Enter \*p2\* in the search field with the 'name' option
         selected.
     -   Hit Search. A list of sequence names will appear in the
-        \'Hitlist\' box
-    -   Go More Functions → Mark Listed Species, Don\'t Change Rest
+        'Hitlist' box
+    -   Go More Functions → Mark Listed Species, Don't Change Rest
     -   Repeat search for \*p3\*
 
 2\.  Go Tree → Build tree from sequence data → Maximum Likelihood methods
@@ -193,7 +193,7 @@ options.
 
 The nucleotide tree took \~ 12 hours to finish on my computer. When it
 is done, it will be read in to the ARB tree menu with the prefix of
-\"tree\_fml\_\". The tree should look similar to the one on the right
+"tree\_fml\_". The tree should look similar to the one on the right
 with a clade of *Epsilonproteobacteria* in the most basal position, an
 *Aquificales* clade in a more derived position, and all of the *aclB* in
 a large clade with the *Sulfurihydrogenibum* sequence.
@@ -266,7 +266,7 @@ file will be needed later to make rarefaction curves and heatmaps.
 ## Were all of the OTUs recovered from the hot spring?
 
 Rarefaction curves are a good way to visualize the extent to which the
-richness of the environment was represented in the sample. Mothur can
+richness of the environment was represented in the sample. mothur can
 rarefy both individual samples and a total dataset with the
 [rarefaction.single](rarefaction.single) command. Let's look
 at both, starting with the individual samples:
@@ -312,9 +312,9 @@ acid sequences in Coffee Pots hot spring that were not retrieved.
 
 ## How are the OTUs distributed in the hot spring?
 
-In the original analysis, the authors noted, \"the distribution of
+In the original analysis, the authors noted, "the distribution of
 phylotypes among samples was widespread, except for phylotype G6, which
-was found only in sample COF\_51.9 (259CP here)\", but no formal
+was found only in sample COF\_51.9 (259CP here)", but no formal
 description of OTU distributional patterns was made. With mothur, we can
 graphically represent the OTU distribution with a heatmap and compare
 samples with venn diagrams.
@@ -365,7 +365,7 @@ scale)](AclB_venn.fn.0.02.venn.sharedsobs.jpg "Venn Diagram for A) nucleotide an
 
 Here we can see, like in the heatmap, there is quite a bit of overlap
 between samples in both nucleotide and amino acid sequences - 260CP and
-263CP don\'t have any unique OTUs and 261CP has only 3 unique nucleotide
+263CP don't have any unique OTUs and 261CP has only 3 unique nucleotide
 OTUs and 2 unique amino acid OTUs.
 
 Hypothesis-Testing Approaches

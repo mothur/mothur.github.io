@@ -1,5 +1,6 @@
 ---
 title: 'Thetan'
+tags: 'calculators'
 redirect_from: '/wiki/Thetan'
 ---
 The **thetan** calculator returns the community Jaccard

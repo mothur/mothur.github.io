@@ -81,7 +81,7 @@ the sequence to be chimeric, then all groups find it to be chimeric,
 default=f. If you set dereplicate=t, and then run remove.seqs with
 dups=f you can remove only the redundant chimeric sequences.
 
-Let\'s look at an example:
+Let's look at an example:
 
     >seq1
     attgacat....
@@ -145,7 +145,7 @@ The results would be:
 -   1.28.0 - added count parameter
 -   1.29.0 - added dereplicate parameter
 -   1.29.0 - Bug Fix:
-    [https://forum.mothur.org/viewtopic.php?f=3&t=1656](https://forum.mothur.org/viewtopic.php?f=3&t=1656) - ignore N\'s
+    [https://forum.mothur.org/viewtopic.php?f=3&t=1656](https://forum.mothur.org/viewtopic.php?f=3&t=1656) - ignore N's
 -   1.30.0 - with count file and dereplicate=t will create a
     \*.pick.count\_table file.
 -   1.30.0 - Bug Fix: dereplicate=t, remove.seqs(dups=f) was not

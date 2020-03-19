@@ -56,7 +56,7 @@ the samples.
 ### output
 
 The output parameter is used to specify whether you would like the
-fraction of OTU\'s or OTU count outputted. Options are fraction or
+fraction of OTU's or OTU count outputted. Options are fraction or
 count. Default=fraction.
 
     mothur > get.coremicrobiome(shared=temp.job2.shared, output=count)
@@ -98,7 +98,7 @@ samples parameter allows you to specify the minimum number of samples
 you would like the OTU names outputted for. Must be an interger between
 1 and number of samples in your file.
 
-To list the OTU\'s that have a relative abundance at or above 0.01 at
+To list the OTU's that have a relative abundance at or above 0.01 at
 for each number of samples, you would run:
 
     mothur > get.coremicrobiome(shared=temp.job2.shared, abundance=1)
@@ -126,7 +126,7 @@ If you open the temp.job2.unique.core.microbiomelist file you will see:
     18 Otu07,Otu08,Otu09
     19 Otu07,Otu08,Otu09
 
-To list the OTU\'s that have a given relative abundance for at least 8
+To list the OTU's that have a given relative abundance for at least 8
 samples, you would run:
 
     mothur > get.coremicrobiome(shared=temp.job2.shared, samples=8)
@@ -152,7 +152,7 @@ If you open the temp.job2.unique.core.microbiomelist file you will see:
     99 
     100    
 
-To list the OTU\'s that have a relative abundance at or above 0.01 at
+To list the OTU's that have a relative abundance at or above 0.01 at
 for at least 8 samples, you would run:
 
     mothur > get.coremicrobiome(shared=temp.job2.shared, abundance=1, samples=8)

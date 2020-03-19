@@ -81,7 +81,7 @@ patient70.fn.list through summary.single().
 
 There may only be a couple of lines in your OTU data that you are
 interested in generating the rarefaction curve for. There are two
-options. You could: (i) manually delete the lines you aren\'t interested
+options. You could: (i) manually delete the lines you aren't interested
 in from your list file; (ii) or use the label option. To use the label
 option with the rarefaction.shared() command you need to know the labels
 you are interested in. If you want the rarefaction curve data for the
@@ -121,7 +121,7 @@ found. You can set the processors with the following option:
 ### jumble
 
 Obviously, the goal of rarefaction is to randomize across the samples;
-however, if you just want a collector\'s curve across the samples you
+however, if you just want a collector's curve across the samples you
 can use the jumble option:
 
     mothur > rarefaction.shared(shared=patient70.fn.shared, jumble=0)
@@ -156,7 +156,7 @@ If you had started this tutorial with the following comamnds:
     mothur > get.group(shared=patient70.fn.shared)
 
 You would have seen that there were 7 groups here: 70A-70F and 70S. The
-sequences from 70S were collected from Patient 70\'s stool sample those
+sequences from 70S were collected from Patient 70's stool sample those
 from samples 70A-70F were from their mucosa. These 7 groups would yield
 21 lies if you ran the rarefaction.shared() command; however, if you
 were only interested in the comparisons between each mucosa site you
@@ -165,7 +165,7 @@ could use the groups option:
     mothur > rarefaction.shared(shared=patient70.fn.shared, groups=70A-70B-70C-70D-70E-70F)
 
 Alternatively, if you want all of the pairwise comparisons you can
-either not include the group option or set it equal to \"all\".
+either not include the group option or set it equal to "all".
 
     mothur > rarefaction.shared(shared=patient70.fn.shared, calc=sharedobserved, groups=all)
 
@@ -188,7 +188,7 @@ times. Default=f.
 
 ### Visualization with R
 
-To visual your data follow Pat\'s tutorial
+To visual your data follow Pat's tutorial
 [here](https://www.riffomonas.org/minimalR/06_line_plots.html).
 
 ## Revisions

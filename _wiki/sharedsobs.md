@@ -1,5 +1,6 @@
 ---
 title: 'Sharedsobs'
+tags: 'calculators'
 redirect_from: '/wiki/Sharedsobs'
 ---
 The **sharedsobs** calculator returns the number of

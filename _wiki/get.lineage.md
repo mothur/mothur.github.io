@@ -22,7 +22,7 @@ one or more taxon names. The command will generate a \*.pick.\* file.
 
 ### Running with a taxonomy file
 
-To generate an taxonomy file, let\'s first run
+To generate an taxonomy file, let's first run
 [classify.seqs](classify.seqs):
 
     mothur > classify.seqs(fasta=abrecovery.fasta, template=silva.nogap.fasta, taxonomy=silva.bacteria.silva.tax)

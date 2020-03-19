@@ -22,7 +22,7 @@ whichever point in the pipeline you wish.
 ### Obtaining 16S proxy sequences
 
 The aim of the GOS Expedition was to provide a comprehensive genomic
-survey of the diversity of microbial life in the world\'s oceans. To
+survey of the diversity of microbial life in the world's oceans. To
 achieve this goal, approximately 150
 [metagenomic](https://camera.calit2.net/education/what-is-metagenomics)
 marine samples were collected from around the world. This has provided a
@@ -112,15 +112,15 @@ yourself:
 
 
 1\.  Go to the main [greengenes](https://greengenes.lbl.gov) webpage and
-    click on the \"Align\" icon
+    click on the "Align" icon
 
-2\.  Click on the \"Choose File\" button and select     gos_proxy_seq.fasta
+2\.  Click on the "Choose File" button and select     gos_proxy_seq.fasta
 
-3\.  In the field for \"Batch size for NAST\" enter \"50\"
+3\.  In the field for "Batch size for NAST" enter "50"
 
-4\.  Change the \"Minimum Length\" field to \"600\"
+4\.  Change the "Minimum Length" field to "600"
 
-5\.  Enter your email address and press the \"Process FASTA File\"
+5\.  Enter your email address and press the "Process FASTA File"
     button.
 
 Do not close the webpage until you have receive an e-mail from Todd
@@ -154,14 +154,14 @@ the distance matrix:
     the **top** of your `gos_proxy_seq_NAST.fasta` sequence file
 
 2\.  Go to the main [greengenes](https://greengenes.lbl.gov) webpage and
-    click on the \"More tools\...\" link under the \"Functions\" menu
+    click on the "More tools\..." link under the "Functions" menu
 
-3\.  Click on the \"Create distance matrix\" link
+3\.  Click on the "Create distance matrix" link
 
-4\.  Click on the \"Browse\" button and select your
+4\.  Click on the "Browse" button and select your
     `gos_proxy_seq_NAST.fasta` file
 
-5\.  Enter your email address and press the \"Calculate Distances\"
+5\.  Enter your email address and press the "Calculate Distances"
     button.
 
 Do not close the webpage until you have receive an e-mail from Todd
@@ -218,7 +218,7 @@ than or equal to 0.10:
 
 The [ name](read.dist#The_name_option) file `gos.names` is
 used to indicate that certain sequences are present multiple times in
-our dataset. Mothur allows duplicate sequences to be specified in this
+our dataset. mothur allows duplicate sequences to be specified in this
 manner in order to reduce memory and processing requirements.
 
 ### Clustering sequences
@@ -252,7 +252,7 @@ and gos.fn.GS122a.rabund).
 
 #### Rarefaction curves
 
-Mothur provides a number of tools for analyzing individual samples. A
+mothur provides a number of tools for analyzing individual samples. A
 critical question in any study is whether the sampling effort was
 sufficient to account for all OTUs present at a sample site. This can be
 investigated by plotting a [ rarefaction
@@ -285,9 +285,9 @@ in results calculated using OTUs at these distances.
 
 #### Collector curves
 
-You can also generate a [ collector\'s curve](collect.single)
+You can also generate a [ collector's curve](collect.single)
 for each of the different [calculators](calculators)
-supported in mothur. For example, a collector\'s curve for the Chao1
+supported in mothur. For example, a collector's curve for the Chao1
 estimator can be obtained using:
 
     mothur > collect.single(calc=chao)
@@ -311,7 +311,7 @@ all available data is used.
 
 #### Summary
 
-Mothur contains a number of tools for comparing multiple samples. A
+mothur contains a number of tools for comparing multiple samples. A
 quick summary of the shared diversity between samples can be obtained
 using the [summary.shared](summary.shared) command:
 
@@ -407,7 +407,7 @@ measure.\|378px\|center](Gos_otu_tree.jpg "Community tree showing the similarity
 
 As we might have expected from the heatmaps, the fresh water sample
 (GS020) and hypersaline sample (GS033) are highly dissimilar to all
-other samples. Notice that the following \"pairs of sites\" cluster
+other samples. Notice that the following "pairs of sites" cluster
 together:
 
 -   the estuarine sites (GS011, GS012)
@@ -425,18 +425,18 @@ microbial community composition which is in agreement with a recent
 global study performed by [Lozupone and Knight
 (2007)](https://www.ncbi.nlm.nih.gov/pubmed/17592124). Further work is
 needed to determine if geographic proximity influnces microbial
-community or if the similarity we are seeing between our \"pairs of
-sites\" is strictly a function of environmental similarity.
+community or if the similarity we are seeing between our "pairs of
+sites" is strictly a function of environmental similarity.
 
 ## Hypothesis testing approaches
 
-Mothur does not currently support hypothesis testing when sequences must
+mothur does not currently support hypothesis testing when sequences must
 be assigned a weight indicating the number of times they occur in a
 given community. For smaller data sets, this can be overcome by
 generating a tree where every sequence (whether it is unique or not) is
 a leaf node in the tree. Unfortunately, for our data set this is
 computationally prohibitive since some sequences are present thousands
-of times. Mothur will likely support assigning weights to sequence in a
+of times. mothur will likely support assigning weights to sequence in a
 future release. In the meantime, we can use the [UniFrac web
 portal](https://bmf2.colorado.edu/unifrac/index.psp) to analyze our data
 set. To perform this analysis you will need the tree file `gos.tre` and

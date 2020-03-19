@@ -6,9 +6,9 @@ redirect_from: '/wiki/Summary.shared.html'
 The **summary.shared** command will produce a
 summary file that has the calculator value for each line in the OTU data
 and for all possible comparisons between the different groups in the
-group file. This can be useful if you aren\'t interested in generating
-collector\'s or rarefaction curves for your multi-sample data analysis.
-It would be worth your while, however, to look at the collector\'s
+group file. This can be useful if you aren't interested in generating
+collector's or rarefaction curves for your multi-sample data analysis.
+It would be worth your while, however, to look at the collector's
 curves for the calculators you are interested in to determine how
 sensitive the values are to sampling. If the values are not sensitive to
 sampling, then you can trust the values. Otherwise, you need to keep
@@ -45,9 +45,9 @@ This will result in output to the screen looking like:
 
 The left column indicates the label for each line in the data set and
 the right column indicates the row number in the data set. In sons, the
-summary data was provided in a file ending in \"sons.ltt\" and was only
-generated after the collector\'s curves were generated. Now, in mothur,
-all of this data is contained within a single \"shared.summary\" file.
+summary data was provided in a file ending in "sons.ltt" and was only
+generated after the collector's curves were generated. Now, in mothur,
+all of this data is contained within a single "shared.summary" file.
 In this case data was written to the file patient70.fn.shared.summary,
 which looks like:
 
@@ -73,7 +73,7 @@ calculated by default.
 
 ### calc
 
-If you don\'t want to see all of the default calculators, you can tell
+If you don't want to see all of the default calculators, you can tell
 mothur which ones to use in the summary file:
 
     mothur > summary.shared(shared=patient70.fn.shared, calc=sharedsobs-sharedchao-jest)
@@ -91,7 +91,7 @@ This would generate the patient70.fn.shared.summary file:
 
 There may only be a couple of lines in your OTU data that you are
 interested in summarizing. There are two options. You could: (i)
-manually delete the lines you aren\'t interested in from you rabund,
+manually delete the lines you aren't interested in from you rabund,
 sabund, or list file; (ii) or use the label option. To use the label
 option with either the summary.single() command you need to know the
 labels you are interested in. If you want the summary data for the lines
@@ -115,7 +115,7 @@ If you had started this tutorial with the following commands:
     mothur > get.group(shared=patient70.fn.shared)
 
 You would have seen that there were 7 groups here: 70A-70F and 70S. The
-sequences from 70S were collected from Patient 70\'s stool sample those
+sequences from 70S were collected from Patient 70's stool sample those
 from samples 70A-70F were from their mucosa. These 7 groups would yield
 21 pairwise comparisons if you ran the **summary.shared** command; however,
 if you were only interested in the comparisons between each mucosa site
@@ -129,7 +129,7 @@ and the stool sample you could use the group option:
     mothur > summary.shared(shared=patient70.fn.shared, calc=sharedsobs, groups=70F-70S)
 
 Alternatively, if you want all of the pairwise comparisons you can
-either not include the group option or set it equal to \"all\".
+either not include the group option or set it equal to "all".
 
     mothur > summary.shared(shared=patient70.fn.shared, calc=sharedsobs, groups=all)
 
@@ -178,8 +178,8 @@ processors and use all available.
 
     mothur > summary.shared(shared=patient70.fn.shared, processors=2)
 
-Running this command on my laptop doesn\'t exactly cut the time in half,
-but it\'s pretty close. There is no software limit on the number of
+Running this command on my laptop doesn't exactly cut the time in half,
+but it's pretty close. There is no software limit on the number of
 processors that you can use.
 
 ### withreplacement

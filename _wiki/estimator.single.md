@@ -17,7 +17,7 @@ By default, the estimator.single() command will run the metroig (ig):
 
     mothur > estimator.single(sabund=Brazil.sabund)
 
-Mothur will try to auto adjust the parameters for you, and this will
+mothur will try to auto adjust the parameters for you, and this will
 result in output to the screen looking like:
 
     MetroIG - D = 2880 L = 26079 Chao = 4604.41
@@ -128,7 +128,7 @@ To run the single analysis with multiple samples:
 
 ## File Options
 
-You can analyze your data using many of mothur\'s file types. These
+You can analyze your data using many of mothur's file types. These
 include: [ list](list_file), [
 sabund](sabund_file), [ rabund](rabund_file) and [
 shared](shared_file) files.
@@ -150,7 +150,7 @@ lsrarefact, si, siabund, sirarefact, sishift. Be sure to use the correct
 sampling estimator with your calculator. IG is used for igabund and
 igrarefact. LN is used for lnabund, lnshift and lnrarefact. LS is used
 for lsabund and lsrarefaction. SI is used for siabund, sirarefact and
-sishift. Also don\'t forget to set the burn and burnsample values that
+sishift. Also don't forget to set the burn and burnsample values that
 correspond with your sample file.
 
     mothur > estimator.single(sabund=brazil.sabund,  sample=brazil.0.03.0.ig, calc=igabund, burn=0, burnsample=100)
@@ -181,7 +181,7 @@ like this:
     MetroSichel, respectively. Default = 0.10.
 -   The sigmab parameter is used to set the std. dev. of beta / Y / V
     prop. distn for MetroIG / MetroLogNormal / MetroLogStudent /
-    MetroSichel, respectively. Default = 0.10. n\";
+    MetroSichel, respectively. Default = 0.10. n";
 -   The sigman parameter is used to set the std. dev. of N / Gamma prop.
     distn for MetroLogStudent / MetroSichel, respectively. Default =
     0.10.
@@ -193,7 +193,7 @@ like this:
 
 There may only be a couple of lines in your OTU data that you are
 interested in There are two options. You could: (i) manually delete the
-lines you aren\'t interested in from you rabund, sabund, or list file;
+lines you aren't interested in from you rabund, sabund, or list file;
 (ii) or use the label option. To use the label option with the
 estimator.single() command you need to know the labels you are
 interested in. If you want the data for the line labeled 0.03 you would

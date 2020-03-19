@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.10.0'
+title: 'mothur v.1.10.0'
 redirect_from: '/wiki/Mothur_v.1.10.0.html'
 ---
 We are happy to announce the release of the [mothur
@@ -9,12 +9,12 @@ our loyal users over on the mothur forum. There are three notable
 additions to this release. First, users can now generate neighbor
 joining trees within mothur using the [clearcut](clearcut)
 command, which is a wrapper for the program by the same name. Second, we
-have added an additional \"phylogenetic\" method for assessing alpha
+have added an additional "phylogenetic" method for assessing alpha
 diversity by using the [phylo.diversity](phylo.diversity)
 command. Third, we offer the [make.group](make.group)
 command, which should lighten the load of our in-box - if you give
 mothur the names of your fasta files that contain sequences for
-different groups, mothur will make the group file for you. We\'ve also
+different groups, mothur will make the group file for you. We've also
 added a number of features to expand the utility of mothur including
 adding parallelization to many commands and the ability to have inexact
 matches to your primers and barcodes in the
@@ -64,7 +64,7 @@ incorporate good ideas into mothur!
 -   mothur now recognizes \~, so you can enter filenames like
     \~/desktop/myFile.fasta, or set.dir(output=\~)
 -   added 3 constructors to sequence class that just fill unaligned
-    field to save space when we don\'t need an aligned sequence.
+    field to save space when we don't need an aligned sequence.
 -   made freq a percentage of number of sequences -
     [https://forum.mothur.org/viewtopic.php?f=5&t=402&sid=22d323d5316be7937cb6de9f3ea8cac4](https://forum.mothur.org/viewtopic.php?f=5&t=402&sid=22d323d5316be7937cb6de9f3ea8cac4)
 -   doubled the size of venn diagrams created.
@@ -87,5 +87,5 @@ incorporate good ideas into mothur!
     to build filter
 -   you can now use the readline library with the mpi-enabled version -
     [https://forum.mothur.org/viewtopic.php?f=4&t=396&sid=ed88315308710479c553039fdfd21d7e](https://forum.mothur.org/viewtopic.php?f=4&t=396&sid=ed88315308710479c553039fdfd21d7e)
--   fixed bug with mothur\'s interface to blast, caused
+-   fixed bug with mothur's interface to blast, caused
     \[null\_caption\] FATAL ERROR.

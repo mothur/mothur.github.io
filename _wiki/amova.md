@@ -22,14 +22,15 @@ $$MS_{within}=\frac{SS_{within}}{N-a}$$
 
 $$F_{statistic}=\frac{MS_{among}}{MS_{within}}$$
 
-where n is the number of samples per treatment
-(numSamples/numTreatments), a is the number of treatments, N is the
-number of samples, dij is the distance between samples i and j, and eij
-is 1 when i and j are from the same treatment and 0 when they are from
-different treatments. A P-value is calculated by measuring the fraction
-of 1000 randomizations of the rows and columns in a distance matrix
-where the observed SSW is less than or equal to the randomized SSW
-values.
+where,
+* n is the number of samples per treatment (numSamples/numTreatments)
+* a is the number of treatments, N is the number of samples
+* $$d_{ij}$$ is the distance between samples i and j
+* $$e_{ij}$$ is 1 when i and j are from the same treatment and 0 when they are from different treatments.
+
+A P-value is calculated by measuring the fraction of 1000 randomizations of the
+rows and columns in a distance matrix where the observed SSW is less than or
+equal to the randomized SSW values.
 
 To run the tutorial below please download the [
 files](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazonamovadata.zip) and follow along\...
@@ -77,5 +78,3 @@ dashes. The default is all sets in the designfile.
     [https://forum.mothur.org/viewtopic.php?f=3&t=1777](https://forum.mothur.org/viewtopic.php?f=3&t=1777)
 -   1.29.0 Bug Fix:
     [https://forum.mothur.org/viewtopic.php?f=1&t=1919](https://forum.mothur.org/viewtopic.php?f=1&t=1919)
-
-

@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.18.0'
+title: 'mothur v.1.18.0'
 redirect_from: '/wiki/Mothur_v.1.18.0.html'
 ---
 We are happy to announce the release of [Mothur
@@ -12,14 +12,14 @@ Thinking about usability\... First, we have reworked how you interface
 with the commands to hopefully make it much easier to use. Through
 teaching numerous workshops, I have noticed that the long file names are
 ridiculous and even I have problems with typos. To counter this, we have
-improved mothur\'s \"memory\" to make it, um, more motherly. If you
+improved mothur's "memory" to make it, um, more motherly. If you
 start with sffinfo or any other command where you insert a fasta file
 name, mothur will either guess which fasta file you need for the next
 command, or you can tell it fasta=current. The same works for name,
 group, accnos, and taxonomy files. In addition, if you use processors=8,
 mothur will remember to use 8 processors where possible in all of the
 other options. Second, all the read commands (e.g. read.dist, read.otu,
-etc) have been scrapped because they didn\'t do anything and were a
+etc) have been scrapped because they didn't do anything and were a
 painful(less) extra step. Instead, you will now enter the information
 into the actual command you want to run. This has the side effect that
 we need a new command, [make.shared](make.shared), to parse
@@ -29,7 +29,7 @@ I suspect many of you do as well. To solve this problem, we have
 streamlined our option names so that any input sequence file uses the
 fasta option (no more candidate files) and any reference sequence file
 now uses the reference option (no more template files). If you forget
-and use candidate and template in align.seqs mothur won\'t make a peep.
+and use candidate and template in align.seqs mothur won't make a peep.
 
 Thinking about functionality\... We just published a paper in [Applied
 and Environmental
@@ -44,7 +44,7 @@ available using the [cluster.split](cluster.split) command.
 As part of this paper we have concluded that furthest neighbor needs to
 go away for most applications. While you can still use the furthest
 neighbor algorithm (method=furthest), the average neighbor algorithm is
-the new default. In addition, to simplify everyone\'s life, we have
+the new default. In addition, to simplify everyone's life, we have
 abandoned using the rounding option as a default and now use a hard
 cutoff (cutoff=T). Give the paper a read and if you have any questions,
 holler.
@@ -59,7 +59,7 @@ commands with the new version of mothur.
 A couple of other small notes\... First, there are still spots available
 in the mothur workshop I will be holding on April 27-29 in Detroit.
 Second, I will be moving this mailing list and the google group mailing
-list to a new system so if you don\'t want to be on the list you can
+list to a new system so if you don't want to be on the list you can
 just pluck yourself off. Third, ahem, the delivery of 6 packs and harder
 liquor has slowed considerably. You know where to send them\...
 
@@ -83,7 +83,7 @@ Pat Schloss
 -   [get.current](get.current) - outputs current files mothur
     is saving, allows you to clear values.
 -   [set.current](set.current) - allows you to overwrite
-    mothur\'s current files and clear them.
+    mothur's current files and clear them.
 
 ## Feature updates
 
@@ -108,7 +108,7 @@ Pat Schloss
 -   [get.current](get.current),
     [set.current](set.current) and pretty much every other
     command in mothur:
-    -   you can now set filenames to \"current\". example:
+    -   you can now set filenames to "current". example:
         summary.seqs(fasta=stool.fasta) unique.seqs(fasta=current).
         Also, if a required parameter is not given mothur will look for
         the current file, so summary.seqs(fasta=stool.fasta)
@@ -118,9 +118,9 @@ Pat Schloss
         use multiple processors.
 -   Streamlined option names for input files:
     -   Input fasta files now all use the fasta option (no more
-        \"candidate\", etc.)
+        "candidate", etc.)
     -   Reference fasta files now all use the reference option (no more
-        \"template\", etc.)
+        "template", etc.)
 
 ## Bug fixes
 

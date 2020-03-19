@@ -93,7 +93,7 @@ Tables](https://www.mothur.org/w/images/b/be/GG_13_5_otuMapTable.zip).
 
     mothur > make.biom(shared=abrecovery.an.shared, label=0.03, reftaxonomy=gg_13_5_99.gg.tax, constaxonomy=abrecovery.an.0.03.cons.taxonomy, picrust=97.gg.otu_map)
 
-Mothur will create a biom file and a new shared file. The new shared
+mothur will create a biom file and a new shared file. The new shared
 file is created because picrust does not allow for duplicate OTU IDs, so
 any OTUs that are classified to the same taxonomy are merged.
 
@@ -114,7 +114,7 @@ file you used when classifying your sequences.
 -   1.33.0 - Added the picrust and reftaxonomy parameters.
 -   1.36.0 - Bug Fix: - repeat labels when combining mothur OTU labels
     with non mothur OTU labels, this can results in a duplicate
-    \"simple\" label. This causes an incorrect taxonomy to be assigned
+    "simple" label. This causes an incorrect taxonomy to be assigned
     to the OTU.
 -   1.36.0 - remove paths from filenames to make compliant with qiime
     parser. -

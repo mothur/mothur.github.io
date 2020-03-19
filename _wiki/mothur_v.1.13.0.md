@@ -1,12 +1,12 @@
 ---
-title: 'Mothur v.1.13.0'
+title: 'mothur v.1.13.0'
 redirect_from: '/wiki/Mothur_v.1.13.0.html'
 ---
 As everyone heads back to a new academic year, we are happy to announce
 the release of [mothur v.1.13.0](mothur_v.1.13.0)!
 
 Since the last release we have been head deep in processing the raw 16S
-rRNA data for the US Human Microbiome Project - that\'s 90 \*million\*
+rRNA data for the US Human Microbiome Project - that's 90 \*million\*
 sequences for those of you keeping track at home. That also means that
 mothur is strong enough to process a large number of sequences. We are
 quite excited about this because many people did not think that an
@@ -22,13 +22,13 @@ that we used is explained in the [Costello stool
 analysis](Costello_stool_analysis).
 
 In addition, we are grateful for the questions, suggestions, and bug
-reports that have been trickling in. You\'ll notice that many of the
+reports that have been trickling in. You'll notice that many of the
 feature updates listed below are the requests of people on the mothur
 forum. We have also added several calculators for measuring community
 evenness and expanded the options for 8 different functions. In the last
 release we provided a wrapper for [clearcut](clearcut), which
 required you to have a separate clearcut executable. From here out, this
-is no longer necessary as clearcut is hard-wired into mothur. We\'re
+is no longer necessary as clearcut is hard-wired into mothur. We're
 looking forward to doing the same thing with CatchAll and Metastats. As
 always, please keep the praise, complaints, suggestions, and 6 packs
 coming.
@@ -45,7 +45,7 @@ Pat Schloss
     [summary.single](summary.single) -
     [https://forum.mothur.org/viewtopic.php?f=5&t=513&sid=b44f89ef348ab38c197ffe489e656402](https://forum.mothur.org/viewtopic.php?f=5&t=513&sid=b44f89ef348ab38c197ffe489e656402)
 -   added default option to [set.dir](set.dir), so that you
-    can set input, output and tempdefault to the location of mothur\'s
+    can set input, output and tempdefault to the location of mothur's
     executable. This is helpful if you double click on the mothur
     executable, since current working directory will be set to your home
     directory.
@@ -70,7 +70,7 @@ Pat Schloss
     distance matrix. given a column matrix, a new fasta file and a old
     fasta file we add distances to the original distance matrix
     calculated with the old fasta file.
--   [split.abund](split.abund) - if the rare or abund don\'t
+-   [split.abund](split.abund) - if the rare or abund don't
     exist create a blank file anyway to prevent confusion when the
     command is run multiple times.
 -   made neighbor=T default in [clearcut](clearcut)
@@ -87,13 +87,13 @@ Pat Schloss
         measure of evenness
     -   [shannoneven](shannoneven) - a Shannon index-based
         measure of evenness
-    -   [heip](heip) - Heip\'s metric of community evenness
-    -   [smithwilson](smithwilson) - Smith and Wilson\'s
+    -   [heip](heip) - Heip's metric of community evenness
+    -   [smithwilson](smithwilson) - Smith and Wilson's
         metric of community evenness
 
 <!-- -->
 
--   Added \"\[error\]\" to the start of every error message that is
+-   Added "\[error\]" to the start of every error message that is
     outputed to the logfile to make it easy to grep errors from large
     logfiles.
 -   [screen.seqs](screen.seqs) no longer outputs \*bad.fasta,

@@ -9,7 +9,7 @@ submission to see how to use make.sra in your workflow.
 
 ## Default Options
 
-You must provide a file, oligos or group file. Mothur uses the file,
+You must provide a file, oligos or group file. mothur uses the file,
 oligos and group file to extract your sample names.
 
     mothur > get.mimarkspackage(file=test.file)
@@ -56,11 +56,11 @@ assignment. File lines can be 2 or 3 columns. The 2 column files are sff
 file then oligos or fastqfile then oligos. You may have multiple lines
 in the file. The 3 column files are for paired read libraries. The
 format is groupName, forwardFastqFile reverseFastqFile. This is the same
-file you will later use with the sra command. Mothur will read the
+file you will later use with the sra command. mothur will read the
 oligos files and extract the group names, or read the list of group
 names from the file.
 
-Here\'s an example of the 2 column form with sff files:
+Here's an example of the 2 column form with sff files:
 
     G3BMWHG01.sff   G3BMWHG01.oligos
     GHL4YHV01.sff     GHL4YHV01.oligos
@@ -88,7 +88,7 @@ Here is an example of the 3 column form with fastq files:
 ### oligos
 
 The oligos parameter is used to provide mothur with your oligos file.
-Here\'s a link to more information about mothur\'s
+Here's a link to more information about mothur's
 [oligos\_file](Oligos_File).
 
     mothur > get.mimarkspackage(oligos=GQY1XT001.oligos)
@@ -96,7 +96,7 @@ Here\'s a link to more information about mothur\'s
 ### group
 
 The group parameter is used to provide mothur with your group file.
-Here\'s a link to more information about mothur\'s
+Here's a link to more information about mothur's
 [group\_file](Group_file).
 
     mothur > get.mimarkspackage(group=final.groups)

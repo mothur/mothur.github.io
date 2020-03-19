@@ -17,7 +17,7 @@ get started.
 
 ### Dependencies
 
-Mothur can be built and run WITHOUT any dependancies. But some
+mothur can be built and run WITHOUT any dependancies. But some
 additional features may be useful for your specific applications. You
 can include these extra features by installing the following
 dependancies and compiling mothur with the flags set to yes. [Dependency
@@ -25,42 +25,42 @@ Install](https://github.com/mothur/mothur/blob/master/INSTALL.md)
 
 #### Boost
 
-Mothur uses the boost library to read compressed files in the
+mothur uses the boost library to read compressed files in the
 make.contigs command. It is not required. If you would like to be able
 to use this option, you must install Boost and set the boost flags in
 the makefile.
 
     USEBOOST ?= yes
-    BOOST_LIBRARY_DIR ?= "\"/usr/local/lib\""
-    BOOST_INCLUDE_DIR ?= "\"/usr/local/include\""
+    BOOST_LIBRARY_DIR ?= ""/usr/local/lib""
+    BOOST_INCLUDE_DIR ?= ""/usr/local/include""
 
 #### HDF5
 
-Mothur uses the HDF5 library to read biom files in HDF5 format. These
+mothur uses the HDF5 library to read biom files in HDF5 format. These
 libraries are used by the biom.info command to read biom files in hdf5
 format. It is not required. If you would like to use biom files in this
 format within mothur, you must install the HDF5 library and set the HDF5
 flags.
 
     USEHDF5 ?= yes
-    HDF5_LIBRARY_DIR ?= "\"/usr/local/hdf5/lib\""
-    HDF5_INCLUDE_DIR ?= "\"/usr/local/hdf5/include\""
+    HDF5_LIBRARY_DIR ?= ""/usr/local/hdf5/lib""
+    HDF5_INCLUDE_DIR ?= ""/usr/local/hdf5/include""
 
 #### GSL
 
-Mothur uses the GSL library to run the estimator.single command. It is
+mothur uses the GSL library to run the estimator.single command. It is
 not required. If you would like to use the estimator.single command, you
 must install the GSL library and set the GSL flags.
 
     USEGSL ?= yes
-    GSL_LIBRARY_DIR ?= "\"/usr/local/gsl/lib\""
-    GSL_INCLUDE_DIR ?= "\"/usr/local/gsl/include\""
+    GSL_LIBRARY_DIR ?= ""/usr/local/gsl/lib""
+    GSL_INCLUDE_DIR ?= ""/usr/local/gsl/include""
 
-    ifeq  ($$(strip $$(USEGSL)),yes)
+    ifeq  ($(strip $(USEGSL)),yes)
 
-    LDFLAGS += -L $${GSL_LIBRARY_DIR}
+    LDFLAGS += -L ${GSL_LIBRARY_DIR}
     LIBS += -lgsl -lgslcblas -lm
-    CXXFLAGS += -DUSE_GSL -I $${GSL_INCLUDE_DIR}
+    CXXFLAGS += -DUSE_GSL -I ${GSL_INCLUDE_DIR}
 
     endif
 
@@ -69,22 +69,22 @@ must install the GSL library and set the GSL flags.
 In the Mac OSX and Linux-type environments, you need to have a C++
 compiler installed. These are typically installed with most linux-type
 operating systems and is on the Mac OSX **installation** CD/DVD. For Mac OSX
-users, you need to install the Xcode developer\'s tools. After [
+users, you need to install the Xcode developer's tools. After [
 downloading mothur](Download_mothur), decompress it. If you
-want to house mothur off of your home folder (because don\'t we all want
+want to house mothur off of your home folder (because don't we all want
 to live with our moms forever?), open a terminal window and enter:
 
-    escriba:~ pschloss$$ unzip mothur.zip
+    $ unzip mothur.zip
 
 This will generate a mothur folder. Now move into the mothur folder and
 compile mothur:
 
-    escriba:~ pschloss$$ cd mothur
-    escriba:~ pschloss$$ make
+    $ cd mothur
+    $ make
 
 Go ahead and try to run mothur:
 
-    escriba:~ pschloss$$ ./mothur
+    $ ./mothur
 
 Hopefully, mothur will open in the interactive mode. For now type quit()
 at the mothur prompt. mothur is installed.
@@ -123,7 +123,7 @@ These are typically pre-installed with most linux-type operating
 systems, and are always in a repository for a distribution (the package
 is named build-essential in Debian and Ubuntu). After [ downloading
 mothur](Download_mothur), decompress it. If you want to house
-mothur off of your home folder (because don\'t we all want to live with
+mothur off of your home folder (because don't we all want to live with
 our moms forever?), open a terminal window and enter:
 
      mkdir mothur
@@ -131,8 +131,8 @@ our moms forever?), open a terminal window and enter:
      unzip ../Mothur.source.zip
      make
 
-There are numerous errors that say \"warning: no newline at end of
-file\", but they do not cause a problem.
+There are numerous errors that say "warning: no newline at end of
+file", but they do not cause a problem.
 
 To run mothur:
 
@@ -150,7 +150,7 @@ mode and enter the following at the end (replace
 *path\_to\_mothur\_binary\_folder* with the real path):
 
      # User specific environment and startup programs
-     PATH=~/`*`path_to_mothur_binary_folder`*`:$${PATH}
+     PATH=~/`*`path_to_mothur_binary_folder`*`:${PATH}
 
 To run mothur from within any folder:
 
@@ -171,7 +171,7 @@ You will also need to uncomment a few lines in the makefile, for a more
 detailed explanation of makefile options see, [Makefile
 options](Makefile_options):
 
-    ifeq  ($$(strip $$(64BIT_VERSION)),yes)
+    ifeq  ($(strip $(64BIT_VERSION)),yes)
        #if you are using linux user uncomment the following lines
        CXX = g++44
        CXXFLAGS += -mtune=native -march=native -m64
@@ -226,7 +226,7 @@ This will work in Karmic Koala (9.10) other versions of Ubuntu might use
 different package names or have different package versions.
 
         sudo apt-get install openmpi-bin openmpi-common libopenmpi-dbg libopenmpi-dev libopenmpi1.3
-## 
+##
 
 **CentOS tips** (32-bit and 64-bit is similar)
 
@@ -241,7 +241,7 @@ openmpi-1.3.2-gcc-i386-devel will install.
 Then type use the mpi-selector-menu to select the newly installed mpi as
 the default
 
-      [hoyt@biochem5]$$ mpi-selector-menu
+      $ mpi-selector-menu
 `  Current System default: `<none>
       
        "u" and "s" modifiers can be added to numeric and "U"
@@ -253,10 +253,10 @@ the default
        
        Selection (1[us], U[us], Q):
 
-Answer \"1s\" to get the mpi and system-wide default, then Q; to Quit.
+Answer "1s" to get the mpi and system-wide default, then Q; to Quit.
 Logout, then log back in and type \<which mpic++\>
 
-        [hoyt@biochem5 ~]$$ which mpic++
+        $ which mpic++
         /usr/lib/openmpi/1.3.2-gcc/bin/mpic++
 
 Looks good, but you are not quite finished! Two steps: FIRST STEP is to
@@ -265,7 +265,7 @@ directory. You will get lots of errors, but ignore them for now. Once
 the makefile is done, if you try to run mothur, you will get an ERROR
 like this:
 
-       [hoyt@biochem5 mothur]$$ ./mothur
+       $ ./mothur
        librdmacm: couldn't read ABI version.
        librdmacm: assuming: 4
        libibverbs: Fatal: couldn't read uverbs ABI version.
@@ -286,14 +286,14 @@ add the line:
 
 to the end of the file. Now you can run mothur!
 
-The problem is that it\'s looking for an infiniband card in your
-machine, so this tells it that you\'re just using the same machine.
+The problem is that it's looking for an infiniband card in your
+machine, so this tells it that you're just using the same machine.
 (Thanks to my great friend and computer guru Dana for this tip!)
 
 ### Windows
 
 See the [downloads](Download_mothur) page to obtain the
-Window\'s executable version of mothur. Mothur comes as a compressed
+Window's executable version of mothur. mothur comes as a compressed
 file known as a ZIP file. To decompress this file, double click on it
 and follow the instructions. Consider decompressing mothur to a
 directory such as C:\\mothur.
@@ -314,14 +314,14 @@ cygwin, [https://www.cygwin.com](https://www.cygwin.com):
     64BIT_VERSION ?= yes
     USEREADLINE ?= no
     USEBOOST ?= no
-    RELEASE_DATE = "\"3/6/2017\""
-    VERSION = "\"1.39.4\""
+    RELEASE_DATE = ""3/6/2017""
+    VERSION = ""1.39.4""
 
     # Optimize to level 3:
            CXXFLAGS += -O3 -std=c++0x
 
 
-    ifeq  ($$(strip $$(64BIT_VERSION)),yes)
+    ifeq  ($(strip $(64BIT_VERSION)),yes)
        #if you are a mac user use the following line
            #TARGET_ARCH += -arch x86_64
 
@@ -339,5 +339,5 @@ cygwin, [https://www.cygwin.com](https://www.cygwin.com):
 #### Building with Cygwin
 
 -   Open Cygwin64Terminal program
--   cd to directory with mothur\'s source
+-   cd to directory with mothur's source
 -   Run make clean, then make.

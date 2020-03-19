@@ -2,17 +2,17 @@
 title: 'MIMarks Data Packages'
 redirect_from: '/wiki/MIMarks_Data_Packages'
 ---
-The MIMarks Packages - Here\'s a link to NCBI\'s definitions, [Biosample
+The MIMarks Packages - Here's a link to NCBI's definitions, [Biosample
 attributes](https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/)
 
 ## Package Options
 
-Mothur allows for several survey related environmental package choices.
+mothur allows for several survey related environmental package choices.
 They include: air, host\_associated, human\_associated, human\_gut,
 human\_oral, human\_skin, human\_vaginal, microbial, miscellaneous,
 plant\_associated, sediment, soil, wastewater or water.
 Default=miscellaneous. Unknown or inapplicable fields can be filled in
-with \'missing\'.
+with 'missing'.
 
 ### air
 

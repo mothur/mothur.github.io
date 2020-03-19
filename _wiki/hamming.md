@@ -1,5 +1,6 @@
 ---
 title: 'Hamming'
+tags: 'calculators'
 redirect_from: '/wiki/Hamming'
 ---
 The **hamming** calculator returns the Hamming
@@ -10,9 +11,13 @@ distance between two communities. This calculator can be used in the
 
 $$D_{Hamming} = S_{A} + S_{B} - 2S_{AB}$$
 
--   where $$S_A$$ is the number of nonzero OTUs in A.
--   where $$S_B$$ is the number of nonzero OTUs in B.
--   where $$S_{AB}$$ is the number of OTU\'s shared by A and B.
+where,
+
+$$S_A$$ is the number of nonzero OTUs in A.
+
+$$S_B$$ is the number of nonzero OTUs in B.
+
+$$S_{AB}$$ is the number of OTU's shared by A and B.
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
 Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following

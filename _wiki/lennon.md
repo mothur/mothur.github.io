@@ -1,5 +1,6 @@
 ---
 title: 'Lennon'
+tags: 'calculators'
 redirect_from: '/wiki/Lennon'
 ---
 The **lennon** calculator returns the Lennon index

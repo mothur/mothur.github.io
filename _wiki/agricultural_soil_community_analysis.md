@@ -94,10 +94,9 @@ DOK03.al.greengenes.fn.list, DOK03.al.greengenes.fn.rabund,
 DOK03.al.greengenes.fn.sabund, and DOK03.al.greengenes.fn.rarefaction.
 Plot rarefaction curves of both alignments at OTU levels unique, 0.03
 and 0.05 and you will see that both alignments perform very similarly in
-generating OTUs. ![Rarefaction curves at OTU levels unique, 0.03 and
+generating OTUs.
 
-0\.05 for both alignments, i.e. greengenes (G) and mafft
-(M).\|300px\|centre](DOK03_CompAlign.png "fig:Rarefaction curves at OTU levels unique, 0.03 and 0.05 for both alignments, i.e. greengenes (G) and mafft (M).|300px|centre")
+![Rarefaction curves at OTU levels unique, 0.03 and 0\.05 for both alignments.\|300px\|centre]({{site.bucket}}/wiki/dok03_compalign.png)
 
 #### Richness/diversity of samples
 
@@ -135,10 +134,9 @@ and
     mothur > read.otu(list=DOK03.al.greengenes.fn.BIODYN.list)
     mothur > rarefaction.single()
 
-![Rarefaction curves for samples NOFERT, CONFYM and BIODYN at OTU level
+![Rarefaction curves for samples NOFERT, CONFYM and BIODYN at OTU level 0\.03. Lower and higher confidence intervals are indicated as dashed lines.]({{site.bucket}}/wiki/dok03_rarefact.single.png)
 
-0\.03. Lower and higher confidence intervals are indicated as dashed
-lines.\|300px\|centre](DOK03_rarefact.single.png "fig:Rarefaction curves for samples NOFERT, CONFYM and BIODYN at OTU level 0.03. Lower and higher confidence intervals are indicated as dashed lines.|300px|centre")
+
 The three datasets show no difference in the rarefaction curves,
 indicating that they have very similar diversity. We will calculate and
 compare some commonly used [ richness and diversity
@@ -160,10 +158,8 @@ and
     mothur > summary.single(calc=chao-ace-shannon-simpson)
 
 ![Richness (Chao1, ACE) and diversity (Shannon, 1-Simpson) estimators of
-the datasets NOFERT, BIODYN, and CONFYM at an OTU definition level of
+the datasets NOFERT, BIODYN, and CONFYM at an OTU definition level of 0\.03. Lower and higher confidence intervals are indicated as error bars.]({{site.bucket}}/wiki/dok03_estimators.png)
 
-0\.03. Lower and higher confidence intervals are indicated as error
-bars.\|300px\|centre](DOK03_estimators.png "fig:Richness (Chao1, ACE) and diversity (Shannon, 1-Simpson) estimators of the datasets NOFERT, BIODYN, and CONFYM at an OTU definition level of 0.03. Lower and higher confidence intervals are indicated as error bars.|300px|centre")
 Generally, only small differences in richness and diversity were
 observed among the three communities. The Simpson diversity index
 indicated that the unfertilized sample NOFERT might have a lower
@@ -191,22 +187,17 @@ Similarity](Sorabund), [ Yue & Clayton
 Similarity](Thetayc)). Richness and similarity indices
 indicate that the two systems receiving fertilizer (BIODYN, CONFYM) are
 more similar to each other than to the unfertilized system (NOFERT),
-whereas CONFYM is more similar to NOFERT than BIODYN to NOFERT. ![Shared
-richness (Sobs, Chao1, ACE) and similarity (abundance-based Jaccard and
-Sorenson, Yue & Clayton) indices of datasets NOFERT, BIODYN, and CONFYM
-at an OTU definition level of
+whereas CONFYM is more similar to NOFERT than BIODYN to NOFERT.
 
-0\.03.\|300px\|centre](DOK03_sharedOTU.png "fig:Shared richness (Sobs, Chao1, ACE) and similarity (abundance-based Jaccard and Sorenson, Yue & Clayton) indices of datasets NOFERT, BIODYN, and CONFYM at an OTU definition level of 0.03.|300px|centre")
+![Shared richness (Sobs, Chao1, ACE) and similarity (abundance-based Jaccard and Sorenson, Yue & Clayton) indices of datasets NOFERT, BIODYN, and CONFYM at an OTU definition level of 0\.03.]({{site.bucket}}/wiki/dok03_sharedotu.png)
+
 Venn diagrams are particularly useful to display such data as long as
 the number of comparisons is not higher than three.
 
     mothur > read.otu(shared=DOK03.al.greengenes.fn.shared, label=unique-0.03-0.05)
     mothur > venn(label=0.03)
 
-![Venn diagram for shared richness (Sobs) among the datasets NOFERT,
-BIODYN, and CONFYM at OTU definition of
-
-0\.03.\|300px\|centre](DOK03_SobsVenn.png "Venn diagram for shared richness (Sobs) among the datasets NOFERT, BIODYN, and CONFYM at OTU definition of 0.03.|300px|centre")
+![Venn diagram for shared richness (Sobs) among the datasets NOFERT, BIODYN, and CONFYM at OTU definition of 0\.03.]({{site.bucket}}/wiki/dok03_sobsvenn.png)
 
 ## Hypothesis-based analyses
 
@@ -222,10 +213,7 @@ study](https://www.ncbi.nlm.nih.gov/pubmed/16907752). I re-generated the
 cluster analysis used in the original study with the data gained by
 mothur in the shared file.
 
-![Cluster analysis of NOFERT, BIODYN, and CONFYM at an OTU definition
-level of
-
-0\.03.\|300px\|centre](DOK03_sharedcluster.png "Cluster analysis of NOFERT, BIODYN, and CONFYM at an OTU definition level of 0.03.|300px|centre")
+![Cluster analysis of NOFERT, BIODYN, and CONFYM at an OTU definition level of 0\.03.]({{site.bucket}}/wiki/dok03_sharedcluster.png)
 
 We evaluate if these results can be confirmed by using [hypothesis
 testing approaches](hypothesis_testing_approaches) such as

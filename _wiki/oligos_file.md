@@ -1,10 +1,10 @@
 ---
 title: 'oligos file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Oligos_File'
 ---
 The oligos file is used to provide barcodes and primers to mothur.
-Mothur removes items in the following order: linkers, barcodes, spacers
+mothur removes items in the following order: linkers, barcodes, spacers
 then primers.
 
 ## Forward Primers
@@ -122,7 +122,7 @@ example
 
 ## Ignoring samples with [trim.seqs](trim.seqs) && [trim.flows](trim.flows)
 
-You can set the group to \"ignore\" to indicate to mothur to cull them
+You can set the group to "ignore" to indicate to mothur to cull them
 from the trimmmed file.
 
     barcode    AATGGTAC    ignore
@@ -135,12 +135,12 @@ from the trimmmed file.
 The trim.seqs command handles paired and single primers differently.
 This is designed to allow for the most flexibility in designing your
 analysis. Trim.seqs also sets a tdiffs (total differences) parameter
-equal to biffs+pdiffs, by default but can be adjusted. Let\'s assume in
+equal to biffs+pdiffs, by default but can be adjusted. Let's assume in
 all cases that pdiffs=2, bdiffs=1, tdiffs=3:
 
 -   Paired primers are allowed 2 diff total between both the forward and
     reverse primers. With forward and reverse are each allowed two
-    diffs. This can be a bit confusing so here\'s an example:
+    diffs. This can be a bit confusing so here's an example:
 
     forwardPrimer = 2 diffs, reversePrimer = 0 diffs -> primer will be successfully removed
     forwardPrimer = 2 diffs, reversePrimer = 1 diffs -> primer will not be removed because the paired primer total diffs = 3
@@ -152,7 +152,7 @@ all cases that pdiffs=2, bdiffs=1, tdiffs=3:
 
 -   Separate forward and reverse primers handle the diffs differently.
     Both the forward and reverse primers are allowed 2 diffs each.
-    Here\'s the same example with separate primers.
+    Here's the same example with separate primers.
 
     forwardPrimer = 2 diffs, reversePrimer = 0 diffs -> primer will be successfully removed
     forwardPrimer = 2 diffs, reversePrimer = 1 diffs -> primer will be successfully removed
@@ -167,7 +167,7 @@ all cases that pdiffs=2, bdiffs=1, tdiffs=3:
 The pcr.seqs command handles paired and single primers the same. The
 pcr.seqs command allows you to set individual diffs values for the
 forward and reverse primers. This is designed to allow for maximum
-flexibility in removing primers. Let\'s assume pdiffs=2, rdiffs=2,
+flexibility in removing primers. Let's assume pdiffs=2, rdiffs=2,
 meaning allow 2 diffs in each primer.
 
     forwardPrimer = 2 diffs, reversePrimer = 0 diffs -> primer will be successfully removed
@@ -182,12 +182,12 @@ meaning allow 2 diffs in each primer.
 
 The make.contigs command is designed for paired primers, and operates
 like trim.seqs. Make.contigs also sets a tdiffs (total differences)
-parameter equal to biffs+pdiffs, by default, but can be adjusted. Let\'s
+parameter equal to biffs+pdiffs, by default, but can be adjusted. Let's
 assume in all cases that pdiffs=2, bdiffs=1, tdiffs=3:
 
 -   Paired primers are allowed 2 diff total between both the forward and
     reverse primers. With forward and reverse are each allowed two
-    diffs. This can be a bit confusing so here\'s an example:
+    diffs. This can be a bit confusing so here's an example:
 
     forwardPrimer = 2 diffs, reversePrimer = 0 diffs -> primer will be successfully removed
     forwardPrimer = 2 diffs, reversePrimer = 1 diffs -> primer will not be removed because the paired primer total diffs = 3

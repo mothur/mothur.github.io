@@ -16,7 +16,7 @@ were originally published by [Pei et al.
 We need to generate a distance matrix and phylogenetic tree to perform
 most of the analyses we would like to do in mothur. First, we need to
 generate an alignment of the 710 16S rRNA gene sequences. For this
-tutorial we will use mothur. Be sure that you are in the \"Esophagus\"
+tutorial we will use mothur. Be sure that you are in the "Esophagus"
 folder and get a copy of your favorite [alignment
 database](alignment_database) and put it in the same folder
 as well. Go ahead and fire up mothur. First, we will [ align the
@@ -30,7 +30,7 @@ or
     mothur > align.seqs(fasta=esophagus.fasta, reference=core_set_aligned.imputed.fasta, processors=2)
 
 Next, we want to make sure that our sequences overlap over the same
-region of the 16S rRNA gene. First let\'s take a look at a [
+region of the 16S rRNA gene. First let's take a look at a [
 summary](summary.seqs) basic statistics of our sequence
 collection:
 
@@ -46,10 +46,10 @@ collection:
     Maximum:   486 6720    1378    20  8
     # of Seqs: 710
 
-Being sticklers for good quality sequence data, we shouldn\'t be
+Being sticklers for good quality sequence data, we shouldn't be
 satisfied with sequences that have any ambiguous bases, much less 5! So
-let\'s remove any sequences that have more than 5 ambiguous bases. While
-we\'re at it, let\'s remove any sequences where the alignment doesn\'t
+let's remove any sequences that have more than 5 ambiguous bases. While
+we're at it, let's remove any sequences where the alignment doesn't
 start by position 204 or end by position 4456 using the
 [screen.seqs](screen.seqs) command. These correspond to E.
 coli positions 67 and 873. We also want to remove the problematic
@@ -71,7 +71,7 @@ Again summarizing the output of screen.seqs shows us:
     Maximum:   204 4664    907 5   8
     # of Seqs: 677
 
-We see that we\'ve lost about 33 sequences from our dataset with that
+We see that we've lost about 33 sequences from our dataset with that
 screen. Now we want to make sure that we are only considering the same
 region of the alignment (i.e. positions 204 through 4470). We also want
 to remove any columns from the alignment that only contain gap
@@ -132,7 +132,7 @@ and esophagus.an.C.rabund.
 
 We would like to know the richness of each of these rabund files as well
 as the richness that is shared between the three communities. As an
-example, let\'s analyze patient B. To generate data for a rarefaction
+example, let's analyze patient B. To generate data for a rarefaction
 curve use the [rarefaction.single](rarefaction.single)
 command:
 
@@ -140,7 +140,7 @@ command:
 
 This will generate esophagus.an.B.rarefaction.
 
-To generate a collector\'s curve for the Chao1 estimator and
+To generate a collector's curve for the Chao1 estimator and
 non-parametric Shannon Index use the
 [collect.single](collect.single) command:
 
@@ -152,7 +152,7 @@ whether the parameters are sensitive to sampling.
 
 For a quick summary of various parameters for each patient you can
 execute the following commands: \[To generate the .rabund-file use the
-command \"get.rabund()\"
+command "get.rabund()"
 
     mothur > summary.single(rabund=esophagus.an.B.rabund)
     mothur > summary.single(rabund=esophagus.an.C.rabund)
@@ -231,7 +231,7 @@ structures.
 
 ### Parsimony test
 
-Ideally, you would take the time to generate a \"good\" phylogeny of
+Ideally, you would take the time to generate a "good" phylogeny of
 your sequences. We have provided a neighbor-joining tree generated from
 esophagus.dist, which is named esophagus.tree. First we will use the
 parsimony test. This test was previously implemented in the TreeClimber
@@ -264,7 +264,7 @@ community structures.
 ### Weighted UniFrac Test
 
 The [ weighted unifrac](unifrac.weighted) test measures the
-fraction of a tree\'s branch length that can be ascribed to each
+fraction of a tree's branch length that can be ascribed to each
 community. A similar analysis is available through the Knight Lab
 website [2](https://bmf2.colorado.edu/unifrac/index.psp). Similar to the
 parsimony analysis, you first need to read in a tree and group file:
@@ -286,7 +286,7 @@ significantly different from each other.
 
 Similar to the [ weighted unifrac](unifrac.weighted) test,
 the [ unweighted unifrac](unifrac.unweighted) test measures
-the fraction of a tree\'s branch length that is unique to each group
+the fraction of a tree's branch length that is unique to each group
 represented in the tree. A similar analysis is available through the
 Knight Lab website [3](https://bmf2.colorado.edu/unifrac/index.psp).
 Similar to the parsimony analysis, you first need to read in a tree and

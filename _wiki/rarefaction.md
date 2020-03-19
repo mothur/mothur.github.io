@@ -28,7 +28,7 @@ $$S_{50} = 84 - 75\frac{\binom{98 - 1}{50}}{\binom{98}{50}} - 6\frac{\binom{98 -
 $$S_{50} = 84 - 75\left(0.4898 \right) - 6 \left(0.2373 \right) - 1 \left(0.1137 \right) - 2 \left(0.0539 \right) = 45.620$$
 
 Although this closed form solution exists, it is actually very slow
-compared to averaging across a large number of randomized collector\'s
+compared to averaging across a large number of randomized collector's
 curves. The following table compares the output based on the formula and
 using 1,000 permutations using mothur:
 

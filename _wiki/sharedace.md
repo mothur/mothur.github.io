@@ -1,5 +1,6 @@
 ---
 title: 'Sharedace'
+tags: 'calculators'
 redirect_from: '/wiki/Sharedace'
 ---
 The **sharedace** calculator returns the shared ACE
@@ -125,8 +126,8 @@ Writing the data in a more presentable manner we see:
   Total   33       31        9     6     5     1     1     4
 
 Looking at the table and treating forest as X and pasture Y, we see that
-all of the shared OTUs are \"rare\" (i.e. abundances less than 10).
-Let\'s start the calculations\...
+all of the shared OTUs are "rare" (i.e. abundances less than 10).
+Let's start the calculations\...
 
 $$T_{10} = 1+3+2+1+1+5+1+1+1=16$$
 

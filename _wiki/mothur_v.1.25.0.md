@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.25.0'
+title: 'mothur v.1.25.0'
 redirect_from: '/wiki/Mothur_v.1.25.0.html'
 ---
 We are happy to announce the release of [mothur
@@ -12,11 +12,11 @@ useful for creating your own reference sequence files for alignments and
 classification. Second, another new feature is the
 [cooccurrence](cooccurrence) function, which will use a
 number of metrics and methods of testing those metrics to measure
-whether populations are co-occurring more frequently than you\'d expect
+whether populations are co-occurring more frequently than you'd expect
 by chance. Third, at the suggestion of a user on the forum, we have
 begun to look at methods of synthesizing data in the
 [create.database](create.database) function. Finally, to
-support Greg Caporaso\'s BIOM format, we have allowed for more easy
+support Greg Caporaso's BIOM format, we have allowed for more easy
 formatting of data from a shared file to a biom file using the
 [make.biom](make.biom) and
 [make.shared](make.shared) files.
@@ -65,19 +65,19 @@ Pat Schloss
     given. Should return error message instead
     (https://forum.mothur.org/viewtopic.php?f=4&t=1525)
 -   [rarefaction.single](rarefaction.single) - groupnames
-    that include \"\_\" causes parsing error in the creation of the
+    that include "\_" causes parsing error in the creation of the
     groups.rarefaction file. Fixed, workaround until release,
     groupmode=false.
--   [filter.seqs](filter.seqs) - when run with \"current\",
-    it generated \".filter\" and not \"filename.filter\" file.
--   [sffinfo](sffinfo) - if the sff file doesn\'t end in
-    \".sff\" then the output files all end in \"flow\", for example,
-    instead of \".flow\"
+-   [filter.seqs](filter.seqs) - when run with "current",
+    it generated ".filter" and not "filename.filter" file.
+-   [sffinfo](sffinfo) - if the sff file doesn't end in
+    ".sff" then the output files all end in "flow", for example,
+    instead of ".flow"
 -   [trim.seqs](trim.seqs) - windows version crash
     (https://forum.mothur.org/viewtopic.php?f=4&t=1543)
 -   [trim.seqs](trim.seqs) - fixed bug that caused seqs to go
     to scrap if no oligos file was given.
--   [shhh.flows](shhh.flows) - outputdir didn\'t put all of
+-   [shhh.flows](shhh.flows) - outputdir didn't put all of
     the files to the output directory
 -   [pairwise.seqs](pairwise.seqs) - checks for positive
     values for gap open, gap extend, or mismatch.

@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.28.0'
+title: 'mothur v.1.28.0'
 redirect_from: '/wiki/Mothur_v.1.28.0.html'
 ---
 We are happy to release [mothur v.1.28.0](mothur_v.1.28.0) on
@@ -7,19 +7,19 @@ the US election day - hopefully we can all agree that this is a good
 thing! Since the last release we have been busy adding a new command and
 a number of new parameters that will make our final Illumina pipeline
 easier to use. If you have interest in using mothur to analyze MiSeq
-sequence data, please let us know, we\'d be happy to have you test our
+sequence data, please let us know, we'd be happy to have you test our
 new functions. Briefly, we have a new
 [sff.multiple](sff.multiple) command that makes life easier
 for those that get multiple sff files from their sequence provider.
-We\'ve also updated the [schloss sop](Schloss_SOP) to reflect
-some of the recent changes we\'ve made to mothur over the past several
+We've also updated the [schloss sop](Schloss_SOP) to reflect
+some of the recent changes we've made to mothur over the past several
 releases.
 
-If you haven\'t already, be sure to check out our [latest
+If you haven't already, be sure to check out our [latest
 article](https://www.ncbi.nlm.nih.gov/pubmed/23018771), that rebuts a
 previous ISMEJ article. The piece covers the issue of whether sequence
 alignment as we do it is necessary. Initial feedback has been very
-positive. The next several releases promise to be very exciting. We\'ll
+positive. The next several releases promise to be very exciting. We'll
 be unveiling a new mothur GUI and pipelines for non-454 sequencing
 platforms.
 
@@ -28,7 +28,7 @@ notice that the mothur paper is the 15th most cited paper in AEM history
 and DOTUR is the 4th. Thank you, thank you, thank you! We appreciate the
 gifts and flowers you continue to send us. One of the students in the
 lab would like to see a little more love come our way and would like you
-all to know that if things don\'t improve, we will start posting
+all to know that if things don't improve, we will start posting
 advertisements in the mothur window..
 
 ## New commands
@@ -38,7 +38,7 @@ advertisements in the mothur window..
     It runs the files through sffinfo, trim.flows, shhh.flows and
     trim.seqs combining the results.
 -   [ make.table](count.seqs) command modified to create a
-    \".count\_table\" file. Added large parameter in case files are too
+    ".count\_table" file. Added large parameter in case files are too
     large for ram.
 
 ## Feature updates
@@ -97,8 +97,8 @@ advertisements in the mothur window..
 -   [otu.association](otu.association) - added cutoff
     parameter - [https://forum.mothur.org/viewtopic.php?f=5&t=1639](https://forum.mothur.org/viewtopic.php?f=5&t=1639)
 -   mothur can read sequences with spaces in the sequence string.
--   You can have \'-\'s in a file names as long as they are proceeded by
-    a \'\\\'. Example: my-file-name should be entered as
+-   You can have '-'s in a file names as long as they are proceeded by
+    a '\\'. Example: my-file-name should be entered as
     my\\-file\\-name.
 -   [classify.seqs](classify.seqs) - mothur will ignore
     sequences present in the taxonomy file, but not in the reference
@@ -118,7 +118,7 @@ advertisements in the mothur window..
 -   [chimera.uchime](chimera.uchime) - spaces in path causing
     crash
 -   [classify.seqs](classify.seqs) - if taxonomy file
-    contained file path information \"cannot resolve path for\" error
+    contained file path information "cannot resolve path for" error
     was thrown.
 -   [consensus.seqs](consensus.seqs) - cutoff rounding
     error - [https://forum.mothur.org/viewtopic.php?f=4&t=1781](https://forum.mothur.org/viewtopic.php?f=4&t=1781)
@@ -135,8 +135,8 @@ advertisements in the mothur window..
 
 -   Updated [schloss sop](Schloss_SOP)
 -   [count\_file](Count_File) which is a combination of the
-    name and group file\'s information. Uses less memory and runs faster
-    with mothur\'s commands.
+    name and group file's information. Uses less memory and runs faster
+    with mothur's commands.
 
 ## Registered users
 

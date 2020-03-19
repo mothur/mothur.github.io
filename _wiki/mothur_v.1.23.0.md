@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.23.0'
+title: 'mothur v.1.23.0'
 redirect_from: '/wiki/Mothur_v.1.23.0.html'
 ---
 We are happy to release our first offering of 2012 -
@@ -14,7 +14,7 @@ yet another chimera detection approach - Persues - as
 it is about as good as [chimera.uchime](chimera.uchime).
 Second, we also added [shhh.seqs](shhh.seqs) which is a
 sequence denoising algorithm originally developed by Chris Quince. We
-don\'t like it as well as [pre.cluster](pre.cluster), but
+don't like it as well as [pre.cluster](pre.cluster), but
 feel free to play with it an form your own opinion. On the options
 front, we have continued to add parallelization to a number of commands
 for Windows users. We have also added q-values to the output from
@@ -38,9 +38,9 @@ Pat Schloss
 ## New commands
 
 -   [chimera.perseus](chimera.perseus) - a mothur-based
-    rewrite of Chris Quince\'s chimera detection program, Perseus
+    rewrite of Chris Quince's chimera detection program, Perseus
 -   [shhh.seqs](shhh.seqs) - a mothur-based rewrite of Chris
-    Quince\'s sequence denoting program, SeqNoise
+    Quince's sequence denoting program, SeqNoise
 -   [summary.qual](summary.qual) - summarize the contents of
     quality score files
 
@@ -72,7 +72,7 @@ Pat Schloss
     [https://forum.mothur.org/viewtopic.php?f=4&t=1358](https://forum.mothur.org/viewtopic.php?f=4&t=1358)
 -   [chimera.uchime](chimera.uchime) - executable location -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1379](https://forum.mothur.org/viewtopic.php?f=4&t=1379)
--   [classify.seqs](classify.seqs) - mothur couldn\'t handle
+-   [classify.seqs](classify.seqs) - mothur couldn't handle
     parentheses in the taxonomy file. -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1370](https://forum.mothur.org/viewtopic.php?f=4&t=1370)
 -   [chimera.bellerophon](chimera.bellerophon) -

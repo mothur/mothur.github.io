@@ -36,7 +36,7 @@ If you open abrecovery.cons.summary, you will see something like:
 Columns 2 through 5 contain the fraction of sequences with that base at
 that location. For positions without perfect agreement, the
 ConsensusBase is the appropriate IUPAC nucleotide ambiguity code, while
-positions without data are denoted by a period \'.\'
+positions without data are denoted by a period '.'
 
 ## Options
 
@@ -77,7 +77,7 @@ abrecovery.0.01.cons.names (In version 1.20).
 
 There may only be a couple of lines in your OTU data that you are
 interested in. There are two options. You could: (i) manually delete the
-lines you aren\'t interested in from your list file; (ii) or use the
+lines you aren't interested in from your list file; (ii) or use the
 label option. To use the label option with the **consensus.seqs** command
 you need to know the labels you are interested in. If you want the
 consensus data for the lines labeled unique, 0.03, 0.05 and 0.10 you
@@ -91,7 +91,7 @@ The cutoff parameter allows you set a percentage of sequences that
 support the base. For example: cutoff=95 would return the base was
 supported by at least 95% of sequences.
 
-Here\'s an example:
+Here's an example:
 
     mothur > consensus.seqs(fasta=abrecovery.align, cutoff=95)
 
@@ -99,8 +99,8 @@ From the .summary file at position 2029 we see:
 
     2029   0.000000    0.000000    0.954545    0.004132    0.041322    242 G
 
-There are no A\'s, no T\'s, 231 G\'s, 1 C, and 10 gaps. Since more than
-95% of the sequences support G, that\'s what is returned, without the
+There are no A's, no T's, 231 G's, 1 C, and 10 gaps. Since more than
+95% of the sequences support G, that's what is returned, without the
 cutoff mothur would return s.
 
 ## Revisions

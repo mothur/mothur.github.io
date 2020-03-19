@@ -1,6 +1,6 @@
 ---
 title: 'relabund file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Relabund_file'
 ---
 A relabund file is similar to a shared file. The data in a relabund file

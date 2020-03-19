@@ -118,7 +118,7 @@ Simple Format:
 
 ### Common Questions
 
-Can\'t find your question? Please feel free to ask questions on our
+Can't find your question? Please feel free to ask questions on our
 forum, [https://forum.mothur.org](https://forum.mothur.org).
 
 ### Common Issues
@@ -126,8 +126,8 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 
 1\.  **Cannot convert error. What do I do?** This issue is caused by a
     matrix\_element\_type mismatch. The biom file contains a field
-    called \'matrix\_element\_type\'. This field tells mothur what form
-    your observation data is in: int or float. Mothur expects \'int\'
+    called 'matrix\_element\_type'. This field tells mothur what form
+    your observation data is in: int or float. mothur expects 'int'
     (an interger value) because the shared file contains interger value
     abundance counts. If your file contains float values mothur will
     round down to the nearest integer value. But if your
@@ -136,8 +136,8 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     can resolve this issue by setting matrix\_element\_type=float in the
     biom file.
 
-2\.  **Mothur can\'t read my biom file. What does this mean?** This
-    likely caused by failure to set format=hdf5. Mothur allows for 2
+2\.  **mothur can't read my biom file. What does this mean?** This
+    likely caused by failure to set format=hdf5. mothur allows for 2
     formats: classic
     (https://biom-format.org/documentation/format\_versions/biom-1.0.html)
     and hdf5

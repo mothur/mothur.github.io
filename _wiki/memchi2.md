@@ -1,5 +1,6 @@
 ---
 title: 'Memchi2'
+tags: 'calculators'
 redirect_from: '/wiki/Memchi2'
 ---
 The **memchi2** calculator returns a membership-based

@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.12.0'
+title: 'mothur v.1.12.0'
 redirect_from: '/wiki/Mothur_v.1.12.0.html'
 ---
 We are happy to announce the release of
@@ -25,12 +25,12 @@ to us via email and the forum. Along with providing new alignment and
 taxonomy reference files containing nearly 15,000 diverse sequences we
 are in the process of modifying our example analyses to reflect our
 current thinking about how to trim data based on quality scores and
-implement all of the new features we\'ve released in the last several
+implement all of the new features we've released in the last several
 months.
 
 As always, you can feel free to shoot us emails at
 mothur.bugs\@gmail.com, post any problems or praise at the forum, and
-\"like\" us on facebook. We look forward to your continued support,
+"like" us on facebook. We look forward to your continued support,
 suggestions, and questions.
 
 ## New commands
@@ -74,7 +74,7 @@ suggestions, and questions.
 
 ## Bug fixes
 
--   made looking for \"barcode\", \"forward\", \"reverse\" in oligos
+-   made looking for "barcode", "forward", "reverse" in oligos
     file for [trim.seqs](trim.seqs) case-insensitive and give
     error if something else is entered.
 -   removed blast-related files after running

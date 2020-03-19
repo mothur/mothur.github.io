@@ -9,7 +9,7 @@ use. You can also clear current files.
 
 ## Default Options
 
-Let\'s set a current fasta and name file and then see how mothur will
+Let's set a current fasta and name file and then see how mothur will
 use them. NOTE: For REQUIRED parameters if you do not provide the file
 mothur will automatically check to see if there is a current file of
 that type.

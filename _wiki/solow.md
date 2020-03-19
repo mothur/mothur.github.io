@@ -1,5 +1,6 @@
 ---
 title: 'Solow'
+tags: 'calculators'
 redirect_from: '/wiki/Solow'
 ---
 The **solow** calculator returns the Solow estimate of

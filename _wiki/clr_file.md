@@ -1,6 +1,6 @@
 ---
 title: 'clr file'
-tags: 'file types'
+tags: 'file_types'
 redirect_from: '/wiki/Clr_file'
 ---
 The clr - centered log ratio - is the log2 of the value divided by the

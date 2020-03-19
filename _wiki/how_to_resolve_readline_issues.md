@@ -4,7 +4,7 @@ redirect_from: '/wiki/How_to_Resolve_Readline_Issues'
 ---
 If you are building mothur from source and want to use the readline
 features you will need to install the readline libraries. For Linux,
-users here\'s a short tutorial:
+users here's a short tutorial:
 
 ## Install Readline
 
@@ -14,7 +14,7 @@ name, so use yum search to find it:
 
     yum search readline
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/yumsearchreadline.png)
+![results of yum search readline](https://mothur.s3.us-east-2.amazonaws.com/wiki/yumsearchreadline.png)
 
 To compile properly mothur needs the devel files.
 
@@ -28,7 +28,7 @@ so use yum search to find it:
 
     yum search ncurses
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/yumsearchncurses.png)
+![result of yum search ncurses](https://mothur.s3.us-east-2.amazonaws.com/wiki/yumsearchncurses.png)
 
 To compile properly mothur needs the devel files.
 

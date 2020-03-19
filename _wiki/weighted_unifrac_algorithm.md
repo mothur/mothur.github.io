@@ -27,7 +27,7 @@ To account for varying rates of evolution between sequences, the
 weighted UniFrac measure is normalized such that each sequence
 contributes equally to the distance calculated.
 
-![](https://mothur.s3.us-east-2.amazonaws.com/wiki/unifracmeasureweighted.jpg)
+![Schematic describing weighted unifrac](https://mothur.s3.us-east-2.amazonaws.com/wiki/unifracmeasureweighted.jpg)
 
 :   *(See discussion page for possible correction.)*
 

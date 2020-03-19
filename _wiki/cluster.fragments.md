@@ -13,13 +13,13 @@ file](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.fasta.zip)
 The **cluster.fragments** command expects a fasta-formatted file. A names
 file may also be provided and when a sequence is determined to be a
 fragment of a larger sequence, the list of names corresponding to the
-sequence names will be merged. Let\'s take a look at the esophagus.fasta
+sequence names will be merged. Let's take a look at the esophagus.fasta
 file. It contains 710 sequences.
 
     mothur > unique.seqs(fasta=esophagus.fasta)
 
 After running unique.seqs, we find that esophagus.unique.fasta contains
-656 unique sequences. Now let\'s see if any of those sequences are
+656 unique sequences. Now let's see if any of those sequences are
 fragments of another sequence.
 
     mothur > cluster.fragments(fasta=esophagus.unique.fasta, name=esophagus.names)
@@ -40,7 +40,7 @@ differences allowed, default=0. percent=2 means if the number of
 difference is less than or equal to two percent of the length of the
 fragment, then cluster. You may use diffs and percent at the same time
 to say something like: If the number or differences is greater than 1 or
-more than 2% of the fragment length, don\'t merge.
+more than 2% of the fragment length, don't merge.
 
 ## Explaining the output
 
@@ -61,7 +61,7 @@ number of sequences that will be found in the final dataset, and the
 number of sequences that have been clustered away. This should
 accelerate as the function runs.
 
-## What\'s the difference between **cluster.fragments** and [pre.cluster](pre.cluster)?
+## What's the difference between **cluster.fragments** and [pre.cluster](pre.cluster)?
 
 -   Cluster.fragments: combine sequences that are pieces of a larger
     sequence
@@ -74,7 +74,7 @@ unaligned sequences. It sorts them by sequence length and if there are
 ties in length then by abundance. It then goes through the sequences
 starting with the largest fragment as asks if each following sequence is
 a fragment of itself. You can set parameters to determine what this
-means, i.e. numdiffs, percentage differences. Mothur does a pairwise
+means, i.e. numdiffs, percentage differences. mothur does a pairwise
 alignment and counts the diffs merging fragments under the unique
 sequence. This process is all very much like pre.cluster.
 

@@ -1,5 +1,6 @@
 ---
 title: 'Speciesprofile'
+tags: 'calculators'
 redirect_from: '/wiki/Speciesprofile'
 ---
 $$D_{SpeciesProfile} = \sqrt{ \sum_{j=1}^{S_T}  \left ( \frac{S_{Aj}}{S_{A+}} - \frac{S_{Bj}}{S_{B+}} \right )^2  }$$

@@ -140,7 +140,7 @@ or
 ### The *iters* option
 
 If you run the unifrac.weighted() command multiple times, you will
-notice that while the score for your user tree doesn\'t change, it\'s
+notice that while the score for your user tree doesn't change, it's
 significance may change some. This is because the testing procedure is
 based on a randomization process that becomes more accurate as you
 increase the number of randomizations. By default, unifrac.weighted()
@@ -217,7 +217,7 @@ times. Default=f.
 ## Finer points
 
 If you are missing a name from your tree or groups file mothur will warn
-you and return to the mothur prompt. Be sure that you don\'t have spaces
+you and return to the mothur prompt. Be sure that you don't have spaces
 in your sequence or group names.
 
 ## Revisions

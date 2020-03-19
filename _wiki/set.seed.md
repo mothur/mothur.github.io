@@ -14,7 +14,7 @@ The only parameter is seed, and it is required.
 
 ### Options
 
-Mothur also allows you to set the random seed on any command. This will
+mothur also allows you to set the random seed on any command. This will
 change the seed globally. For example:
 
     mothur > rarefaction.single(shared=98_lt_phylip_amazon.fn.shared, seed=98765)

@@ -1,5 +1,5 @@
 ---
-title: 'Mothur v.1.29.0'
+title: 'mothur v.1.29.0'
 redirect_from: '/wiki/Mothur_v.1.29.0.html'
 ---
 This is an exciting day\... we are happy to announce the release of
@@ -16,10 +16,10 @@ GUI is the ability to create batch scripts that you can then either run
 directly from within the GUI or via the command line interface.
 
 As for the v.1.29, we have a number of useful feature developments.
-First, we\'ve developed [filter.shared](filter.shared), which
+First, we've developed [filter.shared](filter.shared), which
 removes columns of OTUs based on frequency and abundance parameters. If
 there are other parameters you can think of, let us know. Second,
-although it\'s been in mothur for awhile, we are publicly releasing the
+although it's been in mothur for awhile, we are publicly releasing the
 ability to subsample alpha and beta diversity metrics to a common number
 of sequences per sample. We added these parameters to the [Schloss
 SOP](Schloss_SOP) with the last release. Finally, there are a
@@ -29,12 +29,12 @@ suggested via the forum - thanks for your suggestions!
 Looking ahead, with the next release we should have a vetted SOP for
 analyzing Illumina data. Preliminary indications are that we get
 comparable sequence length to 454 that is just as good (or better) but a
-lot more reads. We\'re also working with various people to generate
+lot more reads. We're also working with various people to generate
 similar SOPs for the new 454 flow structure and IonTorrent data. Sorry
 all of this has taken us so long.
 
-We\'re excited for 2013 and the future of mothur. Please let us know if
-there\'s anything missing or if there\'s something you think others
+We're excited for 2013 and the future of mothur. Please let us know if
+there's anything missing or if there's something you think others
 would benefit from having in mothur!
 
 ## New commands
@@ -65,7 +65,7 @@ would benefit from having in mothur!
     species for sharedsobs.
 -   [trim.seqs](trim.seqs) &&
     [trim.flows](trim.flows) - you can set a barcode or
-    primer name to \"ignore\", and mothur will disregard sequences that
+    primer name to "ignore", and mothur will disregard sequences that
     belong to that group.
 -   [chimera.slayer](chimera.slayer) and
     [chimera.perseus](chimera.perseus) - added dereplicate
@@ -82,7 +82,7 @@ would benefit from having in mothur!
 -   [classify.otu](classify.otu) - if basis=sequence and
     count file is used, redundant sequences were not added to
     .tax.summary file counts.
--   [https://forum.mothur.org/viewtopic.php?f=3&t=1656](https://forum.mothur.org/viewtopic.php?f=3&t=1656) - ignore N\'s
+-   [https://forum.mothur.org/viewtopic.php?f=3&t=1656](https://forum.mothur.org/viewtopic.php?f=3&t=1656) - ignore N's
 -   [classify.seqs](classify.seqs) - if input directory was
     given with a group file, path was incorrect.
 -   if tree file had random Windows newlines, mothur could not read
@@ -93,7 +93,7 @@ would benefit from having in mothur!
 
 ## Changes to wiki
 
--   [ gui tutorial](Gui_Tutorial) and related links
+-   gui tutorial and related links
 
 ## Registered users
 

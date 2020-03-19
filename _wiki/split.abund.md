@@ -62,7 +62,7 @@ the cutoff. The cutoff can be a integer or a percentage. For example:
 
 will place all sequences with 10 or less abundance in the
 \*.rare.count\_table file. You can also set the cutoff as a percentage
-of the total number of sequences. For example let\'s set the cutoff to
+of the total number of sequences. For example let's set the cutoff to
 
 0\.01, meaning reads that represent \<= 1% or the total reads in the
 dataset are considered rare. final.count\_table includes 113964
