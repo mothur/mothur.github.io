@@ -6,7 +6,7 @@ redirect_from: '/wiki/Split.groups.html'
 The **split.groups** command reads a [
 list](/wiki/list_file), [ fasta](/wiki/fasta_file) file or [
 flow](/wiki/flow_file) and [ group](/wiki/group_file) file or
-[ count](/wiki/Count_File) or [ fastq](/wiki/Fastq_File) file
+[ count](/wiki/count_file) or [ fastq](/wiki/fastq_file) file
 and generates a fasta, flow or fastq files for each group in the
 groupfile. To run this tutorial please download [ Esophagus
 dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip).
@@ -78,5 +78,3 @@ processors and use all available.
     [\#624](https://github.com/mothur/mothur/issues/624)
 -   1.44.0 - Adds processors parameter.
     [\#685](https://github.com/mothur/mothur/issues/685)
-
-

@@ -16,7 +16,7 @@ amount of traffic by people downloading mothur - so if this is your
 first update, welcome. Many of you may remember that last month we
 launched two new ventures a [facebook
 page](https://www.facebook.com/pages/mothur/133966409231) and a [user
-forum](https://www.mothur.org/forum). We are up to 53 "friends" and
+forum](https://mothur.org/forum). We are up to 53 "friends" and
 have gotten a steady stream of forum users. Please feel free to use the
 wiki, forum, and facebook as means of communicating with and helping
 each other. December also promises to be a promising month as The

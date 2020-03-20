@@ -78,7 +78,7 @@ you will need several sets of files that are already loaded in the AMI.
 -   [ example data from schloss lab](https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip)
     that will be used with this tutorial. It was extracted from the
     [full
-    dataset](https://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
+    dataset](https://mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
 -   [ SILVA-based bacterial reference
     alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v128.tgz)
 -   [ mothur-formatted version of the RDP training set

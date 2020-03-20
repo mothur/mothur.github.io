@@ -2,8 +2,7 @@
 title: 'Unweighted UniFrac algorithm'
 redirect_from: '/wiki/Unweighted_UniFrac_algorithm'
 ---
-The [unweighted UniFrac
-algorithm](/wiki/unweighted_UniFrac_algorithm) is an attempt at
+The **unweighted UniFrac algorithm** is an attempt at
 creating a phylogenetic extension of the Jaccard index, which defines
 the distance between a pair of communities as the proportion of
 evolution that is unique to one community or the other [Lozupone and

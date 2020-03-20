@@ -162,13 +162,13 @@ where you can read about the process that we used to generate these
 references.
 
 -   [Full length sequences and taxonomy
-    references](https://www.mothur.org/w/images/2/27/Silva.nr_v119.tgz)
+    references](https://mothur.org/w/images/2/27/Silva.nr_v119.tgz)
     (137879 bacteria, 3155 archaea, and 12273 eukarya sequences). This
     reference could be customized for alignments, but could also be used
     for classification. The uncompressed version is \~7.2 GB and the
     compressed version is 249 MB.
 -   [Recreated SEED
-    database](https://www.mothur.org/w/images/5/56/Silva.seed_v119.tgz)
+    database](https://mothur.org/w/images/5/56/Silva.seed_v119.tgz)
     (12244 bacteria, 207 archaea, and 2558 eukarya sequences). The
     actual reference alignment that SILVA uses with their SINA aligner
     is called the SEED alignment. We don't know what this actually is.

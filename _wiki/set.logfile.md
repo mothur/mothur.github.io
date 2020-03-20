@@ -26,7 +26,7 @@ When you open myCollectLogfile you will see:
     Department of Microbiology & Immunology
     University of Michigan
     pschloss@umich.edu
-[`https://www.mothur.org`](https://www.mothur.org)
+[`https://mothur.org`](https://mothur.org)
 
     When using, please cite:
     Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
@@ -79,7 +79,7 @@ Now myCollectLogfile will look like:
     Department of Microbiology & Immunology
     University of Michigan
     pschloss@umich.edu
-[`https://www.mothur.org`](https://www.mothur.org)
+[`https://mothur.org`](https://mothur.org)
 
     When using, please cite:
     Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
@@ -125,7 +125,7 @@ Now myCollectLogfile will look like:
     Department of Microbiology & Immunology
     University of Michigan
     pschloss@umich.edu
-[`https://www.mothur.org`](https://www.mothur.org)
+[`https://mothur.org`](https://mothur.org)
 
     When using, please cite:
     Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.

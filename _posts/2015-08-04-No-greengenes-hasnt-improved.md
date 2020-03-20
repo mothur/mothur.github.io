@@ -67,20 +67,20 @@ First, in bash:
 	mothur "#pcr.seqs(fasta=gg_13_5_ssualign.fasta, start=138, end=6791, keepdots=T, processors=4)"
 
 
-	wget -N https://www.mothur.org/w/images/2/27/Silva.nr_v119.tgz
+	wget -N https://mothur.org/w/images/2/27/Silva.nr_v119.tgz
 	tar xvzf Silva.nr_v119.tgz
 	mothur "#get.lineage(fasta=silva.nr_v119.align, taxonomy=silva.nr_v119.tax, taxon=Bacteria-Archaea)";
 	mv silva.nr_v119.pick.align silva.bact_archaea.align
 
 	mothur "#align.seqs(fasta=gg_13_5.fasta, reference=silva.bact_archaea.align, processors=2)"
 
-	wget https://www.mothur.org/w/images/6/6d/Silva_ss_map.zip
+	wget https://mothur.org/w/images/6/6d/Silva_ss_map.zip
 	unzip Silva_ss_map.zip
 	mv silva.ss.map silva_ss_map
 	mv silva_ss_map/silva.ss.map ./
 	rm -rf silva_ss_map
 
-	wget https://www.mothur.org/w/images/4/4b/Gg_ss_map.zip
+	wget https://mothur.org/w/images/4/4b/Gg_ss_map.zip
 	unzip Gg_ss_map.zip
 
 	mothur "#align.check(fasta=gg_13_5_pynast.pcr.fasta, map=gg.ss.map)"

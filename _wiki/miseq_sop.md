@@ -73,7 +73,7 @@ generate (e.g. the output of shhh.flows):
 -   [ example data from schloss lab](https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip)
     that will be used with this tutorial. It was extracted from the
     [full
-    dataset](https://www.mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
+    dataset](https://mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
 -   [ SILVA-based bacterial reference
     alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.zip)
 -   [ mothur-formatted version of the RDP training set

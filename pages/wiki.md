@@ -6,7 +6,7 @@ redirect_from: /wiki/Main_Page
 ---
 
 Welcome to the website for the **mothur** project,
-initiated by [Dr. Patrick Schloss](https://www.mothur.org) and his
+initiated by [Dr. Patrick Schloss](https://mothur.org) and his
 software development team in the
 [Department of Microbiology &
 Immunology](https://www.med.umich.edu/microbio/) at [The University of

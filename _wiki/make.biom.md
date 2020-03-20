@@ -86,7 +86,7 @@ allows you to provide the OTU ID mapping table associated with your
 reference taxonomy. When using the picrust option you must provide a
 reference taxonomy and a \*.cons.taxonomy file. You can download the
 version 13.5 OTU ID maps here: [GreenGenes Mapping
-Tables](https://www.mothur.org/w/images/b/be/GG_13_5_otuMapTable.zip).
+Tables](https://mothur.org/w/images/b/be/GG_13_5_otuMapTable.zip).
 
     mothur > make.biom(shared=abrecovery.an.shared, label=0.03, reftaxonomy=gg_13_5_99.gg.tax, constaxonomy=abrecovery.an.0.03.cons.taxonomy, picrust=97.gg.otu_map)
 

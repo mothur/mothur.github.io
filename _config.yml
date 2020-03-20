@@ -31,7 +31,7 @@ plugins:
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://mothur.github.io" # the base hostname & protocol for your site
+url: "https://mothur.org" # the base hostname & protocol for your site
 
 # link for s3 bucket containing data
 bucket: "https://mothur.s3.us-east-2.amazonaws.com"

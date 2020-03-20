@@ -9,7 +9,7 @@ server across the country and then had a hick-up or two while we
 reconnected everything. Hopefully, by now you have noticed that the
 picture of my young bride and son have moved to www.mothur.org. There
 you can find several useful links - the [ wiki](/wiki), a
-[discussion forum](https://www.mothur.org/forum), and a link to [download
+[discussion forum](https://mothur.org/forum), and a link to [download
 mothur](/wiki/download_mothur). In case you thought we take
 ourselves too seriously (please see the [system](/wiki/system)
 command), we have "[jumped the
@@ -98,7 +98,7 @@ Documentation changes
 
 <!-- -->
 
--   [mothur forum](https://www.mothur.org/forum) - please feel free to
+-   [mothur forum](https://mothur.org/forum) - please feel free to
     direct questions to the forum and to answer other people's
     questions.
 

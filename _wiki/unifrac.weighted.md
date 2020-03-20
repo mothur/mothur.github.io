@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Unifrac.weighted.html'
 ---
 The **unifrac.weighted** comand implements
-the [weighted unifrac algorithm](/wiki/weighted_UniFrac_algorithm).
+the [weighted unifrac algorithm](/wiki/weighted_unifrac_algorithm).
 The [unifrac.unweighted](/wiki/unifrac.unweighted) command
 implements the unweighted version of the command. The UniFrac methods are generic tests that describes whether
 two or more communities have the same structure. The significance of the

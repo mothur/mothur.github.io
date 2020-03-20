@@ -2,7 +2,7 @@
 title: 'Weighted UniFrac algorithm'
 redirect_from: '/wiki/Weighted_UniFrac_algorithm'
 ---
-The [weighted unifrac algorithm](/wiki/weighted_UniFrac_algorithm)
+The **weighted unifrac algorithm**
 is implemented within mothur as the
 [unifrac.weighted](/wiki/unifrac.weighted) command. The algorithm
 represents an attempt to make a quantitative beta diversity measurement
