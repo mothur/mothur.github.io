@@ -43,6 +43,6 @@ create batch file button.
 
 ![ center](https://mothur.s3.us-east-2.amazonaws.com/wiki/createbatch.jpg)
 
-Then you can run mothur in [batch mode](Batch_mode):
+Then you can run mothur in [batch mode](/wiki/Batch_mode):
 
 ![ center](https://mothur.s3.us-east-2.amazonaws.com/wiki/runbatch.jpg)

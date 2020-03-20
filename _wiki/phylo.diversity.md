@@ -15,7 +15,7 @@ For example:
 
     mothur > phylo.diversity(tree=abrecovery.paup.nj, group=abrecovery.groups)
 
-or with a [ count file](Count_File):
+or with a [ count file](/wiki/Count_File):
 
     mothur > phylo.diversity(tree=abrecovery.paup.nj, count=abrecovery.count_table)
 
@@ -37,7 +37,7 @@ The name option allows you to enter a namefile with your treefile.
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 

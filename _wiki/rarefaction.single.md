@@ -10,7 +10,7 @@ richness observed in different samples. Roughly speaking you get the
 number of OTUs, on average, that you would have been expected to have
 observed if you hadn't sampled as many individuals. Although a formula
 exists to generate a rarefaction curve (see the [ example
-calculation](rarefaction)), mothur uses a randomization
+calculation](/wiki/rarefaction)), mothur uses a randomization
 procedure. It can also help you to assess your sampling intensity. If a
 rarefaction curve becomes parallel to the x-axis, you can be reasonably
 confident that you have done a good job of sampling and can trust the
@@ -103,7 +103,7 @@ will be the confidence interval for the estimator, not the estimator's
 
 ### abund
 
-By default the [ace estimator](ace) uses 10 as the
+By default the [ace estimator](/wiki/ace) uses 10 as the
 cutoff between OTUs that are rare and abundant. So if an OTU has more
 than 10 individuals in it, then it is considered abundant. This is
 really just an empirical decision and we are merely following the lead

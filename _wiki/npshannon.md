@@ -4,11 +4,11 @@ tags: 'calculators'
 redirect_from: '/wiki/Npshannon'
 ---
 The **npshannon** calculator returns a
-non-parametric estimate of the classical [shannon](Shannon)
+non-parametric estimate of the classical [shannon](/wiki/Shannon)
 diversity index for an OTU definition. This calculator can be used in
-the [summary.single](summary.single),
-[collect.single](collect.single), and
-[rarefaction.single](rarefaction.single) commands. The
+the [summary.single](/wiki/summary.single),
+[collect.single](/wiki/collect.single), and
+[rarefaction.single](/wiki/rarefaction.single) commands. The
 calculations for the non-parametric Shannon index are implemented as
 described by Chao and Shen.
 
@@ -32,7 +32,7 @@ $$N \mbox{ = the number of individuals in the sample}$$
 
 $$S_t \mbox{ = the total number of OTUs}$$
 
-$$S_{ACE}$$ = the richness estimated using the [ace](ace)
+$$S_{ACE}$$ = the richness estimated using the [ace](/wiki/ace)
 calculator
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
@@ -41,7 +41,7 @@ commands:
 
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[sabund file](sabund_file) is
+The 98\_lt\_phylip\_amazon.fn.[sabund file](/wiki/sabund_file) is
 also outputted to the terminal window when the cluster() command is
 executed:
 
@@ -99,4 +99,4 @@ Running\...
 These are the same values that we found above for a cutoff of 0.03. At
 this point we have not implemented the 95% confidence interval
 calculations. As a point of reference it is worth noting that the
-classical [shannon](Shannon) index gave a value of 4.353.
+classical [shannon](/wiki/Shannon) index gave a value of 4.353.

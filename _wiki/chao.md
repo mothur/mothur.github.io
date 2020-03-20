@@ -5,9 +5,9 @@ redirect_from: '/wiki/Chao'
 ---
 The **chao** calculator returns the Chao1 richness
 estimate for an OTU definition. This calculator can be used in the
-[summary.single](summary.single),
-[collect.single](collect.single), and
-[rarefaction.single](rarefaction.single) commands. The
+[summary.single](/wiki/summary.single),
+[collect.single](/wiki/collect.single), and
+[rarefaction.single](/wiki/rarefaction.single) commands. The
 calculations for the bias-corrected Chao1 richness estimator are
 implemented as described by Chao in the user manual for her program
 [spade](http://140.114.36.3/wordpress/wp-content/uploads/software/SPADE_UserGuide.pdf) and modified
@@ -68,7 +68,7 @@ commands:
 
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[sabund file](sabund_file) is
+The 98\_lt\_phylip\_amazon.fn.[sabund file](/wiki/sabund_file) is
 also outputted to the terminal window when the cluster() command is
 executed:
 

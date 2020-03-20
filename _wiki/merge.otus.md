@@ -9,7 +9,7 @@ on taxonomic assignment.
 ## Default Settings
 
 To run the **merge.otus** command you need to provide consensus taxonomy
-file, [constaxonomy_file](Constaxonomy_file) and a list, shared or
+file, [constaxonomy_file](/wiki/Constaxonomy_file) and a list, shared or
 relabund file.
 
     mothur > merge.otus(constaxonomy=final.opti_mcc.0.03.constaxonomy, list=final.opti_mcc.list)

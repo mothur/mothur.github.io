@@ -3,14 +3,14 @@ title: 'mothur v.1.9.0'
 redirect_from: '/wiki/Mothur_v.1.9.0.html'
 ---
 We are happy to announce the release of [mothur
-v.1.9.0](mothur_v.1.9.0)! Although there are no new commands,
+v.1.9.0](/wiki/mothur_v.1.9.0)! Although there are no new commands,
 per say, there are a number of new options available, which will
 hopefully make mothur more flexible. For example, when we teach
 workshops people are often overwhelmed by the number of files generated
 by mothur and are never quite sure what the output is from a command.
 Now each command indicates the files that are being created. Another
 example is the output of an accnos file from the chimera checking
-commands that you can use with [remove.seqs](remove.seqs) to
+commands that you can use with [remove.seqs](/wiki/remove.seqs) to
 purify your sequence collection of chimeras. Perhaps the biggest update
 in this release is the incorporation of MPI. You can still use multiple
 processors without using MPI, but for those power users that have a
@@ -30,16 +30,16 @@ lag before the next release.
 
 ## Options
 
--   added output parameter to [otu.hierarchy](otu.hierarchy)
+-   added output parameter to [otu.hierarchy](/wiki/otu.hierarchy)
     command, options are name and number. name is default. you can
     output either the names of the sequences in the OTUs or the OTU
     numbers.
--   added dups parameter to [remove.seqs](remove.seqs)
+-   added dups parameter to [remove.seqs](/wiki/remove.seqs)
     command.
 -   add a name option to unifrac commands
 -   added output parameter so you can create a square phylip formatted
     matrices from dist.seqs and dist.shared
--   added [parse.list](parse.list) command.
+-   added [parse.list](/wiki/parse.list) command.
 -   output list of files that are created at the end of each command
 -   fixed problem with logfiles that occurred when multiple executions
     of mothur were running at the same time.

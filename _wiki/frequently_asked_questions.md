@@ -29,7 +29,7 @@ http://www.mothur.org/wiki/Cluster.split
 ## I don't have enough RAM or processing power. What are my options?
 
 Check out this page describing how to run mothur using Amazon resources,
-[ mothur ami](Mothur_AMI). You should also check out [Pat's discussion](/blog/2014/Why-such-a-large-distance-matrix/) of
+[ mothur ami](/wiki/Mothur_AMI). You should also check out [Pat's discussion](/blog/2014/Why-such-a-large-distance-matrix/) of
 problems caused by poor quality data.
 
 
@@ -50,17 +50,17 @@ like to contribute source code.
 
 ## Do you have an example analysis?
 
-Yes, [miseq\_sop](MiSeq_SOP) highlights some of the things you can do with mothur.
+Yes, [miseq\_sop](/wiki/MiSeq_SOP) highlights some of the things you can do with mothur.
 
 
 ## Do you do workshops?
 
-Yes! Please see our [workshops](workshops) page for more information.
+Yes! Please see our [workshops](/wiki/workshops) page for more information.
 
 
 ## Why is data missing for some distance levels?
 
-This should not be an issue if you are using the recommended [cluster.split](cluster.split) function.
+This should not be an issue if you are using the recommended [cluster.split](/wiki/cluster.split) function.
 Once upon a time a commonly asked question was why there isn't a
 line for distance 0.XX. If you notice the previous example the distances
 jump from 0.003 to 0.006. Where are 0.004 and 0.005? mothur only outputs
@@ -69,7 +69,7 @@ have data at your favorite distance, that means that nothing changed
 between the previous distance and the next one. Therefore if you want
 OTU data for a distance of 0.005 in this case, you would use the data
 from 0.003. But\... many of the commands that use a label option are
-smart (e.g. [read.otu](read.otu)). So, if you say you want
+smart (e.g. [read.otu](/wiki/read.otu)). So, if you say you want
 data at the 0.03 cutoff, then you can set label=0.03 and mothur will
 figure out what data to give you.
 
@@ -85,7 +85,7 @@ have pairwise distances less than 0.0049. We made the decision that
 because there is error in everything, we should round these distances as
 well and not apply a hard cutoff at 0.01, 0.02, etc. But\... if you
 don't buy into this and want a hard cutoff you can set the hard=T
-option in [cluster](cluster).
+option in [cluster](/wiki/cluster).
 
 
 ## mothur crashes when I read my distance file
@@ -99,11 +99,11 @@ File Size:
     options to help with this. The first is to use a cutoff. By using a
     cutoff mothur will only load distances that are below the cutoff. If
     that is still not enough, there is a command called cluster.split,
-    [cluster.split](cluster.split) which divides the
+    [cluster.split](/wiki/cluster.split) which divides the
     distance matrix, and clusters the smaller pieces separately. You may
     also be able to reduce the size of the original distance matrix by
     using the commands outline in the ,
-    [454_SOP](454_SOP).
+    [454_SOP](/wiki/454_SOP).
 -    You should also check out [Pat's discussion](/blog/2014/Why-such-a-large-distance-matrix/) of
 problems caused by poor quality data.
 
@@ -111,9 +111,9 @@ Wrong Format:
 
 -   This error can be caused by trying to read a column formatted
     distance matrix using the phylip parameter. By default, the
-    [dist.seqs](dist.seqs) command generates a column
+    [dist.seqs](/wiki/dist.seqs) command generates a column
     formatted distance matrix. To make a phylip formatted matrix set the
-    [dist.seqs](dist.seqs) command parameter output to lt.
+    [dist.seqs](/wiki/dist.seqs) command parameter output to lt.
 
 
 ## Why do I have such a large distance matrix
@@ -206,8 +206,8 @@ do not fully overlap.
 ## How do I make a tree?
 
 mothur has two commands that create trees:
-* [clearcut](clearcut)
-* [tree.shared](tree.shared).
+* [clearcut](/wiki/clearcut)
+* [tree.shared](/wiki/tree.shared).
 
 The clearcut commands creates a phylogenetic tree that represents how
 sequences relate. The clearcut program written by Initiative for
@@ -220,16 +220,16 @@ describes the dissimilarity (1-similarity) among multiple groups. Groups
 are clustered using the UPGMA algorithm using the distance between
 communities as calculated using any of the calculators describing the
 similarity in community [
-membership](calculators#similarity-in-community-membership)
+membership](/wiki/calculators#similarity-in-community-membership)
 or [
-structure](calculators#similarity-in-community-structure).
+structure](/wiki/calculators#similarity-in-community-structure).
 
 
 ## How do I know "who" is in an OTU in a shared file?
 
-You can run the [get.otulist](get.otulist) command on the [
-list](List_file) file you used to generate the [
-shared](Shared_file) file. You want to be sure you are
+You can run the [get.otulist](/wiki/get.otulist) command on the [
+list](/wiki/List_file) file you used to generate the [
+shared](/wiki/Shared_file) file. You want to be sure you are
 comparing the same distances. ie 98\_lt\_phylip\_amazon.an.0.03.otulist
 would relate to the 0.03 distance in your shared file. Also, if you
 subsample your data set and want to compare things, be sure to subsample
@@ -245,28 +245,28 @@ get.otulist(list=yourSubsampledListFile, label=0.03)
 
 ## How do I know "who" is in the OTUs represented in the Venn diagram?
 
-You can run the [get.sharedseqs](get.sharedseqs) command. Be
-sure to pay close attention to the ["unique" and "shared" parameters](get.sharedseqs#uniquegroups--sharedgroups).
+You can run the [get.sharedseqs](/wiki/get.sharedseqs) command. Be
+sure to pay close attention to the ["unique" and "shared" parameters](/wiki/get.sharedseqs#uniquegroups--sharedgroups).
 
 ## What are mothur's file types?
 
-mothur uses and creates many [file types](tags#file_types).
+mothur uses and creates many [file types](/wiki/tags#file_types).
 
 
 ## How do I select certain sequences or groups of sequences?
 
 mothur has several "get" and "remove" commands:
-[get.seqs](get.seqs), [get.lineage](get.lineage),
-[get.groups](get.groups), [get.otus](get.otus),
-[get.dists](get.dists),
-[remove.seqs](remove.seqs),
-[remove.lineage](remove.lineage),
-[remove.otus](remove.otus),
-[remove.dists](remove.dists) and
-[remove.groups](remove.groups).
+[get.seqs](/wiki/get.seqs), [get.lineage](/wiki/get.lineage),
+[get.groups](/wiki/get.groups), [get.otus](/wiki/get.otus),
+[get.dists](/wiki/get.dists),
+[remove.seqs](/wiki/remove.seqs),
+[remove.lineage](/wiki/remove.lineage),
+[remove.otus](/wiki/remove.otus),
+[remove.dists](/wiki/remove.dists) and
+[remove.groups](/wiki/remove.groups).
 
 
-## mothur reports a "bad\_alloc" error in the [shhh.flows](shhh.flows) command
+## mothur reports a "bad\_alloc" error in the [shhh.flows](/wiki/shhh.flows) command
 
 This error indicates your computer is running out of memory. The
 shhh.flows command is very memory intensive. This error is most commonly
@@ -299,7 +299,7 @@ would cause a mismatch error downstream.
 
 ## Is there a list of all of mothur's commands?
 
-[Yes!](tags#commands)
+[Yes!](/wiki/tags#commands)
 
 
 ## How do I visualize my results from mothur?

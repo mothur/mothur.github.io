@@ -184,7 +184,7 @@ and I. Default=A, meaning flow order of TACG.
 A lookup file is required to run shhh.flows and it needs to be located
 either in the same folder as your data, next to your executable, or in
 the path you give this option. You can obtain the various [lookup
-files](lookup_files) that are compatible with mothur.
+files](/wiki/lookup_files) that are compatible with mothur.
 
 ### maxiter
 
@@ -235,7 +235,7 @@ than 300 bp are probably bad, but it is a judgement call:
 
 ### keepfirst & removelast
 
-The keepfirst parameter in [trim.seqs](trim.seqs) trims the
+The keepfirst parameter in [trim.seqs](/wiki/trim.seqs) trims the
 sequence to the first keepfirst number of bases after the barcode or
 primers are removed, before the sequence is checked to see if it meets
 the other requirements. The removelast removes the last removelast
@@ -256,7 +256,7 @@ file for each barcode defined in your oligos file:
 ### keepforward
 
 The keepforward parameter allows you indicate you want to keep the
-primer for the [trim.seqs](trim.seqs) command. Default=F.
+primer for the [trim.seqs](/wiki/trim.seqs) command. Default=F.
 
 ### processors
 

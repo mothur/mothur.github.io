@@ -56,7 +56,7 @@ The screen output looks like:
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 

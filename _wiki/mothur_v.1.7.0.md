@@ -3,7 +3,7 @@ title: 'mothur v.1.7.0'
 redirect_from: '/wiki/Mothur_v.1.7.0.html'
 ---
 We hare happy to announce the release of [mothur
-v.1.7.0](mothur_v.1.7.0) in time for the US Thanksgiving
+v.1.7.0](/wiki/mothur_v.1.7.0) in time for the US Thanksgiving
 Holiday. So as you gather around the table and tell your family what you
 are thankful for, be sure to thank your mothur. This has been a great
 month for mothur. The manuscript describing mothur has been published in
@@ -44,29 +44,29 @@ goal of making mothur everything you need it to be.
 
 ## New commands
 
--   [get.otulist](get.otulist) command - Outputs a .otu file
+-   [get.otulist](/wiki/get.otulist) command - Outputs a .otu file
     for each distance specified containing the bin number and a list of
     the sequences in that bin.
 -   hcluster command - clusters distance files of
-    any size. It is slower than the [cluster](cluster)
+    any size. It is slower than the [cluster](/wiki/cluster)
     command, which stores the distance in RAM to increase performance,
     so if you can fit your file in RAM use
-    [cluster](cluster).
--   [classify.seqs](classify.seqs) command - classifies
+    [cluster](/wiki/cluster).
+-   [classify.seqs](/wiki/classify.seqs) command - classifies
     sequences using the knn or bayesian methods.
--   [phylotype](phylotype) command - creates .list, .rabund
+-   [phylotype](/wiki/phylotype) command - creates .list, .rabund
     and .sabund files from a taxonomy file.
 
 ## Updates
 
--   [read.otu](read.otu) command - Added a groups parameter
+-   [read.otu](/wiki/read.otu) command - Added a groups parameter
     to specify which groups you would like to use.
--   [summary.shared](summary.shared) and
-    [collect.shared](collect.shared) commands - added an all
+-   [summary.shared](/wiki/summary.shared) and
+    [collect.shared](/wiki/collect.shared) commands - added an all
     option, which estimates the combined richness of all your groups
-    when using the [sharedchao](sharedchao) and
-    [sharedsobs](sharedsobs) calculators.
--   [trim.seqs](trim.seqs) command - Added a qtrim parameter,
+    when using the [sharedchao](/wiki/sharedchao) and
+    [sharedsobs](/wiki/sharedsobs) calculators.
+-   [trim.seqs](/wiki/trim.seqs) command - Added a qtrim parameter,
     which gives an additional method of processing quality data.
--   [libshuff](libshuff) command - Fixed a bug, which could
+-   [libshuff](/wiki/libshuff) command - Fixed a bug, which could
     affect P-values.

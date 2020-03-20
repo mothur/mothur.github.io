@@ -13,7 +13,7 @@ executable versions [here](https://github.com/mothur/mothur/releases).
 
 ## Building From Scratch
 
-[makefile options](Makefile_options) to consider before you
+[makefile options](/wiki/Makefile_options) to consider before you
 get started.
 
 ### Dependencies
@@ -71,7 +71,7 @@ In the Mac OSX and Linux-type environments, you need to have a C++
 compiler installed. These are typically installed with most linux-type
 operating systems and is on the Mac OSX **installation** CD/DVD. For Mac OSX
 users, you need to install the Xcode developer's tools. After [
-downloading mothur](Download_mothur), decompress it. If you
+downloading mothur](/wiki/Download_mothur), decompress it. If you
 want to house mothur off of your home folder (because don't we all want
 to live with our moms forever?), open a terminal window and enter:
 
@@ -123,7 +123,7 @@ In Linux-type environments, you need to have a C++ compiler installed.
 These are typically pre-installed with most linux-type operating
 systems, and are always in a repository for a distribution (the package
 is named build-essential in Debian and Ubuntu). After [ downloading
-mothur](Download_mothur), decompress it. If you want to house
+mothur](/wiki/Download_mothur), decompress it. If you want to house
 mothur off of your home folder (because don't we all want to live with
 our moms forever?), open a terminal window and enter:
 
@@ -170,7 +170,7 @@ to
 
 You will also need to uncomment a few lines in the makefile, for a more
 detailed explanation of makefile options see, [Makefile
-options](Makefile_options):
+options](/wiki/Makefile_options):
 
     ifeq  ($(strip $(64BIT_VERSION)),yes)
        #if you are using linux user uncomment the following lines
@@ -205,7 +205,7 @@ On RedHat / Centos (as root):
      yum install readline-devel ncurses-devel
 
 If you are having trouble with the readline libraries, try this [How to
-Resolve Readline Issues](How_to_Resolve_Readline_Issues). If
+Resolve Readline Issues](/wiki/How_to_Resolve_Readline_Issues). If
 you are sure you have the readline library installed already, try to add
 -lncurses after -lreadline in the makefile
 
@@ -293,7 +293,7 @@ machine, so this tells it that you're just using the same machine.
 
 ### Windows
 
-See the [downloads](Download_mothur) page to obtain the
+See the [downloads](/wiki/Download_mothur) page to obtain the
 Window's executable version of mothur. mothur comes as a compressed
 file known as a ZIP file. To decompress this file, double click on it
 and follow the instructions. Consider decompressing mothur to a

@@ -5,7 +5,7 @@ redirect_from: '/wiki/Relabund_file'
 ---
 A relabund file is similar to a shared file. The data in a relabund file
 represent relative abundance of an OTU over the samples. It is easiest
-to generate this file using the [get.relabund](get.relabund)
+to generate this file using the [get.relabund](/wiki/get.relabund)
 command. The structure of a relabund file is analogous to an shared
 file. The first column contains the label for the comparison - this will
 be the value for the first column of each line from the original list

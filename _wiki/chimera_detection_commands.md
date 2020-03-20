@@ -4,20 +4,20 @@ redirect_from: '/wiki/Chimera_Detection_Commands'
 ---
 ## Recommended Tools
 
-[chimera.vsearch](chimera.vsearch)
+[chimera.vsearch](/wiki/chimera.vsearch)
 
-[chimera.uchime](chimera.uchime)
+[chimera.uchime](/wiki/chimera.uchime)
 
-[chimera.perseus](chimera.perseus)
+[chimera.perseus](/wiki/chimera.perseus)
 
 ## Other legacy options
 
-[chimera.bellerophon](chimera.bellerophon)
+[chimera.bellerophon](/wiki/chimera.bellerophon)
 
-[chimera.pintail](chimera.pintail)
+[chimera.pintail](/wiki/chimera.pintail)
 
-[chimera.slayer](chimera.slayer)
+[chimera.slayer](/wiki/chimera.slayer)
 
-[chimera.ccode](chimera.ccode)
+[chimera.ccode](/wiki/chimera.ccode)
 
-[chimera.check](chimera.check)
+[chimera.check](/wiki/chimera.check)

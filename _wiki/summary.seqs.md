@@ -49,7 +49,7 @@ long. The numSeqs column is 1 because no name file was provided so we
 assume this sequence is unique.
 
 If we had instead analyzed an aligned sequence file such as the
-greengenes [alignment database](alignment_database):
+greengenes [alignment database](/wiki/alignment_database):
 
     mothur > summary.seqs(fasta=core_set_aligned.imputed.fasta)
 
@@ -68,7 +68,7 @@ Now we see that all of the sequences are at least 1,423 bases long, very
 few have any ambiguous bases and most sequences start by position 109
 and end by position 6,849. These data can be useful for removing
 sequences that don't overlap or that have features indicating poor
-quality using the [screen.seqs](screen.seqs) command.
+quality using the [screen.seqs](/wiki/screen.seqs) command.
 
 ## name
 
@@ -105,7 +105,7 @@ or
 
 ## count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence.
 

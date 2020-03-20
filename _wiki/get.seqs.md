@@ -4,13 +4,13 @@ tags: 'commands'
 redirect_from: '/wiki/Get.seqs.html'
 ---
 The **get.seqs** command takes a list of sequence
-names (.accnos file) and either a [ fastq](fastq_file), [
-fasta](fasta_file), [ name](name_file), [
-group](group_file), [ list](list_file), [
-count](Count_File) or [
-align.report](align.report_file) file to generate a new file
+names (.accnos file) and either a [ fastq](/wiki/fastq_file), [
+fasta](/wiki/fasta_file), [ name](/wiki/name_file), [
+group](/wiki/group_file), [ list](/wiki/list_file), [
+count](/wiki/Count_File) or [
+align.report](/wiki/align.report_file) file to generate a new file
 that contains only the sequences in the list. This command may be used
-in conjunction with the [list.seqs](list.seqs) command to
+in conjunction with the [list.seqs](/wiki/list.seqs) command to
 help screen a sequence collection. To complete this analysis, you need
 to download the folder compressed in the [
 Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) archive.
@@ -20,10 +20,10 @@ Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) arc
 
 To run get.seqs, you must provide the accnos option and at least one
 other option. The command will generate a \*.pick.\* file. To generate
-an accnos file, let's first run [unique.seqs](unique.seqs),
-[summary.seqs](summary.seqs),
-[screen.seqs](screen.seqs), and
-[list.seqs](list.seqs):
+an accnos file, let's first run [unique.seqs](/wiki/unique.seqs),
+[summary.seqs](/wiki/summary.seqs),
+[screen.seqs](/wiki/screen.seqs), and
+[list.seqs](/wiki/list.seqs):
 
     mothur > unique.seqs(fasta=esophagus.fasta)
 
@@ -46,7 +46,7 @@ an accnos file, let's first run [unique.seqs](unique.seqs),
 This generates esophagus.unique.good.accnos, a file with 527 sequences.
 
 A .accnos file is simply a list of file names that meets some given
-criterion (see [list.seqs](list.seqs) for further detail). If
+criterion (see [list.seqs](/wiki/list.seqs) for further detail). If
 you have a subset of sequences that are of interest to you, and you want
 to retrieve them sequences from a larger .fasta file, another option for
 generating a .accnos file is to create your list (a single column of
@@ -119,7 +119,7 @@ added.
 
 ### count option
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 

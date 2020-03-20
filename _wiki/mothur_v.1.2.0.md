@@ -2,21 +2,21 @@
 title: 'mothur v.1.2.0'
 redirect_from: '/wiki/Mothur_v.1.2.0.html'
 ---
-We are happy to release [mothur v.1.2.0](mothur_v.1.2.0)
+We are happy to release [mothur v.1.2.0](/wiki/mothur_v.1.2.0)
 today, April 24, 2009. Since our last release we have nearly doubled the
 number of mothur users. Thanks to the 258 of you for your continued
 support! This is a very exciting release. First, by making the libshuff
 algorithm available in mothur, we have now replaced each of our previous
 tools with a more flexible implementation in mothur. For example, in
 s-libshuff you needed to sort your matrix prior to input, which was a
-pain. Now, with the [libshuff](libshuff) command this is no
+pain. Now, with the [libshuff](/wiki/libshuff) command this is no
 longer necessary as you can instead provide a group file. Second, now
 that we have finished the old stuff, we are moving into newer ventures.
 In this release we provide four new commands which will enable you to
-generate [ heat maps](heatmap.bin) representing
-rank-abundance data, generate [ venn](venn) diagrams, [
-obtain representative sequences](get.oturep) from each OTU,
-and generate a file that is [ labelled and sorted](bin.seqs)
+generate [ heat maps](/wiki/heatmap.bin) representing
+rank-abundance data, generate [ venn](/wiki/venn) diagrams, [
+obtain representative sequences](/wiki/get.oturep) from each OTU,
+and generate a file that is [ labelled and sorted](/wiki/bin.seqs)
 according to a list file. Third, we are now ready to start working on a
 manuscript describing mothur.
 
@@ -33,7 +33,7 @@ that explains what the calculator is trying to do. Third, people learn
 from example and find it very helpful to copy someone else's work to
 learn how to use a piece of software. This month I have posted a page
 describing an [esophageal community
-analysis](esophageal_community_analysis). I would love to
+analysis](/wiki/esophageal_community_analysis). I would love to
 have more of these pages for people to look at and learn from. But the
 problem with getting people to contribute to such an endeavor is how to
 reward and give credit to contributors. So here's an offer that no
@@ -64,54 +64,54 @@ similarity, and additional calculators.
 
 ## Major Feature Additions
 
--   [libshuff](libshuff) - carry out a libshuff analysis
+-   [libshuff](/wiki/libshuff) - carry out a libshuff analysis
     using the discrete or integral form with a group file
--   [heatmap.bin](heatmap.bin) - generate a heatmap of the
+-   [heatmap.bin](/wiki/heatmap.bin) - generate a heatmap of the
     relative abundance for single or multiple samples
--   [venn](venn) - generate a Venn diagram using the observed
+-   [venn](/wiki/venn) - generate a Venn diagram using the observed
     or estimated richness for up to 4 groups
--   [bin.seqs](bin.seqs) - output a fasta-formatted sequence
+-   [bin.seqs](/wiki/bin.seqs) - output a fasta-formatted sequence
     file with the OTU membership for each sequence
--   [get.oturep](get.oturep) - output a fasta-formatted
+-   [get.oturep](/wiki/get.oturep) - output a fasta-formatted
     sequence file with a representative sequence for each OTU
 
 ## Minor Feature Additions
 
 -   modified read.dist to read matrix for libshuff command
--   New [calculators](calculators):
-    -   [chao](chao) - updated the formulae to reflect what
+-   New [calculators](/wiki/calculators):
+    -   [chao](/wiki/chao) - updated the formulae to reflect what
         is done in EstimateS
-    -   [logseries](logseries) - test whether observed data
+    -   [logseries](/wiki/logseries) - test whether observed data
         follow the log series distribution
-    -   [geometric](geometric) - test whether observed data
+    -   [geometric](/wiki/geometric) - test whether observed data
         follow the geometric series distribution
-    -   [bstick](bstick) - tests whether observed data follow
+    -   [bstick](/wiki/bstick) - tests whether observed data follow
         the broken stick distribution
-    -   [qstat](qstat) - the Q Statistic
-    -   [bergerparker](bergerparker) - the Berger-Parker
+    -   [qstat](/wiki/qstat) - the Q Statistic
+    -   [bergerparker](/wiki/bergerparker) - the Berger-Parker
         index
-    -   [nseqs](nseqs) - the number of sequences in a sample
-    -   [coverage](coverage) - the coverage of the sample
-    -   [whittaker](whittaker) - the Whittaker similarity
+    -   [nseqs](/wiki/nseqs) - the number of sequences in a sample
+    -   [coverage](/wiki/coverage) - the coverage of the sample
+    -   [whittaker](/wiki/whittaker) - the Whittaker similarity
         index
-    -   [sharednseqs](sharednseqs) - the number of sequences
+    -   [sharednseqs](/wiki/sharednseqs) - the number of sequences
         in the two samples
-    -   [anderberg](anderberg) - the Anderberg index
-    -   [braycurtis](braycurtis) - the Bray-Curtis similarity
+    -   [anderberg](/wiki/anderberg) - the Anderberg index
+    -   [braycurtis](/wiki/braycurtis) - the Bray-Curtis similarity
         index
-    -   [kulczynski](kulczynski) - the Kulczynski index
-    -   [kulczynskicody](kulczynskicody) - the
+    -   [kulczynski](/wiki/kulczynski) - the Kulczynski index
+    -   [kulczynskicody](/wiki/kulczynskicody) - the
         Kulczynski-Cody index
-    -   [lennon](lennon) - the Lennon similarity index
-    -   [morisitahorn](morisitahorn) - the Morista-Horn
+    -   [lennon](/wiki/lennon) - the Lennon similarity index
+    -   [morisitahorn](/wiki/morisitahorn) - the Morista-Horn
         similarity index
-    -   [ochiai](ochiai) - the Ochiai similarity index
+    -   [ochiai](/wiki/ochiai) - the Ochiai similarity index
 
 ## Wiki Improvements
 
 -   Added manual calculations and mothur output for all of the
-    [calculators](calculators) available in mothur
+    [calculators](/wiki/calculators) available in mothur
 -   Added the [esophageal community
-    analysis](esophageal_community_analysis) page as an
+    analysis](/wiki/esophageal_community_analysis) page as an
     example case study of how to use mothur to analyze community
     sequence data

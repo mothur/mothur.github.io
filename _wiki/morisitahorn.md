@@ -6,8 +6,8 @@ redirect_from: '/wiki/Morisitahorn'
 The **morisitahorn** calculator returns the
 Morisita-Horn index describing the dissimilarity between the structure
 of two communities. This calculator can be used in the
-[summary.shared](summary.shared) and
-[collect.shared](collect.shared) commands.
+[summary.shared](/wiki/summary.shared) and
+[collect.shared](/wiki/collect.shared) commands.
 
 $$D_{Morisita-Horn}=1-2\frac{\sum\frac{S_{A,i}}{n}\frac{S_{B,i}}{m}}{\sum \left(\frac{S_{A,i}}{n}\right)^2+\sum \left(\frac{S_{B,i}}{m}\right)^2}$$
 
@@ -29,7 +29,7 @@ commands:
     mothur > cluster()
     mothur > read.otu(list=98_lt_phylip_amazon.fn.list, group=amazon.groups, label=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[shared file](shared_file) will
+The 98\_lt\_phylip\_amazon.fn.[shared file](/wiki/shared_file) will
 contain the following two lines:
 
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2   1   1   3   2   1   1   1   1   2   1   1   2   5   1   1   1   1   2   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   

@@ -6,7 +6,7 @@ redirect_from: '/wiki/Lefse'
 The **lefse** command is modeled after the LEfSe program [written and
 published by the Huttenhower
 lab](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-6-r60).
-See [ make.lefse](Make.lefse) for formating files for input
+See [ make.lefse](/wiki/Make.lefse) for formating files for input
 into the original LEfSe program.
 
 ## Default Setting

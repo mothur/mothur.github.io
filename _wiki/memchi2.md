@@ -5,9 +5,9 @@ redirect_from: '/wiki/Memchi2'
 ---
 The **memchi2** calculator returns a membership-based
 distance based on the Chi-squared statistic. This calculator can be used
-in the [summary.shared](summary.shared),
-[collect.shared](collect.shared), and
-[dist.shared](dist.shared) commands.
+in the [summary.shared](/wiki/summary.shared),
+[collect.shared](/wiki/collect.shared), and
+[dist.shared](/wiki/dist.shared) commands.
 
 $$D_{ab} = \sqrt{S_T \sum_{j=1}^{S_T} \left ( \frac {1}{S_{+j}} \left ( \frac{S_{Aj}}{S_{A+}} - \frac{S_{Bj}}{S_{B+}} \right )^2 \right ) }$$
 
@@ -29,7 +29,7 @@ commands:
     mothur > cluster()
     mothur > read.otu(list=98_lt_phylip_amazon.fn.list, group=amazon.groups, label=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[shared file](shared_file) will
+The 98\_lt\_phylip\_amazon.fn.[shared file](/wiki/shared_file) will
 contain the following two lines:
 
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2   1   1   3   2   1   1   1   1   2   1   1   2   5   1   1   1   1   2   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   

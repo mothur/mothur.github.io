@@ -4,13 +4,13 @@ tags: 'commands'
 redirect_from: '/wiki/Remove.seqs.html'
 ---
 The **remove.seqs** command takes a list of
-sequence names and either a [ fastq](fastq_file), [
-fasta](fasta_file), [ name](name_file), [
-group](group_file), [ list](list_file), [
-count](Count_File) or [
-align.report](align.report_file) file to generate a new file
+sequence names and either a [ fastq](/wiki/fastq_file), [
+fasta](/wiki/fasta_file), [ name](/wiki/name_file), [
+group](/wiki/group_file), [ list](/wiki/list_file), [
+count](/wiki/Count_File) or [
+align.report](/wiki/align.report_file) file to generate a new file
 that does not contain the sequences in the list. This command may be
-used in conjunction with the [list.seqs](list.seqs) command
+used in conjunction with the [list.seqs](/wiki/list.seqs) command
 to help screen a sequence collection. To complete this analysis, you
 need to download the folder compressed in the [
 Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) archive.
@@ -24,10 +24,10 @@ other option. The command will generate a \*.pick.\* file.
 ### accnos option
 
 To generate an accnos file, let's first run
-[unique.seqs](unique.seqs),
-[summary.seqs](summary.seqs),
-[screen.seqs](screen.seqs), and
-[list.seqs](list.seqs):
+[unique.seqs](/wiki/unique.seqs),
+[summary.seqs](/wiki/summary.seqs),
+[screen.seqs](/wiki/screen.seqs), and
+[list.seqs](/wiki/list.seqs):
 
     mothur > unique.seqs(fasta=esophagus.fasta)
 
@@ -104,7 +104,7 @@ removed.
 
 ### count option
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 
@@ -203,5 +203,3 @@ contigsreport file.
 -   1.44.0 - Fixes bug with **remove.seqs** not removing empty groups from
     the count table.
     [\#675](https://github.com/mothur/mothur/issues/675)
-
-

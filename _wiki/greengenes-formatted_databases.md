@@ -5,7 +5,7 @@ redirect_from: '/wiki/Greengenes-formatted_databases'
 The greengenes-based alignment is 7,682 columns wide. Because of the
 poor alignment quality in the variable regions we strongly discourage
 people from using it for their "real" analysis. One side effect of
-this is that [chimera.slayer](chimera.slayer) detects fewer
+this is that [chimera.slayer](/wiki/chimera.slayer) detects fewer
 real chimeras when using greengenes-aligned sequences compared to
 SILVA-aligned sequences.
 
@@ -16,7 +16,7 @@ SILVA-aligned sequences.
     This is from the August 2013 release of gg\_13\_8\_99 and contains
     202,421 bacterial and archaeal sequences. The source data for this
     file was downloaded from the greengenes.microbio.me ftp server and
-    should be used with [classify.seqs](classify.seqs).
+    should be used with [classify.seqs](/wiki/classify.seqs).
     Approximately 10% of the sequences in this dataset have spices-level
     names. Depending on your sample and 16S rRNA gene region of
     interest, you might find that this reference taxonomy does better
@@ -30,7 +30,7 @@ SILVA-aligned sequences.
     202,421 bacterial and archaeal sequences. The source data for this
     file was downloaded from the greengenes.microbio.me ftp server and
     should be used (if necessary, but why!?) to align sequences with
-    [align.seqs](align.seqs). The greengenes-based alignment
+    [align.seqs](/wiki/align.seqs). The greengenes-based alignment
     is 7,682 columns wide. Because of the poor alignment quality in the
     variable regions we strongly discourage people from using it for
     their "real" analysis. A README file is included that describes
@@ -41,10 +41,10 @@ SILVA-aligned sequences.
     not necessarily cover the entire 16S rRNA gene.  This file was
     downloaded from the [Broad Institutes sourceforge
     website](http://microbiomeutil.sourceforge.net) and should be used
-    with [chimera.slayer](chimera.slayer) or with
-    [chimera.uchime](chimera.uchime). One side effect of the
+    with [chimera.slayer](/wiki/chimera.slayer) or with
+    [chimera.uchime](/wiki/chimera.uchime). One side effect of the
     crappy greengenes alignment is that
-    [chimera.slayer](chimera.slayer) detects fewer real
+    [chimera.slayer](/wiki/chimera.slayer) detects fewer real
     chimeras when using greengenes-aligned sequences compared to
     SILVA-aligned sequences.
 
@@ -56,7 +56,7 @@ SILVA-aligned sequences.
     202,421 bacterial and archaeal sequences. The source data for this
     file was downloaded from the [second genome/greengenes
     website](https://greengenes.secondgenome.com) and should be used with
-    [classify.seqs](classify.seqs).
+    [classify.seqs](/wiki/classify.seqs).
 -   [greengenes reference
     alignment](https://www.mothur.org/w/images/c/cd/Gg_13_5_99.refalign.tgz) -
     This is from the May 2013 release of gg\_13\_5\_99 and contains
@@ -64,7 +64,7 @@ SILVA-aligned sequences.
     file was downloaded from the [second genome/greengenes
     website](https://greengenes.secondgenome.com) and should be used (if
     necessary, but why!?) to align sequences with
-    [align.seqs](align.seqs). A readme is included to
+    [align.seqs](/wiki/align.seqs). A readme is included to
     describe how this file was generated.
 -   [greengenes reference
     alignment](https://www.mothur.org/w/images/7/72/Greengenes.alignment.zip) -

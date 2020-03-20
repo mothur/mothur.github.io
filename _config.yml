@@ -80,7 +80,6 @@ exclude: [_site, _mw_files, CHANGELOG.md, LICENSE, README.md, vendor]
 collections:
   wiki:
     output: true
-    permalink: /:collection/:path
   redirects:
     output: true
 

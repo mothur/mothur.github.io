@@ -6,9 +6,9 @@ redirect_from: '/wiki/Get.lineage.html'
 The **get.lineage** command reads a taxonomy file
 and taxon then generates a new file containing only sequences from the
 specified taxon. You may also include either a [
-fasta](fasta_file), [ name](name_file), [
-group](group_file), [ list](list_file), [
-count](Count_File) or [align.report file](align.report_file) to this command and mothur will
+fasta](/wiki/fasta_file), [ name](/wiki/name_file), [
+group](/wiki/group_file), [ list](/wiki/list_file), [
+count](/wiki/Count_File) or [align.report file](/wiki/align.report_file) to this command and mothur will
 generate new files for each of those containing only the selected
 sequences. To complete this tutorial, you are encouraged to obtain the [
 AbRecovery](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) dataset.
@@ -22,7 +22,7 @@ one or more taxon names. The command will generate a \*.pick.\* file.
 ### Running with a taxonomy file
 
 To generate an taxonomy file, let's first run
-[classify.seqs](classify.seqs):
+[classify.seqs](/wiki/classify.seqs):
 
     mothur > classify.seqs(fasta=abrecovery.fasta, template=silva.nogap.fasta, taxonomy=silva.bacteria.silva.tax)
     mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;)
@@ -52,7 +52,7 @@ percent for Bacteria and at or above 90 for Firmicutes.
 ### Running with a constaxonomy file
 
 First we need to find the consensus taxonomies for each OTU with the
-[classify.otu](classify.otu) command:
+[classify.otu](/wiki/classify.otu) command:
 
     mothur > classify.otu(list=final.an.list, name=final.names, taxonomy=final.taxonomy)
     mothur > get.lineage(constaxonomy=final.an.0.03.cons.taxonomy, list=final.an.list, taxon=Bacteria;Firmicutes;, label=0.03)
@@ -98,7 +98,7 @@ sequences from Bacteria;Firmicutes;
 
 ## count option
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 

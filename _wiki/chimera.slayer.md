@@ -7,7 +7,7 @@ The **chimera.slayer** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The developers of the original
 algorithm suggest using a special template reference set (i.e. gold). We
 provide a silva-based alignment of this dataset with our [silva
-reference files](silva_reference_files). You will need to
+reference files](/wiki/silva_reference_files). You will need to
 have a copy of the megablast and formatdb executables in a folder called
 blast/bin, where the blast folder is next to the mothur executable. The
 version of megablast/formatdb that you need can be found in
@@ -62,7 +62,7 @@ sequences will be used as potential parents.
 
     mothur > chimera.slayer(fasta=stool.trim.unique.good.filter.unique.precluster.fasta, name=stool.trim.unique.good.filter.unique.precluster.names, reference=self)
 
-or with a [ count file](Count_File):
+or with a [ count file](/wiki/Count_File):
 
     mothur > chimera.slayer(fasta=stool.trim.unique.good.filter.unique.precluster.fasta, count=stool.trim.unique.good.filter.unique.precluster.count_table, reference=self)
 
@@ -102,7 +102,7 @@ sequence.
 
     mothur > chimera.slayer(fasta=stool.trim.unique.good.filter.unique.precluster.fasta, name=stool.trim.unique.good.filter.unique.precluster.names, group=stool.good.groups, reference=self)
 
-or if your [ count file](Count_File) contains group
+or if your [ count file](/wiki/Count_File) contains group
 information:
 
     mothur > chimera.slayer(fasta=stool.trim.unique.good.filter.unique.precluster.fasta, count=stool.trim.unique.good.filter.unique.precluster.count_file, reference=self)

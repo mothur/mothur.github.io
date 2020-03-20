@@ -13,7 +13,7 @@ Files](https://mothur.s3.us-east-2.amazonaws.com/wiki/taxonomyfiles.zip).
 
 In order to run the phylotype() command, you need to generate a taxonomy
 file. You can do this using the
-[classify.seqs](classify.seqs) command, enter the following
+[classify.seqs](/wiki/classify.seqs) command, enter the following
 command:
 
     mothur > classify.seqs(fasta=abrecovery.fasta, template=silva.bacteria.fasta, taxonomy=silva.full.taxonomy)

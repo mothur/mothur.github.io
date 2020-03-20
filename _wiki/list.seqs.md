@@ -4,14 +4,14 @@ tags: 'commands'
 redirect_from: '/wiki/List.seqs.html'
 ---
 The **list.seqs** command will write out the names
-of the sequences found within a [ fastq](fastq_file), [
-fasta](fasta_file), [ name](name_file), [
-group](group_file), [ count](Count_File), [
-list](list_file), or [
-align.report](align.report_file) file. This could be useful
-for using the [get.seqs](get.seqs) and
-[remove.seqs](remove.seqs) commands as well as to generate a
-[group file](group_file). To complete this analysis, you need
+of the sequences found within a [ fastq](/wiki/fastq_file), [
+fasta](/wiki/fasta_file), [ name](/wiki/name_file), [
+group](/wiki/group_file), [ count](/wiki/Count_File), [
+list](/wiki/list_file), or [
+align.report](/wiki/align.report_file) file. This could be useful
+for using the [get.seqs](/wiki/get.seqs) and
+[remove.seqs](/wiki/remove.seqs) commands as well as to generate a
+[group file](/wiki/group_file). To complete this analysis, you need
 to download the folder compressed in the [
 Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) archive.
 
@@ -48,13 +48,13 @@ The resulting esophagus.accnos file looks something like:
 ### name option
 
 The name option is used as presented in the following command (be sure
-to run [unique.seqs](unique.seqs) on esophagus.fasta first):
+to run [unique.seqs](/wiki/unique.seqs) on esophagus.fasta first):
 
     mothur > list.seqs(name=esophagus.names)
 
 ### count option
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 

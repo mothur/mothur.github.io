@@ -3,7 +3,7 @@ title: 'mothur v.1.34.0'
 redirect_from: '/wiki/Mothur_v.1.34.0.html'
 ---
 After a long delay, we are very happy to announce the release of
-[mothur\_v.1.34.0](mothur_v.1.34.0) ! We're anxious to get
+[mothur\_v.1.34.0](/wiki/mothur_v.1.34.0) ! We're anxious to get
 back on our normal release schedule of a new version ever month or two.
 In the current release, we've added a new machine learning algorithm
 classify.svm and added a bunch of new
@@ -12,7 +12,7 @@ fixes that have also been incorporated into the release. Some of the
 feature updates that you might find most interesting is the addition of
 the shannon range calculator that was published last year in ISMEJ by
 Haegeman and colleagues and the addition of the [Jensen-Shannon
-Divergence](Jensen-Shannon_Divergence) calculator. You may
+Divergence](/wiki/Jensen-Shannon_Divergence) calculator. You may
 notice that we don't quite have the make.sra command up and running
 yet. It's still very much in the works and we have a lot of the
 components in place to make it happen. We are working with the folks at
@@ -39,32 +39,32 @@ don't hesitate to shoot us a note!
 
 ## New commands
 
--   [get.mimarkspackage](get.mimarkspackage) - create blank
+-   [get.mimarkspackage](/wiki/get.mimarkspackage) - create blank
     mimarks package form for sra command
--   [make.sra](make.sra) - create submission ready files
+-   [make.sra](/wiki/make.sra) - create submission ready files
 -   classify.svm - Rank OTUs using the
     support vector machine learning algorithm
 
 ## Feature updates
 
--   added [shannonrange](shannonrange) calculator to
-    [collect.single](collect.single),
-    [summary.single](summary.single),
-    [rarefaction.single](rarefaction.single).
--   added shared parameter to [count.seqs](count.seqs) aka
+-   added [shannonrange](/wiki/shannonrange) calculator to
+    [collect.single](/wiki/collect.single),
+    [summary.single](/wiki/summary.single),
+    [rarefaction.single](/wiki/rarefaction.single).
+-   added shared parameter to [count.seqs](/wiki/count.seqs) aka
     make.table command. Can be used to transpose the shared file for use
     with other software packages.
--   [consensus.seqs](consensus.seqs) cutoff parameter can now
+-   [consensus.seqs](/wiki/consensus.seqs) cutoff parameter can now
     be a float. cutoff=97.5.
--   [dist.shared](dist.shared) - when subsample used \*.ave
+-   [dist.shared](/wiki/dist.shared) - when subsample used \*.ave
     distance matrix saved as current phylip file
--   [tree.shared](tree.shared) - added [Jensen-Shannon
-    Divergence](Jensen-Shannon_Divergence) calculator, jsd
+-   [tree.shared](/wiki/tree.shared) - added [Jensen-Shannon
+    Divergence](/wiki/Jensen-Shannon_Divergence) calculator, jsd
     and [Square Root Jensen-Shannon
-    Divergence](Square_Root_Jensen-Shannon_Divergence)
+    Divergence](/wiki/Square_Root_Jensen-Shannon_Divergence)
     calculator, rjsd. -
     [https://forum.mothur.org/viewtopic.php?f=5&t=2961](https://forum.mothur.org/viewtopic.php?f=5&t=2961)
--   [cluster.split](cluster.split) - added the file option
+-   [cluster.split](/wiki/cluster.split) - added the file option
     which allows you to enter your file containing your list of column
     and names/count files as well as the singleton file. This file is
     mothur generated, when you run cluster.split() with the cluster=f
@@ -78,55 +78,55 @@ don't hesitate to shoot us a note!
     unsure if the cluster step will have RAM issue with multiple
     processors, you can avoid running the first part of the command
     multiple times.
--   [make.contigs](make.contigs) - added checkorient
+-   [make.contigs](/wiki/make.contigs) - added checkorient
     parameter. - [https://forum.mothur.org/viewtopic.php?f=3&t=2993](https://forum.mothur.org/viewtopic.php?f=3&t=2993)
--   [fastq.info](fastq.info), [sffinfo](sffinfo),
-    [trim.flows](trim.flows)- added checkorient parameter.
--   [trim.flows](trim.flows) can now process paired barcodes
+-   [fastq.info](/wiki/fastq.info), [sffinfo](/wiki/sffinfo),
+    [trim.flows](/wiki/trim.flows)- added checkorient parameter.
+-   [trim.flows](/wiki/trim.flows) can now process paired barcodes
     and primers.
 
 ## Bug fixes
 
--   [fastq.info](fastq.info) stopped processing after 100001
+-   [fastq.info](/wiki/fastq.info) stopped processing after 100001
     seqs. - [https://forum.mothur.org/viewtopic.php?f=4&t=2829](https://forum.mothur.org/viewtopic.php?f=4&t=2829) -
     fixed 1.33.1
--   [make.biom](make.biom) picrust couldn't handle
+-   [make.biom](/wiki/make.biom) picrust couldn't handle
     unclassifieds -
     [https://forum.mothur.org/viewtopic.php?f=4&t=2816](https://forum.mothur.org/viewtopic.php?f=4&t=2816) - fixed
     1.33.1
--   [create.database](create.database) OutLabel bug -
+-   [create.database](/wiki/create.database) OutLabel bug -
     "cannot convert Otu0001 to an integer" fixed 1.33.3
--   [merge.sfffiles](merge.sfffiles) -Windows version caused
+-   [merge.sfffiles](/wiki/merge.sfffiles) -Windows version caused
     substring error on parse. fixed 1.33.2 3/11 version.
--   [chimera.slayer](chimera.slayer) - "\[megablast\] FATAL
+-   [chimera.slayer](/wiki/chimera.slayer) - "\[megablast\] FATAL
     ERROR: blast: Unable to open input file" on linux version with
     multiple processors. fixed 1.33.3
--   [rarefaction.single](rarefaction.single) -
+-   [rarefaction.single](/wiki/rarefaction.single) -
     \*.groups.rarefaction file labels in wrong order -
     [https://forum.mothur.org/viewtopic.php?f=4&t=2963](https://forum.mothur.org/viewtopic.php?f=4&t=2963) - fixed
     1.33.3
--   [align.seqs](align.seqs) - Windows align.seqs flip=t
+-   [align.seqs](/wiki/align.seqs) - Windows align.seqs flip=t
     caused segfault fixed 1.33.2 3/19 version
--   [summary.shared](summary.shared) subsample issue -
+-   [summary.shared](/wiki/summary.shared) subsample issue -
     [https://forum.mothur.org/viewtopic.php?f=4&t=2861](https://forum.mothur.org/viewtopic.php?f=4&t=2861) - fixed
     1.33.3
 -   seq.error is changing the current fasta file to the seq file. it
     shouldn't change the current fasta file.
--   [trim.seqs](trim.seqs) - qaverage bug scrapping seqs -
+-   [trim.seqs](/wiki/trim.seqs) - qaverage bug scrapping seqs -
     fixed 1.33.3 4/4.
--   [make.biom](make.biom) - "biom error: cannot convert
+-   [make.biom](/wiki/make.biom) - "biom error: cannot convert
     null to a float"
--   [get.seqs](get.seqs),
-    [remove.seqs](remove.seqs),
-    [remove.lineage](remove.lineage),
-    [get.lineage](get.lineage),
-    [screen.seqs](screen.seqs),
-    [pcr.seqs](pcr.seqs) changed read of count file causing
+-   [get.seqs](/wiki/get.seqs),
+    [remove.seqs](/wiki/remove.seqs),
+    [remove.lineage](/wiki/remove.lineage),
+    [get.lineage](/wiki/get.lineage),
+    [screen.seqs](/wiki/screen.seqs),
+    [pcr.seqs](/wiki/pcr.seqs) changed read of count file causing
     file mismatches with count files that didn't include group data.
--   [clearcut](clearcut) - distances out of range bug
--   [dist.shared](dist.shared) -
+-   [clearcut](/wiki/clearcut) - distances out of range bug
+-   [dist.shared](/wiki/dist.shared) -
     [https://forum.mothur.org/viewtopic.php?f=3&t=3186](https://forum.mothur.org/viewtopic.php?f=3&t=3186)
--   [make.contigs](make.contigs) - rindex files -
+-   [make.contigs](/wiki/make.contigs) - rindex files -
     [https://forum.mothur.org/viewtopic.php?f=3&t=3159&start=10#p9096](https://forum.mothur.org/viewtopic.php?f=3&t=3159&start=10#p9096)
 
 ## Videoblog

@@ -24,9 +24,9 @@ decompress it.
 
 You may run the command in denovo or reference mode. Either a
 [phylip-formatted distance
-matrix](phylip-formatted_distance_matrix) or a
+matrix](/wiki/phylip-formatted_distance_matrix) or a
 [column-formatted distance
-matrix](column-formatted_distance_matrix) must be inputted
+matrix](/wiki/column-formatted_distance_matrix) must be inputted
 for cluster to be successful, the default output of the dist.seqs
 command is the column-format. If you have a favorite format, please let
 us know and we can work with you to incorporate that feature into
@@ -70,7 +70,7 @@ The sens.spec results:
 ### phylip
 
 To read in a [phylip-formatted distance
-matrix](phylip-formatted_distance_matrix) you need to use the
+matrix](/wiki/phylip-formatted_distance_matrix) you need to use the
 phylip option:
 
     mothur > ...... enter command ... 
@@ -81,9 +81,9 @@ lower-triangular, mothur is able to figure this out for you.
 ### column & name or count
 
 To read in a [column-formatted distance
-matrix](column-formatted_distance_matrix) you must provide a
+matrix](/wiki/column-formatted_distance_matrix) you must provide a
 filename for the name or count option. The .name file was generated
-during the [unique.seqs](unique.seqs) command.
+during the [unique.seqs](/wiki/unique.seqs) command.
 
     mothur > cluster.fit(column=marine.0_2.01.dist, name=marine.0_2.01.names)
 
@@ -96,7 +96,7 @@ lower-triangle and mothur will figure it out.
 
 ### name
 
-A [name file](name_file) contains two columns. The first
+A [name file](/wiki/name_file) contains two columns. The first
 column contains the name of a reference sequence that is in a distance
 matrix and the second column contains the names of the sequences
 (separated by commas) that the reference sequence represents. The list
@@ -147,7 +147,7 @@ artificially inflate the matrix to its full size.
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
 the correct OTU's. Unlike, when you use a name file the list file

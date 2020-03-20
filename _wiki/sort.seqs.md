@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Sort.seqs.html'
 ---
 The **sort.seqs** command puts sequences from a
-fasta, name, [ count](Count_File), group, quality, flow or
+fasta, name, [ count](/wiki/Count_File), group, quality, flow or
 taxonomy file in the same order.
 
 
@@ -28,7 +28,7 @@ To use the name option, follow this example:
 
 ### count option
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence.
 

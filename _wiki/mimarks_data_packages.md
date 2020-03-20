@@ -17,7 +17,7 @@ with 'missing'.
 ### air
 
 For more information about the air environment, [ click
-here](Air_environment).
+here](/wiki/Air_environment).
 
 The fields that are required for the air package are: \*sample\_name
 \*description \*sample\_title \*seq\_methods \*organism
@@ -27,7 +27,7 @@ The fields that are required for the air package are: \*sample\_name
 ### host\_associated
 
 For more information about the host-associated environment [ click
-here](Host_Associated).
+here](/wiki/Host_Associated).
 
 The fields that are required for the host\_associated package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -37,7 +37,7 @@ The fields that are required for the host\_associated package are:
 ### human\_associated
 
 For more information about the human-associated environment [ click
-here](Human_Associated).
+here](/wiki/Human_Associated).
 
 The fields that are required for the human\_associated package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -47,7 +47,7 @@ The fields that are required for the human\_associated package are:
 ### human\_gut
 
 For more information about the human\_gut environment [ click
-here](Human_gut).
+here](/wiki/Human_gut).
 
 The fields that are required for the human\_gut package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -57,7 +57,7 @@ The fields that are required for the human\_gut package are:
 ### human\_oral
 
 For more information about the human\_oral environment [ click
-here](Human_oral).
+here](/wiki/Human_oral).
 
 The fields that are required for the human\_oral package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -67,7 +67,7 @@ The fields that are required for the human\_oral package are:
 ### human\_skin
 
 For more information about the human\_skin environment [ click
-here](Human_skin).
+here](/wiki/Human_skin).
 
 The fields that are required for the human\_skin package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -77,7 +77,7 @@ The fields that are required for the human\_skin package are:
 ### human\_vaginal
 
 For more information about human\_vaginal environment [ click
-here](Human_vaginal).
+here](/wiki/Human_vaginal).
 
 The fields that are required for the human\_vaginal package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -87,7 +87,7 @@ The fields that are required for the human\_vaginal package are:
 ### microbial
 
 For more information about the microbial environment [ click
-here](Microbial).
+here](/wiki/Microbial).
 
 The fields that are required for the microbial package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -97,7 +97,7 @@ The fields that are required for the microbial package are:
 ### miscellaneous
 
 For more information about the miscellaneous environment [ click
-here](Miscellaneous).
+here](/wiki/Miscellaneous).
 
 The fields that are required for the miscellaneous package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -107,7 +107,7 @@ The fields that are required for the miscellaneous package are:
 ### plant\_associated
 
 For more information about the plant-associated environment [ click
-here](Plant_associated).
+here](/wiki/Plant_associated).
 
 The fields that are required for the plant\_associated package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -117,7 +117,7 @@ The fields that are required for the plant\_associated package are:
 ### sediment
 
 For more information about the sediment environment [ click
-here](Sediment).
+here](/wiki/Sediment).
 
 The fields that are required for the sediment package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -127,7 +127,7 @@ The fields that are required for the sediment package are:
 ### soil
 
 For more information about the soil environment [ click
-here](Soil).
+here](/wiki/Soil).
 
 The fields that are required for the soil package are: \*sample\_name
 \*description \*sample\_title \*seq\_methods \*organism
@@ -137,7 +137,7 @@ The fields that are required for the soil package are: \*sample\_name
 ### wastewater
 
 For more information about the wastewater environment [ click
-here](Wastewater).
+here](/wiki/Wastewater).
 
 The fields that are required for the wastewater package are:
 \*sample\_name \*description \*sample\_title \*seq\_methods \*organism
@@ -147,7 +147,7 @@ The fields that are required for the wastewater package are:
 ### water
 
 For more information about the water environment [ click
-here](Water).
+here](/wiki/Water).
 
 The fields that are required for the water package are: \*sample\_name
 \*description \*sample\_title \*seq\_methods \*organism

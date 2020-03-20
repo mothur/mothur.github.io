@@ -13,7 +13,7 @@ Gotoh, or blastn algorithms; and iii) to re-insert gaps to the candidate
 and template pairwise alignments using the NAST algorithm so that the
 candidate sequence alignment is compatible with the original template
 alignment. We provide several [ alignment
-databases](alignment_database) for 16S and 18S rRNA gene
+databases](/wiki/alignment_database) for 16S and 18S rRNA gene
 sequences that are compatible with the
 [greengenes](https://greengenes.secondgenome.com) or
 [silva](http://arb-home.de) alignments; however, custom alignments for
@@ -34,7 +34,7 @@ dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip).
 
 The **align.seqs** command requires the user to enter a candidate and
 template file. First, obtain an [alignment
-database](alignment_database) and make sure that it is
+database](/wiki/alignment_database) and make sure that it is
 located in the same folder as your candidate file and where you are
 running mothur from. We will use the greengenes alignment with 7,682
 positions. To run the aligner enter the following command:
@@ -258,7 +258,7 @@ sequences:
     to be inserted into the alignment, which is pretty easy, but still
     takes time. The bigger problem is the effect that it has on storing
     the database in RAM and for downstream processing. Using the
-    [filter.seqs](filter.seqs) command we are able to remove
+    [filter.seqs](/wiki/filter.seqs) command we are able to remove
     the vertical gaps from the template database and the aligned
     candidate sequences. When we aligned the 186,000 full-length
     sequences to a version of the SILVA database with all vertical gaps
@@ -320,7 +320,7 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 1\.  **\...template is not aligned, aborting. What do I do?** mothur
     requires the reference file to be aligned to generate aligned
     sequences. You can download mothur's aligned silva references
-    [here](Silva_reference_files). For ITS
+    [here](/wiki/Silva_reference_files). For ITS
     sequences, see 'how to' below.
 
 2\.  **\...xxx of your sequences generated alignments that eliminated too

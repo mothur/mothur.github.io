@@ -151,7 +151,7 @@ the shared or relabund file will be used.
 ### design
 
 The design file is used to group your groups. It looks just like a
-[group\_file](group_file), but the first column contains
+[group\_file](/wiki/group_file), but the first column contains
 group names and the second column contains the grouping that the group
 belongs to. When using a design file the tree file should represent how
 the groupings relate to each other.

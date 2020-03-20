@@ -4,9 +4,9 @@ tags: 'commands'
 redirect_from: '/wiki/Split.groups.html'
 ---
 The **split.groups** command reads a [
-list](list_file), [ fasta](fasta_file) file or [
-flow](flow_file) and [ group](group_file) file or
-[ count](Count_File) or [ fastq](Fastq_File) file
+list](/wiki/list_file), [ fasta](/wiki/fasta_file) file or [
+flow](/wiki/flow_file) and [ group](/wiki/group_file) file or
+[ count](/wiki/Count_File) or [ fastq](/wiki/Fastq_File) file
 and generates a fasta, flow or fastq files for each group in the
 groupfile. To run this tutorial please download [ Esophagus
 dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip).
@@ -41,7 +41,7 @@ a name file will be generated for each group.
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. A count file will be created for each
 group.

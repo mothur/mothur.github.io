@@ -51,7 +51,7 @@ barcode, but not the forward primer. Other abbreviations are described
 below.
 
 For purposes of comparison, using
-[summary.seqs](summary.seqs) on the input data generates the
+[summary.seqs](/wiki/summary.seqs) on the input data generates the
 following:
 
     mothur > summary.seqs(fasta=Sahl09.fna)
@@ -112,7 +112,7 @@ the read, and the reverse primer sequence (if used) must come at the
 very end of the read.
 
 Running **trim.seqs** with the sahl.oligos file and using
-[summary.seqs](summary.seqs) to analyze the output files
+[summary.seqs](/wiki/summary.seqs) to analyze the output files
 generates the following:
 
     mothur > trim.seqs(fasta=sahl09.fna, oligos=sahl09.oligos)
@@ -147,13 +147,13 @@ that the \*trim.fasta file sequences have been trimmed whereas the
 a non-exact screen to trim the reverse primer because a portion of the
 primer may remain. Although this is not done in trim.seqs, once your
 sequences are aligned, you can use the
-[screen.seqs](screen.seqs) or
-[filter.seqs](filter.seqs) command to remove the region that
+[screen.seqs](/wiki/screen.seqs) or
+[filter.seqs](/wiki/filter.seqs) command to remove the region that
 corresponds to your primer.
 
 ### name
 
-A [ name file](name_file) contains two columns. The first
+A [ name file](/wiki/name_file) contains two columns. The first
 column contains the name of a reference sequence that is in a fasta file
 and the second column contains the names of the sequences (separated by
 commas) that the reference sequence represents. The list of names in the
@@ -162,7 +162,7 @@ name.
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. If you run **trim.seqs** with an oligos file
 that contains group labels, **trim.seqs** will create a new
@@ -271,7 +271,7 @@ reverse PCR primer. Obviously you would then want to get the reverse
 complement of the sequences. Because the keyword "reverse" is already
 taken and "reversecomplement" is too long, we use the highly
 scientific "flip" option to calculate the reverse complement of the
-sequence. Also be aware of the [reverse.seqs](reverse.seqs)
+sequence. Also be aware of the [reverse.seqs](/wiki/reverse.seqs)
 command, which does the same thing:
 
     mothur > trim.seqs(fasta=sahl09.fna, flip=T)
@@ -435,7 +435,7 @@ For this oligos file, mothur will generate 144 fasta and 144 groups
 files. One set of files corresponding to group ABORUPB has no sequences
 in the original fna file and so the trimmed fasta and qual files are
 empty. You can use mothur to merge fasta and groups files using the
-[merge.files](merge.files) command.
+[merge.files](/wiki/merge.files) command.
 
 ### keepforward
 

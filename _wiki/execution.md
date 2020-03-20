@@ -2,7 +2,7 @@
 title: 'Execution'
 redirect_from: '/wiki/Execution'
 ---
-[execution](Execution) of mothur is done from a command line.
+[execution](/wiki/Execution) of mothur is done from a command line.
 Because this is not a commercial piece of software, but rather software
 designed for microbial ecologists, by microbial ecologists, it is
 missing a few bells and whistles. Namely, the program is driven from the
@@ -62,7 +62,7 @@ into a batch mode where you provide a file of commands you need to type:
 
 ### Linux/Unix
 
-[ download file](Download_mothur)
+[ download file](/wiki/Download_mothur)
 
 
 
@@ -126,7 +126,7 @@ will allow you to inspect your results.
 ## Available modes
 
 Most users will prefer to run mothur from the default [interactive
-mode](interactive_mode). If you are developing a pipeline
+mode](/wiki/interactive_mode). If you are developing a pipeline
 that includes mothur, a [command line
-mode](command_line_mode) and [batch
-mode](batch_mode) are available as well.
+mode](/wiki/command_line_mode) and [batch
+mode](/wiki/batch_mode) are available as well.

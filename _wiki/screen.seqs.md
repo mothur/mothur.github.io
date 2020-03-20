@@ -8,7 +8,7 @@ sequences that fulfill certain user defined criteria. Furthermore, it
 enables you to cull those sequences not meeting the criteria from a
 names, group, contigsreport, alignreport and summary file. As an
 example, we will use the example from the [Sogin data
-analysis](Sogin_data_analysis) example.
+analysis](/wiki/Sogin_data_analysis) example.
 
 ## Default settings
 
@@ -163,7 +163,7 @@ sogin.good.unique.good.align.report files we see that there are now
 with sogin.unique.good.align. Next, looking at sogin.good.groups we see
 that there are a total of 216,243 sequences, which also agrees.
 
-or with a [ count file](Count_File)
+or with a [ count file](/wiki/Count_File)
 
     mothur > screen.seqs(fasta=sogin.unique.align, start=4655, end=4928, maxhomop=6, count=sogin.count_table, qfile=sogin.qual, alignreport=sogin.unique.align.report, taxonomy=sogin.unique.rdp.taxonomy)
 
@@ -188,7 +188,7 @@ position that 90% of the sequences do, or whose length is shorter than
 ### summary
 
 The summary file allows you to enter the summary file created by
-[summary.seqs](summary.seqs) to save processing time when
+[summary.seqs](/wiki/summary.seqs) to save processing time when
 screening with parameters in the summary file. The parameters in the
 summary file are: start, end, maxambig, maxhomop, minlength and
 maxlength.
@@ -199,7 +199,7 @@ maxlength.
 ### contigsreport
 
 The contigs report file is created by the
-[make.contigs](make.contigs) command. If you provide the
+[make.contigs](/wiki/make.contigs) command. If you provide the
 contigs report file you can screen your sequences using the following
 parameters: minoverlap, ostart, oend and mismatches.
 
@@ -227,7 +227,7 @@ The mismatches parameter allows you to set and maximum mismatches in the
 ### alignreport
 
 The align report file is created by the
-[align.seqs](align.seqs) command. If you provide the align
+[align.seqs](/wiki/align.seqs) command. If you provide the align
 report file you can screen your sequences using the following
 parameters: minscore, maxinsert and minsim.
 

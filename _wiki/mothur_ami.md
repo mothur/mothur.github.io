@@ -195,7 +195,7 @@ password, which is also `mothur`.
 
 7\. This AMI has been set up so that there are a number of reference
 files in your `data/references` directory. Also, the [ MiSeq
-SOP](MiSeq_SOP) files are stored in the `data/raw` directory.
+SOP](/wiki/MiSeq_SOP) files are stored in the `data/raw` directory.
 If you would like to use this with your own data (and I hope you do!),
 you will want to replace the files in `data/raw` with your own. Perhaps
 most importantly, `mothur` is in the PATH. This means you can type

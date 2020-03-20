@@ -24,7 +24,7 @@ fragments of another sequence.
 
     mothur > cluster.fragments(fasta=esophagus.unique.fasta, name=esophagus.names)
 
-or with a [ count file](Count_File):
+or with a [ count file](/wiki/Count_File):
 
     mothur > cluster.fragments(fasta=esophagus.unique.fasta, count=esophagus.count_table)
 
@@ -61,7 +61,7 @@ number of sequences that will be found in the final dataset, and the
 number of sequences that have been clustered away. This should
 accelerate as the function runs.
 
-## What's the difference between **cluster.fragments** and [pre.cluster](pre.cluster)?
+## What's the difference between **cluster.fragments** and [pre.cluster](/wiki/pre.cluster)?
 
 -   Cluster.fragments: combine sequences that are pieces of a larger
     sequence

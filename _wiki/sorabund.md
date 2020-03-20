@@ -6,8 +6,8 @@ redirect_from: '/wiki/Sorabund'
 The **sorabund** calculator returns the
 abundance-based Sorenson dissimilarity index describing the fraction of
 individuals that don't belong to shared OTUs. This calculator can be
-used in the [summary.shared](summary.shared) and
-[collect.shared](collect.shared) commands.
+used in the [summary.shared](/wiki/summary.shared) and
+[collect.shared](/wiki/collect.shared) commands.
 
 Note that this approach attempts to incorporate the effect of *unseen*
 shared species. For a reference and background, see:
@@ -52,7 +52,7 @@ commands:
     mothur > cluster()
     mothur > read.otu(list=98_lt_phylip_amazon.fn.list, group=amazon.groups, label=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[shared file](shared_file) will
+The 98\_lt\_phylip\_amazon.fn.[shared file](/wiki/shared_file) will
 contain the following two lines:
 
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2   1   1   3   2   1   1   1   1   2   1   1   2   5   1   1   1   1   2   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   

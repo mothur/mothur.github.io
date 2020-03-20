@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Make.lefse.html'
 ---
 The **make.lefse** command takes mothur's [ shared
-file](Shared_file) or [ relabund](Relabund_file)
+file](/wiki/Shared_file) or [ relabund](/wiki/Relabund_file)
 and creates a lefse formatted file. The LEfSe formatted file is can be
 used as an input to the LEfSe program. Segata, N., J. Izard, L. Waldron,
 D. Gevers, L. Miropolsky, W. S. Garrett, and C. Huttenhower. 2011.

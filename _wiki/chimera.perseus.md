@@ -9,7 +9,7 @@ potentially chimeric sequences.
 
 ## Default Settings
 
-The fasta and name or [ count](Count_File) parameters are
+The fasta and name or [ count](/wiki/Count_File) parameters are
 required.
 
     mothur > chimera.perseus(fasta=stool.trim.unique.good.filter.unique.precluster.fasta, name=stool.trim.unique.good.filter.unique.precluster.names)
@@ -48,8 +48,8 @@ stool.trim.unique.good.filter.unique.precluster.perseus.chimeras:
 
 ### group
 
-If you provide a [ groupfile](Group_file) or a [
-countfile](Count_File) that contains group information,
+If you provide a [ groupfile](/wiki/Group_file) or a [
+countfile](/wiki/Count_File) that contains group information,
 mothur will process each sample individually and then combine the
 results.
 

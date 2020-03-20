@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Make.lookup.html'
 ---
 The **make.lookup** command allows you to create custom lookup files for the
-[shhh.flows](shhh.flows) command. To run this tutorial please
+[shhh.flows](/wiki/shhh.flows) command. To run this tutorial please
 download: [ makelookup.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/makelookup.zip).
 
 ## Default Options

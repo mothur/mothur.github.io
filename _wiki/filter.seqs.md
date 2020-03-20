@@ -38,7 +38,7 @@ The resulting alignment in the amazon.unique.filter.fasta file will be
 2305 characters long and the average unaligned sequence is about 400 bp
 long. The file, amazon.unique.filter, is a series of 0's and 1's that
 indicate, which columns were included in the filtered alignment. This
-file can be used with the [ hard option](filter.seqs#hard)
+file can be used with the [ hard option](/wiki/filter.seqs#hard)
 below. Also, a series of statistics are written to the screen that
 indicate how many columns were used in generating the filter and the
 number of sequences that the filter was based on:
@@ -84,7 +84,7 @@ having one or two sequences included that don't align with the bulk of
 your sequences may lead to all columns being removed by the trump
 option!
 
-The [align.seqs](align.seqs), NAST, and SILVA aligners will
+The [align.seqs](/wiki/align.seqs), NAST, and SILVA aligners will
 precede the first base of the sequence with a string of periods and the
 columns from the last base to the end of the alignment will also be a
 string of periods. You may want to remove these columns:
@@ -163,7 +163,7 @@ OTUs.
 ### hard
 
 Use of the file option will allow one to apply a hard mask to the
-sequences (e.g. the [lane mask](Lane_mask)). The inputted
+sequences (e.g. the [lane mask](/wiki/Lane_mask)). The inputted
 file should only contain one line consisting of 0's and 1's. A "0"
 indicates that the column should be excluded and a "1" indicates that
 the column should be included. To use a hard mask you would enter:

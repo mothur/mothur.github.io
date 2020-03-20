@@ -9,7 +9,7 @@ different distances
 
 ## Default settings
 
-A [ list](list_file) file and two labels must be inputted for
+A [ list](/wiki/list_file) file and two labels must be inputted for
 otu.hierarchy to be successful.
 
     mothur > otu.hierarchy(list=abrecovery.fn.list, label=0.03-0.35)

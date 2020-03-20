@@ -55,8 +55,8 @@ Outputted to the screen is a label describing the distance cutoff used
 to form OTUs, the number of sequences in the largest OTU, the number of
 OTUs with only one sequence, with two, etc. Running the
 cluster.classic() command generates three output files whose names end
-in [sabund](sabund_file), [rabund](rabund_file),
-and [list](list_file). The data outputted to the screen is
+in [sabund](/wiki/sabund_file), [rabund](/wiki/rabund_file),
+and [list](/wiki/list_file). The data outputted to the screen is
 the same as that in the sabund file. You will notice that the sample
 rabund, sabund, and list files each have a ".fn." tag inserted after
 the name of the distance matrix. fn corresponds to the algorithm that
@@ -68,7 +68,7 @@ was used. Other possibilities include "an" for average neighbor and
 
 ### name
 
-A [name file](name_file) contains two columns. The first
+A [name file](/wiki/name_file) contains two columns. The first
 column contains the name of a reference sequence that is in a distance
 matrix and the second column contains the names of the sequences
 (separated by commas) that the reference sequence represents. The list
@@ -130,7 +130,7 @@ to analyze some data sets.
 
 ### count
 
-The [count](Count_File) file is similar to the name file in
+The [count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
 the correct OTU's. Unlike, when you use a name file the list file

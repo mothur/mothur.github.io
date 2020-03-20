@@ -3,14 +3,14 @@ title: 'mothur v.1.5.0'
 redirect_from: '/wiki/Mothur_v.1.5.0.html'
 ---
 Today, August 10, we are happy to be releasing [mothur
-v.1.5.0](mothur_v.1.5.0). As you'll notice below, there
+v.1.5.0](/wiki/mothur_v.1.5.0). As you'll notice below, there
 aren't any "major" updates in this release. Instead, we have fixed a
 number of bugs and made a few minor modifications. Perhaps the most
 significant update was provided by Gerhard Thallinger, a mothur user,
-which dramatically accelerates the [cluster](cluster)
+which dramatically accelerates the [cluster](/wiki/cluster)
 command. If you have any code you would like to contribute to mothur,
 please let us know. Other useful features include the
-[system](system) command, which allows you to run shell
+[system](/wiki/system) command, which allows you to run shell
 commands from within mothur. In the next few releases, we hope to
 include chimera checking functions (e.g. Pintail/Mallard and
 Bellerophon) and classification functions.
@@ -41,19 +41,19 @@ A few announcements:
 
 ## Updates
 
--   [list.seqs](list.seqs) - reads one of the following file
+-   [list.seqs](/wiki/list.seqs) - reads one of the following file
     types: fasta, name, group or alignreport file and writes out the
     names of the sequences found within it.
--   [get.seqs](get.seqs) - reads an .accnos file and one of
+-   [get.seqs](/wiki/get.seqs) - reads an .accnos file and one of
     the following file types: fasta, name, group or alignreport file. It
     outputs a file containing only the sequences in the .accnos file.
--   [remove.seqs](remove.seqs) - reads an .accnos file and
+-   [remove.seqs](/wiki/remove.seqs) - reads an .accnos file and
     one of the following file types: fasta, name, group or alignreport
     file. It outputs a file containing the sequences NOT in the .accnos
     file.
--   [system](system) - Allow the user to enter system
+-   [system](/wiki/system) - Allow the user to enter system
     commands from within mothur.
--   added sorted option to [get.rabund](get.rabund).
+-   added sorted option to [get.rabund](/wiki/get.rabund).
 -   improved clustering algorithm to increase speed with marginal memory
     cost \[thanks to gerhard thallinger\]
 -   mothur can now read trees that include internal node labels (e.g.

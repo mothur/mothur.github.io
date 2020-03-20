@@ -92,7 +92,7 @@ have 222,291 sequences in them. You are now ready to use mothur.
 ## Generating an alignment & distance matrix
 
 The first thing we want to do is to [
-deconvolute](unique.seqs) the sequences in mothur so that we
+deconvolute](/wiki/unique.seqs) the sequences in mothur so that we
 aren't analyzing all 222,291 sequences. Open mothur and enter the
 following command:
 
@@ -100,11 +100,11 @@ following command:
 
 This will generate two files - sogin.unique.fasta and sogin.names. Each
 of these files has 21,908 sequences. Now we will align the sequences
-using mothur's [align.seqs](align.seqs) command. Unpublished
+using mothur's [align.seqs](/wiki/align.seqs) command. Unpublished
 results from our lab has shown that when analyzing V6 tags, the best
 kmer size is 9 and the optimal alignment method is needleman with a
 gap-opening penalty of -1. We will use the [ greengenes
-alignment](Alignment_database) to align the sequences:
+alignment](/wiki/Alignment_database) to align the sequences:
 
     mothur > align.seqs(candidate=sogin.unique.fasta, template=core_set_aligned.imputed.fasta, ksize=9, align=needleman, gapopen=-1)
 
@@ -115,7 +115,7 @@ some statistics on your alignments and the \*align file will give you an
 alignment that is compatible with the greengenes arb database. Go ahead
 and change the name of sogin.unique.kmer.needleman.nast.align to
 something shorter like sogin.unique.align. Now we want to shrink the
-alignment using mothur's [filter.seqs](filter.seqs) command
+alignment using mothur's [filter.seqs](/wiki/filter.seqs) command
 so that it isn't the full 7,682 columns. We will remove any vertical
 gaps from the alignment:
 
@@ -141,7 +141,7 @@ sequences from your collection.
 
 Next, we want to calculate the column-formatted distance matrix, but we
 are only interested in distances smaller than 0.10. We will do this
-using mothur's [dist.seqs](dist.seqs) \[you can download the
+using mothur's [dist.seqs](/wiki/dist.seqs) \[you can download the
 [ distance file](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.unique.filter.dist.zip)\]:
 
     mothur > dist.seqs(fasta=sogin.unique.filter.fasta, cutoff=0.10)
@@ -164,23 +164,23 @@ Now we want to assign these sequences to OTUs for every possible
 distance up to and including a distance of 0.10. Of course, we want to
 include the actual frequency information for the sequences. To do the
 clustering run the read.dist and
-[cluster](cluster) commands:
+[cluster](/wiki/cluster) commands:
 
     mothur > read.dist(column=sogin.unique.filter.dist, name=sogin.names)
     mothur > cluster()
 
 Running these commands takes only about 5 min! The cluster() command
 uses the furthest neighbor clustering algorithm to generate the
-sogin.unique.filter.fn.[sabund](sabund_file),
-sogin.unique.filter.fn.[list](list_file), and
-sogin.unique.filter.fn.[rabund](rabund_file) files. Next
+sogin.unique.filter.fn.[sabund](/wiki/sabund_file),
+sogin.unique.filter.fn.[list](/wiki/list_file), and
+sogin.unique.filter.fn.[rabund](/wiki/rabund_file) files. Next
 we'd like to parse the list file so that we can have separate rabund
 files for each of the 8 samples for the unique, 0.03, 0.05, and 0.10 OTU
 definitions:
 
     mothur > read.otu(list=sogin.unique.filter.fn.list, group=sogin.groups, label=unique-0.03-0.05-0.10)
 
-This will also generate a [shared file](shared_file) that
+This will also generate a [shared file](/wiki/shared_file) that
 indicates the number of sequences in each sample that were found in each
 OTU.
 
@@ -189,8 +189,8 @@ OTU.
 We would like to generate an updated version of [Table
 3](https://www.pnas.org/highwire/markup/232346/expansion) from the
 Sogin study. To do this we need to [ read in the OTU
-data](read.otu) and then use the
-[summary.single](summary.single) command to summarize the
+data](/wiki/read.otu) and then use the
+[summary.single](/wiki/summary.single) command to summarize the
 number of OTUs and the ACE and Chao1 richness estimates for the unique,
 
 0\.03, 0.05, and 0.10 OTU definitions. The following commands will do
@@ -244,14 +244,14 @@ incorporated those changes. The resulting data are:
 
 The largest sample in the Sogin data set was FS396. Originally represented
 by 17,666 sequences, the updated data set contains 83,399 sequences.
-This data set was used to generate [rarefaction](rarefaction)
+This data set was used to generate [rarefaction](/wiki/rarefaction)
 curves in [Fig.
 2](https://www.pnas.org/content/pnas/103/32/12115/F2.large.jpg) of the
 Sogin study. We did not observe any differences between the OTUs that
 were calculated for the unique, 0.01, and 0.02 OTU definitions. As
 mentioned above, this is probably due to muscle doing a poor job of
 maintaining positional homology within the alignment. Regardless, the
-following [rarefaction.single](rarefaction.single) command
+following [rarefaction.single](/wiki/rarefaction.single) command
 will generate the rarefaction curve data with updates every 5,000
 sequences:
 
@@ -278,7 +278,7 @@ took their OTU-based analysis.
 ![ right \| 200px](https://mothur.s3.us-east-2.amazonaws.com/wiki/sogin.shared.rarefaction.png)
 Traditional ecology studies will rarefy across samples, not sequences.
 This is possible in mothur using the
-[rarefaction.shared](rarefaction.shared) command.
+[rarefaction.shared](/wiki/rarefaction.shared) command.
 
     mothur > read.otu(shared=sogin.unique.filter.fn.shared)
     mothur > rarefaction.shared()
@@ -297,7 +297,7 @@ robust estimate of community richness.
 mothur gives the ability to visualize data using a number of different
 methods. First, we will generate a venn diagram describing the overlap
 between samples FS312 and FS396 based on the observed richness and the
-Chao1 estimators using the [venn](venn) command. These
+Chao1 estimators using the [venn](/wiki/venn) command. These
 samples were the most deeply sequenced samples and are from diffuse
 flows at the Bag City and Marker 52 sites, respectively, in the Axial
 Seamount, Juan de Fuca Ridge.
@@ -315,11 +315,11 @@ represent and remove the descriptive text.
 
 Using a number of similarity calculators you can generate dendrograms to
 relate the similarity in community membership and structure with the
-[tree.shared](tree.shared) command. To generate dendrograms
-based on membership we used the [jest](jest) calculator,
+[tree.shared](/wiki/tree.shared) command. To generate dendrograms
+based on membership we used the [jest](/wiki/jest) calculator,
 which uses the Chao estimator to predict the individual and shared
 richness values and we used the Yue & Clayton similarity value, [
-θ~YC~](thetayc).
+θ~YC~](/wiki/thetayc).
 
     mothur > tree.shared(calc=jest-thetayc)
 
@@ -340,7 +340,7 @@ Finally, we'll present the relative abundance of the OTUs found across
 all 8 communities for an 0.10 OTU definition. Because these data
 typically follow a highly skewed distribution, we will scale the
 relative abundance between red and black using a log-transformation
-using the [heatmap.bin](heatmap.bin) command. Missing data
+using the [heatmap.bin](/wiki/heatmap.bin) command. Missing data
 are shown as white blocks.
 
     mothur > heatmap.bin(scale=log10)

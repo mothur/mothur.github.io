@@ -16,16 +16,16 @@ you will only receive an email from us about once a month or so.
 
 ## Helpful Download links
 
--   [silva reference files](Silva_reference_files)
--   [rdp reference files](RDP_reference_files)
+-   [silva reference files](/wiki/Silva_reference_files)
+-   [rdp reference files](/wiki/RDP_reference_files)
 -   [ greengenes reference
-    files](Greengenes-formatted_databases)
--   [lookup files](Lookup_files)
+    files](/wiki/Greengenes-formatted_databases)
+-   [lookup files](/wiki/Lookup_files)
 
 ## Pat's example analyses to get you started
 
--   [miseq\_sop](MiSeq_SOP)
--   [454\_sop](454_SOP)
+-   [miseq\_sop](/wiki/MiSeq_SOP)
+-   [454\_sop](/wiki/454_SOP)
 
 ## Source Code for previous versions
 

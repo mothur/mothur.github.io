@@ -3,7 +3,7 @@ title: 'Rarefaction'
 redirect_from: '/wiki/Rarefaction'
 ---
 mothur calculates **rarefaction** curve data using
-the [rarefaction.single](rarefaction.single) command for the
+the [rarefaction.single](/wiki/rarefaction.single) command for the
 number of observed OTUs as a function of distance between sequences and
 the number of sequences sampled. By theory, the **rarefaction** curve should
 match the following expression:

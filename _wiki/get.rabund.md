@@ -4,14 +4,14 @@ tags: 'commands'
 redirect_from: '/wiki/Get.rabund.html'
 ---
 The **get.rabund** command will generate an [rabund
-file](rabund_file) based on the OTU data that you have read
+file](/wiki/rabund_file) based on the OTU data that you have read
 into mothur.
 
 ## Default
 
-If you read in a [list file](list_file),
-[shared\_file](shared_file) or
-[sabund\_file](sabund_file), **get.rabund** will generate the
+If you read in a [list file](/wiki/list_file),
+[shared\_file](/wiki/shared_file) or
+[sabund\_file](/wiki/sabund_file), **get.rabund** will generate the
 corresponding rabund file:
 
     mothur > get.rabund(list=amazon.fn.list)

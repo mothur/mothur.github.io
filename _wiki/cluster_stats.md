@@ -8,7 +8,7 @@ with [
 stool.final.phylip.dist](https://mothur.s3.us-east-2.amazonaws.com/wiki/stool.final.phylip.dist.zip)
 which is \~80M. 4800 sequences
 
-### [cluster](cluster)
+### [cluster](/wiki/cluster)
 
     mothur > cluster(phylip=stool.final.phylip.dist)
 
@@ -18,7 +18,7 @@ Used 360M and took 309 seconds.
 
 Used 89M and took 31 secs.
 
-### [cluster.classic](cluster.classic)
+### [cluster.classic](/wiki/cluster.classic)
 
     mothur > cluster.classic(phylip=stool.final.phylip.dist) 
 
@@ -30,7 +30,7 @@ with [
 stool.final.phylip.dist](https://mothur.s3.us-east-2.amazonaws.com/wiki/stool.final.phylip.dist.zip)
 which is \~80M.
 
-### [cluster](cluster)
+### [cluster](/wiki/cluster)
 
     mothur > cluster(phylip=stool.final.phylip.dist)
 
@@ -40,13 +40,13 @@ Used 774M to cluster and took 690 seconds.
 
 Used 162M to cluster and took 74 seconds.
 
-### [cluster.classic](cluster.classic)
+### [cluster.classic](/wiki/cluster.classic)
 
     mothur > cluster.classic(phylip=stool.final.phylip.dist) 
 
 Used 90M to cluster and took 147 seconds.
 
-### [cluster.split](cluster.split)
+### [cluster.split](/wiki/cluster.split)
 
     mothur > cluster.split(phylip=stool.final.phylip.dist, cutoff=0.20)
 

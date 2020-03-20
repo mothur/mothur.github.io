@@ -8,7 +8,7 @@ potentially misaligned bases in a 16S rRNA gene sequence alignment. If
 you are familiar with the editor window in ARB, this is the same as
 counting the number of \~, \#, -, and = signs. To run through the
 command below use the greengenes [secondary structure
-map](secondary_structure_map) and the [ esophagus
+map](/wiki/secondary_structure_map) and the [ esophagus
 dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip).
 
 ## Meaning of symbols
@@ -31,7 +31,7 @@ your alignment.
 To run **align.check** you need to provide your aligned sequences as a
 FASTA-formatted file. You also need to provide the appropriate file
 containing the [secondary structure
-map](secondary_structure_map). These esophagus sequences were
+map](/wiki/secondary_structure_map). These esophagus sequences were
 aligned using the greengenes alignment. The output will be in
 
 \.align.check file. Try the following command:
@@ -56,7 +56,7 @@ You can also provide a name file associated with your fasta file.
 
 ## count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence.
 
@@ -67,7 +67,7 @@ given representative sequence.
 We find that the SILVA alignment actually provides a better alignment
 than the greengenes alignment. To test this, realign the esophagus
 sequences using the SILVA alignment with the
-[align.seqs](align.seqs) command:
+[align.seqs](/wiki/align.seqs) command:
 
     mothur > align.seqs(candidate=esophagus.fasta, template=silva.bacteria.fasta)
     mothur > align.check(fasta=esophagus.align, map=silva.ss.map)

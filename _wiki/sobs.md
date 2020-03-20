@@ -5,15 +5,15 @@ redirect_from: '/wiki/Sobs'
 ---
 The **sobs** calculator returns the number of observed
 OTUs for an OTU definition. This calculator can be used in the
-[summary.single](summary.single),
-[collect.single](collect.single), and
-[rarefaction.single](rarefaction.single) commands. Open the
+[summary.single](/wiki/summary.single),
+[collect.single](/wiki/collect.single), and
+[rarefaction.single](/wiki/rarefaction.single) commands. Open the
 file 98\_lt\_phylip\_amazon.fn.sabund generated using the [ Amazonian
 dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following commands:
 
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[sabund file](sabund_file) is
+The 98\_lt\_phylip\_amazon.fn.[sabund file](/wiki/sabund_file) is
 also outputted to the terminal window when the cluster() command is
 executed:
 

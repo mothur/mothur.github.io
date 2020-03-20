@@ -3,7 +3,7 @@ title: 'get.oturep'
 tags: 'commands'
 redirect_from: '/wiki/Get.oturep.html'
 ---
-While the [bin.seqs](bin.seqs) command reports the OTU number
+While the [bin.seqs](/wiki/bin.seqs) command reports the OTU number
 for all sequences, the **get.oturep** command
 generates a fasta-formatted sequence file containing only a
 representative sequence for each OTU. A .rep.fasta and .rep.name file
@@ -16,10 +16,10 @@ tutorial, download and decompress
 
 To run the **get.oturep** command you must provide either a
 [phylip-formatted distance
-matrix](phylip-formatted_distance_matrix) or a
+matrix](/wiki/phylip-formatted_distance_matrix) or a
 [column-formatted distance
-matrix](column-formatted_distance_matrix), together with a
-[list file](list_file) whose sequence names are complementary
+matrix](/wiki/column-formatted_distance_matrix), together with a
+[list file](/wiki/list_file) whose sequence names are complementary
 to the names in the distance matrix. (An exception is that a distance
 file is not required if you specify method=abundance.) For example,
 
@@ -41,7 +41,7 @@ The .rep.name file will look like:
     U68614 U68629,U68617,U68614,U68596
     ...
 
-or with a [ count file](Count_File):
+or with a [ count file](/wiki/Count_File):
 
     mothur > get.oturep(phylip=98_sq_phylip_amazon.dist, list=98_sq_phylip_amazon.an.unique_list, count=amazon.count_table)
 
@@ -112,7 +112,7 @@ contains the following output:
 
 ### name
 
-A [name file](name_file) indicating sequence names that are
+A [name file](/wiki/name_file) indicating sequence names that are
 identical to a references sequence, may be inputted into the
 get.oturep() command so that the fasta and list files are complementary.
 The following command illustrate this:
@@ -121,7 +121,7 @@ The following command illustrate this:
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence.
 

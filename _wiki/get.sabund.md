@@ -4,12 +4,12 @@ tags: 'commands'
 redirect_from: '/wiki/Get.sabund.html'
 ---
 The **get.sabund** command will generate an [sabund
-file](sabund_file) based on the OTU data that you have read
+file](/wiki/sabund_file) based on the OTU data that you have read
 into mothur.
 
 ## Default Options
 
-For example, if you read in a [list file](list_file),
+For example, if you read in a [list file](/wiki/list_file),
 **get.sabund** will generate the corresponding
 sabund file:
 

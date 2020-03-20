@@ -2,7 +2,7 @@
 title: 'Batch mode'
 redirect_from: '/wiki/Batch_mode'
 ---
-In [batch mode](batch_mode) you can supply a file with a list
+In [batch mode](/wiki/batch_mode) you can supply a file with a list
 of commands that you want mothur to run. This would be useful if you
 have a set of analyses that you know you are going to run and don't
 want to have to wait for them to run, or for running the same set of
@@ -227,7 +227,7 @@ program name. For example:
     $ ./mothur "MiSEQ_SOP_mouse_03032020.batch"
 
 Of related interest is the [command line
-mode](command_line_mode).
+mode](/wiki/command_line_mode).
 
 ## Revisions
 

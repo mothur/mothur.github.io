@@ -5,8 +5,8 @@ redirect_from: '/wiki/Sra.info.html'
 ---
 The **sra.info** command reads an accnos file containing sample names. It
 uses prefetch and fasterq\_dump to download and extract the fastq files.
-It outputs a [ file](File_File) for use with the
-[make.contigs](make.contigs) command. The prefetch and
+It outputs a [ file](/wiki/File_File) for use with the
+[make.contigs](/wiki/make.contigs) command. The prefetch and
 fasterq\_dump tools developed by NCBI,
 [https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software). To
 follow along with this tutorial, download the accnos file [ sra.info
@@ -52,7 +52,7 @@ The fasterq parameter allows you to specify location of the
 fasterq\_dump executable. By default mothur will look in its location
 and the location of MOTHUR\_TOOLS if specified at compile time or set
 through the [
-set.dir](Set.dir#tools)(tools=locationOfExternalTools)
+set.dir](/wiki/Set.dir#tools)(tools=locationOfExternalTools)
 command.
 
     mothur > sra.info(accnos=srainfo.accnos, fasterq=/usr/bin/fasterq-dump)
@@ -62,7 +62,7 @@ command.
 The prefetch parameter allows you to specify location of the prefetch
 executable. By default mothur will look in its location and the location
 of MOTHUR\_TOOLS if specified at compile time or set through the [
-set.dir](Set.dir#tools)(tools=locationOfExternalTools)
+set.dir](/wiki/Set.dir#tools)(tools=locationOfExternalTools)
 command.
 
     mothur > sra.info(accnos=srainfo.accnos, prefetch=/usr/bin/prefetch)

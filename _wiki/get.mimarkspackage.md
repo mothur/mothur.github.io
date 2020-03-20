@@ -24,7 +24,7 @@ or
 
 This command will create a template that looks like:
 
-    #This is a tab-delimited file. Additional Documentation can be found at `[`mimarks_data_packages`](MIMarks_Data_Packages)`.
+    #This is a tab-delimited file. Additional Documentation can be found at `[`mimarks_data_packages`](/wiki/MIMarks_Data_Packages)`.
     #Please fill all the required fields indicated with '*'
     #Unknown or inapplicable fields can be assigned 'missing' value.
     #You may add extra custom fields to this template. Make sure all the fields are separated by tabs.
@@ -89,7 +89,7 @@ Here is an example of the 3 column form with fastq files:
 
 The oligos parameter is used to provide mothur with your oligos file.
 Here's a link to more information about mothur's
-[oligos\_file](Oligos_File).
+[oligos\_file](/wiki/Oligos_File).
 
     mothur > get.mimarkspackage(oligos=GQY1XT001.oligos)
 
@@ -97,7 +97,7 @@ Here's a link to more information about mothur's
 
 The group parameter is used to provide mothur with your group file.
 Here's a link to more information about mothur's
-[group\_file](Group_file).
+[group\_file](/wiki/Group_file).
 
     mothur > get.mimarkspackage(group=final.groups)
 
@@ -108,7 +108,7 @@ like to use. The choices are: air, host\_associated, human\_associated,
 human\_gut, human\_oral, human\_skin, human\_vaginal, microbial,
 miscellaneous, plant\_associated, sediment, soil, wastewater or water.
 Default=miscellaneous. Here is a link to more information on the various
-packages: [mimarks\_data\_packages](MIMarks_Data_Packages).
+packages: [mimarks\_data\_packages](/wiki/MIMarks_Data_Packages).
 
     mothur > get.mimarkspackage(oligos=GQY1XT001.oligos, package=water)
 

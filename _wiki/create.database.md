@@ -4,9 +4,9 @@ tags: 'commands'
 redirect_from: '/wiki/Create.database.html'
 ---
 The **create.database** command reads a [list
-file](list_file), \*.cons.taxonomy, \*.rep.fasta,
+file](/wiki/list_file), \*.cons.taxonomy, \*.rep.fasta,
 \*.rep.names or \*.rep.count\_table and optional [group
-file](group_file), and creates a database file. To run the
+file](/wiki/group_file), and creates a database file. To run the
 following tutorial please download: [ Example
 Files](https://mothur.s3.us-east-2.amazonaws.com/wiki/create_database_files.zip)
 
@@ -52,33 +52,33 @@ If you open the final.an.database file you will see:
 ### list
 
 The list parameter allows you to provide your [
-list](List_file) file. mothur creates this file by running
-the [cluster](cluster),
-[cluster.split](cluster.split) or
-[phylotype](phylotype) commands.
+list](/wiki/List_file) file. mothur creates this file by running
+the [cluster](/wiki/cluster),
+[cluster.split](/wiki/cluster.split) or
+[phylotype](/wiki/phylotype) commands.
 
 ### shared
 
 The shared parameter allows you to provide your [
-shared](Shared_file) file. mothur creates this file by
-running the [make.shared](make.shared) command.
+shared](/wiki/Shared_file) file. mothur creates this file by
+running the [make.shared](/wiki/make.shared) command.
 
 ### relabund
 
 The relabund parameter allows you to provide your relative abundance
 file. mothur creates this file by running the
-[get.relabund](Get.relabund) command.
+[get.relabund](/wiki/Get.relabund) command.
 
 ### count
 
 The count file is the count file outputted by
-[get.oturep](get.oturep)(fasta=yourFastaFile,
+[get.oturep](/wiki/get.oturep)(fasta=yourFastaFile,
 list=yourListfile, column=yourDistFile, count=yourCountFile)
 
 ### constaxonomy
 
 The constaxonomy file is the taxonomy file outputted by
-[classify.otu](classify.otu)(list=yourListfile,
+[classify.otu](/wiki/classify.otu)(list=yourListfile,
 name=final.names, taxonomy=yourTaxonomyFile)
 
 ## Options
@@ -86,14 +86,14 @@ name=final.names, taxonomy=yourTaxonomyFile)
 ### repfasta
 
 The repfasta file is fasta file outputted by
-[get.oturep](get.oturep)(fasta=yourFastaFile,
+[get.oturep](/wiki/get.oturep)(fasta=yourFastaFile,
 list=yourListfile, column=yourDistFile, name=yourNameFile) and is
 optional.
 
 ### repname
 
 The repname file is the name file outputted by
-[get.oturep](get.oturep)(fasta=yourFastaFile,
+[get.oturep](/wiki/get.oturep)(fasta=yourFastaFile,
 list=yourListfile, column=yourDistFile, name=yourNameFile) and is
 optional.
 

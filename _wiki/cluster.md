@@ -27,9 +27,9 @@ default option. For this tutorial you should download the [Final.zip](https://mo
 ## Default settings
 
 Either a [phylip-formatted distance
-matrix](phylip-formatted_distance_matrix) or a
+matrix](/wiki/phylip-formatted_distance_matrix) or a
 [column-formatted distance
-matrix](column-formatted_distance_matrix) must be inputted
+matrix](/wiki/column-formatted_distance_matrix) must be inputted
 for **cluster** to be successful, the default output of the dist.seqs
 command is the column-format. If you have a favorite format, please let
 us know and we can work with you to incorporate that feature into
@@ -39,7 +39,7 @@ generate this format for you.
 ### phylip
 
 To read in a [phylip-formatted distance
-matrix](phylip-formatted_distance_matrix) you need to use the
+matrix](/wiki/phylip-formatted_distance_matrix) you need to use the
 phylip option:
 
     mothur > cluster(phylip=final.phylip.dist)
@@ -58,9 +58,9 @@ progress bar:
 ### column & name or count
 
 To read in a [column-formatted distance
-matrix](column-formatted_distance_matrix) you must provide a
+matrix](/wiki/column-formatted_distance_matrix) you must provide a
 filename for the name or count option. The .name file was generated
-during the [unique.seqs](unique.seqs) command.
+during the [unique.seqs](/wiki/unique.seqs) command.
 
     mothur > cluster(column=final.dist, name=final.names)
 
@@ -73,7 +73,7 @@ lower-triangle and mothur will figure it out.
 
 ### name
 
-A [ name file](name_file) contains two columns. The first
+A [ name file](/wiki/name_file) contains two columns. The first
 column contains the name of a reference sequence that is in a distance
 matrix and the second column contains the names of the sequences
 (separated by commas) that the reference sequence represents. The list
@@ -153,7 +153,7 @@ This command will generate the following output:
     4  0   0.03    1175    0.03    30283   7052713 6953    22157   0.577479    0.999015    0.813272    0.996868    0.186728    0.995907    0.683404    0.675387    
     5  0   0.03    1176    0.03    30256   7052761 6905    22184   0.576964    0.999022    0.814187    0.996864    0.185813    0.99591 0.683487    0.67535 
 
-Running the cluster() command generates a [list](list_file).
+Running the cluster() command generates a [list](/wiki/list_file).
 The data outputted to the screen is the same as that in the sabund file.
 You will notice that the list file has a ".opti." tag inserted after
 the name of the distance matrix. opti corresponds to the algorithm that
@@ -164,7 +164,7 @@ algorithms include: "agc" and "dgc".
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
 the correct OTU's. Unlike, when you use a name file the list file

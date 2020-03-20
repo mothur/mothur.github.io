@@ -5,8 +5,8 @@ redirect_from: '/wiki/Unifrac.unweighted.html'
 ---
 The **unifrac.unweighted** comand
 implements the [unweighted UniFrac
-algorithm](unweighted_UniFrac_algorithm). The
-[unifrac.weighted](unifrac.weighted) command implements the
+algorithm](/wiki/unweighted_UniFrac_algorithm). The
+[unifrac.weighted](/wiki/unifrac.weighted) command implements the
 weighted version of the command. The UniFrac methods are generic tests that describes whether two or more
 communities have the same structure. The significance of the test
 statistic can only indicate the probability that the communities have
@@ -33,7 +33,7 @@ This will produce:
     1  A-B-C   0.703848
     It took 0 secs to run unifrac.unweighted.
 
-or with a [ count](Count_File) file:
+or with a [ count](/wiki/Count_File) file:
 
     mothur > unifrac.unweighted(tree=abrecovery.paup.nj, count=abrecovery.count_table)
 
@@ -162,7 +162,7 @@ The name parameter allows you to enter a namesfile with your tree.
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 

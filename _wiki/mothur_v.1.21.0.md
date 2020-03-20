@@ -3,11 +3,11 @@ title: 'mothur v.1.21.0'
 redirect_from: '/wiki/Mothur_v.1.21.0.html'
 ---
 We are happy to announce the release of [mothur
-v.1.21.0](mothur_v.1.21.0). This release has a few small and
+v.1.21.0](/wiki/mothur_v.1.21.0). This release has a few small and
 important updates. First, we have completely rewritten the
-[metastats](metastats) command to overcome numerous issues
+[metastats](/wiki/metastats) command to overcome numerous issues
 that have been detected in the original code provided by the developers.
-Second, we modified the [indicator](indicator) command to
+Second, we modified the [indicator](/wiki/indicator) command to
 make its use more flexible and to include p-values to describe the
 significance of an indicator's strength. Third, it is now possible to
 store a reference database in memory so that you can run a command (e.g.
@@ -35,46 +35,46 @@ workshop. Hopefully, he'll cross paths with some of you soon!
 
 ## Feature updates
 
--   [indicator](indicator) - parallelized, modified to run
+-   [indicator](/wiki/indicator) - parallelized, modified to run
     without a tree file, added significance testing
--   [align.seqs](align.seqs),
-    [chimera.ccode](chimera.ccode),
-    [chimera.check](chimera.check),
-    [chimera.pintail](chimera.pintail),
-    [chimera.slayer](chimera.slayer),
-    [classify.seqs](classify.seqs) - added save parameter to
+-   [align.seqs](/wiki/align.seqs),
+    [chimera.ccode](/wiki/chimera.ccode),
+    [chimera.check](/wiki/chimera.check),
+    [chimera.pintail](/wiki/chimera.pintail),
+    [chimera.slayer](/wiki/chimera.slayer),
+    [classify.seqs](/wiki/classify.seqs) - added save parameter to
     save the reference data in memory.
--   [metastats](metastats) - rewrote command so that memory
+-   [metastats](/wiki/metastats) - rewrote command so that memory
     usage is not limited
--   [get.groups](get.groups) and
-    [remove.groups](remove.groups) - added shared file type
--   [chimera.slayer](chimera.slayer) - added blastlocation
+-   [get.groups](/wiki/get.groups) and
+    [remove.groups](/wiki/remove.groups) - added shared file type
+-   [chimera.slayer](/wiki/chimera.slayer) - added blastlocation
     parameter
 -   A 64-bit Windows executable version is now available
--   [normalize.shared](normalize.shared) and
-    [sub.sample](sub.sample) - OTU number labels in shared
+-   [normalize.shared](/wiki/normalize.shared) and
+    [sub.sample](/wiki/sub.sample) - OTU number labels in shared
     file persist to make downstream analysis easier.
 
 ## Bug fixes
 
--   [get.seqs](get.seqs) and
-    [remove.seqs](remove.seqs) - fixed counts
+-   [get.seqs](/wiki/get.seqs) and
+    [remove.seqs](/wiki/remove.seqs) - fixed counts
     (https://forum.mothur.org/viewtopic.php?f=4&t=1261)
 -   fixed issue with \~ character and multiple processors -
     (https://forum.mothur.org/viewtopic.php?f=4&t=1199)
--   [trim.seqs](trim.seqs) - if oligos file does not contain
+-   [trim.seqs](/wiki/trim.seqs) - if oligos file does not contain
     any valid group names.
--   [normalize.shared](normalize.shared) - added a warning
+-   [normalize.shared](/wiki/normalize.shared) - added a warning
     (https://forum.mothur.org/viewtopic.php?f=3&t=1254)
--   [chimera.uchime](chimera.uchime) -
+-   [chimera.uchime](/wiki/chimera.uchime) -
     (https://forum.mothur.org/viewtopic.php?f=4&t=1238,
     [https://forum.mothur.org/viewtopic.php?f=4&t=1239](https://forum.mothur.org/viewtopic.php?f=4&t=1239),
     [https://forum.mothur.org/viewtopic.php?f=4&t=1237](https://forum.mothur.org/viewtopic.php?f=4&t=1237))
 
 ## Minor Releases
 
--   1.21.1 - fixed bug with labels in [parsimony](parsimony)
+-   1.21.1 - fixed bug with labels in [parsimony](/wiki/parsimony)
     command.
--   1.21.1 - [cluster.split](cluster.split) - if your number
+-   1.21.1 - [cluster.split](/wiki/cluster.split) - if your number
     of split files was less than the number of processors, the command
     crashed.

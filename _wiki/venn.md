@@ -10,7 +10,7 @@ file that can be further modified in a program like Gimp or Adobe
 Illustrator to scale the areas to be proportional to the richness
 represented by the region. Options are available to measure richness
 based on the observed richness or the estimated richness using the
-[chao](chao) and [sharedchao](sharedchao)
+[chao](/wiki/chao) and [sharedchao](/wiki/sharedchao)
 calculators. This tutorial uses the data files in [
 AbRecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip).
 
@@ -34,8 +34,8 @@ defined at the 0.10 level would be abrecovery.fn.0.10.venn.sobs.svg.
 
 By default the venn() command will calculate the shared richness based
 on the observed OTUs. Alternatively, it is possible to use the
-[chao](chao) and [sharedchao](sharedchao) or the
-[ace](ace) and [sharedace](sharedace) calculators
+[chao](/wiki/chao) and [sharedchao](/wiki/sharedchao) or the
+[ace](/wiki/ace) and [sharedace](/wiki/sharedace) calculators
 to predict the richness of each region. This option can be implemented
 by the following command:
 
@@ -114,7 +114,7 @@ The abrecovery.fn.0.03.sharedsobs.sharedotus file contains:
     B-C    6   Otu014,Otu030,Otu032,Otu040,Otu044,Otu048
     A-B-C  4   Otu014,Otu030,Otu032,Otu040
 
-## Why do the **venn** diagram results vary from [get.sharedseqs](get.sharedseqs) results?
+## Why do the **venn** diagram results vary from [get.sharedseqs](/wiki/get.sharedseqs) results?
 
 Confusion can occur when you have a shared file with more groups than
 just the subset you are looking at in your **venn** diagram. For this

@@ -11,29 +11,29 @@ on processing of test datasets provided by Quince, **shhh.flows** gives the
 same/similar output to AmpliconNoise. (Note: The AmpliconNoise pipeline
 includes a second algorithm, SeqNoise. SeqNoise does not operate on the
 underlying flowgrams. A mothur implementation of SeqNoise is available
-as [shhh.seqs](shhh.seqs).) **shhh.flows** uses a
+as [shhh.seqs](/wiki/shhh.seqs).) **shhh.flows** uses a
 expectation-maximization algorithm to correct flowgrams to identify the
 idealized form of each flowgram and translate that flowgram to a DNA
 sequence. Our testing has shown that when Titanium data are trimmed to
-450 flows using [trim.flows](trim.flows), **shhh.flows** provides
+450 flows using [trim.flows](/wiki/trim.flows), **shhh.flows** provides
 the highest quality data for any other method available. In contrast,
 when we use the min/max number of flows suggested by Quince of 360/720,
 the error rate is not that great. This much improved error rate does
 come at a computational cost. Whereas the features in
-[trim.seqs](trim.seqs) take on the order of minutes,
+[trim.seqs](/wiki/trim.seqs) take on the order of minutes,
 shhh.flows can take on the order of hours. Running **shhh.flows** with large
 datasets without multiple processors or MPI is not suggested. You can
 obtain the appropriate version of MPI for your operating system at
 [https://www.open-mpi.org/](https://www.open-mpi.org/). You will also need a lookup file that tells
 shhh.flows the probability of observing an intensity value for a given
 homopolymer length. You can get mothur-compatible files [
-here](lookup_files) and will need to put these files either
+here](/wiki/lookup_files) and will need to put these files either
 with your data or the mothur executable.
 
 ## Default settings
 
 There are two ways to run shhh.flows. First, if you have single flow
-files that you generated in [trim.flows](trim.flows) and you
+files that you generated in [trim.flows](/wiki/trim.flows) and you
 want to process the through shhh.flows, you will need to use the flow
 option as follows:
 
@@ -53,7 +53,7 @@ This will generate several files including \...
     sequences sorted with their idealized sequence counterpart
 
 Alternatively, if you used multiple barcodes and or primers in
-[trim.flows](trim.flows), then the names of the resulting
+[trim.flows](/wiki/trim.flows), then the names of the resulting
 flow files will be stored in a file ending in "flow.files". Using the
 files option will tell the **shhh.flows** command to process each of those
 flow files:
@@ -63,7 +63,7 @@ flow files:
 This will create the 5 files from above for each barcode / primer
 combination plus concatenated GQY1XT001.shhh.fasta and
 GQY1XT001.shhh.name files that can be used as input to
-[trim.seqs](trim.seqs).
+[trim.seqs](/wiki/trim.seqs).
 
 ## Options
 
@@ -89,7 +89,7 @@ line:
 A lookup file is required to run **shhh.flows** and it needs to be located
 either in the same folder as your data, next to your executable, or in
 the path you give this option. You can obtain the various [lookup
-files](lookup_files) that are compatible with mothur.
+files](/wiki/lookup_files) that are compatible with mothur.
 
 ### maxiter
 
@@ -146,7 +146,7 @@ pieces separately.
 The next thing you will likely want to do is remove the barcode and
 primer sequences from each idealized fasta sequence and generate a group
 file like you would if you had just used the raw fasta data. You, of
-course, can do this with [trim.seqs](trim.seqs). For example,
+course, can do this with [trim.seqs](/wiki/trim.seqs). For example,
 we might use the following command:
 
     mothur > trim.seqs(fasta=GQY1XT001.shhh.fasta, name=GQY1XT001.shhh.names, oligos=GQY1XT001.oligos, pdiffs=2, bdiffs=1, flip=T, processors=8)

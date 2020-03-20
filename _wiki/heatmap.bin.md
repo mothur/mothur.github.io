@@ -78,7 +78,7 @@ would enter:
 
 ### group
 
-If you use the [get.group](get.group) command with this
+If you use the [get.group](/wiki/get.group) command with this
 dataset, you will seen that there were 3 groups here: A, B, and C. If
 you just want the heat map between groups A and B, A and C, or B and C
 enter the following:

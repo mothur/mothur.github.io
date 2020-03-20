@@ -3,7 +3,7 @@ title: 'Lookup files'
 redirect_from: '/wiki/Lookup_files'
 ---
 These are the lookup fIles that are needed to run
-[shhh.flows](shhh.flows). They were taken from Chris
+[shhh.flows](/wiki/shhh.flows). They were taken from Chris
 Quince's site
 [1](https://code.google.com/archive/p/ampliconnoise/downloads).
 The file formats are slightly different, but contain the same data.

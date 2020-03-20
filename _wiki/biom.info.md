@@ -3,7 +3,7 @@ title: 'Biom.info'
 redirect_from: '/wiki/Biom.info.html'
 ---
 The **biom.info** command reads a biom file creates a
-[shared\_file](Shared_file). If your biom file contains
+[shared\_file](/wiki/Shared_file). If your biom file contains
 metadata mothur will also create taxonomy or constaxonomy along with
 tax.summary files.
 

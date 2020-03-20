@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Deunique.seqs.html'
 ---
 The **deunique.seqs** command is the reverse of
-the [unique.seqs](unique.seqs) command, and creates a fasta
+the [unique.seqs](/wiki/unique.seqs) command, and creates a fasta
 file from a fasta and name file. For this tutorial, you should use the
 files found in the [ amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip)
 archive.

@@ -41,7 +41,7 @@ test\_1.scrap.contigs.report file.
 
 The file parameter is 2, 3 or 4 column file containing the fastq files.
 Tired of creating the file file? Let mothur help with the
-[make.file](make.file) command!
+[make.file](/wiki/make.file) command!
 
 The 2 column format consists of the forward fastq file in the first
 column and their matching reverse fastq files in the second column. This

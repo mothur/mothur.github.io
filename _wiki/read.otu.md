@@ -16,4 +16,4 @@ you would run:
     mothur > collect.single(list=98_sq_phylip_amazon.fn.list)
 
 To make a shared file from a list and group file mothur now has a new
-command [make.shared](make.shared).
+command [make.shared](/wiki/make.shared).

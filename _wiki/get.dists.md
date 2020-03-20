@@ -24,7 +24,7 @@ final.test.accnos contains:
 ## phylip
 
 The phylip option is used to specify the name of the [ phylip
-formatted](phylip-formatted_distance_matrix) distance file
+formatted](/wiki/phylip-formatted_distance_matrix) distance file
 you would like to select distances from.
 
 The final.tre1.weighted.ave.dist file contains:
@@ -56,7 +56,7 @@ creates a final.tre1.weighted.ave.pick.dist file:
 ## column
 
 The column option is used to specify the name of the [ column
-formatted](column-formatted_distance_matrix) distance file
+formatted](/wiki/column-formatted_distance_matrix) distance file
 you would like to select distances from.
 
     U68590 U68589 0.67

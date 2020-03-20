@@ -5,9 +5,9 @@ redirect_from: '/wiki/Heatmap.sim.html'
 ---
 The **heatmap.sim** command will generate a
 heatmap indicating the pairwise similarity between multiple samples
-using a variety of [calculators](calculators) comparing
+using a variety of [calculators](/wiki/calculators) comparing
 community membership and structure. As an example, we will use the
-example from the [sogin data analysis](Sogin_data_analysis)
+example from the [sogin data analysis](/wiki/Sogin_data_analysis)
 example.
 
 ## Default settings
@@ -20,21 +20,21 @@ by mothur:
     mothur > make.shared(list=sogin.unique.good.filter.fn.list, group=sogin.good.groups)
 
 Then running the following command will generate the heatmaps for the
-[jest](jest) and [thetayc](thetayc) calculators
-for each line in the [ list](list_file) or [shared
-file](shared_file)
+[jest](/wiki/jest) and [thetayc](/wiki/thetayc) calculators
+for each line in the [ list](/wiki/list_file) or [shared
+file](/wiki/shared_file)
 
     mothur > heatmap.sim(shared=sogin.unique.good.filter.fn.shared)
 
 #### calc
 
 The calc parameter will allow you to use any of the similarity
-[calculators](calculators) provided within mothur to generate
+[calculators](/wiki/calculators) provided within mothur to generate
 heatmaps comparing the membership or structure of your samples. For
 example, the following command will generate heatmaps for the [
-classical Sorenson index](sorclass), [ Yue & Clayton's
-theta](thetayc), and the [ Morisita-Horn
-index](morisitahorn):
+classical Sorenson index](/wiki/sorclass), [ Yue & Clayton's
+theta](/wiki/thetayc), and the [ Morisita-Horn
+index](/wiki/morisitahorn):
 
     mothur > heatmap.sim(shared=sogin.unique.good.filter.fn.shared, calc=sorclass-thetayc-morisitahorn)
 
@@ -54,7 +54,7 @@ you would enter:
 #### phylip
 
 To read in a [phylip-formatted distance
-matrix](phylip-formatted_distance_matrix) you need to use the
+matrix](/wiki/phylip-formatted_distance_matrix) you need to use the
 phylip option:
 
     mothur > dist.shared(shared=sogin.unique.good.filter.fn.shared, label=0.10)
@@ -63,8 +63,8 @@ phylip option:
 #### column & name or count
 
 To read in a [column-formatted distance
-matrix](column-formatted_distance_matrix) you must provide a [name file](name_file) or
-[count file](count_file):
+matrix](/wiki/column-formatted_distance_matrix) you must provide a [name file](/wiki/name_file) or
+[count file](/wiki/count_file):
 
     mothur > heatmap.sim(column=..., name=...)
 

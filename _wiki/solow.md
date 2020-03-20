@@ -6,11 +6,11 @@ redirect_from: '/wiki/Solow'
 The **solow** calculator returns the Solow estimate of
 the number of additional OTUs that would be observed for an additional
 level of sampling. This calculator can be used in the
-[summary.single](summary.single),
-[collect.single](collect.single), and
-[rarefaction.single](rarefaction.single) commands.; however,
+[summary.single](/wiki/summary.single),
+[collect.single](/wiki/collect.single), and
+[rarefaction.single](/wiki/rarefaction.single) commands.; however,
 it really only makes sense to use it with the
-[summary.single](summary.single) command.
+[summary.single](/wiki/summary.single) command.
 
 $$S_{additional}=
 
@@ -33,7 +33,7 @@ commands:
     mothur > read.dist(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
     mothur > cluster()
 
-The 98\_lt\_phylip\_amazon.fn.[sabund file](sabund_file) is
+The 98\_lt\_phylip\_amazon.fn.[sabund file](/wiki/sabund_file) is
 also outputted to the terminal window when the cluster() command is
 executed:
 

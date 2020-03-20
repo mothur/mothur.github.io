@@ -122,7 +122,7 @@ multiple times.
 
 ### name
 
-A [ name file](name_file) contains two columns. The first
+A [ name file](/wiki/name_file) contains two columns. The first
 column contains the name of a reference sequence that is in a distance
 matrix and the second column contains the names of the sequences
 (separated by commas) that the reference sequence represents. The list
@@ -187,7 +187,7 @@ to analyze some data sets.
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
 the correct OTU's. Unlike, when you use a name file the list file

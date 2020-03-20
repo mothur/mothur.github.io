@@ -18,7 +18,7 @@ or with a shared file:
 
     mothur > count.groups(shared=stool.final.an.shared)
 
-or with a [ count file](Count_File):
+or with a [ count file](/wiki/Count_File):
 
     mothur > count.groups(count=stool.final.count_table)
 

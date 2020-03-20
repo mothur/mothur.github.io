@@ -158,9 +158,9 @@ The file abrecovery.fn.0.04A-B.shared.seqs contains:
 ### output
 
 The output parameter allows you to have the .name file be in .accnos
-form so you can use it with the [get.seqs](get.seqs),
-[list.seqs](list.seqs) and
-[remove.seqs](remove.seqs) commands. For example:
+form so you can use it with the [get.seqs](/wiki/get.seqs),
+[list.seqs](/wiki/list.seqs) and
+[remove.seqs](/wiki/remove.seqs) commands. For example:
 
     mothur > get.sharedseqs(list=abrecovery.fn.list, group=abrecovery.groups, label=0.04, output=accnos)
 

@@ -14,7 +14,7 @@ it, as well as [amazondesign.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki
 ## Default settings
 
 To run the **merge.groups** command the
-[design\_file](Design_File) is required.
+[design\_file](/wiki/Design_File) is required.
 
     mothur > merge.groups(shared=98_lt_phylip_amazon.fn.shared, design=98_lt_phylip_amazon.design)
 

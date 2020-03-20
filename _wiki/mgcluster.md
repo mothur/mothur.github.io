@@ -23,7 +23,7 @@ The blast parameter is required\...
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
 the correct OTU's. Unlike, when you use a name file the list file

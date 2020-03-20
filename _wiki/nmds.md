@@ -12,7 +12,7 @@ Modern Multidimensional Scaling.
 ## Default settings
 
 A [phylip-formatted distance
-matrix](phylip-formatted_distance_matrix) must be inputted
+matrix](/wiki/phylip-formatted_distance_matrix) must be inputted
 for **nmds** to be successful.
 
     mothur > nmds(phylip=98_sq_phylip_amazon.dist)

@@ -3,8 +3,8 @@ title: 'make.clr'
 tags: 'commands'
 redirect_from: '/wiki/Make.clr.html'
 ---
-The **make.clr** command converts a [ shared](Shared_file) file
-to a [ centered log ratio](Clr_file) file. The make.clr
+The **make.clr** command converts a [ shared](/wiki/Shared_file) file
+to a [ centered log ratio](/wiki/Clr_file) file. The make.clr
 command parameters are shared, groups, zero and label. The shared file
 is required.
 

@@ -3,8 +3,8 @@ title: 'rename.seqs'
 tags: 'commands'
 redirect_from: '/wiki/Rename.seqs.html'
 ---
-Provided with a [ fasta-formatted](Fasta_file) sequence file
-and [ group](Group_file) file, the **rename.seqs** rename the
+Provided with a [ fasta-formatted](/wiki/Fasta_file) sequence file
+and [ group](/wiki/Group_file) file, the **rename.seqs** rename the
 sequences appending the group name to the sequence name.
 
 ## Default

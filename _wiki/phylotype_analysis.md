@@ -4,20 +4,20 @@ redirect_from: '/wiki/Phylotype_analysis'
 ---
 ## General commands
 
--   [classify.seqs](Classify.seqs) - Classify sequences
+-   [classify.seqs](/wiki/Classify.seqs) - Classify sequences
     according to a taxonomy corresponding to a reference taxonomy
--   [phylotype](Phylotype) - assign sequences to OTUs based
+-   [phylotype](/wiki/Phylotype) - assign sequences to OTUs based
     on their taxonomy
--   [phylo.diversity](phylo.diversity) - calculate diversity
+-   [phylo.diversity](/wiki/phylo.diversity) - calculate diversity
     based on cladistic relationships among a set of taxa
--   [classify.otu](classify.otu) - find a consensus taxonomy
+-   [classify.otu](/wiki/classify.otu) - find a consensus taxonomy
     for an OTU
--   [classify.tree](classify.tree) - find a consensus
+-   [classify.tree](/wiki/classify.tree) - find a consensus
     taxonomy for each node on a tree
--   [get.lineage](get.lineage) - selects sequences from a
+-   [get.lineage](/wiki/get.lineage) - selects sequences from a
     given taxonomy
--   [remove.lineage](remove.lineage) - removes sequences from
+-   [remove.lineage](/wiki/remove.lineage) - removes sequences from
     a given taxonomy
--   [summary.tax](summary.tax) - summarizes taxonomy data
--   [merge.taxsummary](merge.taxsummary) - combines tax
+-   [summary.tax](/wiki/summary.tax) - summarizes taxonomy data
+-   [merge.taxsummary](/wiki/merge.taxsummary) - combines tax
     summary files.

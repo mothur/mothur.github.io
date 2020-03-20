@@ -4,8 +4,8 @@ tags: 'commands'
 redirect_from: '/wiki/Parse.list.html'
 ---
 The **parse.list** command reads a [
-list](list_file) file and [ group](group_file) or
-[ count](Count_File) file and generates a list file for each
+list](/wiki/list_file) file and [ group](/wiki/group_file) or
+[ count](/wiki/Count_File) file and generates a list file for each
 group.
 
 

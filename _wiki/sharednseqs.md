@@ -5,8 +5,8 @@ redirect_from: '/wiki/Sharednseqs'
 ---
 The **sharednseqs** calculator returns the number
 of individuals sampled from two communities. This calculator can be used
-in the [summary.shared](summary.shared) and
-[collect.shared](collect.shared) commands.
+in the [summary.shared](/wiki/summary.shared) and
+[collect.shared](/wiki/collect.shared) commands.
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
 Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following
@@ -16,7 +16,7 @@ commands:
     mothur > cluster()
     mothur > read.otu(list=98_lt_phylip_amazon.fn.list, group=amazon.groups, label=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[shared file](shared_file) will
+The 98\_lt\_phylip\_amazon.fn.[shared file](/wiki/shared_file) will
 contain the following two lines:
 
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2   1   1   3   2   1   1   1   1   2   1   1   2   5   1   1   1   1   2   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   

@@ -16,20 +16,20 @@ you can have.
 
     mothur > make.shared(list=98_sq_phylip_amazon.an.list, group=amazon.groups)
 
-or if you used a [ count file](Count_File) instead of a name
+or if you used a [ count file](/wiki/Count_File) instead of a name
 file and group file:
 
     mothur > make.table(name=amazon.names, group=amazon.groups)
     mothur > cluster(phylip=98_sq_phylip_amazon.dist, count=amazon.count_table)
     mothur > make.shared(list=98_sq_phylip_amazon.an.unique_list, count=amazon.count_table)
 
-or you can convert a [ count file](Count_File) to a [shared
-file](shared_file) and [list file](list_file)
+or you can convert a [ count file](/wiki/Count_File) to a [shared
+file](/wiki/shared_file) and [list file](/wiki/list_file)
 where each representative sequence is placed in it's own OTU..
 
     mothur > make.shared(count=amazon.count_table, label=0.03)
 
-This command will generate a [shared file](shared_file).
+This command will generate a [shared file](/wiki/shared_file).
 
 ## Creating a shared file from a biom file
 
@@ -66,7 +66,7 @@ included in your analysis:
 -   1.36.0 mothur no longer checks for biom matrix type to allow for
     more flexibility.
 -   1.36.0 rabund files are no longer outputted. mothur will create a
-    rabund file with the [get.rabund](get.rabund) command.
+    rabund file with the [get.rabund](/wiki/get.rabund) command.
 -   1.39.0 Eliminates zero abundance OTUs created by some floating point
     biom files converted to shared files.
 -   1.41.0 Adds count file to shared file option in **make.shared** command.

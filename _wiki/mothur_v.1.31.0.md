@@ -3,13 +3,13 @@ title: 'mothur v.1.31.0'
 redirect_from: '/wiki/Mothur_v.1.31.0.html'
 ---
 We are very happy to announce the release of [mothur
-v.1.31.0](mothur_v.1.31.0) and have a number of exciting new
+v.1.31.0](/wiki/mothur_v.1.31.0) and have a number of exciting new
 features to tell you about. First, we have re-implemented the SparCC
 program first described by [Friedman and
 Alm](https://dx.doi.org/10.1371/journal.pcbi.1002687).
 It calculates correlation coefficients that are not sensitive to the
 hideous effects of relative abundance data. You can run it with the
-[sparcc](sparcc) command. Second, we have implemented the
+[sparcc](/wiki/sparcc) command. Second, we have implemented the
 approach described by [Holmes and
 colleagues](https://dx.doi.org/10.1371/journal.pone.0030126)
 for assigning samples to metacommunities using Dirichlet multinomial
@@ -22,8 +22,8 @@ implements a feature selection algorithm using the random forest
 algorithm. It's faster and more accurate than the more commonly used R
 packages. Finally, since people are staring to develop their own mock
 communities and are interested in using
-[shhh.flows](shhh.flows) with Ion Torrent data and new 454
-platforms, we have created [make.lookup](make.lookup) for
+[shhh.flows](/wiki/shhh.flows) with Ion Torrent data and new 454
+platforms, we have created [make.lookup](/wiki/make.lookup) for
 making your own lookup file to use with shhh.flows. In our testing, we
 don't see much of an effect, but hey, you might. As always, we have a
 number of new features that we've added to existing functions. As
@@ -43,83 +43,83 @@ able to help so many people do great research!
 
 ## New commands
 
--   [get.metacommunity](get.communitytype) - assign samples
+-   [get.metacommunity](/wiki/get.communitytype) - assign samples
     to metacommunities using the algorithm of [Holmes and
     colleagues](https://dx.doi.org/10.1371/journal.pone.0030126)
--   [sparcc](sparcc) - calculate the correlation between OTUs
+-   [sparcc](/wiki/sparcc) - calculate the correlation between OTUs
     using the algorithm of [Friedman and
     Alm](https://dx.doi.org/10.1371/journal.pcbi.1002687)
 -   classify.shared - identify features
     (i.e. OTUs) that allow one to distinguish between sets of
     communities using the random forest machine learning algorithm.
--   [make.lookup](make.lookup) - create custom lookup files
-    for use with [shhh.flows](shhh.flows)
+-   [make.lookup](/wiki/make.lookup) - create custom lookup files
+    for use with [shhh.flows](/wiki/shhh.flows)
 
 ## Feature updates
 
--   [get.sabund](get.sabund) &&
-    [get.rabund](get.rabund) - added count file
+-   [get.sabund](/wiki/get.sabund) &&
+    [get.rabund](/wiki/get.rabund) - added count file
 -   added intelligent warning in case where a group file is used were a
     design file was needed.
--   [chop.seqs](chop.seqs) - added name, group and count
+-   [chop.seqs](/wiki/chop.seqs) - added name, group and count
     parameters. If sequences are removed from your fasta file by
     chop.seqs, mothur will create new \*.chop.names, \*.chop.groups and
     \*.chop.count\_table files. -
     [https://forum.mothur.org/viewtopic.php?f=5&t=2136](https://forum.mothur.org/viewtopic.php?f=5&t=2136)
--   [get.oturep](get.oturep) - added method parameter.
+-   [get.oturep](/wiki/get.oturep) - added method parameter.
     Options distance and abundance. Default=distance. -
     [https://forum.mothur.org/viewtopic.php?f=5&t=2131](https://forum.mothur.org/viewtopic.php?f=5&t=2131)
--   [filter.shared](filter.shared) - added rarepercent and
+-   [filter.shared](/wiki/filter.shared) - added rarepercent and
     keepties parameters
     (https://forum.mothur.org/viewtopic.php?f=5&t=2007)
--   [unifrac.weighted](unifrac.weighted),
-    [unifrac.unweighted](unifrac.unweighted),
-    [parsimony](parsimony), [indicator](indicator)
-    and [phylo.diversity](phylo.diversity) - parallelized for
+-   [unifrac.weighted](/wiki/unifrac.weighted),
+    [unifrac.unweighted](/wiki/unifrac.unweighted),
+    [parsimony](/wiki/parsimony), [indicator](/wiki/indicator)
+    and [phylo.diversity](/wiki/phylo.diversity) - parallelized for
     Windows.
--   [get.lineage](get.lineage) and
-    [remove.lineage](remove.lineage)- added constaxonomy and
+-   [get.lineage](/wiki/get.lineage) and
+    [remove.lineage](/wiki/remove.lineage)- added constaxonomy and
     shared parameters
     (https://forum.mothur.org/viewtopic.php?f=3&t=2210)
--   [sens.spec](sens.spec) - added square phylip format
--   [create.database](create.database) - add count file
--   [pcr.seqs](pcr.seqs) - added primer to types oligos can
+-   [sens.spec](/wiki/sens.spec) - added square phylip format
+-   [create.database](/wiki/create.database) - add count file
+-   [pcr.seqs](/wiki/pcr.seqs) - added primer to types oligos can
     read
 -   added summary file to current types kept by mothur
--   added modifynames parameter to [set.dir](set.dir) -
+-   added modifynames parameter to [set.dir](/wiki/set.dir) -
     [https://forum.mothur.org/viewtopic.php?f=10&t=2324&p=6360#p6360](https://forum.mothur.org/viewtopic.php?f=10&t=2324&p=6360#p6360)
 
 ## Bug fixes
 
 -   added OTUlabels to shared file in
-    [remove.rare](remove.rare) - fixed in 1.30.1
--   windows paralellization of [pairwise.seqs](pairwise.seqs)
+    [remove.rare](/wiki/remove.rare) - fixed in 1.30.1
+-   windows paralellization of [pairwise.seqs](/wiki/pairwise.seqs)
     cutoff was not passed to thread - fixed in 1.30.1
--   [sffinfo](sffinfo) - clipQualRight=0 caused issues with
+-   [sffinfo](/wiki/sffinfo) - clipQualRight=0 caused issues with
     rightIndex value in flow file.
--   [pcr.seqs](pcr.seqs) - For forward primer trimming with
+-   [pcr.seqs](/wiki/pcr.seqs) - For forward primer trimming with
     aligned sequences and keepdots=t. If the character before the first
     primer base was a base and not a gap the base was not trimmed.
     [https://forum.mothur.org/viewtopic.php?f=4&t=2209](https://forum.mothur.org/viewtopic.php?f=4&t=2209) - fixed
     1.30.2
--   [summary.seqs](summary.seqs) - 32bit machines processing
+-   [summary.seqs](/wiki/summary.seqs) - 32bit machines processing
     a file larger than 4G could hang.
--   [pcr.seqs](pcr.seqs) - removing primers from aligned
+-   [pcr.seqs](/wiki/pcr.seqs) - removing primers from aligned
     sequences with keepdots=f could result in an unaligned dataset if
     primers were not found at the same locations. Added gaps to preserve
     alignment.
--   [classify.tree](classify.tree) - when name file is given
+-   [classify.tree](/wiki/classify.tree) - when name file is given
     everything is unclassified -
     [https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116](https://forum.mothur.org/viewtopic.php?f=3&t=2161&p=6116#p6116)
--   [remove.groups](remove.groups)(groups=notValidGroupName,
+-   [remove.groups](/wiki/remove.groups)(groups=notValidGroupName,
     \...) mothur removes all of the groups. Fix will ignore invalid
     group and continue.
--   [sff.multiple](sff.multiple) - fixed order parameter to
+-   [sff.multiple](/wiki/sff.multiple) - fixed order parameter to
     use A, B and I.
--   [cluster.split](cluster.split) - when splitting by
+-   [cluster.split](/wiki/cluster.split) - when splitting by
     taxonomy mothur was saving temp fasta files as the "current" fasta
     file.
--   [indicator](indicator) - fixed bug with pvalues when
+-   [indicator](/wiki/indicator) - fixed bug with pvalues when
     multiple processors were used.
 
 ## Changes to wiki

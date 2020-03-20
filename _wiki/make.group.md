@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Make.group.html'
 ---
 The **make.group** command reads a fasta file or series of fasta files and
-creates a [ group](group_file) file.
+creates a [ group](/wiki/group_file) file.
 
 ## Default Options
 

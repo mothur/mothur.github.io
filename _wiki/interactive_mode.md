@@ -34,7 +34,7 @@ prompt. For example:
     mothur > align.seqs(help)
 
 Would give you the help file information for the
-[align.seqs](align.seqs) command.
+[align.seqs](/wiki/align.seqs) command.
 
 If you want to quit mothur you simply enter:
 
@@ -111,5 +111,5 @@ combining variables. For example:
     mothur > align.seqs(fasta=my.fasta, reference=$REFERENCE_LOCATION/$ALIGNREF)
 
 Alternatively, If you know what commands you will be running, you can
-use either the [command line mode](command_line_mode) or
-[batch mode](batch_mode).
+use either the [command line mode](/wiki/command_line_mode) or
+[batch mode](/wiki/batch_mode).

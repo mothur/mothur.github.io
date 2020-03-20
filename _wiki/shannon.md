@@ -5,9 +5,9 @@ redirect_from: '/wiki/Shannon'
 ---
 The **shannon** calculator returns the Shannon
 diversity index for an OTU definition. This calculator can be used in
-the [summary.single](summary.single),
-[collect.single](collect.single), and
-[rarefaction.single](rarefaction.single) commands.
+the [summary.single](/wiki/summary.single),
+[collect.single](/wiki/collect.single), and
+[rarefaction.single](/wiki/rarefaction.single) commands.
 
 $$H_{shannon} = - \sum_{i=1}^{S_{obs}} \frac{n_i}{N} ln \frac{n_i}{N}$$
 
@@ -31,7 +31,7 @@ commands:
 
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[sabund file](sabund_file) is
+The 98\_lt\_phylip\_amazon.fn.[sabund file](/wiki/sabund_file) is
 also outputted to the terminal window when the cluster() command is
 executed:
 

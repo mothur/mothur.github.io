@@ -10,12 +10,12 @@ Idaho. For more information about **clearcut** please refer to
 [https://github.com/ibest/clearcut/](https://github.com/ibest/clearcut/) Note: In version 1.13.0 the
 clearcut source was added to mothur, so you no longer need the clearcut
 executable. You can still download the **clearcut** executable if you would
-like, [download clearcut](Download_Clearcut).
+like, [download clearcut](/wiki/Download_Clearcut).
 
 ## Default settings
 
 You must provide either an aligned fasta file or a [phylip formatted
-distance matrix](phylip-formatted_distance_matrix). If you
+distance matrix](/wiki/phylip-formatted_distance_matrix). If you
 provide a fasta file, you must specify DNA or protein.
 
     mothur > clearcut(phylip=abrecovery.dist)

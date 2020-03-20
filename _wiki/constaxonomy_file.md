@@ -4,7 +4,7 @@ tags: 'file_types'
 redirect_from: '/wiki/Constaxonomy_file'
 ---
 The constaxonomy file is created by
-[classify.otu](classify.otu), and contains consensus
+[classify.otu](/wiki/classify.otu), and contains consensus
 taxonomies for each OTU. It is a 3 column file: OTU label, abundance,
 consensus taxonomy.
 

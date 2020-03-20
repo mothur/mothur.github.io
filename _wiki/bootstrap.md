@@ -5,9 +5,9 @@ redirect_from: '/wiki/Bootstrap'
 ---
 The **bootstrap** calculator returns the bootstrap
 richness estimate for an OTU definition. This calculator can be used in
-the [summary.single](summary.single),
-[collect.single](collect.single), and
-[rarefaction.single](rarefaction.single) commands. The
+the [summary.single](/wiki/summary.single),
+[collect.single](/wiki/collect.single), and
+[rarefaction.single](/wiki/rarefaction.single) commands. The
 calculations for the **bootstrap** richness estimator are implemented as
 described by Smith and Van Belle for a single "quadrant".
 
@@ -28,7 +28,7 @@ commands:
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
     mothur > summary.single(calc=boostrap)
 
-The 98\_lt\_phylip\_amazon.fn.[sabund file](sabund_file) is
+The 98\_lt\_phylip\_amazon.fn.[sabund file](/wiki/sabund_file) is
 also outputted to the terminal window when the cluster() command is
 executed:
 

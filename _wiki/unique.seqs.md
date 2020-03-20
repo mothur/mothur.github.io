@@ -19,7 +19,7 @@ To run the command the name of a fasta-file needs to be provided:
 This will generate two files: amazon.names and amazon.unique.fasta. You
 can now align amazon.unique.fasta and generate a distance matrix. Then
 you can use that matrix with the newly generated amazon.name file with
-the [names option](cluster#name) for the cluster command.
+the [names option](/wiki/cluster#name) for the cluster command.
 
 
 ### name option
@@ -27,7 +27,7 @@ the [names option](cluster#name) for the cluster command.
 If you align your unique sequences, filter and screen them, you might be
 removing bases from the sequences that accounted for differences between
 the sequences. You can then rerun your sequences through **unique.seqs** by
-providing a [name file](name_file) for the name option:
+providing a [name file](/wiki/name_file) for the name option:
 
     mothur > unique.seqs(fasta=amazon.unique.filter.fasta, name=amazon.names)
 
@@ -36,7 +36,7 @@ the sequence names will be merged.
 
 ### count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 

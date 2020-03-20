@@ -5,8 +5,8 @@ redirect_from: '/wiki/Sharedace'
 ---
 The **sharedace** calculator returns the shared ACE
 richness estimate for an OTU definition. This calculator can be used in
-the [summary.shared](summary.shared) and
-[collect.shared](collect.shared) commands. The calculations
+the [summary.shared](/wiki/summary.shared) and
+[collect.shared](/wiki/collect.shared) commands. The calculations
 for the shared ACE richness estimator are implemented as described by
 Chao in the user manual for her program
 [spade](http://140.114.36.3/wordpress/wp-content/uploads/software/SPADE_UserGuide.pdf).
@@ -55,7 +55,7 @@ commands:
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
     mothur > make.shared(list=98_lt_phylip_amazon.fn.list, group=amazon.groups, label=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[shared file](shared_file) will
+The 98\_lt\_phylip\_amazon.fn.[shared file](/wiki/shared_file) will
 contain the following two lines:
 
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2   1   1   3   2   1   1   1   1   2   1   1   2   5   1   1   1   1   2   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   

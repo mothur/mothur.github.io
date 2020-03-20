@@ -2,7 +2,7 @@
 title: 'Command line mode'
 redirect_from: '/wiki/Command_line_mode'
 ---
-In the [command line mode](command_line_mode) you can run
+In the [command line mode](/wiki/command_line_mode) you can run
 mothur directly from the terminal. This may be advantageous for people
 generating shell script pipelines. Following the name of the executable
 (i.e. mothur) you would type out the commands within quote marks and the
@@ -64,4 +64,4 @@ combining variables. For example:
     $ ./mothur "#REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release;TAXONREF_FASTA=trainset9_032012.pds.fasta;TAXONREF_TAX=trainset9_032012.pds.tax;CONTAMINENTS=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota;DATA=/Users/sarahwestcott/Desktop/MiSeq_SOP; PROC=12;classify.seqs(fasta=$DATA/my.fasta, count=$DATA/my.count_table, reference=$REFERENCE_LOCATION/$TAXONREF_FASTA, taxonomy=$REFERENCE_LOCATION/$TAXONREF_TAX, cutoff=80);remove.lineage(fasta=current, count=current, taxonomy=current, taxon=$CONTAMINENTS);"
 
 A related option is to run mothur in [batch
-mode](batch_mode).
+mode](/wiki/batch_mode).

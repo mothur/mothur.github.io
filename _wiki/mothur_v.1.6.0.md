@@ -3,17 +3,17 @@ title: 'mothur v.1.6.0'
 redirect_from: '/wiki/Mothur_v.1.6.0.html'
 ---
 We are happy to announce the release of [mothur
-v.1.6.0](mothur_v.1.6.0) from the new cozy confines of the
+v.1.6.0](/wiki/mothur_v.1.6.0) from the new cozy confines of the
 University of Michigan! Thank you for your patience as we moved the
 server across the country and then had a hick-up or two while we
 reconnected everything. Hopefully, by now you have noticed that the
 picture of my young bride and son have moved to www.mothur.org. There
-you can find several useful links - the [ wiki](Main_Page), a
+you can find several useful links - the [ wiki](/wiki), a
 [discussion forum](https://www.mothur.org/forum), and a link to [download
-mothur](download_mothur). In case you thought we take
-ourselves too seriously (please see the [system](system)
+mothur](/wiki/download_mothur). In case you thought we take
+ourselves too seriously (please see the [system](/wiki/system)
 command), we have "[jumped the
-shark](wikipedia:Jumping_the_shark)" and set-up a [facebook
+shark](https://en.wikipedia.org/wiki/Jumping_the_shark)" and set-up a [facebook
 page](https://www.facebook.com/pages/mothur/133966409231) for all of the
 adoring fans. A final bit of very exciting news is that the [manuscript
 describing
@@ -25,7 +25,7 @@ venture!
 This is a deceptively small update. We have added three commands. First,
 we have done our best to cull the literature, do some interpretive
 reading, and implement four algorithms to detect chimeras. The
-[chimera.seqs](chimera.uchime) command implements the
+[chimera.seqs](/wiki/chimera.uchime) command implements the
 Bellerophon, Pintail, CCode, and ChimeraCheck algorithms. Please feel
 free to play around with these commands and let us know what you think
 of them. We have had to implement several of these based solely on what
@@ -33,14 +33,14 @@ was provided in the original manuscript, which didn't always make
 sense. If we missed an algorithm, please let us know. Also, the default
 options in mothur are the way they are implemented in their "home"
 programs. Second, we have added the
-[align.check](align.check) command. If you are familiar with
+[align.check](/wiki/align.check) command. If you are familiar with
 the [arb editor window](http://www.arb-home.de), you have noticed that
 for 16S rRNA sequences they put all sorts of marks under the bases to
 describe the secondary structure alignment quality. This command will
 count the number of those different markings for each sequence to allow
 you to assess alignment quality. Third, we often receive requests from
 people for something like what we have provided in
-[get.sharedseqs](get.sharedseqs). This command will return the
+[get.sharedseqs](/wiki/get.sharedseqs). This command will return the
 sequences shared between two or more groups. If people still have
 comments on this command, please let us know. Finally, as we release
 this version the documentation for these three commands is very sparse.
@@ -64,18 +64,18 @@ example analyses.
 Updates
 =======
 
--   [chimera.seqs](chimera.uchime) - a command to detect
+-   [chimera.seqs](/wiki/chimera.uchime) - a command to detect
     chimeric sequences using bellerophon, pintail, ccode and chimera
     check methods.
 
 <!-- -->
 
--   [align.check](align.check) - uses secondary structure
+-   [align.check](/wiki/align.check) - uses secondary structure
     maps to check the quality of an alignment.
 
 <!-- -->
 
--   [get.sharedseqs](get.sharedseqs) - identifies sequences
+-   [get.sharedseqs](/wiki/get.sharedseqs) - identifies sequences
     that are shared by multiple OTUs
 
 Bug fixes
@@ -85,9 +85,9 @@ Bug fixes
 
 <!-- -->
 
--   fixed bug with [trim.seqs](trim.seqs),
-    [reverse.seqs](reverse.seqs) and
-    [filter.seqs](filter.seqs)
+-   fixed bug with [trim.seqs](/wiki/trim.seqs),
+    [reverse.seqs](/wiki/reverse.seqs) and
+    [filter.seqs](/wiki/filter.seqs)
 
 Documentation changes
 =====================

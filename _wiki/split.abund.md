@@ -44,7 +44,7 @@ than 10 other sequences, you only get .rare files.
 
 or
 
-Using a [ count](Count_File) file the splitting is done based
+Using a [ count](/wiki/Count_File) file the splitting is done based
 on the number of sequences a sequence represents.
 
     mothur > split.abund(fasta=abrecovery.fasta, count=abrecovery.count_table, cutoff=10)

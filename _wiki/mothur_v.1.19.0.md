@@ -3,7 +3,7 @@ title: 'mothur v.1.19.0'
 redirect_from: '/wiki/Mothur_v.1.19.0.html'
 ---
 We are pleased to be releasing [mothur
-v.1.19.0](mothur_v.1.19.0); however, we wish it were under
+v.1.19.0](/wiki/mothur_v.1.19.0); however, we wish it were under
 better circumstances. Recently it came to our attention that the testing
 approach we were using to measure our ability to detect true chimeras
 (sensitivity) while limiting the risk of falsely calling sequences
@@ -37,16 +37,16 @@ you have any question, concerns, or flames.
 
 ## Feature updates
 
--   [chimera.slayer](chimera.slayer) - significant overhaul
+-   [chimera.slayer](/wiki/chimera.slayer) - significant overhaul
     to make it more faithful to the original ChimeraSlayer program
--   [screen.seqs](screen.seqs) - added qfile parameter
--   [get.current](get.current) - now displays the current
+-   [screen.seqs](/wiki/screen.seqs) - added qfile parameter
+-   [get.current](/wiki/get.current) - now displays the current
     number of processors and flow file type is now saved with the
     current feature
 
 ## Bug fixes
 
--   [filter.seqs](filter.seqs),
-    [align.seqs](align.seqs), etc. - current can now be used
+-   [filter.seqs](/wiki/filter.seqs),
+    [align.seqs](/wiki/align.seqs), etc. - current can now be used
     in a list of file names. example - fasta=current-silva.gold.align
     now works.

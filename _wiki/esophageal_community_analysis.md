@@ -3,7 +3,7 @@ title: 'Esophageal community analysis'
 redirect_from: '/wiki/Esophageal_community_analysis'
 ---
 In this tutorial we will complete a fairly comprehensive [esophageal
-community analysis](esophageal_community_analysis) using
+community analysis](/wiki/esophageal_community_analysis) using
 greengenes, ARB, and the tools available in mothur. To complete this
 analysis, you need to download the folder compressed in the [
 Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) archive. These sequences
@@ -18,9 +18,9 @@ most of the analyses we would like to do in mothur. First, we need to
 generate an alignment of the 710 16S rRNA gene sequences. For this
 tutorial we will use mothur. Be sure that you are in the "Esophagus"
 folder and get a copy of your favorite [alignment
-database](alignment_database) and put it in the same folder
+database](/wiki/alignment_database) and put it in the same folder
 as well. Go ahead and fire up mothur. First, we will [ align the
-sequences](align.seqs), with one processor this should take
+sequences](/wiki/align.seqs), with one processor this should take
 about 40 seconds:
 
     mothur > align.seqs(fasta=esophagus.fasta, reference=core_set_aligned.imputed.fasta)
@@ -31,7 +31,7 @@ or
 
 Next, we want to make sure that our sequences overlap over the same
 region of the 16S rRNA gene. First let's take a look at a [
-summary](summary.seqs) basic statistics of our sequence
+summary](/wiki/summary.seqs) basic statistics of our sequence
 collection:
 
     mothur > summary.seqs(fasta=esophagus.align)
@@ -51,7 +51,7 @@ satisfied with sequences that have any ambiguous bases, much less 5! So
 let's remove any sequences that have more than 5 ambiguous bases. While
 we're at it, let's remove any sequences where the alignment doesn't
 start by position 204 or end by position 4456 using the
-[screen.seqs](screen.seqs) command. These correspond to E.
+[screen.seqs](/wiki/screen.seqs) command. These correspond to E.
 coli positions 67 and 873. We also want to remove the problematic
 sequences from the group file:
 
@@ -76,7 +76,7 @@ screen. Now we want to make sure that we are only considering the same
 region of the alignment (i.e. positions 204 through 4470). We also want
 to remove any columns from the alignment that only contain gap
 characters. To do this we will use the
-[filter.seqs](filter.seqs) command:
+[filter.seqs](/wiki/filter.seqs) command:
 
     mothur > filter.seqs(fasta=esophagus.good.align, trump=., vertical=T)
 
@@ -88,7 +88,7 @@ construct filter: 677
 
 Now we need to generate a phylip-formatted distance matrix so we can run
 some of the hypothesis testing procedures. We will do this using the
-[dist.seqs](dist.seqs) command:
+[dist.seqs](/wiki/dist.seqs) command:
 
     mothur > dist.seqs(fasta=esophagus.good.filter.fasta, output=lt)
 
@@ -102,30 +102,30 @@ esophagus.dist.
 ## OTU-based Analyses
 
 We are now ready to analyze our sequence collection in mothur. You are
-encouraged to look through the [mothur manual](mothur_manual)
+encouraged to look through the [mothur manual](/wiki/mothur_manual)
 to get a better idea of the options available for each command. Go ahead
 and open mothur in your terminal. Our analysis will focus on OTUs
 defined at distances less than or equal to 0.10. We will now
-[cluster](cluster) the sequences using the average neighbor
+[cluster](/wiki/cluster) the sequences using the average neighbor
 algorithm:
 
     mothur > cluster(phylip=esophagus.dist, cutoff=0.10)
 
 This will generate three files: [
-esophagus.fn.sabund](Sabund_file), [
-esophagus.fn.list](List_file), and [
-esophagus.fn.rabund](Rabund_file). The sequences in
+esophagus.fn.sabund](/wiki/Sabund_file), [
+esophagus.fn.list](/wiki/List_file), and [
+esophagus.fn.rabund](/wiki/Rabund_file). The sequences in
 esophagus.fasta come from three patients. To parse esophagus.an.list
 into these three groups you need to make use of the esophagus.groups
-file using the [make.shared](make.shared) command. We will be
+file using the [make.shared](/wiki/make.shared) command. We will be
 interested in OTUs defined as a group of unique sequences and those that
 are no more than 0.03, 0.05 and 0.10 apart from each other:
 
     mothur > make.shared(list=esophagus.an.list, group=esophagus.good.groups, label=unique-0.03-0.05-0.10)
 
 This command will generate four files including [
-esophagus.fn.shared](Shared_file), [
-esophagus.fn.B.rabund](Rabund_file), esophagus.an.D.rabund,
+esophagus.fn.shared](/wiki/Shared_file), [
+esophagus.fn.B.rabund](/wiki/Rabund_file), esophagus.an.D.rabund,
 and esophagus.an.C.rabund.
 
 ### Single-sample analyses
@@ -133,7 +133,7 @@ and esophagus.an.C.rabund.
 We would like to know the richness of each of these rabund files as well
 as the richness that is shared between the three communities. As an
 example, let's analyze patient B. To generate data for a rarefaction
-curve use the [rarefaction.single](rarefaction.single)
+curve use the [rarefaction.single](/wiki/rarefaction.single)
 command:
 
     mothur > rarefaction.single(rabund=esophagus.an.B.rabund)
@@ -142,7 +142,7 @@ This will generate esophagus.an.B.rarefaction.
 
 To generate a collector's curve for the Chao1 estimator and
 non-parametric Shannon Index use the
-[collect.single](collect.single) command:
+[collect.single](/wiki/collect.single) command:
 
     mothur > collect.single(calc=chao-npshannon)
 
@@ -173,8 +173,8 @@ cutoff of 0.03 was 136.
 
 Obviously many sequences are shared between the three patients. To
 estimate the overlap you can use
-[collect.shared](collect.shared) and
-[summary.shared](summary.shared). Here we will read in the
+[collect.shared](/wiki/collect.shared) and
+[summary.shared](/wiki/summary.shared). Here we will read in the
 shared file and calculate the shared richness, Jaccard coefficient, and
 thetaYC value between the three patients:
 
@@ -189,7 +189,7 @@ Index measures similarity in community membership while thetaYC measures
 similarity in community structure.
 
 As a method of visualizing the data you can run the
-[venn](venn) command using the observed and estimated
+[venn](/wiki/venn) command using the observed and estimated
 richness:
 
     mothur > venn(label=0.03, calc=sharedsobs-sharedchao)
@@ -197,7 +197,7 @@ richness:
 With this SVG file, you can manually scale the diagram so that the
 regions are proportional to the richness represented in the region. If
 you had more groups, it would be interesting to try out the
-[tree.shared](tree.shared) command.
+[tree.shared](/wiki/tree.shared) command.
 
 ## Hypothesis testing approaches
 
@@ -209,7 +209,7 @@ identifying differences as being statistically significant that are not.
 
 ### libshuff
 
-To execute the [libshuff](libshuff) command you will need to
+To execute the [libshuff](/wiki/libshuff) command you will need to
 read in the distance matrix with the group file:
 
     mothur > libshuff(phylip=esophagus.dist, group=esophagus.good.groups)
@@ -235,7 +235,7 @@ Ideally, you would take the time to generate a "good" phylogeny of
 your sequences. We have provided a neighbor-joining tree generated from
 esophagus.dist, which is named esophagus.tree. First we will use the
 parsimony test. This test was previously implemented in the TreeClimber
-programmer and is now available as the [parsimony](parsimony)
+programmer and is now available as the [parsimony](/wiki/parsimony)
 command. First you need to read in the tree with the group file:
 
     mothur > parsimony(tree=esophagus.tree, group=esophagus.good.groups)
@@ -263,7 +263,7 @@ community structures.
 
 ### Weighted UniFrac Test
 
-The [ weighted unifrac](unifrac.weighted) test measures the
+The [ weighted unifrac](/wiki/unifrac.weighted) test measures the
 fraction of a tree's branch length that can be ascribed to each
 community. A similar analysis was previously available through the Knight Lab
 website. Similar to the
@@ -284,8 +284,8 @@ significantly different from each other.
 
 ### Unweighted UniFrac Test
 
-Similar to the [ weighted unifrac](unifrac.weighted) test,
-the [ unweighted unifrac](unifrac.unweighted) test measures
+Similar to the [ weighted unifrac](/wiki/unifrac.weighted) test,
+the [ unweighted unifrac](/wiki/unifrac.unweighted) test measures
 the fraction of a tree's branch length that is unique to each group
 represented in the tree. A similar analysis was previously available through the
 Knight Lab website.

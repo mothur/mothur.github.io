@@ -17,13 +17,13 @@ follows:
 
 You can download our version of the..
 
--   [ silva reference files](Silva_reference_files): The
+-   [ silva reference files](/wiki/Silva_reference_files): The
     fasta and taxonomic outlines for the SILVA, greengenes, RDP, and
     NCBI heirarchies and can be used with the Bayesian classifier
--   [rdp reference files](RDP_reference_files): The fasta and
+-   [rdp reference files](/wiki/RDP_reference_files): The fasta and
     taxonomic outline that the RDP uses with their implementation of the
     Bayesian classifier
 -   [ greengenes reference
-    files](Greengenes-formatted_databases): The fasta and
+    files](/wiki/Greengenes-formatted_databases): The fasta and
     taxonomic outline that greengenes uses with their classifier and can
     be used with the Bayesian classifier

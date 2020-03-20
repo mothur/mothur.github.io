@@ -19,7 +19,7 @@ approximation. The Laplace approximation is recommended for selecting
 the best number of metacommunities.
 
 Output files on the **get.communitytype** command include a [
-relabund](Relabund_file) file describing the OTU distribution
+relabund](/wiki/Relabund_file) file describing the OTU distribution
 for each number of metacommunities, and a posterior file that displays
 the membership of each sample group to the metacommunities described.
 The results of the best fitting number of metacommunities is also
@@ -27,7 +27,7 @@ summarised in a design file. It is important to note that mothur will
 find the optimal number of metacommunities by increasing the number of
 partitions until a local minimum Laplace value is observed. As a result
 a number of output files will be generated and it is up to the user to
-select the correct [ relabund](Relabund_file) file to
+select the correct [ relabund](/wiki/Relabund_file) file to
 describe the metacommunities.
 
 ## Defaults

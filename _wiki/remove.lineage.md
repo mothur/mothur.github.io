@@ -6,10 +6,10 @@ redirect_from: '/wiki/Remove.lineage.html'
 The **remove.lineage** command reads a taxonomy
 file and a taxon and generates a new file that contains only the
 sequences not containing that taxon. You may also include either a [
-fasta](fasta_file), [ name](name_file), [
-group](group_file), [ list](list_file), [
-count](Count_File) or [align.report
-file](align.report_file) to this command and mothur will
+fasta](/wiki/fasta_file), [ name](/wiki/name_file), [
+group](/wiki/group_file), [ list](/wiki/list_file), [
+count](/wiki/Count_File) or [align.report
+file](/wiki/align.report_file) to this command and mothur will
 generate new files for each of those that contains only the sequences
 not containing that taxon. To complete this tutorial, you are encouraged
 to obtain the [ abrecovery](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) dataset.
@@ -18,7 +18,7 @@ to obtain the [ abrecovery](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrec
 ## Special note
 
 When running **remove.lineage** in
-[command\_line\_mode](Command_line_mode), you must wrap your
+[command\_line\_mode](/wiki/Command_line_mode), you must wrap your
 taxon in quotes so mothur knows to ignore the ; characters.
 
     Example: ./mothur "#remove.lineage(taxonomy=abrecovery.silva.taxonomy, taxon='Bacteria;Firmicutes;');"
@@ -31,7 +31,7 @@ file and taxon. The command will generate a \*.pick.\* file.
 ### Running with a taxonomy file
 
 To generate an taxonomy file, let's first run
-[classify.seqs](classify.seqs):
+[classify.seqs](/wiki/classify.seqs):
 
     mothur > classify.seqs(fasta=abrecovery.fasta, template=silva.nogap.fasta, taxonomy=silva.bacteria.silva.tax)
     mothur > remove.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;)
@@ -61,7 +61,7 @@ scores are below 100 for Bacteria and below 90 for Firmicutes.
 ### Running with a constaxonomy file
 
 First we need to find the consensus taxonomies for each OTU with the
-[classify.otu](classify.otu) command:
+[classify.otu](/wiki/classify.otu) command:
 
     mothur > classify.otu(list=final.an.list, name=final.names, taxonomy=final.taxonomy)
     mothur > remove.lineage(constaxonomy=final.an.0.03.cons.taxonomy, list=final.an.list, taxon='Bacteria(100);Firmicutes(100);', label=0.03)
@@ -80,7 +80,7 @@ names of sequences NOT from Bacteria;Firmicutes;
 
 ## count option
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 

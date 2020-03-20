@@ -7,8 +7,8 @@ The **list.otulabels** command lists otu labels
 from shared, relabund or list file. This list can be used especially
 with subsampled datasets when used with output from classify.otu,
 otu.association, or corr.axes to select specific otus using the
-[get.otus](get.otus) or
-[remove.otus](remove.otus) commands.
+[get.otus](/wiki/get.otus) or
+[remove.otus](/wiki/remove.otus) commands.
 
 ## Default Settings
 

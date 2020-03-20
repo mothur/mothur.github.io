@@ -8,7 +8,7 @@ of Chris Quince's sequence denoising algorithm, SeqNoise
 [1](https://code.google.com/p/ampliconnoise/). (Note: SeqNoise is one of
 two algorithms in the AmpliconNoise pipeline. The other, PyroNoise, runs
 first and takes as input the raw flowgrams. A mothur implementation of
-PyroNoise is available as [shhh.flows](shhh.flows).)
+PyroNoise is available as [shhh.flows](/wiki/shhh.flows).)
 
 ## Default settings
 

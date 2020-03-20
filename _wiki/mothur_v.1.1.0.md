@@ -32,12 +32,12 @@ included in the March 2009 release of mothur v.1.1.0\...
 -   Better type checking on option parameters
 -   Don't need a space between comma and options
 -   Don't need to put a quit() command at the end of a [ batch
-    file](Batch_mode)
--   The [ collect.single](collect.single#calc), [
-    collect.shared](collect.shared#calc), [
-    rarefaction.single](rarefaction.single#calc),
-    [ summary.single](summary.single#calc) and [
-    shared.summary](summary.shared#calc) all use
+    file](/wiki/Batch_mode)
+-   The [ collect.single](/wiki/collect.single#calc), [
+    collect.shared](/wiki/collect.shared#calc), [
+    rarefaction.single](/wiki/rarefaction.single#calc),
+    [ summary.single](/wiki/summary.single#calc) and [
+    shared.summary](/wiki/summary.shared#calc) all use
     the calc parameter.
 -   All estimator names are lowercase.
 -   Only filename parameters persist between commands, all others return
@@ -45,25 +45,25 @@ included in the March 2009 release of mothur v.1.1.0\...
 
 ## Major Feature Additions
 
--   [unique.seqs](unique.seqs)
--   [parsimony](parsimony)
--   [unifrac.weighted](unifrac.weighted)
--   [unifrac.unweighted](unifrac.unweighted)
+-   [unique.seqs](/wiki/unique.seqs)
+-   [parsimony](/wiki/parsimony)
+-   [unifrac.weighted](/wiki/unifrac.weighted)
+-   [unifrac.unweighted](/wiki/unifrac.unweighted)
 -   The shared option to the read.otu command
 
 ## Minor Feature Additions
 
 -   Ability to set comparisons for the [
-    collect.shared](collect.shared#groups), [
-    rarefaction.shared](rarefaction.shared#groups),
-    and [ summary.shared](summary.shared#groups)
+    collect.shared](/wiki/collect.shared#groups), [
+    rarefaction.shared](/wiki/rarefaction.shared#groups),
+    and [ summary.shared](/wiki/summary.shared#groups)
     commands.
 -   Ability to define the threshold for "abundant" species in ACE
     estimator as something other than 10 in the [
-    collect.single](collect.single#abund), [
-    summary.single](summary.single#abund), and [
-    rarefaction.single](rarefaction.single#abund)
+    collect.single](/wiki/collect.single#abund), [
+    summary.single](/wiki/summary.single#abund), and [
+    rarefaction.single](/wiki/rarefaction.single#abund)
     commands.
--   Added the get.line, [get.group](get.group), and
-    [get.label](get.label) commands so basic information
+-   Added the get.line, [get.group](/wiki/get.group), and
+    [get.label](/wiki/get.label) commands so basic information
     about data files can be accessed through mothur.

@@ -4,7 +4,7 @@ tags: 'file_types'
 redirect_from: '/wiki/Taxonomy_File'
 ---
 The taxonomy file is created by the
-[classify.seqs](classify.seqs) command. It is a 2 column file
+[classify.seqs](/wiki/classify.seqs) command. It is a 2 column file
 with the following format: sequenceName tab taxonomy.
 
     GQY1XT001CJLAE Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(84);unclassified;

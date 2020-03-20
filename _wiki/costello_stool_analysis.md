@@ -3,7 +3,7 @@ title: 'Costello stool analysis'
 redirect_from: '/wiki/Costello_stool_analysis'
 ---
 **NOTE**: This wiki page ceased to be updated after release 1.21 of
-mothur. Please consult the [454 SOP](454_SOP) page
+mothur. Please consult the [454 SOP](/wiki/454_SOP) page
 for the latest and greatest method of analyzing pyrosequencing data
 
 Recently, [Costello and
@@ -72,7 +72,7 @@ level, we will only selectively use the current option to demonstrate
 how it works. Generally, we will use the full file names.
 
 Let's go ahead and fire up mothur and get a sense of what the sequences
-look like using the [summary.seqs](summary.seqs) command:
+look like using the [summary.seqs](/wiki/summary.seqs) command:
 
     mothur > summary.seqs(fasta=stool.fasta, processors=2)
 
@@ -101,7 +101,7 @@ are resequenced, we have found that 1 mismatch to the barcode and 2 to
 the primer do not adversely affect sequence quality. We have also found
 good correlation between the quality scores and sequencing errors
 between 30 and 35. There are several options for trimming sequences
-based on quality scores in the [trim.seqs](trim.seqs)
+based on quality scores in the [trim.seqs](/wiki/trim.seqs)
 command, but the one we trust the most is to use a moving window that is
 50 bp long and to require that the average quality score over the region
 not drop below 35. Once it does, we trim to the end of the last window
@@ -148,7 +148,7 @@ file name, mothur will either guess which fasta file you need for the
 next command, or you can tell it fasta=current. The same works for name,
 group, accnos, and taxonomy files. In addition, if you use processors=8,
 mothur will remember to use 8 processors where possible in all of the
-other options. By using the [get.current](get.current)
+other options. By using the [get.current](/wiki/get.current)
 command, you can see which files mothur is identifying as the most
 current.
 
@@ -160,11 +160,11 @@ current.
     qfile=stool.trim.qual
        
 
-Be sure to check [get.current](get.current) periodically to
+Be sure to check [get.current](/wiki/get.current) periodically to
 make sure mothur is using the files you intended, otherwise you may run
 into problems with your analysis. If you find a problem or would like to
 manually set your own "current" files, you can use the
-[set.current](set.current) command as follows:
+[set.current](/wiki/set.current) command as follows:
 
     mothur > set.current(fasta=stool.trim.fasta, group=stool.groups, qfile=stool.trim.qual)
      
@@ -196,7 +196,7 @@ For example, you can re-run the last summary.seqs command as follows\...
 
 Next, we want to simplify the dataset. It is likely that a number of the
 35,245 sequences are redundant. To obtain a non-redundant set of
-sequences, run the [unique.seqs](unique.seqs) command and
+sequences, run the [unique.seqs](/wiki/unique.seqs) command and
 generate stool.trim.unique.fasta and stool.trim.names. It isn't
 necessary to include the fasta file name in this command, mothur will
 just use the most current file:
@@ -227,10 +227,10 @@ have to align, calculate distances for, and cluster from \~35,000 to
 analysis faster and require less memory.
 
 Next, let's use the SILVA-compatible [alignment
-database](alignment_database) and we will align the sequences
-using the [align.seqs](align.seqs) command and I'll make use
+database](/wiki/alignment_database) and we will align the sequences
+using the [align.seqs](/wiki/align.seqs) command and I'll make use
 of the two processors on my laptop (Macs rock!). I prefer the [silva
-reference alignment](silva_reference_files), for the
+reference alignment](/wiki/silva_reference_files), for the
 reasons I articulated in a recent [PLoS Computational
 Biology](https://www.ncbi.nlm.nih.gov/pubmed/20011594) paper that I
 published. For now, if your computer has less than 2 GB of RAM you
@@ -273,7 +273,7 @@ to see what the aligned sequences look like:
 Based on this output, we want to maximize the number of sequences that
 overlap over the longest span. First, I'll require that all of the
 sequences end by position 6333. We have several options for what to do
-next. Using the [screen.seqs](screen.seqs) command we will
+next. Using the [screen.seqs](/wiki/screen.seqs) command we will
 remove any sequence that does not fit these parameters from our fasta,
 name, and group files. It should be mentioned that this is typically the
 hardest part to figure out. The tradeoff is between sequence length and
@@ -386,7 +386,7 @@ critical step because if one compares sequences that do not overlap the
 same region, but rather extend into other regions, you are essentially
 assuming that the 16S rRNA gene sequence evolves unifromly across its
 length. This is definitely not true. We will do this using the
-[filter.seqs](filter.seqs) command to remove any column that
+[filter.seqs](/wiki/filter.seqs) command to remove any column that
 contains at least 1 "." in it. The "." indicates that the sequence
 has yet to begin or that it has already ended:
 
@@ -417,7 +417,7 @@ see how long the sequences are:
 I have found that trimming sequences so that they overlap over the same
 region generates new duplicate sequences that weren't detected the
 first go around. So let's re-run the
-[unique.seqs](unique.seqs) command making sure to use the
+[unique.seqs](/wiki/unique.seqs) command making sure to use the
 name option so that our previous name file is included:
 
     mothur > unique.seqs(fasta=stool.trim.unique.good.filter.fasta, name=stool.trim.good.names)
@@ -447,7 +447,7 @@ preclustering step to reduce sequencing noise from pyrosequencing data.
 The basic idea is that abundant sequences are likely to generate
 sequences that are less abundant and differ from the dominant sequence
 type by about one base every 100 bases. We have implemented our version
-of this algorithm in the [pre.cluster](pre.cluster) command.
+of this algorithm in the [pre.cluster](/wiki/pre.cluster) command.
 We will use it here\...
 
     mothur > pre.cluster(fasta=stool.trim.unique.good.filter.unique.fasta, name=stool.trim.unique.good.filter.names, diffs=1)
@@ -471,18 +471,18 @@ We will use it here\...
 Now that we have reduced the sequencing error rate as low as we can and
 we know the frequency of each sequence type, it is time to check for
 chimeras. Many programs (e.g. [
-Bellerophon](chimera.bellerophon), [
-UChime](chimera.uchime), [
-Pintail](chimera.pintail), etc.) are available for
+Bellerophon](/wiki/chimera.bellerophon), [
+UChime](/wiki/chimera.uchime), [
+Pintail](/wiki/chimera.pintail), etc.) are available for
 identifying chimeras, but the either do not scale well or do a poor job.
 Here we will show you how to use both
-[chimera.slayer](chimera.slayer) and
-[chimera.uchime](chimera.uchime) to check for chimeras. If
+[chimera.slayer](/wiki/chimera.slayer) and
+[chimera.uchime](/wiki/chimera.uchime) to check for chimeras. If
 you are going to use the database-based approaches, the developers at
 the Broad institute and of UChime suggest using their Gold sequence
 database. We provide a silva-compatible alignment of this sequence
 collection with the [silva reference
-files](silva_reference_files)\...
+files](/wiki/silva_reference_files)\...
 
 First, we will use chimera.slayer with a database. To do this we will
 first need to apply the filter we created above in filter.seqs to
@@ -490,7 +490,7 @@ silva.gold.align so that the alignments are the same length:
 
     mothur > filter.seqs(fasta=silva.gold.align, hard=stool.filter, processors=2)
 
-then we will need to run [chimera.slayer](chimera.slayer)
+then we will need to run [chimera.slayer](/wiki/chimera.slayer)
 
     mothur > chimera.slayer(fasta=stool.trim.unique.good.filter.unique.precluster.fasta, reference=silva.gold.filter.fasta, processors=2)
 
@@ -531,7 +531,7 @@ which is slower (but clearly, still fast). For the purposes of this
 tutorial we'll use this last approach, which generates the files
 stool.trim.unique.good.filter.unique.precluster.fasta.uchime.chimera and
 stool.trim.unique.good.filter.unique.precluster.fasta.uchime.accnos. Now
-we want to use the [remove.seqs](remove.seqs) command to
+we want to use the [remove.seqs](/wiki/remove.seqs) command to
 remove the chimeric sequences from our orignial fasta, names, and groups
 files:
 
@@ -593,7 +593,7 @@ downstream processing:
 -   stool.good.pick.pick.groups
 
 These are some pretty gangly file names. Let's rename these files to
-something simpler using mothur's [system](system) command
+something simpler using mothur's [system](/wiki/system) command
 (if you're using windows use copy instead of cp):
 
     mothur > system(cp stool.trim.unique.good.filter.unique.precluster.pick.rdp.pick.taxonomy stool.final.taxonomy)
@@ -620,22 +620,22 @@ have been curating:
 ## OTU-based analysis
 
 Now we want to use our high quality sequences to generate a distance
-matrix. To do this we will use the [dist.seqs](dist.seqs)
+matrix. To do this we will use the [dist.seqs](/wiki/dist.seqs)
 command:
 
     mothur > dist.seqs(fasta=stool.final.fasta, cutoff=0.25, processors=2)
 
 Now we are ready to assign our sequences to OTUs using the
-[cluster](cluster) command with the average neighbor
+[cluster](/wiki/cluster) command with the average neighbor
 algorithm:
 
     mothur > cluster(column=stool.final.dist, name=stool.final.names)
 
 This command will take about a minute to run and will provide some
 output as it goes along. This output is also found in the
-stool.final.an.[sabund file](sabund_file). In addition a
-stool.final.an.[ rabund](rabund_file) and
-stool.final.an.[list file](list_file) are generated as well.
+stool.final.an.[sabund file](/wiki/sabund_file). In addition a
+stool.final.an.[ rabund](/wiki/rabund_file) and
+stool.final.an.[list file](/wiki/list_file) are generated as well.
 If the distance matrix is larger than the amount of RAM your computer
 has, you can also use the hcluster command. This
 has a small memory footprint, but can take considerably longer to run
@@ -644,7 +644,7 @@ than the cluster command.
     mothur > hcluster(column=current, name=current, cutoff=0.25, method=average)
 
 The output should be more or less the same as you get with the
-[cluster](cluster) command.
+[cluster](/wiki/cluster) command.
 
 Alternatively, you can use the cluster.split command, which is a
 heuristic, but very accurate and fast\...
@@ -654,20 +654,20 @@ heuristic, but very accurate and fast\...
 Now that we have assigned all of the sequences to OTUs we are interested
 in calculating the coverage, richness, and diversity of each sample. The
 first step is to use our group file (stool.final.groups) to parse the
-[list file](list_file) (stool.final.an.list). I like to do my
+[list file](/wiki/list_file) (stool.final.an.list). I like to do my
 analysis at a cutoff level of 0.10, but you are free to use whatever you
 want. To do the parsing, we will use the
-[make.shared](make.shared) command with the list and group
+[make.shared](/wiki/make.shared) command with the list and group
 options:
 
     mothur > make.shared(list=stool.final.an.list, group=stool.final.groups, label=0.03)
 
-This will generate 24 [ rabund files](rabund_file) (one for
-each of the samples) and a [shared file](shared_file).
+This will generate 24 [ rabund files](/wiki/rabund_file) (one for
+each of the samples) and a [shared file](/wiki/shared_file).
 Opening stool.final.an.shared you'll find that there are about 1,330
 OTUs that were found across all of the samples. We would like to know
 "who" these OTUs are. Our preferred approach to this is the
-[classify.otu](classify.otu) command:
+[classify.otu](/wiki/classify.otu) command:
 
     mothur > classify.otu(taxonomy=stool.final.taxonomy, name=stool.final.names, list=stool.final.an.list, label=0.03)
 
@@ -688,7 +688,7 @@ represent sub-OTU lineages.
 
 ## Phylotype-based analyses
 
-Earlier we ran [classify.seqs](classify.seqs). After removing
+Earlier we ran [classify.seqs](/wiki/classify.seqs). After removing
 the cyanobacterial sequences were left with the contents of
 stool.final.taxonomy. Openning this file we see the following on the
 first five lines:
@@ -714,7 +714,7 @@ sequences that correspond to each lineage.
 To carry out the phylotype analysis, we would like to convert this table
 into a list file so that we can perform an analysis in parallel with the
 OTU-based analysis. We can do this with the
-[phylotype](phylotype) command:
+[phylotype](/wiki/phylotype) command:
 
     mothur > phylotype(taxonomy=stool.final.taxonomy, name=stool.final.names)
 
@@ -723,13 +723,13 @@ cutoffs in the file stool.final.tx.list, the phylotype command generates
 the data at different levels within the hierarchy. Using the rdp6
 taxonomy outline you will find 6 taxonomic levels - level 1 corresponds
 to the level of genus and 6 is the domain (i.e. Bacteria). To generate
-the shared file, we again use [make.shared](make.shared):
+the shared file, we again use [make.shared](/wiki/make.shared):
 
     mothur > make.shared(list=stool.final.tx.list, group=current, label=1)
 
 Looking at the stool.final.tx.shared file we can see that there were
 only 198 phylotypes. Again, we can run
-[classify.otu](classify.otu) to determine the identity of
+[classify.otu](/wiki/classify.otu) to determine the identity of
 each phylotype:
 
     mothur > classify.otu(taxonomy=stool.final.taxonomy, name=current, list=stool.final.tx.list, label=1)
@@ -752,7 +752,7 @@ from our sequences:
 
     mothur > dist.seqs(fasta=stool.final.fasta, output=lt, processors=2)
 
-Next, we will use [clearcut](clearcut) within the mothur
+Next, we will use [clearcut](/wiki/clearcut) within the mothur
 environment:
 
     mothur > clearcut(phylip=stool.final.phylip.dist)
@@ -787,9 +787,9 @@ classified to the same Genus.
 
 Let's start our analysis by analyzing the alpha diversity of the 24
 samples. First we will generate collector's curve of the [
-Chao1](chao) richness estimators and the [ inverse
-Simpson](invsimpson) diversity index. To do this we will use
-the [collect.single](collect.single) command. Also, because
+Chao1](/wiki/chao) richness estimators and the [ inverse
+Simpson](/wiki/invsimpson) diversity index. To do this we will use
+the [collect.single](/wiki/collect.single) command. Also, because
 there are 704 sequences in this sample, let's only spit data out every
 5 sequences:
 
@@ -806,7 +806,7 @@ point out that Chao1 is really a measure of the minimum richneess in a
 community, not the full richness of the community. One method often used
 to get around this problem is to look at rarefaction curves describing
 the number of OTUs observed as a function of sampling effort. We'll do
-this with the [rarefaction.single](rarefaction.single)
+this with the [rarefaction.single](/wiki/rarefaction.single)
 command:
 
     mothur > rarefaction.single(freq=5)
@@ -828,10 +828,10 @@ the confidence interval about the richness estimate will shrink.
     mothur > catchall()
 
 Finally, let's get a table containing the [ number of
-sequences](nseqs), the sample
-[coverage](coverage), the number of [ observed
-OTUs](sobs), and the [invsimpson](invsimpson)
-diversity estimate using the [summary.single](summary.single)
+sequences](/wiki/nseqs), the sample
+[coverage](/wiki/coverage), the number of [ observed
+OTUs](/wiki/sobs), and the [invsimpson](/wiki/invsimpson)
+diversity estimate using the [summary.single](/wiki/summary.single)
 command:
 
     mothur > summary.single(calc=nseqs-coverage-sobs-invsimpson)
@@ -849,7 +849,7 @@ sampled on adjacent days than when sampled a month apart.
 Now we'd like to compare the membership and structure of the 24 stool
 communities using an OTU-based approach. Let's start by generating a
 heatmap of the relative abundance of each OTU across the 24 samples
-using the [heatmap.bin](heatmap.bin) command and log2 scaling
+using the [heatmap.bin](/wiki/heatmap.bin) command and log2 scaling
 the relative abundance values. Because there are so many OTUs, let's
 just look at the top 50 OTUs:
 
@@ -862,9 +862,9 @@ found at the bottom left corner of the heat map.
 
 Now let's calculate the similarity of the membership and structure
 found in the 24 communities and visualize those similarities in a
-heatmap with the [ jaccard](jclass) and
-[thetayc](thetayc) coefficients. We will do this with the
-[heatmap.sim](heatmap.sim) command:
+heatmap with the [ jaccard](/wiki/jclass) and
+[thetayc](/wiki/thetayc) coefficients. We will do this with the
+[heatmap.sim](/wiki/heatmap.sim) command:
 
     mothur > heatmap.sim(calc=jclass-thetayc)
 
@@ -876,7 +876,7 @@ black colors.
 
 When generating Venn diagrams we are limited by the number of samples
 that we can analyze simultaneously. Let's take a look at the Venn
-diagrams for the first female subject using the [venn](venn)
+diagrams for the first female subject using the [venn](/wiki/venn)
 command:
 
     mothur > venn(groups=F11Fcsw-F12Fcsw-F13Fcsw-F14Fcsw)
@@ -886,7 +886,7 @@ stool.final.fn.0.03.venn.sharedsobs.svg file. This shows that there were
 a total of 489 OTUs observed between the 4 time points. Only 46 of those
 OTUs were shared by all four time points. Let's use two non-parametric
 estimators to see what the predicted minimum number of overlapping OTUs
-is for subject 1 using the [summary.shared](summary.shared)
+is for subject 1 using the [summary.shared](/wiki/summary.shared)
 command:
 
     mothur > summary.shared(calc=sharedchao, groups=F11Fcsw-F12Fcsw-F13Fcsw-F14Fcsw, all=T)
@@ -897,8 +897,8 @@ prediction that female subject 1's core microbiome contained at least
 
 Next, let's generate a dendrogram to describe the similarity of the
 samples to each other. We will generate a dendrogram using the
-[jclass](jclass) and [thetayc](thetayc)
-calculators within the [tree.shared](tree.shared) command:
+[jclass](/wiki/jclass) and [thetayc](/wiki/thetayc)
+calculators within the [tree.shared](/wiki/tree.shared) command:
 
     mothur > tree.shared(calc=thetayc-jclass)
 
@@ -908,9 +908,9 @@ that can be visualized in software like TreeView or FigTree. Inspection
 of the both trees shows that individuals' communities cluster with
 themselves to the exclusion of the others. We can test to deterine
 whether the clustering within the tree is statistically significant or
-not using by choosing from the [parsimony](parsimony),
-[unifrac.unweighted](unifrac.unweighted), or
-[unifrac.weighted](unifrac.weighted) commands. To run these
+not using by choosing from the [parsimony](/wiki/parsimony),
+[unifrac.unweighted](/wiki/unifrac.unweighted), or
+[unifrac.weighted](/wiki/unifrac.weighted) commands. To run these
 we will first need to create a design file that indicates which
 treatment each sample belongs to. Enter the following into a text editor
 window and save it to the CostelloData folder as stool.design:
@@ -963,14 +963,14 @@ that separates Men and Women.
 
 Another popular way of visualizing beta-diversity information is through
 ordination plots. We can calculate distances between samples using the
-[dist.shared](dist.shared) command:
+[dist.shared](/wiki/dist.shared) command:
 
     mothur > dist.shared(shared=stool.final.an.shared, calc=thetayc-jclass)
 
 The two resulting distance matrices (i.e.
 stool.final.an.thetayc.0.03.lt.dist and
 stool.final.an.jclass.0.03.lt.dist) can then be visualized using the
-[pcoa](pcoa) or [nmds](nmds) plots. Principal
+[pcoa](/wiki/pcoa) or [nmds](/wiki/nmds) plots. Principal
 Coordinates (PCoA) uses an eigenvector-based approach to represent
 multidimensional data in as few dimesnsions as possible. Our data is
 highly dimensional (\~22 dimensions).
@@ -1012,7 +1012,7 @@ Ultimately, ordination is a data visualization tool. We might ask if the
 spatial separation that we see between the Men's and Women's plots in
 the NMDS plot is statistically significant. To do this we have two
 statistical tools at our disposal. The first analysis of molecular
-variance ([amova](amova)), tests whether the centers of the
+variance ([amova](/wiki/amova)), tests whether the centers of the
 clouds representing a group are more separated than the variation among
 samples of the same treatment. This is done using the distance matrices
 we created earlier and does not actually use ordination.
@@ -1041,7 +1041,7 @@ We can see that the observed separation in Male and Female samples is
 statistically significant. Another test we can perform is to determine
 whether the variation in the samples from Men and Women is different.
 This can be done using a distance-based version of Bartlett's test for
-homogeneity of variance ([homova](homova)):
+homogeneity of variance ([homova](/wiki/homova)):
 
     mothur > homova(phylip=stool.final.an.thetayc.0.03.lt.dist, design=stool.design)
 
@@ -1061,7 +1061,7 @@ intra-sex sample variation is not significant.
 Next, we might ask which OTUs are responsible for shifting the samples
 along the two axes. We can determine this by measuring the correlation
 of the relative abundance of each OTU with the two axes in the NMDS
-dataset. We do this with the [corr.axes](corr.axes) command:
+dataset. We do this with the [corr.axes](/wiki/corr.axes) command:
 
     mothur > corr.axes(axes=stool.final.an.thetayc.0.03.lt.nmds.axes, shared=stool.final.an.shared, method=spearman, numaxes=2)
 
@@ -1129,8 +1129,8 @@ a driving force separating the samples from men and women.
 
 ### population-level analysis
 
-In addition to the use of [corr.axes](corr.axes) we can also
-use [metastats](metastats) to determine whether there are any
+In addition to the use of [corr.axes](/wiki/corr.axes) we can also
+use [metastats](/wiki/metastats) to determine whether there are any
 OTUs that are differentially represented between the samples from men
 and women in this study. Run the following in mothur:
 
@@ -1184,7 +1184,7 @@ genetic diversity of different communities.
 
 When using phylogenetic methods, alpha diversity is calculated as the
 total of the unique branch length in the tree. This is done using the
-[phylo.diversity](phylo.diversity) command:
+[phylo.diversity](/wiki/phylo.diversity) command:
 
     mothur > phylo.diversity(tree=stool.final.phylip.tre, name=current, group=current)
 
@@ -1200,12 +1200,12 @@ phylo.diversity command:
 
 The unifrac-based metrics are used to assess the similarity between two
 communities membership
-([unifrac.unweighted](unifrac.unweighted)) and structure
-([unifrac.weighted](unifrac.weighted)). We will use these
+([unifrac.unweighted](/wiki/unifrac.unweighted)) and structure
+([unifrac.weighted](/wiki/unifrac.weighted)). We will use these
 metrics and generate PCoA plots to compare our 24 stool samples. There
 are two beta-diversity metrics that one can use - [
-unweighted](unifrac.unweighted) and [
-weighted](unifrac.weighted).
+unweighted](/wiki/unifrac.unweighted) and [
+weighted](/wiki/unifrac.weighted).
 
     mothur > unifrac.unweighted(distance=lt, processors=2, random=F)
     mothur > unifrac.weighted(distance=lt, processors=2, random=F)
@@ -1226,6 +1226,6 @@ There is a certain "pipeline" aspect to this analysis; however, it is
 also very much an art of working with sequences. If you want to
 basically do everything that was described above, you can use the [
 stool.batch file](https://mothur.s3.us-east-2.amazonaws.com/wiki/stool.batch.zip) and use mothur in
-the [batch mode](batch_mode) as follows:
+the [batch mode](/wiki/batch_mode) as follows:
 
     $ ./mothur stool.batch

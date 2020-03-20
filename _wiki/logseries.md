@@ -31,7 +31,7 @@ commands:
     mothur > read.dist(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
     mothur > cluster()
 
-The 98\_lt\_phylip\_amazon.fn.[sabund file](sabund_file) is
+The 98\_lt\_phylip\_amazon.fn.[sabund file](/wiki/sabund_file) is
 also outputted to the terminal window when the cluster() command is
 executed:
 

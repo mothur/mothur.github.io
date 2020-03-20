@@ -6,7 +6,7 @@ redirect_from: '/wiki/Make.sra.html'
 The **make.sra** command creates the necessary files for a NCBI submission.
 The xml file and individual sff or fastq files parsed from the original
 sff or fastq file. See [Creating a new
-submission](Creating_a_new_submission) to see how to use
+submission](/wiki/Creating_a_new_submission) to see how to use
 make.sra in your workflow.
 
 ## Default settings
@@ -97,13 +97,13 @@ NONE is an option is no forward or reverse index file.
 ### project
 
 The project parameter allow you to provide your The
-[project\_file](Project_File) . It is required.
+[project\_file](/wiki/Project_File) . It is required.
 
 ### mimark
 
 The mimark parameter is required. You can generate a mimark template for
 your groups using the
-[get.mimarkspackage](get.mimarkspackage) command. **Please
+[get.mimarkspackage](/wiki/get.mimarkspackage) command. **Please
 note, NCBI has controlled language to ensure uniform submissions.
 Unknown or inapplicable fields MUST be assigned 'missing' value.**
 

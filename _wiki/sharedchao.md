@@ -5,8 +5,8 @@ redirect_from: '/wiki/Sharedchao'
 ---
 The **sharedchao** calculator returns the shared
 Chao1 richness estimate for an OTU definition. This calculator can be
-used in the [summary.shared](summary.shared) and
-[collect.shared](collect.shared) commands. The calculations
+used in the [summary.shared](/wiki/summary.shared) and
+[collect.shared](/wiki/collect.shared) commands. The calculations
 for the shared Chao1 richness estimator are implemented as described by
 Chao in the user manual for her program
 [spade](http://140.114.36.3/wordpress/wp-content/uploads/software/SPADE_UserGuide.pdf).
@@ -68,7 +68,7 @@ commands:
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
     mothur > make.shared(list=98_lt_phylip_amazon.fn.list, group=amazon.groups, label=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[shared file](shared_file) will
+The 98\_lt\_phylip\_amazon.fn.[shared file](/wiki/shared_file) will
 contain the following two lines:
 
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2   1   1   3   2   1   1   1   1   2   1   1   2   5   1   1   1   1   2   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
@@ -161,7 +161,7 @@ dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) with the 
     mothur > cluster(phylip=abrecovery.dist, cutoff=0.10)
     mothur > make.shared(list=abrecovery.fn.list, group=abrecovery.groups, label=0.10)
 
-The esophagus.fn.[shared file](shared_file) will contain the
+The esophagus.fn.[shared file](/wiki/shared_file) will contain the
 following three lines:
 
     0.10   B   51  2   66  0   0   27  1   37  5   1   2   8   2   0   0   0   0   0   0   0   23  3   0   1   2   1   0   0   6   1   0   0   1   0   5   2   0   0   0   0   2   0   0   0   0   0   2   1   1   1   1   1   

@@ -9,9 +9,9 @@ better than the commonly used DNADIST because the distances are not
 stored in RAM, rather they are printed directly to a file. Furthermore,
 it is possible to ignore "large" distances that one might not be
 interested in. The command will generate a [column-formatted distance
-matrix](column-formatted_distance_matrix) that is compatible
+matrix](/wiki/column-formatted_distance_matrix) that is compatible
 with the column
-option in the various [cluster](cluster) commands. The command is also able to
+option in the various [cluster](/wiki/cluster) commands. The command is also able to
 generate a phylip-formatted distance matrix. There are several options
 for how to handle gap comparisons and terminal gaps. This tutorial uses
 the data files in [ amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip).
@@ -23,7 +23,7 @@ To run **dist.seqs** an alignment file must be provided in fasta format. By
 default an gap is only penalized once, terminal gaps are penalized, all
 distances are calculated, and only one processor is used. To save time,
 filter out the leading and trailing periods with the
-[filter.seqs](filter.seqs) command. Running the following
+[filter.seqs](/wiki/filter.seqs) command. Running the following
 command will generate amazon.unique.dist
 
     mothur > filter.seqs(fasta=amazon.unique.fasta, trump=.)
@@ -103,7 +103,7 @@ distances (i.e. 96x95/2 = 4560). With the cutoff only 56 distances are
 saved. The savings can be substantial when there are a large number of
 distances. The actual cutoff used by the command is 0.005 higher than
 the value that is set to allow for rounding in the [ clustering
-steps](cluster#precision).
+steps](/wiki/cluster#precision).
 
 ### processors
 

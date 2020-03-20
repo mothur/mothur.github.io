@@ -3,38 +3,38 @@ title: 'Hypothesis testing approaches'
 redirect_from: '/wiki/Hypothesis_testing_approaches'
 ---
 [Hypothesis testing
-approaches](Hypothesis_testing_approaches) allow you to
+approaches](/wiki/Hypothesis_testing_approaches) allow you to
 determine whether there is sufficient evidence to suggest that the
 structuring of your data are more extreme than you would expect by
 chance. They cannot indicate a level of similarity - for those types of
 questions, you are best served by [OTU-based
-approaches](OTU-based_approaches). Examples of each command
+approaches](/wiki/OTU-based_approaches). Examples of each command
 are provided within their specific pages, but several users have
-provided several [analysis examples](analysis_examples),
+provided several [analysis examples](/wiki/analysis_examples),
 which use these commands. An exhaustive list of the commands found in
 mothur is available within the [ commands category
 index](/wiki/tags#commands).
 
 ## General commands
 
--   [dist.seqs](dist.seqs) - generate a distance matrix
--   [deunique.tree](deunique.tree) - reinserts redundant
+-   [dist.seqs](/wiki/dist.seqs) - generate a distance matrix
+-   [deunique.tree](/wiki/deunique.tree) - reinserts redundant
     sequence identifiers into a unique tree
--   [clearcut](clearcut)
+-   [clearcut](/wiki/clearcut)
 
 ## Analyses
 
--   [parsimony](parsimony) - the parsimony test, which was
+-   [parsimony](/wiki/parsimony) - the parsimony test, which was
     previously available through
     [treeclimber](https://github.com/mothur/TreeClimber)
--   [unifrac.unweighted](unifrac.unweighted) - the unweighted
+-   [unifrac.unweighted](/wiki/unifrac.unweighted) - the unweighted
     Unifrac algorithm
--   [unifrac.weighted](unifrac.weighted) - the weighted
+-   [unifrac.weighted](/wiki/unifrac.weighted) - the weighted
     Unifrac algorithm
--   [libshuff](libshuff) - the integral and discrete forms of
+-   [libshuff](/wiki/libshuff) - the integral and discrete forms of
     the libshuff method
--   [amova](amova)
--   [homova](homova)
--   [mantel](mantel)
--   [anosim](anosim)
--   [cooccurrence](cooccurrence)
+-   [amova](/wiki/amova)
+-   [homova](/wiki/homova)
+-   [mantel](/wiki/mantel)
+-   [anosim](/wiki/anosim)
+-   [cooccurrence](/wiki/cooccurrence)

@@ -4,25 +4,25 @@ tags: 'calculators'
 redirect_from: '/wiki/Sorest'
 ---
 The **sorest** calculator returns an estimate of the
-traditional [ sorenson](sorclass) index using Chao1 richness
-estimates for the richness of [ individual](chao) samples and
-the richness of the [ shared](sharedchao) OTUs. This
+traditional [ sorenson](/wiki/sorclass) index using Chao1 richness
+estimates for the richness of [ individual](/wiki/chao) samples and
+the richness of the [ shared](/wiki/sharedchao) OTUs. This
 calculator can be used in the
-[summary.shared](summary.shared) and
-[collect.shared](collect.shared) commands.
+[summary.shared](/wiki/summary.shared) and
+[collect.shared](/wiki/collect.shared) commands.
 
 $$D_{Sorenson} = 1-\frac{2S_{AB, Chao}}{S_{A,Chao} + S_{B,Chao}}$$
 
 where,
 
 $$S_{AB,Chao}$$ = estimated number of OTUs shared between A and B using
-the [sharedchao](sharedchao) calculator.
+the [sharedchao](/wiki/sharedchao) calculator.
 
 $$S_{A,Chao}$$ = number of OTUs estimated in A using the
-[chao](chao) calculator.
+[chao](/wiki/chao) calculator.
 
 $$S_{B,Chao}$$ = number of OTUs estimated in B using the
-[chao](chao) calculator.
+[chao](/wiki/chao) calculator.
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
 Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following
@@ -31,7 +31,7 @@ commands:
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
     mothur > make.shared(list=98_lt_phylip_amazon.fn.list, group=amazon.groups, label=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[shared file](shared_file) will
+The 98\_lt\_phylip\_amazon.fn.[shared file](/wiki/shared_file) will
 contain the following two lines:
 
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2   1   1   3   2   1   1   1   1   2   1   1   2   5   1   1   1   1   2   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
@@ -40,9 +40,9 @@ contain the following two lines:
 This indicates that the label for the OTU definition was 0.10. The first
 line is from the forest sample and the second is from the pasture
 sample. There are a total of 55 OTUs between the two communities.
-Elsewhere, we used the [sharedchao](sharedchao) calculator to
+Elsewhere, we used the [sharedchao](/wiki/sharedchao) calculator to
 estimate that the shared richness was 30.5 OTUs. The following commands
-using the [chao](chao) calculator will provide the single
+using the [chao](/wiki/chao) calculator will provide the single
 sample Chao1 richness estimates:
 
     mothur > summary.single(shared=98_lt_phylip_amazon.fn.shared, calc=chao)

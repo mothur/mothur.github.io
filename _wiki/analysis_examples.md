@@ -7,19 +7,19 @@ wiki and add the link below.
 
 
 ## Illumina 16S rRNA gene sequence analysis
-* [Miseq SOP](MiSeq_SOP) - Pat Schloss
+* [Miseq SOP](/wiki/MiSeq_SOP) - Pat Schloss
 
 
 ## Pyrosequencing 16S rRNA gene sequence analysis
--   [454 SOP](454_SOP) - Pat Schloss
--   [Costello Stool Analysis](Costello_stool_analysis) - Pat Schloss [Historical reference]
--   [Sogin Data Analysis](Sogin_data_analysis) - Pat Schloss [Historical reference]
+-   [454 SOP](/wiki/454_SOP) - Pat Schloss
+-   [Costello Stool Analysis](/wiki/Costello_stool_analysis) - Pat Schloss [Historical reference]
+-   [Sogin Data Analysis](/wiki/Sogin_data_analysis) - Pat Schloss [Historical reference]
 -   [Pyrosequences from deep anoxic cenotes](https://web.archive.org/web/http://www.mothur.org/wiki/Pyrosequences_from_deep_anoxic_cenotes) - Jason Sahl [Historical reference]
 -   [Characterizing community composition along a transect of hypersaline sediments](https://web.archive.org/web/http://www.mothur.org/wiki/Characterizing_community_composition_along_a_transect_of_hypersaline_sediments)  Emily Hollister [Historical reference]
 
 
 ## Sanger 16S rRNA gene sequence analysis
--   [Esophageal community analysis](Esophageal_community_analysis) - Contributed by
+-   [Esophageal community analysis](/wiki/Esophageal_community_analysis) - Contributed by
     Pat Schloss [Historical reference]
 -   [Marine community analysis](https://web.archive.org/web/http://www.mothur.org/wiki/Marine_community_analysis) - Donovan Parks [Historical reference]
 -   [Agricultural soil community analysis](https://web.archive.org/web/http://www.mothur.org/wiki/Agricultural_soil_community_analysis) - Martin Hartmann [Historical reference]

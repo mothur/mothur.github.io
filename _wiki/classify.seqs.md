@@ -8,7 +8,7 @@ use several different methods to assign their sequences to the taxonomy
 outline of their choice. Current methods include using a k-nearest
 neighbor consensus and Wang approach. Taxonomy outlines and reference
 sequences can be obtained from the [taxonomy
-outline](taxonomy_outline) page. The command requires that
+outline](/wiki/taxonomy_outline) page. The command requires that
 you provide a fasta-formatted input and database sequence file and a
 taxonomy file for the reference sequences. To complete this tutorial,
 you are encouraged to obtain the [
@@ -213,7 +213,7 @@ This would produce the following output in the abrecovery.taxonomy file:
     AY457913   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Roseoburia_et_rel.;Roseoburia_et_rel.;
     ...
 
-If you are using the [phylotype](phylotype) command as a down
+If you are using the [phylotype](/wiki/phylotype) command as a down
 stream analysis, you probably only want to consider 1 nearest neighbor:
 
     mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, numwanted=1)
@@ -230,10 +230,10 @@ considering more neighbors.
 
 ===search=kmer and ksize=== By default, the k-nearest neighbor approach
 searches for nearest neighbors by kmer searching as is done in the
-[align.seqs](align.seqs) command. The default size of kmers
+[align.seqs](/wiki/align.seqs) command. The default size of kmers
 is 8, which seems to be a fairly decent choice regardless of which part
 of the 16S rRNA gene you are interested in. As we pointed out in the
-development of the [align.seqs](align.seqs) command, kmer
+development of the [align.seqs](/wiki/align.seqs) command, kmer
 searching is superior in accuracy and speed compared to blast or suffix
 tree searching methods.
 
@@ -262,7 +262,7 @@ mismatch, gapopen, and gapextend values:
 ===search=suffix=== An alternative method for finding the k-nearest
 neighbors is to use a suffix tree to perform the search. Again, this is
 the same method that is available within the
-[align.seqs](align.seqs) command. It can be implemented as:
+[align.seqs](/wiki/align.seqs) command. It can be implemented as:
 
     mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, search=suffix)
 
@@ -300,7 +300,7 @@ them.
 
 ## count
 
-The [ count](Count_File) file is similar to the name file in
+The [ count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 
@@ -445,12 +445,12 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 
 2\.  **What reference should I use to classify?** We provide mothur
     formatted references on the wiki.
-    [rdp_reference_files](RDP_reference_files)
-    [silva_reference_files](Silva_reference_files)
-    [greengenes-formatted_databases](Greengenes-formatted_databases)
+    [rdp_reference_files](/wiki/RDP_reference_files)
+    [silva_reference_files](/wiki/Silva_reference_files)
+    [greengenes-formatted_databases](/wiki/Greengenes-formatted_databases)
     Alternatively, mothur allows you to create your own references as
     long as they are in fasta and taxonomy file format. You can find
-    mothur's files formats [here](tags#file_types).
+    mothur's files formats [here](/wiki/tags#file_types).
 
 ### Common Issues
 

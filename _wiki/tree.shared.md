@@ -8,9 +8,9 @@ newick-formatted tree file that describes the dissimilarity
 (1-similarity) among multiple groups. Groups are clustered using the
 UPGMA algorithm using the distance between communities as calculated
 using any of the calculators describing the similarity in community [
-membership](calculators#similarity-in-community-membership)
+membership](/wiki/calculators#similarity-in-community-membership)
 or [
-structure](calculators#similarity-in-community-structure).
+structure](/wiki/calculators#similarity-in-community-structure).
 Dissimilarity is calculated as one minus the similarity. This tutorial
 uses the data files in [
 AbRecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip).
@@ -25,8 +25,8 @@ Using the antibiotic recover data do the following:
     mothur >  tree.shared(shared=abrecovery.fn.shared)
 
 This will generate newick-formatted file for the classical [
-Jaccard](jclass) and [ Yue & Clayton
-theta](thetayc) values. The tree can be visualized in a
+Jaccard](/wiki/jclass) and [ Yue & Clayton
+theta](/wiki/thetayc) values. The tree can be visualized in a
 number of programs such as
 [FigTree](https://github.com/rambaut/figtree/). The
 output files are as follows:
@@ -47,9 +47,9 @@ Using the calc option allows one to select any of the calculators of
 similarity of community membership and structure. The different
 calculators can be separated with hyphens (i.e. "-"). For example the
 following command will generate distance matrices for the [ Jaccard
-coefficient using richness estimators](jest), the [ Yue &
-Clayton theta](thetayc), and the [ Bray-Curtis
-index](braycurtis):
+coefficient using richness estimators](/wiki/jest), the [ Yue &
+Clayton theta](/wiki/thetayc), and the [ Bray-Curtis
+index](/wiki/braycurtis):
 
     mothur > tree.shared(shared=abrecovery.fn.shared, calc=jest-thetayc-braycurtis)
 
@@ -61,7 +61,7 @@ the similarity value.
 #### phylip
 
 To read in a [phylip-formatted distance
-matrix](phylip-formatted_distance_matrix) you need to use the
+matrix](/wiki/phylip-formatted_distance_matrix) you need to use the
 phylip option:
 
     mothur > dist.shared(shared=abrecovery.fn.shared, label=0.10)
@@ -70,9 +70,9 @@ phylip option:
 #### column & name or count
 
 To read in a [column-formatted distance
-matrix](column-formatted_distance_matrix) you must provide a
-filename for a [name file](name_file) or
-[ count file](Count_File):
+matrix](/wiki/column-formatted_distance_matrix) you must provide a
+filename for a [name file](/wiki/name_file) or
+[ count file](/wiki/Count_File):
 
     mothur > tree.shared(column=..., name=...)
 

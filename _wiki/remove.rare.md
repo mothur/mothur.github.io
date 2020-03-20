@@ -18,11 +18,11 @@ and bygroup.
 
 ## list file
 
-Reading a [ list file](list_file):
+Reading a [ list file](/wiki/list_file):
 
     mothur > remove.rare(list=98_lt_phylip_amazon.fn.list, nseqs=2, label=0.10)
 
-or if you clustered with a [ count file](Count_File), be sure
+or if you clustered with a [ count file](/wiki/Count_File), be sure
 to include it:
 
     mothur > remove.rare(list=98_lt_phylip_amazon.fn.unique_list, count=amazon.count_table, nseqs=2, label=0.10)
@@ -33,7 +33,7 @@ OTUs, after running the above command
 
 ## rabund file
 
-Reading a [ rabund file](rabund_file):
+Reading a [ rabund file](/wiki/rabund_file):
 
     mothur > remove.rare(rabund=98_lt_phylip_amazon.fn.rabund, nseqs=2)
 
@@ -67,7 +67,7 @@ and after running **remove.rare**,
 
 ## sabund file
 
-Reading a [ sabund file](sabund_file):
+Reading a [ sabund file](/wiki/sabund_file):
 
     mothur > remove.rare(sabund=98_lt_phylip_amazon.fn.sabund, nseqs=2)
 
@@ -101,7 +101,7 @@ and after running **remove.rare**,
 
 ## shared file
 
-Reading a [ shared file](shared_file):
+Reading a [ shared file](/wiki/shared_file):
 
     mothur > remove.rare(shared=98_lt_phylip_amazon.fn.shared, nseqs=2)
 

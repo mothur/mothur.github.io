@@ -5,9 +5,9 @@ redirect_from: '/wiki/Ace'
 ---
 The **ace** calculator returns the ACE richness estimate
 for an OTU definition. This calculator can be used in the
-[summary.single](summary.single),
-[collect.single](collect.single), and
-[rarefaction.single](rarefaction.single) commands. The
+[summary.single](/wiki/summary.single),
+[collect.single](/wiki/collect.single), and
+[rarefaction.single](/wiki/rarefaction.single) commands. The
 calculations for the ACE richness estimator are implemented as described
 by Chao in the user manual for her program
 [spade](http://140.114.36.3/wordpress/wp-content/uploads/software/SPADE_UserGuide.pdf) and modified
@@ -46,10 +46,10 @@ $$S_{abund}$$ = The number of OTUs with more than 'abund' individuals
 
 $$abund$$ = the threshold to be considered an 'abundant' OTU; this is
 set to 10 by default and can be changed with the 'abund' parameter in
-[ summary.single](summary.single#abund), [
-collect.single](collect.single#abund),
+[ summary.single](/wiki/summary.single#abund), [
+collect.single](/wiki/collect.single#abund),
 and [
-rarefaction.single](rarefaction.single#abund).
+rarefaction.single](/wiki/rarefaction.single#abund).
 
 Open the file 98\_lt\_phylip\_amazon.fn.sabund generated using the [
 Amazonian dataset](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondata.zip) with the following
@@ -57,7 +57,7 @@ commands:
 
     mothur > cluster(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[sabund file](sabund_file) is
+The 98\_lt\_phylip\_amazon.fn.[sabund file](/wiki/sabund_file) is
 also outputted to the terminal window when the cluster() command is
 executed:
 

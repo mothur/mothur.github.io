@@ -3,7 +3,7 @@ title: 'mothur v.1.14.0'
 redirect_from: '/wiki/Mothur_v.1.14.0.html'
 ---
 We are happy to announce the release of [ mothur
-v.1.14](mothur_v.1.14.0) in time for Halloween - trick or
+v.1.14](/wiki/mothur_v.1.14.0) in time for Halloween - trick or
 treat!
 
 This is update has a number of new commands and options that are just
@@ -12,17 +12,17 @@ particularly excited about. The first is a command for the complete
 pipeline that the Schloss lab uses to process their own data
 (pipeline.pds). This command is written so
 that you can modify the pipeline to your lab's unique needs. The second
-is a wrapper for the [metastats](metastats) code that was
+is a wrapper for the [metastats](/wiki/metastats) code that was
 generously provided by Mihai Pop's research group. The third will [
-normalize](normalize.shared) your shared files so that each
+normalize](/wiki/normalize.shared) your shared files so that each
 group has the same number of sequences. In the next release we hope to
 do a similar type of processing by randomly sub-sampling sequences from
 each group; however, we think the
-[normalize.shared](normalize.shared) approach is better.
+[normalize.shared](/wiki/normalize.shared) approach is better.
 Among the new options that are available you'll notice that we added
 parallelization to three more commands. The feature that many people
 will appreciate most are the addition of the optimize and criterion
-options to [screen.seqs](screen.seqs). These options should
+options to [screen.seqs](/wiki/screen.seqs). These options should
 make running the command much easier (and limit the number related
 emails that pile up in our inbox). A number of the new commands,
 options, and bug fixes were suggested by users of the online mothur
@@ -53,43 +53,43 @@ Pat Schloss
 
 -   pipeline.pds - an implementation of
     Pat's pipeline in a single command, plus the ability to customize
--   [metastats](metastats) - a wrapper for the metastats
+-   [metastats](/wiki/metastats) - a wrapper for the metastats
     program from Mihai Pop's research group
--   [normalize.shared](normalize.shared) - normalize the
+-   [normalize.shared](/wiki/normalize.shared) - normalize the
     number of sequences per group to a specified level
--   [split.groups](split.groups) - generates a fasta file for
+-   [split.groups](/wiki/split.groups) - generates a fasta file for
     each group in a groupfile
--   [cluster.fragments](cluster.fragments) - a modified
-    version of [pre.cluster](pre.cluster) /
-    [unique.seqs](unique.seqs) to cluster aligned sequences
+-   [cluster.fragments](/wiki/cluster.fragments) - a modified
+    version of [pre.cluster](/wiki/pre.cluster) /
+    [unique.seqs](/wiki/unique.seqs) to cluster aligned sequences
     that overlap, but aren't exact
--   [get.lineage](get.lineage) /
-    [remove.lineage](remove.lineage) - similar to
-    [remove.seqs](remove.seqs)/[get.seqs](get.seqs)
+-   [get.lineage](/wiki/get.lineage) /
+    [remove.lineage](/wiki/remove.lineage) - similar to
+    [remove.seqs](/wiki/remove.seqs)/[get.seqs](/wiki/get.seqs)
     except that instead of taking in an accnos file, one would give a
     taxonomy file and the name of a taxonomic group
--   [fastq.info](fastq.info) - generate fasta and qual files
+-   [fastq.info](/wiki/fastq.info) - generate fasta and qual files
     from a fastq file
--   [deunique.seqs](deunique.seqs) - re-replicate duplicate
+-   [deunique.seqs](/wiki/deunique.seqs) - re-replicate duplicate
     sequences
--   [pairwise.seqs](pairwise.seqs) - calculate pairwise
+-   [pairwise.seqs](/wiki/pairwise.seqs) - calculate pairwise
     distances between sequences without using a multiple-sequence
     alignment
 
 ## Feature updates
 
--   [screen.seqs](screen.seqs) - added optimize and criteria
+-   [screen.seqs](/wiki/screen.seqs) - added optimize and criteria
     options
--   [rarefaction.single](rarefaction.single) - added
+-   [rarefaction.single](/wiki/rarefaction.single) - added
     processors option
--   [phylo.diversity](phylo.diversity) - added processors
+-   [phylo.diversity](/wiki/phylo.diversity) - added processors
     option
--   [summary.shared](summary.shared) - added processors and
+-   [summary.shared](/wiki/summary.shared) - added processors and
     distance options
--   [summary.single](summary.single) - groupmode=T is the new
+-   [summary.single](/wiki/summary.single) - groupmode=T is the new
     default
--   [venn](venn) - added nseqs and permute options
--   [chop.seqs](chop.seqs) - added short option
+-   [venn](/wiki/venn) - added nseqs and permute options
+-   [chop.seqs](/wiki/chop.seqs) - added short option
 -   mothur will now look in the output directory automatically if it
     cannot find your file in the default locations, so if you are
     redirecting your output, you can still use simple names as inputs.
@@ -103,13 +103,13 @@ Pat Schloss
 -   fixed the unifrac commands so that their output order matches
     summary commands
 -   fixed bug introduced in version 1.13.0 that produced significance
-    scores of 1 for [unifrac.unweighted](unifrac.unweighted)
+    scores of 1 for [unifrac.unweighted](/wiki/unifrac.unweighted)
 -   fixed bug where chimera commands didn't output to the correct
     folder if you used set.dir or a complete file name.
 -   classify.otu should put in "no\_consensus" if below threshold
--   fixed bug with [unifrac.weighted](unifrac.weighted),
-    [unifrac.unweighted](unifrac.unweighted) and
-    [phylo.diversity](phylo.diversity) that mistakenly added
+-   fixed bug with [unifrac.weighted](/wiki/unifrac.weighted),
+    [unifrac.unweighted](/wiki/unifrac.unweighted) and
+    [phylo.diversity](/wiki/phylo.diversity) that mistakenly added
     the root to the branch length
 
 ## Other stuff

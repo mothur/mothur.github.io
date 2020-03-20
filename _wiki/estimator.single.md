@@ -128,9 +128,9 @@ To run the single analysis with multiple samples:
 ## File Options
 
 You can analyze your data using many of mothur's file types. These
-include: [ list](list_file), [
-sabund](sabund_file), [ rabund](rabund_file) and [
-shared](shared_file) files.
+include: [ list](/wiki/list_file), [
+sabund](/wiki/sabund_file), [ rabund](/wiki/rabund_file) and [
+shared](/wiki/shared_file) files.
 
 ## Options
 

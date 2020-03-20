@@ -5,9 +5,9 @@ redirect_from: '/wiki/Hamming'
 ---
 The **hamming** calculator returns the Hamming
 distance between two communities. This calculator can be used in the
-[summary.shared](summary.shared),
-[collect.shared](collect.shared), and
-[dist.shared](dist.shared) commands.
+[summary.shared](/wiki/summary.shared),
+[collect.shared](/wiki/collect.shared), and
+[dist.shared](/wiki/dist.shared) commands.
 
 $$D_{Hamming} = S_{A} + S_{B} - 2S_{AB}$$
 
@@ -27,7 +27,7 @@ commands:
     mothur > cluster()
     mothur > make.shared(list=98_lt_phylip_amazon.fn.list, group=amazon.groups, label=0.10)
 
-The 98\_lt\_phylip\_amazon.fn.[shared file](shared_file) will
+The 98\_lt\_phylip\_amazon.fn.[shared file](/wiki/shared_file) will
 contain the following two lines:
 
     0.10   forest  55  1   1   1   1   1   1   3   3   2   2   1   1   3   2   1   1   1   1   2   1   1   2   5   1   1   1   1   2   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   

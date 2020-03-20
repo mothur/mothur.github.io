@@ -5,7 +5,7 @@ redirect_from: '/wiki/Count_File'
 ---
 The count file is a condensed version of the name file. It can also
 include the group information. It can be created using the
-[count.seqs](count.seqs) command, aka make.table.
+[count.seqs](/wiki/count.seqs) command, aka make.table.
 
 **NOTE: DO NOT use a hyphen in group names. The "-" character is used
 within mothur to separate group names, labels, taxonomies, ect.
@@ -72,7 +72,7 @@ of 467. GQY1XT001EI480 has representation in 3 samples: 1 (F003D000) , 8
 ## Converting between formats
 
 You can compress or inflate your count table using the
-[count.seqs](count.seqs) command with the compress option.
+[count.seqs](/wiki/count.seqs) command with the compress option.
 
     mothur > count.seqs(count=final.count_table, compress=f) 
 

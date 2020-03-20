@@ -3,10 +3,10 @@ title: 'shared file'
 tags: 'file_types'
 redirect_from: '/wiki/Shared_file'
 ---
-A shared file is analogous to an [rabund file](rabund_file).
+A shared file is analogous to an [rabund file](/wiki/rabund_file).
 The data in a shared file represent the number of times that an OTU is
 observed in multiple samples. It is easiest to generate this file using
-the [make.shared](make.shared) command. The structure of a
+the [make.shared](/wiki/make.shared) command. The structure of a
 shared file is analogous to an rabund file. The first column contains
 the label for the comparison - this will be the value for the first
 column of each line from the original list file (e.g.

@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Make.biom.html'
 ---
 The **make.biom** command is design to allow you to
-convert your [shared file](shared_file) to a [biom file](https://github.com/biocore/biom-format). To run this tutorial please download, [ example files](https://mothur.s3.us-east-2.amazonaws.com/wiki/make_biom_files.zip)
+convert your [shared file](/wiki/shared_file) to a [biom file](https://github.com/biocore/biom-format). To run this tutorial please download, [ example files](https://mothur.s3.us-east-2.amazonaws.com/wiki/make_biom_files.zip)
 
 ## Default Settings
 
@@ -17,7 +17,7 @@ The shared parameter is required to run the **make.biom** command.
 ### constaxonomy
 
 The constaxonomy file is the taxonomy file outputted by
-[classify.otu](classify.otu)(list=yourListfile,
+[classify.otu](/wiki/classify.otu)(list=yourListfile,
 taxonomy=yourTaxonomyFile). Be SURE that the you are the constaxonomy
 file distance matches the shared file distance. ie, for
 \*.0.03.cons.taxonomy set label=0.03.

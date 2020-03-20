@@ -6,8 +6,8 @@ redirect_from: '/wiki/Pairwise.seqs.html'
 The **pairwise.seqs** command will calculate
 uncorrected pairwise distances between sequences. The command will
 generate a [column-formatted distance
-matrix](column-formatted_distance_matrix) that is compatible
-with the [cluster](cluster) command. The command is also able
+matrix](/wiki/column-formatted_distance_matrix) that is compatible
+with the [cluster](/wiki/cluster) command. The command is also able
 to generate a phylip-formatted distance matrix. There are several
 options for how to handle gap comparisons and terminal gaps. This
 tutorial uses the data files in [
@@ -99,7 +99,7 @@ distances (i.e. 96x95/2 = 4560). With the cutoff only 56 distances are
 saved. The savings can be substantial when there are a large number of
 distances. The actual cutoff used by the command is 0.005 higher than
 the value that is set to allow for rounding in the [ clustering
-steps](cluster#precision).
+steps](/wiki/cluster#precision).
 
 ### processors
 

@@ -12,24 +12,24 @@ usability of the program and any bugs you encounter.
 
 ## Operation
 
--   [installation](Installation) of mothur from source code
--   [execution](Execution) of mothur
+-   [installation](/wiki/Installation) of mothur from source code
+-   [execution](/wiki/Execution) of mothur
 -   Available modes:
-    -   [interactive mode](Interactive_mode)
-    -   [batch mode](Batch_mode)
-    -   [command line mode](Command_line_mode)
+    -   [interactive mode](/wiki/Interactive_mode)
+    -   [batch mode](/wiki/Batch_mode)
+    -   [command line mode](/wiki/Command_line_mode)
 
 ## Commands
 
--   [help](help) - prints out the system-wide help
+-   [help](/wiki/help) - prints out the system-wide help
     information
--   [quit](quit) - quits the program
--   [merge.files](merge.files) - concatenates two or more
+-   [quit](/wiki/quit) - quits the program
+-   [merge.files](/wiki/merge.files) - concatenates two or more
     files
--   [system](system) - calls a command in the shell
+-   [system](/wiki/system) - calls a command in the shell
 
 Examples of each command are provided within their specific pages, but
 several users have provided several [analysis
-examples](analysis_examples), which use these commands. The [authorized SOP](/wiki/MiSeq_SOP) for using mothur for MiSeq data is also available there. An
+examples](/wiki/analysis_examples), which use these commands. The [authorized SOP](/wiki/MiSeq_SOP) for using mothur for MiSeq data is also available there. An
 exhaustive list of the commands found in mothur is available within the
-[ commands tag index](tags#commands).
+[ commands tag index](/wiki/tags#commands).

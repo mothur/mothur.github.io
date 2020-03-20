@@ -5,9 +5,9 @@ redirect_from: '/wiki/Qstat'
 ---
 The **qstat** calculator returns the Q statistic for an
 OTU definition. This calculator can be used in the
-[summary.single](summary.single),
-[collect.single](collect.single), and
-[rarefaction.single](rarefaction.single) commands.
+[summary.single](/wiki/summary.single),
+[collect.single](/wiki/collect.single), and
+[rarefaction.single](/wiki/rarefaction.single) commands.
 
 $$Q=\frac{\frac{1}{2}n_{R1} + \sum n_r + \frac{1}{2}n_{R2}}{\ln\left(\frac{R_2}{R_1}\right)}$$
 
@@ -35,7 +35,7 @@ commands:
     mothur > read.dist(phylip=98_lt_phylip_amazon.dist, cutoff=0.10)
     mothur > cluster()
 
-The 98\_lt\_phylip\_amazon.fn.[sabund file](sabund_file) is
+The 98\_lt\_phylip\_amazon.fn.[sabund file](/wiki/sabund_file) is
 also outputted to the terminal window when the cluster() command is
 executed:
 
