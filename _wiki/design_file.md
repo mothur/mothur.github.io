@@ -36,4 +36,4 @@ following column contain the treatment names, or other information.
     M43Fcs M
     M44Fcs M
 
-[category:filetypes](Category:FileTypes)
+

@@ -197,4 +197,4 @@ assume in all cases that pdiffs=2, bdiffs=1, tdiffs=3:
     forwardPrimer = 0 diffs, reversePrimer = 1 diffs -> primer will be successfully removed
     forwardPrimer = 1 diffs, reversePrimer = 2 diffs ->  primer will not be removed because the paired primer total diffs = 3
 
-[category:filetypes](Category:FileTypes)
+

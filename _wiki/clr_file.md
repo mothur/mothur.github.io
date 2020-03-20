@@ -17,4 +17,4 @@ results in a clr file as follows:
     label    Group    numOtus    Otu1    Otu2    Otu3  Otu4
     0.03    sample1  4    1.5147234    0.5147234    -0.2222422    -1.8072047
 
-[category:filetypes](Category:FileTypes)
+

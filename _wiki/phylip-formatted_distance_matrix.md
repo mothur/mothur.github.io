@@ -83,4 +83,4 @@ discussion is somewhat unnecessary because as long as mothur knows that
 you are providing a phylip-formatted matrix, it can identify the shape
 of the matrix.
 
-[category:filetypes](Category:FileTypes)
+

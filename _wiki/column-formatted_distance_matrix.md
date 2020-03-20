@@ -45,4 +45,4 @@ note that the file does not have any rows where U68589 is in the first
 column. Because of this, it is mandatory that a name file be used with
 the read.column() command.
 
-[category:filetypes](Category:FileTypes)
+

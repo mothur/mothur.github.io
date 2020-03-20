@@ -17,4 +17,4 @@ with the following format: sequenceName tab taxonomy.
     GQY1XT001CJMDA Bacteria(100);"Bacteroidetes"(98);"Bacteroidia"(87);"Bacteroidales"(87);unclassified;unclassified;
     ...
 
-[category:filetypes](Category:FileTypes)
+

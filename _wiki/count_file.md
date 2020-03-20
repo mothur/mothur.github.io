@@ -84,4 +84,4 @@ form.
 The above command will convert a full format count file to it's sparse
 form.
 
-[category:filetypes](Category:FileTypes)
+

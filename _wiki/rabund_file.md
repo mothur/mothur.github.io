@@ -38,4 +38,4 @@ in the [amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondat
        1   1   1   1   
     ...
 
-[category:filetypes](Category:FileTypes)
+

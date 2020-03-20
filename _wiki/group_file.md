@@ -32,4 +32,4 @@ Notes:
     within mothur to separate group names, labels, taxonomies, ect.
     Including a hyphen will cause issues in your downstream analysis.
 
-[category:filetypes](Category:FileTypes)
+

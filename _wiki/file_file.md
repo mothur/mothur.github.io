@@ -52,4 +52,4 @@ Note: You can add comments to the file file, or ignore files by adding a
     F8D141 F8D141_S359_L001_R1_001.fastq   F8D141_S359_L001_R2_001.fastq
     F8D142 F8D142_S360_L001_R1_001.fastq   F8D142_S360_L001_R2_001.fastq
 
-[category:filetypes](Category:FileTypes)
+

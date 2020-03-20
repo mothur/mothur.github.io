@@ -17,4 +17,4 @@ the relative abundance of each OTU from that group.
 
     mothur > get.relabund(shared=final.an.shared)
 
-[category:filetypes](Category:FileTypes)
+

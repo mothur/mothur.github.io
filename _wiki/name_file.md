@@ -26,4 +26,4 @@ Notes:
 
 2\.  Your sequence name cannot contain blank spaces.
 
-[category:filetypes](Category:FileTypes)
+

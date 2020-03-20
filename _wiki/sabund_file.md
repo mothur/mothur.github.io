@@ -23,4 +23,4 @@ in the [amazondata.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/amazondat
     0.03   4   75  6   1   2   
     ...
 
-[category:filetypes](Category:FileTypes)
+
