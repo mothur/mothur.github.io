@@ -1,5 +1,5 @@
 ---
-title: 'Ace'
+title: 'ace'
 tags: 'calculators'
 redirect_from: '/wiki/Ace'
 ---
