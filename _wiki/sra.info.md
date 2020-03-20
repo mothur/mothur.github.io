@@ -52,7 +52,7 @@ The fasterq parameter allows you to specify location of the
 fasterq\_dump executable. By default mothur will look in its location
 and the location of MOTHUR\_TOOLS if specified at compile time or set
 through the [
-set.dir](/wiki/Set.dir#tools)(tools=locationOfExternalTools)
+set.dir](/wiki/set.dir#tools)(tools=locationOfExternalTools)
 command.
 
     mothur > sra.info(accnos=srainfo.accnos, fasterq=/usr/bin/fasterq-dump)
@@ -62,7 +62,7 @@ command.
 The prefetch parameter allows you to specify location of the prefetch
 executable. By default mothur will look in its location and the location
 of MOTHUR\_TOOLS if specified at compile time or set through the [
-set.dir](/wiki/Set.dir#tools)(tools=locationOfExternalTools)
+set.dir](/wiki/set.dir#tools)(tools=locationOfExternalTools)
 command.
 
     mothur > sra.info(accnos=srainfo.accnos, prefetch=/usr/bin/prefetch)
