@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why do I have such a large distance matrix?"
+title: "Why do I have such a large distance matrix"
 author: "PD. Schloss"
 date: "September 11, 2014"
 comments: true

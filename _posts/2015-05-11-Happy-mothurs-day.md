@@ -10,7 +10,7 @@ At least in the United State's, Sunday was Mother's Day. The day we acknowledge 
 
 Way back in the bad old days of Sanger sequencing, we published papers describing two software programs - `DOTUR` and `SONS`. These programs did essentially what `cluster`, `summary.single`, `summary.shared`, `collect.single`, and `rarefaction.shared` now do within mothur. With the growing use of 454 sequencing in 2007, I started what is now mothur to better accommodate these larger datasets. People would frequently tell me that I should develop a program named for my wife. But I couldn't think of a name so the plan was to update the software as `DOTUR` version 2.0 to reflect the significant update to the program and the fact that the baby we were expecting was our second daughter. Of course, the expected baby turned out to be a boy, so that wouldn't work. In a flash of genius, I decided to name the program `mothur`. The baby in iconic `mothur` picture is that baby - John. John recently turned 8 and my wife regularly says, "Do you really still have that picture of John on me on your website?"
 
-<img src="/assets/img/SJ.JPG" alt="original mothur logo" style="margin:0px auto;display:block" width="400">
+<img src="/assets/img/SJ.jpg" alt="original mothur logo" style="margin:0px auto;display:block" width="400">
 
 Back in January I announced a competition to generate a new mothur logo that we could use to generate stickers for laptops and other swag. The plan was to also take my wife and John down from the website and replace them with the new logo. I received about 15 outstanding submissions and had a very difficult time whittling the choice down to one image. The winning entry belonged to Linda Wampach.
 

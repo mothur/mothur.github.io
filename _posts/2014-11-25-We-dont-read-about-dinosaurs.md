@@ -36,7 +36,7 @@ about race, ethnicity, gender, etc. through the lense of sports. I have no
 skills, but I generally like sports and find they're a pretty fun topic to
 discuss because we get that they're games and generate a lot of interesting
 First World Problems. On my bookshelf right now I have a copy of [Baseball
-Hacks](https://www.amazon.com/Baseball-Hacks-Analyzing-Winning-Statistics/dp/0596009429/ref=sr_1_1?ie=UTF8&qid=1416947079&sr=8-1&keywords=baseball+hacks), which I poured over to learn more about
+Hacks](https://www.amazon.com/Baseball-Hacks-Analyzing-Winning-Statistics/dp/0596009429), which I poured over to learn more about
 probability, R, markov models, SQL, and general data analysis. I get baseball. I
 can relate to the situation where a [team is up 3-0 with one out in the 8th
 inning](https://en.wikipedia.org/wiki/Steve_Bartman_incident) and five outs away
