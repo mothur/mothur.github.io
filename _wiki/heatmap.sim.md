@@ -7,7 +7,7 @@ The **heatmap.sim** command will generate a
 heatmap indicating the pairwise similarity between multiple samples
 using a variety of [calculators](/wiki/calculators) comparing
 community membership and structure. As an example, we will use the
-example from the [sogin data analysis](/wiki/Sogin_data_analysis)
+example from the [sogin data analysis](/wiki/sogin_data_analysis)
 example.
 
 ## Default settings

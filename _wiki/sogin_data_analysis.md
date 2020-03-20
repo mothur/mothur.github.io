@@ -1,6 +1,6 @@
 ---
 title: 'Sogin data analysis'
-redirect_from: '/wiki/Sogin_data_analysis'
+redirect_from: '/wiki/sogin_data_analysis'
 ---
 In 2006, Mitch Sogin and his colleagues at the Marine Biology Laboratory
 in Woods Hole, MA published a ground breaking paper in

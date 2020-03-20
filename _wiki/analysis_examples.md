@@ -13,7 +13,7 @@ wiki and add the link below.
 ## Pyrosequencing 16S rRNA gene sequence analysis
 -   [454 SOP](/wiki/454_SOP) - Pat Schloss
 -   [Costello Stool Analysis](/wiki/Costello_stool_analysis) - Pat Schloss [Historical reference]
--   [Sogin Data Analysis](/wiki/Sogin_data_analysis) - Pat Schloss [Historical reference]
+-   [Sogin Data Analysis](/wiki/sogin_data_analysis) - Pat Schloss [Historical reference]
 -   [Pyrosequences from deep anoxic cenotes](https://web.archive.org/web/http://www.mothur.org/wiki/Pyrosequences_from_deep_anoxic_cenotes) - Jason Sahl [Historical reference]
 -   [Characterizing community composition along a transect of hypersaline sediments](https://web.archive.org/web/http://www.mothur.org/wiki/Characterizing_community_composition_along_a_transect_of_hypersaline_sediments)  Emily Hollister [Historical reference]
 

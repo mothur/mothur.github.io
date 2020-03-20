@@ -8,7 +8,7 @@ sequences that fulfill certain user defined criteria. Furthermore, it
 enables you to cull those sequences not meeting the criteria from a
 names, group, contigsreport, alignreport and summary file. As an
 example, we will use the example from the [Sogin data
-analysis](/wiki/Sogin_data_analysis) example.
+analysis](/wiki/sogin_data_analysis) example.
 
 ## Default settings
 
