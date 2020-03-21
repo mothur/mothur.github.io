@@ -8,5 +8,4 @@ This is the data file repository for the manuscript, "Intra- and inter-individua
 
 * [Digital notebook used to perform the analysis](notebook.html)
 * [MIMARKS Spreadsheet and trapping data](Peromyscus_MIMARKS.xlsx)
-* Compressed tarball containing bzip2\'d fastq files for each animal (770
-MB): [fastq](peromyscus_16S18S.tar)
+* Compressed tarball containing bzip2\'d fastq files for each animal (770MB): [fastq](peromyscus_16S18S.tar)
