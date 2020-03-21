@@ -2,4 +2,4 @@
 set -e # halt script on error
 
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --assume-extension --check-html --http-status-ignore 429 --only-4xxn --typhoeus-config '{"connecttimeout":"60", "timeout":"60"}' 
+bundle exec htmlproofer ./_site --assume-extension --check-html --http-status-ignore 429 --only-4xx --typhoeus-config '{"connecttimeout":"60", "timeout":"60"}' 
