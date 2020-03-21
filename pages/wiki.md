@@ -50,7 +50,7 @@ project monthly.
 
 -   **Announcing\...**
     -   [mothur
-        v.1.44.0](https://github.com/mothur/mothur/releases/tag/v1.44.0) -
+        v.1.44.0](https://github.com/mothur/mothur/releases/tag/v1.44.0-beta) -
         The next release of mothur
     -   [mothur
         v.1.43.0](https://github.com/mothur/mothur/releases/tag/v.1.43.0) -

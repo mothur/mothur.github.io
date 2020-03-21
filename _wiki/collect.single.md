@@ -114,7 +114,7 @@ threshold.
 
 Within the suite of calculators available in mothur are a set that will
 predict the [number of additional
-OTUs](/wiki/Calculators#estimates-of-number-of-additional-otus-observed-with-extra-sampling)
+OTUs](/wiki/calculators#estimates-of-number-of-additional-otus-observed-with-extra-sampling)
 that will be observed for a given sample size. By default these
 calculators will base the prediction on a sample that is the same size
 as the initial sampling. If you would like to use a different sample
