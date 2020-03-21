@@ -75,7 +75,7 @@ Now we want to make sure the taxonomy file is properly formatted for use with mo
 wget https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/taxonomy/tax_slv_ssu_128.txt
 ```
 
-Thanks to [Eric Collins at the University of Alaska Fairbanks](https://mothur.org/forum/viewtopic.php?f=3&t=3652&p=20249#p12680), we have some nice R code to map all of the taxa names to the six Linnean levels (kingdom, phylum, class, order, family, and genus). We'll run the following code from within R:
+Thanks to [Eric Collins at the University of Alaska Fairbanks](https://forum.mothur.org/viewtopic.php?f=3&t=3652&p=20249#p12680), we have some nice R code to map all of the taxa names to the six Linnean levels (kingdom, phylum, class, order, family, and genus). We'll run the following code from within R:
 
 	map.in <- read.table("tax_slv_ssu_128.txt",header=F,sep="\t",stringsAsFactors=F)
 	map.in <- map.in[,c(1,3)]
