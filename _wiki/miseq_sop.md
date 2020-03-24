@@ -31,7 +31,7 @@ divided into several parts shown here in the table of contents for the
 tutorial:
 
 -   [Korean translation of
-    MiSeq\_SOP](https://metagenomics.tistory.com/entry/Mothur-파이프라인-pipeline)
+    MiSeq_SOP](https://metagenomics.tistory.com/entry/Mothur-파이프라인-pipeline)
 
 
 ## Logistics
@@ -45,7 +45,8 @@ nothing was done to our mice except allow them to eat, get fat, and be
 merry. We were curious whether the rapid change in weight observed
 during the first 10 dpw affected the stability microbiome compared to
 the microbiome observed between days 140 and 150. We will address this
-question in this tutorial using a combination of OTU, phylotype, and
+question in this tutorial using a combination of operational taxonomic units (OTUs),
+amplicon/exact sequence variants (ASV/ESV), phylotype, and
 phylogenetic methods. To make this tutorial easier to execute, we are
 providing only part of the data - you are given the flow files for one
 animal at 10 time points (5 early and 5 late). In addition, to
@@ -70,13 +71,13 @@ For this tutorial you will need several sets of files. To speed up the
 tutorial we provide some of the downstream files that take awhile to
 generate (e.g. the output of shhh.flows):
 
--   [ example data from schloss lab](https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip)
+-   [Example data from schloss lab](https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip)
     that will be used with this tutorial. It was extracted from the
     [full
     dataset](https://mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
--   [ SILVA-based bacterial reference
+-   [SILVA-based bacterial reference
     alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.zip)
--   [ mothur-formatted version of the RDP training set
+-   [mothur-formatted version of the RDP training set
     (v.9)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.pds.zip)
 
 You can easily substitute these choices (and should) for the reference
@@ -87,17 +88,15 @@ databases](/wiki/Greengenes-formatted_databases). We use the above
 files because they're compact and do a pretty good job. The various
 classification references perform differently with different sample
 types so your mileage may vary. It is generally easiest to decompress
-these files and to then move the contents of the Trainset9\_032012.pds
-and the silva.bacteria folders into the MiSeq\_SOP folder. You will also
+these files and to then move the contents of the Trainset9_032012.pds
+and the silva.bacteria folders into the MiSeq_SOP folder. You will also
 want to move the contents of the mothur executable folder there as well.
 If you are a sysadmin wiz (or novice) you can probably figure out how to
 put mothur in your path, but this will get you what you need for now.
 
 In addition, you probably want to get your hands on the following\...
 
--   [mono](https://www.mono-project.com/Main_Page) - if you are using Mac
-    OS X or linux
--   [textwranger](https://www.barebones.com/products/textwrangler/) /
+-   [atom](https://atom.io) /
     [emacs](https://www.gnu.org/software/emacs/) /
     [vi](https://www.vim.org/) / or some other text editor
 -   [R](https://www.r-project.org/), Excel, or another program to graph
@@ -116,15 +115,15 @@ works. Generally, we will use the full file names for this tutorial.
 
 Because of the large size of the original dataset (3.9 GB) we are giving
 you 21 of the 362 pairs of fastq files. For example, you will see two
-files: F3D0\_S188\_L001\_R1\_001.fastq and
-F3D0\_S188\_L001\_R2\_001.fastq. These two files correspond to Female 3
+files: F3D0_S188_L001_R1_001.fastq and
+F3D0_S188_L001_R2_001.fastq. These two files correspond to Female 3
 on Day 0 (i.e. the day of weaning). The first and all those with R1
 correspond to read 1 while the second and all those with R2 correspond
 to the second or reverse read. These sequences are 250 bp and overlap in
 the V4 region of the 16S rRNA gene; this region is about 253 bp long. So
-looking at the files in the MiSeq\_SOP folder that you've downloaded
+looking at the files in the MiSeq_SOP folder that you've downloaded
 you will see 22 fastq files representing 10 time points from Female 3
-and 1 mock community. You will also see HMP\_MOCK.v35.fasta which
+and 1 mock community. You will also see HMP_MOCK.v35.fasta which
 contains the sequences used in the mock community that we sequenced in
 fasta format. Finally you will see a file called stability.files. The
 first lines of this file look like:
@@ -198,14 +197,14 @@ will tell you the number of sequences in each sample:
 
 At the very end it will give you the following warning message:
 
-    [warning]: your sequence names contained ':'.  I changed them to '_' to avoid problems in your downstream analysis.
+    [WARNING]: Your sequence names contained ':'.  I changed them to '_' to avoid problems in your downstream analysis.
 
 Don't worry too much about this. The typical sequence name will look
 like "M00967:43:000000000-A3JHG:1:1101:18327:1699". Aside being
 freakishly long, these sequence names contain ":", which will cause a
 lot of headaches down the road if you are crazy enough to try and create
 phylogenetic trees from these sequences. So to prevent this headache for
-you, we convert all of the ":" characters to "\_" characters. This
+you, we convert all of the ":" characters to "_" characters. This
 command will also produce several files that you will need down the
 road: stability.trim.contigs.fasta and stability.contigs.groups. These
 contain the sequence data and group identity for each sequence. The
@@ -296,7 +295,7 @@ unique sequence shows up in each group.
     mothur > count.seqs(name=stability.trim.contigs.good.names, group=stability.contigs.good.groups)
 
 This will generate a file called
-stability.trim.contigs.good.count\_table. In subsequent commands we'll
+stability.trim.contigs.good.count_table. In subsequent commands we'll
 use it by using the count option:
 
     mothur > summary.seqs(count=stability.trim.contigs.good.count_table)
@@ -519,7 +518,7 @@ keep in mind that if you aren't classifying your sequences using the
 RDP reference taxonomy, you'll need to customize what the lineages are
 called. For example, our modified version of the RDP calls mitochondria,
 "Mitochondria". If you use greengenes, it calls them
-"f\_\_mitochondria". If you are using greengenes (or SILVA or anything
+"f__mitochondria". If you are using greengenes (or SILVA or anything
 else), you'll need to change these names as appropriate.
 
 If you run summary.seqs you'll see that we now have 2469 unique
@@ -603,7 +602,7 @@ sequences into OTUs to see how many spurious OTUs we have:
     mothur > rarefaction.single(shared=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.shared)
 
 This string of commands will produce a file for you called
-stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique\_list.groups.rarefaction.
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.groups.rarefaction.
 Open it. You'll see that for 4048 sequences, we'd have 35 OTUs from
 the Mock community. This number of course includes some stealthy
 chimeras that escaped our detection methods. If we used 3000 sequences,
@@ -615,7 +614,7 @@ this is pretty darn good!
 
 We're almost to the point where you can have some fun with your data
 (I'm already having fun, aren't you?). We'd like to do two things-
-assign sequences to OTUs and phylotypes. First, we want to remove the
+assign sequences to OTUs, ASVs, and phylotypes. First, we want to remove the
 Mock sample from our dataset using the
 [remove.groups](/wiki/remove.groups) command:
 
@@ -678,23 +677,52 @@ get the consensus taxonomy for each OTU using the
     mothur > classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=0.03)
 
 Opening
-stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti\_mcc.0.03.cons.taxonomy
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.0.03.cons.taxonomy
 you'll see something that looks like\...
 
-    OTU    Size    Taxonomy
-    Otu001 12288   Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-    Otu002 8892    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-    Otu003 7794    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-    Otu004 7473    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);Barnesiella(100);
-    Otu005 7450    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-    Otu006 6621    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-    Otu007 6304    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);Bacteroidaceae(100);Bacteroides(100);
-    Otu008 5337    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Rikenellaceae"(100);Alistipes(100);
-    ...
+```
+OTU    Size    Taxonomy
+Otu001 12288   Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu002 8892    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu003 7794    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu004 7473    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);Barnesiella(100);
+Otu005 7450    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu006 6621    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu007 6304    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);Bacteroidaceae(100);Bacteroides(100);
+Otu008 5337    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Rikenellaceae"(100);Alistipes(100);
+...
+```
 
 This is telling you that Otu008 was observed 5337 times in your samples
 and that all of the sequences (100%) were classified as being members of
 the Alistipes.
+
+
+### ASVs
+
+OTUs generally represent sequences that are not more than 3% different
+from each other. In contrast, ASVs (aka ESVs) strive to differentiate
+sequences into separate OTUs if they are different from each other. There
+are challenges with this approach including the possibility of separating
+operons from the same genome into separate ASVs and that an ASV is
+typically really a cluster of sequences that are one or two bases apart
+from each other. Regardless, some people want to give this a go. The
+method built into mothur for identifying ASVs is [pre.cluster](/wiki/pre.cluster).
+We did this above and then removed chimeras and contaminant sequences. We
+can convert the fasta and count_table files we used to form OTUs to a shared
+file using the [make.shared](/wiki/make.shared) command.
+
+```
+mothur > make.shared(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
+```
+
+This results in a shared and list file. The shared file we can use like
+the shared file from forming OTUs or phylotypes. The list file we can use
+to generate a consensus taxonomy for each ASV.
+
+```
+mothur > classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.asv.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=asv)
+```
 
 ### Phylotypes
 
@@ -731,8 +759,8 @@ of sequences increases. But here's how we'd do it using
 ## Analysis
 
 Moving on, let's do something more interesting and actually analyze our
-data. We'll focus on the OTU-based dataset. The analysis using the
-phylotype-based analysis is essentially the same. Also, remember that
+data. We'll focus on the OTU-based dataset. The analysis using ASVs or
+phylotypes is essentially the same. Also, remember that
 our initial question had to do with the stability and change in
 community structure in these samples when comparing early and late
 samples. Keep in mind that the group names have either a F or M (sex of
@@ -825,8 +853,8 @@ that will allow us to rarefy our data to a common number of sequences.
     mothur > dist.shared(shared=stability.opti_mcc.shared, calc=thetayc-jclass, subsample=t)
 
 These two distance matrices (i.e.
-stability.opti\_mcc.jclass.0.03.lt.ave.dist and
-stability.opti\_mcc.thetayc.0.03.lt.ave.dist) can then be visualized
+stability.opti_mcc.jclass.0.03.lt.ave.dist and
+stability.opti_mcc.thetayc.0.03.lt.ave.dist) can then be visualized
 using the [pcoa](/wiki/pcoa) or [nmds](/wiki/nmds) plots.
 Principal Coordinates (PCoA) uses an eigenvector-based approach to
 represent multidimensional data in as few dimesnsions as possible. Our
@@ -851,11 +879,11 @@ following commands
 
     mothur > nmds(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist)
 
-Opening the stability.opti\_mcc.thetayc.0.03.lt.ave.nmds.stress file we
+Opening the stability.opti_mcc.thetayc.0.03.lt.ave.nmds.stress file we
 can inspect the stress and R\^2 values, which describe the quality of
 the ordination. Each line in this file represents a different iteration
 and the configuration obtained in the iteration with the lowest stress
-is reported in the stability.opti\_mcc.thetayc.0.03.lt.ave.nmds.axes
+is reported in the stability.opti_mcc.thetayc.0.03.lt.ave.nmds.axes
 file. In this file we find that the lowest stress value was 0.11 with an
 R-squared value of 0.95; that stress level is actually pretty good. You
 can test what hapens with three dimensions by the following:
@@ -867,7 +895,7 @@ bad. In general, you would like a stress value below 0.20 and a value
 below 0.10 is even better. Thus, we can conclude that, NMDS is better
 than PCoA. We can plot the three dimensions of the NMDS data by plotting
 the contents of
-stability.opti\_mcc.subsample.pick.thetayc.0.03.lt.nmds.axes. Again, it
+stability.opti_mcc.subsample.pick.thetayc.0.03.lt.nmds.axes. Again, it
 is clear that the early and late samples cluster separately from each
 other. Ultimately, ordination is a data visualization tool. We might ask
 if the spatial separation that we see between the early and late plots
@@ -942,7 +970,7 @@ dataset. We do this with the [corr.axes](/wiki/corr.axes) command:
     mothur > corr.axes(axes=stability.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, shared=stability.opti_mcc.0.03.subsample.shared, method=spearman, numaxes=3)
 
 This command generates the
-stability.opti\_mcc.0.03subsample.0.03.pick.spearman.corr.axes file. The
+stability.opti_mcc.0.03subsample.0.03.pick.spearman.corr.axes file. The
 data for the first five OTUs look like this\...
 
     OTU    axis1   p-value axis2   p-value axis3   p-value length
@@ -1001,10 +1029,10 @@ data can be partitioned in to separate community types
 
 We see that the minimum Laplace value is for a K value of 2 (10436.65).
 This indicates that our samples belonged to two community types. Opening
-stability.opti\_mcc.0.03.subsample.0.03.dmm.mix.design we see that all
-of the late samples and the Day 0 sample belonged to Partition\_1 and
-the other early samples belonged to Partition\_2. We can look at the
-stability.opti\_mcc.0.03.subsample.0.03.dmm.mix.summary file to see
+stability.opti_mcc.0.03.subsample.0.03.dmm.mix.design we see that all
+of the late samples and the Day 0 sample belonged to Partition_1 and
+the other early samples belonged to Partition_2. We can look at the
+stability.opti_mcc.0.03.subsample.0.03.dmm.mix.summary file to see
 which OTUs were most responsible for separating the communities:
 
     OTU    P0.mean P1.mean P1.lci  P1.uci  P2.mean P2.lci  P2.uci  Difference  CumFraction
@@ -1016,7 +1044,7 @@ which OTUs were most responsible for separating the communities:
     ...
 
 Again we can cross-reference these OTU labels with the consensus
-classifications in the stability.opti\_mcc.cons.taxonomy file to get the
+classifications in the stability.opti_mcc.cons.taxonomy file to get the
 names of these organisms.
 
 #### Population-level analysis
@@ -1032,7 +1060,7 @@ this study. Run the following in mothur:
     mothur > metastats(shared=stability.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
 
 Looking in the first 5 OTUs from
-stability.opti\_mcc.0.03.subsample.0.03.Late-Early.metastats file we see
+stability.opti_mcc.0.03.subsample.0.03.Late-Early.metastats file we see
 the following\...
 
     OTU    mean(group1)    variance(group1)    stderr(group1)  mean(group2)    variance(group2)    stderr(group2)  p-value
@@ -1069,6 +1097,14 @@ Looking at the top of the lefse summary file we see:
 
 OTUs 4, 5, and 6 are significantly different between the two groups and
 are significantly elevated in the late samples
+
+
+## ASV-based analysis
+
+ASV-based analysis is the same as OTU-based analysis, but at a
+different taxonomic scale. We will leave you on your own to replicate
+the OTU-based analyses described above with the ASV data.
+
 
 ## Phylotype-based analysis
 
