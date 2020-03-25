@@ -25,9 +25,9 @@ file and group file:
 
 or you can convert a [ count file](/wiki/Count_File) to a [shared
 file](/wiki/shared_file) and [list file](/wiki/list_file)
-where each representative sequence is placed in it's own OTU..
+where each representative sequence is placed in it's own OTU. This is the same thing as generating a shared file of ASVs
 
-    mothur > make.shared(count=amazon.count_table, label=0.03)
+    mothur > make.shared(count=amazon.count_table, label=asv)
 
 This command will generate a [shared file](/wiki/shared_file).
 
