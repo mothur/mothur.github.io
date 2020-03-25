@@ -15,7 +15,7 @@ platform-independent, community-supported software for describing and
 comparing microbial communities. Appl Environ Microbiol, 2009.
 75(23):7537-41.
 
-You can also run the function you are interested in with "citation" to get the paper's related to the function you are interested in.
+You can also run the function you are interested in with "citation" to get the papers related to the function you are interested in.
 
 ```
 mothur > cluster.split(citation)
