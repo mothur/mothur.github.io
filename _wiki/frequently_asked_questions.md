@@ -10,12 +10,11 @@ discussion tab. If you have an answer, feel free to contribute!
 
 ## How do I cite mothur? How about the individual functions?
 
-Schloss, P.D., et al., Introducing mothur: Open-source,
-platform-independent, community-supported software for describing and
-comparing microbial communities. Appl Environ Microbiol, 2009.
-75(23):7537-41.
+> Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41
 
-You can also run the function you are interested in with "citation" to get the paper's related to the function you are interested in.
+See the [citation file](https://github.com/mothur/mothur/blob/master/CITATION.md) for a BibTeX entry.
+
+You can also run the function you are interested in with "citation" to get the papers related to the function you are interested in.
 
 ```
 mothur > cluster.split(citation)
