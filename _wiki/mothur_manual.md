@@ -26,7 +26,6 @@ any questions, complaints, or praise, please do not hesitate to [email Pat](mail
 
 Remember to cite mothur:
 
-Schloss, P.D., et al., Introducing mothur:
-Open-source, platform-independent, community-supported software for
-describing and comparing microbial communities. Appl Environ Microbiol,
-2009\. 75(23):7537-41
+> Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41
+
+See the [citation file](https://github.com/mothur/mothur/blob/master/CITATION.md) for a BibTeX entry.
