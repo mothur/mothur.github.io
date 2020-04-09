@@ -24,7 +24,7 @@ or
     mothur > chimera.vsearch(fasta=fasta=stool.trim.unique.good.align, name=fasta=stool.trim.unique.good.names, group=stool.trim.unique.good.groups)
 
 The chimeras file format is explained
-[here](https://drive5.com/usearch/manual/uchimeout.html).
+[here](https://web.archive.org/web/20150220030441/https://drive5.com/usearch/manual/uchimeout.html).
 
 ## Options
 
@@ -194,5 +194,3 @@ range from 0.2 to 2.
     [\#586](https://github.com/mothur/mothur/issues/586)
 -   1.44.0 Adds parallelization to **chimera.vsearch** when using denovo
     method. [\#700](https://github.com/mothur/mothur/issues/700)
-
-

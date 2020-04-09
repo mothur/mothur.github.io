@@ -49,8 +49,8 @@ Output in stool.trim.unique.good.denova.uchime.chimeras:
     ...
 
 The chimeras file format is explained
-[here](https://drive5.com/usearch/manual/uchimeout.html). Note: You may
-also set reference=self, in this case mothur will run unique.seqs and
+[here](https://web.archive.org/web/20150220030441/https://drive5.com/usearch/manual/uchimeout.html). Note: You may
+also set reference=self, in this case mothur will run `unique.seqs` and
 check for chimeras using more abundant sequences as the reference.
 
 ## Options
