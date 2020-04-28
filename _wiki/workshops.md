@@ -6,10 +6,28 @@ Throughout 2020, Pat will offer **workshops** on mothur and programming in R
 for microbial ecologists. These will be offered online. If you are
 interested in attending and would like to register or get more
 information about fees and specifics, please email him his gmail account
-(userid: pdschloss). Other **workshops** will be announced throughout the
+(userid: pdschloss). Other workshops will be announced throughout the
 year.
 
--   March 30-April 1: mothur
+- May 13-15: General R Workshop
+
+## General R Workshop
+
+This workshop is being filled on a first come, first served basis. The
+workshop is geared towards people who would like to learn R or to learn
+it better using a diverse collection of datasets. This workshop is
+intended for beginners and more advanced R programmers who would like
+to fill their gaps in knowledge. I assume no previous computer
+programming experience. The workshop is an even blend of
+lecture/discussion and hands on use of R with real data. The material is
+centered on learning how to solve problems using functions from the
+"tidyverse". The workshop will give you a pretty thorough set of working
+examples for how to use packages like ggplot2, readr, dplyr, stringr, and
+lubridate. More importantly, the workshop will emphasize developing
+problem solving skills for solving data and programming problems. The
+materials can be found on the [Riffomonas website](http://www.riffomonas.org/generalR/)
+
+
 
 ## mothur workshop
 
@@ -20,7 +38,7 @@ blend of lecture/discussion and hands on use of mothur with real
 sequence data. Here is a rough outline of what the workshop schedule
 will look like (although it is subject to some minor changes)\...
 
-*' Day 1:*'
+**Day 1:**
 
 -   Overview of methods used in microbial ecology
 -   DNA sequencing technologies (Sanger, 454, Illumina, IonTorrent,
@@ -43,7 +61,10 @@ will look like (although it is subject to some minor changes)\...
 -   Methods of measuring alpha and beta diversity
 -   Population level analyses
 
-## R Workshop
+The workshop is an expanded discussion on the [MiSeq SOP](wiki/MiSeq_SOP).
+
+
+## Microbial Ecology R Workshop
 
 This workshop is being filled on a first come, first served basis. The
 workshop is geared towards people with interests in microbial ecology
@@ -67,4 +88,5 @@ schedule will look like (it is subject to some minor changes)\...
 
 The workshop will give you a pretty thorough set of working examples for
 how to use packages like readr, dplyr, and ggplot2 with data from
-mothur; however, prior knowledge of mothur is not a prerequisite.
+mothur; however, prior knowledge of mothur is not a prerequisite. The
+materials we will follow are available on the [Riffomonas website](http://www.riffomonas.org/minimalR/)
