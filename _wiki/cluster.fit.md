@@ -57,7 +57,7 @@ new patient's data would fit in with the existing results. You could
 use the reference method to do so. Or if you want to fit your reads to a
 mothur formatted reference you could run the following:
 
-    mothur > unique.seqs(fasta=silva.v4.fasta, output=count)
+    mothur > unique.seqs(fasta=silva.v4.fasta, format=count)
     mothur > dist.seqs(fasta=current, cutoff=0.03)
     mothur > cluster(column=current, count=current)
     mothur > cluster.fit(fasta=marine.0_2.01.fasta, column=marine.0_2.01.dist, count=marine.0_2.01.count_table, reffasta=silva.v4.unique.fasta, refcolumn=silva.v4.unique.dist, reflist=silva.v4.unique.opti_mcc.list)
