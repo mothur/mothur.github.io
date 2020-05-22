@@ -9,7 +9,10 @@ information about fees and specifics, please email him his gmail account
 (userid: pdschloss). Other workshops will be announced throughout the
 year.
 
-- May 13-15: General R Workshop
+- June 21-24: mothur workshop (10 PM-3 AM EDT (GMT-400))
+- July 15-17: Microbial Ecology R workshop (9 AM-4 PM EDT (GMT-400))
+- August 12-14: mothur workshop (9 AM-4 PM EDT (GMT-400))
+
 
 ## General R Workshop
 
