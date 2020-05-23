@@ -3,7 +3,7 @@ title: 'Workshops'
 redirect_from: '/wiki/Workshops'
 ---
 Throughout 2020, Pat will offer **workshops** on mothur and programming in R
-for microbial ecologists. These will be offered online. If you are
+for microbial ecologists. These will all be offered online via zoom. If you are
 interested in attending and would like to register or get more
 information about fees and specifics, please email him his gmail account
 (userid: pdschloss). Other workshops will be announced throughout the
