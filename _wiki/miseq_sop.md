@@ -125,7 +125,7 @@ looking at the files in the MiSeq_SOP folder that you've downloaded
 you will see 22 fastq files representing 10 time points from Female 3
 and 1 mock community. You will also see HMP_MOCK.v35.fasta which
 contains the sequences used in the mock community that we sequenced in
-fasta format. Finally you will see a file called stability.files. The
+fasta format. Finally you will see a file called stability.paired.files. The
 first lines of this file look like:
 
     F3D0   F3D0_S188_L001_R1_001.fastq F3D0_S188_L001_R2_001.fastq
@@ -151,7 +151,7 @@ tutorial.
 The first thing we want to do is combine our two sets of reads for each
 sample and then to combine the data from all of the samples. This is
 done using the [make.contigs](/wiki/make.contigs) command, which
-requires stability.files as input. This command will extract the
+requires `stability.paired.files` as input. This command will extract the
 sequence and quality score data from your fastq files, create the
 reverse complement of the reverse read and then join the reads into
 contigs. We have a very simple algorithm to do this. First, we align the
@@ -164,7 +164,7 @@ than the other. If it is less than 6 points better, then we set the
 consensus base to an N. Let's give it a shot (I'm using 8 processors,
 because my computer has 8 processors, use what you've got)\...
 
-    mothur > make.contigs(file=stability.files, processors=8)
+    mothur > make.contigs(file=stability.paired.files, processors=8)
 
 The first thing you'll see is that it processes the fastq files to
 generate the individual fasta and qual files. Then it will go through
@@ -206,13 +206,13 @@ lot of headaches down the road if you are crazy enough to try and create
 phylogenetic trees from these sequences. So to prevent this headache for
 you, we convert all of the ":" characters to "_" characters. This
 command will also produce several files that you will need down the
-road: stability.trim.contigs.fasta and stability.contigs.groups. These
+road: `stability.paired.trim.contigs.fasta` and `stability.paired.contigs.groups`. These
 contain the sequence data and group identity for each sequence. The
-stability.contigs.report file will tell you something about the contig
+`stability.paired.contigs.report` file will tell you something about the contig
 assembly for each read. Let's see what these sequences look like using
 the [summary.seqs](/wiki/summary.seqs) command:
 
-    mothur > summary.seqs(fasta=stability.trim.contigs.fasta)
+    mothur > summary.seqs(fasta=stability.paired.trim.contigs.fasta)
      
            Start   End NBases  Ambigs  Polymer NumSeqs
     Minimum:   1   248 248 0   3   1
@@ -233,13 +233,13 @@ at all). Also, note that at least 2.5% of our sequences had some
 ambiguous base calls. We'll take care of these issues in the next step
 when we run [screen.seqs](/wiki/screen.seqs).
 
-    mothur > screen.seqs(fasta=stability.trim.contigs.fasta, group=stability.contigs.groups, maxambig=0, maxlength=275)
+    mothur > screen.seqs(fasta=stability.paired.trim.contigs.fasta, group=stability.paired.contigs.groups, maxambig=0, maxlength=275)
 
 This implementation of the command will remove any sequences with
 ambiguous bases and anything longer than 275 bp. There's another way to
 run this using the output from summary.seqs:
 
-    mothur > screen.seqs(fasta=stability.trim.contigs.fasta, group=stability.contigs.groups, summary=stability.trim.contigs.summary, maxambig=0, maxlength=275)
+    mothur > screen.seqs(fasta=stability.paired.trim.contigs.fasta, group=stability.paired.contigs.groups, summary=stability.paired.trim.contigs.summary, maxambig=0, maxlength=275)
 
 This may be faster because the summary.seqs output file already has the
 number of ambiguous bases and sequence length calculated for your
@@ -251,15 +251,15 @@ following:
     mothur > get.current()
 
     Current files saved by mothur:
-    fasta=stability.trim.contigs.good.fasta 
-    group=stability.contigs.good.groups
+    fasta=stability.paired.trim.contigs.good.fasta 
+    group=stability.paired.contigs.good.groups
     processors=8
 
 What this means is that mothur remembers your latest fasta file and
 group file as well as the number of processors you have. So you could
 run:
 
-    mothur > summary.seqs(fasta=stability.trim.contigs.good.fasta)
+    mothur > summary.seqs(fasta=stability.paired.trim.contigs.good.fasta)
     mothur > summary.seqs(fasta=current)
     mothur > summary.seqs()
 
@@ -275,7 +275,7 @@ Because it's computationally wasteful to align the same thing a
 bazillion times, we'll unique our sequences using the
 [unique.seqs](/wiki/unique.seqs) command:
 
-    mothur > unique.seqs(fasta=stability.trim.contigs.good.fasta)
+    mothur > unique.seqs(fasta=stability.paired.trim.contigs.good.fasta)
 
 If two sequences have the same identical sequence, then they're
 considered duplicates and will get merged. In the screen output there
@@ -292,15 +292,15 @@ are the names of the unique sequences and the columns are the names of
 the groups. The table is then filled with the number of times each
 unique sequence shows up in each group.
 
-    mothur > count.seqs(name=stability.trim.contigs.good.names, group=stability.contigs.good.groups)
+    mothur > count.seqs(name=stability.paired.trim.contigs.good.names, group=stability.paired.contigs.good.groups)
 
 This will generate a file called
-stability.trim.contigs.good.count_table. In subsequent commands we'll
+stability.paired.trim.contigs.good.count_table. In subsequent commands we'll
 use it by using the count option:
 
-    mothur > summary.seqs(count=stability.trim.contigs.good.count_table)
+    mothur > summary.seqs(count=stability.paired.trim.contigs.good.count_table)
 
-    Using stability.trim.contigs.good.unique.fasta as input file for the fasta parameter.
+    Using stability.paired.trim.contigs.good.unique.fasta as input file for the fasta parameter.
 
     Using 8 processors.
      
@@ -353,12 +353,12 @@ columns wide, it is now 13,425 columns wide which will save our hard
 drive some space and should improve the overall alignment quality.
 We'll do the alignment with [align.seqs](/wiki/align.seqs):
 
-    mothur > align.seqs(fasta=stability.trim.contigs.good.unique.fasta, reference=silva.v4.fasta)
+    mothur > align.seqs(fasta=stability.paired.trim.contigs.good.unique.fasta, reference=silva.v4.fasta)
 
 This should be done in a manner of seconds and we can run
 [summary.seqs](/wiki/summary.seqs) again:
 
-    mothur > summary.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table)
+    mothur > summary.seqs(fasta=stability.paired.trim.contigs.good.unique.align, count=stability.paired.trim.contigs.good.count_table)
 
     Using 8 processors.
      
@@ -391,12 +391,12 @@ that we can update the table for the sequences we're removing and
 we're also using the summary file so we don't have to figure out again
 all the start and stop positions:
 
-    mothur > screen.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table, summary=stability.trim.contigs.good.unique.summary, start=1968, end=11550, maxhomop=8)
+    mothur > screen.seqs(fasta=stability.paired.trim.contigs.good.unique.align, count=stability.paired.trim.contigs.good.count_table, summary=stability.paired.trim.contigs.good.unique.summary, start=1968, end=11550, maxhomop=8)
 
     mothur > summary.seqs(fasta=current, count=current)
 
-    Using stability.trim.contigs.good.good.count_table as input file for the count parameter.
-    Using stability.trim.contigs.good.unique.good.align as input file for the fasta parameter.
+    Using stability.paired.trim.contigs.good.good.count_table as input file for the count parameter.
+    Using stability.paired.trim.contigs.good.unique.good.align as input file for the fasta parameter.
 
     Using 8 processors.
      
@@ -421,7 +421,7 @@ contain gap characters (i.e. "-"). These can be pulled out without
 losing any information. We'll do all this with
 [filter.seqs](/wiki/filter.seqs):
 
-    mothur > filter.seqs(fasta=stability.trim.contigs.good.unique.good.align, vertical=T, trump=.)
+    mothur > filter.seqs(fasta=stability.paired.trim.contigs.good.unique.good.align, vertical=T, trump=.)
 
 At the end of running the command we get the following information:
 
@@ -437,7 +437,7 @@ vertical gap characters using vertical=T. The final alignment length is
 sequences by trimming the ends, we can re-run
 [unique.seqs](/wiki/unique.seqs):
 
-    mothur > unique.seqs(fasta=stability.trim.contigs.good.unique.good.filter.fasta, count=stability.trim.contigs.good.good.count_table)
+    mothur > unique.seqs(fasta=stability.paired.trim.contigs.good.unique.good.filter.fasta, count=stability.paired.trim.contigs.good.good.count_table)
 
 This identified 3 duplicate sequences that we've now merged with
 previous unique sequences. The next thing we want to do to further
@@ -449,7 +449,7 @@ and identify sequences that are within 2 nt of each other. If they are
 then they get merged. We generally favor allowing 1 difference for every
 100 bp of sequence:
 
-    mothur > pre.cluster(fasta=stability.trim.contigs.good.unique.good.filter.unique.fasta, count=stability.trim.contigs.good.unique.good.filter.count_table, diffs=2)
+    mothur > pre.cluster(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.fasta, count=stability.paired.trim.contigs.good.unique.good.filter.count_table, diffs=2)
 
 We now have 6087 unique sequences. At this point we have removed as much
 sequencing error as we can and it is time to turn our attention to
@@ -464,14 +464,14 @@ Our experience suggests that this is a bit aggressive since we've seen
 rare sequences get flagged as chimeric when they're the most abundant
 sequence in another sample. This is how we do it:
 
-    mothur > chimera.vsearch(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t)
+    mothur > chimera.vsearch(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t)
 
 Running chimera.vsearch with the count file will remove the chimeric
 sequences from the count file. But you still need to remove those
 sequences from the fasta file. We do this using
 [remove.seqs](/wiki/remove.seqs):
 
-    mothur > remove.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, accnos=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.accnos)
+    mothur > remove.seqs(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.fasta, accnos=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.accnos)
 
 Running summary.seqs we see what we're left with:
 
@@ -505,12 +505,12 @@ microbial community. But I digress. Let's go ahead and classify those
 sequences using the Bayesian classifier with the
 [classify.seqs](/wiki/classify.seqs) command:
 
-    mothur > classify.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80)
+    mothur > classify.seqs(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80)
 
 Now that everything is classified we want to remove our undesirables. We
 do this with the [remove.lineage](/wiki/remove.lineage) command:
 
-    mothur > remove.lineage(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
+    mothur > remove.lineage(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, taxonomy=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
 
 Note is that "unknown" only pops up as a classification if the
 classifier cannot classify your sequence to one of the domains. Also,
@@ -547,7 +547,7 @@ Note: If you are running this analysis on a Windows machine, the Mock
 group name is likely capitalized due to how the make.file command
 creates the group names. You will want to set groups=MOCK.
 
-    mothur > get.groups(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, groups=Mock)
+    mothur > get.groups(count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, groups=Mock)
 
     Selected 64 sequences from your fasta file.
     Selected 4048 sequences from your count file.
@@ -556,7 +556,7 @@ This tells us that we had 64 unique sequences and a total of 4048 total
 sequences in our Mock sample. We can now use the
 [seq.error](/wiki/seq.error) command to measure the error rates:
 
-    mothur > seq.error(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, reference=HMP_MOCK.v35.fasta, aligned=F)
+    mothur > seq.error(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, reference=HMP_MOCK.v35.fasta, aligned=F)
 
     Overall error rate:    6.5108e-05
     Errors Sequences
@@ -596,13 +596,13 @@ sequences in our Mock sample. We can now use the
 That rocks, eh? Our error rate is 0.0065%. We can now cluster the
 sequences into OTUs to see how many spurious OTUs we have:
 
-    mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, cutoff=0.03)
-    mothur > cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
-    mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=0.03)
-    mothur > rarefaction.single(shared=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.shared)
+    mothur > dist.seqs(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, cutoff=0.03)
+    mothur > cluster(column=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
+    mothur > make.shared(list=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=0.03)
+    mothur > rarefaction.single(shared=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.shared)
 
 This string of commands will produce a file for you called
-stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.groups.rarefaction.
+stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.groups.rarefaction.
 Open it. You'll see that for 4048 sequences, we'd have 35 OTUs from
 the Mock community. This number of course includes some stealthy
 chimeras that escaped our detection methods. If we used 3000 sequences,
@@ -618,7 +618,7 @@ assign sequences to OTUs, ASVs, and phylotypes. First, we want to remove the
 Mock sample from our dataset using the
 [remove.groups](/wiki/remove.groups) command:
 
-    mothur > remove.groups(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.taxonomy, groups=Mock)
+    mothur > remove.groups(count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, taxonomy=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.taxonomy, groups=Mock)
 
 ### OTUs
 
@@ -626,11 +626,11 @@ Now we have a couple of options for clustering sequences into OTUs. For
 a small dataset like this, we can do the traditional approach using
 [dist.seqs](/wiki/dist.seqs) and [cluster](/wiki/cluster):
 
-    mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, cutoff=0.03)
-    mothur > cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
+    mothur > dist.seqs(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, cutoff=0.03)
+    mothur > cluster(column=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
 
 Clustering
-stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist
+stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist
 
     iter   time    label   num_otus    cutoff  tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
     0.03
@@ -657,7 +657,7 @@ ideal world we would prefer the traditional route because "Trad is
 rad", but we also think that kind of humor is funny\.... In this
 command we use taxlevel=4, which corresponds to the level of Order.
 
-    mothur > cluster.split(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, splitmethod=classify, taxlevel=4, cutoff=0.03)
+    mothur > cluster.split(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, splitmethod=classify, taxlevel=4, cutoff=0.03)
 
     label  cutoff  numotus tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
     0.03   0.03    524 22532   2918465 2043    3338    0.871   0.9993  0.9169  0.9989  0.9169  0.9982  0.8927  0.8933
@@ -668,16 +668,16 @@ command. Here we tell mothur that we're really only interested in the
 
 0\.03 cutoff level:
 
-    mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=0.03)
+    mothur > make.shared(list=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=0.03)
 
 We probably also want to know the taxonomy for each of our OTUs. We can
 get the consensus taxonomy for each OTU using the
 [classify.otu](/wiki/classify.otu) command:
 
-    mothur > classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=0.03)
+    mothur > classify.otu(list=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=0.03)
 
 Opening
-stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.0.03.cons.taxonomy
+stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.0.03.cons.taxonomy
 you'll see something that looks like\...
 
 ```
@@ -713,7 +713,7 @@ can convert the fasta and count_table files we used to form OTUs to a shared
 file using the [make.shared](/wiki/make.shared) command.
 
 ```
-mothur > make.shared(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
+mothur > make.shared(count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
 ```
 
 This results in a shared and list file. The shared file we can use like
@@ -721,7 +721,7 @@ the shared file from forming OTUs or phylotypes. The list file we can use
 to generate a consensus taxonomy for each ASV.
 
 ```
-mothur > classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.asv.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=asv)
+mothur > classify.otu(list=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.asv.list, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=asv)
 ```
 
 ### Phylotypes
@@ -730,19 +730,19 @@ For some analyses you may desire to bin your sequences in to phylotypes
 according to their taxonomic classification. We can do this using the
 [phylotype](/wiki/phylotype) command:
 
-    mothur > phylotype(taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy)
+    mothur > phylotype(taxonomy=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy)
 
 The cutoff numbering is a bit different for phylotype compared to
 cluster/cluster.split. Here you see 1 through 6 listed; these correspond
 to Genus through Kingdom levels, respectively. So if you want the
 genus-level shared file we'll do the following:
 
-    mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=1)
+    mothur > make.shared(list=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.list, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=1)
 
 We also want to know who these OTUs are and can run
 [classify.otu](/wiki/classify.otu) on our phylotypes:
 
-    mothur > classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=1)
+    mothur > classify.otu(list=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.list, count=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=1)
 
 ### Phylogenetic
 
@@ -753,8 +753,8 @@ of sequences increases. But here's how we'd do it using
 [dist.seqs](/wiki/dist.seqs) and
 [clearcut](/wiki/clearcut)\...
 
-    mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, output=lt, processors=8)
-    mothur > clearcut(phylip=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.phylip.dist)
+    mothur > dist.seqs(fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, output=lt, processors=8)
+    mothur > clearcut(phylip=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.phylip.dist)
 
 ## Analysis
 
@@ -768,38 +768,38 @@ animal) followed by a number (number of animal) followed by a D and a
 three digit number (number of days post weaning). To keep things simple,
 let's rename our count, tree, shared and consensus taxonomy files.
 
-    mothur > rename.file(taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.0.03.cons.taxonomy, shared=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.shared)
+    mothur > rename.file(taxonomy=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.0.03.cons.taxonomy, shared=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.shared)
 
     Current files saved by mothur:
-    accnos=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.accnos
-    column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist
-    fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta
-    group=stability.contigs.good.groups
-    list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.list
-    name=stability.trim.contigs.good.names
-    phylip=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.phylip.dist
-    qfile=stability.trim.contigs.qual
-    rabund=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.rabund
-    sabund=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.sabund
+    accnos=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.accnos
+    column=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist
+    fasta=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta
+    group=stability.paired.contigs.good.groups
+    list=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.list
+    name=stability.paired.trim.contigs.good.names
+    phylip=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.phylip.dist
+    qfile=stability.paired.trim.contigs.qual
+    rabund=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.rabund
+    sabund=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.sabund
     shared=stablility.opti_mcc.shared
-    taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy
-    constaxonomy=stability.cons.taxonomy
-    tree=stability.tre
-    count=stability.count_table
+    taxonomy=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy
+    constaxonomy=stability.paired.cons.taxonomy
+    tree=stability.paired.tre
+    count=stability.paired.count_table
     processors=4
-    summary=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.summary
+    summary=stability.paired.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.summary
 
 We now want to do is see how many sequences we have in each sample.
 We'll do this with the [count.groups](/wiki/count.groups) command:
 
-    mothur > count.groups(shared=stability.opti_mcc.shared)
+    mothur > count.groups(shared=stability.paired.opti_mcc.shared)
 
 We see that our smallest sample had 2403 sequences in it. That is a
 reasonable number. Despite what some say, subsampling and rarefying your
 data is an important thing to do. We'll generate a subsampled file for
 our analyses with the [sub.sample](/wiki/sub.sample) command:
 
-    mothur > sub.sample(shared=stability.opti_mcc.shared, size=2403)
+    mothur > sub.sample(shared=stability.paired.opti_mcc.shared, size=2403)
 
 ## OTU-based analysis
 
@@ -810,7 +810,7 @@ samples. First we will generate rarefaction curves describing the number
 of OTUs observed as a function of sampling effort. We'll do this with
 the [rarefaction.single](/wiki/rarefaction.single) command:
 
-    mothur > rarefaction.single(shared=stability.opti_mcc.shared, calc=sobs, freq=100)
+    mothur > rarefaction.single(shared=stability.paired.opti_mcc.shared, calc=sobs, freq=100)
 
 This will generate files ending in \*.rarefaction, which again can be
 plotted in your favorite graphing software package. Alas, rarefaction is
@@ -831,10 +831,10 @@ everything, let's randomly select 2403 sequences from each sample 1000
 times and calculate the average (note: that if we set subsample=T, then
 it would use the size of the smallest library):
 
-    mothur > summary.single(shared=stability.opti_mcc.shared, calc=nseqs-coverage-sobs-invsimpson, subsample=T)
+    mothur > summary.single(shared=stability.paired.opti_mcc.shared, calc=nseqs-coverage-sobs-invsimpson, subsample=T)
 
 These data will be outputted to a table in a file called
-stability.an.groups.ave-std.summary. Interestingly, the sample coverages
+stability.paired.an.groups.ave-std.summary. Interestingly, the sample coverages
 were all above 97%, indicating that we did a pretty good job of sampling
 the communities. Plotting the richness or diversity of the samples would
 show that there was little difference between the different animals or
@@ -850,20 +850,20 @@ similarity of the membership and structure found in the various samples.
 We'll do this with the [dist.shared](/wiki/dist.shared) command
 that will allow us to rarefy our data to a common number of sequences.
 
-    mothur > dist.shared(shared=stability.opti_mcc.shared, calc=thetayc-jclass, subsample=t)
+    mothur > dist.shared(shared=stability.paired.opti_mcc.shared, calc=thetayc-jclass, subsample=t)
 
 These two distance matrices (i.e.
-stability.opti_mcc.jclass.0.03.lt.ave.dist and
-stability.opti_mcc.thetayc.0.03.lt.ave.dist) can then be visualized
+stability.paired.opti_mcc.jclass.0.03.lt.ave.dist and
+stability.paired.opti_mcc.thetayc.0.03.lt.ave.dist) can then be visualized
 using the [pcoa](/wiki/pcoa) or [nmds](/wiki/nmds) plots.
 Principal Coordinates (PCoA) uses an eigenvector-based approach to
 represent multidimensional data in as few dimesnsions as possible. Our
 data is highly dimensional (\~9 dimensions).
 
-    mothur > pcoa(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist)
+    mothur > pcoa(phylip=stability.paired.opti_mcc.thetayc.0.03.lt.ave.dist)
 
 The output of these commands are three files ending in \*dist, \*pcoa,
-and \*pcoa.loadings. The stability.an.thetayc.0.03.lt.ave.pcoa.loadings
+and \*pcoa.loadings. The stability.paired.an.thetayc.0.03.lt.ave.pcoa.loadings
 file will tell you what fraction of the total variance in the data are
 represented by each of the axes. In this case, the first and second axis
 represent about 45 and 14% of the variation (59% of the total) for the
@@ -877,25 +877,25 @@ preserve the distance between samples using a user-defined number of
 dimensions. We can run our data through NMDS with 2 dimensions with the
 following commands
 
-    mothur > nmds(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist)
+    mothur > nmds(phylip=stability.paired.opti_mcc.thetayc.0.03.lt.ave.dist)
 
-Opening the stability.opti_mcc.thetayc.0.03.lt.ave.nmds.stress file we
+Opening the stability.paired.opti_mcc.thetayc.0.03.lt.ave.nmds.stress file we
 can inspect the stress and R\^2 values, which describe the quality of
 the ordination. Each line in this file represents a different iteration
 and the configuration obtained in the iteration with the lowest stress
-is reported in the stability.opti_mcc.thetayc.0.03.lt.ave.nmds.axes
+is reported in the stability.paired.opti_mcc.thetayc.0.03.lt.ave.nmds.axes
 file. In this file we find that the lowest stress value was 0.11 with an
 R-squared value of 0.95; that stress level is actually pretty good. You
 can test what hapens with three dimensions by the following:
 
-    mothur > nmds(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist, mindim=3, maxdim=3)
+    mothur > nmds(phylip=stability.paired.opti_mcc.thetayc.0.03.lt.ave.dist, mindim=3, maxdim=3)
 
 The stress value drops to 0.05 and the R2 value goes up to 0.99. Not
 bad. In general, you would like a stress value below 0.20 and a value
 below 0.10 is even better. Thus, we can conclude that, NMDS is better
 than PCoA. We can plot the three dimensions of the NMDS data by plotting
 the contents of
-stability.opti_mcc.subsample.pick.thetayc.0.03.lt.nmds.axes. Again, it
+stability.paired.opti_mcc.subsample.pick.thetayc.0.03.lt.nmds.axes. Again, it
 is clear that the early and late samples cluster separately from each
 other. Ultimately, ordination is a data visualization tool. We might ask
 if the spatial separation that we see between the early and late plots
@@ -935,7 +935,7 @@ downloaded that looks vaguely like this:
 
 We can then run amova with this file as follows\...
 
-    mothur > amova(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
+    mothur > amova(phylip=stability.paired.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
      
     Early-Late Among   Within  Total
     SS 0.637946    0.59274 1.23069
@@ -952,7 +952,7 @@ significant. We can also see whether the variation in the early samples
 is significantly different from the variation in the late samples using
 the [homova](/wiki/homova) command:
 
-    mothur > homova(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
+    mothur > homova(phylip=stability.paired.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
 
     HOMOVA BValue  P-value SSwithin/(Ni-1)_values
     Early-Late 8.54001 <0.001* 0.0659433   0.00724368
@@ -967,10 +967,10 @@ along the two axes. We can determine this by measuring the correlation
 of the relative abundance of each OTU with the two axes in the NMDS
 dataset. We do this with the [corr.axes](/wiki/corr.axes) command:
 
-    mothur > corr.axes(axes=stability.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, shared=stability.opti_mcc.0.03.subsample.shared, method=spearman, numaxes=3)
+    mothur > corr.axes(axes=stability.paired.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, shared=stability.paired.opti_mcc.0.03.subsample.shared, method=spearman, numaxes=3)
 
 This command generates the
-stability.opti_mcc.0.03subsample.0.03.pick.spearman.corr.axes file. The
+stability.paired.opti_mcc.0.03subsample.0.03.pick.spearman.corr.axes file. The
 data for the first five OTUs look like this\...
 
     OTU    axis1   p-value axis2   p-value axis3   p-value length
@@ -1004,7 +1004,7 @@ like this:
 We can then run [corr.axes](/wiki/corr.axes) again with the
 metadata option:
 
-    mothur > corr.axes(axes=stability.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, metadata=mouse.dpw.metadata, method=spearman, numaxes=3)
+    mothur > corr.axes(axes=stability.paired.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, metadata=mouse.dpw.metadata, method=spearman, numaxes=3)
 
 Opening the file mouse.dpw.spearman.corr.axes, we see:
 
@@ -1018,7 +1018,7 @@ Another tool we can use is
 [get.communitytype](/wiki/get.communitytype) to see whether our
 data can be partitioned in to separate community types
 
-    mothur > get.communitytype(shared=stability.opti_mcc.0.03.subsample.shared)
+    mothur > get.communitytype(shared=stability.paired.opti_mcc.0.03.subsample.shared)
 
     K  NLE     logDet  BIC     AIC     Laplace
     1  10903.52    590.94  11470.33    11288.52    10845.20
@@ -1029,10 +1029,10 @@ data can be partitioned in to separate community types
 
 We see that the minimum Laplace value is for a K value of 2 (10436.65).
 This indicates that our samples belonged to two community types. Opening
-stability.opti_mcc.0.03.subsample.0.03.dmm.mix.design we see that all
+stability.paired.opti_mcc.0.03.subsample.0.03.dmm.mix.design we see that all
 of the late samples and the Day 0 sample belonged to Partition_1 and
 the other early samples belonged to Partition_2. We can look at the
-stability.opti_mcc.0.03.subsample.0.03.dmm.mix.summary file to see
+stability.paired.opti_mcc.0.03.subsample.0.03.dmm.mix.summary file to see
 which OTUs were most responsible for separating the communities:
 
     OTU    P0.mean P1.mean P1.lci  P1.uci  P2.mean P2.lci  P2.uci  Difference  CumFraction
@@ -1044,7 +1044,7 @@ which OTUs were most responsible for separating the communities:
     ...
 
 Again we can cross-reference these OTU labels with the consensus
-classifications in the stability.opti_mcc.cons.taxonomy file to get the
+classifications in the stability.paired.opti_mcc.cons.taxonomy file to get the
 names of these organisms.
 
 #### Population-level analysis
@@ -1057,10 +1057,10 @@ non-parametric T-tetst that determines whether there are any OTUs that
 are differentially represented between the samples from men and women in
 this study. Run the following in mothur:
 
-    mothur > metastats(shared=stability.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
+    mothur > metastats(shared=stability.paired.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
 
 Looking in the first 5 OTUs from
-stability.opti_mcc.0.03.subsample.0.03.Late-Early.metastats file we see
+stability.paired.opti_mcc.0.03.subsample.0.03.Late-Early.metastats file we see
 the following\...
 
     OTU    mean(group1)    variance(group1)    stderr(group1)  mean(group2)    variance(group2)    stderr(group2)  p-value
@@ -1078,7 +1078,7 @@ between the early and late samples.
 Another non-parametric tool we can use as an alternative to metastats is
 [lefse](/wiki/lefse):
 
-    mothur > lefse(shared=stability.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
+    mothur > lefse(shared=stability.paired.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
 
 Number of significantly discriminative features: 85 ( 92 ) before
 internal wilcoxon. Number of discriminative features with abs LDA score
@@ -1127,7 +1127,7 @@ total of the unique branch length in the tree. This is done using the
 [phylo.diversity](/wiki/phylo.diversity) command. Because of
 differences in sampling depth we will rarefy the output:
 
-    mothur > phylo.diversity(tree=stability.tre, count=stability.count_table, rarefy=T)
+    mothur > phylo.diversity(tree=stability.paired.tre, count=stability.paired.count_table, rarefy=T)
 
 This will generate a file ending in rarefaction.
 
@@ -1143,10 +1143,10 @@ unweighted](/wiki/Unifrac.unweighted) and [
 weighted](/wiki/Unifrac.weighted). We will also have mothur
 subsample the trees 1000 times and report the average:
 
-    mothur > unifrac.unweighted(tree=stability.tre, count=stability.count_table, distance=lt, processors=2, random=F, subsample=t)
-    mothur > unifrac.weighted(tree=stability.tre, count=stability.count_table, distance=lt, processors=2, random=F, subsample=t)
+    mothur > unifrac.unweighted(tree=stability.paired.tre, count=stability.paired.count_table, distance=lt, processors=2, random=F, subsample=t)
+    mothur > unifrac.weighted(tree=stability.paired.tre, count=stability.paired.count_table, distance=lt, processors=2, random=F, subsample=t)
 
-These commands will distance matrices (stability.1.weighted.ave.dist)
+These commands will distance matrices (stability.paired.1.weighted.ave.dist)
 that can be analyzed using all of the beta diversity approaches
 described above for the OTU-based analyses.
 
@@ -1161,14 +1161,14 @@ thinking too much there are a couple of other options available.
 ### Batch mode
 
 In the folder that you downloaded from the wiki is a file called
-stability.batch. If you look at it you'll see all of the commands you
+stability.paired.batch. If you look at it you'll see all of the commands you
 ran, but instead of listing out the file names it uses the current
 option throughout. You can copy and paste from this file and get the
 same output as we got above. The beauty of the batch mode is that you
 can run mothur from your command line without much typing. For example
 you would run the following:
 
-    $ ./mothur stability.batch
+    $ ./mothur stability.paired.batch
 
 Don't enter the "$" that represents the prompt. Sit back and wait
 and let it rip. This is what we call the [batch
@@ -1184,7 +1184,7 @@ The third way we have of running mothur is by entering mothur commands
 directly using the [command line mode](/wiki/command_line_mode).
 This is done like so:
 
-    $ ./mothur "#make.contigs(file=stability.files, processors=8)"
+    $ ./mothur "#make.contigs(file=stability.paired.files, processors=8)"
 
 This command will fire mothur up, run make.contigs, and then quit. This
 is useful for people that want to script commands and go back and forth
@@ -1193,7 +1193,7 @@ around the commands and the "\#" character that tells mothur this is
 not a batch file. If you really went nuts you could combine commands
 using ";" characters like so:
 
-    $ ./mothur "#make.contigs(file=stability.files, processors=8); screen.seqs(fasta=current, maxambig=0, maxlength=275); unique.seqs(); count.seqs(name=current, group=current); align.seqs(fasta=current, reference=silva.v4.fasta); screen.seqs(fasta=current, count=current, start=1968, end=11550, maxhomop=8); filter.seqs(fasta=current, vertical=T, trump=.); pre.cluster(fasta=current, count=current, diffs=2); unique.seqs(fasta=current, count=current); chimera.vsearch(fasta=current, count=current, dereplicate=t); remove.seqs(fasta=current, accnos=current); classify.seqs(fasta=current, count=current, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80); remove.lineage(fasta=current, count=current, taxonomy=current, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota); remove.groups(count=current, fasta=current, taxonomy=current, groups=Mock); dist.seqs(fasta=current, cutoff=0.03); cluster(column=current, count=current, cutoff=0.03); make.shared(list=current, count=current, label=0.03); classify.otu(list=current, count=current, taxonomy=current, label=0.03); phylotype(taxonomy=current); make.shared(list=current, count=current, label=1); classify.otu(list=current, count=current, taxonomy=current, label=1);"
+    $ ./mothur "#make.contigs(file=stability.paired.files, processors=8); screen.seqs(fasta=current, maxambig=0, maxlength=275); unique.seqs(); count.seqs(name=current, group=current); align.seqs(fasta=current, reference=silva.v4.fasta); screen.seqs(fasta=current, count=current, start=1968, end=11550, maxhomop=8); filter.seqs(fasta=current, vertical=T, trump=.); pre.cluster(fasta=current, count=current, diffs=2); unique.seqs(fasta=current, count=current); chimera.vsearch(fasta=current, count=current, dereplicate=t); remove.seqs(fasta=current, accnos=current); classify.seqs(fasta=current, count=current, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80); remove.lineage(fasta=current, count=current, taxonomy=current, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota); remove.groups(count=current, fasta=current, taxonomy=current, groups=Mock); dist.seqs(fasta=current, cutoff=0.03); cluster(column=current, count=current, cutoff=0.03); make.shared(list=current, count=current, label=0.03); classify.otu(list=current, count=current, taxonomy=current, label=0.03); phylotype(taxonomy=current); make.shared(list=current, count=current, label=1); classify.otu(list=current, count=current, taxonomy=current, label=1);"
 
 Finally, another great resource when running mothur is the logfile. If
 you go to your folder where you are running mothur, you should find one
