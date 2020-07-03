@@ -9,25 +9,9 @@ information about fees and specifics, please email him his gmail account
 (userid: pdschloss). Other workshops will be announced throughout the
 year.
 
-- July 15-17: Microbial Ecology R workshop (9 AM-4 PM EDT (GMT-400))
-- August 12-14: mothur workshop (9 AM-4 PM EDT (GMT-400))
-
-
-## General R Workshop
-
-This workshop is being filled on a first come, first served basis. The
-workshop is geared towards people who would like to learn R or to learn
-it better using a diverse collection of datasets. This workshop is
-intended for beginners and more advanced R programmers who would like
-to fill their gaps in knowledge. I assume no previous computer
-programming experience. The workshop is an even blend of
-lecture/discussion and hands on use of R with real data. The material is
-centered on learning how to solve problems using functions from the
-"tidyverse". The workshop will give you a pretty thorough set of working
-examples for how to use packages like ggplot2, readr, dplyr, stringr, and
-lubridate. More importantly, the workshop will emphasize developing
-problem solving skills for solving data and programming problems. The
-materials can be found on the [Riffomonas website](http://www.riffomonas.org/generalR/)
+- ~~July 15-17: Microbial Ecology R workshop (9 AM-4 PM EDT (UTC-400))~~ - FULL
+- August 12-14: mothur workshop (9 AM-4 PM EDT (UTC-400))
+- September 30-October 2: Microbial Ecology R workshop (9 AM-4 PM EDT (UTC-400))
 
 
 
@@ -92,3 +76,21 @@ The workshop will give you a pretty thorough set of working examples for
 how to use packages like readr, dplyr, and ggplot2 with data from
 mothur; however, prior knowledge of mothur is not a prerequisite. The
 materials we will follow are available on the [Riffomonas website](http://www.riffomonas.org/minimalR/)
+
+
+
+## General R Workshop
+
+This workshop is being filled on a first come, first served basis. The
+workshop is geared towards people who would like to learn R or to learn
+it better using a diverse collection of datasets. This workshop is
+intended for beginners and more advanced R programmers who would like
+to fill their gaps in knowledge. I assume no previous computer
+programming experience. The workshop is an even blend of
+lecture/discussion and hands on use of R with real data. The material is
+centered on learning how to solve problems using functions from the
+"tidyverse". The workshop will give you a pretty thorough set of working
+examples for how to use packages like ggplot2, readr, dplyr, stringr, and
+lubridate. More importantly, the workshop will emphasize developing
+problem solving skills for solving data and programming problems. The
+materials can be found on the [Riffomonas website](http://www.riffomonas.org/generalR/)
