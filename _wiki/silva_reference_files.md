@@ -3,7 +3,7 @@ title: 'Silva reference files'
 redirect_from: '/wiki/Silva_reference_files'
 ---
 If you use the SILVA reference files you should be aware of their
-[dual-use license](https://www.arb-silva.de/silva-license-information).
+[dual-use license](https://www.arb-silva.de/silva-license-information) that covers Release 132 and earlier.
 
 ## Release 138
 
@@ -11,7 +11,7 @@ The SILVA alignment is 50,000 columns long so that it can be compatible
 with 18S rRNA sequences as well as archaeal 16S rRNA sequences. In our
 published opinion, this is the best reference alignment out there - far
 superior to the greengenes or RDP alignments. It's unclear why this
-version of the release is smaller than previous releases. We have
+version of the release is smaller than previous releases. **We have noticed some weird results using this version of the SEED alignment relative to previous versions of the alignment. This is most likely because it is smaller than previous versions. The Schloss group is sticking with the v132 version of the SEED database for alignments.** We have
 prepared a [README
 document](/blog/2020/SILVA-v138-reference-files)
 where you can read about the process that we used to generate these
