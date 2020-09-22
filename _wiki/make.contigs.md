@@ -258,7 +258,6 @@ by mothur cannot be used for downstream quality screening. The score
 calculations are modeled after pandseq's method. Here's a link to the
 explanation from their documentation,
 [https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong](https://github.com/neufeld/pandaseq#the-scores-of-the-output-bases-seem-really-low-whats-wrong).
-\\n
 
 ### trimoverlap
 
