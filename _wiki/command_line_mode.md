@@ -63,5 +63,25 @@ combining variables. For example:
 
     $ ./mothur "#REFERENCE_LOCATION=/Users/sarahwestcott/Desktop/release;TAXONREF_FASTA=trainset9_032012.pds.fasta;TAXONREF_TAX=trainset9_032012.pds.tax;CONTAMINENTS=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota;DATA=/Users/sarahwestcott/Desktop/MiSeq_SOP; PROC=12;classify.seqs(fasta=$DATA/my.fasta, count=$DATA/my.count_table, reference=$REFERENCE_LOCATION/$TAXONREF_FASTA, taxonomy=$REFERENCE_LOCATION/$TAXONREF_TAX, cutoff=80);remove.lineage(fasta=current, count=current, taxonomy=current, taxon=$CONTAMINENTS);"
 
+## Options
+
+### -v / \--version
+
+Outputs the Operating system of the machine, Mothur version and the Release date of said version.
+
+    $ ./mothur -v 
+    Linux
+    Mothur version=1.41.3
+    Release Date=1/30/19
+
+### -h / \--help
+
+Outputs all the available commands and the [FAQ](_wiki/frequently_asked_questions.md).
+
+
+### -q / \--quiet
+
+Quiet mode will only output errors and nothing else.
+
 A related option is to run mothur in [batch
 mode](/wiki/batch_mode).
