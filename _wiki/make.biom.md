@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Make.biom.html'
 ---
 The **make.biom** command is design to allow you to
-convert your [shared file](/wiki/shared_file) to a [biom file](https://github.com/biocore/biom-format). To run this tutorial please download, [ example files](https://mothur.s3.us-east-2.amazonaws.com/wiki/make_biom_files.zip)
+convert your [shared file](/wiki/shared_file) to a [biom file](https://github.com/biocore/biom-format) in [format version 1.0](http://biom-format.org/documentation/format_versions/biom-1.0.html). To run this tutorial please download, [example files](https://mothur.s3.us-east-2.amazonaws.com/wiki/make_biom_files.zip)
 
 ## Default Settings
 
