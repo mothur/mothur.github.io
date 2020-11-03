@@ -2,16 +2,15 @@
 title: 'Workshops'
 redirect_from: '/wiki/Workshops'
 ---
-Throughout 2020, Pat will offer **workshops** on mothur and programming in R
+Throughout 2020 and 2021, Pat will offer **workshops** on mothur and programming in R
 for microbial ecologists. These will all be offered online via zoom. If you are
 interested in attending and would like to register or get more
 information about fees and specifics, please email him his gmail account
 (userid: pdschloss). Other workshops will be announced throughout the
 year.
 
-- ~~July 15-17: Microbial Ecology R workshop (9 AM-4 PM EDT (UTC-400))~~ - FULL
-- August 12-14: mothur workshop (9 AM-4 PM EDT (UTC-400))
-- September 30-October 2: Microbial Ecology R workshop (9 AM-4 PM EDT (UTC-400))
+- December 16-18, 2020: mothur workshop (9 AM-4 PM Eastern (GMT-500))
+- January 6-8, 2021: Microbial Ecology R workshop (9 AM-4 PM Eastern (GMT-500))
 
 
 
