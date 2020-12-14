@@ -82,7 +82,7 @@ list file; (ii) or use the cutoff option. If you only want to read in
 the data for the lines labeled unique, 0.03, 0.05 and 0.10 you would
 enter:
 
-    mothur > get.oturep(column=96_lt_column_amazon.dist, name=amazon.names, fasta=amazon.fasta, list=98_sq_phylip_amazon.fn.list, label=unique-0.03-0.05-0.10)
+    mothur > get.oturep(column=96_lt_column_amazon.dist, name=amazon.names, fasta=amazon.fasta, list=98_sq_phylip_amazon.fn.list, cutoff=unique-0.03-0.05-0.10)
 
 ### fasta
 
@@ -134,7 +134,7 @@ sorted option allows you to indicate how you want the output sorted. You
 can sort by sequence name, bin number, bin size or group. The default is
 no sorting, but your options are name, bin, size, or group.
 
-    mothur > get.oturep(column=96_lt_column_amazon.dist, name=amazon.names, fasta=amazon.fasta, list=98_sq_phylip_amazon.fn.list, label=unique-0.03-0.05-0.10, sorted=name)
+    mothur > get.oturep(column=96_lt_column_amazon.dist, name=amazon.names, fasta=amazon.fasta, list=98_sq_phylip_amazon.fn.list, cutoff=unique-0.03-0.05-0.10, sorted=name)
 
 ### group
 
