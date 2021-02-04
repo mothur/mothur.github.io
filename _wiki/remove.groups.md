@@ -203,9 +203,9 @@ contained sequences from groups B and C.
 
 ### design
 
-To use the design option, follow this example:
+The design parameter allows you to assign groups to treatments. You can use the [design](/wiki/design_file) file with sets to remove all groups associated with a treatment. To use the design option, follow this example:
 
-    mothur > remove.groups(shared=abrecovery.design, groups=B-C)
+    mothur > remove.groups(shared=abrecovery.shared, design=abrecovery.design, sets=B-C)
 
 ### sets
 

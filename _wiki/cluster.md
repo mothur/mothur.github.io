@@ -212,6 +212,10 @@ option to produce the subsequent output:
     0.04   6159    411 108 44  22  11  9   6   7   7   8   5   7   3   4   1   4   3   2   1   1   1   2   1   2   0   1   11
     0.05   7023    258 92  36  23  11  2   5   2   6   8   4   6   2   5   1   3   3   1   1   0   1   2   1   0   0   1   01
     changed cutoff to 0.0533794
+    
+For ASV clustering of the data use the unique method, which puts each unique sequence in the count file in its own OTU:
+
+    mothur > cluster(count=final.count_table, method=unique)
 
 ### metric
 
