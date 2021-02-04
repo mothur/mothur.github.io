@@ -2,6 +2,46 @@
 title: 'RDP reference files'
 redirect_from: '/wiki/RDP_reference_files'
 ---
+
+## Version 18
+
+The [publicly released version
+16](https://sourceforge.net/p/rdp-classifier/news/2020/07/rdp-classifier-213-july-2020-release-note/) of its training set in
+June 2020 (a version 17 was not released). We have modified the
+files that they make available on SourceForge to be compatible with
+mothur. To maintain a consistent 6 taxonomic levels we have removed the
+various sub-classes, orders and families:
+
+-   [ 16S rRNA reference
+    (RDP)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset18_062020.rdp.tgz): A collection of
+    20,712 bacterial and 601 archaeal 16S rRNA gene sequences with an
+    improved taxonomy compared to version 16.
+-   [ 16S rRNA reference
+    (PDS)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset18_062020.pds.tgz): The RDP
+    reference with 119 mitochondrial 16S rRNA gene sequences added as
+    members of the Rickettsiales and four 18S rRNA gene sequences added
+    as members of the Eukarya.
+
+You should be aware of several things when using the RDP training set.
+First, the taxonomies only go to the genus level; therefore, you will
+only be able to classify your sequences to the genus level. You can
+modify the training set to include species-level names and may be
+successful in classifying to the species level. Second, many of these
+sequences are very poor in quality. Low quality reads have a large
+number of ambiguous base calls or are very short. Here is the output
+from running summary.seqs on trainset18\_062020.rdp.fasta:
+
+               Start	End	NBases	Ambigs	Polymer	NumSeqs
+     Minimum:	1	455	455	0	4	1
+     2.5%-tile:	1	1315	1315	0	5	530
+     25%-tile:	1	1426	1426	0	5	5299
+     Median: 	1	1464	1464	0	5	10598
+     75%-tile:	1	1493	1493	0	6	15897
+     97.5%-tile:	1	1547	1547	12	7	20666
+     Maximum:	1	1968	1968	130	100	21195
+     Mean:	1	1450	1450	1	5
+
+
 ## Version 16
 
 The [publicly released version
