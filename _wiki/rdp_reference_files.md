@@ -6,8 +6,8 @@ redirect_from: '/wiki/RDP_reference_files'
 ## Version 18
 
 The [publicly released version
-16](https://sourceforge.net/p/rdp-classifier/news/2020/07/rdp-classifier-213-july-2020-release-note/) of its training set in
-June 2020 (a version 17 was not released). We have modified the
+18](https://sourceforge.net/p/rdp-classifier/news/2020/07/rdp-classifier-213-july-2020-release-note/) of its training set in
+July 2020 (a version 17 was not released). We have modified the
 files that they make available on SourceForge to be compatible with
 mothur. To maintain a consistent 6 taxonomic levels we have removed the
 various sub-classes, orders and families:
