@@ -25,14 +25,24 @@ for 16S rRNA gene sequence analysis. Appl Environ Microbiol 77:3219.
 http://www.mothur.org/wiki/Cluster.split
 ```
 
-## Is there a list of all of mothur's commands?
+## Is there a list of all of mothur's commands and file types?
 
-[Yes!](/wiki/tags#commands)
+Yes! [commands](/wiki/tags#commands) and [file types](/wiki/tags#file_types).
+
+
+## Do you have an example analysis?
+
+Yes, [miseq\_sop](/wiki/MiSeq_SOP) highlights some of the things you can do with mothur.
 
 
 ## How do I visualize my results from mothur?
 
 To visual your data with R follow Pat's tutorial [here](https://www.riffomonas.org/minimalR/).
+
+
+## Do you do workshops?
+
+Yes! Please see our [workshops](/wiki/workshops) page for more information.
 
 
 ## I don't have enough RAM or processing power. What are my options?
@@ -55,16 +65,6 @@ If you would like to see something added to mothur, please let us know!
 It may take me a while to get around to implementing the feature, but we
 are generally reasonable and welcome everyone's expertise that would
 like to contribute source code.
-
-
-## Do you have an example analysis?
-
-Yes, [miseq\_sop](/wiki/MiSeq_SOP) highlights some of the things you can do with mothur.
-
-
-## Do you do workshops?
-
-Yes! Please see our [workshops](/wiki/workshops) page for more information.
 
 
 ## Why is data missing for some distance levels?
@@ -256,10 +256,6 @@ get.otulist(list=yourSubsampledListFile, label=0.03)
 
 You can run the [get.sharedseqs](/wiki/get.sharedseqs) command. Be
 sure to pay close attention to the ["unique" and "shared" parameters](/wiki/get.sharedseqs#uniquegroups--sharedgroups).
-
-## What are mothur's file types?
-
-mothur uses and creates many [file types](/wiki/tags#file_types).
 
 
 ## How do I select certain sequences or groups of sequences?
