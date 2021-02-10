@@ -25,6 +25,16 @@ for 16S rRNA gene sequence analysis. Appl Environ Microbiol 77:3219.
 http://www.mothur.org/wiki/Cluster.split
 ```
 
+## Is there a list of all of mothur's commands?
+
+[Yes!](/wiki/tags#commands)
+
+
+## How do I visualize my results from mothur?
+
+To visual your data with R follow Pat's tutorial [here](https://www.riffomonas.org/minimalR/).
+
+
 ## I don't have enough RAM or processing power. What are my options?
 
 Check out this page describing how to run mothur using Amazon resources,
@@ -296,11 +306,3 @@ multiple processors. If a process dies, a file can be incomplete which
 would cause a mismatch error downstream.
 
 
-## Is there a list of all of mothur's commands?
-
-[Yes!](/wiki/tags#commands)
-
-
-## How do I visualize my results from mothur?
-
-To visual your data with R follow Pat's tutorial [here](https://www.riffomonas.org/minimalR/).
