@@ -14,7 +14,7 @@ published opinion, this is the best reference alignment out there - far
 superior to the greengenes or RDP alignments. It's unclear why this
 version of the release is smaller than previous releases. **We have noticed some weird results using this version of the SEED alignment relative to previous versions of the alignment. This is most likely because it is smaller than previous versions. The Schloss group is sticking with the v132 version of the SEED database for alignments.** We have
 prepared a [README
-document](/blog/2021/02/22/SILVA-v138_1-reference-files)
+document](/blog/2021/SILVA-v138_1-reference-files)
 where you can read about the process that we used to generate these
 references. This is also the first SILVA release that is available under
 the CC-BY license opening the data up to commercial use
@@ -49,7 +49,7 @@ published opinion, this is the best reference alignment out there - far
 superior to the greengenes or RDP alignments. It's unclear why this
 version of the release is smaller than previous releases. **We have noticed some weird results using this version of the SEED alignment relative to previous versions of the alignment. This is most likely because it is smaller than previous versions. The Schloss group is sticking with the v132 version of the SEED database for alignments.** We have
 prepared a [README
-document](/blog/2020/03/04/SILVA-v138-reference-files)
+document](/blog/2020/SILVA-v138-reference-files)
 where you can read about the process that we used to generate these
 references. This is also the first SILVA release that is available under
 the CC-BY license opening the data up to commercial use
@@ -85,7 +85,7 @@ version of the SILVA references, we are providing the SEED database, the
 full-length sequences available from the NR SILVA database, and a SILVA
 aligned version of the gold database that is used for reference-based
 chimera detection. We have prepared a [README
-document](/blog/2018/01/10/SILVA-v132-reference-files)
+document](/blog/2018/SILVA-v132-reference-files)
 where you can read about the process that we used to generate these
 references.
 
@@ -121,7 +121,7 @@ version of the SILVA references, we are providing the SEED database, the
 full-length sequences available from the NR SILVA database, and a SILVA
 aligned version of the gold database that is used for reference-based
 chimera detection. We have prepared a [README
-document](/blog/2017/03/15/SILVA-v128-reference-files)
+document](/blog/2017/SILVA-v128-reference-files)
 where you can read about the process that we used to generate these
 references.
 
@@ -157,7 +157,7 @@ version of the SILVA references, we are now providing the SEED database,
 the full-length sequences available from the NR SILVA database, and a
 SILVA aligned version of the gold database that is used for
 reference-based chimera detection. We have prepared a [README
-document](/blog/2015/12/03/SILVA-v123-reference-files)
+document](/blog/2015/SILVA-v123-reference-files)
 where you can read about the process that we used to generate these
 references.
 
@@ -193,7 +193,7 @@ version of the SILVA references, we are now providing the SEED database,
 the full-length sequences available from the NR SILVA database, and a
 SILVA aligned version of the gold database that is used for
 reference-based chimera detection. We have prepared a [README
-document](/blog/2014/08/08/SILVA-v119-reference-files)
+document](/blog/2014/SILVA-v119-reference-files)
 where you can read about the process that we used to generate these
 references.
 
@@ -235,12 +235,8 @@ are the aligned sequence file (e.g. silva.bacteria.fasta), an unaligned
 sequence file (e.g. nogap.bacteria.fasta), and taxonomy outlines (e.g.
 silva.bacteria.silva.tax):
 
--   [ bacterial references](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.zip) (14,956
-    sequences)
--   [ archaeal references](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.archaea.zip) (2,297
-    sequences)
--   [ eukaryotic references](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.eukarya.zip) (1,238
-    sequences)
+-   [ bacterial references](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.zip) (14,956 sequences)
+-   [ archaeal references](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.archaea.zip) (2,297 sequences)
+-   [ eukaryotic references](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.eukarya.zip) (1,238 sequences)
 -   [ Silva-based alignment of template file for
-    chimera.slayer](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.gold.bacteria.zip) (5,181
-    sequences)
+    chimera.slayer](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.gold.bacteria.zip) (5,181 sequences)
