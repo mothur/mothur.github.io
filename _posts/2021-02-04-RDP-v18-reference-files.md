@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "README for the RDP v18 reference files"
-author: "Patrick D. Schloss"
+author: "PD Schloss"
 date: "February 4, 2021"
 ---
 
