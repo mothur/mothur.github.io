@@ -33,7 +33,7 @@ us know and we can work with you to incorporate that feature into
 mothur. Because the phylip format is so popular most software can
 generate this format for you.
 
-### denovo
+### denovo fitting
 
 The denovo method allows you to use your dataset as a reference. mothur
 will randomly select a portion of your dataset to be the reference. The
@@ -48,14 +48,15 @@ The best sensspec results were found on the 4th iteration:
     iter   label   cutoff  numotus tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
     4  0.03    0.03    5581    315417  114823776   76333   53810   0.854263    0.999336    0.805149    0.999532    0.805149    0.998871    0.828779    0.828979
 
-### reference
+### reference fitting
+
+The reference fitting methods use a reference and fit the new dataset's sequences into the reference otus. 
+Perhaps you have a study where 20 patients were sampled, and you want to see how a
+new patient's data would fit in with the existing results. There are several ways to 
+fit new data to an existing dataset. 
 
 The reference method uses a user provided reference and fits the new
-dataset's sequences into the reference otus. For example, perhaps you
-have a study where 20 patients were sampled, and you want to see how a
-new patient's data would fit in with the existing results. You could
-use the reference method to do so. Or if you want to fit your reads to a
-mothur formatted reference you could run the following:
+dataset's sequences into the reference otus.  
 
     mothur > unique.seqs(fasta=silva.v4.fasta, format=count)
     mothur > dist.seqs(fasta=current, cutoff=0.03)
@@ -66,6 +67,30 @@ The sens.spec results:
 
     iter   label   cutoff  numotus tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
     1  0.03    0.03    3080    284781  114851257   48852   84446   0.77129 0.999575    0.853576    0.999265    0.853576    0.998844    0.810817    0.810349
+
+or
+
+The accnos parameter may be used to indicate a subset of your data as the reference. 
+You can merge the count and fasta files containing the old and new data. Mothur will cluster the references
+using optiClust and then fit the query reads to the reference OTUs.
+     
+     mothur > list.seqs(fasta=reference.fasta)
+     mothur > merge.files(input=reference.fasta-query.fasta, output=combined.fasta)
+     mothur > merge.count(count=reference.count_table-query.count_table, output=combined.count_table)
+     mothur > dist.seqs(fasta=combined.fasta, cutoff=0.03)
+     mothur > cluster.fit(accnos=ref.accnos, column=current, fasta=combined.fasta, count=combined.count_table)
+
+or
+
+The reflist parameter can be used to provide a list file for the references. 
+This can be helpful if you want to use existing OTUs from an earlier run of mothur.
+    
+     mothur > merge.files(input=reference.fasta-query.fasta, output=combined.fasta)
+     mothur > merge.count(count=reference.count_table-query.count_table, output=combined.count_table)
+     mothur > dist.seqs(fasta=combined.fasta, cutoff=0.03)
+     mothur > cluster.fit(reflist=ref.opti_mcc.list, column=current, fasta=combined.fasta, count=combined.count_table)
+
+## Options
 
 ### phylip
 
@@ -171,8 +196,6 @@ recommended when using reference mode.
 
 The reflist parameter allows you to enter a list file for your reference
 dataset.
-
-## Options
 
 ### accnos
 
