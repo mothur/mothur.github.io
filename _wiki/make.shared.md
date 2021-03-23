@@ -36,6 +36,27 @@ This command will generate a [shared file](/wiki/shared_file).
 You can also convert a [biom file](https://github.com/biocore/biom-format) to a shared file to import your data into mothur.
 
     mothur > make.shared(biom=example.biom)
+    
+## Converting a shared file to a "tidy" shared file
+
+The "tidy" shared format is a 4 columns file, where each line consists of an abundance for a sample. For example:
+
+    label sample OTU abundance
+    0.03 F3D0 OTU01 10
+    0.03 F3D1 OTU01 5
+    ...
+    0.05 F3D0 OTU01 8
+    0.05 F3D1 OTU01 3
+    ...
+    
+You can generate a tidy shared file using the make.shared command as follows:
+
+    mothur > make.shared(shared=final.opti_mcc.shared)
+    
+To convert a tidy shared file to a standard shared file, run this:
+
+    mothur > make.shared(shared=final.opti_mcc.tshared)
+
 
 ## Options
 
