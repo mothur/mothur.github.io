@@ -78,3 +78,4 @@ included in your analysis:
     the associated files.
     [\#583](https://github.com/mothur/mothur/issues/583)
 -   1.44.0 Adds list file output for **make.shared** with count table.
+-   1.45.0 Adds shared file conversion to **make.shared** [\#716](https://github.com/mothur/mothur/issues/#716)
