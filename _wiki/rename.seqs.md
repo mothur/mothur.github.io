@@ -3,20 +3,24 @@ title: 'rename.seqs'
 tags: 'commands'
 redirect_from: '/wiki/Rename.seqs.html'
 ---
-Provided with a [ fasta-formatted](/wiki/Fasta_file) sequence file
-and [ group](/wiki/Group_file) file, the **rename.seqs** rename the
-sequences appending the group name to the sequence name.
+Provided with a [ fasta-formatted](/wiki/Fasta_file) sequence file or file file 
+the **rename.seqs** rename the sequences by number. Adding a group or count file will allow you to append the sample name to the sequence name.
+
 
 ## Default
 
-The **rename.seqs** command requires and fasta and group file.
+The **rename.seqs** command requires a fasta or file file.
 
-    mothur > rename.seqs(fasta=final.fasta, group=final.groups)
+    mothur > rename.seqs(fasta=final.fasta)
+    
+This command will create a final.renamed.fasta file with sequence names like 0, 1.
 
-This command will create final.renamed.fasta and final.renamed.groups
-files. The sequence names will look like: GQY1XT001C296C\_F003D000.
-GQY1XT001C296C was the original sequence name and F003D000 is the sample
-it came from.
+You can add a name or group file to append sample names to the sequence names as follows:
+
+    mothur > rename.seqs(fasta=final.fasta, count=final.count_table)
+
+This command will create final.renamed.fasta and final.renamed.count_table
+files. The sequence names will look like: 21_F3D9. 
 
 ## Options
 
@@ -63,6 +67,10 @@ file.
 The taxonomy parameter allows you to provide an associated taxonomy
 file.
 
+### list
+
+The list parameter allows you to provide an associated list file.
+
 ### delim
 
 The delim parameter allow you to enter the character or characters you
@@ -71,7 +79,7 @@ Default='\_'.
 
     mothur > rename.seqs(fasta=final.fasta, group=final.groups, delim=::)
 
-The resulting names would look like: GQY1XT001A006L::F003D144.
+The resulting names would look like: 21::F3D9.
 
 ### placement
 
@@ -81,7 +89,7 @@ Options are front or back. Default=back.
 
     mothur > rename.seqs(fasta=final.fasta, group=final.groups, placement=front)
 
-The resulting names would look like: F003D000\_GQY1XT001C296C.
+The resulting names would look like: F3D9_21.
 
 ## Revisions
 
@@ -90,5 +98,7 @@ The resulting names would look like: F003D000\_GQY1XT001C296C.
 -   1.37.0 - Adds file, map, qfile and contigsreport parameters.
     [\#132](https://github.com/mothur/mothur/issues/132)
 -   1.42.0 - Adds taxonomy parameter
+-   1.45.0 - Rework of command function
+. 
 
 
