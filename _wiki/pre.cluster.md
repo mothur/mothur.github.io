@@ -176,6 +176,9 @@ unoise and deblur combine denoising with chimera checking. To remove the
 black box aspect of this and give greater control over parameter
 settings our implementation does not do chimera checking
 
+### clump
+The clump parameter allows you to specify which reads can be combined. Possible options include lessthan and lessthanequal. lessthan -> merge reads with less abundance. lessthanequal -> merge reads with less than or equal abundance. Default=lessthan.
+
 ### alpha
 
 The alpha parameter allows you to specify the alpha value for the beta
@@ -267,3 +270,4 @@ people, the **pre.cluster** option may be your best bet.
     [\#589](https://github.com/mothur/mothur/issues/589)
 -   1.43.0 Makes current file class thread safe. Caused random crashes
     in pre.cluster. [\#643](https://github.com/mothur/mothur/issues/643)
+-   1.45.0 Adds clump paramter. [\#749](https://github.com/mothur/mothur/issues/749)
