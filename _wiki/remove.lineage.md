@@ -159,5 +159,5 @@ or
     [\#399](https://github.com/mothur/mothur/issues/399)
 -   1.42.0 - Bug Fix: Fixes bug in **remove.lineage** with constaxonomy and
     shared files. [\#580](https://github.com/mothur/mothur/issues/580)
-
+-   1.45.0 Fixes bug with remove.lineage not handling taxon definitions with multiple levels.
 
