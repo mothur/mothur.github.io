@@ -271,3 +271,4 @@ people, the **pre.cluster** option may be your best bet.
 -   1.43.0 Makes current file class thread safe. Caused random crashes
     in pre.cluster. [\#643](https://github.com/mothur/mothur/issues/643)
 -   1.45.0 Adds clump paramter. [\#749](https://github.com/mothur/mothur/issues/749)
+-   1.45.0 Fixes bug with pre.cluster's unoise method.
