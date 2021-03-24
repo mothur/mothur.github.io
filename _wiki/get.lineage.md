@@ -150,3 +150,4 @@ or
     [\#399](https://github.com/mothur/mothur/issues/399)
 -   1.40.5 - Bug Fix: failing to find taxons
     [\#477](https://github.com/mothur/mothur/issues/477)
+-   1.45.0 Fixes bug with get.lineage not handling taxon definitions with multiple levels.
