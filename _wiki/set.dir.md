@@ -92,4 +92,4 @@ order of searches.
 -   1.39.0 - Adds blastdir parameter.
 -   1.44.0 - Adds tools parameter.
     [\#682](https://github.com/mothur/mothur/issues/682)
--   Removes requirement for inputdir to be writable [\#747](https://github.com/mothur/mothur/issues/747)
+-   1.45.0 - Removes requirement for inputdir to be writable [\#747](https://github.com/mothur/mothur/issues/747)
