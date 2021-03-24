@@ -455,3 +455,4 @@ The variability is caused by the randomization of the sequences.
 -   1.44.0 - Adds vsearch parameter so that you can specify location of
     vsearch executable.
     [\#682](https://github.com/mothur/mothur/issues/682)
+-   1.45.0 Updates vsearch to 2.16.0. https://github.com/torognes/vsearch/releases/tag/v2.16.0
