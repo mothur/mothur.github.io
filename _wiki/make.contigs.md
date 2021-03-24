@@ -344,5 +344,5 @@ documentation,
 -   1.43.0 - Windows users can now run **make.contigs** with \*.gz files.
 -   1.44.0 - Improves mothur's checkorient option in make.contigs. Also
     sets checkorient=t by default.
-
+-   1.45.0 Fixes bug with qfile option in make.contigs. [\#745](https://github.com/mothur/mothur/issues/745)
 
