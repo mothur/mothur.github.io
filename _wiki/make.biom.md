@@ -124,4 +124,4 @@ file you used when classifying your sequences.
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
--   Adds functions to write HDF5 biom files.[\#752](https://github.com/mothur/mothur/issues/752)
+-   1.45.0 - Adds functions to write HDF5 biom files.[\#752](https://github.com/mothur/mothur/issues/752)
