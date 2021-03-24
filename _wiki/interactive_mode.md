@@ -6,25 +6,38 @@ redirect_from: '/wiki/Interactive_mode'
 
 When you start mothur, you will see a screen that looks like this:
 
-    mothur v1.0
-    Last updated: 1/29/2009
+    Mac version
 
+    Using ReadLine,Boost,HDF5,GSL
+    mothur v.1.45.0
+    Last updated: 3/22/21
     by
-    Patrick D. Schloss
+    Patrick D. Schloss
 
-    Department of Microbiology
-    The University of Massachusetts
-    pschloss@micro.umass.edu
-[`https://schloss.micro.umass.edu/mothur`](https://schloss.micro.umass.edu/mothur)
+    Department of Microbiology & Immunology
 
+    University of Michigan
+    http://www.mothur.org
 
-    Distributed under the GNU General Public License
+    When using, please cite:
+    Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
 
-    Type 'help()' for information on the commands that are available
+    Distributed under the GNU General Public License
 
-    Type 'quit()' to exit program
+    Type 'help()' for information on the commands that are available
 
-    mothur >
+    For questions and analysis support, please visit our forum at https://forum.mothur.org
+
+    Type 'quit()' to exit program
+
+    [NOTE]: Setting random seed to 19760620.
+
+    Interactive Mode
+    
+    
+    
+    mothur > 
+
 
 All of your commands will be entered from the mothur prompt. You can get
 a list of commands by typing help() at the prompt and you can get more
@@ -49,7 +62,13 @@ and close parentheses. If you supply any options there cannot be a space
 between the option, the '=', and the option setting. To separate
 options, use a comma. For example:
 
-    mothur > cluster(method=furthest, cutoff=0.10)
+    mothur > cluster(method=opti, cutoff=0.03)
+    
+## Running a batch file 
+
+You can run a batch file from the mothur prompt as follows:
+
+    mothur > stability.batch
 
 ## Environment Variables
 
