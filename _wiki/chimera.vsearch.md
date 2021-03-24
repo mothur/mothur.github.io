@@ -65,7 +65,7 @@ information.
 ### processors
 
 The processors parameter allows you to specify how many processors you
-would like to use. The default is 1.
+would like to use. The default is all available.
 
 ### dereplicate
 
