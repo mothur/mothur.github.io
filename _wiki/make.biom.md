@@ -58,6 +58,11 @@ Your biom file columns would look like:
                {"id":"F003D148", "metadata":{"dpw":"148", "description":"F003D148 description"}},
                {"id":"F003D150", "metadata":{"dpw":"150", "description":"F003D150 description"}},
                {"id":"MOCK.GQY1XT001", "metadata":{"dpw":"12", "description":"MOCK.GQY1XT001 description"}}
+### output
+
+The output parameter allows you to specify format of your biom file. Options hdf5 or simple. Default is hdf5, unless you are running a version without HDF5 libraries.
+
+    mothur > make.biom(shared=final.tx.1.subsample.1.pick.shared, output=simple)
 
 ### matrixtype
 
@@ -119,3 +124,4 @@ file you used when classifying your sequences.
 -   1.40.0 - Speed and memory improvements for shared files.
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
+-   Adds functions to write HDF5 biom files.[\#752](https://github.com/mothur/mothur/issues/752)
