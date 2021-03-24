@@ -114,5 +114,6 @@ to pdiffs + bdiffs + ldiffs + sdiffs).
     [1](https://forum.mothur.org/viewtopic.php?f=3&t=2555&p=7422#p7422)
 -   1.36.0 - Bug Fix: Off by one in right side trimming.
     [https://forum.mothur.org/viewtopic.php?f=4&t=3764](https://forum.mothur.org/viewtopic.php?f=4&t=3764)
+-   1.45.0 Fixes bug with sffinfo parsing with oligos option. [\#726](https://github.com/mothur/mothur/issues/726) [\#727](https://github.com/mothur/mothur/issues/727) 
 
 
