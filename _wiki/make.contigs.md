@@ -345,4 +345,4 @@ documentation,
 -   1.44.0 - Improves mothur's checkorient option in make.contigs. Also
     sets checkorient=t by default.
 -   1.45.0 Fixes bug with qfile option in make.contigs. [\#745](https://github.com/mothur/mothur/issues/745)
-
+-   1.45.0 Fixes bug with make.contigs not making group file for *.gz files with oligos file. [\#753](https://github.com/mothur/mothur/issues/753)
