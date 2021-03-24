@@ -353,3 +353,4 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     number of available processors and use all available.
 -   1.43.0 Improves speed and resource management for align.seqs
     command. [\#647](https://github.com/mothur/mothur/issues/647)
+-   1.45.0 Fixes align.seqs segfault.
