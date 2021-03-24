@@ -3,8 +3,7 @@ title: 'split.abund'
 tags: 'commands'
 redirect_from: '/wiki/Split.abund.html'
 ---
-The **split.abund** command reads a fasta file and a list or a name file
-splits the sequences into rare and abundant groups.
+The **split.abund** command reads a fasta file, list file, name file or a count file and splits the sequences into rare and abundant groups.
 
 ## Default Settings
 
@@ -106,5 +105,5 @@ The accnos parameter allows you to output a .rare.accnos and
 -   1.28.0 Added count option
 -   1.44.0 Cutoff parameter can now be a percentage. Removes fasta file
     requirement. [\#263](https://github.com/mothur/mothur/issues/263)
-
+-   1.45.0 - Fixes bug with split.abund when run with names file. [\#715](https://github.com/mothur/mothur/issues/715)
 
