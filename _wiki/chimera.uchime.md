@@ -302,3 +302,4 @@ ucl is true.
     number of available processors and use all available.
 -   1.44.0 Adds uchime parameter.
     [\#682](https://github.com/mothur/mothur/issues/682)
+-   1.45.0 Fixes bug with chimera.uchime assembly of accnos file.
