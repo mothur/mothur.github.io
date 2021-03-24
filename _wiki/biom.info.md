@@ -40,7 +40,7 @@ is the number of otus that classified to Clostridiales.
 ### format
 
 The format parameter allows you indicate type of biom file you have.
-Options hdf5 or classic. Default is hdf5.
+Options hdf5 or classic. By default, mothur will autodetect the format for you.
 
     mothur > biom.info(biom=hdf5.biom, label=0.03, format=hdf5)
 
