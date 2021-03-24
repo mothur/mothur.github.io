@@ -506,3 +506,4 @@ This represents approximately 89% of the original sequences.
     [\#667](https://github.com/mothur/mothur/issues/667)
 -   1.44.0 - Bug Fix: Fixes bug with **trim.seqs** if no name file is given
     and allfiles=T. [\#696](https://github.com/mothur/mothur/issues/696)
+-   1.45.0 Removes trim.seqs requirement of name or count file.
