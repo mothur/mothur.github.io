@@ -194,4 +194,4 @@ range from 0.2 to 2.
     [\#586](https://github.com/mothur/mothur/issues/586)
 -   1.44.0 Adds parallelization to **chimera.vsearch** when using denovo
     method. [\#700](https://github.com/mothur/mothur/issues/700)
--   Adds multiple processors for chimera.vsearch when using reference instead of denovo. [\#757](https://github.com/mothur/mothur/issues/757)
+-   1.45.0 Adds multiple processors for chimera.vsearch when using reference instead of denovo. [\#757](https://github.com/mothur/mothur/issues/757)
