@@ -169,5 +169,5 @@ the groupings relate to each other.
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
-
+-   1.45.0 Fixes bug with indicator command pvalues. [\#729](https://github.com/mothur/mothur/issues/729)
 
