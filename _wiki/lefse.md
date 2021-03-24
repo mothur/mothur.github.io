@@ -126,5 +126,5 @@ Recommended when very low values are present. Default=T.
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.40.0 Bug Fix: Fixes seeded random issue.
     [\#416](https://github.com/mothur/mothur/issues/416)
-
+-   1.45.0 Fixes lefse screen output.
 
