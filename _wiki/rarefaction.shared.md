@@ -205,5 +205,5 @@ To visual your data follow Pat's tutorial
     [\#544](https://github.com/mothur/mothur/issues/544)
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
-
+-   1.45.0 rarefaction.shared groups output bug. [\#729](https://github.com/mothur/mothur/issues/729)
 
