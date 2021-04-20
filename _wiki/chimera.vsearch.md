@@ -72,66 +72,11 @@ would like to use. The default is all available.
 The dereplicate parameter can be used when checking for chimeras by
 group. If the dereplicate parameter is false, then if one group finds
 the sequence to be chimeric, then all groups find it to be chimeric,
-default=f. If you set dereplicate=t, and then run remove.seqs with
-dups=f you can remove only the redundant chimeric sequences.
+default=f. If you set dereplicate=t, and then when a sequence is found 
+to be chimeric it is removed from it's group, not the entire dataset. 
 
-Let's look at an example:
-
-    >seq1
-    attgacat....
-    >seq4
-    ttgacaga....
-
-    seq1 seq1,seq2,seq3
-    seq4 seq4,seq5,seq6
-
-    seq1 group1
-    seq2 group2
-    seq3 group3
-    seq4 group1
-    seq5 group2
-    seq6 group3
-
-If dereplicate=f and dups=t, (default settings in mothur), and seq2 is
-found to be chimeric by group2. The results would be:
-
-    >seq4
-    ttgacaga....
-
-    seq4 seq4,seq5,seq6
-
-    seq4 group1
-    seq5 group2
-    seq6 group3
-
-If dereplicate=t and dups=t, and seq2 is found to be chimeric by group2.
-The results would be:
-
-    >seq4
-    ttgacaga....
-
-    seq4 seq4,seq5,seq6
-
-    seq4 group1
-    seq5 group2
-    seq6 group3
-
-If dereplicate=t and dups=f, and seq2 is found to be chimeric by group2.
-The results would be:
-
-    >seq1
-    attgacat....
-    >seq4
-    ttgacaga....
-
-    seq1 seq1,seq3
-    seq4 seq4,seq5,seq6
-
-    seq1 group1
-    seq3 group3
-    seq4 group1
-    seq5 group2
-    seq6 group3
+Note: When you set dereplicate=t, mothur generates a new count table
+with the chimeras removed and counts adjusted by sample. 
 
 ### abskew
 
