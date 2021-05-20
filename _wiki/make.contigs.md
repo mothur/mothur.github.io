@@ -161,7 +161,45 @@ be scrapped.
 If you are running the **make.contigs** command with paired barcodes or
 primers, you can use the checkorient parameter. When checkorient=t and
 mothur can't find the barcodes and primers, it will search the reverse
-compliment. The default is true.
+compliment. The default is true. Let's look at a small example:
+
+The oligos file looks like:
+
+    primer CCTACGGGAGGCAGCAG ATTACCGCGGCTGCTGG V3
+    primer ATTAGAWACCCBDGTAGTCC    CCCGTCAATTCMTTTRAGT V5
+    primer ACTYAAAKGAATTGACGGG ACRACACGAGCTGACGAC  V6
+    BARCODE    ccaac   cactg   F01R2A
+    BARCODE    ccaac   aacca   F01R2B
+    BARCODE    ccaac   tgtca   F01R2C
+    BARCODE    ccaac   aaacc   F01R2D
+    ...
+
+When checkorient=t, mothur will also search for these primer and barcode combintaions:
+
+    paired reoriented primers - 
+    V3	ATTACCGCGGCTGCTGG	CCTACGGGAGGCAGCAG
+    V5	CCCGTCAATTCMTTTRAGT	ATTAGAWACCCBDGTAGTCC
+    V6	ACRACACGAGCTGACGAC	ACTYAAAKGAATTGACGGG
+
+    paired reversed primers - 
+    V3	CTGCTGCCTCCCGTAGG	CCAGCAGCCGCGGTAAT
+    V5	GGACTACHVGGGTWTCTAAT	ACTYAAAKGAATTGACGGG
+    V6	CCCGTCAATTCMTTTRAGT	GTCGTCAGCTCGTGTYGT
+
+    paired reoriented barcodes - 
+    F01R2A	CACTG	CCAAC
+    F01R2B	AACCA	CCAAC
+    F01R2C	TGTCA	CCAAC
+    F01R2D	AAACC	CCAAC
+
+    paired reversed barcodes - 
+    F01R2A	GTTGG	CAGTG
+    F01R2B	GTTGG	TGGTT
+    F01R2C	GTTGG	TGACA
+    F01R2D	GTTGG	GGTTT
+    
+NOTE: If the reversed or reoriented primers / barcodes are found, mothur assumes the sequence fragments are reversed and flips them before assembly.
+
 
 ### oligos scrap code meanings
 
