@@ -1,3 +1,7 @@
+---
+title: 'Dereplicate example'
+---
+
 ## Dereplicate parameter example
 
 This page includes a short example to highlight the dereplicate parameter used by several of mothur's chimera command. 
