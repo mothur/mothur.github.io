@@ -78,6 +78,8 @@ to be chimeric it is removed from it's group, not the entire dataset.
 Note: When you set dereplicate=t, mothur generates a new count table
 with the chimeras removed and counts adjusted by sample. 
 
+For a detailed example: [Dereplcate example](Chimera_Dereplicate_Example.md)
+
 ### abskew
 
 The abskew parameter can only be used with template=self. Minimum
