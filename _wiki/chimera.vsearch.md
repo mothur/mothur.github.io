@@ -78,7 +78,7 @@ to be chimeric it is removed from it's group, not the entire dataset.
 Note: When you set dereplicate=t, mothur generates a new count table
 with the chimeras removed and counts adjusted by sample. 
 
-For a detailed example: [Dereplicate example](/wiki/Chimera_Dereplicate_Example)
+For a detailed example: [Dereplicate example](/wiki/chimera_dereplicate_example)
 
 ### abskew
 
