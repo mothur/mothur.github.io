@@ -78,5 +78,4 @@ processors and use all available.
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
-
-
+-   1.46.0 Fixes segfault in metasats if abundance of one treatment is 0
