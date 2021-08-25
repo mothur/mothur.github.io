@@ -26,3 +26,7 @@ To copy a file in the Windows environment:
 To mock someone in the Mac environment:
 
     mothur > system(say -v Vicki joe smells)
+    
+## Revisions
+
+1.46.0 - Simplifies system command. [\#782](https://github.com/mothur/mothur/issues/782)
