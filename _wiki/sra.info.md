@@ -94,5 +94,4 @@ support multiple processors.
 
 -   1.44.0 First Introduced.
     [\#27](https://github.com/mothur/mothur/issues/27)
-
-
+-   1.45.3 Fixes bug with sra.info threads option. 
