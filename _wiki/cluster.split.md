@@ -390,3 +390,4 @@ The variability is caused by the randomization of the sequences.
 -   1.46.0 Adds ability to cluster unaligned sequences in cluster.split. [\#763](https://github.com/mothur/mothur/issues/763)
 -   1.46.0 Reduces time of cluster.split through improvements in the splitting process. [\#778](https://github.com/mothur/mothur/issues/778)
 -   1.46.0 Removes split by distance option from cluster.split.
+-   1.46.0 Fixes bug with OTU priority printing with file option
