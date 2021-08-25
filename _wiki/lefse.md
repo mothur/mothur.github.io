@@ -58,6 +58,10 @@ dashes. The default is all sets in the designfile.
 The label parameter is used to indicate which distances in the shared
 file you would like to use. labels are separated by dashes.
 
+### pairwise
+
+The pairwise parameter allows you to run all pairwise comparisons of the sets in your design file. Default=f.
+
 ### walpha
 
 The walpha parameter is used to set the alpha value for the Wilcoxon
@@ -127,4 +131,4 @@ Recommended when very low values are present. Default=T.
 -   1.40.0 Bug Fix: Fixes seeded random issue.
     [\#416](https://github.com/mothur/mothur/issues/416)
 -   1.45.0 Fixes lefse screen output.
-
+-   1.46.0 Adds pairwise parameter. [\#781](https://github.com/mothur/mothur/issues/781)
