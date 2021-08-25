@@ -62,12 +62,32 @@ command:
 
     mothur > dist.seqs(fasta=amazon.unique.filter.fasta, calc=nogaps)
 
-A final option is to penalize each gap. For the two sequences above, the
+A another option is to penalize each gap. For the two sequences above, the
 distance would be 5/12 or 0.4167. This can be used in mothur using the
 eachgap option. mothur can use this distance calculating method with the
 command:
 
     mothur > dist.seqs(fasta=amazon.unique.filter.fasta, calc=eachgap)
+    
+#### Mothur also has several methods to calculate the distances between protein sequences. 
+
+jtt (Jones-Taylor-Thornton matrix): 
+
+    mothur > dist.seqs(fasta=protein.fasta, calc=jtt)
+
+pmb (Henikoff/Tillier PMB matrix)
+
+    mothur > dist.seqs(fasta=protein.fasta, calc=pmb)
+    
+pam (Dayhoff PAM matrix)
+
+    mothur > dist.seqs(fasta=protein.fasta, calc=pam)
+    
+kimura (Kimura formula) 
+
+    mothur > dist.seqs(fasta=protein.fasta, calc=kimura)
+    
+Protein calculators are based on work by https://evolution.genetics.washington.edu/phylip/credits.html. 
 
 ### countends
 
@@ -141,3 +161,4 @@ fasta file.
     number of available processors and use all available.
 -   1.43.0 - Improves speed of **dist.seqs** and
     pairwise.seqs.[\#653](https://github.com/mothur/mothur/issues/653)
+-   1.46.0 - Adds jtt, pmb, pam and kimura calculators to dist.seqs to find distances between protein sequences. [\#776](https://github.com/mothur/mothur/issues/776)
