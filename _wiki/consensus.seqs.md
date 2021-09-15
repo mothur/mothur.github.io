@@ -55,18 +55,6 @@ given representative sequence. It can also contain group information.
 
     mothur > consensus.seqs(fasta=final.fasta, count=final.count_table)
 
-### name - not recommended
-
-The name parameter allows you to enter a name file associated with your
-fasta file.
-
-    mothur > consensus.seqs(fasta=final.fasta, name=final.names)
-
-NOTE: We DO NOT recommend using the name file. Instead we recommend using a count file. 
-The count file reduces the time and resources needed to process commands. 
-It is a smaller file and can contain group information.
-
-
 ### list
 
 You may want to find a consensus sequences for each otu in your list
@@ -104,6 +92,17 @@ From the .summary file at position 25 we see:
 There are no A's, 3 T's, 1 G's, 2418 C, and 2 gaps. Since more than
 95% of the sequences support C, that's what is returned, without the
 cutoff mothur would return b.
+
+### name - not recommended
+
+The name parameter allows you to enter a name file associated with your
+fasta file.
+
+    mothur > consensus.seqs(fasta=final.fasta, name=final.names)
+
+NOTE: We DO NOT recommend using the name file. Instead we recommend using a count file. 
+The count file reduces the time and resources needed to process commands. 
+It is a smaller file and can contain group information.
 
 
 ## Revisions
