@@ -71,14 +71,44 @@ To use the fasta option, follow this example:
 This generates the file final.pick.fasta, which contains only
 sequences from Bacteria;Firmicutes;
 
-## count option
+## count
 
 The [ count](/wiki/Count_File) file is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 
     mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, count=final.count_table)
 
-## name option - not recommended
+## list 
+
+To use the list option, follow this example:
+
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, list=final.opti_mcc.list)
+
+This generates the file final.opti_mcc.pick.list, which contains only
+sequences from Bacteria;Firmicutes;
+
+## constaxonomy
+
+If you provide a constaxonomy file, mothur will select the OTUs from a
+shared or list file that are assigned to the requested taxon. The
+constaxonomy parameter requires a list or shared file.
+
+    mothur > get.lineage(constaxonomy=final.opti_mcc.0.03.cons.taxonomy, shared=final.opti_mcc.shared, taxon=Bacteria;Firmicutes;, label=0.03)
+
+or
+
+    mothur > get.lineage(constaxonomy=final.opti_mcc.0.03.cons.taxonomy, list=final.opti_mcc.list, taxon=Bacteria;Firmicutes;, label=0.03)
+
+## alignreport
+
+To use the alignreport option, follow this example:
+
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, alignreport=final.align.report)
+
+This generates the file final.pick.align.report, which contains
+only sequences from Bacteria;Firmicutes;
+
+## name - not recommended
 
 To use the name option, follow this example:
 
@@ -99,7 +129,7 @@ especially useful when used with the groupfile, since for most commands
 your files can contain only the unique sequences, but the groupfile
 needs to contain all the sequences in your namefile.
 
-## group option
+## group - not recommended
 
 To use the group option, follow this example:
 
@@ -108,36 +138,8 @@ To use the group option, follow this example:
 This generates the file final.pick.groups, which contains only
 sequences from Bacteria;Firmicutes;
 
-
-## alignreport option
-
-To use the alignreport option, follow this example:
-
-    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, alignreport=final.align.report)
-
-This generates the file final.pick.align.report, which contains
-only sequences from Bacteria;Firmicutes;
-
-## list option
-
-To use the list option, follow this example:
-
-    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, list=final.opti_mcc.list)
-
-This generates the file final.opti_mcc.pick.list, which contains only
-sequences from Bacteria;Firmicutes;
-
-## constaxonomy option
-
-If you provide a constaxonomy file, mothur will select the OTUs from a
-shared or list file that are assigned to the requested taxon. The
-constaxonomy parameter requires a list or shared file.
-
-    mothur > get.lineage(constaxonomy=final.opti_mcc.0.03.cons.taxonomy, shared=final.opti_mcc.shared, taxon=Bacteria;Firmicutes;, label=0.03)
-
-or
-
-    mothur > get.lineage(constaxonomy=final.opti_mcc.0.03.cons.taxonomy, list=final.opti_mcc.list, taxon=Bacteria;Firmicutes;, label=0.03)
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file.
+The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
 ## Revisions
 
