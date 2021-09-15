@@ -81,7 +81,7 @@ or
 
     mothur > tree.shared(column=..., name=...)
     
-NOTE: We DO NOT recommend using the the name file. Instead we recommend using a count file. 
+NOTE: We DO NOT recommend using the name file. Instead we recommend using a count file. 
 The count file reduces the time and resources needed to process commands. 
 It is a smaller file and can contain group information.
 
