@@ -75,13 +75,6 @@ The .shared.fasta output files look like:
     TAC--GG-AG-GAT--GCG-A-G-C-G-T-T--AT-C-CGG-AT--TT-A-T-T--GG-GT--TT-A-AA-GG-GT-GC-G-CA-...
     ...
 
-
-### label
-
-There may only be a couple of lines in your list file that you are
-interested in. You could either manually delete the lines you aren't
-interested in from you list file or use the label option.
-
 ### uniquegroups & sharedgroups
 
 The uniquegroups parameter allows you to see sequences belonging to OTUs
@@ -135,6 +128,12 @@ The file final.opti_mcc.0.03.F3D0_F3D1.shared.seqs contains:
     M00967_43_000000000-A3JHG_1_1108_5894_23389|F3D143|Otu001
     M00967_43_000000000-A3JHG_1_2101_4780_15092|F3D2|Otu001
     ...
+
+### label
+
+There may only be a couple of lines in your list file that you are
+interested in. You could either manually delete the lines you aren't
+interested in from you list file or use the label option.
 
 ### output
 
