@@ -96,7 +96,8 @@ The count option allows you to provide a count file associated with your taxonom
 ### name - not recommended
 
 The name option allows you to provide a name file associated with your taxonomy file.
-We DO NOT recommend using the the name file. Instead we recommend using a count file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file.
 The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
 
