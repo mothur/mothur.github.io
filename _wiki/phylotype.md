@@ -46,6 +46,10 @@ Opening final.tx.list you would see the output as:
     
 ## Options
 
+### count
+
+The count option allows you to provide a count file associated with your taxonomy file. 
+
 ### label
 
 The labels count up from the leaves to the root of the phylotree. There
@@ -89,9 +93,6 @@ Opening final.tx.list you would see the output as:
 Level 1 was level 4 without the cutoff, but now the most specific
 taxonomy given has changed since we truncated the tree.
 
-### count
-
-The count option allows you to provide a count file associated with your taxonomy file. 
 
 ### name - not recommended
 
