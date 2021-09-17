@@ -12,7 +12,7 @@
     - title: Download
       external_url: "https://github.com/mothur/mothur/releases/latest"
     - title: Workshops
-      url: "wiki/workshops"
+      external_url: "https://riffomonas.org/workshops"
 - title: "Blog"
   url: "blog"
 - title: "Forum"
