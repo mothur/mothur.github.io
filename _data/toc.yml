@@ -11,8 +11,8 @@
       url: "wiki/analysis_examples"
     - title: Download
       external_url: "https://github.com/mothur/mothur/releases/latest"
-    - title: Workshops
-      external_url: "https://riffomonas.org/workshops"
+- title: Workshops
+  external_url: "https://riffomonas.org/workshops"
 - title: "Blog"
   url: "blog"
 - title: "Forum"
