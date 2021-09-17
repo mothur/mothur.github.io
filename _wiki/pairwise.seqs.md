@@ -101,6 +101,13 @@ distances. The actual cutoff used by the command is 0.005 higher than
 the value that is set to allow for rounding in the [ clustering
 steps](/wiki/cluster#precision).
 
+### kmercutoff
+The kmercutoff parameter allows you to specify maximum kmer distance. The kmercutoff is used to reduce the processing time by avoiding the aligning and distance calculations for sequences with a kmer distance above the cutoff. Kmer distance are calculated using methods described here, Edgar, R. C. (2004). Muscle: a multiple sequence alignment method with reduced time and space complexity. BMC Bioinformatics, 5:113. The defaults vary based on the cutoff selected. 
+Cutoff <= 0.05 -> kmerCutoff = -1.0, cutoff 0.05 - 0.15 -> kmerCutoff = -0.50, cutoff 0.15-0.25 -> kmerCutoff = -0.25, cutoff > 0.25 -> kmerCutoff = -0.10.
+
+### ksize
+The ksize parameter allows you to specify the kmer size for calculating the kmer distance.  The default is 7.
+
 ### processors
 
 The processors option will allow you to multiple processors to calculate
@@ -192,5 +199,4 @@ fasta file.
     [\#468](https://github.com/mothur/mothur/issues/468)
 -   1.43.0 - Improves speed of dist.seqs and
     pairwise.seqs.[\#653](https://github.com/mothur/mothur/issues/653)
-
-
+-   1.46.0 - Improves speed of pairwise.seqs by up to 99%, using kmer distance cutoffs.[\#763](https://github.com/mothur/mothur/issues/763)

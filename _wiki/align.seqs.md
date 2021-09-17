@@ -354,3 +354,4 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
 -   1.43.0 Improves speed and resource management for align.seqs
     command. [\#647](https://github.com/mothur/mothur/issues/647)
 -   1.45.0 Fixes align.seqs segfault.
+-   1.46.0 Removes duplicate column headers for align.report [\#785](https://github.com/mothur/mothur/issues/785)

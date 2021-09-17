@@ -99,6 +99,6 @@ The resulting names would look like: F3D9_21.
     [\#132](https://github.com/mothur/mothur/issues/132)
 -   1.42.0 - Adds taxonomy parameter
 -   1.45.0 - Rework of command function
-. 
+-   1.46.0 - Rework of rename.seqs file option. [\#772](https://github.com/mothur/mothur/issues/772) 
 
 

@@ -32,6 +32,10 @@ The rdiffs parameter is used to allow differences in the reverse
 primers. rdiffs is maximum number of differences to the reverse primer
 sequence, default=0.
 
+### checkorient
+
+The checkorient parameter will look for the reoriented and reverse compliment of the primers if the primers are not found. The default is true.
+
 ### name && group && count && taxonomy
 
 If you apply **pcr.seqs** as we have in the previous sections and then
@@ -111,5 +115,4 @@ available.
     [\#522](https://github.com/mothur/mothur/issues/522)
 -   1.42.0 - Bug Fix: Fixes file extensions of output files in pcr.seqs.
 -   1.42.0 - Bug Fix: Fixes **pcr.seqs** end issue with keepdots=f.
-
-
+-   1.46.0 - Adds checkorient parameter. Change Includes functions to reorient and reverse unpaired primers. [\#768](https://github.com/mothur/mothur/issues/768)

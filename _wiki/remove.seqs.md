@@ -203,3 +203,4 @@ contigsreport file.
 -   1.44.0 - Fixes bug with **remove.seqs** not removing empty groups from
     the count table.
     [\#675](https://github.com/mothur/mothur/issues/675)
+-   1.46.0 - Adds warning in remove.seqs for dereplicate. See this [dereplicate example](http://mothur.org/wiki/chimera_dereplicate_example/) for detailed explanation.

@@ -10,8 +10,10 @@ fasta](/wiki/fasta_file), [ name](/wiki/name_file), [
 group](/wiki/group_file), [ list](/wiki/list_file), [
 count](/wiki/Count_File) or [align.report file](/wiki/align.report_file) to this command and mothur will
 generate new files for each of those containing only the selected
-sequences. To complete this tutorial, you are encouraged to obtain the [
-AbRecovery](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) dataset.
+sequences. This tutorial uses the data files in [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip) 
+and [mothur-formatted version of the RDP training set
+    (v.9)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.pds.zip).
+
 
 
 ## Default Settings
@@ -24,28 +26,28 @@ one or more taxon names. The command will generate a \*.pick.\* file.
 To generate an taxonomy file, let's first run
 [classify.seqs](/wiki/classify.seqs):
 
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=silva.nogap.fasta, taxonomy=silva.bacteria.silva.tax)
-    mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;)
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;)
 
-This generates abrecovery.silva.pick.taxonomy a file containing the 106
+This generates final.pick.taxonomy a file containing the 1439
 sequences from Bacteria;Firmicutes;
 
 You can select sequences from multiple taxa by separating them with
 dashes. Example:
 
-     mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;-Bacteria;Bacteroidetes;)
+     mothur > get.lineage(taxonomy=taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;-Bacteria;Bacteroidetes;)
 
-This generates abrecovery.silva.pick.taxonomy a file containing the 187
+This generates final.pick.taxonomy a file containing the 2311
 sequences from Bacteria;Firmicutes; or Bacteria;Bacteroidetes;
 
 You may enter your taxon names with confidence scores, doing so will get
 only those sequences that belong to the taxonomy and whose confidence
 scores is above the scores you give.
 
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=silva.nogap.fasta, taxonomy=silva.bacteria.silva.tax)
-    mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria(100);Firmicutes(90);)
-
-This generates abrecovery.silva.pick.taxonomy a file containing the 104
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria(100);Firmicutes(90);)
+    
+This generates final.pick.taxonomy a file containing the 1386
 sequences from Bacteria;Firmicutes; whose confidence scores are at 100
 percent for Bacteria and at or above 90 for Firmicutes.
 
@@ -54,29 +56,69 @@ percent for Bacteria and at or above 90 for Firmicutes.
 First we need to find the consensus taxonomies for each OTU with the
 [classify.otu](/wiki/classify.otu) command:
 
-    mothur > classify.otu(list=final.an.list, name=final.names, taxonomy=final.taxonomy)
-    mothur > get.lineage(constaxonomy=final.an.0.03.cons.taxonomy, list=final.an.list, taxon=Bacteria;Firmicutes;, label=0.03)
+    mothur > classify.otu(list=final.opti_mcc.list, count=final.count_table, taxonomy=final.taxonomy)
+    mothur > get.lineage(constaxonomy=final.opti_mcc.0.03.cons.taxonomy, list=final.opti_mcc.list, taxon=Bacteria;Firmicutes;, label=0.03)
 
-This generates final.an.0.03.pick.list containing the 401 OTUs that
+This generates final.opti_mcc.0.03.pick.list containing the 339 OTUs that
 classified to Bacteria;Firmicutes;.
 
 ## fasta option
 
 To use the fasta option, follow this example:
 
-    mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;, fasta=abrecovery.fasta)
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, fasta=final.fasta)
 
-This generates the file abrecovery.pick.fasta, which contains only
+This generates the file final.pick.fasta, which contains only
 sequences from Bacteria;Firmicutes;
 
-## name option
+## count
+
+The [ count](/wiki/Count_File) file is used to represent the number of duplicate sequences for a
+given representative sequence. It can also contain group information.
+
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, count=final.count_table)
+
+## list 
+
+To use the list option, follow this example:
+
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, list=final.opti_mcc.list)
+
+This generates the file final.opti_mcc.pick.list, which contains only
+sequences from Bacteria;Firmicutes;
+
+## constaxonomy
+
+If you provide a constaxonomy file, mothur will select the OTUs from a
+shared or list file that are assigned to the requested taxon. The
+constaxonomy parameter requires a list or shared file.
+
+    mothur > get.lineage(constaxonomy=final.opti_mcc.0.03.cons.taxonomy, shared=final.opti_mcc.shared, taxon=Bacteria;Firmicutes;, label=0.03)
+
+or
+
+    mothur > get.lineage(constaxonomy=final.opti_mcc.0.03.cons.taxonomy, list=final.opti_mcc.list, taxon=Bacteria;Firmicutes;, label=0.03)
+
+## alignreport
+
+To use the alignreport option, follow this example:
+
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, alignreport=final.align.report)
+
+This generates the file final.pick.align.report, which contains
+only sequences from Bacteria;Firmicutes;
+
+## name - not recommended
 
 To use the name option, follow this example:
 
-    mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;, name=abrecovery.names)
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, name=final.names)
 
-This generates the file abrecovery.pick.names, which contains only the
+This generates the file final.pick.names, which contains only the
 names of sequences from Bacteria;Firmicutes;
+
+NOTE: We DO NOT recommend using the name file. Instead we recommend using a count file.
+The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
 ### dups
 
@@ -87,52 +129,17 @@ especially useful when used with the groupfile, since for most commands
 your files can contain only the unique sequences, but the groupfile
 needs to contain all the sequences in your namefile.
 
-## group option
+## group - not recommended
 
 To use the group option, follow this example:
 
-    mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;, group=abrecovery.groups)
+    mothur > get.lineage(taxonomy=final.taxonomy, taxon=Bacteria;Firmicutes;, group=final.groups)
 
-This generates the file abrecovery.pick.groups, which contains only
+This generates the file final.pick.groups, which contains only
 sequences from Bacteria;Firmicutes;
 
-## count option
-
-The [ count](/wiki/Count_File) file is similar to the name file in
-that it is used to represent the number of duplicate sequences for a
-given representative sequence. It can also contain group information.
-
-    mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;, count=abrecovery.count_table)
-
-## alignreport option
-
-To use the alignreport option, follow this example:
-
-    mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;, alignreport=abrecovery.align.report)
-
-This generates the file abrecovery.pick.align.report, which contains
-only sequences from Bacteria;Firmicutes;
-
-## list option
-
-To use the list option, follow this example:
-
-    mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria;Firmicutes;, list=abrecovery.fn.list)
-
-This generates the file abrecovery.fn.pick.list, which contains only
-sequences from Bacteria;Firmicutes;
-
-## constaxonomy option
-
-If you provide a constaxonomy file, mothur will select the OTUs from a
-shared or list file that are assigned to the requested taxon. The
-constaxonomy parameter requires a list or shared file.
-
-    mothur > get.lineage(constaxonomy=final.an.0.03.cons.taxonomy, shared=final.an.shared, taxon=Bacteria;Firmicutes;, label=0.03)
-
-or
-
-    mothur > get.lineage(constaxonomy=final.an.0.03.cons.taxonomy, list=final.an.list, taxon=Bacteria;Firmicutes;, label=0.03)
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file.
+The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
 ## Revisions
 

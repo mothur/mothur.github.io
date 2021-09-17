@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Cluster.split.html'
 ---
 The **cluster.split** command can be used to assign sequences to OTUs and
-outputs a .list file. It splits large distance matrices into smaller
+outputs a .list file. It splits large datasets into smaller
 peices \...
 
 -   Nearest neighbor (nearest): Each of the
@@ -32,57 +32,21 @@ files into distinct groupings and the clustering of these groupings.
 
 ## Splitting your files
 
-The **cluster.split** command can split your files in 3 ways. Splitting by
-distance file, by classification, or by classification also using a
-fasta file. The splitmethod parameter allows you to specify how you want
-to split your files before you cluster, default=distance, options
-distance, classify or fasta.
-
-### Splitting by distance
-
-For the distance file method, you need only provide your distance file
-and mothur will split the file into distinct groups.
-
-    mothur > cluster.split(phylip=final.phylip.dist)
-
-or
-
-    mothur > cluster.split(column=final.dist, name=final.names)
-
-#### large
-
-The large parameter allows you to indicate that your distance matrix is
-too large to fit in RAM. The default value is false.
-
-    mothur > cluster.split(phylip=final.phylip.dist, large=T)
-
-### Splitting by classification
-
-For the classification method, you need to provide your distance file
-and taxonomy file, and set the splitmethod to classify. You will also
-need to set the taxlevel you want to split by. mothur will split the
-sequences into distinct taxonomy groups, and split the distance file
-based on those groups.
-
-    mothur > cluster.split(column=final.dist, name=final.names, taxonomy=final.taxonomy, splitmethod=classify)
-
-### Splitting by classification using fasta
-
-For the classification method using a fasta file, you need to provide
-your fasta file, name file and taxonomy file. You will also need to set
+The **cluster.split** command splits your dataset into groups based the sequences classifications. You need to provide
+your fasta file, count file and taxonomy file. You will also need to set
 the taxlevel you want to split by. mothur will split the sequence into
 distinct taxonomy groups, and create distance files for each grouping.
 
-First you need to classify your sequences using the classify.seqs
-command.
-
-    mothur > cluster.split(fasta=final.fasta, name=final.names, taxonomy=final.taxonomy, splitmethod=fasta)
+    mothur > cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy)
+    
+Mothur can cluster **both** aligned and unaligned sequences using the cluster.split command. 
+The splitting process will use the dist.seqs command to calculate the distance files for aligned reads, and
+pairwise.seqs to calculate the distance matrices from unaligned reads.
 
 #### taxonomy
 
 The taxonomy parameter allows you to enter the taxonomy file for your
-sequences, this is only valid if you are using splitmethod=classify or
-fasta.
+sequences and is required.
 
 #### taxlevel
 
@@ -98,7 +62,7 @@ The cluster parameter allows you to indicate whether you want to run the
 clustering or just split the distance matrix, default=T. The cluster=f
 option is used with the file option, see below.
 
-    mothur > cluster.split(fasta=final.fasta, name=final.names, taxonomy=final.taxonomy, splitmethod=fasta, taxlevel=4, cluster=f)
+    mothur > cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy, taxlevel=4, cluster=f)
 
 ## Clustering
 
@@ -112,7 +76,7 @@ that you may be able to use all your processors for the splitting step,
 but have to reduce them for the cluster step due to RAM constraints. For
 example:
 
-    cluster.split(fasta=final.fasta, name=final.names, taxonomy=final.taxonomy, taxlevel=4, cluster=f, processors=8) 
+    cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy, taxlevel=4, cluster=f, processors=8) 
     cluster.split(file=final.file, processors=4)
 
 This allows your to maximize your processors during the splitting step.
@@ -164,8 +128,7 @@ dummy sequence names
     AA1238 AA1238,AA1238.1
     ...
 
-A count or name file is not required (unless you are using the column=
-option), but depending on the data set to be analyzed, could
+A count or name file is required and depending on the data set to be analyzed, could
 significantly accelerate the processing time of downstream calculations.
 In this simple example, the final dataset contains 51474 sequences. The
 distance matrix in the file final.phylip.dist is a lower triangle matrix
@@ -175,9 +138,9 @@ considerably different analysis than if you used the entire 51474
 sequence data set. Considering the frequency of sequences is critical
 for pretty much every analysis in mothur, we want to use the name or
 count file to artificially inflate the matrix to its full size. In this
-case we use the namefile option:
+case we use the count file option:
 
-    mothur > cluster.split(phylip=final.phylip.dist, name=final.names)
+    mothur > cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy)
 
 mothur remembers that the distances for the reference sequence also
 apply to all of the sequences listed in the second column. Using a name
@@ -209,7 +172,7 @@ count file in downstream analysis with the list file.
     GQY1XT001CPCVN 2837
      ...
 
-    mothur > cluster.split(phylip=final.phylip.dist, count=final.count_table, taxonomy=final.taxonomy, taxlevel=4)
+    mothur > cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy)
 
     label  cutoff  tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
     0.03   0.03    31138   7044624 7501    21302   0.5938  0.9989  0.8059  0.997   0.1941  0.9959  0.6898  0.6838
@@ -293,7 +256,7 @@ follows: vsearch=/usr/bin/vsearch.
 If you want greater precision, there is a precision option in the
 cluster() command:
 
-    mothur > cluster.split(column=final.dist, count=final.count_table, method=average,  precision=1000, cutoff=0.10)
+    mothur > cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy, method=average,  precision=1000, cutoff=0.10)
 
     The final.an.unique_list.list file will look like:
 
@@ -359,7 +322,7 @@ from 0.003.
 You may notice that if you run the same command multiple times for the
 same dataset you might get slightly different out for some distances:
 
-    mothur > cluster.split(column=final.dist, count=final.count_table)
+    mothur > cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy)
      
     label  cutoff  tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
     0.03   0.03    30772   7052222 7538    21574   0.5879  0.9989  0.8032  0.997   0.1968  0.9959  0.6852  0.6789
@@ -424,3 +387,7 @@ The variability is caused by the randomization of the sequences.
     vsearch executable.
     [\#682](https://github.com/mothur/mothur/issues/682)
 -   1.45.0 Updates vsearch to 2.16.0. https://github.com/torognes/vsearch/releases/tag/v2.16.0
+-   1.46.0 Adds ability to cluster unaligned sequences in cluster.split. [\#763](https://github.com/mothur/mothur/issues/763)
+-   1.46.0 Reduces time of cluster.split through improvements in the splitting process. [\#778](https://github.com/mothur/mothur/issues/778)
+-   1.46.0 Removes split by distance option from cluster.split.
+-   1.46.0 Fixes bug with OTU priority printing with file option
