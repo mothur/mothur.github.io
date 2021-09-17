@@ -4,97 +4,234 @@ tags: 'commands'
 redirect_from: '/wiki/Get.groups.html'
 ---
 The **get.groups** command selects sequences from a
-specific group or set of groups from the following file types: fasta,
-name, group, list, taxonomy. To complete this analysis, you need to
-download the folder compressed in the [
-Abrecovery.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) and [
-Abrecovery.accnosgroups.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.accnosgroups.zip).
-
+specific group or set of groups from the following file types: fasta, count, shared,
+list, taxonomy, phylip, column, design, name and group. 
+To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip) 
 
 ## Default Settings
 
-The group or count parameter is required, unless you have a current
-group or count file, or are using a shared file. The command will
+The count parameter is required, unless you have a current count file, or are using a shared file. The command will
 generate a \*.pick.\* file.
 
-    mothur > get.groups(group=abrecovery.groups, groups=B-C)
-
-or
-
-    mothur > get.groups(count=abrecovery.count_table, groups=B-C)
+    mothur > get.groups(count=final.count_table, groups=F3D0-F3D1-F3D8)
 
 or you may wish to list your groups in a file instead of manually typing
 them. This can be done by using an accnos file.
+ 
+    mothur > get.groups(count=final.count_table, accnos=final.groupsToRemove.accnos) 
 
-    mothur > get.groups(group=abrecovery.groups, accnos=abrecovery.accnosgroups) 
+final.groupsToRemove.accnos looks like:
 
-or
+    F3D0
+    F3D1
+    F3D8
 
-    mothur > get.groups(count=abrecovery.count_table, accnos=abrecovery.accnosgroups) 
 
-Both commands will output a new abrecovery.pick.groups containing the
-158 sequences in groups B or C.
+Both commands will output the file final.pick.count_table containing the 569 unique sequences that represent the
+15096 sequences in groups F3D0, F3D1 or F3D8.
 
 ## Options
 
-### fasta option
+### fasta
 
 To use the fasta option, follow this example:
 
-    mothur > get.groups(group=abrecovery.groups, groups=B-C, fasta=abrecovery.fasta)
+    mothur > get.groups(count=final.count_table, fasta=final.fasta, groups=F3D0-F3D1-F3D8)
 
-This generates the file abrecovery.pick.fasta, which contains the
-following lines:
+This generates the file final.pick.fasta as well as the final.pick.count_table with the same sequences. 
+If you open the final.pick.fasta file you will see something like:
 
-    >AY457831
-    CCCTTAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGAGCGAGAGGAGGTTTAC...
-    >AY457830
-    GCCCTTAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGGAGCTTAGAGAGCTTG...
-    >AY457829
-    CCCTTAGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGAAGCACTTTGATCGATT...
-    >AY457828
-    GCCCTTAGAGTTTGATCCTGGCTCAGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGGATCCATCAAGCTTG...
-    >AY457827
-    CCCTTAGAGTTTGATCCTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATGGTCTTAGCT...
-    >AY457826
-    GCCCTTAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGAGCGAGAGAGAGCTTG...
-    >AY457825
-    CCCTTAGAGTTTGATCCTGGCTCAGGATGAACGCTAGCTACAGGCTTAACACATGCAAGTCGAGGGGCAGCATTTTAGTTTGC...
+    >M00967_43_000000000-A3JHG_1_2103_24256_12640
+    TAC--GT-AG-GGG--GCG-A-G-C-G-T-T--GT-C-CGG-AA--TG-A-C-T--GG-GC--GT-A-AA-GG-GA-GT-G-TA-GGC-G-G-C-....
+    >M00967_43_000000000-A3JHG_1_1101_6929_7655
+    TAC--GG-AG-GAT--GCG-A-G-C-G-T-T--AT-C-CGG-AT--TT-A-T-T--GG-GT--TT-A-AA-GG-GT-GC-G-TA-GGC-G-G-T-...
+    >M00967_43_000000000-A3JHG_1_2110_20081_2854
+    TAC--GT-AG-GGG--GCA-A-G-C-G-T-T--AT-C-CGG-AT--TC-A-C-T--GG-GC--GT-A-AA-GG-GA-GC-G-CA-GGC-G-G-C-...
+    >M00967_43_000000000-A3JHG_1_2103_6640_14822
+    TAC--GT-AG-GGG--GCA-A-G-C-G-T-T--AT-C-CGG-AT--TT-A-C-T--GG-GT--GT-A-AA-GG-GA-GC-G-TA-GGC-G-G-C-...
+    >M00967_43_000000000-A3JHG_1_1105_23929_25607
+    ACC--GG-AG-GAT--GCG-A-G-C-G-T-T--AT-C-CGG-AT--TT-A-T-T--GG-GT--TT---AA-GG-GT-GC-G-TA-GGC-G-G-G-...
+    >M00967_43_000000000-A3JHG_1_1110_13542_25768
+    TAC--GT-AG-GGG--GCA-A-G-C-G-T-T--AT-C-CGG-AT--TT-A-C-T--GG-GT--GT-A-AA-GG-GA-GC-G-TA-GAC-G-G-C-...
     ...
 
-as well as a abrecovery.pick.groups with the same sequences.
+### list
+
+To use the list option, follow this example:
+
+    mothur > get.groups(count=final.count_table, list=final.opti_mcc.list, groups=F3D0-F3D1-F3D8)
+
+This generates the file final.opti_mcc.0.03.pick.list, which contains the 256 otus containing sequences from the groups F3D0, F3D1 or F3D8.
+
+    label	numOtus	Otu001	Otu002	Otu003	Otu004	Otu005	Otu006	Otu007	Otu008	Otu009	Otu010	Otu011	...
+    0.03	256	M00967_43_000000000-A3JHG_1_2101_13320_3436,M00967_43_000000000-A3JHG_1_2114_4499_18914,M00967_43_000000000-_10834_8009,M00967_43_000000000-0 ...
+
+as well as a final.pick.count_table with the same sequences.
+
+### taxonomy
+
+To use the taxonomy option, follow this example:
+
+    mothur > get.groups(count=final.count_table, taxonomy=final.taxonomy, groups=F3D0-F3D1-F3D8)
+
+This generates the file final.pick.taxonomy, which looks like:
+
+    M00967_43_000000000-A3JHG_1_2108_22189_18381	Bacteria(100);"Proteobacteria"(100);Gammaproteobacteria(100);Xanthomonadales(100);Xanthomonadaceae(100);Stenotrophomonas(81);
+    M00967_43_000000000-A3JHG_1_1106_24198_4737	Bacteria(100);Bacteria_unclassified(100);Bacteria_unclassified(100);Bacteria_unclassified(100);Bacteria_unclassified(100);Bacteria_unclassified(100);
+    M00967_43_000000000-A3JHG_1_1105_27296_22083	Bacteria(100);Firmicutes(100);Clostridia(98);Clostridiales(98);Lachnospiraceae(97);Lachnospiraceae_unclassified(97);
+    M00967_43_000000000-A3JHG_1_2102_12696_27241	Bacteria(100);Firmicutes(96);Clostridia(96);Clostridiales(96);Lachnospiraceae(96);Lachnospiraceae_unclassified(96);
+    M00967_43_000000000-A3JHG_1_2108_22647_16398	Bacteria(100);Firmicutes(91);Clostridia(91);Clostridiales(91);Ruminococcaceae(90);Ruminococcaceae_unclassified(90);
+    M00967_43_000000000-A3JHG_1_2107_14096_15016	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(98);Lachnospiraceae_unclassified(98);
+    M00967_43_000000000-A3JHG_1_1106_17362_26015	Bacteria(100);"Actinobacteria"(100);Actinobacteria(100);Coriobacteriales(100);Coriobacteriaceae(100);Enterorhabdus(100);
+    M00967_43_000000000-A3JHG_1_2109_9416_24199	Bacteria(100);Firmicutes(99);Clostridia(99);Clostridiales(98);Lachnospiraceae(96);Lachnospiraceae_unclassified(96);
+    ...
+
+as well as a final.pick.count_table with the same sequences.
+
+### shared
+
+To use the shared option, follow this example:
+
+    mothur > get.groups(shared=final.opti_mcc.shared, groups=F3D0-F3D1-F3D8)
+
+This generates the file final.opti_mcc.0.03.pick.shared, which contains
+the following lines:
+
+    label	Group	numOtus	Otu001	Otu002	Otu003	Otu004	Otu005	Otu006	Otu007	Otu008	Otu009	Otu010	Otu011	Otu012	
+    0.03	F3D0	256	499	306	394	403	632	356	168	164	136	19	27	110	52	104	84	78	35	57	61	37	285	32	59	147	64	67	...
+    0.03	F3D1	256	351	311	189	64	73	117	127	174	83	111	53	35	115	252	287	0	7	90	27	53	59	14	26	57	60	94	...
+    0.03	F3D8	256	236	309	295	128	2	174	547	278	181	15	74	18	129	50	43	6	4	18	14	108	49	6	58	55	51	35	...
+
+You can see that some OTU's were entirely eliminated because they do not contain sequences from groups F3D0, F3D1 or F3D8.
+
+### design
+
+To use the design option, follow this example:
+
+    mothur > get.groups(shared=final.opti_mcc.shared, design=mouse.time.design, groups=F3D0-F3D1-F3D8)
+
+mouse.time.design looks like:
+
+    group	treatment
+    F3D0   Early
+    F3D1   Early
+    F3D141 Late
+    F3D142 Late
+    F3D143 Late
+    F3D144 Late
+    F3D145 Late
+    F3D146 Late
+    F3D147 Late
+    F3D148 Late
+    F3D149 Late
+    F3D150 Late
+    F3D2   Early
+    F3D3   Early
+    F3D5   Early
+    F3D6   Early
+    F3D7   Early
+    F3D8   Early
+    F3D9   Early
+ 
+ The resulting mouse.time.pick.design file will look like:
+ 
+    group	treatment
+    F3D0	Early
+    F3D1	Early
+    F3D8	Early
+
+
+### sets
+
+The sets parameter allows you to specify which of the sets in your
+designfile you would like to select. You can separate set names with
+dashes. If you want to select all the groups in the Early treatment, try this:
+
+    mothur > get.groups(shared=final.opti_mcc.shared, design=mouse.time.design, sets=Early)
+
+The resulting mouse.time.pick.design file will look like:
+
+    group	treatment
+    F3D0	Early
+    F3D1	Early
+    F3D2	Early
+    F3D3	Early
+    F3D5	Early
+    F3D6	Early
+    F3D7	Early
+    F3D8	Early
+    F3D9	Early
+    
+And the shared file will look like:
+
+    label	Group	numOtus	Otu001	Otu002	Otu003	Otu004	Otu005	Otu006	Otu007	Otu008	Otu009 ...
+    0.03	F3D0	350	499	306	394	403	632	356	168	164	136	19	27	110	52	104	84	78	35	57	61	...
+    0.03	F3D1	350	351	311	189	64	73	117	127	174	83	111	53	35	115	252	287	0	7	90	27	...
+    0.03	F3D2	350	3076	1439	1065	451	148	410	354	1222	572	60	306	143	308	550	337	...
+    0.03	F3D3	350	831	543	400	187	23	213	448	398	268	175	221	65	84	16	47	22	13	328	89	...
+    0.03	F3D5	350	278	235	236	148	20	137	142	193	191	67	115	66	45	83	78	29	12	13	40	...
+    0.03	F3D6	350	902	608	507	381	12	356	501	250	218	48	128	59	392	72	54	0	6	66	34	...
+    0.03	F3D7	350	576	449	385	294	9	235	517	223	251	13	117	43	106	25	35	2	7	37	15	...
+    0.03	F3D8	350	236	309	295	128	2	174	547	278	181	15	74	18	129	50	43	6	4	18	14	...
+    0.03	F3D9	350	435	374	429	189	5	255	610	419	203	28	97	22	166	98	94	0	8	39	33	...
+
 
 ### phylip
 
 The phylip option is used to specify the name of the [ phylip
 formatted](/wiki/phylip-formatted_distance_matrix) distance file
-you would like to select distances from.
+you would like to select distances from. To generate the .dist file, run the following:
 
-The final.tre1.weighted.ave.dist file contains:
+    mothur > dist.shared(shared=final.opti_mcc.shared, subsample=t)
 
-    11
-    F003D000   
-    F003D002   0.219014    
-    F003D004   0.405823    0.285439    
-    F003D006   0.311126    0.227599    0.197012    
-    F003D008   0.246074    0.221351    0.341801    0.220774    
-    F003D142   0.381307    0.350587    0.175825    0.199702    0.331989    
-    F003D144   0.380843    0.3943  0.350766    0.278915    0.37678 0.239005    
-    F003D146   0.277258    0.300362    0.331904    0.242542    0.239576    0.246918    0.160718    
-    F003D148   0.308621    0.299937    0.303805    0.254025    0.27361 0.246377    0.15778 0.120112    
-    F003D150   0.315133    0.307792    0.206429    0.209389    0.27078 0.179998    0.260263    0.217917    0.195339    
-    MOCK.GQY1XT001 0.64778 0.69245 0.769817    0.703035    0.61892 0.715547    0.662322    0.613735    0.648762    0.716918    
+The final.opti_mcc.thetayc.0.03.lt.ave.dist file contains:
 
-    mothur > get.dists(phylip=final.tre1.weighted.ave.dist, accnos=final.test.accnos)
+    19
+    F3D0
+    F3D1	0.474922
+    F3D141	0.210618	0.536193
+    F3D142	0.245883	0.522963	0.159277
+    F3D143	0.178547	0.587579	0.075820	0.111769
+    F3D144	0.245769	0.614136	0.150278	0.164039	0.081844
+    F3D145	0.240859	0.592020	0.113041	0.099472	0.069555	0.034270
+    F3D146	0.193530	0.559788	0.104369	0.182698	0.064180	0.103431	0.097991
+    F3D147	0.231679	0.593135	0.152776	0.105287	0.081308	0.054359	0.050777	0.122631
+    F3D148	0.214540	0.587721	0.067956	0.125263	0.048796	0.090400	0.075236	0.100006	0.085041
+    F3D149	0.213746	0.516693	0.037621	0.148458	0.066224	0.129811	0.105153	0.083807	0.134928	0.068088
+    F3D150	0.239095	0.565672	0.122289	0.225027	0.124343	0.224982	0.184366	0.123207	0.206566	0.189054	0.101765
+    F3D2	0.486915	0.388567	0.451548	0.422166	0.528051	0.530900	0.486701	0.565963	0.496491	0.524713	0.469993	0.531830
+    F3D3	0.508477	0.460610	0.383161	0.325817	0.463416	0.462134	0.389007	0.498920	0.436586	0.444289	0.386265	0.458765	0.168128
+    F3D5	0.396747	0.287033	0.347348	0.377409	0.434369	0.478551	0.425063	0.422747	0.468263	0.440300	0.337063	0.340654	0.322947	0.299151
+    F3D6	0.426449	0.406230	0.361172	0.249032	0.409600	0.443616	0.362942	0.431433	0.396574	0.440542	0.357365	0.358107	0.200769	0.156920	0.237299
+    F3D7	0.485061	0.512503	0.357344	0.257352	0.418828	0.444764	0.338009	0.448287	0.408318	0.429156	0.369801	0.375126	0.271915	0.125416	0.296154	0.093075
+    F3D8	0.534782	0.447580	0.458594	0.385501	0.517817	0.598668	0.503624	0.523409	0.575409	0.523240	0.451311	0.461517	0.485066	0.320019	0.273138	0.260956	0.217905
+    F3D9	0.485800	0.378642	0.407103	0.359453	0.477310	0.563293	0.469351	0.485860	0.539667	0.485885	0.404651	0.416494	0.380421	0.266538	0.190510	0.192757	0.191119	0.056494
 
-creates a final.tre1.weighted.ave.pick.dist file:
 
-    5
-    F003D000   
-    F003D002   0.219014    
-    F003D004   0.405823    0.285439    
-    F003D142   0.381307    0.350587    0.175825    
-    F003D144   0.380843    0.3943  0.350766    0.239005    
+To select the distances for the Early treatment, run the following:
+
+    mothur > get.groups(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design, sets=Early)
+
+creates a final.opti_mcc.thetayc.0.03.lt.ave.pick.dist file:
+
+    9
+    F3D0	
+    F3D1	0.474922	
+    F3D2	0.486915	0.388567	
+    F3D3	0.508477	0.46061	0.168128	
+    F3D5	0.396747	0.287033	0.322947	0.299151	
+    F3D6	0.426449	0.40623	0.200769	0.15692	0.237299	
+    F3D7	0.485061	0.512503	0.271915	0.125416	0.296154	0.093075	
+    F3D8	0.534782	0.44758	0.485066	0.320019	0.273138	0.260956	0.217905	
+    F3D9	0.4858	0.378642	0.380421	0.266538	0.19051	0.192757	0.191119	0.056494	
+    
+Alternatively, you can select distances between sequences. To generate the distance matrix, run the following:
+
+    mothur > dist.seqs(fasta=final.fasta, output=lt)
+    
+This will create the final.phylip.dist file. You can select the distances related to sequences from groups F3D0, F3D1 or F3D8, as follows:
+
+    mothur > get.groups(phylip=final.phylip.dist, count=final.count_table, groups=F3D0-F3D1-F3D8)
 
 ### column
 
@@ -102,116 +239,84 @@ The column option is used to specify the name of the [ column
 formatted](/wiki/column-formatted_distance_matrix) distance file
 you would like to select distances from.
 
-    U68590 U68589 0.67
-    U68591 U68589 0.7559
-    U68591 U68590 0.8011
-    U68592 U68589 0.6585
-    U68592 U68590 0.6528
-    U68592 U68591 0.7849
-    U68593 U68589 0.6953
-    U68593 U68590 0.6383
-    U68593 U68591 0.7741
-    U68593 U68592 0.6041
-    U68594 U68589 0.7109
-    U68594 U68590 0.7233
+    mothur > dist.shared(shared=final.opti_mcc.shared, subsample=t, output=column)
+
+The final.opti_mcc.thetayc.0.03.column.ave.dist file contains:
+
+    F3D1	F3D0	0.474922
+    F3D141	F3D0	0.210618
+    F3D141	F3D1	0.536193
+    F3D142	F3D0	0.245883
+    F3D142	F3D1	0.522963
+    F3D142	F3D141	0.159277
+    F3D143	F3D0	0.178547
+    F3D143	F3D1	0.587579
+    F3D143	F3D141	0.075820
+    F3D143	F3D142	0.111769
+    F3D144	F3D0	0.245769
+    F3D144	F3D1	0.614136
+    F3D144	F3D141	0.150278
+    F3D144	F3D142	0.164039
+    F3D144	F3D143	0.081844
+    F3D145	F3D0	0.240859
+    F3D145	F3D1	0.592020
     ...
+    
+To select the distances for the Early treatment, run the following:
 
-If you only want sequences U68589, U68590 and U68592.
+    mothur > get.groups(column=final.opti_mcc.thetayc.0.03.column.ave.dist, design=mouse.time.design, sets=Early)
 
-    mothur > get.dists(column=amazon.dist, accnos=amazon.test.accnos)
-
-amazon.pick.dist contains:
-
-    U68590 U68589  0.67
-    U68592 U68589  0.6585
-    U68592 U68590  0.6528
-
-### name option
-
-To use the name option, follow this example:
-
-    mothur > get.groups(fasta=abrecovery.fasta, group=abrecovery.groups, groups=B-C, name=abrecovery.names)
-
-This generates the file abrecovery.pick.names, which contains the
-following lines:
-
-    AY457721   AY457721
-    AY457733   AY457733
-    AY457723   AY457723
-    AY457741   AY457741
-    AY457686   AY457686
-    AY457758   AY457758
-    AY457693   AY457693
-    AY457706   AY457706
-    AY457674   AY457674
+creates a final.opti_mcc.thetayc.0.03.column.ave.pick.dist file:
+    
+    F3D1	F3D0	0.474922
+    F3D2	F3D0	0.486915
+    F3D2	F3D1	0.388567
+    F3D3	F3D0	0.508477
+    F3D3	F3D1	0.46061
+    F3D3	F3D2	0.168128
+    F3D5	F3D0	0.396747
+    F3D5	F3D1	0.287033
+    F3D5	F3D2	0.322947
+    F3D5	F3D3	0.299151
+    F3D6	F3D0	0.426449
+    F3D6	F3D1	0.40623
+    F3D6	F3D2	0.200769
+    F3D6	F3D3	0.15692
+    F3D6	F3D5	0.237299
+    F3D7	F3D0	0.485061
     ...
+    
+Alternatively, you can select distances between sequences. To generate the distance matrix, run the following:
 
-as well as a abrecovery.pick.groups with the same sequences.
+    mothur > dist.seqs(fasta=final.fasta, cutoff=0.03)
+    
+This will create the final.dist file. You can select the distances related to sequences from groups F3D0, F3D1 or F3D8, as follows:
 
-### list option
+    mothur > get.groups(phylip=final.dist, count=final.count_table, groups=F3D0-F3D1-F3D8)
 
-To use the list option, follow this example:
+You may see a warning similar to:
 
-    mothur > get.groups(group=abrecovery.groups, groups=B-C, list=abrecovery.fn.list)
+    Selected 15096 sequences from your count file.
+    [WARNING]: Your accnos file contains 569 groups or sequences, but I only found 476 of them in the column file.
+    Selected 476 groups or sequences from your column file.
 
-This generates the file abrecovery.fn.pick.list, which contains the
-following lines:
+This warning can be disregarded. When you use a cutoff with the dist.seqs command, sequences with distance above the cutoff are NOT added to the distance file. This means you can have sequences in the count file, that are not in the distance file. Mothur assumes reads missing from the distance file but present in the count file only have distances above the cutoff.
 
-    unique 157 AY457741    AY457731    AY457682    AY457729    AY457734... 
-    0.00   152 AY457741    AY457731    AY457682    AY457729    AY457734...
-    0.01   105 AY457741    AY457731    AY457682    AY457729    AY457734... 
-    0.02   66  AY457741    AY457731    AY457682    AY457729    AY457734...
-    0.03   52  AY457741    AY457731    AY457682    AY457729    AY457734... 
-    ...
+### name - not recommended
 
-as well as a abrecovery.pick.groups with the same sequences.
+The name option allows you to provide a name file associated with your group file.
 
-### taxonomy option
+We DO NOT recommend using the name file. Instead we recommend using a count file.
+The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
-To use the taxonomy option, follow this example:
+### group - not recommended
 
-    mothur > get.groups(group=abrecovery.groups, groups=B-C, taxonomy=abrecovery.silva.full.taxonomy)
+The group parameter allows you to provide a group file to use when
+selecting items from your files. 
 
-This generates the file abrecovery.silva.full.pick.taxonomy, which
-contains the following lines:
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file.
+The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
-    AY457831   Bacteria(100);Firmicutes(100);Clostridiales(100);Ruminococcus_et_rel.(100);Anaerofilum-Faecalibacterium(100);...
-    AY457830   Bacteria(100);Firmicutes(100);Clostridiales(100);Ruminococcus_et_rel.(100);Anaerofilum-Faecalibacterium(100);...
-    AY457829   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);...
-    AY457828   Bacteria(100);Actinobacteria(100);Actinomycetaceae-Bifidobacteriaceae(100);Bifidobacteriaceae(100);...
-    AY457827   Bacteria(100);Bacteroidetes-Chlorobi(100);Bacteroidetes(100);Bacteroides-Prevotella(100);Bacteroides(100);...
-    AY457826   Bacteria(100);Firmicutes(100);Clostridiales(100);Ruminococcus_et_rel.(100);Anaerofilum-Faecalibacterium(100);...
-    ...
-
-as well as a abrecovery.pick.groups with the same sequences.
-
-### shared option
-
-To use the shared option, follow this example:
-
-    mothur > get.groups(shared=abrecovery.fn.shared, groups=B-C)
-
-This generates the file abrecovery.fn.0.03.pick.shared, which contains
-the following lines:
-
-    label  Group   numOtus Otu1    Otu2    Otu4    Otu5    Otu6    Otu7    Otu8    Otu12   Otu14   Otu15   Otu16   ... 
-    0.03   B   52  0   0   0   0   0   1   1   8   1   7   1   ... 
-    0.03   C   52  1   1   1   1   1   0   0   0   7   0   1   ...
-
-You can see that some OTU's were entirely eliminated because they only
-contained sequences from group A.
-
-### design
-
-To use the design option, follow this example:
-
-    mothur > get.groups(shared=abrecovery.design, groups=B-C)
-
-### sets
-
-The sets parameter allows you to specify which of the sets in your
-designfile you would like to select. You can separate set names with
-dashes.
 
 ## Revisions
 
