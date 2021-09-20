@@ -292,7 +292,7 @@ Alternatively, you can select distances between sequences. To generate the dista
     
 This will create the final.dist file. You can select the distances related to sequences from groups F3D0, F3D1 or F3D8, as follows:
 
-    mothur > get.groups(phylip=final.dist, count=final.count_table, groups=F3D0-F3D1-F3D8)
+    mothur > get.groups(column=final.dist, count=final.count_table, groups=F3D0-F3D1-F3D8)
 
 You may see a warning similar to:
 
