@@ -11,16 +11,16 @@ To run through the example below, download [Example Data](https://mothur.s3.us-e
 ## Default Settings
 
 The count parameter is required, unless you have a current count file, or are using a shared file. The command will
-generate a \*.pick.\* file.
+generate a \*.pick.\* file. To select the groups F3D0, F3D1 and F3D8, run the following:
 
     mothur > get.groups(count=final.count_table, groups=F3D0-F3D1-F3D8)
 
 or you may wish to list your groups in a file instead of manually typing
 them. This can be done by using an accnos file.
  
-    mothur > get.groups(count=final.count_table, accnos=final.groupsToRemove.accnos) 
+    mothur > get.groups(count=final.count_table, accnos=final.groupsToSelect.accnos) 
 
-final.groupsToRemove.accnos looks like:
+final.groupsToSelect.accnos looks like:
 
     F3D0
     F3D1
