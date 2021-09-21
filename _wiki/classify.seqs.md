@@ -5,71 +5,76 @@ redirect_from: '/wiki/Classify.seqs.html'
 ---
 The **classify.seqs** command allows the user to
 use several different methods to assign their sequences to the taxonomy
-outline of their choice. Current methods include using a k-nearest
-neighbor consensus and Wang approach. Taxonomy outlines and reference
+outline of their choice. Current methods include the Wang approach, using a k-nearest
+neighbor consensus and zap. Taxonomy outlines and reference
 sequences can be obtained from the [taxonomy
 outline](/wiki/taxonomy_outline) page. The command requires that
 you provide a fasta-formatted input and database sequence file and a
-taxonomy file for the reference sequences. To complete this tutorial,
-you are encouraged to obtain the [
-AbRecovery](https://mothur.s3.us-east-2.amazonaws.com/wiki/abrecovery.zip) dataset.
+taxonomy file for the reference sequences. To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip) 
+and [mothur-formatted version of the RDP training set
+    (v.9)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.pds.zip).
 
-## Output
+## Default Settings
+
+The classify.seqs command uses reference files to assign the taxonomies of the sequences in your fasta file. 
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
 
 mothur will output two files from the **classify.seqs** command: a
 \*.taxonomy file which contains a taxonomy string for each sequence and
 a \*.tax.summary file which contains a taxonomic outline indicating the
 number of sequences that were found for your collection at each level.
-For example, abrecovery.taxonomy may look like:
+For example, final.pds.wang.taxonomy may look like:
 
-    AY457915   Bacteria(100);Firmicutes(99);Clostridiales(99);Johnsonella_et_rel.(99);Johnsonella_et_rel.(99);Johnsonella_et_rel.(91);Eubacterium_eligens_et_rel.(89);Lachnospira_pectinoschiza(80);
-    AY457914   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(95);Eubacterium_eligens_et_rel.(92);Eubacterium_eligens(84);Eubacterium_eligens(81);
-    AY457913   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Roseoburia_et_rel.(97);Roseoburia_et_rel.(97);Eubacterium_ramulus_et_rel.(90);uncultured(90);
-    AY457912   Bacteria(100);Firmicutes(99);Clostridiales(99);Johnsonella_et_rel.(99);Johnsonella_et_rel.(99);
-    AY457911   Bacteria(100);Firmicutes(99);Clostridiales(98);Ruminococcus_et_rel.(96);Anaerofilum-Faecalibacterium(92);Faecalibacterium(92);Faecalibacterium_prausnitzii(90);
-
-or
-
-    AY457915   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Johnsonella_et_rel.;Eubacterium_eligens_et_rel.;Lachnospira_pectinoschiza;
-    AY457914   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Johnsonella_et_rel.;Eubacterium_eligens_et_rel.;Eubacterium_eligens;Eubacterium_eligens;
-    AY457913   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Roseoburia_et_rel.;Roseoburia_et_rel.;Eubacterium_ramulus_et_rel.;uncultured;
-    AY457912   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;
-    AY457911   Bacteria;Firmicutes;Clostridiales;Ruminococcus_et_rel.;Anaerofilum-Faecalibacterium;Faecalibacterium;Faecalibacterium_prausnitzii;
-
+    M00967_43_000000000-A3JHG_1_2102_22092_15614	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(95);"Bacteroidales"(95);"Porphyromonadaceae"(88);"Porphyromonadaceae"_unclassified(88);
+    M00967_43_000000000-A3JHG_1_1102_8406_20325	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);Bacteroidaceae(100);Bacteroides(100);
+    M00967_43_000000000-A3JHG_1_1106_15955_6621	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Lachnospiraceae_unclassified(100);
+    M00967_43_000000000-A3JHG_1_2103_24256_12640	Bacteria(100);Bacteria_unclassified(100);Bacteria_unclassified(100);Bacteria_unclassified(100);Bacteria_unclassified(100);Bacteria_unclassified(100);
+    M00967_43_000000000-A3JHG_1_1101_6929_7655	Bacteria(100);"Bacteroidetes"(99);"Bacteroidia"(98);"Bacteroidales"(98);"Porphyromonadaceae"(95);"Porphyromonadaceae"_unclassified(95);
+    M00967_43_000000000-A3JHG_1_1105_5520_9241	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Clostridium_XlVa(87);
+    M00967_43_000000000-A3JHG_1_1112_5981_8948	Bacteria(100);"Bacteroidetes"(95);"Bacteroidia"(82);"Bacteroidales"(82);"Bacteroidales"_unclassified(82);"Bacteroidales"_unclassified(82);
+    M00967_43_000000000-A3JHG_1_2105_24795_12844	Bacteria(100);Firmicutes(96);Clostridia(94);Clostridiales(94);Lachnospiraceae(92);Lachnospiraceae_unclassified(92);
+    M00967_43_000000000-A3JHG_1_1112_18411_17052	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(98);"Bacteroidales"(98);"Porphyromonadaceae"(97);"Porphyromonadaceae"_unclassified(97);
+    M00967_43_000000000-A3JHG_1_1110_19644_17655	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(99);"Bacteroidales"(99);"Porphyromonadaceae"(92);"Porphyromonadaceae"_unclassified(92);
+    M00967_43_000000000-A3JHG_1_1110_15641_10799	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Clostridiales_unclassified(100);Clostridiales_unclassified(100);
+    M00967_43_000000000-A3JHG_1_1107_13819_9393	Bacteria(100);Firmicutes(90);Clostridia(90);Clostridiales(90);Lachnospiraceae(88);Lachnospiraceae_unclassified(88);
+    M00967_43_000000000-A3JHG_1_2110_20081_2854	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(95);Lachnospiraceae_unclassified(95);
+    ...
+    
 This output indicates the sequence identifier in the first column as
-well as it's taxonomy. In the former case, bootstrap values are
-provided. In the latter case, they are either not calculated
-(method=knn) or suppressed (method=wang, probs=F).
+well as it's taxonomy. The bootstrap values are
+provided. 
 
-The second output file, abrecovery.tax.summary may look something like
+The second output file, final.pds.wang.tax.summary may look something like
 the following:
 
-    taxlevel    rankID  taxon   daughterlevels  total  
-    0  0   Root    2   242 
-    1  0.1 Bacteria    50  242 
-    2  0.1.2   Actinobacteria  38  13  
-    3  0.1.2.3 Actinomycetaceae-Bifidobacteriaceae 10  13  
-    4  0.1.2.3.7   Bifidobacteriaceae  6   13  
-    5  0.1.2.3.7.2 Bifidobacterium_choerinum_et_rel.   8   13  
-    6  0.1.2.3.7.2.1   Bifidobacterium_angulatum_et_rel.   1   11  
-    7  0.1.2.3.7.2.1.1 unclassified    1   11  
-    8  0.1.2.3.7.2.1.1.1   unclassified    1   11  
-    9  0.1.2.3.7.2.1.1.1.1 unclassified    1   11  
-    10 0.1.2.3.7.2.1.1.1.1.1   unclassified    1   11
-    11 0.1.2.3.7.2.1.1.1.1.1.1 unclassified    1   11  
-    12 0.1.2.3.7.2.1.1.1.1.1.1.1   unclassified    1   11  
-    6  0.1.2.3.7.2.5   Bifidobacterium_longum_et_rel.  1   2       
+    taxlevel	rankID	taxon	daughterlevels	total	F3D0	F3D1	F3D141	F3D142	F3D143	F3D144	F3D145	F3D146	F3D147	F3D148	F3D149	F3D150	F3D2	F3D3	F3D5	F3D6	F3D7	F3D8	F3D9
+    0	0	Root	1	113959	6191	4652	4656	2423	2403	3452	5532	3828	12431	9465	10014	4121	15686	5199	3469	6394	4055	4253	5735
+    1	0.1	Bacteria	9	113959	6191	4652	4656	2423	2403	3452	5532	3828	12431	9465	10014	4121	15686	5199	3469	6394	4055	4253	5735
+    2	0.1.1	"Actinobacteria"	1	371	24	4	19	25	11	27	10	9	44	72	40	28	19	20	3	4	4	4	4
+    3	0.1.1.1	Actinobacteria	3	371	24	4	19	25	11	27	10	9	44	72	40	28	19	20	3	4	4	4	4
+    4	0.1.1.1.1	Actinomycetales	2	3	0	0	0	1	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0
+    5	0.1.1.1.1.1	Actinomycetaceae	1	2	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    6	0.1.1.1.1.1.1	Actinomyces	0	2	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    5	0.1.1.1.1.2	Promicromonosporaceae	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    6	0.1.1.1.1.2.1	Promicromonospora	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    4	0.1.1.1.2	Bifidobacteriales	1	237	21	0	15	23	8	20	5	3	24	60	23	16	4	15	0	0	0	0	0
+    5	0.1.1.1.2.1	Bifidobacteriaceae	1	237	21	0	15	23	8	20	5	3	24	60	23	16	4	15	0	0	0	0	0
+    6	0.1.1.1.2.1.1	Bifidobacterium	0	237	21	0	15	23	8	20	5	3	24	60	23	16	4	15	0	0	0	0	0
     ...
 
 The first column indicates the taxonomic level in the outline.
 Obviously, the Root is the highest one can go. In this case the deepest
-any of the sequences go is to level 12. The second column indicates the
+any of the sequences go is to level 6. The second column indicates the
 "pedigree" for each lineage. The third column is the name of the
 lineage. Column four indicates the number of children lineages that the
-current lineage has. Finally, the last column indicates the number of
-sequences that were found in that lineage.
+current lineage has. The fifth column indicates the number of
+sequences that were found in that lineage. Finally the remaining columns are the number of sequences in each sample.
 
-==method=wang== When finding the taxonomy of a given query sequence in
+## method
+
+### wang
+When finding the taxonomy of a given query sequence in
 the fasta file, the wang method looks at the query sequence kmer by
 kmer. The method looks at all taxonomies represented in the template,
 and calculates the probability a sequence from a given taxonomy would
@@ -82,85 +87,26 @@ replacement 1/8 of the kmers in the query and then finding the taxonomy.
 This is the method that is implemented by the RDP and is described by
 Wang et al. This is the default method in classify.seqs.
 
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax)
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
 
 or
 
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=wang)
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=wang)
 
-    Reading template taxonomy...     DONE.
-    Reading template probabilities...     DONE.
-    It took 23 seconds get probabilities. 
-    Classifying sequences from abrecovery.fasta ...
-    Classifying sequence 100
-    Classifying sequence 200
+    Reading template taxonomy...     DONE.
+    Reading template probabilities...     DONE.
+    It took 5 seconds get probabilities.
+    Classifying sequences from /Users/swestcott/Desktop/release/final.fasta ...
+    100
+    100
+    100
+    ...
+    
+    It took 21 secs to classify 2424 sequences.
+    
+### knn
 
-    It took 19 secs to classify 242 sequences.
-
-### ksize
-
-The only valid search option with the wang method is kmer and by default
-mothur uses kmer size 8. If you would like to change the kmer size you
-can use the ksize option:
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, 
-    taxonomy=silva.bacteria.silva.tax, ksize=6)
-
-### iters
-
-The iters option allows you to specify how many iterations to do when
-calculating the bootstrap confidence score for your taxonomy. The
-default is 100.
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, iters=1000)
-
-### cutoff
-
-By default, the cutoff value is set to 80. If you set cutoff=0,
-classify.seqs will return a full taxonomy for every sequence, regardless
-of the bootstrap value for that taxonomic assignment. For example,
-running with cutoff=0 will yield the following output:
-
-    AY457915   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Eubacterium_eligens_et_rel.(100);Lachnospira_pectinoschiza(100);unclassified;unclassified;unclassified;unclassified;unclassified;
-    AY457914   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Eubacterium_eligens_et_rel.(100);Eubacterium_eligens(99);Eubacterium_eligens(99);unclassified;unclassified;unclassified;unclassified;
-    AY457913   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Roseoburia_et_rel.(100);Roseoburia_et_rel.(100);Eubacterium_ramulus_et_rel.(100);uncultured(100);unclassified;unclassified;unclassified;unclassified;
-    AY457912   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(92);Eubacterium_eligens_et_rel.(92);Lachnospira_pectinoschiza(54);unclassified;unclassified;unclassified;unclassified;unclassified;
-    AY457911   Bacteria(100);Firmicutes(100);Clostridiales(100);Ruminococcus_et_rel.(100);Anaerofilum-Faecalibacterium(100);Faecalibacterium(100);Faecalibacterium_prausnitzii(100);unclassified;unclassified;unclassified;unclassified;unclassified;unclassified;
-    AY457910   Bacteria(100);Firmicutes(100);Clostridiales(100);Ruminococcus_et_rel.(100);Anaerofilum-Faecalibacterium(100);Faecalibacterium(100);Faecalibacterium_prausnitzii(100);unclassified;unclassified;unclassified;unclassified;unclassified;unclassified;
-
-You will notice that sequence AY457912 has a bootstrap value of 54% for
-the assignment to the *Lachnospira pectinoschiza*. This isn't much of a
-vote of confidence for this assignment. mothur's default is set to a
-value of 80%, which mirrors the original implementation in the Wang
-paper and the general approach to using 80% confidene in bootstrap
-values for phylogenetics.:
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, cutoff=80)
-
-    AY457915   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Eubacterium_eligens_et_rel.(100);Lachnospira_pectinoschiza(100);unclassified;unclassified;unclassified;unclassified;unclassified;
-    AY457914   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Eubacterium_eligens_et_rel.(100);Eubacterium_eligens(99);Eubacterium_eligens(99);unclassified;unclassified;unclassified;unclassified;
-    AY457913   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Roseoburia_et_rel.(100);Roseoburia_et_rel.(100);Eubacterium_ramulus_et_rel.(100);uncultured(100);unclassified;unclassified;unclassified;unclassified;
-    AY457912   Bacteria(100);Firmicutes(100);Clostridiales(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(100);Johnsonella_et_rel.(92);Eubacterium_eligens_et_rel.(92);unclassified;unclassified;unclassified;unclassified;unclassified;unclassified;
-
-You should notice two things. First, there are no bootstrap values below
-80 for any of the taxonomy assignments. Second, the bootstrap values may
-change slightly. This is acceptable as the bootstrapping is a randomized
-process. The default number of iterations is 100.
-
-### probs
-
-Sometimes you may find the output of bootstrap values with your taxonomy
-to be tedious. To get around this you can use the probs option to have
-the probabilities excluded from the output:
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, cutoff=80, probs=F)
-
-    AY457915    Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Johnsonella_et_rel.;Eubacterium_eligens_et_rel.;Lachnospira_pectinoschiza;unclassified;unclassified;unclassified;unclassified;unclassified;
-    AY457914   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Johnsonella_et_rel.;Eubacterium_eligens_et_rel.;Eubacterium_eligens;Eubacterium_eligens;unclassified;unclassified;unclassified;unclassified;
-    AY457913   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Roseoburia_et_rel.;Roseoburia_et_rel.;Eubacterium_ramulus_et_rel.;uncultured;unclassified;unclassified;unclassified;unclassified;
-    AY457912   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Johnsonella_et_rel.;Eubacterium_eligens_et_rel.;unclassified;unclassified;unclassified;unclassified;unclassified;unclassified;
-
-==method=knn== The k-Nearest Neighbor algorithm involves identifying the
+The k-Nearest Neighbor algorithm involves identifying the
 k-most similar sequences in a database that are similar to your
 sequence. By default, mothur will find the 10 most similar sequences in
 the database. Once mothur has identified the k-most similar sequences,
@@ -169,196 +115,91 @@ consensus taxonomy. mothur gives you the ability to determine the method
 that is used to find the closest matches, the value of k This
 classification method can be implemented by the following.
 
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn)
-
-    Reading in the silva.slv.taxonomy taxonomy...  DONE.
-    Generating search database...    DONE.
-    It took 6 seconds generate search database. 
-    Classifying sequence 100
-    Classifying sequence 200
-
-    It took 2 secs to classify 242 sequences.
-
-This will output the following in the abrecovery.taxonomy file:
-
-    AY457915   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;
-    AY457914   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;
-    AY457913   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Roseoburia_et_rel.;Roseoburia_et_rel.;
-    ...
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn)
 
 Note: With the knn method using a distance search, mothur will create a
-
 \.match.dist file containing the sequence name, the name of the best
 match in the template and the distance.
 
-### numwanted
-
-If you instead only want the value of k to be 3, the following command
-would be used:
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, numwanted=3)
-
-    Reading in the silva.slv.taxonomy taxonomy...  DONE.
-    Generating search database...    DONE.
-    It took 5 seconds generate search database. 
-    Classifying sequence 100
-    Classifying sequence 200
-
-    It took 2 secs to classify 242 sequences.
-
-This would produce the following output in the abrecovery.taxonomy file:
-
-    AY457915   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;
-    AY457914   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;
-    AY457913   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Roseoburia_et_rel.;Roseoburia_et_rel.;
-    ...
-
-If you are using the [phylotype](/wiki/phylotype) command as a down
-stream analysis, you probably only want to consider 1 nearest neighbor:
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, numwanted=1)
-
-This would produce the following in the abrecovery.taxonomy file:
-
-    AY457915   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Johnsonella_et_rel.;Eubacterium_eligens_et_rel.;Lachnospira_pectinoschiza;
-    AY457914   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Johnsonella_et_rel.;Eubacterium_eligens_et_rel.;Eubacterium_eligens;Eubacterium_eligens;
-    AY457913   Bacteria;Firmicutes;Clostridiales;Johnsonella_et_rel.;Johnsonella_et_rel.;Roseoburia_et_rel.;Roseoburia_et_rel.;Eubacterium_ramulus_et_rel.;uncultured;
-
-As you should be able to see, these taxonomy lines are considerably
-longer and probably should not be as trustworthy as those when you are
-considering more neighbors.
-
-===search=kmer and ksize=== By default, the k-nearest neighbor approach
-searches for nearest neighbors by kmer searching as is done in the
-[align.seqs](/wiki/align.seqs) command. The default size of kmers
-is 8, which seems to be a fairly decent choice regardless of which part
-of the 16S rRNA gene you are interested in. As we pointed out in the
-development of the [align.seqs](/wiki/align.seqs) command, kmer
-searching is superior in accuracy and speed compared to blast or suffix
-tree searching methods.
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn)
-
-or
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, search=kmer)
-
-If you would like to change the kmer size you use the ksize option:
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, search=kmer, ksize=6)
-
-===search=blast, match, mismatch, gapopen, and gapextend=== Assuming
-that you have put the blast binaries into your PATH variable, it is
-possible to use blastn to find nearest neighbors. It can be implemented
-as:
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, search=blast)
-
-You can also change the various blast-related options for match,
-mismatch, gapopen, and gapextend values:
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, search=blast, gapopen=-5, gapextend=-1)
-
-===search=suffix=== An alternative method for finding the k-nearest
-neighbors is to use a suffix tree to perform the search. Again, this is
-the same method that is available within the
-[align.seqs](/wiki/align.seqs) command. It can be implemented as:
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, search=suffix)
-
-===search=distance=== An alternative method for finding the k-nearest
-neighbors is to find the distance from the query sequence to each
-sequence in the template.
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, method=knn, search=distance)
-
-## processors
-
-The processors parameter allows you to run the command with multiple
-processors. Default processors=Autodetect number of available processors
-and use all available.
-
-    mothur > classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta, taxonomy=silva.bacteria.silva.tax, processors=2)
-     
-    Reading template taxonomy...     DONE.
-    Reading template probabilities...     DONE.
-    It took 22 seconds get probabilities. 
-    Classifying sequences from abrecovery.fasta ...
-    Classifying sequence 100
-    Classifying sequence 100
-
-    It took 11 secs to classify 242 sequences.
-
-Note that with one processor it took about 19 sec to do the actual
-classification.
-
-## name
-
-The name parameter allows you add a name file with your fasta file, if
-you enter multiple fasta files, you must enter matching name files for
-them.
+### zap
 
 ## count
 
-The [ count](/wiki/Count_File) file is similar to the name file in
-that it is used to represent the number of duplicate sequences for a
+The [ count](/wiki/Count_File) file is used to represent the number of duplicate sequences for a
 given representative sequence. It can also contain group information.
 
-## group
+## cutoff
 
-The group parameter allows you add a group file to be used to generate
-group totals in the .summary file. For example, if you ran the command
-classify.seqs(fasta=abrecovery.fasta, template=nogap.bacteria.fasta,
-taxonomy=silva.bacteria.silva.tax, group=abrecovery.groups) the summary
-file would look like:
+By default, the cutoff value is set to 80. If you set cutoff=0,
+classify.seqs will return a full taxonomy for every sequence, regardless
+of the bootstrap value for that taxonomic assignment. 
 
-    taxlevel    rankID  taxon   daughterlevels  total  A   B   C   
-    0  0   Root    2   242 84  84  74  
-    1  0.1 Bacteria    50  242 84  84  74  
-    2  0.1.2   Actinobacteria  38  13  0   13  0   
-    3  0.1.2.3 Actinomycetaceae-Bifidobacteriaceae 10  13  0   13  0   
-    4  0.1.2.3.7   Bifidobacteriaceae  6   13  0   13  0   
-    5  0.1.2.3.7.2 Bifidobacterium_choerinum_et_rel.   8   13  0   13  0   
-    6  0.1.2.3.7.2.1   Bifidobacterium_angulatum_et_rel.   1   11  0   11  0   
-    7  0.1.2.3.7.2.1.1 unclassified    1   11  0   11  0   
-    8  0.1.2.3.7.2.1.1.1   unclassified    1   11  0   11  0   
-    9  0.1.2.3.7.2.1.1.1.1 unclassified    1   11  0   11  0   
-    10 0.1.2.3.7.2.1.1.1.1.1   unclassified    1   11  0   11  0   
-    11 0.1.2.3.7.2.1.1.1.1.1.1 unclassified    1   11  0   11  0   
-    12 0.1.2.3.7.2.1.1.1.1.1.1.1   unclassified    1   11  0   11  0   
-    6  0.1.2.3.7.2.5   Bifidobacterium_longum_et_rel.  1   2   0   2   0   
-    7  0.1.2.3.7.2.5.1 unclassified    1   2   0   2   0   
-    8  0.1.2.3.7.2.5.1.1   unclassified    1   2   0   2   0   
-    9  0.1.2.3.7.2.5.1.1.1 unclassified    1   2   0   2   0
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, cutoff=0, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
+
+For example, running with cutoff=0 will yield the following output:
+
+    M00967_43_000000000-A3JHG_1_2102_22092_15614	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(95);"Bacteroidales"(95);"Porphyromonadaceae"(88);Tannerella(47);
+    M00967_43_000000000-A3JHG_1_1102_8406_20325	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);Bacteroidaceae(100);Bacteroides(100);
+    M00967_43_000000000-A3JHG_1_1106_15955_6621	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Lachnospiracea_incertae_sedis(36);
+    M00967_43_000000000-A3JHG_1_2103_24256_12640	Bacteria(100);Firmicutes(78);Bacilli(28);Lactobacillales(18);Aerococcaceae(15);Abiotrophia(15);
+    M00967_43_000000000-A3JHG_1_1101_6929_7655	Bacteria(100);"Bacteroidetes"(99);"Bacteroidia"(98);"Bacteroidales"(98);"Porphyromonadaceae"(95);Barnesiella(59);
+    M00967_43_000000000-A3JHG_1_1105_5520_9241	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Clostridium_XlVa(87);
+    M00967_43_000000000-A3JHG_1_1112_5981_8948	Bacteria(100);"Bacteroidetes"(95);"Bacteroidia"(82);"Bacteroidales"(82);"Porphyromonadaceae"(66);Tannerella(7);
+    M00967_43_000000000-A3JHG_1_2105_24795_12844	Bacteria(100);Firmicutes(96);Clostridia(94);Clostridiales(94);Lachnospiraceae(92);Acetitomaculum(12);
+    M00967_43_000000000-A3JHG_1_1112_18411_17052	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(98);"Bacteroidales"(98);"Porphyromonadaceae"(97);Barnesiella(40);
+    M00967_43_000000000-A3JHG_1_1110_19644_17655	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(99);"Bacteroidales"(99);"Porphyromonadaceae"(92);Tannerella(39);
+    M00967_43_000000000-A3JHG_1_1110_15641_10799	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Clostridiaceae_1(34);Anaerosporobacter(34);
+    M00967_43_000000000-A3JHG_1_1107_13819_9393	Bacteria(100);Firmicutes(90);Clostridia(90);Clostridiales(90);Lachnospiraceae(88);Johnsonella(51);
+    M00967_43_000000000-A3JHG_1_2110_20081_2854	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(95);Lachnospiracea_incertae_sedis(36);
+    M00967_43_000000000-A3JHG_1_1102_6774_6343	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(94);"Bacteroidales"(94);"Porphyromonadaceae"(88);Tannerella(36);
+
+You will notice that sequence M00967_43_000000000-A3JHG_1_2102_22092_15614 has a bootstrap value of 47% for
+the assignment to the *Tannerella*. This isn't much of a
+vote of confidence for this assignment. mothur's default is set to a
+value of 80%, which mirrors the original implementation in the Wang
+paper and the general approach to using 80% confidene in bootstrap
+values for phylogenetics.:
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, cutoff=80, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
+
+
+    M00967_43_000000000-A3JHG_1_2102_22092_15614	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(95);"Bacteroidales"(95);"Porphyromonadaceae"(88);"Porphyromonadaceae"_unclassified(88);
+    M00967_43_000000000-A3JHG_1_1102_8406_20325	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);Bacteroidaceae(100);Bacteroides(100);
+    M00967_43_000000000-A3JHG_1_1106_15955_6621	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Lachnospiraceae_unclassified(100);
+    M00967_43_000000000-A3JHG_1_2103_24256_12640	Bacteria(100);Bacteria_unclassified(100);Bacteria_unclassified(100);Bacteria_unclassified(100);Bacteria_unclassified(100);Bacteria_unclassified(100);
+    M00967_43_000000000-A3JHG_1_1101_6929_7655	Bacteria(100);"Bacteroidetes"(99);"Bacteroidia"(98);"Bacteroidales"(98);"Porphyromonadaceae"(95);"Porphyromonadaceae"_unclassified(95);
+    M00967_43_000000000-A3JHG_1_1105_5520_9241	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Clostridium_XlVa(87);
+    M00967_43_000000000-A3JHG_1_1112_5981_8948	Bacteria(100);"Bacteroidetes"(95);"Bacteroidia"(82);"Bacteroidales"(82);"Bacteroidales"_unclassified(82);"Bacteroidales"_unclassified(82);
+    M00967_43_000000000-A3JHG_1_2105_24795_12844	Bacteria(100);Firmicutes(96);Clostridia(94);Clostridiales(94);Lachnospiraceae(92);Lachnospiraceae_unclassified(92);
+    M00967_43_000000000-A3JHG_1_1112_18411_17052	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(98);"Bacteroidales"(98);"Porphyromonadaceae"(97);"Porphyromonadaceae"_unclassified(97);
+    M00967_43_000000000-A3JHG_1_1110_19644_17655	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(99);"Bacteroidales"(99);"Porphyromonadaceae"(92);"Porphyromonadaceae"_unclassified(92);
+    M00967_43_000000000-A3JHG_1_1110_15641_10799	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Clostridiales_unclassified(100);Clostridiales_unclassified(100);
+    M00967_43_000000000-A3JHG_1_1107_13819_9393	Bacteria(100);Firmicutes(90);Clostridia(90);Clostridiales(90);Lachnospiraceae(88);Lachnospiraceae_unclassified(88);
+    M00967_43_000000000-A3JHG_1_2110_20081_2854	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(95);Lachnospiraceae_unclassified(95);
+    M00967_43_000000000-A3JHG_1_1102_6774_6343	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(94);"Bacteroidales"(94);"Porphyromonadaceae"(88);"Porphyromonadaceae"_unclassified(88);
     ...
+    
+You should notice two things. First, there are no bootstrap values below
+80 for any of the taxonomy assignments. Second, the bootstrap values may
+change slightly. This is acceptable as the bootstrapping is a randomized
+process. The default number of iterations is 100.
 
-so you can see that all the sequences classified to taxon Actinobacteria
-are from sample B.
+## probs
 
-## relabund
+Sometimes you may find the output of bootstrap values with your taxonomy
+to be tedious. To get around this you can use the probs option to have
+the probabilities excluded from the output:
 
-The relabund parameter allows you to indicate you want the summary file
-values to be relative abundances rather than raw abundances. Default=F.
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, probs=F, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
 
-    taxlevel    rankID  taxon   daughterlevels  total  A   B   C   
-    0  0   Root    1   1.000000    1.000000    1.000000    1.000000    
-    1  0.1 Bacteria    5   1.000000    1.000000    1.000000    1.000000    
-    2  0.1.2   Actinobacteria  1   0.053719    0.000000    0.154762    0.000000    
-    3  0.1.2.1 Actinobacteria  1   0.053719    0.000000    0.154762    0.000000    
-    4  0.1.2.1.2   Actinobacteridae    1   0.053719    0.000000    0.154762    0.000000    
-    5  0.1.2.1.2.2 Bifidobacteriales   1   0.053719    0.000000    0.154762    0.000000    
-    6  0.1.2.1.2.2.1   Bifidobacteriaceae  1   0.053719    0.000000    0.154762    0.000000    
-    7  0.1.2.1.2.2.1.3 Bifidobacterium 1   0.053719    0.000000    0.154762    0.000000    
-    8  0.1.2.1.2.2.1.3.1   unclassified    1   0.053719    0.000000    0.154762    0.000000    
-    9  0.1.2.1.2.2.1.3.1.1 unclassified    0   0.053719    0.000000    0.154762    0.000000    
-    2  0.1.6   Bacteroidetes   1   0.334711    0.452381    0.166667    0.391892    
-    3  0.1.6.1 Bacteroidia 1   0.334711    0.452381    0.166667    0.391892    
-    4  0.1.6.1.1   Bacteroidales   2   0.334711    0.452381    0.166667    0.391892    
-    5  0.1.6.1.1.2 Bacteroidaceae  1   0.227273    0.440476    0.166667    0.054054    
-    6  0.1.6.1.1.2.1   Bacteroides 1   0.227273    0.440476    0.166667    0.054054    
-    7  0.1.6.1.1.2.1.1 unclassified    1   0.227273    0.440476    0.166667    0.054054    
-    8  0.1.6.1.1.2.1.1.1   unclassified    1   0.227273    0.440476    0.166667    0.054054    
-    9  0.1.6.1.1.2.1.1.1.1 unclassified    0   0.227273    0.440476    0.166667    0.054054
+
+    M00967_43_000000000-A3JHG_1_2102_22092_15614	Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";"Porphyromonadaceae";"Porphyromonadaceae"_unclassified;
+    M00967_43_000000000-A3JHG_1_1102_8406_20325	Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";Bacteroidaceae;Bacteroides;
+    M00967_43_000000000-A3JHG_1_1106_15955_6621	Bacteria;Firmicutes;Clostridia;Clostridiales;Lachnospiraceae;Lachnospiraceae_unclassified;
+    M00967_43_000000000-A3JHG_1_2103_24256_12640	Bacteria;Bacteria_unclassified;Bacteria_unclassified;Bacteria_unclassified;Bacteria_unclassified;Bacteria_unclassified;
+    M00967_43_000000000-A3JHG_1_1101_6929_7655	Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";"Porphyromonadaceae";"Porphyromonadaceae"_unclassified;
+    M00967_43_000000000-A3JHG_1_1105_5520_9241	Bacteria;Firmicutes;Clostridia;Clostridiales;Lachnospiraceae;Clostridium_XlVa;
+    M00967_43_000000000-A3JHG_1_1112_5981_8948	Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";"Bacteroidales"_unclassified;"Bacteroidales"_unclassified;
 
 ## output
 
@@ -369,31 +210,40 @@ level. The default is detail.
 
 The detail format looks like:
 
-    taxlevel   rankID  taxon   daughterlevels  total   A   B   C
-    0  0   Root    1   28  14  20  9
-    1  0.1 "k__Bacteria"   5   28  14  20  9
-    2  0.1.1   "p__Actinobacteria" 1   3   0   3   0
-    3  0.1.1.1 "c__Actinobacteria" 1   3   0   3   0
-    4  0.1.1.1.1   "o__Bifidobacteriales"  1   3   0   3   0
-    5  0.1.1.1.1.1 "f__Bifidobacteriaceae" 1   3   0   3   0
-    6  0.1.1.1.1.1.1   "g__Bifidobacterium"    3   3   0   3   0
-    7  0.1.1.1.1.1.1.1 "s__"   0   1   0   1   0
-    7  0.1.1.1.1.1.1.2 "s__adolescentis"   0   1   0   1   0
-    7  0.1.1.1.1.1.1.3 "s__longum" 0   1   0   1   0
-    2  0.1.2   "p__Bacteroidetes"  1   6   5   3   3
-    3  0.1.2.1 "c__Bacteroidia"    1   6   5   3   3
-    4  0.1.2.1.1   "o__Bacteroidales"  2   6   5   3   3
-    5  0.1.2.1.1.1 "f__Bacteroidaceae" 1   4   4   3   1
-    6  0.1.2.1.1.1.1   "g__Bacteroides"    4   4   4   3   1
-    7  0.1.2.1.1.1.1.1 "s__"   0   1   1   1   0
+    taxlevel	rankID	taxon	daughterlevels	total	F3D0	F3D1	F3D141	F3D142	F3D143	F3D144	F3D145	F3D146	F3D147	F3D148	F3D149	F3D150	F3D2	F3D3	F3D5	F3D6	F3D7	F3D8	F3D9
+    0	0	Root	1	113959	6191	4652	4656	2423	2403	3452	5532	3828	12431	9465	10014	4121	15686	5199	3469	6394	4055	4253	5735
+    1	0.1	Bacteria	9	113959	6191	4652	4656	2423	2403	3452	5532	3828	12431	9465	10014	4121	15686	5199	3469	6394	4055	4253	5735
+    2	0.1.1	"Actinobacteria"	1	371	24	4	19	25	11	27	10	9	44	72	40	28	19	20	3	4	4	4	4
+    3	0.1.1.1	Actinobacteria	3	371	24	4	19	25	11	27	10	9	44	72	40	28	19	20	3	4	4	4	4
+    4	0.1.1.1.1	Actinomycetales	2	3	0	0	0	1	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0
+    5	0.1.1.1.1.1	Actinomycetaceae	1	2	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    6	0.1.1.1.1.1.1	Actinomyces	0	2	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    5	0.1.1.1.1.2	Promicromonosporaceae	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    6	0.1.1.1.1.2.1	Promicromonospora	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    4	0.1.1.1.2	Bifidobacteriales	1	237	21	0	15	23	8	20	5	3	24	60	23	16	4	15	0	0	0	0	0
+    5	0.1.1.1.2.1	Bifidobacteriaceae	1	237	21	0	15	23	8	20	5	3	24	60	23	16	4	15	0	0	0	0	0
+    6	0.1.1.1.2.1.1	Bifidobacterium	0	237	21	0	15	23	8	20	5	3	24	60	23	16	4	15	0	0	0	0	0
     ...
 
 The simple format looks like:
 
-    taxon  total   A   B   C
-    "k__Bacteria";"p__Actinobacteria";"c__Actinobacteria";"o__Bifidobacteriales";"f__Bifidobacteriaceae";"g__Bifidobacterium";"s__";   1   0   1   0
-    "k__Bacteria";"p__Actinobacteria";"c__Actinobacteria";"o__Bifidobacteriales";"f__Bifidobacteriaceae";"g__Bifidobacterium";"s__adolescentis";   1   0   1   0
-    "k__Bacteria";"p__Actinobacteria";"c__Actinobacteria";"o__Bifidobacteriales";"f__Bifidobacteriaceae";"g__Bifidobacterium";"s__longum"; 1   0   1   0
+    taxonomy	total	F3D0	F3D1	F3D141	F3D142	F3D143	F3D144	F3D145	F3D146	F3D147	F3D148	F3D149	F3D150	F3D2	F3D3	F3D5	F3D6	F3D7	F3D8	F3D9
+    Root	113959	6191	4652	4656	2423	2403	3452	5532	3828	12431	9465	10014	4121	15686	5199	3469	6394	4055	4253	5735
+    Bacteria;"Actinobacteria";Actinobacteria;Actinomycetales;Actinomycetaceae;Actinomyces;	2	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    Bacteria;"Actinobacteria";Actinobacteria;Actinomycetales;Promicromonosporaceae;Promicromonospora;	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+    Bacteria;"Actinobacteria";Actinobacteria;Bifidobacteriales;Bifidobacteriaceae;Bifidobacterium;	237	21	0	15	23	8	20	5	3	24	60	23	16	4	15	0	0	0	0	0
+    Bacteria;"Actinobacteria";Actinobacteria;Coriobacteriales;Coriobacteriaceae;Coriobacteriaceae_unclassified;	45	1	1	1	1	1	3	0	2	6	3	5	6	5	1	0	2	2	2	3
+    Bacteria;"Actinobacteria";Actinobacteria;Coriobacteriales;Coriobacteriaceae;Enterorhabdus;	78	2	3	1	0	2	3	3	4	10	8	12	6	10	4	3	2	2	2	1
+    Bacteria;"Actinobacteria";Actinobacteria;Coriobacteriales;Coriobacteriaceae;Olsenella;	8	0	0	2	0	0	1	0	0	4	1	0	0	0	0	0	0	0	0	0
+    Bacteria;"Bacteroidetes";"Bacteroidetes"_unclassified;"Bacteroidetes"_unclassified;"Bacteroidetes"_unclassified;"Bacteroidetes"_unclassified;	14	0	0	1	0	0	0	3	0	5	0	0	1	2	1	0	1	0	0	0
+    Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";"Bacteroidales"_unclassified;"Bacteroidales"_unclassified;	1115	62	33	37	23	15	39	81	30	118	106	102	43	184	92	42	37	15	15	41
+    Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";"Porphyromonadaceae";"Porphyromonadaceae"_unclassified;	53143	2564	1220	2130	1326	1211	1982	3242	1648	7577	4820	4531	1803	7220	2585	1292	2800	2076	1294	1822
+    Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";"Porphyromonadaceae";Barnesiella;	7485	401	63	482	152	207	320	535	367	1054	834	866	438	445	186	147	378	294	128	188
+    Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";"Rikenellaceae";Alistipes;	5337	164	174	331	81	92	36	127	66	89	542	542	110	1222	398	193	250	223	278	419
+    Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";Bacteroidaceae;Bacteroides;	6305	168	127	206	201	116	133	362	193	545	499	454	182	354	448	142	501	517	547	610
+    Bacteria;"Bacteroidetes";Flavobacteria;"Flavobacteriales";Cryomorphaceae;Cryomorphaceae_unclassified;	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+    Bacteria;"Bacteroidetes";Flavobacteria;"Flavobacteriales";Cryomorphaceae;Lishizhenia;	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+    Bacteria;"Deinococcus-Thermus";Deinococci;Deinococcales;Deinococcaceae;Deinococcus;	6	0	0	1	2	1	0	2	0	0	0	0	0	0	0	0	0	0	0	0
     ...
 
 ## printlevel
@@ -404,31 +254,157 @@ file. The default is -1, meaning max level. If you select a level
 greater than the level your sequences classify to, mothur will print to
 the level your max level.
 
-    mothur > classify.seqs(...., printlevel=4)
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, printlevel=4, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
 
 Detail format:
 
-    taxlevel   rankID  taxon   daughterlevels  total   A   B   C 
-    0  0   Root    1   28  14  20  9
-    1  0.1 "k__Bacteria"   5   28  14  20  9
-    2  0.1.1   "p__Actinobacteria" 1   3   0   3   0
-    3  0.1.1.1 "c__Actinobacteria" 1   3   0   3   0
-    4  0.1.1.1.1   "o__Bifidobacteriales"  1   3   0   3   0
-    2  0.1.2   "p__Bacteroidetes"  1   6   5   3   3
-    3  0.1.2.1 "c__Bacteroidia"    1   6   5   3   3
-    4  0.1.2.1.1   "o__Bacteroidales"  2   6   5   3   3
-    2  0.1.3   "p__Firmicutes" 2   13  8   10  2
-    3  0.1.3.1 "c__Bacilli"    1   1   1   0   0
-    4  0.1.3.1.1   "o__Turicibacterales"   1   1   1   0   0
+    taxlevel	rankID	taxon	daughterlevels	total	F3D0	F3D1	F3D141	F3D142	F3D143	F3D144	F3D145	F3D146	F3D147	F3D148	F3D149	F3D150	F3D2	F3D3	F3D5	F3D6	F3D7	F3D8	F3D9
+    0	0	Root	1	113959	6191	4652	4656	2423	2403	3452	5532	3828	12431	9465	10014	4121	15686	5199	3469	6394	4055	4253	5735
+    1	0.1	Bacteria	9	113959	6191	4652	4656	2423	2403	3452	5532	3828	12431	9465	10014	4121	15686	5199	3469	6394	4055	4253	5735
+    2	0.1.1	"Actinobacteria"	1	371	24	4	19	25	11	27	10	9	44	72	40	28	19	20	3	4	4	4	4
+    3	0.1.1.1	Actinobacteria	3	371	24	4	19	25	11	27	10	9	44	72	40	28	19	20	3	4	4	4	4
+    4	0.1.1.1.1	Actinomycetales	2	3	0	0	0	1	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0
+    4	0.1.1.1.2	Bifidobacteriales	1	237	21	0	15	23	8	20	5	3	24	60	23	16	4	15	0	0	0	0	0
+    4	0.1.1.1.3	Coriobacteriales	1	131	3	4	4	1	3	7	3	6	20	12	17	12	15	5	3	4	4	4	4
+    2	0.1.2	"Bacteroidetes"	3	73401	3359	1617	3187	1783	1641	2511	4350	2304	9388	6801	6495	2577	9427	3710	1816	3967	3125	2262	3081
+    3	0.1.2.1	"Bacteroidetes"_unclassified	1	14	0	0	1	0	0	0	3	0	5	0	0	1	2	1	0	1	0	0	0
+    4	0.1.2.1.1	"Bacteroidetes"_unclassified	1	14	0	0	1	0	0	0	3	0	5	0	0	1	2	1	0	1	0	0	0
     ...
 
 Simple Format:
 
-    taxon  total   A   B   C
-    "k__Bacteria";"p__Actinobacteria";"c__Actinobacteria";"o__Bifidobacteriales";  3   0   3   0
-    "k__Bacteria";"p__Bacteroidetes";"c__Bacteroidia";"o__Bacteroidales";  6   5   3   3
-    "k__Bacteria";"p__Firmicutes";"c__Bacilli";"o__Turicibacterales";  1   1   0   0
+    taxonomy	total	F3D0	F3D1	F3D141	F3D142	F3D143	F3D144	F3D145	F3D146	F3D147	F3D148	F3D149	F3D150	F3D2	F3D3	F3D5	F3D6	F3D7	F3D8	F3D9
+    Root	113959	6191	4652	4656	2423	2403	3452	5532	3828	12431	9465	10014	4121	15686	5199	3469	6394	4055	4253	5735
+    Bacteria;"Actinobacteria";Actinobacteria;Actinomycetales;	3	0	0	0	1	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0
+    Bacteria;"Actinobacteria";Actinobacteria;Bifidobacteriales;	237	21	0	15	23	8	20	5	3	24	60	23	16	4	15	0	0	0	0	0
+    Bacteria;"Actinobacteria";Actinobacteria;Coriobacteriales;	131	3	4	4	1	3	7	3	6	20	12	17	12	15	5	3	4	4	4	4
+    Bacteria;"Bacteroidetes";"Bacteroidetes"_unclassified;"Bacteroidetes"_unclassified;	14	0	0	1	0	0	0	3	0	5	0	0	1	2	1	0	1	0	0	0
+    Bacteria;"Bacteroidetes";"Bacteroidia";"Bacteroidales";	73385	3359	1617	3186	1783	1641	2510	4347	2304	9383	6801	6495	2576	9425	3709	1816	3966	3125	2262	3080
+    Bacteria;"Bacteroidetes";Flavobacteria;"Flavobacteriales";	2	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1
+    Bacteria;"Deinococcus-Thermus";Deinococci;Deinococcales;	6	0	0	1	2	1	0	2	0	0	0	0	0	0	0	0	0	0	0	0
+    Bacteria;"Proteobacteria";Betaproteobacteria;Neisseriales;	6	0	0	0	1	0	2	3	0	0	0	0	0	0	0	0	0	0	0	0
+    Bacteria;"Proteobacteria";Gammaproteobacteria;"Enterobacteriales";	39	3	2	2	0	0	1	2	1	4	1	1	1	6	1	4	3	2	3	2
+    Bacteria;"Proteobacteria";Gammaproteobacteria;Aeromonadales;	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+    Bacteria;"Proteobacteria";Gammaproteobacteria;Gammaproteobacteria_unclassified;	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
     ...
+    
+## processors
+
+The processors parameter allows you to run the command with multiple
+processors. Default processors=Autodetect number of available processors
+and use all available. To use 2 processors, run the following:
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, processors=2, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
+     
+    
+## iters
+
+The iters option allows you to specify how many iterations to do when
+calculating the bootstrap confidence score for your taxonomy. The
+default is 100.
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, iters=1000, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
+
+
+
+## search
+By default, the k-nearest neighbor approach
+searches for nearest neighbors by kmer searching as is done in the
+[align.seqs](/wiki/align.seqs) command. The default size of kmers
+is 8, which seems to be a fairly decent choice regardless of which part
+of the 16S rRNA gene you are interested in. As we pointed out in the
+development of the [align.seqs](/wiki/align.seqs) command, kmer
+searching is superior in accuracy and speed compared to blast or suffix
+tree searching methods.
+
+### kmer and ksize
+
+The only valid search option with the wang method is kmer and by default
+mothur uses kmer size 8. If you would like to use the kmer search with the knn method you
+can run:
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn, search=kmer)
+
+If you would like to change the kmer size you use the ksize option:
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn, search=kmer, ksize=6)
+
+### blast, match, mismatch, gapopen, and gapextend
+Assuming that you have put the blast binaries into your PATH variable, it is
+possible to use blastn to find nearest neighbors. It can be implemented
+as:
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn, search=blast)
+
+You can also change the various blast-related options for match,
+mismatch, gapopen, and gapextend values:
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn, search=blast, gapopen=-5, gapextend=-1)
+
+### suffix
+An alternative method for finding the k-nearest
+neighbors is to use a suffix tree to perform the search. Again, this is
+the same method that is available within the
+[align.seqs](/wiki/align.seqs) command. It can be implemented as:
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn, search=suffix)
+
+### distance
+An alternative method for finding the k-nearest
+neighbors is to find the distance from the query sequence to each
+sequence in the template.
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn, search=distance)
+
+### numwanted
+
+The numwanted parameter is only valid with the knn method. If you instead only want the value of k to be 3, the following command
+would be used:
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, method=knn, numwanted=3, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
+  
+If you are using the [phylotype](/wiki/phylotype) command as a down
+stream analysis, you probably only want to consider 1 nearest neighbor:
+
+    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, method=knn, numwanted=1, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
+
+You should be able to see, these taxonomy lines are considerably
+longer and probably should not be as trustworthy as those when you are
+considering more neighbors.
+
+## relabund
+
+The relabund parameter allows you to indicate you want the summary file
+values to be relative abundances rather than raw abundances. Default=F.
+
+    taxlevel	rankID	taxon	daughterlevels	total	F3D0	F3D1	F3D141	F3D142	F3D143	F3D144	F3D145	F3D146	F3D147	F3D148	F3D149	F3D150	F3D2	F3D3	F3D5	F3D6	F3D7	F3D8	F3D9
+    0	0	Root	1	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000
+    1	0.1	Bacteria	9	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000
+    2	0.1.1	"Actinobacteria"	1	0.003256	0.003877	0.000860	0.004081	0.010318	0.004578	0.007822	0.001808	0.002351	0.003540	0.007607	0.003994	0.006794	0.001211	0.003847	0.000865	0.000626	0.000986	0.000941	0.000697
+    3	0.1.1.1	Actinobacteria	3	0.003256	0.003877	0.000860	0.004081	0.010318	0.004578	0.007822	0.001808	0.002351	0.003540	0.007607	0.003994	0.006794	0.001211	0.003847	0.000865	0.000626	0.000986	0.000941	0.000697
+    4	0.1.1.1.1	Actinomycetales	2	0.000026	0.000000	0.000000	0.000000	0.000413	0.000000	0.000000	0.000362	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000
+    5	0.1.1.1.1.1	Actinomycetaceae	1	0.000018	0.000000	0.000000	0.000000	0.000413	0.000000	0.000000	0.000181	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000
+    6	0.1.1.1.1.1.1	Actinomyces	0	0.000018	0.000000	0.000000	0.000000	0.000413	0.000000	0.000000	0.000181	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000
+    5	0.1.1.1.1.2	Promicromonosporaceae	1	0.000009	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000181	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000
+    6	0.1.1.1.1.2.1	Promicromonospora	0	0.000009	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000181	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000
+    4	0.1.1.1.2	Bifidobacteriales	1	0.002080	0.003392	0.000000	0.003222	0.009492	0.003329	0.005794	0.000904	0.000784	0.001931	0.006339	0.002297	0.003883	0.000255	0.002885	0.000000	0.000000	0.000000	0.000000	0.000000
+    5	0.1.1.1.2.1	Bifidobacteriaceae	1	0.002080	0.003392	0.000000	0.003222	0.009492	0.003329	0.005794	0.000904	0.000784	0.001931	0.006339	0.002297	0.003883	0.000255	0.002885	0.000000	0.000000	0.000000	0.000000	0.000000
+    6	0.1.1.1.2.1.1	Bifidobacterium	0	0.002080	0.003392	0.000000	0.003222	0.009492	0.003329	0.005794	0.000904	0.000784	0.001931	0.006339	0.002297	0.003883	0.000255	0.002885	0.000000	0.000000	0.000000	0.000000	0.000000
+
+## name - not recommended
+
+The name option allows you to provide a name file associated with your taxonomy file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file.
+The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+## group - not recommended
+
+The group parameter allows you to provide a group file to use when
+creating the summary file. 
+
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file.
+The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
 ## Help
 
