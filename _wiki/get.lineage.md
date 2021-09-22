@@ -120,14 +120,14 @@ names of sequences from Bacteria;Firmicutes;
 NOTE: We DO NOT recommend using the name file. Instead we recommend using a count file.
 The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
-### dups
+### dups - not recommended
 
-The dups parameter is only used in tandem with a namefile. By default,
+The dups parameter is only used in tandem with a name file. By default,
 dups=TRUE, so if any sequence in a specific line in the name file is in
 your taxon, then all sequences in that line will be kept. This is
 especially useful when used with the groupfile, since for most commands
-your files can contain only the unique sequences, but the groupfile
-needs to contain all the sequences in your namefile.
+your files can contain only the unique sequences, but the group file
+needs to contain all the sequences in your name file.
 
 ## group - not recommended
 
