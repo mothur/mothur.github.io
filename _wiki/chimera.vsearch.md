@@ -3,69 +3,34 @@ title: 'chimera.vsearch'
 tags: 'commands'
 redirect_from: '/wiki/Chimera.vsearch.html'
 ---
-The **chimera.vsearch** command reads a fasta file and reference file or a
-fasta and name or count file and outputs potentially chimeric sequences.
+The **chimera.vsearch** command reads a
+fasta and count file or fasta file and reference file and outputs potentially chimeric sequences.
 The vsearch program is donated to the public domain,
 [https://github.com/torognes/vsearch](https://github.com/torognes/vsearch).
 
 
 ## Default Settings
 
-The fasta parameter is required.
+### De Novo
 
-    mothur > chimera.vsearch(fasta=stool.trim.unique.good.align, reference=silva.gold.align)
+    mothur > chimera.vsearch(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table)
+    
+### Reference
 
-or
-
-    mothur > chimera.vsearch(fasta=fasta=stool.trim.unique.good.align, name=fasta=stool.trim.unique.good.names)
-
-or
-
-    mothur > chimera.vsearch(fasta=fasta=stool.trim.unique.good.align, name=fasta=stool.trim.unique.good.names, group=stool.trim.unique.good.groups)
+    mothur > chimera.vsearch(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, reference=chimera.reference.fasta)
 
 The chimeras file format is explained
 [here](https://web.archive.org/web/20150220030441/https://drive5.com/usearch/manual/uchimeout.html).
 
 ## Options
 
-### vsearch
-
-The vsearch parameter allows you to specify the name and location of
-your vsearch executable. By default mothur will look in your path and
-mothur's executable location. You can set the vsearch location as
-follows: vsearch=/usr/bin/vsearch.
-
-    mothur > chimera.vsearch(vsearch=/usr/bin/vsearch.2.11.1,  fasta=stool.trim.unique.good.align, name=stool.trim.good.names)
-
-### name
-
-You can provide a name file to check for chimeras using more abundant
-sequences as the reference.
-
-    mothur > chimera.vsearch(fasta=stool.trim.unique.good.align, name=stool.trim.good.names)
-
-### group
-
-If you are using reference=self and provide a groupfile, mothur will use
-the more abundant sequences from the same sample to check the query
-sequence.
-
-    mothur > chimera.vsearch(fasta=stool.trim.unique.good.align, name=stool.trim.good.names, group=stool.good.groups)
-
 ### count
 
-The [ count](/wiki/Count_File) file is similar to the name file in
-that it is used to represent the number of duplicate sequences for a
+The [ count](/wiki/Count_File) file is used to represent the number of duplicate sequences for a
 given representative sequence. The count file can also contain group
 information.
 
-    mothur > make.table(name=stool.trim.good.names, group=stool.good.groups)
-    mothur > chimera.vsearch(fasta=stool.trim.unique.good.align, count=stool.trim.good.count_table)
-
-### processors
-
-The processors parameter allows you to specify how many processors you
-would like to use. The default is all available.
+    chimera.vsearch(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table)
 
 ### dereplicate
 
@@ -75,10 +40,26 @@ the sequence to be chimeric, then all groups find it to be chimeric,
 default=f. If you set dereplicate=t, and then when a sequence is found 
 to be chimeric it is removed from it's group, not the entire dataset. 
 
+    mothur > chimera.vsearch(dereplicate=t, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table)
+
 Note: When you set dereplicate=t, mothur generates a new count table
 with the chimeras removed and counts adjusted by sample. 
 
 For a detailed example: [Dereplicate example](/wiki/chimera_dereplicate_example)
+
+### processors
+
+The processors parameter allows you to specify how many processors you
+would like to use. The default is all available.
+
+### vsearch
+
+The vsearch parameter allows you to specify the name and location of
+your vsearch executable. By default mothur will look in your path and
+mothur's executable location. You can set the vsearch location as
+follows: vsearch=/usr/bin/vsearch.
+
+    mothur > chimera.vsearch(vsearch=/usr/bin/vsearch.2.17.1, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table)
 
 ### abskew
 
@@ -126,6 +107,19 @@ The dn parameter - pseudo-count prior on number of no votes. Default
 1\.4. Probably no good reason to change this unless you can retune to a
 good benchmark for your data. Reasonable values are probably in the
 range from 0.2 to 2.
+
+### name - not recommended
+
+The name option allows you to provide a name file associated with your taxonomy file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+
+### group - not recommended
+
+The group parameter allows you to provide a group file to use when creating the summary file.
+
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
 ## Revisions
 
