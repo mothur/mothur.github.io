@@ -29,5 +29,5 @@ Remember to cite mothur:
 > Schloss PD et al. 2009. Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and Environmental Microbiology 75:7537–7541.
 
 See the 
-[citation file](https://github.com/mothur/mothur/blob/master/CITATION.md) for a 
-BibTeX entry.
+[citation file](https://github.com/mothur/mothur/blob/master/CITATION.md) 
+for a BibTeX entry.

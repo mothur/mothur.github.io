@@ -32,8 +32,8 @@ please cite the OptiClust paper:
 > Westcott SL, Schloss PD. 2017. OptiClust, an Improved Method for Assigning Amplicon-Based Sequence Data to Operational Taxonomic Units. mSphere 2:e00073-17.
 
 See the 
-[citation file](https://github.com/mothur/mothur/blob/master/CITATION.md#cite-opticlust) for a 
-BibTeX entry.
+[citation file](https://github.com/mothur/mothur/blob/master/CITATION.md#cite-opticlust) 
+for a BibTeX entry.
 
 ## Default settings
 
