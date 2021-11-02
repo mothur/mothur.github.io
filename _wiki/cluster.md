@@ -437,7 +437,9 @@ same dataset you might get slightly different out for some distances:
     7  0   0.03    1170    0.03    31932   7051142 8524    20508   0.608924    0.998793    0.789302    0.9971  0.210698    0.995918    0.69131 0.687478    
     8  0   0.03    1170    0.03    31905   7051185 8481    20535   0.60841 0.998799    0.790001    0.997096    0.209999    0.99592 0.691326    0.687415    
 
-The variability is caused by the randomization of the sequences.
+The variability is caused by randomizing the order of the sequences before 
+clustering begins. You can set a seed to get reproducible results
+with the [`set.seed`](/wiki/set.seed) command prior to running `cluster.fit`.
 
 ## Revisions
 

@@ -243,14 +243,15 @@ sequences as the query for OptiFit.
 
 ### metric
 
-The metric parameter allows to select the metric in the opticluster
-method. Options are Matthews correlation coefficient (mcc), sensitivity
-(sens), specificity (spec), true positives + true negatives (tptn),
-false positives + false negatives (fpfn), true positives (tp), true
-negative (tn), false positive (fp), false negative (fn), f1score
-(f1score), accuracy (accuracy), positive predictive value (ppv),
-negative predictive value (npv), false discovery rate (fdr).
-Default=mcc.
+The `metric` parameter allows to select the metric to optimize in the OptiClust
+method. Options are Matthews correlation coefficient (`mcc` - default), 
+sensitivity (`sens`), specificity (`spec`), 
+true positives + true negatives (`tptn`),
+false positives + false negatives (`fpfn`), true positives (`tp`), 
+true negative (`tn`), false positive (`fp`), false negative (`fn`), 
+f1score (`f1score`), accuracy (`accuracy`), positive predictive value (`ppv`),
+negative predictive value (`npv`), false discovery rate (`fdr`).
+The default is `mcc`.
 
     mothur > cluster.fit(column=marine.0_2.01.dist, count=marine.0_2.01.count_table, metric=tptn)
 
@@ -259,29 +260,29 @@ Default=mcc.
 
 ### fitpercent
 
-The fitpercent parameter allow you to set percentage of reads to be
+The `fitpercent` parameter allow you to set percentage of reads to be
 fitted. Default=50. Max=100, min=0.01.
 
 ### delta
 
-The delta parameter allows to set the stable value for the metric in the
+The `delta` parameter allows to set the stable value for the metric in the
 opticluster algorithm. Default delta=0.0001. To reach a full
 convergence, set delta=0.
 
 ### iters
 
-The iters parameter allow you to set the maxiters for the opticluster
+The `iters` parameter allows you to set the maxiters for the OptiClust
 algorithm. Default=100.
 
 ### denovoiters
 
-The denovoiters parameter allow you to set the maxiters for the _de novo_
+The `denovoiters` parameter allow you to set the maxiters for the _de novo_
 sampling. Default=10.
 
 ### cutoff
 
 With the opticlust method the list file is created for the cutoff you
-set. The default cutoff is 0.03.
+set. The default `cutoff` is 0.03.
 
 ### precision
 
@@ -293,9 +294,11 @@ cluster.fit() command:
 ### Variability
 
 You may notice that if you run the same command multiple times for the
-same dataset you might get slightly different out for some distances:
+same dataset, you might get slightly different output.
 
-The variability is caused by the randomization of the sequences.
+The variability is caused by randomizing the order of the sequences before 
+clustering begins. You can set a seed to get reproducible results
+with the [`set.seed`](/wiki/set.seed) command prior to running `cluster.fit`.
 
 ## Revisions
 

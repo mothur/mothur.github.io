@@ -337,7 +337,9 @@ same dataset you might get slightly different out for some distances:
     label  cutoff  tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
     0.03   0.03    31313   7051732 8028    21033   0.5982  0.9989  0.7959  0.997   0.2041  0.9959  0.6881  0.683
 
-The variability is caused by the randomization of the sequences.
+The variability is caused by randomizing the order of the sequences before 
+clustering begins. You can set a seed to get reproducible results
+with the [`set.seed`](/wiki/set.seed) command prior to running `cluster.split`.
 
 ## Revisions
 
