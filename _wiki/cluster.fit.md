@@ -5,24 +5,30 @@ redirect_from: '/wiki/Cluster.fit.html'
 ---
 The **cluster.fit** command can be used to assign
 sequences to OTUs or fit sequences to existing OTUs. Currently, mothur
-has two options for doing this:
+has two methods for doing this:
 
 -   Closed: Fit reads to existing OTUs, scrapping
     any reads unable to be fitted.
 -   Open: Fit reads to existing OTUs, any unfitted
     reads are clustered separately into new OTUs.
 
-If there is an algorithm that you would like to see implemented, please
-consider either contributing to the mothur project or contacting the
-developers and we'll see what we can do. The open method is the default
-option. For this tutorial you should download the [
-OptiFitDataSets.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/optifitdatasets.zip) file and
-decompress it.
+For this tutorial you should download the 
+[OptiFitDataSets.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/optifitdatasets.zip) 
+file and decompress it.
 
+<!-- TODO: add citation for OptiFit once it's published.
+If you use the `cluster.fit` command, please cite the OptiFit paper:
+
+> TODO
+
+See the 
+[citation file](https://github.com/mothur/mothur/blob/master/CITATION.md#cite-optifit) for a 
+BibTeX entry.
+-->
 
 ## Default settings
 
-You may run the command in denovo or reference mode. Either a
+You may run the command in _de novo_ or reference mode. Either a
 [phylip-formatted distance
 matrix](/wiki/phylip-formatted_distance_matrix) or a
 [column-formatted distance
@@ -33,13 +39,13 @@ us know and we can work with you to incorporate that feature into
 mothur. Because the phylip format is so popular most software can
 generate this format for you.
 
-### denovo fitting
+### _de novo_ fitting
 
-The denovo method allows you to use your dataset as a reference. mothur
-will randomly select a portion of your dataset to be the reference. The
-reference is then clustered and the remaining sequences are fitted into
-the "reference" otus. This process is repeated x number of times with
-the best list file chosen as the output.
+The _de novo_ method allows you to use your dataset as a reference. mothur
+will randomly select a portion of your dataset to be the reference. 
+The reference is then clustered with [OptiClust](/wiki/cluster), 
+and the remaining sequences are fitted to the reference otus with OptiFit.
+This process is repeated n times with the best OTU assignments chosen as the output.
 
     mothur > cluster.fit(column=marine.0_2.01.dist, count=marine.0_2.01.count_table)
 
@@ -50,12 +56,14 @@ The best sensspec results were found on the 4th iteration:
 
 ### reference fitting
 
-The reference fitting methods use a reference and fit the new dataset's sequences into the reference otus. 
-Perhaps you have a study where 20 patients were sampled, and you want to see how a
-new patient's data would fit in with the existing results. There are several ways to 
-fit new data to an existing dataset. 
+The reference fitting methods use a reference list and fit the new dataset's 
+sequences into the reference otus. 
+Perhaps you have a study where 20 patients were sampled and you clustered 
+sequences into _de novo_ OTUs with [OptiClust](/wiki/cluster), and you want to 
+fit a new patient's data to the existing OTUs. 
+There are several ways to fit new data to an existing dataset. 
 
-The reference method uses a user provided reference and fits the new
+The reference method takes a user-provided reference and fits the new
 dataset's sequences into the reference otus.  
 
     mothur > unique.seqs(fasta=silva.v4.fasta, format=count)
@@ -70,9 +78,11 @@ The sens.spec results:
 
 or
 
-The accnos parameter may be used to indicate a subset of your data as the reference. 
-You can merge the count and fasta files containing the old and new data. Mothur will cluster the references
-using optiClust and then fit the query reads to the reference OTUs.
+The accnos parameter may be used to indicate a subset of your data as the 
+reference. 
+You can merge the count and fasta files containing the old and new data. 
+Mothur will cluster the references using [OptiClust](/wiki/cluster) and then fit 
+the query reads to the reference OTUs.
      
      mothur > list.seqs(fasta=reference.fasta)
      mothur > merge.files(input=reference.fasta-query.fasta, output=combined.fasta)
@@ -83,7 +93,8 @@ using optiClust and then fit the query reads to the reference OTUs.
 or
 
 The reflist parameter can be used to provide a list file for the references. 
-This can be helpful if you want to use existing OTUs from an earlier run of mothur.
+This can be helpful if you want to use existing OTUs from an earlier run of 
+mothur's OptiClust algorithm.
     
      mothur > merge.files(input=reference.fasta-query.fasta, output=combined.fasta)
      mothur > merge.count(count=reference.count_table-query.count_table, output=combined.count_table)
@@ -172,7 +183,7 @@ artificially inflate the matrix to its full size.
 
 ### count
 
-The [ count](/wiki/Count_File) file is similar to the name file in
+The [count](/wiki/Count_File) file is similar to the name file in
 that it is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
 the correct OTU's. Unlike, when you use a name file the list file
@@ -183,23 +194,23 @@ count file in downstream analysis with the list file.
 
 ### reffasta
 
-The reffasta parameter allows you to enter a fasta file for your
+The `reffasta` parameter allows you to enter a fasta file for your
 reference dataset.
 
 ### refcolumn && refphylip
 
-The refcolumn and refphylip parameters allow you to enter a reference
+The `refcolumn` and `refphylip` parameters allow you to enter a reference
 data distance file, to reduce processing time. It is not required, but
 recommended when using reference mode.
 
 ### reflist
 
-The reflist parameter allows you to enter a list file for your reference
+The `reflist` parameter allows you to enter a list file for your reference
 dataset.
 
 ### accnos
 
-The accnos parameter allows you to assign reference seqeunces by name.
+The `accnos` parameter allows you to assign reference seqeunces by name.
 This can save time by allowing you to provide a distance matrix
 containing all the sequence distances rather than a sample matrix and
 reference matrix and mothur calculating the distances between the sample
@@ -207,13 +218,28 @@ and reference.
 
 ### method
 
-The options for the method parameter are open or closed. The default is
+The options for the `method` parameter are open or closed. The default is
 open.
 
 -   Closed: Fit reads to existing OTUs, scrapping
     any reads unable to be fitted.
 -   Open: Fit reads to existing OTUs, any unfitted
-    reads are clustered separately into new OTUs.
+    reads are clustered separately into new OTUs with OptiClust.
+
+### printref
+
+The `printref` option controls whether the reference sequences are printed to 
+list file and included in the final [sensspec](/wiki/sens.spec) calculations.
+Set `printref=t` (true) to include the reference sequences, 
+or `printref=f` (false) to exclude the reference sequences.
+
+We recommend using `printref=f` when the reference sequences are from a public 
+external database such as SILVA or Greengenes, so that only the sequences from 
+your dataset of interest are included in the list and sensspec files.
+
+Using `printref=t` may be more appropriate when the reference is created by
+selecting a random sample from a dataset followed by using the remaining 
+sequences as the query for OptiFit.
 
 ### metric
 
@@ -249,7 +275,7 @@ algorithm. Default=100.
 
 ### denovoiters
 
-The denovoiters parameter allow you to set the maxiters for the denovo
+The denovoiters parameter allow you to set the maxiters for the _de novo_
 sampling. Default=10.
 
 ### cutoff
