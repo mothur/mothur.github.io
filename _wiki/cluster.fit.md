@@ -22,7 +22,7 @@ If you use the `cluster.fit` command, please cite the OptiFit paper:
 > TODO
 
 See the 
-[citation file](https://github.com/mothur/mothur/blob/master/CITATION.md#cite-optifit) 
+[citation file](https://github.com/mothur/mothur.github.io/blob/master/CITATION.md#cite-optifit) 
 for a BibTeX entry.
 -->
 
