@@ -7,22 +7,33 @@ Once a distance matrix gets read into mothur, the
 **cluster** command can be used to assign sequences to
 OTUs. Presently, mothur implements three clustering methods:
 
--   Nearest neighbor (nearest): Each of the sequences within an OTU are at most X% distant from the most similar sequence in the OTU.
--   Furthest neighbor (furthest): All of the
+-   OptiClust (`opti`): OTUs are assembled using metrics to determine the 
+    quality of clustering (the default setting).
+-   Nearest neighbor (`nearest`): Each of the sequences within an OTU are at 
+    most X% distant from the most similar sequence in the OTU.
+-   Furthest neighbor (`furthest`): All of the
     sequences within an OTU are at most X% distant from all of the other
     sequences within the OTU.
--   Average neighbor (average): This method is a
+-   Average neighbor (`average`): This method is a
     middle ground between the other two algorithms.
--   AGC (agc):
--   DGC (dgc):
--   Opti (opti): OTUs are assembled using metrics to determine the quality of clustering (the default setting).
--   Unique: Creates a list file from a name or count file where every unique sequence is assigned to it's own OTU
+-   AGC (`agc`): Abundance-based greedy clustering.
+-   DGC (`dgc`): Distance-based greedy clustering.
+-   Unique (`unique`): Creates a list file from a name or count file where every unique 
+    sequence is assigned to it's own OTU (i.e. Amplicon Sequence Variant)
 
 If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
 developers and we'll see what we can do. The opticlust algorithm is the
 default option. For this tutorial you should download the [Final.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/final.zip) file and decompress it.
 
+If you use the OptiClust method (`opti`) in this command,
+please cite the OptiClust paper:
+
+> Westcott SL, Schloss PD. 2017. OptiClust, an Improved Method for Assigning Amplicon-Based Sequence Data to Operational Taxonomic Units. mSphere 2:e00073-17.
+
+See the 
+[citation file](https://github.com/mothur/mothur.github.io/blob/master/CITATION.md#cite-opticlust) 
+for a BibTeX entry.
 
 ## Default settings
 
@@ -426,7 +437,9 @@ same dataset you might get slightly different out for some distances:
     7  0   0.03    1170    0.03    31932   7051142 8524    20508   0.608924    0.998793    0.789302    0.9971  0.210698    0.995918    0.69131 0.687478    
     8  0   0.03    1170    0.03    31905   7051185 8481    20535   0.60841 0.998799    0.790001    0.997096    0.209999    0.99592 0.691326    0.687415    
 
-The variability is caused by the randomization of the sequences.
+The variability is caused by randomizing the order of the sequences before 
+clustering begins. You can set a seed to get reproducible results
+with the [`set.seed`](/wiki/set.seed) command prior to running `cluster.fit`.
 
 ## Revisions
 

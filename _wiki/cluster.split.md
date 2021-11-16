@@ -4,21 +4,22 @@ tags: 'commands'
 redirect_from: '/wiki/Cluster.split.html'
 ---
 The **cluster.split** command can be used to assign sequences to OTUs and
-outputs a .list file. It splits large datasets into smaller
-peices \...
+outputs a .list file.
+There are two parts to the **cluster.split** command: splitting datasets into distinct groups based on taxonomic classifications, and then clustering within the groups.
 
--   Nearest neighbor (nearest): Each of the
-    sequences within an OTU are at most X% distant from the most similar
-    sequence in the OTU.
--   Furthest neighbor (furthest): All of the
+-   OptiClust (`opti`): OTUs are assembled using metrics to determine the 
+    quality of clustering (the default setting).
+-   Nearest neighbor (`nearest`): Each of the sequences within an OTU are at 
+    most X% distant from the most similar sequence in the OTU.
+-   Furthest neighbor (`furthest`): All of the
     sequences within an OTU are at most X% distant from all of the other
     sequences within the OTU.
--   Average_neighbor (average): This method is a
+-   Average neighbor (`average`): This method is a
     middle ground between the other two algorithms.
--   AGC (agc):
--   DGC (dgc):
--   Opti (opti): OTUs are assembled using metrics to
-    determine the quality of clustering (default).
+-   AGC (`agc`): Abundance-based greedy clustering.
+-   DGC (`dgc`): Distance-based greedy clustering.
+-   Unique (`unique`): Creates a list file from a name or count file where every unique 
+    sequence is assigned to it's own OTU (i.e. Amplicon Sequence Variant)
 
 If there is an algorithm that you would like to see implemented, please
 consider either contributing to the mothur project or contacting the
@@ -26,10 +27,14 @@ developers and we'll see what we can do. The opticlust algorithm is the
 default option. For this tutorial you should download the [
 Final.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/final.zip) file and decompress it.
 
+If you use the OptiClust method (`opti`) in this command,
+please cite the OptiClust paper:
 
-There are two part to the **cluster.split** command the splitting of your
-files into distinct groupings and the clustering of these groupings.
+> Westcott SL, Schloss PD. 2017. OptiClust, an Improved Method for Assigning Amplicon-Based Sequence Data to Operational Taxonomic Units. mSphere 2:e00073-17.
 
+See the 
+[citation file](https://github.com/mothur/mothur.github.io/blob/master/CITATION.md#cite-opticlust) for a 
+BibTeX entry.
 ## Splitting your files
 
 The **cluster.split** command splits your dataset into groups based the sequences classifications. You need to provide
@@ -332,7 +337,9 @@ same dataset you might get slightly different out for some distances:
     label  cutoff  tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
     0.03   0.03    31313   7051732 8028    21033   0.5982  0.9989  0.7959  0.997   0.2041  0.9959  0.6881  0.683
 
-The variability is caused by the randomization of the sequences.
+The variability is caused by randomizing the order of the sequences before 
+clustering begins. You can set a seed to get reproducible results
+with the [`set.seed`](/wiki/set.seed) command prior to running `cluster.split`.
 
 ## Revisions
 
