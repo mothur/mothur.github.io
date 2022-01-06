@@ -69,7 +69,7 @@ file. if nomatch=keep, then do nothing to sequence.
 ### keepprimer
 
 The keepprimer parameter allows you to keep the primer, default=false.
-Note that even if keepprimer=TRUE, mothur will not remove primers if it
+Note that even if keepprimer=FALSE, mothur will not remove primers if it
 finds multiple potential matches to a given primer sequence.
 
 ### keepdots
