@@ -168,7 +168,7 @@ because my computer has 16 processors, use what you've got)\...
 
 The first thing you'll see is that it processes the fastq files to
 generate the individual fasta and qual files. Then it will go through
-each set of files and make the contigs. This took about 84 seconds on my
+each set of files and make the contigs. This took about 19 seconds on my
 computer. Clearly, it will take longer for a full dataset. In the end it
 will tell you the number of sequences in each sample:
 
@@ -580,7 +580,7 @@ Note: If you are running this analysis on a Windows machine, the Mock
 group name is likely capitalized due to how the make.file command
 creates the group names. You will want to set groups=MOCK.
 
-    mothur > get.groups(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, groups=Mock)
+    mothur > get.groups(count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.fasta, groups=Mock)
 
     Selected 64 sequences from your fasta file.
     Selected 4048 sequences from your count file.
@@ -589,7 +589,7 @@ This tells us that we had 64 unique sequences and a total of 4048 total
 sequences in our Mock sample. We can now use the
 [seq.error](/wiki/seq.error) command to measure the error rates:
 
-    mothur > seq.error(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, reference=HMP_MOCK.v35.fasta, aligned=F)
+    mothur > seq.error(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.fasta, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, reference=HMP_MOCK.v35.fasta, aligned=F)
 
     Overall error rate:    6.5108e-05
     Errors Sequences
@@ -629,10 +629,10 @@ sequences in our Mock sample. We can now use the
 That rocks, eh? Our error rate is 0.0065%. We can now cluster the
 sequences into OTUs to see how many spurious OTUs we have:
 
-    mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, cutoff=0.03)
-    mothur > cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
-    mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=0.03)
-    mothur > rarefaction.single(shared=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.shared)
+    mothur > dist.seqs(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.fasta, cutoff=0.03)
+    mothur > cluster(column=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.dist, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table)
+    mothur > make.shared(list=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.opti_mcc.list, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, label=0.03)
+    mothur > rarefaction.single(shared=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.opti_mcc.shared)
 
 This string of commands will produce a file for you called
 stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.groups.rarefaction.
@@ -651,7 +651,18 @@ assign sequences to OTUs, ASVs, and phylotypes. First, we want to remove the
 Mock sample from our dataset using the
 [remove.groups](/wiki/remove.groups) command:
 
-    mothur > remove.groups(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.taxonomy, groups=Mock)
+    mothur > remove.groups(count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.fasta, taxonomy=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pds.wang.pick.taxonomy, groups=Mock)
+    
+    mothur > rename.file(fasta=current, count=current, taxonomy=current, prefix=final)
+	
+	Current files saved by mothur:
+	fasta=final.fasta
+	taxonomy=final.taxonomy
+	contigsreport=stability.contigs_report
+	count=final.count_table
+	processors=16
+	summary=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.summary
+
 
 ### OTUs
 
@@ -659,19 +670,19 @@ Now we have a couple of options for clustering sequences into OTUs. For
 a small dataset like this, we can do the traditional approach using
 [dist.seqs](/wiki/dist.seqs) and [cluster](/wiki/cluster):
 
-    mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, cutoff=0.03)
-    mothur > cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
+    mothur > dist.seqs(fasta=final.fasta, cutoff=0.03)
+    mothur > cluster(column=final.dist, count=final.count_table)
 
-Clustering
-stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist
+Clustering final.dist
 
-    iter   time    label   num_otus    cutoff  tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
-    0.03
-    0  0   0.03    2428    0.03    0   2920180 0   26198   0   1   0   0.991108    1   0.991108    0   0   
-    1  0   0.03    516 0.03    22083   2918375 1805    4115    0.842927    0.999382    0.924439    0.998592    0.924439    0.997991    0.881747    0.881803    
-    2  0   0.03    478 0.03    22788   2918206 1974    3410    0.869837    0.999324    0.920281    0.998833    0.920281    0.998173    0.893789    0.894349    
-    3  0   0.03    482 0.03    22813   2918219 1961    3385    0.870792    0.999328    0.920844    0.998841    0.920844    0.998186    0.89456 0.895119    
-    4  0   0.03    482 0.03    22822   2918209 1971    3376    0.871135    0.999325    0.920502    0.998844    0.920502    0.998185    0.894569    0.895138    
+    iter	time	label	num_otus	cutoff	tp	tn	fp	fn	sensitivity	specificity	ppv	npv	fdr	accuracy	mcc	f1score
+	
+	0.03
+	0	0	0.03	2424	0.03	0	2.91065e+06	0	26024	0	1	0	0.991138	1	0.9911380
+	1	0	0.03	530	0.03	22262	2.90874e+06	1908	3762	0.855441	0.999344	0.921059	0.9987080.921059	0.998069	0.886681	0.887038	
+	2	0	0.03	481	0.03	22693	2.9087e+06	1950	3331	0.872003	0.99933	0.92087	0.998856	0.92087	0.998202	0.895203	0.89577	
+	3	0	0.03	481	0.03	22680	2.90873e+06	1920	3344	0.871503	0.99934	0.921951	0.998852	0.921951	0.998207	0.895475	0.896018	
+	4	0	0.03	482	0.03	22656	2.90876e+06	1888	3368	0.870581	0.999351	0.923077	0.9988430.923077	0.99821	0.895549	0.896061	
 
 The alternative is to use our [cluster.split](/wiki/cluster.split)
 command. In this approach, we use the taxonomic information to split the
@@ -690,10 +701,10 @@ ideal world we would prefer the traditional route because "Trad is
 rad", but we also think that kind of humor is funny\.... In this
 command we use taxlevel=4, which corresponds to the level of Order.
 
-    mothur > cluster.split(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, splitmethod=classify, taxlevel=4, cutoff=0.03)
+    mothur > cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy, taxlevel=4, cutoff=0.03)
 
-    label  cutoff  numotus tp  tn  fp  fn  sensitivity specificity ppv npv fdr accuracy    mcc f1score
-    0.03   0.03    524 22532   2918465 2043    3338    0.871   0.9993  0.9169  0.9989  0.9169  0.9982  0.8927  0.8933
+    	label	cutoff	numotus	tp	tn	fp	fn	sensitivity	specificity	ppv	npv	fdr	accuracy	mcc	f1score
+	0.03	0.03	531	22285	2.90912e+06	1864	3411	0.8673	0.9994	0.9228	0.9988	0.9228	0.9982	0.8937	0.8942
 
 Next we want to know how many sequences are in each OTU from each group
 and we can do this using the [make.shared](/wiki/make.shared)
@@ -701,28 +712,33 @@ command. Here we tell mothur that we're really only interested in the
 
 0\.03 cutoff level:
 
-    mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=0.03)
+    mothur > make.shared(list=final.opti_mcc.list, count=final.count_table, label=0.03)
 
 We probably also want to know the taxonomy for each of our OTUs. We can
 get the consensus taxonomy for each OTU using the
 [classify.otu](/wiki/classify.otu) command:
 
-    mothur > classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=0.03)
+    mothur > classify.otu(list=final.opti_mcc.list, count=final.count_table, taxonomy=final.taxonomy, label=0.03)
 
-Opening
-stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.0.03.cons.taxonomy
-you'll see something that looks like\...
+Opening final.opti_mcc.0.03.cons.taxonomy you'll see something that looks like\...
 
 ```
-OTU    Size    Taxonomy
-Otu001 12288   Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu002 8892    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu003 7794    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu004 7473    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);Barnesiella(100);
-Otu005 7450    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu006 6621    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu007 6304    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);Bacteroidaceae(100);Bacteroides(100);
-Otu008 5337    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Rikenellaceae"(100);Alistipes(100);
+OTU	Size	Taxonomy
+Otu001	12288	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu002	8892	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu003	7794	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu004	7476	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);Barnesiella(100);
+Otu005	7450	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu006	6621	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu007	6304	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);Bacteroidaceae(100);Bacteroides(100);
+Otu008	5337	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Rikenellaceae"(100);Alistipes(100);
+Otu009	3606	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu010	3061	Bacteria(100);Firmicutes(100);Bacilli(100);Lactobacillales(100);Lactobacillaceae(100);Lactobacillus(100);
+Otu011	2937	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu012	2074	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu013	1854	Bacteria(100);Firmicutes(100);Bacilli(100);Lactobacillales(100);Lactobacillaceae(100);Lactobacillus(100);
+Otu014	1452	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Lachnospiraceae_unclassified(100);
+Otu015	1316	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Lachnospiraceae_unclassified(100);
 ...
 ```
 
@@ -746,7 +762,7 @@ can convert the fasta and count_table files we used to form OTUs to a shared
 file using the [make.shared](/wiki/make.shared) command.
 
 ```
-mothur > make.shared(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table)
+mothur > make.shared(count=final.count_table)
 ```
 
 This results in a shared and list file. The shared file we can use like
@@ -754,7 +770,7 @@ the shared file from forming OTUs or phylotypes. The list file we can use
 to generate a consensus taxonomy for each ASV.
 
 ```
-mothur > classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.asv.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=asv)
+mothur > classify.otu(list=final.asv.list, count=final.count_table, taxonomy=final.taxonomy, label=ASV)
 ```
 
 ### Phylotypes
@@ -763,19 +779,19 @@ For some analyses you may desire to bin your sequences in to phylotypes
 according to their taxonomic classification. We can do this using the
 [phylotype](/wiki/phylotype) command:
 
-    mothur > phylotype(taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy)
+    mothur > phylotype(taxonomy=final.taxonomy)
 
 The cutoff numbering is a bit different for phylotype compared to
 cluster/cluster.split. Here you see 1 through 6 listed; these correspond
 to Genus through Kingdom levels, respectively. So if you want the
 genus-level shared file we'll do the following:
 
-    mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, label=1)
+    mothur > make.shared(list=final.tx.list, count=final.count_table, label=1)
 
 We also want to know who these OTUs are and can run
 [classify.otu](/wiki/classify.otu) on our phylotypes:
 
-    mothur > classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=1)
+    mothur > classify.otu(list=final.tx.list, count=final.count_table, taxonomy=final.taxonomy, label=1)
 
 ### Phylogenetic
 
@@ -786,8 +802,8 @@ of sequences increases. But here's how we'd do it using
 [dist.seqs](/wiki/dist.seqs) and
 [clearcut](/wiki/clearcut)\...
 
-    mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, output=lt, processors=8)
-    mothur > clearcut(phylip=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.phylip.dist)
+    mothur > dist.seqs(fasta=final.fasta, output=lt)
+    mothur > clearcut(phylip=final.phylip.dist)
 
 ## Analysis
 
@@ -798,41 +814,19 @@ our initial question had to do with the stability and change in
 community structure in these samples when comparing early and late
 samples. Keep in mind that the group names have either a F or M (sex of
 animal) followed by a number (number of animal) followed by a D and a
-three digit number (number of days post weaning). To keep things simple,
-let's rename our count, tree, shared and consensus taxonomy files.
-
-    mothur > rename.file(taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.0.03.cons.taxonomy, shared=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.opti_mcc.shared)
-
-    Current files saved by mothur:
-    accnos=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.accnos
-    column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist
-    fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta
-    group=stability.contigs.good.groups
-    list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.list
-    name=stability.trim.contigs.good.names
-    phylip=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.phylip.dist
-    qfile=stability.trim.contigs.qual
-    rabund=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.rabund
-    sabund=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.tx.sabund
-    shared=stablility.opti_mcc.shared
-    taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy
-    constaxonomy=stability.cons.taxonomy
-    tree=stability.tre
-    count=stability.count_table
-    processors=4
-    summary=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.summary
+three digit number (number of days post weaning). 
 
 We now want to do is see how many sequences we have in each sample.
 We'll do this with the [count.groups](/wiki/count.groups) command:
 
-    mothur > count.groups(shared=stability.opti_mcc.shared)
+    mothur > count.groups(shared=final.opti_mcc.shared)
 
 We see that our smallest sample had 2403 sequences in it. That is a
 reasonable number. Despite what some say, subsampling and rarefying your
 data is an important thing to do. We'll generate a subsampled file for
 our analyses with the [sub.sample](/wiki/sub.sample) command:
 
-    mothur > sub.sample(shared=stability.opti_mcc.shared, size=2403)
+    mothur > sub.sample(shared=final.opti_mcc.shared, size=2403)
 
 ## OTU-based analysis
 
@@ -843,7 +837,7 @@ samples. First we will generate rarefaction curves describing the number
 of OTUs observed as a function of sampling effort. We'll do this with
 the [rarefaction.single](/wiki/rarefaction.single) command:
 
-    mothur > rarefaction.single(shared=stability.opti_mcc.shared, calc=sobs, freq=100)
+    mothur > rarefaction.single(shared=final.opti_mcc.shared, calc=sobs, freq=100)
 
 This will generate files ending in \*.rarefaction, which again can be
 plotted in your favorite graphing software package. Alas, rarefaction is
@@ -864,10 +858,10 @@ everything, let's randomly select 2403 sequences from each sample 1000
 times and calculate the average (note: that if we set subsample=T, then
 it would use the size of the smallest library):
 
-    mothur > summary.single(shared=stability.opti_mcc.shared, calc=nseqs-coverage-sobs-invsimpson, subsample=T)
+    mothur > summary.single(shared=final.opti_mcc.shared, calc=nseqs-coverage-sobs-invsimpson, subsample=T)
 
 These data will be outputted to a table in a file called
-stability.an.groups.ave-std.summary. Interestingly, the sample coverages
+final.opti_mcc.groups.ave-std.summary. Interestingly, the sample coverages
 were all above 97%, indicating that we did a pretty good job of sampling
 the communities. Plotting the richness or diversity of the samples would
 show that there was little difference between the different animals or
@@ -883,20 +877,20 @@ similarity of the membership and structure found in the various samples.
 We'll do this with the [dist.shared](/wiki/dist.shared) command
 that will allow us to rarefy our data to a common number of sequences.
 
-    mothur > dist.shared(shared=stability.opti_mcc.shared, calc=thetayc-jclass, subsample=t)
+    mothur > dist.shared(shared=final.opti_mcc.shared, calc=thetayc-jclass, subsample=t)
 
 These two distance matrices (i.e.
-stability.opti_mcc.jclass.0.03.lt.ave.dist and
-stability.opti_mcc.thetayc.0.03.lt.ave.dist) can then be visualized
+final.opti_mcc.jclass.0.03.lt.ave.dist and
+final.opti_mcc.thetayc.0.03.lt.ave.dist) can then be visualized
 using the [pcoa](/wiki/pcoa) or [nmds](/wiki/nmds) plots.
 Principal Coordinates (PCoA) uses an eigenvector-based approach to
 represent multidimensional data in as few dimesnsions as possible. Our
 data is highly dimensional (\~9 dimensions).
 
-    mothur > pcoa(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist)
+    mothur > pcoa(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist)
 
 The output of these commands are three files ending in \*dist, \*pcoa,
-and \*pcoa.loadings. The stability.an.thetayc.0.03.lt.ave.pcoa.loadings
+and \*pcoa.loadings. The final.opti_mcc.thetayc.0.03.lt.ave.pcoa.loadings
 file will tell you what fraction of the total variance in the data are
 represented by each of the axes. In this case, the first and second axis
 represent about 45 and 14% of the variation (59% of the total) for the
@@ -910,25 +904,25 @@ preserve the distance between samples using a user-defined number of
 dimensions. We can run our data through NMDS with 2 dimensions with the
 following commands
 
-    mothur > nmds(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist)
+    mothur > nmds(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist)
 
-Opening the stability.opti_mcc.thetayc.0.03.lt.ave.nmds.stress file we
+Opening the final.opti_mcc.thetayc.0.03.lt.ave.nmds.stress file we
 can inspect the stress and R\^2 values, which describe the quality of
 the ordination. Each line in this file represents a different iteration
 and the configuration obtained in the iteration with the lowest stress
-is reported in the stability.opti_mcc.thetayc.0.03.lt.ave.nmds.axes
+is reported in the final.opti_mcc.thetayc.0.03.lt.ave.nmds.axes
 file. In this file we find that the lowest stress value was 0.11 with an
 R-squared value of 0.95; that stress level is actually pretty good. You
 can test what hapens with three dimensions by the following:
 
-    mothur > nmds(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist, mindim=3, maxdim=3)
+    mothur > nmds(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist, mindim=3, maxdim=3)
 
 The stress value drops to 0.05 and the R2 value goes up to 0.99. Not
 bad. In general, you would like a stress value below 0.20 and a value
 below 0.10 is even better. Thus, we can conclude that, NMDS is better
 than PCoA. We can plot the three dimensions of the NMDS data by plotting
 the contents of
-stability.opti_mcc.subsample.pick.thetayc.0.03.lt.nmds.axes. Again, it
+final.opti_mcc.subsample.pick.thetayc.0.03.lt.nmds.axes. Again, it
 is clear that the early and late samples cluster separately from each
 other. Ultimately, ordination is a data visualization tool. We might ask
 if the spatial separation that we see between the early and late plots
@@ -946,6 +940,7 @@ create a design file that indicates which treatment each sample belongs
 to. There is a file called mouse.time.design in the folder you
 downloaded that looks vaguely like this:
 
+    group	treatment
     F3D0   Early
     F3D1   Early
     F3D141 Late
@@ -968,15 +963,16 @@ downloaded that looks vaguely like this:
 
 We can then run amova with this file as follows\...
 
-    mothur > amova(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
+    mothur > amova(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
      
-    Early-Late Among   Within  Total
-    SS 0.637946    0.59274 1.23069
-    df 1   17  18
-    MS 0.637946    0.0348671
+    	Early-Late	Among	Within	Total
+	SS	0.630302	0.55368	1.18398
+	df	1	17	18
+	MS	0.630302	0.0325694
+	
+	Fs:	19.3526
+	p-value: 0.001*
 
-    Fs:    18.2965
-    p-value: 0.001*
 
 Here we see from the AMOVA that the "cloud" early and late time points
 has a significantly different centroid for this mouse. Thus, the
@@ -988,10 +984,10 @@ the [homova](/wiki/homova) command:
     mothur > homova(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
 
     HOMOVA BValue  P-value SSwithin/(Ni-1)_values
-    Early-Late 8.54001 <0.001* 0.0659433   0.00724368
+    Early-Late	7.89723	<0.001*	0.0609184	0.00737032
 
 We see that there is a significant difference in the variation with the
-early samples having a larger amount of variation (0.066) than the late
+early samples having a larger amount of variation (0.061) than the late
 samples (0.007). This was what we found in the original study - the
 early samples were less stable than the late samples.
 
@@ -1003,16 +999,17 @@ dataset. We do this with the [corr.axes](/wiki/corr.axes) command:
     mothur > corr.axes(axes=stability.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, shared=stability.opti_mcc.0.03.subsample.shared, method=spearman, numaxes=3)
 
 This command generates the
-stability.opti_mcc.0.03subsample.0.03.pick.spearman.corr.axes file. The
+final.opti_mcc.0.03.subsample.spearman.corr.axes file. The
 data for the first five OTUs look like this\...
 
-    OTU    axis1   p-value axis2   p-value axis3   p-value length
-    Otu001 0.016674    0.943603    -0.357174   0.129681    -0.824046   0.000014    0.898278
-    Otu002 0.231311    0.326410    -0.625332   0.004194    -0.591031   0.007702    0.890990
-    Otu003 0.045634    0.846482    -0.495832   0.030853    -0.133392   0.571439    0.515485
-    Otu004 -0.798596   0.000041    0.118473    0.615218    0.210619    0.371547    0.834357
-    Otu005 -0.894645   0.000000    0.274803    0.243660    -0.137840   0.558678    0.945995
-    ...
+    	OTU    axis1   p-value axis2   p-value axis3   p-value length
+	Otu001	-0.052632	0.823304	0.612281	0.005327	-0.733333	0.000353	0.956784
+	Otu002	0.219684	0.351316	0.792620	0.000052	-0.514939	0.024064	0.970397
+	Otu003	0.040369	0.864012	0.543221	0.016233	-0.108820	0.644309	0.555482
+	Otu004	-0.803861	0.000034	-0.202721	0.389750	0.245722	0.297176	0.864678
+	Otu005	-0.853006	0.000003	-0.181659	0.440877	-0.177271	0.451993	0.889968
+	Otu006	-0.861404	0.000002	0.184211	0.434486	-0.028070	0.905203	0.881327
+    	...
 
 This helps to illustrate the power of OTUs over phylotypes since each of
 these OTUs is behaving differently. These data can be plotted in what's
@@ -1041,8 +1038,9 @@ metadata option:
 
 Opening the file mouse.dpw.spearman.corr.axes, we see:
 
-    Feature    axis1   p-value axis2   p-value axis3   p-value length
-    dpw    -0.622807   0.004396    -0.087719   0.709773    0.338596    0.150848    0.714304
+    Feature	axis1	p-value	axis2	p-value	axis3	p-value	length
+    dpw	 -0.642105	0.003035	0.005263	0.982185	0.378947	0.107893	0.745606
+
 
 Indicating that as the dpw increases the communities shift to in the
 positive direction along axis 3.
@@ -1051,29 +1049,32 @@ Another tool we can use is
 [get.communitytype](/wiki/get.communitytype) to see whether our
 data can be partitioned in to separate community types
 
-    mothur > get.communitytype(shared=stability.opti_mcc.0.03.subsample.shared)
+    mothur > get.communitytype(shared=final.opti_mcc.0.03.subsample.shared)
 
-    K  NLE     logDet  BIC     AIC     Laplace
-    1  10903.52    590.94  11470.33    11288.52    10845.20
-    2  10927.36    435.57  12062.44    11698.36    10436.65
-    3  11814.80    181.01  13518.16    12971.80    10842.09
-    4  12621.90    -157.33 14893.53    14164.90    11125.31
-    5  13540.88    -567.95 16380.79    15469.88    11484.27
+    	K	NLE		logDet	BIC		AIC		Laplace
+	1	11134.22	606.58	11726.05	11536.22	11068.10
+	2	11301.45	442.73	12486.59	12106.45	10783.07
+	3	12160.43	172.35	13938.87	13368.43	11136.52
+	4	13070.99	-222.46	15442.74	14681.99	11479.35
+	5	13948.84	-648.65	16913.89	15962.84	11773.78
 
-We see that the minimum Laplace value is for a K value of 2 (10436.65).
+We see that the minimum Laplace value is for a K value of 2 (10783.07).
 This indicates that our samples belonged to two community types. Opening
-stability.opti_mcc.0.03.subsample.0.03.dmm.mix.design we see that all
+final.opti_mcc.0.03.subsample.0.03.dmm.mix.design we see that all
 of the late samples and the Day 0 sample belonged to Partition_1 and
 the other early samples belonged to Partition_2. We can look at the
-stability.opti_mcc.0.03.subsample.0.03.dmm.mix.summary file to see
+final.opti_mcc.0.03.subsample.0.03.dmm.mix.summary file to see
 which OTUs were most responsible for separating the communities:
 
-    OTU    P0.mean P1.mean P1.lci  P1.uci  P2.mean P2.lci  P2.uci  Difference  CumFraction
-    Otu005 3.33    0.63    0.41    0.99    10.72   9.42    12.21   10.09   0.14
-    Otu004 6.17    3.99    3.23    4.93    8.70    7.61    9.95    4.71    0.21
-    Otu006 5.69    3.99    3.24    4.92    7.48    6.52    8.59    3.49    0.26
-    Otu010 2.00    0.88    0.60    1.29    3.81    3.23    4.50    2.94    0.30
-    Otu008 3.91    5.19    4.28    6.29    2.95    2.46    3.53    2.25    0.33
+    	OTU	P0.mean	P1.mean	P1.lci	P1.uci	P2.mean	P2.lci	P2.uci	Difference	CumFraction
+	Otu005	3.32	0.43	0.26	0.72	10.52	9.27	11.93	10.09	0.15
+	Otu004	6.17	3.67	2.96	4.57	8.60	7.54	9.81	4.93	0.22
+	Otu006	5.68	3.80	3.07	4.71	7.30	6.37	8.37	3.50	0.27
+	Otu008	3.96	5.69	4.71	6.86	2.93	2.44	3.51	2.76	0.31
+	Otu010	1.99	0.92	0.63	1.35	3.29	2.76	3.93	2.37	0.34
+	Otu001	9.51	10.72	9.15	12.56	8.53	7.48	9.73	2.19	0.37
+	Otu007	5.63	6.84	5.71	8.19	4.77	4.10	5.56	2.07	0.40
+	Otu013	1.19	2.53	1.97	3.24	0.61	0.43	0.86	1.92	0.43
     ...
 
 Again we can cross-reference these OTU labels with the consensus
