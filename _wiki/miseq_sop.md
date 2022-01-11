@@ -161,10 +161,10 @@ the other has a gap, the quality score of the base must be over 25 to be
 considered real. If both sequences have a base at that position, then we
 require one of the bases to have a quality score 6 or more points better
 than the other. If it is less than 6 points better, then we set the
-consensus base to an N. Let's give it a shot (I'm using 8 processors,
-because my computer has 8 processors, use what you've got)\...
+consensus base to an N. Let's give it a shot (I'm using 16 processors,
+because my computer has 16 processors, use what you've got)\...
 
-    mothur > make.contigs(file=stability.files, processors=8)
+    mothur > make.contigs(file=stability.files, processors=16)
 
 The first thing you'll see is that it processes the fastq files to
 generate the individual fasta and qual files. Then it will go through
@@ -206,60 +206,104 @@ lot of headaches down the road if you are crazy enough to try and create
 phylogenetic trees from these sequences. So to prevent this headache for
 you, we convert all of the ":" characters to "_" characters. This
 command will also produce several files that you will need down the
-road: `stability.trim.contigs.fasta` and `stability.contigs.groups`. These
+road: `stability.trim.contigs.fasta` and `stability.contigs.count_table`. These
 contain the sequence data and group identity for each sequence. The
 `stability.contigs.report` file will tell you something about the contig
 assembly for each read. Let's see what these sequences look like using
 the [summary.seqs](/wiki/summary.seqs) command:
 
-    mothur > summary.seqs(fasta=stability.trim.contigs.fasta)
+    mothur > summary.seqs(fasta=stability.trim.contigs.fasta, count=stability.contigs.count_table)
      
            Start   End NBases  Ambigs  Polymer NumSeqs
-    Minimum:   1   248 248 0   3   1
-    2.5%-tile: 1   252 252 0   3   3810
-    25%-tile:  1   252 252 0   4   38091
-    Median:    1   252 252 0   4   76181
-    75%-tile:  1   253 253 0   5   114271
-    97.5%-tile:    1   253 253 6   6   148552
-    Maximum:   1   503 502 249 243 152360
-    Mean:      1   252.811 252.811 0.697867    4.44854
-    # of Seqs: 152360
+    Minimum:	1	248	248	0	3	1
+    2.5%-tile:	1	252	252	0	3	3810
+    25%-tile:	1	252	252	0	4	38091
+    Median: 	1	252	252	0	4	76181
+    75%-tile:	1	253	253	0	5	114271
+    97.5%-tile:	1	253	253	6	6	148552
+    Maximum:	1	502	502	249	243	152360
+    Mean:	1	252	252	0	4
+    # of unique seqs:	152360
+    total # of seqs:	152360
+
 
 This tells us that we have 152360 sequences that for the most part vary
 between 248 and 253 bases. Interestingly, the longest read in the
 dataset is 502 bp. Be suspicious of this. Recall that the reads are
 supposed to be 251 bp each. This read clearly didn't assemble well (or
 at all). Also, note that at least 2.5% of our sequences had some
-ambiguous base calls. We'll take care of these issues in the next step
-when we run [screen.seqs](/wiki/screen.seqs).
+ambiguous base calls. We can use the maxambig and maxlength options 
+in make.contigs to resolve this issue while assembling the reads:
 
-    mothur > screen.seqs(fasta=stability.trim.contigs.fasta, group=stability.contigs.groups, maxambig=0, maxlength=275)
+    mothur > make.contigs(file=stability.files, maxambig=0, maxlength=275)
+    ...
+    Group count: 
+    F3D0	6638
+    F3D1	4970
+    F3D141	5075
+    F3D142	2670
+    F3D143	2672
+    F3D144	3875
+    F3D145	6114
+    F3D146	4301
+    F3D147	14170
+    F3D148	10524
+    F3D149	11091
+    F3D150	4605
+    F3D2	16793
+    F3D3	5678
+    F3D5	3716
+    F3D6	6839
+    F3D7	4365
+    F3D8	4524
+    F3D9	6119
+    Mock	4133
+
+    Total of all groups is 128872
+
+    It took 19 secs to process 152360 sequences.
+    
+    mothur > summary.seqs(fasta=stability.trim.contigs.fasta, count=stability.contigs.count_table)
+
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+    Minimum:	1	250	250	0	3	1
+    2.5%-tile:	1	252	252	0	3	3222
+    25%-tile:	1	252	252	0	4	32219
+    Median: 	1	252	252	0	4	64437
+    75%-tile:	1	253	253	0	5	96655
+    97.5%-tile:	1	253	253	0	6	125651
+    Maximum:	1	270	270	0	12	128872
+    Mean:	1	252	252	0	4
+    # of unique seqs:	128872
+    total # of seqs:	128872
+    
+Alternatively, we can take care of these issues in a separate step
+by running the [screen.seqs](/wiki/screen.seqs) command.
+
+    mothur > screen.seqs(fasta=stability.trim.contigs.fasta, count=stability.contigs.count_table, maxambig=0, maxlength=275)
 
 This implementation of the command will remove any sequences with
-ambiguous bases and anything longer than 275 bp. There's another way to
-run this using the output from summary.seqs:
-
-    mothur > screen.seqs(fasta=stability.trim.contigs.fasta, group=stability.contigs.groups, summary=stability.trim.contigs.summary, maxambig=0, maxlength=275)
-
-This may be faster because the summary.seqs output file already has the
-number of ambiguous bases and sequence length calculated for your
-sequences. Also, mothur is smart enough to remember that we used 8
+ambiguous bases and anything longer than 275 bp. Also, mothur is smart enough to remember that we used 16
 processors in make.contigs and so it will use that throughout your
 current session. To see what else mothur knows about you, run the
 following:
 
     mothur > get.current()
 
-    Current files saved by mothur:
-    fasta=stability.trim.contigs.good.fasta 
-    group=stability.contigs.good.groups
-    processors=8
-
+    Current RAM usage: 0.410511 Gigabytes. Total Ram: 32 Gigabytes.
+    
+    Current files saved by mothur:
+    fasta=stability.trim.contigs.fasta
+    contigsreport=stability.contigs_report
+    count=stability.contigs.count_table
+    processors=16
+    summary=stability.trim.contigs.summary
+    
 What this means is that mothur remembers your latest fasta file and
-group file as well as the number of processors you have. So you could
+count file as well as the number of processors you have. So you could
 run:
 
-    mothur > summary.seqs(fasta=stability.trim.contigs.good.fasta)
+    mothur > summary.seqs(fasta=stability.trim.contigs.fasta)
     mothur > summary.seqs(fasta=current)
     mothur > summary.seqs()
 
@@ -275,46 +319,32 @@ Because it's computationally wasteful to align the same thing a
 bazillion times, we'll unique our sequences using the
 [unique.seqs](/wiki/unique.seqs) command:
 
-    mothur > unique.seqs(fasta=stability.trim.contigs.good.fasta)
+    mothur > unique.seqs(fasta=stability.trim.contigs.fasta, count=stability.contigs.count_table)
 
 If two sequences have the same identical sequence, then they're
 considered duplicates and will get merged. In the screen output there
 are two columns - the first is the number of sequences characterized and
 the second is the number of unique sequences remaining. So after running
 unique.seqs we have gone from 128872 to 16426 sequences. This will make
-our life much easier. Another thing to do to make our lives easier is to
-simplify the names and group files. If you look at the most recent
-versions of those files you'll see together they are 13 MB. This may
-not seem like much, but with a full MiSeq run those long sequence names
-can add up and make life tedious. So we'll run
-[count.seqs](/wiki/count.seqs) to generate a table where the rows
-are the names of the unique sequences and the columns are the names of
-the groups. The table is then filled with the number of times each
-unique sequence shows up in each group.
+our life much easier. 
 
-    mothur > count.seqs(name=stability.trim.contigs.good.names, group=stability.contigs.good.groups)
+    mothur > summary.seqs(count=stability.trim.contigs.count_table)
 
-This will generate a file called
-stability.trim.contigs.good.count_table. In subsequent commands we'll
-use it by using the count option:
+    Using stability.trim.contigs.unique.fasta as input file for the fasta parameter.
 
-    mothur > summary.seqs(count=stability.trim.contigs.good.count_table)
+    Using 16 processors.
 
-    Using stability.trim.contigs.good.unique.fasta as input file for the fasta parameter.
-
-    Using 8 processors.
-     
-           Start   End NBases  Ambigs  Polymer NumSeqs
-    Minimum:   1   250 250 0   3   1
-    2.5%-tile: 1   252 252 0   3   3222
-    25%-tile:  1   252 252 0   4   32219
-    Median:    1   252 252 0   4   64437
-    75%-tile:  1   253 253 0   5   96655
-    97.5%-tile:    1   253 253 0   6   125651
-    Maximum:   1   270 270 0   12  128872
-    Mean:  1   252.462 252.462 0   4.36693
-    # of unique seqs:  16426
-    total # of seqs:   128872
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+    Minimum:	1	250	250	0	3	1
+    2.5%-tile:	1	252	252	0	3	3222
+    25%-tile:	1	252	252	0	4	32219
+    Median: 	1	252	252	0	4	64437
+    75%-tile:	1	253	253	0	5	96655
+    97.5%-tile:	1	253	253	0	6	125651
+    Maximum:	1	270	270	0	12	128872
+    Mean:	1	252	252	0	4
+    # of unique seqs:	16426
+    total # of seqs:	128872
 
 Cool, right? Now we need to align our sequences to the reference
 alignment. Again we can make our lives a bit easier by making a database
@@ -323,9 +353,9 @@ customized to our region of interest using the
 have the reference database (silva.bacteria.fasta) and know where in
 that alignment your sequences start and end. To remove the leading and
 trailing dots we will set keepdots to false. You could also run this
-command using your primers of interest.:
+command using your primers of interest.
 
-    mothur > pcr.seqs(fasta=silva.bacteria.fasta, start=11894, end=25319, keepdots=F, processors=8)
+    mothur > pcr.seqs(fasta=silva.bacteria.fasta, start=11894, end=25319, keepdots=F)
 
 Let's rename it to something more useful using the
 [rename.file](/wiki/rename.file) command:
@@ -336,16 +366,19 @@ Let's take a look at what we've made:
 
     mothur > summary.seqs(fasta=silva.v4.fasta)
 
-           Start   End NBases  Ambigs  Polymer NumSeqs
-    Minimum:   1   13424   270 0   3   1
-    2.5%-tile: 1   13425   292 0   4   374
-    25%-tile:  1   13425   293 0   4   3740
-    Median:    1   13425   293 0   4   7479
-    75%-tile:  1   13425   293 0   5   11218
-    97.5%-tile:    1   13425   294 1   6   14583
-    Maximum:   3   13425   351 5   9   14956
-    Mean:  1.00074 13425   292.977 0.0573014   4.57014
-    # of Seqs: 14956
+    Using 16 processors.
+
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+    Minimum:	2	13425	270	0	3	1
+    2.5%-tile:	2	13426	292	0	4	374
+    25%-tile:	2	13426	293	0	4	3740
+    Median: 	2	13426	293	0	4	7479
+    75%-tile:	2	13426	293	0	5	11218
+    97.5%-tile:	2	13426	294	1	6	14583
+    Maximum:	4	13426	351	5	9	14956
+    Mean:	2	13425	292	0	4
+    # of Seqs:	14956
+
 
 Now we have a customized reference alignment to align our sequences to.
 The nice thing about this reference is that instead of being 50,000
@@ -353,64 +386,63 @@ columns wide, it is now 13,425 columns wide which will save our hard
 drive some space and should improve the overall alignment quality.
 We'll do the alignment with [align.seqs](/wiki/align.seqs):
 
-    mothur > align.seqs(fasta=stability.trim.contigs.good.unique.fasta, reference=silva.v4.fasta)
+    mothur > align.seqs(fasta=stability.trim.contigs.unique.fasta, reference=silva.v4.fasta)
 
 This should be done in a manner of seconds and we can run
 [summary.seqs](/wiki/summary.seqs) again:
 
-    mothur > summary.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table)
+    mothur > summary.seqs(fasta=stability.trim.contigs.unique.align, count=stability.trim.contigs.count_table)
 
-    Using 8 processors.
+    Using 16 processors.
      
-           Start   End NBases  Ambigs  Polymer NumSeqs
-    Minimum:   1250    10693   250 0   3   1
-    2.5%-tile: 1968    11550   252 0   3   3222
-    25%-tile:  1968    11550   252 0   4   32219
-    Median:    1968    11550   252 0   4   64437
-    75%-tile:  1968    11550   253 0   5   96655
-    97.5%-tile:    1968    11550   253 0   6   125651
-    Maximum:   1982    13400   270 0   12  128872
-    Mean:  1967.99 11550   252.462 0   4.36693
-    # of unique seqs:  16426
-    total # of seqs:   128872
+            Start	End	NBases	Ambigs	Polymer	NumSeqs
+    Minimum:	1251	10694	250	0	3	1
+    2.5%-tile:	1969	11551	252	0	3	3222
+    25%-tile:	1969	11551	252	0	4	32219
+    Median: 	1969	11551	252	0	4	64437
+    75%-tile:	1969	11551	253	0	5	96655
+    97.5%-tile:	1969	11551	253	0	6	125651
+    Maximum:	1983	13401	270	0	12	128872
+    Mean:	1968	11551	252	0	4
+    # of unique seqs:	16426
+    total # of seqs:	128872
+
 
 So what does this mean? You'll see that the bulk of the sequences start
-at position 1968 and end at position 11550. Some sequences start at
-position 1250 or 1968 and end at 10693 or 13400. These deviants from the
+at position 1969 and end at position 11551. Some sequences start at
+position 1251 or 1969 and end at 10694 or 13401. These deviants from the
 mode positions are likely due to an insertion or deletion at the
 terminal ends of the alignments. Sometimes you'll see sequences that
 start and end at the same position indicating a very poor alignment,
 which is generally due to non-specific amplification. To make sure that
 everything overlaps the same region we'll re-run screen.seqs to get
-sequences that start at or before position 1968 and end at or after
-position 11550. We'll also set the maximum homopolymer length to 8
+sequences that start at or before position 1969 and end at or after
+position 11551. We'll also set the maximum homopolymer length to 8
 since there's nothing in the database with a stretch of 9 or more of
 the same base in a row (this really could have been done in the first
 execution of screen.seqs above). Note that we need the count table so
-that we can update the table for the sequences we're removing and
-we're also using the summary file so we don't have to figure out again
-all the start and stop positions:
+that we can update the table for the sequences we're removing:
 
-    mothur > screen.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table, summary=stability.trim.contigs.good.unique.summary, start=1968, end=11550, maxhomop=8)
+    mothur > screen.seqs(fasta=stability.trim.contigs.unique.align, count=stability.trim.contigs.count_table, start=1969, end=11551, maxhomop=8)
 
     mothur > summary.seqs(fasta=current, count=current)
 
-    Using stability.trim.contigs.good.good.count_table as input file for the count parameter.
-    Using stability.trim.contigs.good.unique.good.align as input file for the fasta parameter.
+    Using stability.trim.contigs.good.count_table as input file for the count parameter.
+    Using stability.trim.contigs.unique.good.align as input file for the fasta parameter.
 
-    Using 8 processors.
+    Using 16 processors.
      
-           Start   End NBases  Ambigs  Polymer NumSeqs
-    Minimum:   1965    11550   250 0   3   1
-    2.5%-tile: 1968    11550   252 0   3   3217
-    25%-tile:  1968    11550   252 0   4   32164
-    Median:    1968    11550   252 0   4   64328
-    75%-tile:  1968    11550   253 0   5   96492
-    97.5%-tile:    1968    11550   253 0   6   125439
-    Maximum:   1968    13400   270 0   8   128655
-    Mean:  1968    11550   252.463 0   4.36666
-    # of unique seqs:  16298
-    total # of seqs:   128655
+           Start	End	NBases	Ambigs	Polymer	NumSeqs
+    Minimum:	1966	11551	250	0	3	1
+    2.5%-tile:	1969	11551	252	0	3	3217
+    25%-tile:	1969	11551	252	0	4	32165
+    Median: 	1969	11551	252	0	4	64329
+    75%-tile:	1969	11551	253	0	5	96493
+    97.5%-tile:	1969	11551	253	0	6	125440
+    Maximum:	1969	13401	270	0	8	128656
+    Mean:	1968	11551	252	0	4
+    # of unique seqs:	16299
+    total # of seqs:	128656
 
 Now we know our sequences overlap the same alignment coordinates, we
 want to make sure they only overlap that region. So we'll filter the
@@ -421,23 +453,23 @@ contain gap characters (i.e. "-"). These can be pulled out without
 losing any information. We'll do all this with
 [filter.seqs](/wiki/filter.seqs):
 
-    mothur > filter.seqs(fasta=stability.trim.contigs.good.unique.good.align, vertical=T, trump=.)
+    mothur > filter.seqs(fasta=stability.trim.contigs.unique.good.align, vertical=T, trump=.)
 
 At the end of running the command we get the following information:
 
-    Length of filtered alignment: 376 
-    Number of columns removed: 13049
-    Length of the original alignment: 13425
-    Number of sequences used to construct filter: 16298
+    Length of filtered alignment: 375
+    Number of columns removed: 13051
+    Length of the original alignment: 13426
+    Number of sequences used to construct filter: 16299
 
 This means that our initial alignment was 13425 columns wide and that we
-were able to remove 13049 terminal gap characters using trump=. and
+were able to remove 13051 terminal gap characters using trump=. and
 vertical gap characters using vertical=T. The final alignment length is
-376 columns. Because we've perhaps created some redundancy across our
+375 columns. Because we've perhaps created some redundancy across our
 sequences by trimming the ends, we can re-run
 [unique.seqs](/wiki/unique.seqs):
 
-    mothur > unique.seqs(fasta=stability.trim.contigs.good.unique.good.filter.fasta, count=stability.trim.contigs.good.good.count_table)
+    mothur > unique.seqs(fasta=stability.trim.contigs.unique.good.filter.fasta, count=stability.trim.contigs.good.count_table)
 
 This identified 3 duplicate sequences that we've now merged with
 previous unique sequences. The next thing we want to do to further
@@ -449,9 +481,9 @@ and identify sequences that are within 2 nt of each other. If they are
 then they get merged. We generally favor allowing 1 difference for every
 100 bp of sequence:
 
-    mothur > pre.cluster(fasta=stability.trim.contigs.good.unique.good.filter.unique.fasta, count=stability.trim.contigs.good.unique.good.filter.count_table, diffs=2)
+    mothur > pre.cluster(fasta=stability.trim.contigs.unique.good.filter.unique.fasta, count=stability.trim.contigs.unique.good.filter.count_table, diffs=2)
 
-We now have 6087 unique sequences. At this point we have removed as much
+We now have 6085 unique sequences. At this point we have removed as much
 sequencing error as we can and it is time to turn our attention to
 removing chimeras. We'll do this using the VSEARCH algorithm that is
 called within mothur using the
@@ -466,30 +498,31 @@ sequence in another sample. This is how we do it:
 
     mothur > chimera.vsearch(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t)
 
-Running chimera.vsearch with the count file will remove the chimeric
-sequences from the count file. But you still need to remove those
-sequences from the fasta file. We do this using
-[remove.seqs](/wiki/remove.seqs):
+When running mothur's chimera commands mothur will automatically remove the chimeras from your files. 
+Alternatively, you can run it in two steps.
 
+    mothur > chimera.vsearch(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t, removechimeras=f)
     mothur > remove.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, accnos=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.accnos)
 
 Running summary.seqs we see what we're left with:
 
     mothur > summary.seqs(fasta=current, count=current)
      
-            Start  End NBases  Ambigs  Polymer NumSeqs
-    Minimum:   1   376 249 0   3   1
-    2.5%-tile: 1   376 252 0   3   2955
-    25%-tile:  1   376 252 0   4   29543
-    Median:    1   376 252 0   4   59086
-    75%-tile:  1   376 253 0   5   88629
-    97.5%-tile:    1   376 253 0   6   115217
-    Maximum:   1   376 256 0   8   118171
-    Mean:  1   376 252 0   4
-    # of unique seqs:  2489
-    total # of seqs:   118171
+    Using 16 processors.
 
-Note that we went from 128,655 to 118,171 sequences for a reduction of
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+    Minimum:	1	375	249	0	3	1
+    2.5%-tile:	1	375	252	0	3	2955
+    25%-tile:	1	375	252	0	4	29543
+    Median: 	1	375	252	0	4	59085
+    75%-tile:	1	375	253	0	5	88627
+    97.5%-tile:	1	375	253	0	6	115214
+    Maximum:	1	375	256	0	8	118168
+    Mean:	1	375	252	0	4
+    # of unique seqs:	2485
+    total # of seqs:	118170
+    
+Note that we went from 128,656 to 118,170 sequences for a reduction of
 
 8\.2%; this is a reasonable number of sequences to be flagged as
 chimeric. As a final quality control step, we need to see if there are
@@ -505,12 +538,12 @@ microbial community. But I digress. Let's go ahead and classify those
 sequences using the Bayesian classifier with the
 [classify.seqs](/wiki/classify.seqs) command:
 
-    mothur > classify.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80)
+    mothur > classify.seqs(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.fasta, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80)
 
 Now that everything is classified we want to remove our undesirables. We
 do this with the [remove.lineage](/wiki/remove.lineage) command:
 
-    mothur > remove.lineage(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
+    mothur > remove.lineage(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.fasta, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.count_table, taxonomy=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pds.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
 
 Note is that "unknown" only pops up as a classification if the
 classifier cannot classify your sequence to one of the domains. Also,
@@ -521,8 +554,8 @@ called. For example, our modified version of the RDP calls mitochondria,
 "f__mitochondria". If you are using greengenes (or SILVA or anything
 else), you'll need to change these names as appropriate.
 
-If you run summary.seqs you'll see that we now have 2469 unique
-sequences and a total of 118009 total sequences. This means about 162 of
+If you run summary.seqs you'll see that we now have 2465 unique
+sequences and a total of 118008 total sequences. This means about 162 of
 our sequences were in these various groups. Now, to create an updated
 taxonomy summary file that reflects these removals we use the
 [summary.tax](/wiki/summary.tax) command:
@@ -1205,3 +1238,4 @@ please include this file!
 ## Revisions
 
 -   6/24/19 - Updated to reflect version 1.42.3 outputs.
+-   1/11/21 - Updates to reflect version 1.47.0 outputs.
