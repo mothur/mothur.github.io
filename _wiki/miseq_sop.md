@@ -1091,20 +1091,20 @@ non-parametric T-tetst that determines whether there are any OTUs that
 are differentially represented between the samples from men and women in
 this study. Run the following in mothur:
 
-    mothur > metastats(shared=stability.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
+    mothur > metastats(shared=final.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
 
 Looking in the first 5 OTUs from
-stability.opti_mcc.0.03.subsample.0.03.Late-Early.metastats file we see
+final.opti_mcc.0.03.subsample.0.03.Late-Early.metastats file we see
 the following\...
 
-    OTU    mean(group1)    variance(group1)    stderr(group1)  mean(group2)    variance(group2)    stderr(group2)  p-value
-    Otu001 0.086642    0.000160    0.004002    0.112360    0.002551    0.016837    0.158841
-    Otu002 0.073283    0.000282    0.005311    0.079068    0.000468    0.007214    0.512488
-    Otu003 0.067957    0.000092    0.003040    0.070652    0.000235    0.005108    0.674326
-    Otu004 0.088306    0.000160    0.004000    0.042956    0.000402    0.006680    0.000999
-    Otu005 0.110029    0.000558    0.007471    0.014843    0.000954    0.010295    0.000999
-    Otu006 0.075780    0.000100    0.003157    0.040459    0.000137    0.003902    0.000999
-    ...
+    	OTU	mean(group1)	variance(group1)	stderr(group1)	mean(group2)	variance(group2)	stderr(group2)	p-value
+	Otu001	0.087099	0.000220	0.004695	0.112360	0.002551	0.016837	0.176823
+	Otu002	0.073991	0.000264	0.005137	0.079068	0.000468	0.007214	0.558442
+	Otu003	0.066708	0.000077	0.002777	0.070652	0.000235	0.005108	0.531469
+	Otu004	0.088598	0.000175	0.004186	0.042956	0.000402	0.006680	0.000999
+	Otu005	0.108739	0.000561	0.007492	0.014843	0.000954	0.010295	0.001998
+	Otu006	0.075739	0.000093	0.003051	0.040459	0.000137	0.003902	0.000999
+    	...
 
 These data tell us that OTUs 4, 5 and 6 were significantly different
 between the early and late samples.
@@ -1112,22 +1112,21 @@ between the early and late samples.
 Another non-parametric tool we can use as an alternative to metastats is
 [lefse](/wiki/lefse):
 
-    mothur > lefse(shared=stability.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
+    mothur > lefse(shared=final.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
 
-Number of significantly discriminative features: 85 ( 92 ) before
-internal wilcoxon. Number of discriminative features with abs LDA score
-\> 2 : 85.
+Number of significantly discriminative features: 77 ( 83 ) before internal wilcoxon.
+Number of discriminative features with abs LDA score > 2 : 77.
 
 Looking at the top of the lefse summary file we see:
 
-    OTU    LogMaxMean  Class   LDA pValue
-    Otu001 5.05061 -
-    Otu002 4.898   -
-    Otu003 4.84913 -
-    Otu004 4.94599 Late    4.39611 0.00044411
-    Otu005 5.04151 Late    4.68534 0.000441539
-    Otu006 4.87956 Late    4.19352 0.000238563
-    ...
+    	OTU	logMaxMean	Class	LDA	pValue
+	Otu001	5.05061	Early	NA	NA
+	Otu002	4.898	Early	NA	NA
+	Otu003	4.84913	Early	NA	NA
+	Otu004	4.94742	Late	4.3583	0.00044411
+	Otu005	5.03639	Late	4.6874	0.00044411
+	Otu006	4.87932	Late	4.22836	0.000238563
+	...
 
 OTUs 4, 5, and 6 are significantly different between the two groups and
 are significantly elevated in the late samples
@@ -1161,7 +1160,7 @@ total of the unique branch length in the tree. This is done using the
 [phylo.diversity](/wiki/phylo.diversity) command. Because of
 differences in sampling depth we will rarefy the output:
 
-    mothur > phylo.diversity(tree=stability.tre, count=stability.count_table, rarefy=T)
+    mothur > phylo.diversity(tree=final.phylip.tre, count=final.count_table, rarefy=T)
 
 This will generate a file ending in rarefaction.
 
@@ -1177,10 +1176,10 @@ unweighted](/wiki/Unifrac.unweighted) and [
 weighted](/wiki/Unifrac.weighted). We will also have mothur
 subsample the trees 1000 times and report the average:
 
-    mothur > unifrac.unweighted(tree=stability.tre, count=stability.count_table, distance=lt, processors=2, random=F, subsample=t)
-    mothur > unifrac.weighted(tree=stability.tre, count=stability.count_table, distance=lt, processors=2, random=F, subsample=t)
+    mothur > unifrac.unweighted(tree=final.phylip.tre, count=final.count_table, distance=lt,random=F, subsample=t)
+    mothur > unifrac.weighted(tree=final.phylip.tre, count=final.count_table, distance=lt, random=F, subsample=t)
 
-These commands will distance matrices (stability.1.weighted.ave.dist)
+These commands will distance matrices (final.phylip.1.weighted.ave.dist)
 that can be analyzed using all of the beta diversity approaches
 described above for the OTU-based analyses.
 
@@ -1218,7 +1217,7 @@ The third way we have of running mothur is by entering mothur commands
 directly using the [command line mode](/wiki/command_line_mode).
 This is done like so:
 
-    $ ./mothur "#make.contigs(file=stability.files, processors=8)"
+    $ ./mothur "#make.contigs(file=stability.files)"
 
 This command will fire mothur up, run make.contigs, and then quit. This
 is useful for people that want to script commands and go back and forth
@@ -1227,7 +1226,7 @@ around the commands and the "\#" character that tells mothur this is
 not a batch file. If you really went nuts you could combine commands
 using ";" characters like so:
 
-    $ ./mothur "#make.contigs(file=stability.files, processors=8); screen.seqs(fasta=current, maxambig=0, maxlength=275); unique.seqs(); count.seqs(name=current, group=current); align.seqs(fasta=current, reference=silva.v4.fasta); screen.seqs(fasta=current, count=current, start=1968, end=11550, maxhomop=8); filter.seqs(fasta=current, vertical=T, trump=.); pre.cluster(fasta=current, count=current, diffs=2); unique.seqs(fasta=current, count=current); chimera.vsearch(fasta=current, count=current, dereplicate=t); remove.seqs(fasta=current, accnos=current); classify.seqs(fasta=current, count=current, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80); remove.lineage(fasta=current, count=current, taxonomy=current, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota); remove.groups(count=current, fasta=current, taxonomy=current, groups=Mock); dist.seqs(fasta=current, cutoff=0.03); cluster(column=current, count=current, cutoff=0.03); make.shared(list=current, count=current, label=0.03); classify.otu(list=current, count=current, taxonomy=current, label=0.03); phylotype(taxonomy=current); make.shared(list=current, count=current, label=1); classify.otu(list=current, count=current, taxonomy=current, label=1);"
+    $ ./mothur "#make.contigs(file=stability.files, maxambig=0, maxlength=27);unique.seqs(count=current);align.seqs(fasta=current, reference=silva.v4.fasta);screen.seqs(fasta=current, count=current, start=1969, end=11551, maxhomop=8);filter.seqs(fasta=current, vertical=T, trump=.); pre.cluster(fasta=current, count=current, diffs=2);unique.seqs(fasta=current, count=current);chimera.vsearch(fasta=current, count=current, dereplicate=t);classify.seqs(fasta=current, count=current, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80); remove.lineage(fasta=current, count=current, taxonomy=current, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota);remove.groups(count=current, fasta=current, taxonomy=current, groups=Mock);dist.seqs(fasta=current, cutoff=0.03);cluster(column=current, count=current, cutoff=0.03);make.shared(list=current, count=current, label=0.03);classify.otu(list=current, count=current, taxonomy=current, label=0.03); phylotype(taxonomy=current);make.shared(list=current, count=current, label=1);classify.otu(list=current, count=current, taxonomy=current, label=1);"
 
 Finally, another great resource when running mothur is the logfile. If
 you go to your folder where you are running mothur, you should find one
