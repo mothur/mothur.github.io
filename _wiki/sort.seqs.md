@@ -20,25 +20,12 @@ To use the accnos option, follow this example:
 
     mothur > sort.seqs(accnos=order.accnos, fasta=GQY1XT001.shhh.trim.fasta)
 
-### name option
-
-To use the name option, follow this example:
-
-    mothur > sort.seqs(fasta=GQY1XT001.shhh.trim.unique.align, name=GQY1XT001.shhh.trim.names)
-
 ### count option
 
-The [ count](/wiki/Count_File) file is similar to the name file in
-that it is used to represent the number of duplicate sequences for a
+The [ count](/wiki/Count_File) file is used to represent the number of duplicate sequences for a
 given representative sequence.
 
     mothur > sort.seqs(fasta=GQY1XT001.shhh.trim.unique.align, count=GQY1XT001.shhh.trim.count_table)
-
-### group option
-
-To use the group option, follow this example:
-
-    mothur > sort.seqs(accnos=order.accnos, group=GQY1XT001.shhh.groups)
 
 ### fasta option
 
@@ -70,6 +57,19 @@ The large parameter indicates your files are too large to fit in RAM,
 default=F.
 
     mothur > sort.seqs(accnos=order.accnos, fasta=GQY1XT001.shhh.trim.fasta, qfile=GQY1XT001.shhh.trim.qual, large=T)
+    
+### name - not recommended
+
+The name option allows you to provide a name file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+### group - not recommended
+
+The group parameter allows you to provide a group file.
+
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
 
 ## Revisions
 
@@ -77,5 +77,5 @@ default=F.
 -   1.28.0 - Added count option
 -   1.40.0 - Allow for () characters in taxonomy definitions.
     [\#350](https://github.com/mothur/mothur/issues/350)
-
+-   1.47.0 - Fixes crash with sort.seqs if multiple seqs present with the same name.
 
