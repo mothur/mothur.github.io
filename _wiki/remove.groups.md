@@ -373,5 +373,6 @@ The count file reduces the time and resources needed to process commands. It is 
     [\#350](https://github.com/mothur/mothur/issues/350)
 -   1.44.0 - Adds sets parameter.
     [\#277](https://github.com/mothur/mothur/issues/277)
+-   1.47.0 - Fixes bug with remove.groups phylip file option.
 
 
