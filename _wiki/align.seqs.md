@@ -8,8 +8,8 @@ fasta-formatted candidate sequence file to a user-supplied
 fasta-formatted template alignment. The general approach is to i) find
 the closest template for each candidate using kmer searching or
 suffix tree searching; ii) to make a pairwise alignment between the
-candidate and de-gapped template sequences using the Needleman-Wunsch,
-Gotoh, or blastn algorithms; and iii) to re-insert gaps to the candidate
+candidate and de-gapped template sequences using the Needleman-Wunsch or
+Gotoh and iii) to re-insert gaps to the candidate
 and template pairwise alignments using the NAST algorithm so that the
 candidate sequence alignment is compatible with the original template
 alignment. We provide several [ alignment
