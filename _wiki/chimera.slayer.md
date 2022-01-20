@@ -190,3 +190,4 @@ We DO NOT recommend using the name / group file combination. Instead we recommen
 -   1.40.0 - Removes processors option
 -   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
 -   1.47.0 Removes blast [\#801](https://github.com/mothur/mothur/issues/801)
+-   1.47.0 Removes search and blastlocation parameters from chimera.slayer.  [\#801](https://github.com/mothur/mothur/issues/801)
