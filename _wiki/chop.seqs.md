@@ -10,11 +10,15 @@ sequences.
 
 ## Default settings
 
-The **chop.seqs** command parameters are fasta, name, group, count,
-numbases, countgaps and keep. fasta is required unless you have a valid
-current fasta file. numbases is also required.
+The **chop.seqs** command parameters are fasta, fastq, name, group, count,
+numbases, countgaps and keep. fasta or fastq is required unless you have a valid
+current file. numbases is also required.
 
     mothur > chop.seqs(fasta=abrecovery.fasta, numbases=100)
+    
+or
+
+    mothur > chop.seqs(fastq=test.fastq, numbases=100)
 
 ## Options
 
@@ -129,6 +133,10 @@ with the following option:
 If you provide a name, group or count file any sequences removed from
 the fasta file will also be removed from those files.
 
+### format
+
+The format parameter is used to indicate whether your sequences are sanger, solexa, illumina1.8+ or illumina, default=illumina1.8+.
+
 ## Revisions
 
 -   1.23.0 - fixed an off by one error - if you put numbases=200 the
@@ -138,5 +146,5 @@ the fasta file will also be removed from those files.
 -   1.36.0 - adds qfile option to allows for chopping quality files.
 -   1.40.0 Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
-
+-   1.47.0 Adds fastq and format parameters to chop.seqs  [\#790](https://github.com/mothur/mothur/issues/790) 
 
