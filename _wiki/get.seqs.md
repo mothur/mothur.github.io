@@ -82,40 +82,8 @@ To use the fasta option, follow this example:
 This generates the file esophagus.pick.fasta, which contains the
 sequences from esophagus.unique.good.accnos.
 
-### name option
+NOTE: You can enter multiple files separated by '-''s. 
 
-To use the name option, follow this example:
-
-    mothur > get.seqs(accnos=esophagus.unique.good.accnos, name=esophagus.names)
-
-This generates the file esophagus.pick.names, which contains the
-following lines:
-
-    65_5_22    65_5_22
-    65_5_12    65_5_12
-    59_7_23    59_7_23
-    59_7_7 59_7_7
-    65_5_28    65_5_28
-    65_9_13    65_9_13
-    9_6_11 9_6_11
-    ...
-
-#### dups
-
-The dups parameter is only be used in tandem with a namefile. By default
-dups is true, so if any sequence in a specific line in the name file is
-in your .accnos file, then all sequences in that line will be kept. This
-is especially useful when used with the groupfile, since for most
-commands your files can contain only the unique sequences, but the
-groupfile need to contain all the sequences in your namefile. For
-example, let's look at the following line from the
-esophagus.unique.good.accnos:
-
-    65_1_2 65_1_2,65_1_23,65_2_1,65_2_8
-
-if dups is set to false, only 65\_1\_2 will be added to your files, but
-if dups is true, then 65\_1\_2,65\_1\_23,65\_2\_1,65\_2\_8 will all be
-added.
 
 ### count option
 
@@ -125,21 +93,7 @@ given representative sequence. It can also contain group information.
 
     mothur > get.seqs(accnos=esophagus.unique.good.accnos, count=esophagus.count_table)
 
-### group option
-
-To use the group option, follow this example:
-
-    mothur > get.seqs(accnos=esophagus.unique.good.accnos, group=esophagus.groups)
-
-This generates the file esophagus.pick.groups, which contains the
-following lines:
-
-    9_1_12 B
-    9_1_14 B
-    9_1_15 B
-    9_1_16 B
-    9_1_18 B
-    ...
+NOTE: You can enter multiple files separated by '-''s. 
 
 ### alignreport option
 
@@ -171,6 +125,8 @@ following lines:
     0.01   115 9_1_15,9_6_25,9_3_24,9_4_14,9_7_28,9_1_26,9_6_14,9_1_12 65_7_10,65_1_30,9_6_15,9_8_20, ...
     ...
 
+NOTE: You can enter multiple files separated by '-''s. 
+
 ### taxonomy option
 
 To use the taxonomy option, follow this example:
@@ -185,6 +141,8 @@ contains the following lines:
     9_1_15 Bacteria(100);Bacteroidetes-Chlorobi(100);Bacteroidetes(100);Bacteroides-Prevotella(100);...
     9_1_16 Bacteria(100);Firmicutes(100);Clostridia(100);Acidaminococcaceae(100);Veillonella(100);...
 
+NOTE: You can enter multiple files separated by '-''s. 
+
 ### qfile option
 
 The qfile option allows you to select sequences from your quality file,
@@ -194,12 +152,46 @@ and can be used as follows:
 
 ### fastq option
 
-The fastq option allows you to select sequences from your fastq file.
+The fastq option allows you to select sequences from your fastq file. You can enter multiple files separated by '-''s. This can be helpful when correcting file mismatches. For example if you have missing reads in your paired fastq files, try this:
+
+    mothur > list.seqs(fastq=test.R1.fastq-test.R2.fastq)
+    mothur > get.seqs(fastq=test.R1.fastq-test.R2.fastq, accnos=current)
 
 ### contigsreport
 
 The contigsreport option allows you to select sequences from your
 contigsreport file.
+
+### name - not recommended
+
+The name option allows you to provide a name file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+
+### group - not recommended
+
+The group parameter allows you to provide a group file.
+
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+### dups - not recommended
+
+The dups parameter is only be used in tandem with a namefile. By default
+dups is true, so if any sequence in a specific line in the name file is
+in your .accnos file, then all sequences in that line will be kept. This
+is especially useful when used with the groupfile, since for most
+commands your files can contain only the unique sequences, but the
+groupfile need to contain all the sequences in your namefile. For
+example, let's look at the following line from the
+esophagus.unique.good.accnos:
+
+    65_1_2 65_1_2,65_1_23,65_2_1,65_2_8
+
+if dups is set to false, only 65\_1\_2 will be added to your files, but
+if dups is true, then 65\_1\_2,65\_1\_23,65\_2\_1,65\_2\_8 will all be
+added.
+
 
 ## Revisions
 
@@ -217,5 +209,6 @@ contigsreport file.
     [\#350](https://github.com/mothur/mothur/issues/350)
 -   1.44.0 - Adds contigsreport option.
     [\#660](https://github.com/mothur/mothur/issues/660)
+-   1.47.0 Allows inputs to include multiple files. [\#803](https://github.com/mothur/mothur/issues/803)
 
 
