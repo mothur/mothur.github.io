@@ -63,44 +63,9 @@ following lines:
     >9_1_15
     GCAAGTCGAGGGGAAAC...
     ...
+    
+NOTE: You can enter multiple files separated by '-''s. 
 
-### name option
-
-To use the name option, follow this example:
-
-    mothur > remove.seqs(accnos=esophagus.unique.bad.accnos, name=esophagus.names)
-
-This generates the file esophagus.pick.names, which contains the
-following lines:
-
-    65_5_22    65_5_22
-    65_5_12    65_5_12
-    59_7_23    59_7_23
-    59_7_7 59_7_7
-    65_5_28    65_5_28
-    65_9_13    65_9_13
-    9_6_11 9_6_11
-    ...
-
-By default, the entire line from a name file if you remove any name from
-the line. default=false. If dups=true, then **remove.seqs** outputs a new
-
-\.accnos file containing all the sequences removed. To turn this setting
-off, see the [ dups](#dups) subsection, below.
-
-#### dups
-
-The dups parameter is only be used in tandem with a namefile. By default
-dups is set to true, which means that if any sequence in a specific line
-of the name file is in your .accnos file all sequences in that line
-will be removed. For example, let's look at the following line from the
-esophagus.unique.good.accnos:
-
-    65_1_2 65_1_2,65_1_23,65_2_1,65_2_8
-
-if dups=false, only 65\_1\_2 will be removed from your files, but if
-dups=true, then 65\_1\_2,65\_1\_23,65\_2\_1,65\_2\_8 will all be
-removed.
 
 ### count option
 
@@ -110,21 +75,7 @@ given representative sequence. It can also contain group information.
 
     mothur > remove.seqs(accnos=esophagus.unique.bad.accnos, count=esophagus.count_table)
 
-### group option
-
-To use the group option, follow this example:
-
-    mothur > remove.seqs(accnos=esophagus.unique.bad.accnos, group=esophagus.groups)
-
-This generates the file esophagus.pick.groups, which contains the
-following lines:
-
-    9_1_12 B
-    9_1_14 B
-    9_1_15 B
-    9_1_16 B
-    9_1_18 B
-    ...
+NOTE: You can enter multiple files separated by '-''s. 
 
 ### alignreport option
 
@@ -156,6 +107,8 @@ following lines:
     0.01   115 9_1_15,9_6_25,9_3_24,9_4_14,9_7_28,9_1_26,9_6_14,9_1_12 65_7_10,65_1_30,9_6_15,9_8_20, ...
     ...
 
+NOTE: You can enter multiple files separated by '-''s. 
+
 ### taxonomy option
 
 To use the taxonomy option, follow this example:
@@ -170,23 +123,59 @@ contains the following lines:
     9_1_15 Bacteria(100);Bacteroidetes-Chlorobi(100);Bacteroidetes(100);Bacteroides-Prevotella(100);...
     9_1_16 Bacteria(100);Firmicutes(100);Clostridia(100);Acidaminococcaceae(100);Veillonella(100);...
 
+NOTE: You can enter multiple files separated by '-''s. 
+
 ### qfile option
 
 The qfile option allows you to remove sequences from your quality file,
 and can be used as follows:
 
     mothur > remove.seqs(accnos=esophagus.unique.good.accnos, qfile=esophagus.qual)
+    
+NOTE: You can enter multiple files separated by '-''s. 
 
 ### fastq option
 
 The fastq option allows you to remove sequences from your fastq file.
 
     mothur > remove.seqs(fastq=C10Fst.fastq, accnos=temp.accnos)
+    
+NOTE: You can enter multiple files separated by '-''s. 
 
 ### contigsreport
 
 The contigsreport option allows you to select sequences from your
 contigsreport file.
+
+### name - not recommended
+
+The name option allows you to provide a name file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+
+### group - not recommended
+
+The group parameter allows you to provide a group file.
+
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+### dups - not recommended
+
+The dups parameter is only be used in tandem with a namefile. By default
+dups is true, so if any sequence in a specific line in the name file is
+in your .accnos file, then all sequences in that line will be removed. This
+is especially useful when used with the groupfile, since for most
+commands your files can contain only the unique sequences, but the
+groupfile need to contain all the sequences in your namefile. For
+example, let's look at the following line from the
+esophagus.unique.good.accnos:
+
+    65_1_2 65_1_2,65_1_23,65_2_1,65_2_8
+
+if dups is set to false, only 65\_1\_2 will be removed from your files, but
+if dups is true, then 65\_1\_2,65\_1\_23,65\_2\_1,65\_2\_8 will all be
+removed.
 
 ## Revisions
 
@@ -204,3 +193,5 @@ contigsreport file.
     the count table.
     [\#675](https://github.com/mothur/mothur/issues/675)
 -   1.46.0 - Adds warning in remove.seqs for dereplicate. See this [dereplicate example](http://mothur.org/wiki/chimera_dereplicate_example/) for detailed explanation.
+-   1.47.0 Allows inputs to include multiple files. [\#803](https://github.com/mothur/mothur/issues/803)
+
