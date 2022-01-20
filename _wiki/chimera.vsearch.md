@@ -114,14 +114,14 @@ range from 0.2 to 2.
 
 ### name - not recommended
 
-The name option allows you to provide a name file associated with your taxonomy file.
+The name option allows you to provide a name file associated with your fasta file.
 
 We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
 
 ### group - not recommended
 
-The group parameter allows you to provide a group file to use when creating the summary file.
+The group parameter allows you to provide a group file.
 
 We DO NOT recommend using the name / group file combination. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
 
