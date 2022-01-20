@@ -314,7 +314,7 @@ searches for nearest neighbors by kmer searching as is done in the
 is 8, which seems to be a fairly decent choice regardless of which part
 of the 16S rRNA gene you are interested in. As we pointed out in the
 development of the [align.seqs](/wiki/align.seqs) command, kmer
-searching is superior in accuracy and speed compared to blast or suffix
+searching is superior in accuracy and speed compared to suffix
 tree searching methods.
 
 ### kmer and ksize
@@ -328,18 +328,6 @@ can run:
 If you would like to change the kmer size you use the ksize option:
 
     mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn, search=kmer, ksize=6)
-
-### blast, match, mismatch, gapopen, and gapextend
-Assuming that you have put the blast binaries into your PATH variable, it is
-possible to use blastn to find nearest neighbors. It can be implemented
-as:
-
-    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn, search=blast)
-
-You can also change the various blast-related options for match,
-mismatch, gapopen, and gapextend values:
-
-    mothur > classify.seqs(fasta=final.fasta, count=final.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, method=knn, search=blast, gapopen=-5, gapextend=-1)
 
 ### suffix
 An alternative method for finding the k-nearest
@@ -502,3 +490,5 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     [\#403](https://github.com/mothur/mothur/issues/403)
 -   1.40.0 Bug Fix: Fixes seeded random issue.
     [\#416](https://github.com/mothur/mothur/issues/416)
+-   1.47.0 Removes blast [\#801](https://github.com/mothur/mothur/issues/801)
+
