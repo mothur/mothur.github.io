@@ -47,6 +47,10 @@ with the chimeras removed and counts adjusted by sample.
 
 For a detailed example: [Dereplicate example](/wiki/chimera_dereplicate_example)
 
+### removechimeras
+    
+The removechimeras parameter allow you to remove the chimeras from your files instead of just flagging them. Default=t.
+
 ### processors
 
 The processors parameter allows you to specify how many processors you
@@ -137,3 +141,5 @@ We DO NOT recommend using the name / group file combination. Instead we recommen
     method. [\#700](https://github.com/mothur/mothur/issues/700)
 -   1.45.0 Adds multiple processors for chimera.vsearch when using reference instead of denovo. [\#757](https://github.com/mothur/mothur/issues/757)
 -   1.45.0 Updates vsearch to 2.16.0. https://github.com/torognes/vsearch/releases/tag/v2.16.0
+-   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
+
