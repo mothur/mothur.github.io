@@ -139,7 +139,11 @@ mothur can create this file for you using the
 [make.file](/wiki/make.file) command.
 
     mothur > make.file(inputdir=., type=fastq, prefix=stability)
-
+    
+ Alternatively, you can use the keyword 'mothurhome' to indicate the location of mothur's executable.
+ 
+    mothur > make.file(inputdir=mothurhome, type=fastq, prefix=stability)
+    
 The first column is the name of the sample. The second column is the
 name of the forward read for that sample and the third columns in the
 name of the reverse read for that sample. Pretty easy, eh? Finally,
