@@ -103,88 +103,21 @@ mothur's OptiClust algorithm.
 
 ## Options
 
-### phylip
-
-To read in a [phylip-formatted distance
-matrix](/wiki/phylip-formatted_distance_matrix) you need to use the
-phylip option:
-
-    mothur > ...... enter command ... 
-
-Whereas dotur required you to indicate whether the matrix was square or
-lower-triangular, mothur is able to figure this out for you.
-
 ### column & name or count
 
 To read in a [column-formatted distance
 matrix](/wiki/column-formatted_distance_matrix) you must provide a
-filename for the name or count option. The .name file was generated
-during the [unique.seqs](/wiki/unique.seqs) command.
-
-    mothur > cluster.fit(column=marine.0_2.01.dist, name=marine.0_2.01.names)
-
-or
+filename for the name or count option. The name option is NOT RECOMMENDED.
 
     mothur > cluster.fit(column=marine.0_2.01.dist, count=marine.0_2.01.count_table)
 
 Again, the column-formatted distance matrix can be square or
 lower-triangle and mothur will figure it out.
 
-### name
-
-A [name file](/wiki/name_file) contains two columns. The first
-column contains the name of a reference sequence that is in a distance
-matrix and the second column contains the names of the sequences
-(separated by commas) that the reference sequence represents. The list
-of names in the second column should always contain at least the
-reference sequence name.
-
-There are several reasons to be interested in providing a name file with
-your distance matrix. First, as sequencing collections increase in size,
-the number of duplicate sequences is increasing. This is especially the
-case with sequences generated via pyrosequencing. Sogin and colleagues
-[1](https://www.pnas.org/content/103/32/12115.full) found that less than
-50% of their sequences were unique. Because the alignments and distances
-for the duplicate sequences are the same, re-processing each duplicate
-sequence takes a considerable amount of computing time and memory.
-
-Example from final.names:
-
-    ...
-    GQY1XT001EYE6M GQY1XT001EYE6M,GQY1XT001D69D7,GQY1XT001A1LWJ
-    GQY1XT001EXZXC GQY1XT001EXZXC
-    GQY1XT001EXZLY GQY1XT001EXZLY
-    GQY1XT001EXOOM GQY1XT001EXOOM
-    GQY1XT001EX24Z GQY1XT001EX24Z,GQY1XT001AMCGM
-    GQY1XT001EWUBU GQY1XT001EWUBU,GQY1XT001DJLCH,GQY1XT001B50B7
-    GQY1XT001EWJBM GQY1XT001EWJBM
-    ...
-
-Second, if you pre-screen a clone library using ARDRA then you may only
-have a sequence for a handful of clones, but you know the number of
-times that you have seen a sequence like it. In such a case the second
-column of the name file would contain the sequence name as well as
-dummy sequence names
-
-    ...
-    AA1234 AA1234,AA1234.1,AA1234.2
-    AA1235 AA1235
-    AA1236 AA1236,AA1236.1
-    AA1237 AA1237,AA1237.1,AA1237.2,AA1237.3
-    AA1238 AA1238,AA1238.1
-    ...
-
-A count or name file is not required (unless you are using the column=
-option), but depending on the data set to be analyzed, could
-significantly accelerate the processing time of downstream calculations.
-Considering the frequency of sequences is critical for pretty much every
-analysis in mothur, we want to use the name or count file to
-artificially inflate the matrix to its full size.
 
 ### count
 
-The [count](/wiki/Count_File) file is similar to the name file in
-that it is used to represent the number of duplicate sequences for a
+The [count](/wiki/Count_File) file is used to represent the number of duplicate sequences for a
 given representative sequence. mothur will use this information to form
 the correct OTU's. Unlike, when you use a name file the list file
 generated will contain only the unique names, so be sure to include the
@@ -287,7 +220,67 @@ set. The default `cutoff` is 0.03.
 ### precision
 
 If you want greater precision, there is a precision option in the
-cluster.fit() command:
+cluster.fit() command.
+
+### phylip
+
+To read in a [phylip-formatted distance
+matrix](/wiki/phylip-formatted_distance_matrix) you need to use the
+phylip option.
+
+### name - NOT RECOMMENDED
+
+We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+A [name file](/wiki/name_file) contains two columns. The first
+column contains the name of a reference sequence that is in a distance
+matrix and the second column contains the names of the sequences
+(separated by commas) that the reference sequence represents. The list
+of names in the second column should always contain at least the
+reference sequence name.
+
+There are several reasons to be interested in providing a name file with
+your distance matrix. First, as sequencing collections increase in size,
+the number of duplicate sequences is increasing. This is especially the
+case with sequences generated via pyrosequencing. Sogin and colleagues
+[1](https://www.pnas.org/content/103/32/12115.full) found that less than
+50% of their sequences were unique. Because the alignments and distances
+for the duplicate sequences are the same, re-processing each duplicate
+sequence takes a considerable amount of computing time and memory.
+
+Example from final.names:
+
+    ...
+    GQY1XT001EYE6M GQY1XT001EYE6M,GQY1XT001D69D7,GQY1XT001A1LWJ
+    GQY1XT001EXZXC GQY1XT001EXZXC
+    GQY1XT001EXZLY GQY1XT001EXZLY
+    GQY1XT001EXOOM GQY1XT001EXOOM
+    GQY1XT001EX24Z GQY1XT001EX24Z,GQY1XT001AMCGM
+    GQY1XT001EWUBU GQY1XT001EWUBU,GQY1XT001DJLCH,GQY1XT001B50B7
+    GQY1XT001EWJBM GQY1XT001EWJBM
+    ...
+
+Second, if you pre-screen a clone library using ARDRA then you may only
+have a sequence for a handful of clones, but you know the number of
+times that you have seen a sequence like it. In such a case the second
+column of the name file would contain the sequence name as well as
+dummy sequence names
+
+    ...
+    AA1234 AA1234,AA1234.1,AA1234.2
+    AA1235 AA1235
+    AA1236 AA1236,AA1236.1
+    AA1237 AA1237,AA1237.1,AA1237.2,AA1237.3
+    AA1238 AA1238,AA1238.1
+    ...
+
+A count or name file is not required (unless you are using the column=
+option), but depending on the data set to be analyzed, could
+significantly accelerate the processing time of downstream calculations.
+Considering the frequency of sequences is critical for pretty much every
+analysis in mothur, we want to use the name or count file to
+artificially inflate the matrix to its full size.
+
 
 ## Finer points
 
@@ -302,4 +295,4 @@ with the [`set.seed`](/wiki/set.seed) command prior to running `cluster.fit`.
 
 ## Revisions
 
--   1.41.0 First Introduced
+-   1.47.0 First Introduced
