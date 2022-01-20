@@ -7,12 +7,7 @@ The **chimera.slayer** command reads a fasta file and reference file and
 outputs potentially chimeric sequences. The developers of the original
 algorithm suggest using a special template reference set (i.e. gold). We
 provide a silva-based alignment of this dataset with our [silva
-reference files](/wiki/silva_reference_files). You will need to
-have a copy of the megablast and formatdb executables in a folder called
-blast/bin, where the blast folder is next to the mothur executable. The
-version of megablast/formatdb that you need can be found in
-<ftp://ftp.ncbi.nlm.nih.gov/blast/executables/release/2.2.25/> or they
-are included with the executable versions of mothur. This command was modeled after the chimeraSlayer written by the Broad
+reference files](/wiki/silva_reference_files). This command was modeled after the chimeraSlayer written by the Broad
 Institute. Additional documentation can be found at the [Broad
 Institute's website](http://microbiomeutil.sourceforge.net/).
 
@@ -68,44 +63,24 @@ or with a [ count file](/wiki/Count_File):
 
 ## Options
 
-### search
+### count
 
-The search parameter allows you to specify search method for finding the
-closest parent. Choices are blast and kmer. Default=blast. If you use
-the blast option you may want to set the blast location parameter as
-well (see below). The blastlocation parameter allows you to specify the
-location of your blast executable. By default mothur will look in
+If you are using reference=self and provide a [ count file](/wiki/Count_File), mothur will use
+the more abundant sequences from the same sample to check the query
+sequence.
 
-\./blast/bin relative to mothur's executable.
+    mothur > chimera.slayer(fasta=stool.trim.unique.good.filter.unique.precluster.fasta, count=stool.trim.unique.good.filter.unique.precluster.count_table, reference=self)
 
-### blastlocation
-
-The blastlocation parameter allows you to specify the location of your
-blast executable. By default mothur will look in ./blast/bin relative to
-mothur's executable.
 
 ### ksize
 
-The ksize parameter allows you to input kmersize, default is 7, used if
-search is kmer.
+The ksize parameter allows you to input kmersize, default is 7, used in the kmer search.
 
 ### realign
 
 The realign parameter allows you to realign the query to the potential
 parents. Choices are true or false, default true.
 
-### group
-
-If you are using reference=self and provide a groupfile, mothur will use
-the more abundant sequences from the same sample to check the query
-sequence.
-
-    mothur > chimera.slayer(fasta=stool.trim.unique.good.filter.unique.precluster.fasta, name=stool.trim.unique.good.filter.unique.precluster.names, group=stool.good.groups, reference=self)
-
-or if your [ count file](/wiki/Count_File) contains group
-information:
-
-    mothur > chimera.slayer(fasta=stool.trim.unique.good.filter.unique.precluster.fasta, count=stool.trim.unique.good.filter.unique.precluster.count_file, reference=self)
 
 ### window
 
@@ -183,6 +158,19 @@ with the chimeras removed and counts adjusted by sample.
 
 For a detailed example: [Dereplicate example](/wiki/chimera_dereplicate_example)
 
+### name - not recommended
+
+The name option allows you to provide a name file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+
+### group - not recommended
+
+The group parameter allows you to provide a group file.
+
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
 
 ## Revisions
 
@@ -201,3 +189,4 @@ For a detailed example: [Dereplicate example](/wiki/chimera_dereplicate_example)
 -   1.38.0 - Removes save option.
 -   1.40.0 - Removes processors option
 -   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
+-   1.47.0 Removes blast [\#801](https://github.com/mothur/mothur/issues/801)
