@@ -7,7 +7,8 @@ The **list.seqs** command will write out the names
 of the sequences found within a [ fastq](/wiki/fastq_file), [
 fasta](/wiki/fasta_file), [ name](/wiki/name_file), [
 group](/wiki/group_file), [ count](/wiki/Count_File), [
-list](/wiki/list_file), or [
+list](/wiki/list_file), [
+qfile](/wiki/qual_file), or [
 align.report](/wiki/align.report_file) file. This could be useful
 for using the [get.seqs](/wiki/get.seqs) and
 [remove.seqs](/wiki/remove.seqs) commands as well as to generate a
@@ -20,7 +21,7 @@ Esophagus.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/esophagus.zip) arc
 
 At least one of the following options must be used. Each of these
 options will generate a file ending in accnos that contains a single
-column containing the list of the sequences contained in the input file.
+column containing the list of the sequences contained in the input files.
 
 ### fastq option
 
