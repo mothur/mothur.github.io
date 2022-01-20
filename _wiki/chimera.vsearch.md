@@ -142,4 +142,5 @@ We DO NOT recommend using the name / group file combination. Instead we recommen
 -   1.45.0 Adds multiple processors for chimera.vsearch when using reference instead of denovo. [\#757](https://github.com/mothur/mothur/issues/757)
 -   1.45.0 Updates vsearch to 2.16.0. https://github.com/torognes/vsearch/releases/tag/v2.16.0
 -   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
+-   1.47.0 Fixes formatting issue with chimera.vsearch with a reference
 
