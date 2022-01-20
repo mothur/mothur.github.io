@@ -138,9 +138,14 @@ By default the correction parameter is set to true, meaning the the
 square root of the distances is used instead of the distance value.
 
     mothur > chimera.bellerophon(fasta=ex.align, correction=f)
-
+    
+### removechimeras
+    
+The removechimeras parameter allow you to remove the chimeras from your files instead of just flagging them. Default=t.
+    
 ## Revisions
 
 -   1.23.0 - fixed bug with MPI-enabled version -
     [https://forum.mothur.org/viewtopic.php?f=4&t=1151](https://forum.mothur.org/viewtopic.php?f=4&t=1151)
 -   1.40.0 - Removes processors option.
+-   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)

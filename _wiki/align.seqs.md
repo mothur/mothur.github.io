@@ -6,10 +6,10 @@ redirect_from: '/wiki/Align.seqs.html'
 The **align.seqs** command aligns a user-supplied
 fasta-formatted candidate sequence file to a user-supplied
 fasta-formatted template alignment. The general approach is to i) find
-the closest template for each candidate using kmer searching, blastn, or
+the closest template for each candidate using kmer searching or
 suffix tree searching; ii) to make a pairwise alignment between the
-candidate and de-gapped template sequences using the Needleman-Wunsch,
-Gotoh, or blastn algorithms; and iii) to re-insert gaps to the candidate
+candidate and de-gapped template sequences using the Needleman-Wunsch or
+Gotoh and iii) to re-insert gaps to the candidate
 and template pairwise alignments using the NAST algorithm so that the
 candidate sequence alignment is compatible with the original template
 alignment. We provide several [ alignment
@@ -83,31 +83,17 @@ Also, only one processor will be used with the default settings.
 
 ### search
 
-mothur offers three methods of finding the template sequence - kmer
-searching, blast, and suffix tree searching. Our experience has shown
+mothur offers two methods of finding the template sequence - kmer
+searching and suffix tree searching. Our experience has shown
 that kmer searching is the fastest and best method of searching for a
 template sequence. The default is to use kmers:
 
     mothur > align.seqs(candidate=abrecovery.fasta, template=core_set_aligned.imputed.fasta, search=kmer)
 
-Alternatively, you can use blastn:
-
-    mothur > align.seqs(candidate=abrecovery.fasta, template=core_set_aligned.imputed.fasta, search=blast)
-
-If you use blast, you need to install the blast folder in your source
-code folder or with the executable so that the path from the mothur
-executable to the blast executables is /blast/bin/. For the search, you
-need to have formatdb and blastall in the bin folder. Also, be
-forewarned that to make this as fast as possible, we chose a word size
-of 28 (-W 28), which has the unintended consequence of returning more
-"no significant" searches.
-
-The final option is to use suffix trees for searching:
+Alternatively you can use suffix trees for searching:
 
     mothur > align.seqs(candidate=abrecovery.fasta, template=core_set_aligned.imputed.fasta, search=suffix)
 
-This approach is fairly comparable to blast in terms of quality and
-speed.
 
 ### ksize
 
@@ -123,8 +109,8 @@ see what works best. To change the kmer size:
 
 ### align
 
-The **align.seqs** command allows you to select between three alignment
-methods - blastn, gotoh, and needleman - needleman is the default
+The **align.seqs** command allows you to select between two alignment
+methods - gotoh, and needleman - needleman is the default
 setting:
 
     mothur > align.seqs(candidate=abrecovery.fasta, template=core_set_aligned.imputed.fasta, align=needleman)
@@ -138,20 +124,7 @@ charges a different penalty for opening (default=-2) and extending
 
 Our experience has shown that the added parameters in the gotoh
 algorithm do not improve the pairwise alignment and increases the time
-required for the alignment. Finally, blastn can be used as a heuristic
-approach to the gotoh alignment:
-
-    mothur > align.seqs(candidate=abrecovery.fasta, template=core_set_aligned.imputed.fasta, align=blast)
-
-As with the search option, if you use blast, you need to install the
-blast folder in your source code folder or with the executable so that
-the path from the mothur executable to the blast executables is
-/blast/bin/. For the align=blast option, you need to have bl2seq in the
-bin folder. In our implementation, blast is the slowest option of the
-three and also generates the worst alignments. The quality suffers
-particularly because it generates a local alignment (needleman and gotoh
-are global) and will truncate the alignment if the similarity drops
-below a threshold.
+required for the alignment. 
 
 ### match, mismatch, gapopen, and gapextend
 
@@ -355,3 +328,5 @@ forum, [https://forum.mothur.org](https://forum.mothur.org).
     command. [\#647](https://github.com/mothur/mothur/issues/647)
 -   1.45.0 Fixes align.seqs segfault.
 -   1.46.0 Removes duplicate column headers for align.report [\#785](https://github.com/mothur/mothur/issues/785)
+-   1.47.0 Removes blast [\#801](https://github.com/mothur/mothur/issues/801)
+

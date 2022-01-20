@@ -151,8 +151,13 @@ Kevin E. Ashelford, Nadia A. Chuzhanova, John C. Fry, Antonia J. Jones
 and Andrew J. Weightman. Applied and Environmental Microbiology 71 (12):
 7724:7736.
 
+### removechimeras
+    
+The removechimeras parameter allow you to remove the chimeras from your files instead of just flagging them. Default=t.
+
 ## Revisions
 
 -   1.38.0 - Removes save option.
+-   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
 
 

@@ -55,3 +55,4 @@ The count file reduces the time and resources needed to process commands. It is 
 -   1.31.1 Bug Fix: segfault with count file containing group info.
 -   1.37.0 Adds format parameter
     [\#125](https://github.com/mothur/mothur/issues/125)
+-   1.47.0 Changes default output to count file.

@@ -7,10 +7,6 @@ The **sens.spec** command\...
 
 ## Default Parameters
 
-    mothur > sens.spec(list=96_lt_column_amazon.fn.list, column=96_lt_column_amazon.dist, name=amazon.names)
-
-or
-
     mothur > sens.spec(list=96_lt_column_amazon.fn.list, column=96_lt_column_amazon.dist, count=amazon.count_table)
 
 or
@@ -30,11 +26,6 @@ If you open 96\_lt\_column\_amazon.fn.sensspec, you would see:
 
 ## Options
 
-### name
-
-The name parameter allows you to enter a name file associated with your
-distance matrix.
-
 ### count
 
 The count parameter allows you to enter a count file associated with
@@ -48,10 +39,16 @@ your distance matrix.
 
 ### label
 
+### name - not recommended
+
+The name parameter allows you to enter a name file associated with your
+distance matrix.
+
 ## Revision
 
 -   1.23.0 - fixed label option and added smart distancing.
 -   1.29.0 - increased speed and reduced memory required.
 -   1.38.0 - added count parameter
+-   1.47.0 - Fixes bug in sens.spec when name file is used
 
 

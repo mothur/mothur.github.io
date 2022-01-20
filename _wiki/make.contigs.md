@@ -15,7 +15,7 @@ maxee, allfiles and processors.
 
     mothur > make.contigs(ffastq=test_1.fastq, rfastq=test_2.fastq)
 
-or **(Mac and Linux only, not available for Windows)**
+or 
 
      mothur > make.contigs(ffastq=test_1.fastq.gz, rfastq=test_2.fastq.gz)
 
@@ -118,10 +118,6 @@ looks like:
     #>>ABCCCFFFF
     ...
 
-### format
-
-The format parameter is used to indicate whether your sequences are
-sanger, solexa, illumina1.8+ or illumina, default=illumina1.8+.
 
 ### oligos
 
@@ -238,6 +234,21 @@ rpdiffs=0(match)
     rbdiffs=1001(noMatch) - 1001 indicates the reverse barcode was not searched for because the forward barcode was not found. (1000+bdiffs) = 1001 - no search and noMatch.
     fpdiffs=0(match) - perfect match to forward primer or no primers in oligos file.
     rpdiffs=0(match) - perfect match to reverse primer or no primers in oligos file.
+
+### maxambig && maxhomop && maxlength
+
+The maxlength parameter allows you to screen reads based on length.
+The maxambig parameter allows you to screen reads with too many ambiguous bases. 
+The maxhomop parameter allows you to screen reads with excessively long homopolymers.
+
+To remove sequences with ambiguous bases or sequences longer than 275 bases run the following:
+
+    mothur > make.contigs(file=combo.file, maxambig=0, maxlength=275)
+
+### format
+
+The format parameter is used to indicate whether your sequences are
+sanger, solexa, illumina1.8+ or illumina, default=illumina1.8+.
 
 ### align
 
@@ -385,3 +396,5 @@ documentation,
 -   1.45.0 Fixes bug with qfile option in make.contigs. [\#745](https://github.com/mothur/mothur/issues/745)
 -   1.45.0 Fixes bug with make.contigs not making group file for *.gz files with oligos file. [\#753](https://github.com/mothur/mothur/issues/753)
 -   1.45.0 Fixes make.contigs segfault.
+-   1.47.0 Changes output file from group to count. [\#793](https://github.com/mothur/mothur/issues/793)
+-   1.47.0 Adds maxambig, maxhomop, maxlength parameters to make.contigs. [\#793](https://github.com/mothur/mothur/issues/793)

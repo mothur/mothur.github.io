@@ -14,6 +14,15 @@ your reference files in one location.
 
     mothur > set.dir(input=../inputFiles)
     Changing input directory to /Users/Work/Desktop/inputFiles/
+    
+You can set multiple locations for mothur to look for input files by separating the locations with ';'.
+    
+    mothur > set.dir(input=/Users/swestcott/Desktop/release;/Users/swestcott/Desktop/mothurbugs)
+    Mothur's directories:
+    inputdir=
+	    /Users/swestcott/Desktop/release/
+	    /Users/swestcott/Desktop/mothurbugs/
+
 
 ## output
 
@@ -25,20 +34,47 @@ If output directory does not exist mothur will create it for you.
 ## tools
 
 Mothur's commands use several external tools. Default
-location=mothur's executable location. The vsearch, uchime, blast,
+location=mothur's executable location. The vsearch, uchime, 
 prefetch and fasterq\_dump executables can be placed in a central
 location like /usr/bin/. You can tell mothur where to find them by
 setting MOTHUR\_TOOLS=/usr/bin/ in the makefile. Alternatively, you can
 run this command within mothur:
 
-mothur \> set.dir(tools=/usr/bin/)
+    mothur > set.dir(tools=/usr/bin/)
 
-## tempdefault
+You can set multiple locations for mothur to look for external programs by separating the locations with ';'.
+    
+    mothur > set.dir(tools='/usr/bin;/Users/swestcott/Desktop/mothur/tools')
+    Mothur's directories:
+    mothurtools=
+	    /usr/bin/
+	    /Users/swestcott/Desktop/mothur/tools/
 
-By default tempdefault=mothur's executable location.
+## mothurfiles
 
-    mothur > set.dir(tempdefault=../referenceFiles)
+By default mothurfiles=mothur's executable location.
+
+    mothur > set.dir(mothurfiles=../referenceFiles)
     Changing default directory to /Users/Work/Desktop/referenceFiles/
+    
+You can set multiple locations for mothur to look for files by separating the locations with ';'.
+
+    mothur > set.dir(mothurfiles='/Users/swestcott/Desktop/release;/Users/swestcott/Desktop/mothurbugs')
+    Mothur's directories:
+    mothurfiles=
+	    /Users/swestcott/Desktop/release/
+	    /Users/swestcott/Desktop/mothurbugs/
+
+## mothurhome 
+The mothurhome keyword can be used as a shortcut for paths. 
+Let's assume mothur's executable is located in a folder on my desktop called mothur.
+The full path to my mothur executable is /Users/swestcott/Desktop/mothur/mothur.
+
+	mothur > set.dir(tools='mothurhome/tools;/usr/bin/')
+	Mothur's directories:
+	mothurtools=
+		/Users/swestcott/Desktop/mothur/tools/
+		/usr/bin/
 
 ## debug
 
@@ -54,13 +90,6 @@ mothur allows you to change the input and output directories globally in
 any command. For example:
 
     mothur > summary.seqs(fasta=amazon.fasta, inputdir=../inputFiles)
-
-## blastdir
-
-mothur allows you to set the location of the blast executables directory
-globally in any command. For example:
-
-    mothur > summary.seqs(fasta=amazon.fasta, blastdir=/usr/local/bin/blast)
 
 ## modifynames
 
@@ -93,3 +122,9 @@ order of searches.
 -   1.44.0 - Adds tools parameter.
     [\#682](https://github.com/mothur/mothur/issues/682)
 -   1.45.0 - Removes requirement for inputdir to be writable [\#747](https://github.com/mothur/mothur/issues/747)
+-   1.47.0 - Removes BLAST from mothur. [\#801](https://github.com/mothur/mothur/issues/801)
+-   1.47.0 - Allows for multiple saved locations for input, tools and mothurfiles parameters. [\#799](https://github.com/mothur/mothur/issues/799)
+-   1.47.0 - Changes tempdefault parameter name to mothurfiles for clarity. [\#799](https://github.com/mothur/mothur/issues/799)
+-   1.47.0 - Adds mothurhome key word. [\#800](https://github.com/mothur/mothur/issues/800)
+-   1.47.0 - Removes blastlocation parameter.  [\#801](https://github.com/mothur/mothur/issues/801)
+

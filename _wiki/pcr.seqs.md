@@ -116,3 +116,5 @@ available.
 -   1.42.0 - Bug Fix: Fixes file extensions of output files in pcr.seqs.
 -   1.42.0 - Bug Fix: Fixes **pcr.seqs** end issue with keepdots=f.
 -   1.46.0 - Adds checkorient parameter. Change Includes functions to reorient and reverse unpaired primers. [\#768](https://github.com/mothur/mothur/issues/768)
+-   1.47.0 - Fixes bug with pcr.seqs If keepdots=f, and start and end are used, then first base was removed by mistake.
+

@@ -86,6 +86,9 @@ with the chimeras removed and counts adjusted by sample.
 
 For a detailed example: [Dereplicate example](/wiki/chimera_dereplicate_example)
 
+### removechimeras
+    
+The removechimeras parameter allow you to remove the chimeras from your files instead of just flagging them. Default=t.
 
 ## Revisions
 
@@ -104,5 +107,6 @@ For a detailed example: [Dereplicate example](/wiki/chimera_dereplicate_example)
     processing by group.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
+-   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
 
 

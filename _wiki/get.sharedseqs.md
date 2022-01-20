@@ -222,3 +222,5 @@ For example:
     [\#357](https://github.com/mothur/mothur/issues/357) ,
     [\#347](https://github.com/mothur/mothur/issues/347)
 -   1.46.0 - Fixes bug with get.sharedseqs shared file option
+-   1.47.0 - Fixes bug with get.sharedseqs if no groups are provided.
+

@@ -115,4 +115,5 @@ The count file reduces the time and resources needed to process commands. It is 
 -   1.43.0 - Adds list parameter.
     [\#624](https://github.com/mothur/mothur/issues/624)
 -   1.44.0 - Adds processors parameter.
-    [\#685](https://github.com/mothur/mothur/issues/685)
+    [\#685](https://github.com/mothur/mothur/issues/685)   
+-   1.47.0 - Fixes crash with split.groups when running with fasta and group files without a names file. Effects allfiles options in other commands.

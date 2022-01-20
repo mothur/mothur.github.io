@@ -68,14 +68,10 @@ well. Two files are created - a \*.precluster.fasta and a
 
 ## Options
 
-### group
+### count
 
-If you provide a groupfile or your [ count file](/wiki/Count_File)
+If you provide a [ count file](/wiki/Count_File) that
 contains group information, mothur will **pre.cluster** sample by sample.
-
-    mothur > pre.cluster(fasta=stool.trim.unique.good.filter.unique.fasta, name=stool.trim.unique.good.filter.names, group=stool.good.groups)
-
-or
 
     mothur > pre.cluster(fasta=stool.trim.unique.good.filter.unique.fasta, count=stool.trim.unique.good.filter.count_table)
 
@@ -113,7 +109,7 @@ removed 8640 sequences.
 ### align
 
 When using unaligned sequences, the **pre.cluster** command allows you to
-select between three alignment methods - blastn, gotoh, and needleman -
+select between two alignment methods - gotoh and needleman -
 needleman is the default setting:
 
     mothur > pre.cluster(fasta=sogin.unique.filter.unique.fasta, name=sogin.unique.filter.names, diffs=2, align=needleman)
@@ -127,15 +123,7 @@ charges a different penalty for opening (default=-2) and extending
 
 Our experience has shown that the added parameters in the gotoh
 algorithm do not improve the pairwise alignment and increases the time
-required for the alignment. Finally, blastn can be used as a heuristic
-approach to the gotoh alignment:
-
-    mothur > pre.cluster(fasta=sogin.unique.filter.unique.fasta, name=sogin.unique.filter.names, diffs=2, align=blast)
-
-In our implementation, blast is the slowest option of the three and also
-generates the worst alignments. The quality suffers particularly because
-it generates a local alignment (needleman and gotoh are global) and will
-truncate the alignment if the similarity drops below a threshold.
+required for the alignment. 
 
 ### match, mismatch, gapopen, and gapextend
 
@@ -154,10 +142,6 @@ or
 
 etc.
 
-Keep in mind that if you are using the align=blast option, blast will
-limit the combinations of match, mismatch, gapopen, and gapextend that
-you can use. Hopefully, we've scared you off of using blast at all so
-that this won't be an issue.
 
 ### method
 
@@ -213,9 +197,9 @@ most certainly wrong if you are sequencing any other way.
 
 ### fasta only
 
-As shown above, **pre.cluster** expects you to provide a name file so that
+As shown above, **pre.cluster** expects you to provide a count file so that
 it can acquire the abundance information from each sequence. If you do
-not provide the name file the command will automatically run your data
+not provide the count file the command will automatically run your data
 through unique.seqs to generate to get the information it needs.
 
 ### processors
@@ -223,6 +207,19 @@ through unique.seqs to generate to get the information it needs.
 The processors option enables you to accelerate the clustering by using
 multiple processors. Default processors=Autodetect number of available
 processors and use all available.
+
+### name - not recommended
+
+The name option allows you to provide a name file associated with your fasta file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+### group - not recommended
+
+The group parameter allows you to provide a group file.
+
+We DO NOT recommend using the name / group file combination. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
 
 ## Caveat emptor
 
@@ -272,3 +269,5 @@ people, the **pre.cluster** option may be your best bet.
     in pre.cluster. [\#643](https://github.com/mothur/mothur/issues/643)
 -   1.45.0 Adds clump paramter. [\#749](https://github.com/mothur/mothur/issues/749)
 -   1.45.0 Fixes bug with pre.cluster's unoise method.
+-   1.47.0 Removes blast [\#801](https://github.com/mothur/mothur/issues/801)
+
