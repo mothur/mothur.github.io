@@ -15,7 +15,7 @@ your reference files in one location.
     mothur > set.dir(input=../inputFiles)
     Changing input directory to /Users/Work/Desktop/inputFiles/
     
-    You can set multiple locations for mothur to look for input files by separating the locations with ';'.
+You can set multiple locations for mothur to look for input files by separating the locations with ';'.
     
     mothur > set.dir(input=/Users/swestcott/Desktop/release;/Users/swestcott/Desktop/mothurbugs)
     Mothur's directories:
@@ -40,7 +40,7 @@ location like /usr/bin/. You can tell mothur where to find them by
 setting MOTHUR\_TOOLS=/usr/bin/ in the makefile. Alternatively, you can
 run this command within mothur:
 
-mothur > set.dir(tools=/usr/bin/)
+    mothur > set.dir(tools=/usr/bin/)
 
 You can set multiple locations for mothur to look for external programs by separating the locations with ';'.
     
@@ -50,8 +50,6 @@ You can set multiple locations for mothur to look for external programs by separ
 	    /usr/bin/
 	    /Users/swestcott/Desktop/mothur/tools/
 
-
-
 ## mothurfiles
 
 By default mothurfiles=mothur's executable location.
@@ -59,7 +57,7 @@ By default mothurfiles=mothur's executable location.
     mothur > set.dir(mothurfiles=../referenceFiles)
     Changing default directory to /Users/Work/Desktop/referenceFiles/
     
-    You can set multiple locations for mothur to look for files by separating the locations with ';'.
+You can set multiple locations for mothur to look for files by separating the locations with ';'.
 
     mothur > set.dir(mothurfiles='/Users/swestcott/Desktop/release;/Users/swestcott/Desktop/mothurbugs')
     Mothur's directories:
