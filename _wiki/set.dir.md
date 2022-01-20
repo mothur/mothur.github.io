@@ -65,6 +65,17 @@ You can set multiple locations for mothur to look for files by separating the lo
 	    /Users/swestcott/Desktop/release/
 	    /Users/swestcott/Desktop/mothurbugs/
 
+## mothurhome 
+The mothurhome keyword can be used as a shortcut for paths. 
+Let's assume mothur's executable is located in a folder on my desktop called mothur.
+The full path to my mothur executable is /Users/swestcott/Desktop/mothur/mothur.
+
+	mothur > set.dir(tools='mothurhome/tools;/usr/bin/')
+	Mothur's directories:
+	mothurtools=
+		/Users/swestcott/Desktop/mothur/tools/
+		/usr/bin/
+
 ## debug
 
 The debug flag is used to indicate you want extra output to the screen
@@ -114,5 +125,6 @@ order of searches.
 -   1.47.0 - Removes BLAST from mothur. [\#801](https://github.com/mothur/mothur/issues/801)
 -   1.47.0 - Allows for multiple saved locations for input, tools and mothurfiles parameters. [\#799](https://github.com/mothur/mothur/issues/799)
 -   1.47.0 - Changes tempdefault parameter name to mothurfiles for clarity. [\#799](https://github.com/mothur/mothur/issues/799)
+-   1.47.0 - Adds mothurhome key word. [\#800](https://github.com/mothur/mothur/issues/800)
 
 
