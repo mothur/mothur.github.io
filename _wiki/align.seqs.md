@@ -83,7 +83,7 @@ Also, only one processor will be used with the default settings.
 
 ### search
 
-mothur offers three methods of finding the template sequence - kmer
+mothur offers two methods of finding the template sequence - kmer
 searching and suffix tree searching. Our experience has shown
 that kmer searching is the fastest and best method of searching for a
 template sequence. The default is to use kmers:
@@ -109,7 +109,7 @@ see what works best. To change the kmer size:
 
 ### align
 
-The **align.seqs** command allows you to select between three alignment
+The **align.seqs** command allows you to select between two alignment
 methods - gotoh, and needleman - needleman is the default
 setting:
 
