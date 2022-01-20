@@ -192,5 +192,5 @@ fasta file.
 -   1.43.0 - Improves speed of dist.seqs and
     pairwise.seqs.[\#653](https://github.com/mothur/mothur/issues/653)
 -   1.46.0 - Improves speed of pairwise.seqs by up to 99%, using kmer distance cutoffs.[\#763](https://github.com/mothur/mothur/issues/763)
--   1.47.0 Removes blast [\#801](https://github.com/mothur/mothur/issues/801)
+-   1.47.0 - Removes blast [\#801](https://github.com/mothur/mothur/issues/801)
 
