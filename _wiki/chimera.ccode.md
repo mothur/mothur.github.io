@@ -202,6 +202,11 @@ would each query sequence compared with. By default it is set to 20.
     gi|11093932|MNA1|AF293004 was found have at least one chimeric window.
     gi|11093930|MNH4|AF293002 was found have at least one chimeric window.
     gi|11093926|MNH2|AF292998 was found have at least one chimeric window.
+    
+### removechimeras
+    
+The removechimeras parameter allow you to remove the chimeras from your files instead of just flagging them. Default=t.
+
 
 ### processors
 
@@ -219,5 +224,6 @@ paper by Juan M. Gonzalez, Johannes Zimmerman and Cesareo Saiz-Jimenez.
 ## Revisions
 
 -   1.38.0 - Removes save option.
+-   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
 
 
