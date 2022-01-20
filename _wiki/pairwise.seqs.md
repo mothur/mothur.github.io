@@ -130,8 +130,8 @@ ignored.
 
 ### align
 
-The **pairwise.seqs** command allows you to select between three alignment
-methods - blastn, gotoh, and needleman - needleman is the default
+The **pairwise.seqs** command allows you to select between two alignment
+methods - gotoh, and needleman - needleman is the default
 setting:
 
     mothur > pairwise.seqs(fasta=amazon.fasta, align=needleman)
@@ -145,15 +145,7 @@ charges a different penalty for opening (default=-2) and extending
 
 Our experience has shown that the added parameters in the gotoh
 algorithm do not improve the pairwise alignment and increases the time
-required for the alignment. Finally, blastn can be used as a heuristic
-approach to the gotoh alignment:
-
-    mothur > pairwise.seqs(fasta=amazon.fasta, align=blast)
-
-In our implementation, blast is the slowest option of the three and also
-generates the worst alignments. The quality suffers particularly because
-it generates a local alignment (needleman and gotoh are global) and will
-truncate the alignment if the similarity drops below a threshold.
+required for the alignment. 
 
 ### match, mismatch, gapopen, and gapextend
 
@@ -200,3 +192,5 @@ fasta file.
 -   1.43.0 - Improves speed of dist.seqs and
     pairwise.seqs.[\#653](https://github.com/mothur/mothur/issues/653)
 -   1.46.0 - Improves speed of pairwise.seqs by up to 99%, using kmer distance cutoffs.[\#763](https://github.com/mothur/mothur/issues/763)
+-   1.47.0 Removes blast [\#801](https://github.com/mothur/mothur/issues/801)
+
