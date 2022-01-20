@@ -33,6 +33,10 @@ You can enter multiple files separated by '-''s and mothur will output an accnos
 
     mothur > list.seqs(fastq=test.R1.fastq-test.R2.fastq)
     mothur > get.seqs(fastq=test.R1.fastq-test.R2.fastq, accnos=current)
+    
+Mothur can also read compressed files as inputs:
+
+    mothur > list.seqs(fastq=test.R1.fastq.gz-test.R2.fastq.gz)
 
 ### fasta option
 
@@ -123,5 +127,4 @@ We DO NOT recommend using the name / group file combination. Instead we recommen
     [\#350](https://github.com/mothur/mothur/issues/350)
 -   1.47.0 Adds qfile option. [\#802](https://github.com/mothur/mothur/issues/802)
 -   1.47.0 Allows inputs to include multiple files. [\#803](https://github.com/mothur/mothur/issues/803)
-
-
+-   1.47.0 Adds ability to read .gz fastq files. [\#804](https://github.com/mothur/mothur/issues/804)
