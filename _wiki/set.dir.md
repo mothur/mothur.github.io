@@ -126,5 +126,5 @@ order of searches.
 -   1.47.0 - Allows for multiple saved locations for input, tools and mothurfiles parameters. [\#799](https://github.com/mothur/mothur/issues/799)
 -   1.47.0 - Changes tempdefault parameter name to mothurfiles for clarity. [\#799](https://github.com/mothur/mothur/issues/799)
 -   1.47.0 - Adds mothurhome key word. [\#800](https://github.com/mothur/mothur/issues/800)
-
+-   1.47.0 - Removes blastlocation parameter.  [\#801](https://github.com/mothur/mothur/issues/801)
 
