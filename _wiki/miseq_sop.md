@@ -24,14 +24,7 @@ index reads and so the index (aka barcode) sequences are found at the
 beginning of each read. This SOP will highlight the differences in
 processing between these two approaches. This SOP is largely the product
 of a series of manuscripts that we have published and users are advised
-to consult these for more details and background data. The
-MiSeq-specific steps are described in a manuscript that is in review
-with Applied and Environmental Microbiology. The workflow is being
-divided into several parts shown here in the table of contents for the
-tutorial:
-
--   [Korean translation of
-    MiSeq_SOP](https://metagenomics.tistory.com/entry/Mothur-파이프라인-pipeline)
+to consult these for more details and background data.
 
 
 ## Logistics
