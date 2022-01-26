@@ -96,14 +96,9 @@ put mothur in your path, but this will get you what you need for now.
 
 In addition, you probably want to get your hands on the following\...
 
--   [atom](https://atom.io) /
-    [emacs](https://www.gnu.org/software/emacs/) /
-    [vi](https://www.vim.org/) / or some other text editor
+-   [atom](https://atom.io) or some other text editor
 -   [R](https://www.r-project.org/), Excel, or another program to graph
     data
--   Adobe Illustrator, Safari, or [inkscape](https://inkscape.org/)
--   [figtree](https://github.com/rambaut/figtree/) or
-    another program to visualize dendrograms
 
 It is generally easiest to use the "current" option for many of the
 commands since the file names get very long. Because this tutorial is
