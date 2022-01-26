@@ -709,7 +709,6 @@ command we use taxlevel=4, which corresponds to the level of Order.
 Next we want to know how many sequences are in each OTU from each group
 and we can do this using the [make.shared](/wiki/make.shared)
 command. Here we tell mothur that we're really only interested in the
-
 0\.03 cutoff level:
 
     mothur > make.shared(list=final.opti_mcc.list, count=final.count_table, label=0.03)
