@@ -15,10 +15,8 @@ A BibTeX entry for LaTeX users:
 	pages = {7537--7541},
 	year = {2009},
 	doi = {10.1128/AEM.01541-09},
-	publisher = {American Society for Microbiology Journals},
 	issn = {0099-2240},
 	URL = {https://aem.asm.org/content/75/23/7537},
-	eprint = {https://aem.asm.org/content/75/23/7537.full.pdf},
 	journal = {Applied and Environmental Microbiology}
 }
 ```
@@ -36,9 +34,7 @@ A BibTeX entry for LaTeX users:
 @article{westcott_opticlust_2017,
     title = {{{OptiClust}}, an {{Improved Method}} for {{Assigning Amplicon}}-{{Based Sequence Data}} to {{Operational Taxonomic Units}}},
     author = {Westcott, Sarah L. and Schloss, Patrick D.},
-    editor = {McMahon, Katherine},
     year = {2017},
-    month = mar,
     volume = {2},
     number = {2},
     pages = {e00073-17},
@@ -48,16 +44,23 @@ A BibTeX entry for LaTeX users:
 }
 ```
 
-<!-- TODO: add citation for OptiFit once it's published.
 ## Cite OptiFit
 
 If you use the `cluster.fit` command, please also cite the OptiFit paper:
 
-> TODO
+> Sovacool KL, Westcott SL, Mumphrey MB, Dotson GA, Schloss PD. 2022. OptiFit: an Improved Method for Fitting Amplicon Sequences to Existing OTUs. mSphere 7:e00916-21.
 
 A BibTeX entry for LaTeX users:
 
 ```TeX
-@article{TODO}
+@article{sovacool_optifit_2022,
+  title = {{{OptiFit}}: An {{Improved Method}} for {{Fitting Amplicon Sequences}} to {{Existing OTUs}}},
+  author = {Sovacool, Kelly L. and Westcott, Sarah L. and Mumphrey, M. Brodie and Dotson, Gabrielle A. and Schloss, Patrick D.},
+  year = {2022},
+  volume = {7},
+  number = {1},
+  pages = {e00916-21},
+  doi = {10.1128/msphere.00916-21},
+  journal = {mSphere}
+}
 ```
--->
