@@ -16,15 +16,13 @@ For this tutorial you should download the
 [OptiFitDataSets.zip](https://mothur.s3.us-east-2.amazonaws.com/wiki/optifitdatasets.zip) 
 file and decompress it.
 
-<!-- TODO: add citation for OptiFit once it's published.
 If you use the `cluster.fit` command, please cite the OptiFit paper:
 
-> TODO
+> Sovacool KL, Westcott SL, Mumphrey MB, Dotson GA, Schloss PD. 2022. OptiFit: an Improved Method for Fitting Amplicon Sequences to Existing OTUs. mSphere 7:e00916-21.
 
 See the 
 [citation file](https://github.com/mothur/mothur.github.io/blob/master/CITATION.md#cite-optifit) 
 for a BibTeX entry.
--->
 
 ## Default settings
 
