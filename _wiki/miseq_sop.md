@@ -340,7 +340,9 @@ that alignment your sequences start and end. To remove the leading and
 trailing dots we will set keepdots to false. You could also run this
 command using your primers of interest.
 
-    mothur > pcr.seqs(fasta=silva.bacteria.fasta, start=11894, end=25319, keepdots=F)
+    mothur > pcr.seqs(fasta=silva.bacteria.fasta, start=11895, end=25318, keepdots=F)
+
+Those coordinates include the primers. The coordinates without the primers are 13862 and 23444. If you sequenced a region other than the V4 region, you should consult [this blog post](http://mothur.org/blog/2016/Customization-for-your-region/) to see how to customize the coordinates for your region.
 
 Let's rename it to something more useful using the
 [rename.file](/wiki/rename.file) command:
