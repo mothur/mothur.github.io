@@ -970,7 +970,7 @@ significant. We can also see whether the variation in the early samples
 is significantly different from the variation in the late samples using
 the [homova](/wiki/homova) command:
 
-    mothur > homova(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
+    mothur > homova(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
 
     HOMOVA BValue  P-value SSwithin/(Ni-1)_values
     Early-Late	7.89723	<0.001*	0.0609184	0.00737032
@@ -985,7 +985,7 @@ along the two axes. We can determine this by measuring the correlation
 of the relative abundance of each OTU with the two axes in the NMDS
 dataset. We do this with the [corr.axes](/wiki/corr.axes) command:
 
-    mothur > corr.axes(axes=stability.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, shared=stability.opti_mcc.0.03.subsample.shared, method=spearman, numaxes=3)
+    mothur > corr.axes(axes=final.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, shared=final.opti_mcc.0.03.subsample.shared, method=spearman, numaxes=3)
 
 This command generates the
 final.opti_mcc.0.03.subsample.spearman.corr.axes file. The
@@ -1023,7 +1023,7 @@ like this:
 We can then run [corr.axes](/wiki/corr.axes) again with the
 metadata option:
 
-    mothur > corr.axes(axes=stability.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, metadata=mouse.dpw.metadata, method=spearman, numaxes=3)
+    mothur > corr.axes(axes=final.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, metadata=mouse.dpw.metadata, method=spearman, numaxes=3)
 
 Opening the file mouse.dpw.spearman.corr.axes, we see:
 
