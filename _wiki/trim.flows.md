@@ -235,4 +235,4 @@ GQY1XT001.flow.files file.
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 -   1.45.0 Fixes trim.flows empty *flow.files issue.
-
+-   1.48.0 Changes default output to count file instead of name file.
