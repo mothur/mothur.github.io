@@ -138,3 +138,4 @@ Evol., 62, 785-792
 ## Revisions
 
 -   1.28.0 Bug Fix - windows crash
+-   1.48.0 Fixes crash with clearcut sequence name copy
