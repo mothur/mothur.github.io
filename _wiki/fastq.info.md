@@ -109,5 +109,4 @@ sanger, solexa, illumina or illumina1.8+. default=sanger.
     [\#499](https://github.com/mothur/mothur/issues/499)
 -   1.43.0 Adds 2 column pacbio file option to fastq.info.
     [\#649](https://github.com/mothur/mothur/issues/649)
-
-
+-   1.48.0 Changes default output to count file instead of name file.
