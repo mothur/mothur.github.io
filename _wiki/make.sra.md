@@ -211,3 +211,4 @@ when using sff files. Default=True.
     [\#410](https://github.com/mothur/mothur/issues/410)
 -   1.45.0 Fixes bug with sffinfo parsing with oligos option. [\#726](https://github.com/mothur/mothur/issues/726) [\#727](https://github.com/mothur/mothur/issues/727) Effects make.sra command as well because make.sra calls sff.info with an oligos file. 
 
+-   1.48.0 Fixes bug with make.sra single-end reads
