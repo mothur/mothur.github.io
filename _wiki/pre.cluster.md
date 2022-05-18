@@ -270,4 +270,4 @@ people, the **pre.cluster** option may be your best bet.
 -   1.45.0 Adds clump paramter. [\#749](https://github.com/mothur/mothur/issues/749)
 -   1.45.0 Fixes bug with pre.cluster's unoise method.
 -   1.47.0 Removes blast [\#801](https://github.com/mothur/mothur/issues/801)
-
+-   1.48.0 Significant speed improvements to command's split by sample process. 
