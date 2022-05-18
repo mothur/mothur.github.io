@@ -302,6 +302,9 @@ You may see a warning similar to:
 
 This warning can be disregarded. When you use a cutoff with the dist.seqs command, sequences with distance above the cutoff are NOT added to the distance file. This means you can have sequences in the count file, that are not in the distance file. Mothur assumes reads missing from the distance file but present in the count file only have distances above the cutoff.
 
+### flow
+
+
 ### name - not recommended
 
 The name option allows you to provide a name file associated with your group file.
@@ -333,5 +336,5 @@ The count file reduces the time and resources needed to process commands. It is 
     [\#350](https://github.com/mothur/mothur/issues/350)
 -   1.44.0 - Adds sets parameter.
     [\#277](https://github.com/mothur/mothur/issues/277)
-
+-   1.48.0 Adds flow parameter.
 
