@@ -27,6 +27,13 @@ This command will generate a .group file that looks like:
     sample3Seq3   C
     sample3Seq4   C
     sample3Seq5   C
+    
+## output
+The output parameter allows you to specify the name of group file or count file created. 
+
+## format
+The format parameter allows you to specify whether the outputted file is a group file or count file. Options group or count. Default=count.
+
 
 ## Revisions
 
@@ -36,5 +43,5 @@ This command will generate a .group file that looks like:
     [\#384](https://github.com/mothur/mothur/issues/384)
 -   1.42.0 Bug Fix: Fixes output filename for make.group.
     [\#602](https://github.com/mothur/mothur/issues/602)
-
+-   1.48.0 Adds format parameter
 
