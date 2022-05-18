@@ -151,19 +151,9 @@ sequences are aligned, you can use the
 [filter.seqs](/wiki/filter.seqs) command to remove the region that
 corresponds to your primer.
 
-### name
-
-A [ name file](/wiki/name_file) contains two columns. The first
-column contains the name of a reference sequence that is in a fasta file
-and the second column contains the names of the sequences (separated by
-commas) that the reference sequence represents. The list of names in the
-second column should always contain at least the reference sequence
-name.
-
 ### count
 
-The [ count](/wiki/Count_File) file is similar to the name file in
-that it is used to represent the number of duplicate sequences for a
+The [ count](/wiki/Count_File) file is used to represent the number of duplicate sequences for a
 given representative sequence. If you run **trim.seqs** with an oligos file
 that contains group labels, **trim.seqs** will create a new
 \*.trim.count\_table with the group information included.
@@ -456,6 +446,13 @@ The logtransform parameter allows you to indicate you want the averages
 for the qwindowaverage, rollaverage and qaverage to be calculated using
 a logtransform. Default=F.
 
+### name - not recommended
+
+The name option allows you to provide a name file associated with your fasta file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+
 ## Putting it together
 
 Any of the above options can be combined to suit your taste. If I were
@@ -507,3 +504,5 @@ This represents approximately 89% of the original sequences.
 -   1.44.0 - Bug Fix: Fixes bug with **trim.seqs** if no name file is given
     and allfiles=T. [\#696](https://github.com/mothur/mothur/issues/696)
 -   1.45.0 Removes trim.seqs requirement of name or count file.
+-   1.48.0 Changes default output to count file instead of name file.
+
