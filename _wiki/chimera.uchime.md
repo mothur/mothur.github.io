@@ -256,4 +256,4 @@ ucl is true.
 -   1.45.0 Fixes bug with chimera.uchime assembly of accnos file.
 -   1.45.2 Fixes uchime command construction. 
 -   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
-
+-   1.48.0 Significant speed improvements to command's split by sample process. 
