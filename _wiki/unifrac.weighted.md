@@ -161,12 +161,6 @@ column, lt or square.
 
     mothur > unifrac.weighted(tree=abrecovery.paup.bnj, group=abrecovery.groups, distance=lt)
 
-### The *name* option
-
-The name parameter allows you to enter a namesfile with your tree.
-
-    mothur > unifrac.weighted(tree=abrecovery.paup.bnj, group=abrecovery.groups, name=abrecovery.names)
-
 ### The *count* option
 
 The [ count](/wiki/Count_File) file is similar to the name file in
@@ -212,6 +206,14 @@ The withreplacement parameter allows you to indicate you want to
 subsample your data allowing for the same read to be included multiple
 times. Default=f.
 
+## name - not recommended
+
+The name option allows you to provide a name file associated with your tree file.
+
+We DO NOT recommend using the name file. Instead we recommend using a count file. The count file reduces the time and resources needed to process commands. It is a smaller file and can contain group information.
+
+
+
 ## Finer points
 
 If you are missing a name from your tree or groups file mothur will warn
@@ -233,3 +235,5 @@ in your sequence or group names.
 -   1.41.0 Fixes crashes with subsample option.
 -   1.42.0 - Adds withreplacement parameter to sub.sample command.
     [\#262](https://github.com/mothur/mothur/issues/262)
+-   1.48.0 Significant speed improvements.
+
