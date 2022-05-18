@@ -108,5 +108,4 @@ The removechimeras parameter allow you to remove the chimeras from your files in
 -   1.40.0 - Rewrite of threaded code. Default processors=Autodetect
     number of available processors and use all available.
 -   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
-
-
+-   1.48.0 Significant speed improvements to command's split by sample process. 
