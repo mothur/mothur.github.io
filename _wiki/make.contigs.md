@@ -398,3 +398,4 @@ documentation,
 -   1.45.0 Fixes make.contigs segfault.
 -   1.47.0 Changes output file from group to count. [\#793](https://github.com/mothur/mothur/issues/793)
 -   1.47.0 Adds maxambig, maxhomop, maxlength parameters to make.contigs. [\#793](https://github.com/mothur/mothur/issues/793)
+-   1.48.0 Fixes bug with make.contigs screening parameters if maxlength not set
