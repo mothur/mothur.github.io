@@ -144,4 +144,5 @@ We DO NOT recommend using the name / group file combination. Instead we recommen
 -   1.47.0 Adds removechimeras parameter to chimera commands to auto remove chimeras from files. [\#795](https://github.com/mothur/mothur/issues/795)
 -   1.47.0 Fixes formatting issue with chimera.vsearch with a reference
 -   1.48.0 Significant speed improvements to command's split by sample process. 
+-   1.48.0 Fixes bug with chimera.vsearch with no groups and denovo
 
