@@ -133,3 +133,4 @@ Recommended when very low values are present. Default=T.
 -   1.45.0 Fixes lefse screen output.
 -   1.46.0 Adds pairwise parameter. [\#781](https://github.com/mothur/mothur/issues/781)
 -   1.47.0 Forces lefse pairwise comparisons.
+-   1.48.0 Fixes bug with sets parameter not passing to pairwise lefse calc
