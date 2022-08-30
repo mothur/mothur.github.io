@@ -15,7 +15,7 @@ platform. Applied and Environmental Microbiology. 79(17):5112-20.
 The goal of this tutorial is to demonstrate the standard operating
 procedure (SOP) that the Schloss lab uses to process their 16S rRNA gene
 sequences that are generated using Illumina's MiSeq platform using
-paired end reads. This SOP has been updated to reflect the features found in [mothur v. 1.47.0](https://github.com/mothur/mothur/releases/tag/v.1.47.0). The approach we take is to use index reads to
+paired end reads. This SOP has been updated to reflect the features found in [mothur v. 1.48.0](https://github.com/mothur/mothur/releases/tag/v.1.48.0). The approach we take is to use index reads to
 multiplex a large number of samples (i.e. 384) on a single run. You can
 also see our latest [wet-lab
 SOP](https://github.com/SchlossLab/MiSeq_WetLab_SOP) for generating
@@ -60,10 +60,9 @@ off the MiSeq as pairs of fastq files with each pair representing the
 two sets of reads per sample. fastq files contain both the sequence data
 and the quality score data. If you aren't getting these files off the
 sequencer, then you likely have the software parameters set incorrectly.
-For this tutorial you will need several sets of files. To speed up the
-tutorial we provide some of the downstream files that take awhile to
-generate (e.g. the output of shhh.flows):
+For this tutorial you will need `mothur` and several sets of files:
 
+-   Latest version of [mothur](https://github.com/mothur/mothur/releases/latest). You will most likely **not need** the version with "tools" in the name. 
 -   [Example data from schloss lab](https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip)
     that will be used with this tutorial. It was extracted from the
     [full
@@ -83,26 +82,23 @@ classification references perform differently with different sample
 types so your mileage may vary. It is generally easiest to decompress
 these files and to then move the contents of the Trainset9_032012.pds
 and the silva.bacteria folders into the MiSeq_SOP folder. You will also
-want to move the contents of the mothur executable folder there as well.
+want to move the contents of the `mothur` executable folder there as well.
 If you are a sysadmin wiz (or novice) you can probably figure out how to
-put mothur in your path, but this will get you what you need for now.
+put `mothur` in your path, but this will get you what you need for now.
 
-In addition, you probably want to get your hands on the following\...
+**If you are working on a Mac OS X computer**, the first time you run `mothur` you will get a scary looking message that says, "“mothur” cannot be opened because it is from an unidentified developer. macOS cannot verify that this app is free from malware." Click the OK button. To permanently get rid of this message right click on the `mothur` icon, highlight "Open with...", and while holding the command key select "Terminal (open)". Now you'll get a message that says, "macOS cannot verify the developer of “mothur”. Are you sure you want to open it? macOS cannot verify the developer of “mothur”. Are you sure you want to open it?" Click "Open". Repeat this with the `vsearch` app.
 
--   [atom](https://atom.io) or some other text editor
--   [R](https://www.r-project.org/), Excel, or another program to graph
+You will probably want to get your hands on the following\...
+
+- [Visual Studio Code](https://code.visualstudio.com/) or some other text editor
+- [R](https://www.r-project.org/), Excel, or another program to graph
     data
 
-It is generally easiest to use the "current" option for many of the
-commands since the file names get very long. Because this tutorial is
-meant to show people how to use mothur at a very nuts and bolts level,
-we will only selectively use the current option to demonstrate how it
-works. Generally, we will use the full file names for this tutorial.
 
 ## Getting started
 
 Because of the large size of the original dataset (3.9 GB) we are giving
-you 21 of the 362 pairs of fastq files. For example, you will see two
+you 20 of the 362 pairs of fastq files. For example, you will see two
 files: F3D0_S188_L001_R1_001.fastq and
 F3D0_S188_L001_R2_001.fastq. These two files correspond to Female 3
 on Day 0 (i.e. the day of weaning). The first and all those with R1
@@ -110,11 +106,25 @@ correspond to read 1 while the second and all those with R2 correspond
 to the second or reverse read. These sequences are 250 bp and overlap in
 the V4 region of the 16S rRNA gene; this region is about 253 bp long. So
 looking at the files in the MiSeq_SOP folder that you've downloaded
-you will see 22 fastq files representing 10 time points from Female 3
+you will see 40 fastq files representing 10 time points from Female 3
 and 1 mock community. You will also see HMP_MOCK.v35.fasta which
 contains the sequences used in the mock community that we sequenced in
-fasta format. Finally you will see a file called stability.files. The
-first lines of this file look like:
+fasta format. There are other files in this directory that we'll get to later
+in this tutorial
+
+To start `mothur`, the most reliable approach is to navigate to the directory that has your data, reference files, and the `mothur` executable using the command line (e.g. using the `cd` [mac or linux] or `dir` [windows] commands). To start mothur from the command line when mothur is in the same directory as the data, you can enter `./mothur` [mac or linux] or `mothur.exe` [windows]. If it is elsewhere, then you'll need to include the path to the executable. If it is in your `PATH` then you can simply type `mothur` or `mothur.exe` depending on your operating system. Alternatively, you can double click on the `mothur` icon. If you take the double clicking approach, it is easiest to do this when `mothur` is in the same directory as your data.
+
+The first thing we need to do is tell `mothur` which fastq files go together. We can do this with the [make.file](/wiki/make.file) command. This command will use the text before the first `_` of the fastq file names as the name of the sample. For this reason, it is best not to include `-` characters in your sample names (e.g. don't do "F3-D0", but do "F3D0").
+
+If you started `mothur` directly from the command line, you can create the files file like this:
+
+    mothur > make.file(inputdir=., type=fastq, prefix=stability)
+    
+ Alternatively, if you double clicked on the `mothur` icon from the same directory as your data, you can use the keyword 'mothurhome' to indicate the location of `mothur`'s executable.
+ 
+    mothur > make.file(inputdir=mothurhome, type=fastq, prefix=stability)
+    
+This will create a file called stability.files. The first lines of this file look like:
 
     F3D0   F3D0_S188_L001_R1_001.fastq F3D0_S188_L001_R2_001.fastq
     F3D141 F3D141_S207_L001_R1_001.fastq   F3D141_S207_L001_R2_001.fastq
@@ -123,20 +133,9 @@ first lines of this file look like:
     F3D144 F3D144_S210_L001_R1_001.fastq   F3D144_S210_L001_R2_001.fastq
     ...
 
-mothur can create this file for you using the
-[make.file](/wiki/make.file) command.
-
-    mothur > make.file(inputdir=., type=fastq, prefix=stability)
-    
- Alternatively, you can use the keyword 'mothurhome' to indicate the location of mothur's executable.
- 
-    mothur > make.file(inputdir=mothurhome, type=fastq, prefix=stability)
-    
 The first column is the name of the sample. The second column is the
 name of the forward read for that sample and the third columns in the
-name of the reverse read for that sample. Pretty easy, eh? Finally,
-there's a batch file included that we'll discuss at the end of the
-tutorial.
+name of the reverse read for that sample. If your fastq files are compressed as `gz` files then the value you should give to the type argument will be `gz`.
 
 ## Reducing sequencing and PCR errors
 
@@ -153,12 +152,15 @@ the other has a gap, the quality score of the base must be over 25 to be
 considered real. If both sequences have a base at that position, then we
 require one of the bases to have a quality score 6 or more points better
 than the other. If it is less than 6 points better, then we set the
-consensus base to an N. I'm using 16 processors,
-because my computer has 16 processors, use what you've got. Alternatively, mothur can detect how many processors you have available. Let's give it a shot\...
+consensus base to an N. Let's give it a shot\...
 
-    mothur > make.contigs(file=stability.files, processors=16)
+    mothur > make.contigs(file=stability.files)
 
-The first thing you'll see is that it processes the fastq files to
+
+The first thing you'll see is that mothur can detect the number of processors
+you have on your computer. If you want to use a different number of processors
+than what mothur selects, you can use the command `set.current(processors=8)` to 
+use 8 processors. As you'll see, `make.contigs` processes the fastq files to
 generate the individual fasta and qual files. Then it will go through
 each set of files and make the contigs. This took about 19 seconds on my
 computer. Clearly, it will take longer for a full dataset. In the end it
@@ -215,46 +217,15 @@ between 248 and 253 bases. Interestingly, the longest read in the
 dataset is 502 bp. Be suspicious of this. Recall that the reads are
 supposed to be 251 bp each. This read clearly didn't assemble well (or
 at all). Also, note that at least 2.5% of our sequences had some
-ambiguous base calls. Finally, when we've previously looked at V4 sequence data we rarely/never see good sequences with a stretch where the same nucleotide is repeated more than 8 times. We can use the maxambig, maxlength, and maxhomop options 
-in make.contigs to resolve these issue while assembling the reads:
+ambiguous base calls. Finally, when we've previously looked at V4 sequence data we rarely/never see good sequences with a stretch where the same nucleotide is repeated more than 8 times. We could have used the maxambig, maxlength, and maxhomop options 
+in make.contigs to resolve these issue while assembling the reads. But since we
+already ran `make.contigs`, let's include those values in [`screen.seqs`](/wiki/screen.seqs) command instead.
 
-    mothur > make.contigs(file=stability.files, maxambig=0, maxlength=275, maxhomop=8)
-    ...
-    Group count: 
-    F3D0	6638
-    F3D1	4970
-    F3D141	5075
-    F3D142	2670
-    F3D143	2672
-    F3D144	3875
-    F3D145	6114
-    F3D146	4301
-    F3D147	14170
-    F3D148	10524
-    F3D149	11091
-    F3D150	4605
-    F3D2	16793
-    F3D3	5678
-    F3D5	3716
-    F3D6	6839
-    F3D7	4365
-    F3D8	4524
-    F3D9	6119
-    Mock	4133
-
-    Total of all groups is 128872
-
-    It took 19 secs to process 152360 sequences.
-    
-Alternatively, we can take care of these issues in a separate step
-by running the [screen.seqs](/wiki/screen.seqs) command.
-
-    mothur > screen.seqs(fasta=stability.trim.contigs.fasta, count=stability.contigs.count_table, maxambig=0, maxlength=275, maxhomop=8)
+    mothur > screen.seqs(fasta=stability.trim.contigs.fasta, count=stability.contigs.count_table, maxambig=0, maxlength=275, maxhomop=8)
 
 This implementation of the command will remove any sequences with
-ambiguous bases and anything longer than 275 bp. Also, mothur is smart enough to remember that we used 16
-processors in make.contigs and so it will use that throughout your
-current session. To see what else mothur knows about you, run the
+ambiguous bases and anything longer than 275 bp. Also, `mothur` is smart enough to remember the correct number of processors, so it will use that throughout your
+current session unless we change it. To see what else `mothur` knows about you, run the
 following:
 
     mothur > get.current()
@@ -268,11 +239,11 @@ following:
     processors=16
     summary=stability.trim.contigs.summary
     
-What this means is that mothur remembers your latest fasta file and
+What this means is that `mothur` remembers your latest fasta file and
 count file as well as the number of processors you have. So you could
 run:
 
-    mothur > summary.seqs(fasta=stability.trim.contigs.fasta, count=stability.contigs.count_table)
+    mothur > summary.seqs(fasta=stability.trim.contigs.good.fasta, count=stability.contigs.good.count_table)
     mothur > summary.seqs(fasta=current, count=current)
     mothur > summary.seqs(count=current)
 
@@ -292,9 +263,12 @@ Mean:	1	252	252	0	4
 total # of seqs:	128865
 ```
 
-For the purposes of this
-tutorial we will write out the names of the files. At this point our
-sequencing error rate has probably dropped more than an order of
+It is generally easiest to use the "current" option for many of the
+commands since the file names get very long. Because this tutorial is
+meant to show people how to use `mothur` at a very nuts and bolts level,
+we will only selectively use the current option to demonstrate how it
+works. Generally, we will use the full file names for this tutorial. At this
+point our sequencing error rate has probably dropped more than an order of
 magnitude and we have 128865 sequences. Let's press on\...
 
 ## Processing improved sequences
@@ -304,7 +278,7 @@ Because it's computationally wasteful to align the same thing a
 bazillion times, we'll unique our sequences using the
 [unique.seqs](/wiki/unique.seqs) command:
 
-    mothur > unique.seqs(fasta=stability.trim.contigs.fasta, count=stability.contigs.count_table)
+    mothur > unique.seqs(fasta=stability.trim.contigs.good.fasta, count=stability.contigs.good.count_table)
 
 If two sequences have the same identical sequence, then they're
 considered duplicates and will get merged. In the screen output there
@@ -313,23 +287,23 @@ the second is the number of unique sequences remaining. So after running
 unique.seqs we have gone from 128872 to 16426 sequences. This will make
 our life much easier. 
 
-    mothur > summary.seqs(count=stability.trim.contigs.count_table)
+    mothur > summary.seqs(count=stability.trim.contigs.good.count_table)
 
-    Using stability.trim.contigs.unique.fasta as input file for the fasta parameter.
+    Using stability.trim.contigs.good.unique.fasta as input file for the fasta parameter.
 
     Using 16 processors.
 
-		Start	End	NBases	Ambigs	Polymer	NumSeqs
-    Minimum:	1	250	250	0	3	1
-    2.5%-tile:	1	252	252	0	3	3222
-    25%-tile:	1	252	252	0	4	32219
-    Median: 	1	252	252	0	4	64437
-    75%-tile:	1	253	253	0	5	96655
-    97.5%-tile:	1	253	253	0	6	125651
-    Maximum:	1	270	270	0	12	128872
-    Mean:	1	252	252	0	4
-    # of unique seqs:	16426
-    total # of seqs:	128872
+                    Start   End     NBases  Ambigs  Polymer NumSeqs
+    Minimum:        1       250     250     0       3       1
+    2.5%-tile:      1       252     252     0       3       3222
+    25%-tile:       1       252     252     0       4       32217
+    Median:         1       252     252     0       4       64433
+    75%-tile:       1       253     253     0       5       96649
+    97.5%-tile:     1       253     253     0       6       125644
+    Maximum:        1       270     270     0       8       128865
+    Mean:           1       252     252     0       4
+    # of unique seqs:       16421
+    total # of seqs:        128865
 
 Cool, right? Now we need to align our sequences to the reference
 alignment. Again we can make our lives a bit easier by making a database
@@ -340,32 +314,29 @@ that alignment your sequences start and end. To remove the leading and
 trailing dots we will set keepdots to false. You could also run this
 command using your primers of interest.
 
-    mothur > pcr.seqs(fasta=silva.bacteria.fasta, start=11895, end=25318, keepdots=F)
+    mothur > pcr.seqs(fasta=silva.bacteria.fasta, start=11895, end=25318, keepdots=F)
 
 Those coordinates include the primers. The coordinates without the primers are 13862 and 23444. If you sequenced a region other than the V4 region, you should consult [this blog post](http://mothur.org/blog/2016/Customization-for-your-region/) to see how to customize the coordinates for your region.
 
 Let's rename it to something more useful using the
 [rename.file](/wiki/rename.file) command:
 
-    mothur > rename.file(input=silva.bacteria.pcr.fasta, new=silva.v4.fasta)
+    mothur > rename.file(input=silva.bacteria.pcr.fasta, new=silva.v4.fasta)
 
 Let's take a look at what we've made:
 
     mothur > summary.seqs(fasta=silva.v4.fasta)
 
-    Using 16 processors.
-
-		Start	End	NBases	Ambigs	Polymer	NumSeqs
-    Minimum:	2	13425	270	0	3	1
-    2.5%-tile:	2	13426	292	0	4	374
-    25%-tile:	2	13426	293	0	4	3740
-    Median: 	2	13426	293	0	4	7479
-    75%-tile:	2	13426	293	0	5	11218
-    97.5%-tile:	2	13426	294	1	6	14583
-    Maximum:	4	13426	351	5	9	14956
-    Mean:	2	13425	292	0	4
-    # of Seqs:	14956
-
+                    Start   End     NBases  Ambigs  Polymer NumSeqs
+    Minimum:        1       13424   269     0       3       1
+    2.5%-tile:      1       13424   291     0       4       374
+    25%-tile:       1       13424   292     0       4       3740
+    Median:         1       13424   292     0       4       7479
+    75%-tile:       1       13424   292     0       5       11218
+    97.5%-tile:     1       13424   293     1       6       14583
+    Maximum:        3       13424   350     5       9       14956
+    Mean:           1       13424   291     0       4
+    # of Seqs:      14956
 
 Now we have a customized reference alignment to align our sequences to.
 The nice thing about this reference is that instead of being 50,000
@@ -373,65 +344,56 @@ columns wide, it is now 13,425 columns wide which will save our hard
 drive some space and should improve the overall alignment quality.
 We'll do the alignment with [align.seqs](/wiki/align.seqs):
 
-    mothur > align.seqs(fasta=stability.trim.contigs.unique.fasta, reference=silva.v4.fasta)
+    mothur > align.seqs(fasta=stability.trim.contigs.good.unique.fasta, reference=silva.v4.fasta)
 
 This should be done in a manner of seconds and we can run
 [summary.seqs](/wiki/summary.seqs) again:
 
 ```
-mothur > summary.seqs(fasta=stability.trim.contigs.unique.align, count=stability.trim.contigs.count_table)
+mothur > summary.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table)
 
-
-		Start	End	NBases	Ambigs	Polymer	NumSeqs
-Minimum:	1251	10694	250	0	3	1
-2.5%-tile:	1969	11551	252	0	3	3222
-25%-tile:	1969	11551	252	0	4	32217
-Median: 	1969	11551	252	0	4	64433
-75%-tile:	1969	11551	253	0	5	96649
-97.5%-tile:	1969	11551	253	0	6	125644
-Maximum:	1983	13401	270	0	8	128865
-Mean:	1968	11551	252	0	4
-# of unique seqs:	16421
-total # of seqs:	128865
+                Start   End     NBases  Ambigs  Polymer NumSeqs
+Minimum:        1250    10693   250     0       3       1
+2.5%-tile:      1968    11550   252     0       3       3222
+25%-tile:       1968    11550   252     0       4       32217
+Median:         1968    11550   252     0       4       64433
+75%-tile:       1968    11550   253     0       5       96649
+97.5%-tile:     1968    11550   253     0       6       125644
+Maximum:        1982    13400   270     0       8       128865
+Mean:           1967    11550   252     0       4
+# of unique seqs:       16421
+total # of seqs:        128865
 ```
 
 
 So what does this mean? You'll see that the bulk of the sequences start
-at position 1969 and end at position 11551. Some sequences start at
-position 1251 or 1969 and end at 10694 or 13401. These deviants from the
+at position 1968 and end at position 11550. Some sequences start at
+position 1250 or 1968 and end at 10693 or 13400. These deviants from the
 mode positions are likely due to an insertion or deletion at the
 terminal ends of the alignments. Sometimes you'll see sequences that
 start and end at the same position indicating a very poor alignment,
 which is generally due to non-specific amplification. To make sure that
 everything overlaps the same region we'll re-run screen.seqs to get
-sequences that start at or before position 1969 and end at or after
-position 11551. We'll also set the maximum homopolymer length to 8
-since there's nothing in the database with a stretch of 9 or more of
-the same base in a row (this really could have been done in the first
-execution of screen.seqs above). Note that we need the count table so
+sequences that start at or before position 1968 and end at or after
+position 11550. Note that we need the count table so
 that we can update the table for the sequences we're removing:
 
-    mothur > screen.seqs(fasta=stability.trim.contigs.unique.align, count=stability.trim.contigs.count_table, start=1969, end=11551)
+    mothur > screen.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table, start=1968, end=11550)
 
-    mothur > summary.seqs(fasta=current, count=current)
+    mothur > summary.seqs(fasta=current, count=current)
 
-    Using stability.trim.contigs.good.count_table as input file for the count parameter.
-    Using stability.trim.contigs.unique.good.align as input file for the fasta parameter.
-
-    Using 16 processors.
-     
-           Start	End	NBases	Ambigs	Polymer	NumSeqs
-    Minimum:	1966	11551	250	0	3	1
-    2.5%-tile:	1969	11551	252	0	3	3217
-    25%-tile:	1969	11551	252	0	4	32165
-    Median: 	1969	11551	252	0	4	64329
-    75%-tile:	1969	11551	253	0	5	96493
-    97.5%-tile:	1969	11551	253	0	6	125440
-    Maximum:	1969	13401	270	0	8	128656
-    Mean:	1968	11551	252	0	4
-    # of unique seqs:	16299
-    total # of seqs:	128656
-
+                    Start   End     NBases  Ambigs  Polymer NumSeqs
+    Minimum:        1965    11550   250     0       3       1
+    2.5%-tile:      1968    11550   252     0       3       3217
+    25%-tile:       1968    11550   252     0       4       32165
+    Median:         1968    11550   252     0       4       64329
+    75%-tile:       1968    11550   253     0       5       96493
+    97.5%-tile:     1968    11550   253     0       6       125440
+    Maximum:        1968    13400   270     0       8       128656
+    Mean:           1967    11550   252     0       4
+    # of unique seqs:       16299
+    total # of seqs:        128656
+    
 Now we know our sequences overlap the same alignment coordinates, we
 want to make sure they only overlap that region. So we'll filter the
 sequences to remove the overhangs at both ends. Since we've done
@@ -441,23 +403,23 @@ contain gap characters (i.e. "-"). These can be pulled out without
 losing any information. We'll do all this with
 [filter.seqs](/wiki/filter.seqs):
 
-    mothur > filter.seqs(fasta=stability.trim.contigs.unique.good.align, vertical=T, trump=.)
+    mothur > filter.seqs(fasta=stability.trim.contigs.good.unique.good.align, vertical=T, trump=.)
 
 At the end of running the command we get the following information:
 
-    Length of filtered alignment: 375
-    Number of columns removed: 13051
-    Length of the original alignment: 13426
+    Length of filtered alignment: 376
+    Number of columns removed: 13048
+    Length of the original alignment: 13424
     Number of sequences used to construct filter: 16299
 
-This means that our initial alignment was 13425 columns wide and that we
-were able to remove 13051 terminal gap characters using trump=. and
+This means that our initial alignment was 13424 columns wide and that we
+were able to remove 13048 terminal gap characters using trump=. and
 vertical gap characters using vertical=T. The final alignment length is
-375 columns. Because we've perhaps created some redundancy across our
+376 columns. Because we've perhaps created some redundancy across our
 sequences by trimming the ends, we can re-run
 [unique.seqs](/wiki/unique.seqs):
 
-    mothur > unique.seqs(fasta=stability.trim.contigs.unique.good.filter.fasta, count=stability.trim.contigs.good.count_table)
+    mothur > unique.seqs(fasta=stability.trim.contigs.good.unique.good.filter.fasta, count=stability.trim.contigs.good.good.count_table)
 
 This identified 3 duplicate sequences that we've now merged with
 previous unique sequences. The next thing we want to do to further
@@ -469,12 +431,12 @@ and identify sequences that are within 2 nt of each other. If they are
 then they get merged. We generally favor allowing 1 difference for every
 100 bp of sequence:
 
-    mothur > pre.cluster(fasta=stability.trim.contigs.unique.good.filter.unique.fasta, count=stability.trim.contigs.unique.good.filter.count_table, diffs=2)
+    mothur > pre.cluster(fasta=stability.trim.contigs.good.unique.good.filter.unique.fasta, count=stability.trim.contigs.good.unique.good.filter.count_table, diffs=2)
 
-We now have 6085 unique sequences. At this point we have removed as much
+We now have 6090 unique sequences. At this point we have removed as much
 sequencing error as we can and it is time to turn our attention to
 removing chimeras. We'll do this using the VSEARCH algorithm that is
-called within mothur using the
+called within `mothur` using the
 [chimera.vsearch](/wiki/chimera.vsearch) command. Again, this
 command will split the data by sample and check for chimeras. Our
 preferred way of doing this is to use the abundant sequences as our
@@ -484,37 +446,30 @@ Our experience suggests that this is a bit aggressive since we've seen
 rare sequences get flagged as chimeric when they're the most abundant
 sequence in another sample. This is how we do it:
 
-    mothur > chimera.vsearch(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.unique.good.filter.unique.precluster.count_table, dereplicate=t)
+    mothur > chimera.vsearch(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t)
 
-When running mothur's chimera commands, mothur will automatically remove the chimeras from your files. 
-Alternatively, you can run it in two steps.
-
-    mothur > chimera.vsearch(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.unique.good.filter.unique.precluster.count_table, dereplicate=t, removechimeras=f)
-    mothur > remove.seqs(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.fasta, accnos=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.accnos)
-
-Running summary.seqs we see what we're left with:
+When running `mothur`'s chimera commands, `mothur` will automatically remove the chimeras from your fasta and count files. If you want to do this in two steps - detecting chimeras and removing chimeras, please see the documentation for [`chimera.vsearch`](/wiki/chimera.vsearch). Running summary.seqs we see what we're left with:
 
 ```
-mothur > summary.seqs(fasta=current, count=current)
+mothur > summary.seqs(fasta=current, count=current)
      
 Using 16 processors.
 
-		Start	End	NBases	Ambigs	Polymer	NumSeqs
-Minimum:	1	375	249	0	3	1
-2.5%-tile:	1	375	252	0	3	2955
-25%-tile:	1	375	252	0	4	29543
-Median: 	1	375	252	0	4	59085
-75%-tile:	1	375	253	0	5	88627
-97.5%-tile:	1	375	253	0	6	115214
-Maximum:	1	375	256	0	8	118168
-Mean:	1	375	252	0	4
-# of unique seqs:	2486
-total # of seqs:	118168
+                Start   End     NBases  Ambigs  Polymer NumSeqs
+Minimum:        1       376     249     0       3       1
+2.5%-tile:      1       376     252     0       3       2955
+25%-tile:       1       376     252     0       4       29545
+Median:         1       376     252     0       4       59089
+75%-tile:       1       376     253     0       5       88633
+97.5%-tile:     1       376     253     0       6       115222
+Maximum:        1       376     256     0       8       118176
+Mean:           1       376     252     0       4
+# of unique seqs:       2491
+total # of seqs:        118176
 ```
 
-Note that we went from 128,656 to 118,168 sequences for a reduction of
-
-8\.2%; this is a reasonable number of sequences to be flagged as
+Note that we went from 128,656 to 118,176 sequences for a reduction of
+8\.1%; this is a reasonable number of sequences to be flagged as
 chimeric. As a final quality control step, we need to see if there are
 any "undesirables" in our dataset. Sometimes when we pick a primer set
 they will amplify other stuff that gets to this point in the pipeline
@@ -528,12 +483,12 @@ microbial community. But I digress. Let's go ahead and classify those
 sequences using the Bayesian classifier with the
 [classify.seqs](/wiki/classify.seqs) command:
 
-    mothur > classify.seqs(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.fasta, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
+    mothur > classify.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.count_table, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax)
 
 Now that everything is classified we want to remove our undesirables. We
 do this with the [remove.lineage](/wiki/remove.lineage) command:
 
-    mothur > remove.lineage(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.fasta, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.count_table, taxonomy=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pds.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
+    mothur > remove.lineage(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pds.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
 
 Note is that "unknown" only pops up as a classification if the
 classifier cannot classify your sequence to one of the domains. Also,
@@ -550,7 +505,7 @@ our sequences were in these taxonomic groups. Now, to create an updated
 taxonomy summary file that reflects these removals we use the
 [summary.tax](/wiki/summary.tax) command:
 
-    mothur > summary.tax(taxonomy=current, count=current)
+    mothur > summary.tax(taxonomy=current, count=current)
 
 This creates a pick.tax.summary file with the undesirables removed. At
 this point we have curated our data as far as possible and we're ready
@@ -568,9 +523,9 @@ sample using the [get.groups](/wiki/get.groups) command:
 
 Note: If you are running this analysis on a Windows machine, the Mock
 group name is likely capitalized due to how the make.file command
-creates the group names. You will want to set groups=MOCK.
+creates the group names. You will want to set `groups=MOCK`.
 
-    mothur > get.groups(count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.fasta, groups=Mock)
+    mothur > get.groups(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.fasta, groups=Mock)
 
     Selected 64 sequences from your fasta file.
     Selected 4048 sequences from your count file.
@@ -579,9 +534,9 @@ This tells us that we had 64 unique sequences and a total of 4048 total
 sequences in our Mock sample. We can now use the
 [seq.error](/wiki/seq.error) command to measure the error rates:
 
-    mothur > seq.error(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.fasta, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, reference=HMP_MOCK.v35.fasta, aligned=F)
+    mothur > seq.error(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, reference=HMP_MOCK.v35.fasta, aligned=F)
 
-    Overall error rate:    6.5108e-05
+    Multiply error rate by 100 to obtain the percent sequencing errors.Overall error rate:    6.5108e-05
     Errors Sequences
     0  3998
     1  3
@@ -616,22 +571,22 @@ sequences in our Mock sample. We can now use the
     30 0
     31 1
 
-That rocks, eh? Our error rate is 0.0065%. We can now cluster the
+That rocks, eh? Our error rate is 0.0065%. This is the value that I would prefer to report. Some like to get excited about the number of spurious OTUs that are generated. To figure this out, we can now cluster the
 sequences into OTUs to see how many spurious OTUs we have:
 
-    mothur > dist.seqs(fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.fasta, cutoff=0.03)
-    mothur > cluster(column=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.dist, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table)
-    mothur > make.shared(list=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.opti_mcc.list, count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, label=0.03)
-    mothur > rarefaction.single(shared=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.opti_mcc.shared)
+    mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.fasta, cutoff=0.03)
+    mothur > cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table)
+    mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.opti_mcc.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table, label=0.03)
+    mothur > rarefaction.single(shared=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.opti_mcc.shared)
 
 This string of commands will produce a file for you called
-stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.groups.rarefaction.
+stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.opti_mcc.groups.rarefaction.
 Open it. You'll see that for 4048 sequences, we'd have 35 OTUs from
 the Mock community. This number of course includes some stealthy
 chimeras that escaped our detection methods. If we used 3000 sequences,
 we would have about 31 OTUs. In a perfect world with no chimeras and no
 sequencing errors, we'd have 20 OTUs. This is not a perfect world. But
-this is pretty darn good!
+this is pretty darn good! The reason I prefer the rate (i.e., 0.0065%) over the number of spurious OTUs is that the number of spurious OTUs is dependent on the sequencing depth while the rate is not.
 
 ## Preparing for analysis
 
@@ -641,18 +596,21 @@ assign sequences to OTUs, ASVs, and phylotypes. First, we want to remove the
 Mock sample from our dataset using the
 [remove.groups](/wiki/remove.groups) command:
 
-    mothur > remove.groups(count=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, fasta=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.fasta, taxonomy=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pds.wang.pick.taxonomy, groups=Mock)
+    mothur > remove.groups(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.count_table, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.fasta, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pds.wang.pick.taxonomy, groups=Mock)
     
     mothur > rename.file(fasta=current, count=current, taxonomy=current, prefix=final)
 	
-	Current files saved by mothur:
-	fasta=final.fasta
-	taxonomy=final.taxonomy
-	contigsreport=stability.contigs_report
-	count=final.count_table
-	processors=16
-	summary=stability.trim.contigs.unique.good.filter.unique.precluster.denovo.vsearch.pick.summary
-
+    Current files saved by mothur:
+    accnos=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pds.wang.accnos
+    column=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.dist
+    fasta=final.fasta
+    list=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.opti_mcc.list
+    shared=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.opti_mcc.shared
+    taxonomy=final.taxonomy
+    contigsreport=stability.contigs_report
+    count=final.count_table
+    processors=10
+    summary=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.summary
 
 ### OTUs
 
@@ -660,19 +618,21 @@ Now we have a couple of options for clustering sequences into OTUs. For
 a small dataset like this, we can do the traditional approach using
 [dist.seqs](/wiki/dist.seqs) and [cluster](/wiki/cluster):
 
-    mothur > dist.seqs(fasta=final.fasta, cutoff=0.03)
-    mothur > cluster(column=final.dist, count=final.count_table)
+    mothur > dist.seqs(fasta=final.fasta, cutoff=0.03)
+    mothur > cluster(column=final.dist, count=final.count_table)
 
-Clustering final.dist
+    You did not set a cutoff, using 0.03.
 
-    iter	time	label	num_otus	cutoff	tp	tn	fp	fn	sensitivity	specificity	ppv	npv	fdr	accuracy	mcc	f1score
-	
-	0.03
-	0	0	0.03	2424	0.03	0	2.91065e+06	0	26024	0	1	0	0.991138	1	0.9911380
-	1	0	0.03	530	0.03	22262	2.90874e+06	1908	3762	0.855441	0.999344	0.921059	0.9987080.921059	0.998069	0.886681	0.887038	
-	2	0	0.03	481	0.03	22693	2.9087e+06	1950	3331	0.872003	0.99933	0.92087	0.998856	0.92087	0.998202	0.895203	0.89577	
-	3	0	0.03	481	0.03	22680	2.90873e+06	1920	3344	0.871503	0.99934	0.921951	0.998852	0.921951	0.998207	0.895475	0.896018	
-	4	0	0.03	482	0.03	22656	2.90876e+06	1888	3368	0.870581	0.999351	0.923077	0.9988430.923077	0.99821	0.895549	0.896061	
+    Clustering final.dist
+
+    iter    time    label   num_otus        cutoff  tp      tn      fp      fn      sensitivity  specificity      ppv     npv     fdr     accuracy        mcc     f1score
+
+    0.03
+    0       0       0.03    2430    0.03    0       2.9251e+06      0       26136   0       1    00.991144        1       0.991144        0       0
+    1       0       0.03    524     0.03    22146   2.92339e+06     1706    3990    0.847337     0.999417 0.928476        0.998637        0.928476        0.99807 0.886023        0.886053
+    2       0       0.03    490     0.03    22532   2.92328e+06     1817    3604    0.862106     0.999379 0.925377        0.998769        0.925377        0.998163        0.892265        0.892622
+    3       0       0.03    488     0.03    22541   2.92329e+06     1813    3595    0.86245 0.99938       0.925556        0.998772        0.925556        0.998168        0.892532        0.89289
+    4       0       0.03    488     0.03    22541   2.92329e+06     1812    3595    0.86245 0.999381      0.925594        0.998772        0.925594        0.998168        0.892551        0.892907
 
 The alternative is to use our [cluster.split](/wiki/cluster.split)
 command. In this approach, we use the taxonomic information to split the
@@ -691,44 +651,37 @@ ideal world we would prefer the traditional route because "Trad is
 rad", but we also think that kind of humor is funny\.... In this
 command we use taxlevel=4, which corresponds to the level of Order.
 
-    mothur > cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy, taxlevel=4, cutoff=0.03)
+    mothur > cluster.split(fasta=final.fasta, count=final.count_table, taxonomy=final.taxonomy, taxlevel=4, cutoff=0.03)
 
-    	label	cutoff	numotus	tp	tn	fp	fn	sensitivity	specificity	ppv	npv	fdr	accuracy	mcc	f1score
-	0.03	0.03	531	22285	2.90912e+06	1864	3411	0.8673	0.9994	0.9228	0.9988	0.9228	0.9982	0.8937	0.8942
-
+    label	cutoff	numotus	tp	tn	fp	fn	sensitivity	specificity	ppv	npv	fdr	accuracy	mcc	f1score
+    0.03    0.03    534     22285   2.92357e+06     1853    3523    0.8635  0.9994  0.9232  0.99880.9232  0.9982  0.892   0.8924
+        
 Next we want to know how many sequences are in each OTU from each group
 and we can do this using the [make.shared](/wiki/make.shared)
-command. Here we tell mothur that we're really only interested in the
+command. Here we tell `mothur` that we're really only interested in the
 0\.03 cutoff level:
 
-    mothur > make.shared(list=final.opti_mcc.list, count=final.count_table, label=0.03)
+    mothur > make.shared(list=final.opti_mcc.list, count=final.count_table, label=0.03)
 
 We probably also want to know the taxonomy for each of our OTUs. We can
 get the consensus taxonomy for each OTU using the
 [classify.otu](/wiki/classify.otu) command:
 
-    mothur > classify.otu(list=final.opti_mcc.list, count=final.count_table, taxonomy=final.taxonomy, label=0.03)
+    mothur > classify.otu(list=final.opti_mcc.list, count=final.count_table, taxonomy=final.taxonomy, label=0.03)
 
 Opening final.opti_mcc.0.03.cons.taxonomy you'll see something that looks like\...
 
 ```
-OTU	Size	Taxonomy
-Otu001	12288	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu002	8892	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu003	7794	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu004	7476	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);Barnesiella(100);
-Otu005	7450	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu006	6621	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu007	6304	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);Bacteroidaceae(100);Bacteroides(100);
-Otu008	5337	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Rikenellaceae"(100);Alistipes(100);
-Otu009	3606	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu010	3061	Bacteria(100);Firmicutes(100);Bacilli(100);Lactobacillales(100);Lactobacillaceae(100);Lactobacillus(100);
-Otu011	2937	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu012	2074	Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
-Otu013	1854	Bacteria(100);Firmicutes(100);Bacilli(100);Lactobacillales(100);Lactobacillaceae(100);Lactobacillus(100);
-Otu014	1452	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Lachnospiraceae_unclassified(100);
-Otu015	1316	Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Lachnospiraceae(100);Lachnospiraceae_unclassified(100);
-...
+OTU     Size    Taxonomy
+Otu001  12288   Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu002  8892    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu003  7794    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu004  7476    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);Barnesiella(100);
+Otu005  7450    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu006  6621    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);
+Otu007  6304    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);Bacteroidaceae(100);Bacteroides(100);
+Otu008  5337    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Rikenellaceae"(100);Alistipes(100);
+Otu009  3606    Bacteria(100);"Bacteroidetes"(100);"Bacteroidia"(100);"Bacteroidales"(100);"Porphyromonadaceae"(100);"Porphyromonadaceae"_unclassified(100);...
 ```
 
 This is telling you that Otu008 was observed 5337 times in your samples
@@ -745,7 +698,7 @@ are challenges with this approach including the possibility of separating
 operons from the same genome into separate ASVs and that an ASV is
 typically really a cluster of sequences that are one or two bases apart
 from each other. Regardless, some people want to give this a go. The
-method built into mothur for identifying ASVs is [pre.cluster](/wiki/pre.cluster).
+method built into `mothur` for identifying ASVs is [pre.cluster](/wiki/pre.cluster).
 We did this above and then removed chimeras and contaminant sequences. We
 can convert the fasta and count_table files we used to form OTUs to a shared
 file using the [make.shared](/wiki/make.shared) command.
@@ -775,12 +728,12 @@ cluster/cluster.split. Here you see 1 through 6 listed; these correspond
 to Genus through Kingdom levels, respectively. So if you want the
 genus-level shared file we'll do the following:
 
-    mothur > make.shared(list=final.tx.list, count=final.count_table, label=1)
+    mothur > make.shared(list=final.tx.list, count=final.count_table, label=1)
 
 We also want to know who these OTUs are and can run
 [classify.otu](/wiki/classify.otu) on our phylotypes:
 
-    mothur > classify.otu(list=final.tx.list, count=final.count_table, taxonomy=final.taxonomy, label=1)
+    mothur > classify.otu(list=final.tx.list, count=final.count_table, taxonomy=final.taxonomy, label=1)
 
 ### Phylogenetic
 
@@ -791,7 +744,7 @@ of sequences increases. But here's how we'd do it using
 [dist.seqs](/wiki/dist.seqs) and
 [clearcut](/wiki/clearcut)\...
 
-    mothur > dist.seqs(fasta=final.fasta, output=lt)
+    mothur > dist.seqs(fasta=final.fasta, output=lt)
     mothur > clearcut(phylip=final.phylip.dist)
 
 ## Analysis
@@ -815,7 +768,7 @@ reasonable number. Despite what some say, subsampling and rarefying your
 data is an important thing to do. We'll generate a subsampled file for
 our analyses with the [sub.sample](/wiki/sub.sample) command:
 
-    mothur > sub.sample(shared=final.opti_mcc.shared, size=2403)
+    mothur > sub.sample(shared=final.opti_mcc.shared, size=2403)
 
 ## OTU-based analysis
 
@@ -826,7 +779,7 @@ samples. First we will generate rarefaction curves describing the number
 of OTUs observed as a function of sampling effort. We'll do this with
 the [rarefaction.single](/wiki/rarefaction.single) command:
 
-    mothur > rarefaction.single(shared=final.opti_mcc.shared, calc=sobs, freq=100)
+    mothur > rarefaction.single(shared=final.opti_mcc.shared, calc=sobs, freq=100)
 
 This will generate files ending in \*.rarefaction, which again can be
 plotted in your favorite graphing software package. Alas, rarefaction is
@@ -847,7 +800,7 @@ everything, let's randomly select 2403 sequences from each sample 1000
 times and calculate the average (note: that if we set subsample=T, then
 it would use the size of the smallest library):
 
-    mothur > summary.single(shared=final.opti_mcc.shared, calc=nseqs-coverage-sobs-invsimpson, subsample=T)
+    mothur > summary.single(shared=final.opti_mcc.shared, calc=nseqs-coverage-sobs-invsimpson, subsample=T)
 
 These data will be outputted to a table in a file called
 final.opti_mcc.groups.ave-std.summary. Interestingly, the sample coverages
@@ -866,55 +819,52 @@ similarity of the membership and structure found in the various samples.
 We'll do this with the [dist.shared](/wiki/dist.shared) command
 that will allow us to rarefy our data to a common number of sequences.
 
-    mothur > dist.shared(shared=final.opti_mcc.shared, calc=thetayc-jclass, subsample=t)
+    mothur > dist.shared(shared=final.opti_mcc.shared, calc=braycurtis-jclass, subsample=t)
 
 These two distance matrices (i.e.
 final.opti_mcc.jclass.0.03.lt.ave.dist and
-final.opti_mcc.thetayc.0.03.lt.ave.dist) can then be visualized
+final.opti_mcc.braycurtis.0.03.lt.ave.dist) can then be visualized
 using the [pcoa](/wiki/pcoa) or [nmds](/wiki/nmds) plots.
 Principal Coordinates (PCoA) uses an eigenvector-based approach to
 represent multidimensional data in as few dimesnsions as possible. Our
 data is highly dimensional (\~9 dimensions).
 
-    mothur > pcoa(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist)
+    mothur > pcoa(phylip=final.opti_mcc.braycurtis.0.03.lt.ave.dist)
 
 The output of these commands are three files ending in \*dist, \*pcoa,
-and \*pcoa.loadings. The final.opti_mcc.thetayc.0.03.lt.ave.pcoa.loadings
+and \*pcoa.loadings. The final.opti_mcc.braycurtis.0.03.lt.ave.pcoa.loadings
 file will tell you what fraction of the total variance in the data are
 represented by each of the axes. In this case, the first and second axis
-represent about 45 and 14% of the variation (59% of the total) for the
-thetaYC distances. The output to the screen indicates that the R-squared
+represent about 48 and 18% of the variation (66% of the total) for the
+braycurtis distances. The output to the screen indicates that the R-squared
 between the original distance matrix and the distance between the points
-in 2D PCoA space was 0.89, but that if you add a third dimension the
-R-squared value increases to 0.98. All in all, not bad.
+in 2D PCoA space was 0.93, but that if you add a third dimension the
+R-squared value increases to 0.97. All in all, not bad.
 
 Alternatively, non-metric multidimensional scaling (NMDS) tries to
 preserve the distance between samples using a user-defined number of
 dimensions. We can run our data through NMDS with 2 dimensions with the
 following commands
 
-    mothur > nmds(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist)
+    mothur > nmds(phylip=final.opti_mcc.braycurtis.0.03.lt.ave.dist)
 
-Opening the final.opti_mcc.thetayc.0.03.lt.ave.nmds.stress file we
+Opening the final.opti_mcc.braycurtis.0.03.lt.ave.nmds.stress file we
 can inspect the stress and R\^2 values, which describe the quality of
 the ordination. Each line in this file represents a different iteration
 and the configuration obtained in the iteration with the lowest stress
-is reported in the final.opti_mcc.thetayc.0.03.lt.ave.nmds.axes
-file. In this file we find that the lowest stress value was 0.11 with an
-R-squared value of 0.95; that stress level is actually pretty good. You
+is reported in the final.opti_mcc.braycurtis.0.03.lt.ave.nmds.axes
+file. In this file we find that the lowest stress value was 0.19 with an
+R-squared value of 0.89; that stress level is a little higher than we'd like. You
 can test what hapens with three dimensions by the following:
 
-    mothur > nmds(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist, mindim=3, maxdim=3)
+    mothur > nmds(phylip=final.opti_mcc.braycurtis.0.03.lt.ave.dist, mindim=3, maxdim=3)
 
-The stress value drops to 0.05 and the R2 value goes up to 0.99. Not
+The stress value drops to 0.12 and the R2 value goes up to 0.93. Not
 bad. In general, you would like a stress value below 0.20 and a value
-below 0.10 is even better. Thus, we can conclude that, NMDS is better
-than PCoA. We can plot the three dimensions of the NMDS data by plotting
-the contents of
-final.opti_mcc.subsample.pick.thetayc.0.03.lt.nmds.axes. Again, it
-is clear that the early and late samples cluster separately from each
-other. Ultimately, ordination is a data visualization tool. We might ask
-if the spatial separation that we see between the early and late plots
+below 0.10 is even better. Although not so clear for this dataset, we typically find that NMDS is better than PCoA because the R^2 value is better. Although there are tools out there to plot the three dimensions of the NMDS data, this is a bad idea since no one can see 3D on a 2D page. Looking at the 2D data by PCoA or NMDS makes it clear that the early and late samples cluster separately from each
+other. Ultimately, ordination is a data visualization tool.
+
+We might ask if the spatial separation that we see between the early and late plots
 in the NMDS plot is statistically significant. To do this we have two
 statistical tools at our disposal. The first analysis of molecular
 variance ([amova](/wiki/amova)), tests whether the centers of the
@@ -952,16 +902,15 @@ downloaded that looks vaguely like this:
 
 We can then run amova with this file as follows\...
 
-    mothur > amova(phylip=final.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
+    mothur > amova(phylip=final.opti_mcc.braycurtis.0.03.lt.ave.dist, design=mouse.time.design)
      
-    	Early-Late	Among	Within	Total
-	SS	0.630302	0.55368	1.18398
-	df	1	17	18
-	MS	0.630302	0.0325694
-	
-	Fs:	19.3526
-	p-value: 0.001*
+    Early-Late      Among   Within  Total
+    SS      0.505939        0.682134        1.18807
+    df      1       17      18
+    MS      0.505939        0.0401255
 
+    Fs:     12.6089
+    p-value: <0.001*
 
 Here we see from the AMOVA that the "cloud" early and late time points
 has a significantly different centroid for this mouse. Thus, the
@@ -970,14 +919,14 @@ significant. We can also see whether the variation in the early samples
 is significantly different from the variation in the late samples using
 the [homova](/wiki/homova) command:
 
-    mothur > homova(phylip=stability.opti_mcc.thetayc.0.03.lt.ave.dist, design=mouse.time.design)
+    mothur > homova(phylip=final.opti_mcc.braycurtis.0.03.lt.ave.dist, design=mouse.time.design)
 
     HOMOVA BValue  P-value SSwithin/(Ni-1)_values
-    Early-Late	7.89723	<0.001*	0.0609184	0.00737032
+    Early-Late      1.42156 <0.001* 0.0575547       0.0246329
 
 We see that there is a significant difference in the variation with the
-early samples having a larger amount of variation (0.061) than the late
-samples (0.007). This was what we found in the original study - the
+early samples having a larger amount of variation (0.058) than the late
+samples (0.025). This was what we found in the original study - the
 early samples were less stable than the late samples.
 
 Next, we might ask which OTUs are responsible for shifting the samples
@@ -985,20 +934,19 @@ along the two axes. We can determine this by measuring the correlation
 of the relative abundance of each OTU with the two axes in the NMDS
 dataset. We do this with the [corr.axes](/wiki/corr.axes) command:
 
-    mothur > corr.axes(axes=stability.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, shared=stability.opti_mcc.0.03.subsample.shared, method=spearman, numaxes=3)
+    mothur > corr.axes(axes=final.opti_mcc.braycurtis.0.03.lt.ave.pcoa.axes, shared=final.opti_mcc.0.03.subsample.shared, method=spearman, numaxes=3)
 
 This command generates the
 final.opti_mcc.0.03.subsample.spearman.corr.axes file. The
 data for the first five OTUs look like this\...
 
-    	OTU    axis1   p-value axis2   p-value axis3   p-value length
-	Otu001	-0.052632	0.823304	0.612281	0.005327	-0.733333	0.000353	0.956784
-	Otu002	0.219684	0.351316	0.792620	0.000052	-0.514939	0.024064	0.970397
-	Otu003	0.040369	0.864012	0.543221	0.016233	-0.108820	0.644309	0.555482
-	Otu004	-0.803861	0.000034	-0.202721	0.389750	0.245722	0.297176	0.864678
-	Otu005	-0.853006	0.000003	-0.181659	0.440877	-0.177271	0.451993	0.889968
-	Otu006	-0.861404	0.000002	0.184211	0.434486	-0.028070	0.905203	0.881327
-    	...
+    OTU	    axis1	    p-value	    axis2	    p-value 	axis3   	p-value 	length
+    Otu001	-0.082529   0.726234	0.776120	0.000094	-0.524144	0.021244	0.940160
+    Otu002	0.036939	0.875465	0.855764	0.000003	-0.270889	0.250438	0.898375
+    Otu003	-0.033333	0.887537	0.510526	0.025516	0.212281	0.367785	0.553906
+    Otu004	-0.802106	0.000036	-0.179903	0.445305	0.227293	0.334885	0.852878
+    Otu005	-0.854761	0.000003	-0.105309	0.655027	-0.358052	0.128741	0.932688
+    ...
 
 This helps to illustrate the power of OTUs over phylotypes since each of
 these OTUs is behaving differently. These data can be plotted in what's
@@ -1023,15 +971,14 @@ like this:
 We can then run [corr.axes](/wiki/corr.axes) again with the
 metadata option:
 
-    mothur > corr.axes(axes=stability.opti_mcc.thetayc.0.03.lt.ave.pcoa.axes, metadata=mouse.dpw.metadata, method=spearman, numaxes=3)
+    mothur > corr.axes(axes=final.opti_mcc.braycurtis.0.03.lt.ave.pcoa.axes, metadata=mouse.dpw.metadata, method=spearman, numaxes=3)
 
 Opening the file mouse.dpw.spearman.corr.axes, we see:
 
     Feature	axis1	p-value	axis2	p-value	axis3	p-value	length
-    dpw	 -0.642105	0.003035	0.005263	0.982185	0.378947	0.107893	0.745606
+    dpw	-0.754386	0.000190	-0.029825	0.899309	0.363158	0.123378	0.837778
 
-
-Indicating that as the dpw increases the communities shift to in the
+Indicating that as the dpw decreases, the communities shift to the negative direction along axis 1 and as it increases the communities shift to in the
 positive direction along axis 3.
 
 Another tool we can use is
@@ -1040,30 +987,31 @@ data can be partitioned in to separate community types
 
     mothur > get.communitytype(shared=final.opti_mcc.0.03.subsample.shared)
 
-    	K	NLE		logDet	BIC		AIC		Laplace
-	1	11134.22	606.58	11726.05	11536.22	11068.10
-	2	11301.45	442.73	12486.59	12106.45	10783.07
-	3	12160.43	172.35	13938.87	13368.43	11136.52
-	4	13070.99	-222.46	15442.74	14681.99	11479.35
-	5	13948.84	-648.65	16913.89	15962.84	11773.78
+    K       NLE             logDet  BIC             AIC             Laplace
+    1       11276.49        608.03  11897.77        11698.49        11192.72
+    2       11474.63        387.66  12718.66        12319.63        10891.96
+    3       12389.27        72.89   14256.05        13657.27        11260.50
+    4       13368.46        -370.10 15857.98        15059.46        11629.49
+    5       14317.94        -843.60 17430.22        16431.94        11953.51
 
-We see that the minimum Laplace value is for a K value of 2 (10783.07).
+We see that the minimum Laplace value is for a K value of 2 (10891.96).
 This indicates that our samples belonged to two community types. Opening
 final.opti_mcc.0.03.subsample.0.03.dmm.mix.design we see that all
-of the late samples and the Day 0 sample belonged to Partition_1 and
-the other early samples belonged to Partition_2. We can look at the
+of the late samples and the Day 0 sample belonged to Partition_2 and
+the other early samples belonged to Partition_1 (or vice versa). We can look at the
 final.opti_mcc.0.03.subsample.0.03.dmm.mix.summary file to see
 which OTUs were most responsible for separating the communities:
 
-    	OTU	P0.mean	P1.mean	P1.lci	P1.uci	P2.mean	P2.lci	P2.uci	Difference	CumFraction
-	Otu005	3.32	0.43	0.26	0.72	10.52	9.27	11.93	10.09	0.15
-	Otu004	6.17	3.67	2.96	4.57	8.60	7.54	9.81	4.93	0.22
-	Otu006	5.68	3.80	3.07	4.71	7.30	6.37	8.37	3.50	0.27
-	Otu008	3.96	5.69	4.71	6.86	2.93	2.44	3.51	2.76	0.31
-	Otu010	1.99	0.92	0.63	1.35	3.29	2.76	3.93	2.37	0.34
-	Otu001	9.51	10.72	9.15	12.56	8.53	7.48	9.73	2.19	0.37
-	Otu007	5.63	6.84	5.71	8.19	4.77	4.10	5.56	2.07	0.40
-	Otu013	1.19	2.53	1.97	3.24	0.61	0.43	0.86	1.92	0.43
+    OTU	    P0.mean	P1.mean	P1.lci	P1.uci	P2.mean	P2.lci	P2.uci	Difference	CumFraction
+    Otu005	3.36	0.44	0.26	0.72	10.63	9.38	12.04	10.19	0.15
+    Otu004	6.19	3.70	2.98	4.59	8.60	7.55	9.79	4.90	0.22
+    Otu006	5.67	3.77	3.05	4.67	7.31	6.38	8.36	3.53	0.27
+    Otu008	3.93	5.70	4.73	6.87	2.89	2.41	3.46	2.81	0.31
+    Otu010	2.00	0.93	0.63	1.35	3.32	2.79	3.95	2.40	0.34
+    Otu001	9.49	10.70	9.13	12.53	8.50	7.47	9.69	2.19	0.37
+    Otu007	5.63	6.81	5.69	8.16	4.78	4.11	5.57	2.03	0.40
+    Otu013	1.18	2.54	1.98	3.26	0.59	0.42	0.84	1.95	0.43
+    Otu009	3.33	4.18	3.40	5.14	2.67	2.23	3.21	1.51	0.45
     ...
 
 Again we can cross-reference these OTU labels with the consensus
@@ -1080,42 +1028,50 @@ non-parametric T-tetst that determines whether there are any OTUs that
 are differentially represented between the samples from men and women in
 this study. Run the following in mothur:
 
-    mothur > metastats(shared=final.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
+    mothur > metastats(shared=final.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
 
 Looking in the first 5 OTUs from
 final.opti_mcc.0.03.subsample.0.03.Late-Early.metastats file we see
 the following\...
 
-    	OTU	mean(group1)	variance(group1)	stderr(group1)	mean(group2)	variance(group2)	stderr(group2)	p-value
-	Otu001	0.087099	0.000220	0.004695	0.112360	0.002551	0.016837	0.176823
-	Otu002	0.073991	0.000264	0.005137	0.079068	0.000468	0.007214	0.558442
-	Otu003	0.066708	0.000077	0.002777	0.070652	0.000235	0.005108	0.531469
-	Otu004	0.088598	0.000175	0.004186	0.042956	0.000402	0.006680	0.000999
-	Otu005	0.108739	0.000561	0.007492	0.014843	0.000954	0.010295	0.001998
-	Otu006	0.075739	0.000093	0.003051	0.040459	0.000137	0.003902	0.000999
-    	...
+    OTU	mean(group1)	variance(group1)	stderr(group1)	mean(group2)	variance(group2)	stderr(group2)	p-value
+    Otu001	0.086434	0.000119	0.003447	0.112082	0.002525	0.016750	0.152847
+    Otu002	0.073616	0.000286	0.005344	0.079022	0.000466	0.007192	0.540460
+    Otu003	0.067832	0.000092	0.003025	0.070837	0.000236	0.005122	0.638362
+    Otu004	0.088556	0.000162	0.004030	0.043141	0.000398	0.006654	0.000999
+    Otu005	0.109904	0.000560	0.007483	0.014889	0.000953	0.010289	0.000999
+    Otu006	0.075822	0.000096	0.003105	0.040181	0.000138	0.003909	0.000999
+    Otu007	0.051935	0.000202	0.004494	0.072918	0.002084	0.015217	0.229770
+    Otu008	0.034166	0.000472	0.006868	0.055163	0.000484	0.007335	0.045954
+    Otu009	0.027923	0.000070	0.002640	0.040412	0.000221	0.004953	0.036963
+    Otu010	0.041323	0.000354	0.005950	0.011190	0.000132	0.003831	0.000999
+   	...
 
 These data tell us that OTUs 4, 5 and 6 were significantly different
-between the early and late samples.
+between the early and late samples. Keep in mind that the p-values we output from metastats still need to be corrected for multiple comparisons
 
 Another non-parametric tool we can use as an alternative to metastats is
 [lefse](/wiki/lefse):
 
-    mothur > lefse(shared=final.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
+    mothur > lefse(shared=final.opti_mcc.0.03.subsample.shared, design=mouse.time.design)
 
-Number of significantly discriminative features: 77 ( 83 ) before internal wilcoxon.
-Number of discriminative features with abs LDA score > 2 : 77.
+    Number of significantly discriminative features: 80 ( 83 ) before internal wilcoxon.
+    Number of discriminative features with abs LDA score > 2 : 80.
 
 Looking at the top of the lefse summary file we see:
 
-    	OTU	logMaxMean	Class	LDA	pValue
-	Otu001	5.05061	Early	NA	NA
-	Otu002	4.898	Early	NA	NA
-	Otu003	4.84913	Early	NA	NA
-	Otu004	4.94742	Late	4.3583	0.00044411
-	Otu005	5.03639	Late	4.6874	0.00044411
-	Otu006	4.87932	Late	4.22836	0.000238563
-	...
+    OTU	    logMaxMean	Class	LDA	pValue
+    Otu001	5.04954	Early	NA	NA
+    Otu002	4.89775	Early	NA	NA
+    Otu003	4.85026	Early	NA	NA
+    Otu004	4.94722	Late	4.37976	0.00044411
+    Otu005	5.04101	Late	4.66273	0.00044411
+    Otu006	4.87979	Late	4.24045	0.000238563
+    Otu007	4.86284	Early	NA	NA
+    Otu008	4.74164	Early	3.7859	0.0453786
+    Otu009	4.60652	Early	NA	NA
+    Otu010	4.6162	Late	4.14149	0.00190961
+    ...
 
 OTUs 4, 5, and 6 are significantly different between the two groups and
 are significantly elevated in the late samples
@@ -1149,7 +1105,7 @@ total of the unique branch length in the tree. This is done using the
 [phylo.diversity](/wiki/phylo.diversity) command. Because of
 differences in sampling depth we will rarefy the output:
 
-    mothur > phylo.diversity(tree=final.phylip.tre, count=final.count_table, rarefy=T)
+    mothur > phylo.diversity(tree=final.phylip.tre, count=final.count_table, rarefy=T)
 
 This will generate a file ending in rarefaction.
 
@@ -1165,8 +1121,8 @@ unweighted](/wiki/Unifrac.unweighted) and [
 weighted](/wiki/Unifrac.weighted). We will also have mothur
 subsample the trees 1000 times and report the average:
 
-    mothur > unifrac.unweighted(tree=final.phylip.tre, count=final.count_table, distance=lt,random=F, subsample=t)
-    mothur > unifrac.weighted(tree=final.phylip.tre, count=final.count_table, distance=lt, random=F, subsample=t)
+    mothur > unifrac.unweighted(tree=final.phylip.tre, count=final.count_table, distance=lt,random=F, subsample=t)
+    mothur > unifrac.weighted(tree=final.phylip.tre, count=final.count_table, distance=lt, random=F, subsample=t)
 
 These commands will distance matrices (final.phylip.1.weighted.ave.dist)
 that can be analyzed using all of the beta diversity approaches
@@ -1175,7 +1131,7 @@ described above for the OTU-based analyses.
 ## Putting it all together
 
 It is perfectly acceptable to enter the commands for your analysis from
-within mothur. We call this the [interactive
+within `mothur`. We call this the [interactive
 mode](/wiki/interactive_mode). If you are doing a lot these types
 of analysis or you want to use this SOP on your own data without
 thinking too much there are a couple of other options available.
@@ -1187,7 +1143,7 @@ stability.batch. If you look at it you'll see all of the commands you
 ran, but instead of listing out the file names it uses the current
 option throughout. You can copy and paste from this file and get the
 same output as we got above. The beauty of the batch mode is that you
-can run mothur from your command line without much typing. For example
+can run `mothur` from your command line without much typing. For example
 you would run the following:
 
     $ ./mothur stability.batch
@@ -1202,24 +1158,24 @@ batch files using the "\#" character.
 
 ### Command line mode
 
-The third way we have of running mothur is by entering mothur commands
+The third way we have of running `mothur` is by entering `mothur` commands
 directly using the [command line mode](/wiki/command_line_mode).
 This is done like so:
 
     $ ./mothur "#make.contigs(file=stability.files)"
 
-This command will fire mothur up, run make.contigs, and then quit. This
+This command will fire `mothur` up, run make.contigs, and then quit. This
 is useful for people that want to script commands and go back and forth
 between different programs. The key ingredients here are the quotes
-around the commands and the "\#" character that tells mothur this is
+around the commands and the "\#" character that tells `mothur` this is
 not a batch file. If you really went nuts you could combine commands
 using ";" characters like so:
 
-    $ ./mothur "#make.contigs(file=stability.files, maxambig=0, maxlength=27);unique.seqs(count=current);align.seqs(fasta=current, reference=silva.v4.fasta);screen.seqs(fasta=current, count=current, start=1969, end=11551, maxhomop=8);filter.seqs(fasta=current, vertical=T, trump=.); pre.cluster(fasta=current, count=current, diffs=2);unique.seqs(fasta=current, count=current);chimera.vsearch(fasta=current, count=current, dereplicate=t);classify.seqs(fasta=current, count=current, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80); remove.lineage(fasta=current, count=current, taxonomy=current, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota);remove.groups(count=current, fasta=current, taxonomy=current, groups=Mock);dist.seqs(fasta=current, cutoff=0.03);cluster(column=current, count=current, cutoff=0.03);make.shared(list=current, count=current, label=0.03);classify.otu(list=current, count=current, taxonomy=current, label=0.03); phylotype(taxonomy=current);make.shared(list=current, count=current, label=1);classify.otu(list=current, count=current, taxonomy=current, label=1);"
+    $ ./mothur "#make.contigs(file=stability.files, maxambig=0, maxlength=275);unique.seqs(count=current);align.seqs(fasta=current, reference=silva.v4.fasta);screen.seqs(fasta=current, count=current, start=1968, end=11550, maxhomop=8);filter.seqs(fasta=current, vertical=T, trump=.); pre.cluster(fasta=current, count=current, diffs=2);unique.seqs(fasta=current, count=current);chimera.vsearch(fasta=current, count=current, dereplicate=t);classify.seqs(fasta=current, count=current, reference=trainset9_032012.pds.fasta, taxonomy=trainset9_032012.pds.tax, cutoff=80); remove.lineage(fasta=current, count=current, taxonomy=current, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota);remove.groups(count=current, fasta=current, taxonomy=current, groups=Mock);dist.seqs(fasta=current, cutoff=0.03);cluster(column=current, count=current, cutoff=0.03);make.shared(list=current, count=current, label=0.03);classify.otu(list=current, count=current, taxonomy=current, label=0.03); phylotype(taxonomy=current);make.shared(list=current, count=current, label=1);classify.otu(list=current, count=current, taxonomy=current, label=1);"
 
-Finally, another great resource when running mothur is the logfile. If
-you go to your folder where you are running mothur, you should find one
-or more file that looks like mothur.1364488920.logfile. Open that up and
+Finally, another great resource when running `mothur` is the logfile. If
+you go to your folder where you are running `mothur`, you should find one
+or more file that looks like `mothur.1364488920.logfile`. Open that up and
 you'll see all of the commands you entered and the output that was put
 to the screen. If anything ever goes wrong and you need to email us,
 please include this file!
@@ -1228,3 +1184,4 @@ please include this file!
 
 -   6/24/19 - Updated to reflect version 1.42.3 outputs.
 -   1/11/21 - Updates to reflect version 1.47.0 outputs.
+-   8/30/22 - Updates to reflect changes with 1.48.0 syntax
