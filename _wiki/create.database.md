@@ -18,25 +18,25 @@ shared, and count & constaxonomy are required. NOTE: Make SURE the
 repfasta, repnames or count and constaxonomy are for the same label as
 the listfile.
 
-    mothur > get.oturep(list=final.an.list, label=0.03, fasta=final.fasta, column=final.dist, name=final.names) 
+    mothur > get.oturep(list=final.an.list, cutoff=0.03, fasta=final.fasta, column=final.dist, name=final.names) 
     mothur > classify.otu(list=final.an.list, name=final.names, taxonomy=final.taxonomy, label=0.03)
     mothur > create.database(list=final.an.list, label=0.03, repfasta=final.an.0.03.rep.fasta, repname=final.an.0.03.rep.names, constaxonomy=final.an.0.03.cons.taxonomy)
 
 or with a count file:
 
-    mothur > get.oturep(list=final.an.unique_list, label=0.03, fasta=final.fasta, column=final.dist, count=final.count_table) 
+    mothur > get.oturep(list=final.an.unique_list, cutoff=0.03, fasta=final.fasta, column=final.dist, count=final.count_table) 
     mothur > classify.otu(list=final.an.unique_list, count=final.count_table, taxonomy=final.taxonomy, label=0.03)
     mothur > create.database(list=final.an.unique_list, label=0.03, repfasta=final.an.0.03.rep.fasta, count=final.an.0.03.rep.count_table, constaxonomy=final.an.0.03.cons.taxonomy)
 
 or with a shared file:
 
-    mothur > get.oturep(list=final.an.list, label=0.03, fasta=final.fasta, column=final.dist, name=final.names) 
+    mothur > get.oturep(list=final.an.list, cutoff=0.03, fasta=final.fasta, column=final.dist, name=final.names) 
     mothur > classify.otu(list=final.an.list, name=final.names, taxonomy=final.taxonomy, label=0.03)
     mothur > create.database(shared=final.an.shared, label=0.03, repfasta=final.an.0.03.rep.fasta, repname=final.an.0.03.rep.names, constaxonomy=final.an.0.03.cons.taxonomy)
 
 or with a relabund file:
 
-    mothur > get.oturep(list=final.an.list, label=0.03, fasta=final.fasta, column=final.dist, name=final.names) 
+    mothur > get.oturep(list=final.an.list, cutoff=0.03, fasta=final.fasta, column=final.dist, name=final.names) 
     mothur > classify.otu(list=final.an.list, name=final.names, taxonomy=final.taxonomy, label=0.03)
     mothur > create.database(relabund=final.an.relabund, label=0.03, repfasta=final.an.0.03.rep.fasta, repname=final.an.0.03.rep.names, constaxonomy=final.an.0.03.cons.taxonomy)
 
