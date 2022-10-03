@@ -202,7 +202,7 @@ groupmode=F, you will get a separate output file for each sample.
 ### Visualization with R
 
 To visual your data follow Pat's tutorial
-[here](https://www.riffomonas.org/minimalR/06_line_plots.html).
+[here](https://www.riffomonas.org/minimalR/07_line_plots.html).
 
 ## Revisions
 
