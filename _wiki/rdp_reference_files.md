@@ -3,6 +3,46 @@ title: 'RDP reference files'
 redirect_from: '/wiki/RDP_reference_files'
 ---
 
+## Version 19
+
+The [publicly released version
+19](https://sourceforge.net/p/rdp-classifier/news/2023/08/rdp-classifier-214-august-2023-released/) of its training set in
+July 2023. You'll notice that the names of the bacterial phyla and other levels have been significantly changed from prior versions. We have modified the
+files that they make available on SourceForge to be compatible with
+mothur. To maintain a consistent 6 taxonomic levels we have removed the
+various sub-classes, orders and families:
+
+-   [ 16S rRNA reference
+    (RDP)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset19_072023.rdp.tgz): A collection of
+    23,853 bacterial, 788 archaeal, and 1 eukaryotic SSU rRNA gene sequences with an
+    improved taxonomy compared to version 16.
+-   [ 16S rRNA reference
+    (PDS)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset19_072023.pds.tgz): The RDP
+    reference with 119 mitochondrial 16S rRNA gene sequences added as
+    members of the Rickettsiales and four 18S rRNA gene sequences added
+    as members of the Eukarya.
+
+You should be aware of several things when using the RDP training set.
+First, the taxonomies only go to the genus level; therefore, you will
+only be able to classify your sequences to the genus level. You can
+modify the training set to include species-level names and may be
+successful in classifying to the species level. Second, many of these
+sequences are very poor in quality. Low quality reads have a large
+number of ambiguous base calls or are very short. Here is the output
+from running summary.seqs on trainset19\_072023.rdp.fasta:
+
+               Start	End	NBases	Ambigs	Polymer	NumSeqs
+    Minimum:	1	425	425	0	4	1
+    2.5%-tile:	1	1310	1310	0	5	617
+    25%-tile:	1	1427	1427	0	5	6161
+    Median: 	1	1466	1466	0	5	12322
+    75%-tile:	1	1497	1497	0	6	18482
+    97.5%-tile:	1	1549	1549	10	7	24026
+    Maximum:	1	1968	1968	130	100	24642
+    Mean:	        1	1452	1452	1	5
+
+
+
 ## Version 18
 
 The [publicly released version
