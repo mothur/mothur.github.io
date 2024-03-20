@@ -27,50 +27,61 @@ mv RDPClassifier_16S_trainsetNo19_rawtrainingdata/* ./
 Now we'd like to start to form the taxonomy file and the fasta file that will be our reference. Again, using bash commands...
 
 {% highlight bash %}
-mv trainset19_072023.fa trainset19_072023.rdp.fasta
-grep ">" trainset19_072023.rdp.fasta | cut -c 2- > trainset19_072023_rmdup.tax
+grep ">" trainset19_072023_speciesrank.fa | cut -c 2- > trainset19_072023_rmdup.tax
+cp trainset19_072023_speciesrank.fa trainset19_072023.rdp.fasta
 {% endhighlight %}
 
 
-Next, we'd like to get our taxonomy file properly formatted. First we'll read in the taxonomy data. The following steps are done in R...
-
-
-{% highlight r %}
-tax_file <- scan(file="trainset19_072023_rmdup.tax", what="", sep="\n", quiet=TRUE)
-
-accession <- gsub("^(\\S*).*", "\\1", tax_file) #some are separated by tabs or spaces or both
-
-taxonomy <- gsub(".*(Root.*)", "\\1", tax_file)
-taxonomy <- gsub(" ", "_", taxonomy)	#remove spaces and replace with '_'
-taxonomy <- gsub("\t", "", taxonomy)	#remove extra tab characters
-taxonomy <- gsub("[^;]*_incertae_sedis$", "", taxonomy)
-taxonomy <- gsub('\"', '', taxonomy) #remove quote marks
-{% endhighlight %}
-
-The RDP inserts a variety of sub taxonomic levels (e.g. suborder) that will get in the way of us having a consistent number of taxonomic levels for our analyses. Let's use the data in `trainset18_db_taxid.txt` to remove these extra taxonomic levels:
-
+Next, we'd like to get our taxonomy file properly formatted. First we'll read in the taxonomy data. Then we'll output the taxonomy data to a file we'll call `trainset19_072023.rdp.tax` to have a consistent naming scheme with previous versions of those files. The following steps are done in R...
 
 {% highlight r %}
-levels <- read.table(file="trainset19_db_taxid.txt", sep="*", stringsAsFactors=FALSE)
-subs <- levels[grep("sub", levels$V5),]
-sub.names <- subs$V2
+library(tidyverse)
 
-tax.split <- strsplit(taxonomy, split=";")
+incertae_sedis <- function(x) {
 
-remove.subs <- function(tax.vector){
-	return(tax.vector[which(!tax.vector %in% sub.names)])
+  to_fix <- c(1:6)[str_detect(x, "domain__")][1]
+
+  if(is.na(to_fix)) { return(x) }
+
+  x[to_fix] <- if_else(str_detect(x[to_fix - 1], "incertae_sedis"),
+                      x[to_fix - 1],
+                      paste0(x[to_fix-1], "_incertae_sedis")
+              )
+
+  incertae_sedis(x)
+
 }
 
-no.subs <- lapply(tax.split, remove.subs)
-no.subs.str <- unlist(lapply(no.subs, paste, collapse=";"))
-no.subs.str <- gsub("^Root;(.*)$", "\\1;", no.subs.str)
-{% endhighlight %}
+parse_taxonomy <- function(x) {
 
-Finally, we can output the taxonomy data to a file we'll call `trainset19_072023.rdp.tax` to have a consistent naming scheme with previous versions of those files:
+  c(domain = str_replace(x, ".*domain__([^;]*);.*", "\\1"),
+    phylum = str_replace(x, ".* phylum__([^;]*);.*", "\\1"),
+    class = str_replace(x, ".* class__([^;]*);.*", "\\1"),
+    order = str_replace(x, ".* order__([^;]*);.*", "\\1"),
+    family = str_replace(x, ".* family__([^;]*);.*", "\\1"),
+    genus = str_replace(x, ".* genus__([^;]*).*", "\\1")) %>%
+                incertae_sedis() %>%
+                as_tibble_row(.) %>%
+                mutate(across(phylum:genus,
+                              ~str_replace(.x,
+                                          pattern = " ",
+                                          replacement = "_")))
 
+}
 
-{% highlight r %}
-write.table(cbind(as.character(accession), no.subs.str), "trainset19_072023.rdp.tax", row.names=F, col.names=F, quote=F, sep="\t")
+read_tsv(file="trainset19_072023_rmdup.tax",
+                    col_names = c("accession", " species_strain", "taxonomy"),
+                    col_types = cols(.default = col_character())) %>%
+            select(accession, taxonomy)
+
+results <- tax_data %>%
+  mutate(parsed = map(.data$taxonomy, parse_taxonomy)) %>%
+  select(-taxonomy) %>%
+  unnest(parsed) %>%
+  mutate(taxonomy = paste(domain, phylum, class,
+                          order, family, genus, sep = ";")) %>%
+  select(accession, taxonomy) %>%
+  write_tsv("trainset19_072023.rdp.tax", col_names=FALSE, quote="none")
 {% endhighlight %}
 
 The RDP training sets do not include mitochondria or sequences from eukaryotes. We find that it is helpful to have these sequences because we can get non-specific amplification at times and would like to be able to remove these lineages. Let's go ahead and pull down the pds version of training set v.9 and copy those sequences over to our new training set. The following steps will be done in bash:
