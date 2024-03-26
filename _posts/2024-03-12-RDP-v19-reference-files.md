@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "README for the RDP v19 reference files"
+title: "README for the RDP v16 reference files"
 author: "Patrick D. Schloss"
 date: "March 12, 2024"
 ---
@@ -69,17 +69,17 @@ parse_taxonomy <- function(x) {
 
 }
 
-read_tsv(file="trainset19_072023_rmdup.tax",
-                    col_names = c("accession", " species_strain", "taxonomy"),
+tax_data <- read_tsv(file="trainset19_072023_rmdup.tax",
+                    col_names = c("accession", "species_strain", "taxonomy"),
                     col_types = cols(.default = col_character())) %>%
             select(accession, taxonomy)
 
-results <- tax_data %>%
+tax_data %>%
   mutate(parsed = map(.data$taxonomy, parse_taxonomy)) %>%
   select(-taxonomy) %>%
   unnest(parsed) %>%
   mutate(taxonomy = paste(domain, phylum, class,
-                          order, family, genus, sep = ";")) %>%
+                          order, family, genus, "", sep = ";")) %>%
   select(accession, taxonomy) %>%
   write_tsv("trainset19_072023.rdp.tax", col_names=FALSE, quote="none")
 {% endhighlight %}
