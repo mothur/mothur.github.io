@@ -2,7 +2,7 @@
 title: 'make.count'
 tags: 'commands'
 ---
-The **make.count** command reads a fasta file or series of fasta files and
+The **make.count** command reads a file, fasta file or series of fasta files and
 creates a [ count](/wiki/count_file) file.
 
 ## Default Options
@@ -22,11 +22,36 @@ creates a [ count](/wiki/count_file) file.
     
     Total of all groups is 11
     
-    Output File Names: /Users/swestcott/Desktop/release/merge.count_table
+    Output File Names: merge.count_table
     
 This command creates a file called merge.count_table.
    
 ## Options
+
+### file
+The file parameter allows you to associate fasta files to sample names. mothur can create this for you
+with the ***make.file*** command.
+
+    mothur > make.file(inputdir=./fasta, type=fasta)
+
+The resulting stability.files will look like:
+
+    testfile.DN1576.CAD	    testfile.DN1576.CAD_705.fasta	
+    testfile.DN1576.EF1a	testfile.DN1576.EF1a_771.fasta	
+    testfile.DN1576.MDH	    testfile.DN1576.MDH_498.fasta	
+    testfile.DN1576.RpS5	testfile.DN1576.RpS5_597.fasta	
+    testfile.DN1577.EF1a	testfile.DN1577.EF1a_771.fasta	
+    testfile.DN1577.MDH	    testfile.DN1577.MDH_498.fasta	
+    testfile.DN1577.RpS5	testfile.DN1577.RpS5_597.fasta	
+    testfile.DN1578.CAD	    testfile.DN1578.CAD_705.fasta	
+    testfile.DN1578.EF1a	testfile.DN1578.EF1a_771.fasta	
+    ...
+
+With the stability.files as input:
+
+    mothur > make.count(file=stability.files)
+
+This command creates a file called stability.count_table.
 
 ### output
 The output parameter allows you to specify the name of count file created. 
@@ -41,4 +66,4 @@ The format parameter allows you to specify whether the outputted file is a group
 ## Revisions
 
 -   1.48.0 First Introduced
-
+-   1.48.1 Adds file option
