@@ -2,6 +2,9 @@
 title: 'Greengenes-formatted databases'
 redirect_from: '/wiki/Greengenes-formatted_databases'
 ---
+
+If you want the greengenes2 version of the taxonomy go [here](/wiki/geengenes2-formatted_databases)
+
 The greengenes-based alignment is 7,682 columns wide. Because of the
 poor alignment quality in the variable regions we strongly discourage
 people from using it for their "real" analysis. One side effect of
