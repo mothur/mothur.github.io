@@ -3,37 +3,23 @@ title: 'make.group'
 tags: 'commands'
 redirect_from: '/wiki/Make.group.html'
 ---
-The **make.group** command reads a fasta file or series of fasta files and
-creates a [ group](/wiki/group_file) file.
+The **make.group / make.count** command reads a [file](/wiki/file_file) file, [fasta](/wiki/fasta_file) file or series of fasta files and
+creates a [ group](/wiki/group_file) or [count](/wiki/Count_file) file.
 
 ## Default Options
+By default mothur will output a count table file.
 
     mothur > make.group(fasta=sample1.fasta-sample2.fasta-sample3.fasta, groups=A-B-C)
 
-This command will generate a .group file that looks like:
+    or
 
-    sample1Seq!   A
-    sample1Seq2   A
-    sample1Seq3   A
-    sample1Seq4   A
-    sample1Seq5   A
-    sample2Seq!   B
-    sample2Seq2   B
-    sample2Seq3   B
-    sample2Seq4   B
-    sample2Seq5   B
-    sample3Seq!   C
-    sample3Seq2   C
-    sample3Seq3   C
-    sample3Seq4   C
-    sample3Seq5   C
+    mothur > make.count(file=stability.files)
     
 ## output
 The output parameter allows you to specify the name of group file or count file created. 
 
 ## format
 The format parameter allows you to specify whether the outputted file is a group file or count file. Options group or count. Default=count.
-
 
 ## Revisions
 
