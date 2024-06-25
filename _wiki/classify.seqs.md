@@ -10,7 +10,7 @@ neighbor consensus and zap. Taxonomy outlines and reference
 sequences can be obtained from the [taxonomy
 outline](/wiki/taxonomy_outline) page. The command requires that
 you provide a fasta-formatted input and database sequence file and a
-taxonomy file for the reference sequences. To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip) 
+taxonomy file for the reference sequences. To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/exampledataset.zip) 
 and [mothur-formatted version of the RDP training set
     (v.9)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.pds.zip).
 

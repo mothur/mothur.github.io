@@ -27,3 +27,6 @@ You can download our version of the..
     files](/wiki/Greengenes-formatted_databases): The fasta and
     taxonomic outline that greengenes uses with their classifier and can
     be used with the Bayesian classifier
+-   [ greengenes2 reference
+    files](/wiki/greengenes2-formatted_databases): The fasta and
+    taxonomic outline that was modified by McDonald et al.

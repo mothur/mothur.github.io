@@ -75,8 +75,9 @@ For this tutorial you will need `mothur` and several sets of files:
 You can easily substitute these choices (and should) for the reference
 and taxonomy alignments using the updated [Silva reference
 files](/wiki/Silva_reference_files), [RDP reference
-files](/wiki/RDP_reference_files), and [Greengenes-formatted
-databases](/wiki/Greengenes-formatted_databases). We use the above
+files](/wiki/RDP_reference_files), [Greengenes-formatted
+databases](/wiki/Greengenes-formatted_databases), and [Greengenes2-formatted
+databases](/wiki/greengenes2-formatted_databases). We use the above
 files because they're compact and do a pretty good job. The various
 classification references perform differently with different sample
 types so your mileage may vary. It is generally easiest to decompress
