@@ -1,0 +1,257 @@
+---
+layout: post
+title: "README for the greengenes2 reference files"
+author: "Patrick D. Schloss"
+date: "June 25, 2024"
+---
+
+The [biocore group](https://github.com/biocore/greengenes2/) released an updated version of the greengenes taxonomy in [October 2022](https://ftp.microbio.me/greengenes_release/2022.10/), which was published in [Nature Biotechnology](https://www.nature.com/articles/s41587-023-01845-1). If you use these files, you should cite McDonald et al.
+
+Looking through their [ftp site](https://ftp.microbio.me/greengenes_release/2022.10/) you will find a number of files that are useful for classifying ASVs, metagenomes, etc. For mothur-based workflows using the naive Bayesian classifier, we are interested in the full-length sequences. It is worth noting that the taxonomy provided with greengenes2 goes out to the species level. This does not mean that you should expect to be able to classify your sequences to the species level. There is general agreement that to achieve that you will need to have genome sequences.
+
+Here is how I generated the mothur-compatible greengenes2 files.
+
+To download the files we want two qza files (these are zip files that are used with QIIME 2). We can download them, extract them, and get them in an easy to find location using these bash commands:
+
+```{bash}
+wget --no-check-certificate https://ftp.microbio.me/greengenes_release/2022.10/2022.10.backbone.full-length.fna.qza
+wget --no-check-certificate https://ftp.microbio.me/greengenes_release/2022.10/2022.10.backbone.tax.qza
+
+unzip 2022.10.backbone.full-length.fna.qza
+unzip 2022.10.backbone.tax.qza
+
+mv */data/dna-sequences.fasta dna-sequences.fasta
+mv */data/taxonomy.tsv taxonomy.tsv
+```
+
+
+Then in R we will read in the fasta and taxonomy files, make sure they're in the correct order and polish the taxonomy strings to work with mothur:
+
+```{R}
+library(tidyverse)
+library(vroom)
+
+fasta_fname <- "dna-sequences.fasta"
+tax_fname <- "taxonomy.tsv"
+
+f <- vroom_lines(fasta_fname)
+indices <- seq_along(f)
+
+seq_data <- tibble(id = f[indices %% 2 == 1],
+      seq = f[indices %% 2 == 0]) %>%
+  mutate(id = stringi::stri_replace_first_fixed(id, ">", ""))
+
+
+tax_data <- vroom(tax_fname, delim = "\t",
+                  col_names = c("id", "taxonomy"),
+                  col_types = "cc",
+                  skip = 1)
+
+
+s_t <- anti_join(seq_data, tax_data, by = "id") %>% nrow(.) == 0
+t_s <- anti_join(tax_data, seq_data, by = "id") %>% nrow(.) == 0
+stopifnot(s_t, t_s)
+
+seq_tax_data <- inner_join(seq_data, tax_data, by = "id")
+```
+
+Let's look at the data a bit...
+
+```{r}
+parsed_tax <- seq_tax_data %>%
+  select(id, taxonomy) %>%
+  separate(taxonomy, sep = "; ", into = c("k", "p", "c", "o", "f", "g", "s"))
+
+count(parsed_tax, k)
+```
+
+There are 329,175 bacterial and 2,094 archaeal sequences. Here is the number of kingdoms through species included in the reference and the number of taxa at each level that only has one sequence.
+
+```{r}
+parsed_tax %>%
+  pivot_longer(-id) %>%
+  filter(!str_detect(value, "__$")) %>%
+  nest(data = -name) %>%
+  mutate(summary = map_dfr(data, \(x){
+    z <- count(x, value)
+    tibble(n_taxa = nrow(z), n_singletons = sum(z$n == 1))
+  })) %>%
+  select(name, summary) %>%
+  unnest(summary)
+```
+
+```
+# A tibble: 7 × 3
+  name  n_taxa n_singletons
+  <chr>  <int>        <int>
+1 k          2            0
+2 p        131            2
+3 c        342           22
+4 o       1054          126
+5 f       2224          376
+6 g       8019         2006
+7 s      22929        10278
+```
+
+Here's the number of sequences with a name at each taxonomic level
+
+```{r}
+parsed_tax %>%
+  pivot_longer(-id) %>%
+  mutate(name = factor(name, levels = c("k", "p", "c", "o", "f", "g", "s"))) %>%
+  filter(!str_detect(value, "__$")) %>%
+  count(name)
+```
+
+```
+# A tibble: 7 × 2
+  name       n
+  <fct>  <int>
+1 k     331269
+2 p     331216
+3 c     331006
+4 o     328980
+5 f     322566
+6 g     291792
+7 s     201702
+```
+
+About 61% of sequences have a species level name. Not all sequences have genera-level names and not all genera have species-level names. 
+
+```{r}
+parsed_tax %>%
+  select(g, s) %>%
+  distinct() %>%
+  summarize(n_species = sum(s != "s__"), .by = g) %>% 
+  count(n_species, name = "n_genera") %>%
+  select(n_genera, n_species) %>%
+  print(n = Inf)
+```
+
+```
+   n_genera n_species
+      <int>     <int>
+ 1        3         0
+ 2     5373         1
+ 3     1026         2
+ 4      487         3
+ 5      275         4
+ 6      169         5
+ 7      113         6
+ 8       92         7
+ 9       74         8
+10       45         9
+11       42        10
+12       44        11
+13       31        12
+14       23        13
+15       21        14
+16       17        15
+17       13        16
+18        5        17
+19       17        18
+20       11        19
+21        4        20
+22        1        21
+23       12        22
+24        7        23
+25        8        24
+26        7        25
+27        5        26
+28        6        27
+29        4        28
+30        1        29
+31        7        30
+32        4        31
+33        2        32
+34        5        33
+35        5        34
+36        3        37
+37        4        38
+38        2        39
+39        2        40
+40        1        41
+41        2        42
+42        3        43
+43        1        44
+44        1        45
+45        1        46
+46        1        47
+47        1        48
+48        1        50
+49        5        52
+50        1        56
+51        1        57
+52        2        59
+53        1        61
+54        2        66
+55        1        71
+56        1        72
+57        2        73
+58        1        74
+59        3        76
+60        1        79
+61        1        80
+62        1        83
+63        1        84
+64        1        86
+65        1        89
+66        1        92
+67        1       104
+68        1       107
+69        1       119
+70        1       120
+71        2       139
+72        1       150
+73        1       165
+74        1       199
+75        1       267
+76        1       456
+```
+
+This tells us that there are 3 genera with no species and 5373 with only one species; there's also one genus with 456 species. This tells me that if you pick one of the 5373 singleton genera, you will definitely get that species - that's about two-thirds of the genera. I worry that this will give the sense of an unrealistic sense of specificity for sequences. With that in mind, I will post the version of the greengenes2 database without species-level names. The code for generating the results with the species-level names is also included below in case you want to go out on that limb.
+
+Let's do the one with species-level names first:
+
+```{r}
+seq_tax_data %>%
+  select(id, taxonomy) %>%
+  mutate(
+    taxonomy = stringi::stri_replace_all_regex(taxonomy, " ", ""),
+    taxonomy = stringi::stri_replace_all_regex(taxonomy, "$", ";")
+  ) %>%
+  write_tsv("greengenes2_2020_10.w_sp.taxonomy")
+
+seq_tax_data %>%
+  select(id, seq) %>%
+  mutate(id = stringi::stri_replace_first_regex(id, "^", ">")) %>%
+  unite(fasta, id, seq, sep = "\n") %>%
+  write_tsv("greengenes2_2020_10.w_sp.fasta")
+```
+
+Let's do the one without species-level names next:
+
+```{r}
+seq_tax_data %>%
+  select(id, taxonomy) %>%
+  mutate(
+    taxonomy = stringi::stri_replace_all_regex(taxonomy, " ", ""),
+    taxonomy = stringi::stri_replace_all_regex(taxonomy, "s__.*", "")
+  ) %>%
+  write_tsv("greengenes2_2020_10.wo_sp.taxonomy")
+
+seq_tax_data %>%
+  select(id, seq) %>%
+  mutate(id = stringi::stri_replace_first_regex(id, "^", ">")) %>%
+  unite(fasta, id, seq, sep = "\n") %>%
+  write_tsv("greengenes2_2020_10.wo_sp.fasta")
+```
+
+Let's package it all together...
+
+```{bash}
+mkdir greengenes2_2020_10.wo_sp
+mv greengenes2_2020_10.wo_sp.* greengenes2_2020_10.wo_sp
+cp README.md greengenes2_2020_10.wo_sp
+tar cvzf greengenes2_2020_10.wo_sp.tgz greengenes2_2020_10.wo_sp
+```
