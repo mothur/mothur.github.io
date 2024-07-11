@@ -7,7 +7,7 @@ The **consensus.seqs** command can be used in 2 ways: create a consensus
 sequence from a fastafile, or with a listfile create a consensus
 sequence for each otu. Sequences must be aligned. This tutorial
 uses the data files in [
-Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip).
+Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/exampledataset.zip).
 
 The **consensus.seqs** command parameters are fasta, list, count, name and label.
 

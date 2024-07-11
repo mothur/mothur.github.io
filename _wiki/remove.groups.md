@@ -7,7 +7,7 @@ redirect_from: '/wiki/Remove.groups.html'
 The **remove.groups** command removes sequences from a
 specific group or set of groups from the following file types: fasta, count, shared,
 list, taxonomy, phylip, column, design, name and group. 
-To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip) 
+To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/exampledataset.zip) 
 
 ## Default Settings
 

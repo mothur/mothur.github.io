@@ -9,7 +9,7 @@ flow](/wiki/flow_file) or [ fastq](/wiki/fastq_file) file
 and [ count](/wiki/count_file)
 and generates a list, fasta, flow or fastq files for each group in the
 count file. 
-To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip) 
+To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/exampledataset.zip) 
 
 
 ## Default Settings

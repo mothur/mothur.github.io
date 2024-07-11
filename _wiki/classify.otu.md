@@ -4,7 +4,7 @@ tags: 'commands'
 redirect_from: '/wiki/Classify.otu.html'
 ---
 The **classify.otu** command is used to get a consensus taxonomy for an otu.
-To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip) 
+To run through the example below, download [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/exampledataset.zip) 
 and [mothur-formatted version of the RDP training set
     (v.9)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.pds.zip).
     

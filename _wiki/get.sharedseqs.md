@@ -8,7 +8,7 @@ file and outputs a \*.shared.seqs file for each distance. This is useful
 for those cases where you might be interested in identifying sequences
 that are either unique or shared by specific groups, which you could
 then classify. To run through the commands below use [ Example 
-files](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip).
+files](https://mothur.s3.us-east-2.amazonaws.com/wiki/exampledataset.zip).
 
 
 ## Default settings

@@ -10,7 +10,7 @@ fasta](/wiki/fasta_file), [ name](/wiki/name_file), [
 group](/wiki/group_file), [ list](/wiki/list_file), [
 count](/wiki/Count_File) or [align.report file](/wiki/align.report_file) to this command and mothur will
 generate new files removing
-sequences from the specified taxon. This tutorial uses the data files in [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip) 
+sequences from the specified taxon. This tutorial uses the data files in [Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/exampledataset.zip) 
 and [mothur-formatted version of the RDP training set
     (v.9)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.pds.zip).
 

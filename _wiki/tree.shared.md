@@ -13,7 +13,7 @@ or [
 structure](/wiki/calculators#similarity-in-community-structure).
 Dissimilarity is calculated as one minus the similarity. This tutorial
 uses the data files in [
-Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/ExampleDataSet.zip).
+Example Data](https://mothur.s3.us-east-2.amazonaws.com/wiki/exampledataset.zip).
 
 
 ## Default settings
