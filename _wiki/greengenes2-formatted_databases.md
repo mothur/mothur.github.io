@@ -1,6 +1,6 @@
 ---
 title: 'greengenes2-formatted databases'
-redirect_from: '/wiki/greengenes2-formatted_databases'
+redirect_from: '/wiki/Greengenes2-formatted_databases'
 ---
 
 The [biocore group](https://github.com/biocore/greengenes2/) released an updated version of the greengenes taxonomy in [October 2022](https://ftp.microbio.me/greengenes_release/2022.10/), which was published in [Nature Biotechnology](https://www.nature.com/articles/s41587-023-01845-1). If you use these files, you should cite McDonald et al.
