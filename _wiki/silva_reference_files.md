@@ -5,6 +5,40 @@ redirect_from: '/wiki/Silva_reference_files'
 If you use the SILVA reference files you should be aware of their
 [dual-use license](https://www.arb-silva.de/silva-license-information) that covers Release 132 and earlier.
 
+## Release 138.2
+
+The SILVA alignment is 50,000 columns long so that it can be compatible
+with 18S rRNA sequences as well as archaeal 16S rRNA sequences. In our
+published opinion, this is the best reference alignment out there - far
+superior to the greengenes or RDP alignments. It's unclear why this
+version of the release is smaller than previous releases. We have
+prepared a [README
+document](/blog/2021/SILVA-v138_2-reference-files)
+where you can read about the process that we used to generate these
+references. This is also the first SILVA release that is available under
+the CC-BY license opening the data up to commercial use
+
+-   [ Full-length sequences and taxonomy references
+    ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.nr_v138_2.tgz) (145520 bacteria, 3744
+    archaea, and 15032 eukarya sequences). This reference could be
+    customized for alignments, but could also be used for
+    classification. The uncompressed version is \~7.7 GB and the
+    compressed version is 270 MB.
+-   [ recreated seed database ](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.seed_v138_2.tgz)
+    (6727 bacteria, 133 archaea, and 1847 eukarya sequences). The actual
+    reference alignment that SILVA uses with their SINA aligner is
+    called the SEED alignment. We don't know what this actually is. We
+    have tried to duplicate it by identifying the unique sequences in
+    the SSURef database that have a 100% quality score to the SEED
+    alignment (field 'align\_ident\_slv' in the arb database) and that
+    go from the end of the traditional 8f/27f primer to the beginning of
+    the traditional 1492r primer. We are providing a composite dataset
+    for bacterial, archaeal, and eukaryotic sequences. The uncompressed
+    version is 416 MB and the compressed version is 15 MB.
+-   [ Silva-based alignment of template file for
+    chimera.slayer](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.gold.bacteria.zip) (5,181
+    sequences)
+
 
 ## Release 138.1
 

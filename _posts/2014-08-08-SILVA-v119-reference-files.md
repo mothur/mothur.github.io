@@ -31,10 +31,12 @@ This will launch us into the arb environment with the ''Ref NR 99'' database ope
 1. In the field for `Choose an output file name enter` make sure the path has you in the `arb_ref_119` folder and enter `silva.full_v119.fasta`.
 1. Select a format: fasta_mothur.eft. This is a custom formatting file that I have created that includes the sequences accession number and it's taxonomy across the top line. To create one for you will need to create `fasta_mothur.eft` in the `/opt/local/share/arb/lib/export/` folder with the following:
 
+    ```
     SUFFIX          fasta
     BEGIN
     >*(acc).*(name)\t*(align_ident_slv)\t*(tax_slv);
     *(|export_sequence)
+    ```
 
 1. You can now quit arb.  
 
