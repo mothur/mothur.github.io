@@ -135,6 +135,18 @@ Evans, J., L. Sheneman, and J.A. Foster (2006) Relaxed Neighbor-Joining:
 A Fast Distance-Based Phylogenetic Tree Construction Method, J. Mol.
 Evol., 62, 785-792
 
+## Known Issues:
+
+### Sequence names
+
+Sequence names must include non-numeric characters. If your sequence names contain only numeric characters you will see the following error message, "Clearcut: Syntax error in distance matrix at offset xxx." The message is produced because clearcut misinterprets your sequence names as distances in the matrix and assumes a corrupted file at location xxx (the first sequence name). To resolve this issue you can rename your sequences to include non numeric characters. You can do this with the rename.seqs command as follows:
+
+mothur > rename.seqs(fasta=current, count=current, delim="_”) 
+
+The above command will create sequence names like: number_sampleName. A sequence like 8890009098890 belonging to sample1 would become 1_sample1. The rename.seqs command creates a map file you can use to restore the original names if desired.
+
+mothur > rename.seqs(fasta=current, map=mapFileCreatedByFirstRenameSeqsCommand)
+
 ## Revisions
 
 -   1.28.0 Bug Fix - windows crash

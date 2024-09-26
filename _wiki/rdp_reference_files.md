@@ -168,11 +168,11 @@ to be compatible with mothur. To maintain a consistent 6 taxonomic
 levels we have removed the various sub-classes, orders and families:
 
 -   [16S rRNA reference
-    (RDP)](https://mothur.org/w/images/b/b5/Trainset10_082014.rdp.tgz): A
+    (RDP)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset10_082014.rdp.tgz): A
     collection of 10,240 bacterial and 410 archaeal 16S rRNA gene
     sequences with an improved taxonomy compared to version 9.
 -   [16S rRNA reference
-    (PDS)](https://mothur.org/w/images/2/24/Trainset10_082014.pds.tgz):
+    (PDS)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset10_082014.pds.tgz):
     The RDP reference with 119 mitochondrial 16S rRNA gene sequences
     added as members of the Rickettsiales and four 18S rRNA gene
     sequences added as members of the Eukarya.
@@ -257,7 +257,7 @@ direction.
 
 ## Version 6
 
-The [ rdp training set](https://mothur.s3.us-east-2.amazonaws.com/wiki/rdptrainingset.zip) (version 6,
+The [ rdp training set](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset6_032010.rdp.zip) (version 6,
 released 03/02/2010) consists of 8,422 sequences (8,127 bacterial and
 295 archaeal) and is based on Bergey's taxonomic outline. This training
 set is our modification of the files that they posted to
@@ -268,4 +268,7 @@ a fasta-formatted sequence file and a mothur-compatible taxonomy file.
 The only subtle manipulation we made was to remove the sub-taxonomic
 levels (e.g. sub-order) and to plug in incertae\_sedis levels when a
 step in the taxonomy was missing. Thus taxonomic level 6 corresponds to
-the level of genus and level 1 corresponds to the level of kingdom.
+the level of genus and level 1 corresponds to the level of kingdom. I
+have also included a ["pds" version](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset6_032010.pds.zip
+) of the same reference collection that
+includes additional Mitochondrial and Eukaryotic sequences.
