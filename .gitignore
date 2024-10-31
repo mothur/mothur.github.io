@@ -3,3 +3,4 @@ _site
 _download_files
 Gemfile.lock
 Gemfile.lock
+.DS_Store
