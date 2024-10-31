@@ -13,7 +13,7 @@ published opinion, this is the best reference alignment out there - far
 superior to the greengenes or RDP alignments. It's unclear why this
 version of the release is smaller than previous releases. We have
 prepared a [README
-document](/blog/2021/SILVA-v138_2-reference-files)
+document](/blog/2024/SILVA-v138_2-reference-files)
 where you can read about the process that we used to generate these
 references. This is also the first SILVA release that is available under
 the CC-BY license opening the data up to commercial use
