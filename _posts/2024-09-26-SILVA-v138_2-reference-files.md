@@ -14,11 +14,11 @@ Curation of references
 
 This README file explains how we generated the silva reference files for use with mothur's `classify.seqs` and `align.seqs` commands. I'll assume that you have a functioning copy of arb installed on your computer. For this README we are using version 6.0. First we need to download the database and decompress it. From the command line we do the following:
 
-    wget -N https://www.arb-silva.de/fileadmin/arb_web_db/release_238_2/ARB_files/SILVA_238.2_SSURef_NR99_03_07_24_opt.arb.gz
-    gunzip SILVA_238.2_SSURef_NR99_03_07_24_opt.arb.gz
-    arb SILVA_238.2_SSURef_NR99_03_07_24_opt.arb
+    wget -N https://www.arb-silva.de/fileadmin/silva_databases/release_138_2/ARB_files/SILVA_138.2_SSURef_NR99_03_07_24_opt.arb.gz
+    gunzip SILVA_138.2_SSURef_NR99_03_07_24_opt.arb.gz
+    arb SILVA_138.2_SSURef_NR99_03_07_24_opt.arb
 
-This will launch us into the arb environment with the ''Ref NR 99'' database opened. This database has 510,508 sequences within it that are not more than 99% similar to each other. The release notes for [this database](http://www.arb-silva.de/documentation/release-1382/) as well as the idea behind the [non-redundant database](http://www.arb-silva.de/projects/ssu-ref-nr/) are available from the silva website. Within arb do the following:
+This will launch us into the arb environment with the ''Ref NR 99'' database opened. This database has 510,495 sequences within it that are not more than 99% similar to each other. The release notes for [this database](http://www.arb-silva.de/documentation/release-1382/) as well as the idea behind the [non-redundant database](http://www.arb-silva.de/projects/ssu-ref-nr/) are available from the silva website. Within arb do the following:
 
 1.  Click the search button
 2.  Set the first search field to 'ARB\_color' and set it to 1. Click on the equal sign until it indicates not equal (this removes low quality reads and chimeras)
@@ -79,83 +79,94 @@ wget https://www.arb-silva.de/fileadmin/silva_databases/release_138_2/Exports/ta
 gunzip tax_slv_ssu_138.2.txt.gz
 ```
 
-Thanks to [Eric Collins at the University of Alaska Fairbanks](https://forum.mothur.org/t/18s-rdna-classification-issues/2303/14), we have some nice R code to map all of the taxa names to the six Linnean levels (kingdom, phylum, class, order, family, and genus). We'll run the following code from within R:
+We'll run the following code from within R to clean up the taxa names and make sure everything has six levels:
 
-```
-map.in <- read.table("tax_slv_ssu_138.2.txt",header=F,sep="\t",stringsAsFactors=F)
-map.in <- map.in[,c(1,3)]
-colnames(map.in) <- c("taxlabel","taxlevel")
+```R
+library(tidyverse)
 
-taxlevels <- c("root","domain","major_clade","superkingdom","kingdom","subkingdom","infrakingdom","superphylum","phylum","subphylum","infraphylum","superclass","class","subclass","infraclass","superorder","order","suborder","superfamily","family","subfamily","genus")
-taxabb <- c("ro","do","mc","pk","ki","bk","ik","pp","ph","bp","ip","pc","cl","bc","ic","po","or","bo","pf","fa","bf","ge")
-tax.mat <- matrix(data="",nrow=nrow(map.in),ncol=length(taxlevels))
-tax.mat[,1] <- "root"
-colnames(tax.mat) <- taxlevels
+desired_levels <- c("domain", "phylum", "class", "order", "family", "genus")
+desired_levels_tbl <- tibble(
+  tax_level = factor(desired_levels, desired_levels))
 
-outlevels <- c("domain","phylum","class","order","family","genus")
+# this is their reference taxonomy with levels for each substring found
+# in the database
+tax_label_level <- read_tsv("tax_slv_ssu_138.2.txt", col_names = FALSE, 
+                            col_type = cols(.default = col_character())) %>%
+  select(tax_label = X1, tax_level = X3)
 
-for(i in 1:nrow(map.in)) {
-  taxname <- unlist(strsplit(as.character(map.in[i,1]), split=';'))
-  #print(taxname);
 
-  while ( length(taxname) > 0) {
-    #regex to look for exact match
+# this is the the full taxonoy for each sequence in the database
+database_tax_label <- read_tsv("silva.nr_v138.full",
+                               col_names = c("id", "tax_label"),
+                               col_type = cols(.default = col_character()))
 
-    tax.exp <- paste(paste(taxname,collapse=";"),";",sep="")
-    tax.match <- match(tax.exp,map.in$taxlabel)
-    tax.mat[i,map.in[tax.match,2]] <- tail(taxname,1)
-    taxname <- head(taxname,-1)
+# these are the unique tax_label values found in database_tax_label
+unique_tax_labels <- database_tax_label %>%
+  select(tax_label) %>%
+  distinct() %>%
+  left_join(tax_label_level, by = "tax_label") %>%
+  select(tax_label)
+
+
+# now need to get each of the substrings found in unique_tax_labels and return
+# the tax_level for each substring taxonomy
+generate_substrings <- function(s) {
+  words <- str_replace(s, ";$", "") |>
+    str_split(";") |>
+    unlist()
+  
+  substrings <- character(length(words))
+  for(w in seq_along(words)){
+    substrings[w] <- paste(paste(words[1:w], collapse = ";"), "", sep = ";")
   }
+  substrings
 }
 
-for(i in 1:nrow(tax.mat)) {
-  #this fills in the empty gaps by using the closest higher taxonomic level appended with an abbreviation for the current taxonomic level
-  #if you don't want this behavior, cut it out
-  for(j in 1:ncol(tax.mat)) {
-    if(tax.mat[i,j] < 0) { tax.mat[i,j] <- paste(tmptax,taxabb[j],sep="_")}
-    else { tmptax <- tax.mat[i,j]}
+# replace missing levels with insertae sedis of the previous good name with
+# the taxonomic level appended
+fill_ss_tbl <- function(ss_tbl) {
+  
+  if(nrow(ss_tbl) != 6) {
+    
+    ss_tbl <- ss_tbl %>%
+      right_join(desired_levels_tbl, by = "tax_level")
+    
+    nas <- which(is.na(ss_tbl$substring))
+    previous_good_string <- ""
+    
+    for(n in nas){
+      if(!str_detect(ss_tbl[n - 1, "substring"], "_insertae_sedis_")){
+        previous_good_string <- n - 1
+      }
+      
+      ss_tbl[n, "substring"] <- paste0(ss_tbl[previous_good_string, "substring"],
+                                       "_insertae_sedis_",
+                                       ss_tbl[n, "tax_level"])
+    }
   }
-
-  #this maps the new name to the input taxonomic levels
-  map.in[i,"taxout"] <- paste(paste(tax.mat[i,outlevels],collapse=";"),";",sep="")
+  
+  str_replace_all(paste(paste(ss_tbl$substring, collapse = ";"), "", sep = ";"),
+                  " ",
+                  "_")
 }
 
-# replace spaces with underscores
-map.in$taxout <- gsub(" ","_",map.in$taxout)
 
-# bring in the old taxonomic levels from SILVA and remap them using the new levels
-tax.in <- read.table("silva.nr_v138.full",header=F,stringsAsFactors=F,sep="\t")
-colnames(tax.in) <- c("taxid","taxlabel")
+clean_tax_labels_lookup <- unique_tax_labels %>%
+  mutate(substring = map(tax_label, generate_substrings)) %>% #generate substrs
+  unnest(substring) %>%
+  inner_join(tax_label_level, by = c("substring" = "tax_label")) %>%
+  mutate(substring = str_replace(substring, "^.*?([^;]+);$", "\\1")) %>%
+  filter(!str_detect(substring, "^Incertae Sedis$")) %>% 
+  select(tax_label, substring, tax_level) %>%
+  nest(data = -tax_label) %>%
+  mutate(clean_tax_label = map_chr(data, ~fill_ss_tbl(.x))) %>%
+  unnest(clean_tax_label) %>%
+  select(-data)
 
-tax.in$taxlabel <- gsub(";[[:space:]]+$", ";", tax.in$taxlabel)
 
-tax.in$id <- 1:nrow(tax.in)
-
-tax.write <- merge(tax.in,map.in,all.x=T,sort=F)
-tax.write <- tax.write[order(tax.write$id),]
-
-
-#we want to see whether everything has 6 taxonomic level (kingdom to genus)
-getDepth <- function(taxonString){
-  initial <- nchar(taxonString)
-  removed <- nchar(gsub(";", "", taxonString))
-  return(initial-removed)
-}
-
-depth <- getDepth(tax.write$taxout)
-summary(depth) #should all be 6 and there should be no NAs
-bacteria <- grepl("Bacteria;", tax.write$taxout)
-archaea <- grepl("Archaea;", tax.write$taxout)
-eukarya <- grepl("Eukaryota;", tax.write$taxout)
-
-tax.write[depth > 6 & bacteria,] #if zero, we're good to go
-tax.write[depth > 6 & archaea,]  #if zero, we're good to go
-tax.write[depth > 6 & eukarya,]  #if zero, we're good to go
-
-# remove "Incertae_Sedis;" from taxonomy data
-tax.write$taxout <- gsub("Incertae_Sedis;", "", tax.write$taxout, )
-
-write.table(tax.write[,c("taxid","taxout")], file="silva.full_v138_2.tax",sep="\t",row.names=F,quote=F,col.names=F)
+left_join(database_tax_label, clean_tax_labels_lookup, by = "tax_label") %>%
+  select(id, clean_tax_label) %>%
+  write_tsv(file="silva.full_v138_2.tax", quote = "none", col_names = FALSE)
 ```
 
 ### Building the SEED references
@@ -210,11 +221,10 @@ nr.matrix[3,] <- getNumTaxaNames(nr.file, kingdoms[3])
 rownames(nr.matrix) <- kingdoms
 colnames(nr.matrix) <- tax.levels
 nr.matrix
-#          phyla class order family genus n.seqs
-#Bacteria     96   202   511    779  3545 145520
-#Archaea      14    28    51     71   178   3744
-#Eukaryota    92   251   661    944  2595  15032
-
+#           phyla class order family genus n.seqs
+# Bacteria     96   249   660   1208  4554 145520
+# Archaea      14    32    62    109   251   3744
+# Eukaryota   116   343  1077   1863  2694  15032
 
 seed.file <- "silva.seed_v138_2.tax"
 seed.matrix <- matrix(rep(0,18), nrow=3)
@@ -225,15 +235,15 @@ rownames(seed.matrix) <- kingdoms
 colnames(seed.matrix) <- tax.levels
 seed.matrix
 #          phyla class order family genus n.seqs
-#Bacteria     63   132   294    464  1178   6727
-#Archaea       8    18    24     31    43    133
-#Eukaryota    40   101   287    457   819   1847
+#Bacteria     63   148   344    615  1547   6714
+#Archaea       8    19    29     38    61    132
+#Eukaryota    48   120   311    602   883   1850
 
 seed.matrix / nr.matrix
 #              phyla     class     order    family     genus     n.seqs
-#Bacteria  0.6562500 0.6534653 0.5753425 0.5956354 0.3322990 0.04622732
-#Archaea   0.5714286 0.6428571 0.4705882 0.4366197 0.2415730 0.03552350
-#Eukaryota 0.4347826 0.4023904 0.4341906 0.4841102 0.3156069 0.12287121
+#Bacteria  0.6562500 0.5943775 0.5212121 0.5091060 0.3397014 0.04613799
+#Archaea   0.5714286 0.5937500 0.4677419 0.3486239 0.2430279 0.03525641
+#Eukaryota 0.4137931 0.3498542 0.2887651 0.3231347 0.3277654 0.12307078
 ```
 
 The Archaea take a beating and recall they lost a bunch of sequences in the initial steps since many of the arachaeal sequences in SILVA are between 900 and 1200 nt long. If you are interested in analyzing the Archaea and the Eukaryota, I would suggest duplicating my efforts here but modify the `screen.seqs` and `pcr.seqs` steps to target your region of interest.
