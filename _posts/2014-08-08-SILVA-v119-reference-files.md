@@ -3,7 +3,7 @@ layout: post
 title: "README for the SILVA v119 reference files"
 author: "PD Schloss"
 date: "August 8, 2014"
-comments: true
+comments: false
 ---
 The good people at [SILVA](https://arb-silva.de) have released a new version of the SILVA database. A little bit of tweaking is needed to get their files to be compatible with mothur. This README document describes the process that I used to generate the [mothur-compatible reference files](/wiki/Silva_reference_files).
 

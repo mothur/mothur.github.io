@@ -3,7 +3,7 @@ layout: post
 title: "We need a mothur logo (and stickers!)"
 author: "P.D. Schloss"
 date: "January 21, 2015"
-comments: true
+comments: false
 ---
 
 Have you noticed that the same poor woman has been nursing an unknown child on

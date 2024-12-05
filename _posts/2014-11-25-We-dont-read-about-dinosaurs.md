@@ -3,7 +3,7 @@ layout: post
 title: "We don't read about dinosaurs"
 author: "P.D. Schloss"
 date: "November 25, 2014"
-comments: true
+comments: false
 ---
 
 To be perfectly frank, I think bioinformatics and the problems most of us are

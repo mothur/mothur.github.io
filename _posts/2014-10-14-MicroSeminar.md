@@ -3,7 +3,7 @@ layout: post
 title: "MicroSeminar: A new way of doing conferences"
 author: "PD. Schloss"
 date: "October 14, 2014"
-comments: true
+comments: false
 ---
 
 Why didn't I think of that?! In the last few years I've pretty much lost all my

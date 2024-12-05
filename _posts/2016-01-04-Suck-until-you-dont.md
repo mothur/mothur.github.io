@@ -3,7 +3,7 @@ layout: post
 title: "Suck until you don't"
 author: "PD Schloss"
 date: "January 4, 2016"
-comments: true
+comments: false
 ---
 
 I am often asked how to get better at something. It is a great honor for someone else to recognize a set of skills that I work hard to hone, but I honestly want to answer "the hell if I know." Last week I talked with someone that was interested in strengthening their programming skills and perhaps converting some of their home grown code into a package for others to use. For the first time I answered honestly, "You're going to suck, but it will get better."

@@ -3,7 +3,7 @@ layout: post
 title: "No, greengenes' reference alignment hasn't improved"
 author: "PD Schloss"
 date: "August 4, 2015"
-comments: true
+comments: false
 ---
 
 An under appreciated, but important component to assigning sequences to OTUs is generating a sequence alignment. As with many things in the world of microbiome analysis, there is a spectrum of options. In case you've missed it, I've published three papers in the last few years on this topic. These papers all point to the importance of aligning your data and are the justification for how we run [align.seqs](/wiki/align.seqs) in the [MiSeq SOP](/wiki/MiSeq_SOP) and the [454 SOP](/wiki/454_SOP). Over the weekend some questions came up about aligning 16S rRNA gene sequences that I thought worth expanding up on here.

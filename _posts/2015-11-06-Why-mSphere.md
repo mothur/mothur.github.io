@@ -3,7 +3,7 @@ layout: post
 title: "Why did I publish in mSphere?"
 author: "PD Schloss"
 date: "November 6, 2015"
-comments: true
+comments: false
 ---
 
 On the morning of September 14th, I logged into [mSphere's manuscript submission page](https://msphere.msubmit.com) and uploaded a very cool paper describing our efforts to model the number of colonic tumors in a mouse model of colorectal cancer based on the composition of the animals' microbiota 70 days earlier. I'm very proud of the paper that I wrote with my former graduate student Joe Zackular. But I'm also very proud of the manuscript tracking number we received: [mSphere00001-15](https://msphere.asm.org/mSphere.00001-15-abstract.php). Our's was the first paper to be submitted and then eventually accepted at the [new journal](https://msphere.asm.org) being published by the [American Society for Microbiology](https://www.asm.org).

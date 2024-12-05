@@ -4,7 +4,7 @@ title: "mothur and QIIME"
 author: "PD Schloss"
 date: "January 12, 2016"
 blurb: mothur and QIIME have had an exceptional impact on the field of microbial ecology and helped lead the ongoing explosion of interest in studying the human microbiome. I've refrained from publicly making any comparisons between the two programs because I knew that anything I said would be appropriately viewed with suspicion. So, what do I think of QIIME?
-comments: true
+comments: false
 ---
 
 <div class="tldr">

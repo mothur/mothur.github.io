@@ -3,7 +3,7 @@ layout: post
 title: "Initial reactions to the UMU & IMI"
 author: "PD Schloss"
 date: "October 29, 2015"
-comments: true
+comments: false
 ---
 
 I must admit that I always feel a certain euphoria when I find people talking about microbiome research in the popular press or policy pieces. I'm a microbiome homer. So you can imagine my feelings yesterday when  [*Science*](https://www.sciencemag.org/content/early/2015/10/27/science.aac8480.full) published an article by US scientists calling for a "interdisciplinary Unified Microbiome Initiative (UMI) to discover and advance tools to understand and harness the capabilities of Earth’s microbial ecosystems." Not to be outdone, [*Nature*](https://www.nature.com/news/microbiology-create-a-global-microbiome-effort-1.18636) published a piece indicating that each country would have its own UMI and these would be assembled under an International Microbiome Initiative (IMI).

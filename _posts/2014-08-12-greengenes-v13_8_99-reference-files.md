@@ -3,7 +3,7 @@ layout: post
 title: "README for the greengenes v13_8_99 reference files"
 author: "PD. Schloss"
 date: "August 12, 2014"
-comments: true
+comments: false
 ---
 The greengenes developers periodically update their reference files on their ftp server. What follows is our process for generating a mothur-compatible set of files to generate a [greengenes taxonomy reference](/wiki/Greengenes-formatted_databases) of those sequences.  
 

@@ -3,7 +3,7 @@ layout: post
 title: "The Kitome: Dealing with the reagent microbiome"
 author: "PD. Schloss"
 date: "November 12, 2014"
-comments: true
+comments: false
 ---
 
 An [important paper](https://www.biomedcentral.com/1741-7007/12/87) came out this

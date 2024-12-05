@@ -3,7 +3,7 @@ layout: post
 title: "Slides for EDAMAME mothur talk"
 author: "PD. Schloss"
 date: "August 14, 2014"
-comments: true
+comments: false
 ---
 
 Pat will be giving a talk about mothur at Explorations in Data Analyses for Metagenomic Advances in Microbial Ecology (EDAMAME) Workshop this friday. You can learn more about the workshop through the [EDAMAME website](http://edamamecourse.org).

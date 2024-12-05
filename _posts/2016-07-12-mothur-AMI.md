@@ -4,7 +4,7 @@ title: "The mothur AMI"
 author: "PD Schloss"
 date: "July 12, 2016"
 blurb: Do you find that your computer can no longer handle the massive datasets that you are running? Does your institution not have a computer cluster? Welcome to the wonderful world of the Amazon Web Server.
-comments: true
+comments: false
 ---
 
 We get asked a lot of questions by mothur users. Perhaps the one I hate the most is, "What type of computer should I get?" I hate this question because I don't want to spend other people's money and because I honestly don't have the answer. I used to encourage people to get the biggest, baddest computer they could afford. I've followed this advice myself.

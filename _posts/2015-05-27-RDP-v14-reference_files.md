@@ -3,7 +3,7 @@ layout: post
 title: "README for the RDP v14 reference files"
 author: "Patrick D. Schloss"
 date: "May 27, 2015"
-comments: true
+comments: false
 output:
   html_document:
     keep_md: yes

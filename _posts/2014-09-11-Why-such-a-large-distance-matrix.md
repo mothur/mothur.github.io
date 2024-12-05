@@ -3,7 +3,7 @@ layout: post
 title: "Why do I have such a large distance matrix"
 author: "PD. Schloss"
 date: "September 11, 2014"
-comments: true
+comments: false
 ---
 
 One of the more common questions we get on the [mothur forum](https://forum.mothur.org) and to the mothur.bugs email list is some variant of, "My distance matrix takes up 100 GB and it won't go through [cluster](/wiki/cluster) or [cluster.split](/wiki/cluster.split) to make OTUs. What can I do?" Having answered some variant of this question 1000 times, I fear that I might stroke out if I answer it a 1001st time. So, allow me to explain what's going on, what you should have done, what you can do, what you should do, and why you should care. I'll try not to rant... to much.

@@ -3,7 +3,7 @@ layout: post
 title: "Happy mothur's day!"
 author: "P.D. Schloss"
 date: "May 11, 2015"
-comments: true
+comments: false
 ---
 
 At least in the United State's, Sunday was Mother's Day. The day we acknowledge the women that brought us into the world and the women that have helped care for us. Happy belated Mother's Day! We also love to mark Mother's Day as mothur's Day. When I can remember, I try to do something special to mark the date.

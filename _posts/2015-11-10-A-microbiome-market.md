@@ -3,7 +3,7 @@ layout: post
 title: "What is your microbiome hypothesis worth?"
 author: "PD Schloss"
 date: "November 10, 2015"
-comments: true
+comments: false
 ---
 
 Last week I attended a symposium geared towards a general science audience where the topic of the day was the role of the microbiome in human health. I would exaggerate only slightly if I said that all of the presenters motivated their own interest in the microbiome by citing the work of [Turnbaugh and colleagues](https://www.ncbi.nlm.nih.gov/pubmed/19043404) from the Gordon lab pointing to differences in diversity and the ratio of Firmicutes and Bacteroidetes among lean and obese individuals. Similar sets of introductory slides probably grace most talks at these types of symposia. Lost in the hubbub about the microbiome and obesity are two very important papers ([here](https://www.ncbi.nlm.nih.gov/pubmed/24416266) and [here](https://www.ncbi.nlm.nih.gov/pubmed/25307765)) - one of which was written by an author on the original study - saying that the effect doesn't exist when you consider any other dataset. Yet as of my writing, there is nothing on PubPeer or PubMed Commons directing readers of the original paper to these meta-analyses.

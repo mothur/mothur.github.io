@@ -4,7 +4,7 @@ title: "Customize your reference alignment for your favorite region"
 author: "PD Schloss"
 date: "July 7, 2016"
 blurb: You threw caution to the wind and decided to sequence something other than the V4 region of the 16S rRNA gene. How do you pick the start and end coordinates when running pcr.seqs?
-comments: true
+comments: false
 ---
 
 
