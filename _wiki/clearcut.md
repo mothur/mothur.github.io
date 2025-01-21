@@ -55,12 +55,12 @@ The quiet parameter turns on silent operation mode, default=F.
 
     mothur > clearcut(fasta=abrecovery.align, DNA=T, quiet=t)
 
-### seed
+### rseed
 
 The seed parameter allows you to explicitly set the PRNG seed to a
 specific value.
 
-    mothur > clearcut(fasta=abrecovery.align, DNA=t, seed=12345)
+    mothur > clearcut(fasta=abrecovery.align, DNA=t, rseed=12345)
 
 ### norandom
 
@@ -79,9 +79,9 @@ matrix, default=F.
 ### neighbor
 
 The neighbor parameter allows you to use traditional Neighbor-Joining
-algorithm, default=F.
+algorithm, default=T.
 
-    mothur > clearcut(fasta=abrecovery.align, DNA=t, neighbor=t)
+    mothur > clearcut(fasta=abrecovery.align, DNA=t, neighbor=f)
 
 ### stdout
 
