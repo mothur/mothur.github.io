@@ -63,7 +63,7 @@ parse_taxonomy <- function(x) {
                 incertae_sedis() %>%
                 as_tibble_row(.) %>%
                 mutate(across(phylum:genus,
-                              ~str_replace(.x,
+                              ~str_replace_all(.x,
                                           pattern = " ",
                                           replacement = "_")))
 
