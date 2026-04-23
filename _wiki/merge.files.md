@@ -6,7 +6,7 @@ redirect_from: '/wiki/Merge.files.html'
 The **merge.files** command will concatenate
 multiple files and output the result to a new file. This command is
 useful for merging multiple fasta-formatted sequence files, 454 quality
-files, group files, name files, or anything else.
+files, group files, name files, or anything else except count_tables (see [merge.count](/wiki/merge.count/)).
 
 To run the **merge.files** command you need to provide the input files
 separated by hyphens as well as the name file that the contents of those

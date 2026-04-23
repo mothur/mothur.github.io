@@ -64,7 +64,8 @@ from.
 
 The nomatch parameter allows you to decide what to do with sequences
 where the primer is not found. Default=reject, meaning remove from fasta
-file. if nomatch=keep, then do nothing to sequence.
+file. if nomatch=keep, then do nothing to sequence. Note: the nomatch parameter
+only used when running pcr.seqs with an oligos file.
 
 ### keepprimer
 

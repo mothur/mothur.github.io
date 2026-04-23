@@ -68,7 +68,7 @@ For this tutorial you will need `mothur` and several sets of files:
     [full
     dataset](https://mothur.org/MiSeqDevelopmentData/StabilityNoMetaG.tar)
 -   [SILVA-based bacterial reference
-    alignment](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.zip)
+    alignment (v102)](https://mothur.s3.us-east-2.amazonaws.com/wiki/silva.bacteria.zip)
 -   [mothur-formatted version of the RDP training set
     (v.9)](https://mothur.s3.us-east-2.amazonaws.com/wiki/trainset9_032012.pds.zip)
 
