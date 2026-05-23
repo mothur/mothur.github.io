@@ -86,6 +86,18 @@ The current parameter can be used to input the output file from
 get.current. This allows the commands to work together to keep track of
 current files between instances of mothur.
 
+## processors
+
+You can set the number of processors to use for commands that allow multiple processors.
+Otherwise, mothur will detect the number of processors and use as many as are available.
+
+    mothur > set.current(processors=8)
+    
+    Using 8 processors.
+
+    Current files saved by mothur:
+    processors=8
+
 ## Revisions
 
 -   1.33.0 - Bug Fix: setting processors option to 1, if not set.
